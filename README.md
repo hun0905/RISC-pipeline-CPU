@@ -1,4 +1,4 @@
-# RISC-V-pipeline-CPU
+# RISC-pipeline-CPU
 ## Overview
 In this project, i implement a pipeline CPU with RISC-V instruction set architecture and then I perform verification on HAPS100.All of my RTL(.v file) codes are in src folder. This CPU supports Rtype, some of I dype(addi, andi, ori) , ld, sd and beq instruction and. I adopt the classic five stage design (Instruction fetch, Instruction decode, Execute, Memory access, Writeback) in the CPU and there are also hazard and forwarding unit to prevent data hazard and control hazard resulting from pipeline execution. 
 ## Description
