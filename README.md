@@ -45,7 +45,7 @@ Below are the introduction of some important components (not all components are 
 ### WB
 - In WB stage, the behaviors only involoves the mux and registers. According to our control signal. The mux can decide the data we want to write back is from the result of ALU or the DataMemory. If control signal regwrite is high, we need write the data to our registers.
 
-## Verificatoin setting
+## Verificatoin Setting
 - board.tss : this is target system specification file, it includes same hardward configuratoin of HAPS, ex:
   1. Which FPGA we used in this project
   2. Connectoin fo daughter cards
@@ -59,7 +59,7 @@ Below are the introduction of some important components (not all components are 
   4. clk and reset setting
   5. port assignment
  - design.fdc : this file includes seeting of time constraints
- ## some demo example
+ ## Demo Example
  - In TEST/test_pattern.txt are somae instructions to demo
  In the example, I demoe how my CPU deal with data hazard and control hazard, I transform the instructions into bits and save in TEST/ControlHazardPattern.txt and TEST/DataHazardPattern.txt. I save the demo result in TEST/ControlHazardPattern.txt and TEST/DataHazardPattern.txt. There are many output, so I just show the values of regsiter and data memory after execution these isntruction.
 ```assembly
