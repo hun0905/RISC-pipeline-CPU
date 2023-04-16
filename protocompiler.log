@@ -1,0 +1,55 @@
+
+                          HAPS (R) ProtoCompiler 100 
+
+               Version R-2020.12-SP1-1 for RHEL64 - Apr 08, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Starting:    /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/linux_a_64/mbin/protocompiler
+Install:     /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+Hostname:    ws35
+Date:        Mon Apr 10 19:42:47 2023
+Version:     R-2020.12-SP1-1
+
+Arguments:   -product protocompiler100
+ProductType: protocompiler100
+
+For command descriptions, use the following tools:
+- For syntax statements, enter "help  <command_name>"  in the Tcl shell
+- For detailed descriptions:
+   1. Select "Help->Help Topics"
+   2. Click the Search tab
+   3. Enter <command_name>
+
+
+License checkout: ProtoCompiler100
+License: ProtoCompiler100 from server ws26 
+Licensed Vendor: All FPGA
+
+External Tools          Supported Version       Install Environment Variable
+Vivado                  2020.1                  XILINX_VIVADO=/usr/cadtool/csr5306/synopsys/xilinx_vivado/2021.1-ep9/tools/XILINX_VIVADO
+Formality               2020.09-SP5             FORMALITY=""
+Verdi                   R-2020.12-SP2-6         VERDI_HOME=/usr/cad/synopsys/verdi/2022.06
+VC Formal               2020.12-SP2-6           VC_STATIC_HOME=""
+Confpro                 2020.12-SP1-1           HAPS_INSTALL_DIR=/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+Design Compiler         2020.09-SP5             DC_ROOT=""
+Design Ware             2020.09-SP5-5           SYNOPSYS=""
+  (Please make sure that DC_ROOT and SYNOPSYS points to the same location.)
+VCS                     2020.03-SP2-10          VCS_HOME=/usr/cadtool/csr5306/synopsys/vcs/Q-2020.03-SP2-10-T-20220405
+
+
+Note: Standard compile is no longer the recommended flow. Use Unified Compile for future projects.
+/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU
+No default schematic found for this database state. Try "view schematic -list" to see available schematics.
+1
+No default schematic found for this database state. Try "view schematic -list" to see available schematics.
+1
+No default schematic found for this database state. Try "view schematic -list" to see available schematics.
+1
+0
+exit status=0
+License checkin: ProtoCompiler100

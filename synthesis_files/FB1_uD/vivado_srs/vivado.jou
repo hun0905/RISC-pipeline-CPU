@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2021.1_AR76722 (64-bit)
+# SW Build 3428450 on Thu Jan 13 11:43:02 MST 2022
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Apr  9 23:15:24 2023
+# Process ID: 416
+# Current directory: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs
+# Command line: vivado -mode batch -source /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/run_vivado_haps.tcl -log /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/vivado.log
+# Log file: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/vivado.log
+# Journal file: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/vivado.jou
+#-----------------------------------------------------------
+source /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/run_vivado_haps.tcl
+run_haps_drc_HAUMR-2
+run_haps_drc_HATDM-4
+run_haps_drc_HADRC-1
+run_haps_drc_HAUMR-2
+run_haps_drc_HATDM-3
+run_haps_drc_HAUMR-1
+run_haps_drc_HAUMR-2
+run_haps_drc_HATDM-1
+run_haps_drc_HATDM-2
+run_haps_drc_HATDM-3
+run_haps_drc_HATDM-4
+run_haps_drc_HADRC-1
+run_haps_drc_HAUMR-1
+run_haps_drc_HAUMR-2
+run_haps_drc_HATDM-1
+run_haps_drc_HATDM-2
+run_haps_drc_HATDM-3

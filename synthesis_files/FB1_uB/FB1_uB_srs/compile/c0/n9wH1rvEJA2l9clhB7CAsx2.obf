@@ -1,0 +1,3 @@
+-referencedir ../../../
+-srclist src_srs.txt
+-cdclist cdc_files.txt

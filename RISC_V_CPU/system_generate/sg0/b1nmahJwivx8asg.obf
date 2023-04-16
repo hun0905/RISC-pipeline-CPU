@@ -1,0 +1,2 @@
+partition_optimization_control -route_priority multi_hop_path
+partition_optimization_control -effort low

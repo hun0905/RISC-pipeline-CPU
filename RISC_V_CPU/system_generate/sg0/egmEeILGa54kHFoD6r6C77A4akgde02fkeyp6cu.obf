@@ -1,0 +1,13 @@
+
+
+
+ -------------------------------------------------
+|SLP WRITE REASON FOR MACHINE GENERATION OF MODULE FOR FB1_uD FPGA|
+ --------------------------------------------------
+
+	 OrigViewName                                       	|	 ViewName                                           	|	Status     	|	Reason			
+======================================================================================================================================================
+	 NA                                                 	|	 FB1_uD_dut                                         	|	MODIFIED   	|	UMR, SCEMI and other HAPS	
+	 DM                                                 	|	 DM                                                 	|	ORIGINAL   	|	NA	
+	 MEM_WB                                             	|	 MEM_WB                                             	|	ORIGINAL   	|	NA	
+	 MUX                                                	|	 MUX                                                	|	ORIGINAL   	|	NA	

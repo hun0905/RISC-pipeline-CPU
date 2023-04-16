@@ -1,0 +1,18 @@
+set protocompiler_working_directory {/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0}
+cd {/home/u108/u108061217/RISC-V-pipeline-CPU}
+add_source_path {/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0}
+bfg_restrict
+board_haps_target HAPS-100 -readback 0 -dpi 0 -clockgen 0
+if { [catch {source /home/u108/u108061217/RISC-V-pipeline-CPU/board.tss} ] } {
+    puts $errorInfo
+    exit 9
+}
+cd $protocompiler_working_directory
+bfg_restrict -disable
+board_system_save -tsd targetsystem.tsd
+report_board_system targetsystem.rpt
+board_system_save -board targetsystem.vb
+board_system_save -connectivity connectivity.tcl
+board_system_save -srs targetsystem.srs -board targetsystem.vb
+board_system_save -bcf targetsystem.bcf -srs targetsystem.srs
+report_board_system tss.rpt

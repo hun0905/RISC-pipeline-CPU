@@ -1,0 +1,1047 @@
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: BN569 |Target FPGA is located at FBx_B (Type HAPS100_4F).  
+@N: Z361 |Setting IO Standard SSTL_12 on port ADDOUTID_63_0[16]
+@N: Z361 |Setting IO Standard SSTL_12 on port ADDOUTID_63_0[17]
+@N: Z361 |Setting IO Standard SSTL_12 on port ADDOUTID_63_0[18]
+@N: Z361 |Setting IO Standard SSTL_12 on port ADDOUTID_63_0[19]
+@N: Z361 |Setting IO Standard SSTL_12 on port ADDOUTID_63_0[20]
+@N: Z361 |Setting IO Standard SSTL_12 on port ADDOUTID_63_0[21]
+@N: Z361 |Setting IO Standard SSTL_12 on port ADDOUTID_63_0[22]
+@N: Z361 |Setting IO Standard SSTL_12 on port ADDOUTID_63_0[23]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[14]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[15]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[16]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[17]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[18]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[19]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[20]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[21]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[22]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[23]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[24]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[25]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[26]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[27]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[28]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[29]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[30]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[31]
+@N: Z361 |Setting IO Standard SSTL_12 on port DMOUTWB[32]
+@N: Z361 |Setting IO Standard SSTL_12 on port cpm_r_HSTDM_4_FB1_AI1_N_18
+@N: Z361 |Setting IO Standard SSTL_12 on port pin_E34
+@N: Z361 |Setting IO Standard SSTL_12 on port cpm_r_HSTDM_4_FB1_AI1_P_18
+@N: Z361 |Setting IO Standard SSTL_12 on port pin_F34
+@N: Z361 |Setting IO Standard SSTL_12 on port pin_B32
+@N: Z361 |Setting IO Standard SSTL_12 on port cpm_r_HSTDM_4_FB1_BI3_N_8
+@N: Z361 |Setting IO Standard SSTL_12 on port cpm_r_HSTDM_4_FB1_BI3_N_7
+@N: Z361 |Setting IO Standard SSTL_12 on port pin_B33
+@N: Z361 |Setting IO Standard SSTL_12 on port cpm_r_HSTDM_4_FB1_BI3_P_8
+@N: Z361 |Setting IO Standard SSTL_12 on port cpm_r_HSTDM_4_FB1_BI3_P_7
+@N: FX493 |Applying initial value "0" on instance aptn_reset_sync_rst_n.
+@N: FX493 |Applying initial value "0" on instance aptn_reset_sync_rst_n_0.
+@N: FX493 |Applying initial value "0" on instance aptn_reset_sync_rst_n_1.
+@N: FX493 |Applying initial value "0" on instance aptn_reset_sync_rst_n_2.
+@N: FX493 |Applying initial value "0" on instance aptn_reset_sync_rst_n_3.
+@N: FX493 |Applying initial value "0" on instance aptn_reset_sync_rst_n_4.
+@N: FX493 |Applying initial value "0" on instance aptn_reset_sync_rst_n_5.
+@N: FX493 |Applying initial value "0" on instance aptn_reset_sync_rst_n_6.
+@N: FX493 |Applying initial value "0" on instance rst_in_sync1.
+@N: FX493 |Applying initial value "0" on instance rst_in_sync3.
+@N: FX493 |Applying initial value "0" on instance rst_in_meta.
+@N: FX493 |Applying initial value "0" on instance rst_in_out.
+@N: FX493 |Applying initial value "0" on instance rst_in_sync2.
+@N: BN576 |Inserting bsa19_system_ip_wrapper root module 'bsa19_system_ip_wrapper' inside module FB1_uB.
+@N: BN567 |HSTDM training will be done during system configuration. 
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_resetn.R1 (in view: VerGenLib.hstdm_controller_0s_1048576s_6s_4s_12s_48s_32s_2s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_resetn.R0 (in view: VerGenLib.hstdm_controller_0s_1048576s_6s_4s_12s_48s_32s_2s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance reset_gen_inst.reset_release_pulse_gen_inst.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_gen_inst.reset_release_pulse_gen_inst.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_gen_inst.longer_pulse_inst.out.
+@N: FX493 |Applying initial value "1" on instance reset_gen_inst.ar_hstdm_reset.R0.
+@N: FX493 |Applying initial value "1" on instance reset_gen_inst.ar_hstdm_reset.R1.
+@N: FX493 |Applying initial value "0" on instance reset_gen_inst.first_reset_done.
+@N: FX493 |Applying initial value "1" on instance reset_gen_inst.reset_pulse.
+@N: FX493 |Applying initial value "0" on instance hstdm_ctrl_inst.longer_pulse_inst.out.
+@N: FX493 |Applying initial value "00" on instance hstdm_ctrl_inst.self_test_start_rx_out[1:0].
+@N: FX493 |Applying initial value "00" on instance hstdm_ctrl_inst.self_test_start_tx_out[1:0].
+@N: FX493 |Applying initial value "000" on instance hstdm_ctrl_inst.tc_status[2:0].
+@N: FX493 |Applying initial value "0" on instance cmd_script_ack_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance cmd_script_ack_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance TXCTRL_OVERLAP.out.
+@N: FX493 |Applying initial value "1" on instance ar_infopipe_reset.R0.
+@N: FX493 |Applying initial value "1" on instance ar_infopipe_reset.R1.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance SIM_TRAINING_DONE.
+@N: FX493 |Applying initial value "0" on instance SIM_TRAINING_ERROR.
+@N: FX493 |Applying initial value "0" on instance SIM_TRAINING_TIMEOUT.
+@N: FX493 |Applying initial value "0" on instance SIMULATION.
+@N: FX493 |Applying initial value "0" on instance SIMULATION_DISABLE_TRAINING.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R0.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R1.
+@N: FX493 |Applying initial value "0" on instance rst_delay.out.
+@N: FX493 |Applying initial value "0" on instance phy_en_delay.out.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R0.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R1.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R0.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R1.
+@N: FX493 |Applying initial value "0" on instance rst_delay.out.
+@N: FX493 |Applying initial value "0" on instance phy_en_delay.out.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R0.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R1.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R0.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R1.
+@N: FX493 |Applying initial value "0" on instance rst_delay.out.
+@N: FX493 |Applying initial value "0" on instance phy_en_delay.out.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R0.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R1.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R0.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R1.
+@N: FX493 |Applying initial value "0" on instance rst_delay.out.
+@N: FX493 |Applying initial value "0" on instance phy_en_delay.out.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R0.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R1.
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":7196:9:7196:22|Assigning HSTDM BUFGCE TXCLKDIV2\.txclkdiv2_bufg in hstdm_clkgen_1200_bank60 (in view: TraceBuildLib.FB1_uB(verilog_0)) to CLOCK_REGION X7Y1 
+@N: FX493 |Applying initial value "1" on instance ar_locked.R0.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R1.
+@N: FX493 |Applying initial value "0" on instance rst_delay.out.
+@N: FX493 |Applying initial value "0" on instance phy_en_delay.out.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R0.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R1.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R0.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R1.
+@N: FX493 |Applying initial value "0" on instance rst_delay.out.
+@N: FX493 |Applying initial value "0" on instance phy_en_delay.out.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R0.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R1.
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4477:3:4477:16|Assigning HSTDM BUFGCE_DIV BASE4\.rxclkdiv4_bufg in hstdm_clkgen_1200_rx_bank69_block1 (in view: TraceBuildLib.FB1_uB(verilog_0)) to CLOCK_REGION X7Y10 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4477:3:4477:16|Assigning HSTDM BUFGCE_DIV BASE4\.rxclkdiv4_bufg in hstdm_clkgen_1200_rx_bank69_block1 (in view: TraceBuildLib.FB1_uB(verilog_0)) to BUFGCE_DIV site(s) BUFGCE_DIV_X1Y40 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4475:3:4475:16|Assigning HSTDM BUFGCE BASE4\.rxclkdiv2_bufg in hstdm_clkgen_1200_rx_bank69_block1 (in view: TraceBuildLib.FB1_uB(verilog_0)) to CLOCK_REGION X7Y10 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4477:3:4477:16|Assigning HSTDM BUFGCE_DIV BASE4\.rxclkdiv4_bufg in hstdm_clkgen_1200_rx_bank71_block2 (in view: TraceBuildLib.FB1_uB(verilog_0)) to CLOCK_REGION X7Y12 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4477:3:4477:16|Assigning HSTDM BUFGCE_DIV BASE4\.rxclkdiv4_bufg in hstdm_clkgen_1200_rx_bank71_block2 (in view: TraceBuildLib.FB1_uB(verilog_0)) to BUFGCE_DIV site(s) BUFGCE_DIV_X1Y48 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4475:3:4475:16|Assigning HSTDM BUFGCE BASE4\.rxclkdiv2_bufg in hstdm_clkgen_1200_rx_bank71_block2 (in view: TraceBuildLib.FB1_uB(verilog_0)) to CLOCK_REGION X7Y12 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4477:3:4477:16|Assigning HSTDM BUFGCE_DIV BASE4\.rxclkdiv4_bufg in hstdm_clkgen_1200_rx_bank36_block3 (in view: TraceBuildLib.FB1_uB(verilog_0)) to CLOCK_REGION X0Y17 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4477:3:4477:16|Assigning HSTDM BUFGCE_DIV BASE4\.rxclkdiv4_bufg in hstdm_clkgen_1200_rx_bank36_block3 (in view: TraceBuildLib.FB1_uB(verilog_0)) to BUFGCE_DIV site(s) BUFGCE_DIV_X0Y68 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4475:3:4475:16|Assigning HSTDM BUFGCE BASE4\.rxclkdiv2_bufg in hstdm_clkgen_1200_rx_bank36_block3 (in view: TraceBuildLib.FB1_uB(verilog_0)) to CLOCK_REGION X0Y17 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4477:3:4477:16|Assigning HSTDM BUFGCE_DIV BASE4\.rxclkdiv4_bufg in hstdm_clkgen_1200_rx_bank37_block4 (in view: TraceBuildLib.FB1_uB(verilog_0)) to CLOCK_REGION X0Y18 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4477:3:4477:16|Assigning HSTDM BUFGCE_DIV BASE4\.rxclkdiv4_bufg in hstdm_clkgen_1200_rx_bank37_block4 (in view: TraceBuildLib.FB1_uB(verilog_0)) to BUFGCE_DIV site(s) BUFGCE_DIV_X0Y72 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4475:3:4475:16|Assigning HSTDM BUFGCE BASE4\.rxclkdiv2_bufg in hstdm_clkgen_1200_rx_bank37_block4 (in view: TraceBuildLib.FB1_uB(verilog_0)) to CLOCK_REGION X0Y18 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4477:3:4477:16|Assigning HSTDM BUFGCE_DIV BASE4\.rxclkdiv4_bufg in hstdm_clkgen_1200_rx_bank38_block5 (in view: TraceBuildLib.FB1_uB(verilog_0)) to CLOCK_REGION X0Y19 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4477:3:4477:16|Assigning HSTDM BUFGCE_DIV BASE4\.rxclkdiv4_bufg in hstdm_clkgen_1200_rx_bank38_block5 (in view: TraceBuildLib.FB1_uB(verilog_0)) to BUFGCE_DIV site(s) BUFGCE_DIV_X0Y76 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4475:3:4475:16|Assigning HSTDM BUFGCE BASE4\.rxclkdiv2_bufg in hstdm_clkgen_1200_rx_bank38_block5 (in view: TraceBuildLib.FB1_uB(verilog_0)) to CLOCK_REGION X0Y19 
+@N: FX493 |Applying initial value "0" on instance ar_txctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_txctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance txctrl0_delay.
+@N: FX493 |Applying initial value "00000000" on instance clkpattern[7:0].
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4477:3:4477:16|Assigning HSTDM BUFGCE_DIV BASE4\.rxclkdiv4_bufg in hstdm_clkgen_1200_rx_bank60_block7 (in view: TraceBuildLib.FB1_uB(verilog_0)) to CLOCK_REGION X7Y1 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4477:3:4477:16|Assigning HSTDM BUFGCE_DIV BASE4\.rxclkdiv4_bufg in hstdm_clkgen_1200_rx_bank60_block7 (in view: TraceBuildLib.FB1_uB(verilog_0)) to BUFGCE_DIV site(s) BUFGCE_DIV_X1Y4 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4475:3:4475:16|Assigning HSTDM BUFGCE BASE4\.rxclkdiv2_bufg in hstdm_clkgen_1200_rx_bank60_block7 (in view: TraceBuildLib.FB1_uB(verilog_0)) to CLOCK_REGION X7Y1 
+@N: FX493 |Applying initial value "0" on instance ar_train_latched.R0.
+@N: FX493 |Applying initial value "0" on instance ar_train_latched.R1.
+@N: FX493 |Applying initial value "0" on instance channel_rst_pulse_inst.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance channel_rst_pulse_inst.fdcr2.IntQ.
+@N: FX493 |Applying initial value "1" on instance ar_infop_reset.R0.
+@N: FX493 |Applying initial value "1" on instance ar_infop_reset.R1.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_div.
+@N: FX493 |Applying initial value "0" on instance ar_ssc_start.R0.
+@N: FX493 |Applying initial value "0" on instance ar_ssc_start.R1.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance flag_ssc_start.
+@N: FX493 |Applying initial value "0" on instance hold_done_flag.
+@N: FX493 |Applying initial value "0" on instance flag_ssc.
+@N: FX493 |Applying initial value "0" on instance training_disabled.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_0(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: FX493 |Applying initial value "0" on instance ar_train_latched.R0.
+@N: FX493 |Applying initial value "0" on instance ar_train_latched.R1.
+@N: FX493 |Applying initial value "0" on instance channel_rst_pulse_inst.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance channel_rst_pulse_inst.fdcr2.IntQ.
+@N: FX493 |Applying initial value "1" on instance ar_infop_reset.R0.
+@N: FX493 |Applying initial value "1" on instance ar_infop_reset.R1.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_div.
+@N: FX493 |Applying initial value "0" on instance ar_ssc_start.R0.
+@N: FX493 |Applying initial value "0" on instance ar_ssc_start.R1.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance flag_ssc_start.
+@N: FX493 |Applying initial value "0" on instance hold_done_flag.
+@N: FX493 |Applying initial value "0" on instance flag_ssc.
+@N: FX493 |Applying initial value "0" on instance training_disabled.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_1(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_2(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_2(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_3(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_3(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_4(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_4(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: FX493 |Applying initial value "0" on instance ar_train_latched.R0.
+@N: FX493 |Applying initial value "0" on instance ar_train_latched.R1.
+@N: FX493 |Applying initial value "0" on instance channel_rst_pulse_inst.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance channel_rst_pulse_inst.fdcr2.IntQ.
+@N: FX493 |Applying initial value "1" on instance ar_infop_reset.R0.
+@N: FX493 |Applying initial value "1" on instance ar_infop_reset.R1.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_div.
+@N: FX493 |Applying initial value "0" on instance ar_ssc_start.R0.
+@N: FX493 |Applying initial value "0" on instance ar_ssc_start.R1.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance flag_ssc_start.
+@N: FX493 |Applying initial value "0" on instance hold_done_flag.
+@N: FX493 |Applying initial value "0" on instance flag_ssc.
+@N: FX493 |Applying initial value "0" on instance training_disabled.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_5(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_5(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_6(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_6(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_7(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_7(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_8(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_8(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: FX493 |Applying initial value "0" on instance ar_train_latched.R0.
+@N: FX493 |Applying initial value "0" on instance ar_train_latched.R1.
+@N: FX493 |Applying initial value "0" on instance channel_rst_pulse_inst.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance channel_rst_pulse_inst.fdcr2.IntQ.
+@N: FX493 |Applying initial value "1" on instance ar_infop_reset.R0.
+@N: FX493 |Applying initial value "1" on instance ar_infop_reset.R1.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_div.
+@N: FX493 |Applying initial value "0" on instance ar_ssc_start.R0.
+@N: FX493 |Applying initial value "0" on instance ar_ssc_start.R1.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance flag_ssc_start.
+@N: FX493 |Applying initial value "0" on instance hold_done_flag.
+@N: FX493 |Applying initial value "0" on instance flag_ssc.
+@N: FX493 |Applying initial value "0" on instance training_disabled.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_9(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_9(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_10(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_10(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_11(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_11(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_12(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_12(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: FX493 |Applying initial value "0" on instance ar_train_latched.R0.
+@N: FX493 |Applying initial value "0" on instance ar_train_latched.R1.
+@N: FX493 |Applying initial value "0" on instance channel_rst_pulse_inst.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance channel_rst_pulse_inst.fdcr2.IntQ.
+@N: FX493 |Applying initial value "1" on instance ar_infop_reset.R0.
+@N: FX493 |Applying initial value "1" on instance ar_infop_reset.R1.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_div.
+@N: FX493 |Applying initial value "0" on instance ar_ssc_start.R0.
+@N: FX493 |Applying initial value "0" on instance ar_ssc_start.R1.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance flag_ssc_start.
+@N: FX493 |Applying initial value "0" on instance hold_done_flag.
+@N: FX493 |Applying initial value "0" on instance flag_ssc.
+@N: FX493 |Applying initial value "0" on instance training_disabled.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_13(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_13(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_14(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_14(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_15(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_15(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_16(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_16(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010010010000110" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "100101010000010" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "111000111110100" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010001111001011" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "100100100001100" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "110111111000011" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010001100010000" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "100011110010110" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "110110110010010" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_2(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010001001010101" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "100011000100000" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "110101101100001" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_3(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010000110011010" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "100010010101010" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "110100100110000" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_4(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010000011011111" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "100001100110100" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "110011011111111" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_5(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010000000100100" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "100000110111110" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "110010011001110" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_6(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001111101101001" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "100000001001000" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "110001010011101" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_7(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001111010101110" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011111011010010" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "110000001101100" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_8(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001110111110011" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011110101011100" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "101111000111011" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_9(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001110100111000" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011101111100110" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "101110000001010" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_10(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001110001111101" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011101001110000" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "101100111011001" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_11(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001101111000010" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011100011111010" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "101011110101000" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_12(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001101100000111" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011011110000100" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "101010101110111" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_13(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001101001001100" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011011000001110" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "101001101000110" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_14(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001100110010001" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011010010011000" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "101000100010101" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_15(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001100011010110" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011001100100010" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "100111011100100" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_16(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001100000011011" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011000110101100" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "100110010110011" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_17(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001011101100000" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011000000110110" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "100101010000010" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_18(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001011010100101" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010111011000000" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "100100001010001" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_19(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001001011111110" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010011101110010" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011110101011100" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_20(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001001001000011" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010010111111100" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011101100101011" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_21(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001000110001000" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010010010000110" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011100011111010" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_22(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001000011001101" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010001100010000" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011011011001001" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_23(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000111010011100" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001111010101110" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "011000000110110" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_24(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000110111100001" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001110100111000" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010111000000101" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_25(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000110100100110" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001101111000010" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010101111010100" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_26(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000110001101011" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001101001001100" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010100110100011" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_27(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000101110110000" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001100011010110" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010011101110010" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_28(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000101011110101" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001011101100000" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010010101000001" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_29(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000101000111010" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001010111101010" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010001100010000" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_30(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000100101111111" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001010001110100" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "010000011011111" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_31(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000100011000100" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001001011111110" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001111010101110" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000100000001001" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001000110001000" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001110001111101" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_33(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000011101001110" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001000000010010" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001101001001100" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_34(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000011010010011" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000111010011100" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001100000011011" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_35(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000010111011000" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000110100100110" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001010111101010" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_36(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000010100011101" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000101110110000" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001001110111001" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_37(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000010001100010" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000101000111010" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "001000110001000" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_38(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000001110100111" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000100011000100" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000111101010111" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_39(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000001011101100" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000011101001110" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000110100100110" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_40(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R0.
+@N: FX493 |Applying initial value "0" on instance ar_tx_ctrl1.R1.
+@N: FX493 |Applying initial value "000000000001000" on instance training_bit_gen_inst.BIT\[0\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000001000110001" on instance training_bit_gen_inst.BIT\[1\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000010111011000" on instance training_bit_gen_inst.BIT\[2\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "000101011110101" on instance training_bit_gen_inst.BIT\[3\]\.scrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance ar_train_latched.R0.
+@N: FX493 |Applying initial value "0" on instance ar_train_latched.R1.
+@N: FX493 |Applying initial value "0" on instance channel_rst_pulse_inst.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance channel_rst_pulse_inst.fdcr2.IntQ.
+@N: FX493 |Applying initial value "1" on instance ar_infop_reset.R0.
+@N: FX493 |Applying initial value "1" on instance ar_infop_reset.R1.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_div.
+@N: FX493 |Applying initial value "0" on instance ar_ssc_start.R0.
+@N: FX493 |Applying initial value "0" on instance ar_ssc_start.R1.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance flag_ssc_start.
+@N: FX493 |Applying initial value "0" on instance hold_done_flag.
+@N: FX493 |Applying initial value "0" on instance flag_ssc.
+@N: FX493 |Applying initial value "0" on instance training_disabled.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_17(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_17(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_18(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_18(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_word.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance train_pulse_local.
+@N: FX493 |Applying initial value "0" on instance train_word_local.
+@N: FX493 |Applying initial value "0" on instance bitslip_reset_local.
+@N: FX1031 |HSTDM unable to find a user reset. Reset may not exist or may have been released prior to HSTDM training complete.
+@N: FX493 |Applying initial value "1" on instance ar_infopipe_reset.R0.
+@N: FX493 |Applying initial value "1" on instance ar_infopipe_reset.R1.
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1081:76:1081:108|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_enable_out_2, tag haps_system_capim_enable_out_2 to syn_hyper_source sysip_inst.hp_haps_system_capim_enable_out_2
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1080:72:1080:100|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_rd_raw_2, tag haps_system_capim_rd_raw_2 to syn_hyper_source sysip_inst.hp_haps_system_capim_rd_raw_2
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1079:72:1079:100|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_wr_raw_2, tag haps_system_capim_wr_raw_2 to syn_hyper_source sysip_inst.hp_haps_system_capim_wr_raw_2
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1078:74:1078:104|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_data_out_2, tag haps_system_capim_data_out_2 to syn_hyper_source sysip_inst.hp_haps_system_capim_data_out_2
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1075:69:1075:101|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_enable_out_3, tag haps_system_capim_enable_out_3 to syn_hyper_source sysip_inst.hp_haps_system_capim_enable_out_3
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1074:65:1074:93|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_rd_raw_3, tag haps_system_capim_rd_raw_3 to syn_hyper_source sysip_inst.hp_haps_system_capim_rd_raw_3
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1073:65:1073:93|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_wr_raw_3, tag haps_system_capim_wr_raw_3 to syn_hyper_source sysip_inst.hp_haps_system_capim_wr_raw_3
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1072:67:1072:97|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_data_out_3, tag haps_system_capim_data_out_3 to syn_hyper_source sysip_inst.hp_haps_system_capim_data_out_3
+@N: BN397 :|Connected syn_hyper_connect hyper_connect_hstdm_refclk_100, tag hstdm_refclk_100 to syn_hyper_source hyper_src_hstdm_refclk_100
+@N: BN397 :|Connected syn_hyper_connect hyper_connect_umr_clk, tag umr_clk to syn_hyper_source hyper_src_umr_clk
+@N: BN397 :|Connected syn_hyper_connect hyper_connect_hstdm_training_start, tag hstdm_training_start to syn_hyper_source hyper_src_hstdm_training_start
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/haps_systemip/system_memory.v":638:72:638:104|Connected syn_hyper_connect haps_system_memory_interface.hp_haps_system_capim_enable_out_1, tag haps_system_capim_enable_out_1 to syn_hyper_source sysip_inst.hp_haps_system_capim_enable_out_1
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/haps_systemip/system_memory.v":637:67:637:95|Connected syn_hyper_connect haps_system_memory_interface.hp_haps_system_capim_rd_raw_1, tag haps_system_capim_rd_raw_1 to syn_hyper_source sysip_inst.hp_haps_system_capim_rd_raw_1
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/haps_systemip/system_memory.v":636:67:636:95|Connected syn_hyper_connect haps_system_memory_interface.hp_haps_system_capim_wr_raw_1, tag haps_system_capim_wr_raw_1 to syn_hyper_source sysip_inst.hp_haps_system_capim_wr_raw_1
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/haps_systemip/system_memory.v":635:82:635:112|Connected syn_hyper_connect haps_system_memory_interface.hp_haps_system_capim_data_out_1, tag haps_system_capim_data_out_1 to syn_hyper_source sysip_inst.hp_haps_system_capim_data_out_1
+@N: BN397 :|Connected syn_hyper_connect hyper_connect_haps_umr3_reset, tag haps_umr3_reset to syn_hyper_source hyper_src_haps_umr3_reset
+@N: BN397 :|Connected syn_hyper_connect hyper_connect_haps_umr3_clk, tag haps_umr3_clk to syn_hyper_source hyper_src_haps_umr3_clk
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":714:84:714:113|Connected syn_hyper_connect sysip_inst.hp_haps_system_capim_data_in_3, tag haps_system_capim_data_in_3 to syn_hyper_source hstdm_system_capim_interface.hp_haps_system_capim_data_in_3
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":713:84:713:113|Connected syn_hyper_connect sysip_inst.hp_haps_system_capim_data_in_2, tag haps_system_capim_data_in_2 to syn_hyper_source hstdm_system_capim_interface.hp_haps_system_capim_data_in_2
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":712:84:712:113|Connected syn_hyper_connect sysip_inst.hp_haps_system_capim_data_in_1, tag haps_system_capim_data_in_1 to syn_hyper_source haps_system_memory_interface.hp_haps_system_capim_data_in_1
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":332:51:332:58|Tristate driver capim2_data_in_0_1 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_1 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_2 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_2 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_3 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_3 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_4 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_4 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_5 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_5 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_6 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_6 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_7 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_7 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_8 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_8 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_9 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_9 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_10 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_10 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":752:2:752:7|Removing sequential instance rst_in_out (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) of type view:PrimLib.dffrs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_txctrl0.R1 (in view: TdmLib.hstdm_tx_clkgen_0s_4s_1200s_150s_DATA_AND_CLOCK_1s_TRUE_40s_ULTRASCALE_PLUS_Z1_FB1_uB(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":752:2:752:7|Removing sequential instance rst_in_sync3 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) of type view:PrimLib.dffrs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_txctrl0.R0 (in view: TdmLib.hstdm_tx_clkgen_0s_4s_1200s_150s_DATA_AND_CLOCK_1s_TRUE_40s_ULTRASCALE_PLUS_Z1_FB1_uB(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":7461:1:7461:6|Removing sequential instance rx_core.data_out.data_out[1] (in view: TdmLib.hstdm_rx_Z3_1_FB1_uB(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":7461:1:7461:6|Removing sequential instance rx_core.data_out.data_out[2] (in view: TdmLib.hstdm_rx_Z3_1_FB1_uB(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":7461:1:7461:6|Removing sequential instance rx_core.data_out.data_out[3] (in view: TdmLib.hstdm_rx_Z3_1_FB1_uB(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1327:1:1327:6|Removing sequential instance reset_erd_flag (in view: TdmLib.hstdm_controller_0s_1048576s_6s_4s_12s_48s_32s_2s_FB1_uB(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_en_vtc.R1 (in view: TdmLib.hstdm_ultrascale_plle3_Z1_FB1_uB(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_en_vtc.R1 (in view: TdmLib.hstdm_ultrascale_plle3_Z1_0_FB1_uB(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_en_vtc.R1 (in view: TdmLib.hstdm_ultrascale_plle3_Z1_1_FB1_uB(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_en_vtc.R1 (in view: TdmLib.hstdm_ultrascale_plle3_Z1_2_FB1_uB(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_en_vtc.R1 (in view: TdmLib.hstdm_ultrascale_plle3_Z1_3_FB1_uB(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_en_vtc.R1 (in view: TdmLib.hstdm_ultrascale_plle3_Z1_4_FB1_uB(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":752:2:752:7|Removing sequential instance rst_in_sync2 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) of type view:PrimLib.dffrs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_en_vtc.R0 (in view: TdmLib.hstdm_ultrascale_plle3_Z1_FB1_uB(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_en_vtc.R0 (in view: TdmLib.hstdm_ultrascale_plle3_Z1_0_FB1_uB(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_en_vtc.R0 (in view: TdmLib.hstdm_ultrascale_plle3_Z1_1_FB1_uB(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_en_vtc.R0 (in view: TdmLib.hstdm_ultrascale_plle3_Z1_2_FB1_uB(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_en_vtc.R0 (in view: TdmLib.hstdm_ultrascale_plle3_Z1_3_FB1_uB(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_en_vtc.R0 (in view: TdmLib.hstdm_ultrascale_plle3_Z1_4_FB1_uB(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":752:2:752:7|Removing sequential instance rst_in_sync1 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) of type view:PrimLib.dffrs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":752:2:752:7|Removing sequential instance rst_in_meta (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) of type view:PrimLib.dffrs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":306:1:306:6|Removing sequential instance hstdm_ctrl_inst.longer_pulse_inst.out (in view: TdmLib.hstdm_controller_0s_1048576s_6s_4s_12s_48s_32s_2s_FB1_uB(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":679:1:679:6|Removing sequential instance hstdm_ctrl_inst.reset_erd_flag_pulse (in view: TdmLib.hstdm_controller_0s_1048576s_6s_4s_12s_48s_32s_2s_FB1_uB(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":303:1:303:6|Removing sequential instance hstdm_ctrl_inst.longer_pulse_inst.dly[1] (in view: TdmLib.hstdm_controller_0s_1048576s_6s_4s_12s_48s_32s_2s_FB1_uB(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":273:3:273:8|Removing sequential instance hstdm_ctrl_inst.longer_pulse_inst.DLY.SRL\.SYNC\.delay[255:0] (in view: TdmLib.hstdm_controller_0s_1048576s_6s_4s_12s_48s_32s_2s_FB1_uB(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: MT611 :"/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB/FB1_uB_srs/pre_map/pm0/TraceBuildLib_FB1_uB_X2RFOd":35:0:35:0|Automatically generated clock haps_gclk0_100 is not used and is being removed
+@N: FX1184 |Applying syn_allowed_resources ultrarams=320 on top level netlist FB1_uB 
+@N: FX1146 |Assigning INTERNAL_VREF of iobank 37 to 0.840, which is required by IO standard POD12_DCI of pin MEMREADMEM at B49
+@N: FX1146 |Assigning INTERNAL_VREF of iobank 36 to 0.840, which is required by IO standard POD12_DCI of pin WRMEM[0] at V48
+@N: FX1146 |Assigning INTERNAL_VREF of iobank 38 to 0.840, which is required by IO standard POD12_DCI of pin DMOUTWB[33] at M41
+@N: FX1146 |Assigning INTERNAL_VREF of iobank 60 to 0.840, which is required by IO standard POD12_DCI of pin cpm_r_HSTDM_4_FB1_B2_A_0 at BL16
+@N: BN225 |Writing default property annotation file /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB/FB1_uB_srs/pre_map/pm0/FB1_uB.sap.

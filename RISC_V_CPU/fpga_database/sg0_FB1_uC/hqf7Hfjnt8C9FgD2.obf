@@ -1,0 +1,12 @@
+<!DOCTYPE datastate_doc>
+<STATE datadir="fpga_database/sg0_FB1_uC" lastwritepid="16342" task="fpga_database" module_name="FB1_uC" lastwritehost="ws35" locked="0" link="synthesis_files/FB1_uC/FB1_uC_srs|m0" tcl_script="synthesis_files/FB1_uC/FB1_uC_srs.tcl" name="sg0_FB1_uC" job_name="fpga_database">
+ <prev_state>sg0</prev_state>
+ <options/>
+ <environment/>
+ <tcl_command_args/>
+ <tcl_command></tcl_command>
+ <exports/>
+ <apply_states/>
+ <run_state/>
+ <partition/>
+</STATE>

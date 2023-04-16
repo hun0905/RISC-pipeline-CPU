@@ -1,0 +1,606 @@
+`timescale 100 ps/100 ps
+module USR_ACCESSE2 (
+  CFGCLK,
+  DATA,
+  DATAVALID
+)
+;
+output CFGCLK ;
+output [31:0] DATA ;
+output DATAVALID ;
+endmodule /* USR_ACCESSE2 */
+
+module PLLE3_ADV (
+  CLKFBOUT,
+  CLKOUT0,
+  CLKOUT0B,
+  CLKOUT1,
+  CLKOUT1B,
+  CLKOUTPHY,
+  DO,
+  DRDY,
+  LOCKED,
+  CLKFBIN,
+  CLKIN,
+  CLKOUTPHYEN,
+  DADDR,
+  DCLK,
+  DEN,
+  DI,
+  DWE,
+  PWRDWN,
+  RST
+)
+;
+output CLKFBOUT ;
+output CLKOUT0 ;
+output CLKOUT0B ;
+output CLKOUT1 ;
+output CLKOUT1B ;
+output CLKOUTPHY ;
+output [15:0] DO ;
+output DRDY ;
+output LOCKED ;
+input CLKFBIN ;
+(* xc_padtype="IBUFG" *)input CLKIN ;
+input CLKOUTPHYEN ;
+input [6:0] DADDR ;
+input DCLK ;
+input DEN ;
+input [15:0] DI ;
+input DWE ;
+input PWRDWN ;
+input RST ;
+endmodule /* PLLE3_ADV */
+
+module BITSLICE_CONTROL (
+  CLK_TO_EXT_NORTH,
+  CLK_TO_EXT_SOUTH,
+  DLY_RDY,
+  DYN_DCI,
+  NCLK_NIBBLE_OUT,
+  PCLK_NIBBLE_OUT,
+  RIU_RD_DATA,
+  RIU_VALID,
+  RX_BIT_CTRL_OUT0,
+  RX_BIT_CTRL_OUT1,
+  RX_BIT_CTRL_OUT2,
+  RX_BIT_CTRL_OUT3,
+  RX_BIT_CTRL_OUT4,
+  RX_BIT_CTRL_OUT5,
+  RX_BIT_CTRL_OUT6,
+  TX_BIT_CTRL_OUT0,
+  TX_BIT_CTRL_OUT1,
+  TX_BIT_CTRL_OUT2,
+  TX_BIT_CTRL_OUT3,
+  TX_BIT_CTRL_OUT4,
+  TX_BIT_CTRL_OUT5,
+  TX_BIT_CTRL_OUT6,
+  TX_BIT_CTRL_OUT_TRI,
+  VTC_RDY,
+  CLK_FROM_EXT,
+  EN_VTC,
+  NCLK_NIBBLE_IN,
+  PCLK_NIBBLE_IN,
+  PHY_RDCS0,
+  PHY_RDCS1,
+  PHY_RDEN,
+  PHY_WRCS0,
+  PHY_WRCS1,
+  PLL_CLK,
+  REFCLK,
+  RIU_ADDR,
+  RIU_CLK,
+  RIU_NIBBLE_SEL,
+  RIU_WR_DATA,
+  RIU_WR_EN,
+  RST,
+  RX_BIT_CTRL_IN0,
+  RX_BIT_CTRL_IN1,
+  RX_BIT_CTRL_IN2,
+  RX_BIT_CTRL_IN3,
+  RX_BIT_CTRL_IN4,
+  RX_BIT_CTRL_IN5,
+  RX_BIT_CTRL_IN6,
+  TBYTE_IN,
+  TX_BIT_CTRL_IN0,
+  TX_BIT_CTRL_IN1,
+  TX_BIT_CTRL_IN2,
+  TX_BIT_CTRL_IN3,
+  TX_BIT_CTRL_IN4,
+  TX_BIT_CTRL_IN5,
+  TX_BIT_CTRL_IN6,
+  TX_BIT_CTRL_IN_TRI
+)
+;
+output CLK_TO_EXT_NORTH ;
+output CLK_TO_EXT_SOUTH ;
+output DLY_RDY ;
+output [6:0] DYN_DCI ;
+output NCLK_NIBBLE_OUT ;
+output PCLK_NIBBLE_OUT ;
+output [15:0] RIU_RD_DATA ;
+output RIU_VALID ;
+output [39:0] RX_BIT_CTRL_OUT0 ;
+output [39:0] RX_BIT_CTRL_OUT1 ;
+output [39:0] RX_BIT_CTRL_OUT2 ;
+output [39:0] RX_BIT_CTRL_OUT3 ;
+output [39:0] RX_BIT_CTRL_OUT4 ;
+output [39:0] RX_BIT_CTRL_OUT5 ;
+output [39:0] RX_BIT_CTRL_OUT6 ;
+output [39:0] TX_BIT_CTRL_OUT0 ;
+output [39:0] TX_BIT_CTRL_OUT1 ;
+output [39:0] TX_BIT_CTRL_OUT2 ;
+output [39:0] TX_BIT_CTRL_OUT3 ;
+output [39:0] TX_BIT_CTRL_OUT4 ;
+output [39:0] TX_BIT_CTRL_OUT5 ;
+output [39:0] TX_BIT_CTRL_OUT6 ;
+output [39:0] TX_BIT_CTRL_OUT_TRI ;
+output VTC_RDY ;
+input CLK_FROM_EXT ;
+input EN_VTC ;
+input NCLK_NIBBLE_IN ;
+input PCLK_NIBBLE_IN ;
+input [3:0] PHY_RDCS0 ;
+input [3:0] PHY_RDCS1 ;
+input [3:0] PHY_RDEN ;
+input [3:0] PHY_WRCS0 ;
+input [3:0] PHY_WRCS1 ;
+input PLL_CLK ;
+input REFCLK ;
+input [5:0] RIU_ADDR ;
+input RIU_CLK ;
+input RIU_NIBBLE_SEL ;
+input [15:0] RIU_WR_DATA ;
+input RIU_WR_EN ;
+input RST ;
+input [39:0] RX_BIT_CTRL_IN0 ;
+input [39:0] RX_BIT_CTRL_IN1 ;
+input [39:0] RX_BIT_CTRL_IN2 ;
+input [39:0] RX_BIT_CTRL_IN3 ;
+input [39:0] RX_BIT_CTRL_IN4 ;
+input [39:0] RX_BIT_CTRL_IN5 ;
+input [39:0] RX_BIT_CTRL_IN6 ;
+input [3:0] TBYTE_IN ;
+input [39:0] TX_BIT_CTRL_IN0 ;
+input [39:0] TX_BIT_CTRL_IN1 ;
+input [39:0] TX_BIT_CTRL_IN2 ;
+input [39:0] TX_BIT_CTRL_IN3 ;
+input [39:0] TX_BIT_CTRL_IN4 ;
+input [39:0] TX_BIT_CTRL_IN5 ;
+input [39:0] TX_BIT_CTRL_IN6 ;
+input [39:0] TX_BIT_CTRL_IN_TRI ;
+endmodule /* BITSLICE_CONTROL */
+
+module RX_BITSLICE (
+  CNTVALUEOUT,
+  CNTVALUEOUT_EXT,
+  FIFO_EMPTY,
+  FIFO_WRCLK_OUT,
+  Q,
+  RX_BIT_CTRL_OUT,
+  TX_BIT_CTRL_OUT,
+  CE,
+  CE_EXT,
+  CLK,
+  CLK_EXT,
+  CNTVALUEIN,
+  CNTVALUEIN_EXT,
+  DATAIN,
+  EN_VTC,
+  EN_VTC_EXT,
+  FIFO_RD_CLK,
+  FIFO_RD_EN,
+  INC,
+  INC_EXT,
+  LOAD,
+  LOAD_EXT,
+  RST,
+  RST_DLY,
+  RST_DLY_EXT,
+  RX_BIT_CTRL_IN,
+  TX_BIT_CTRL_IN
+)
+;
+output [8:0] CNTVALUEOUT ;
+output [8:0] CNTVALUEOUT_EXT ;
+output FIFO_EMPTY ;
+output FIFO_WRCLK_OUT ;
+output [7:0] Q ;
+output [39:0] RX_BIT_CTRL_OUT ;
+output [39:0] TX_BIT_CTRL_OUT ;
+input CE ;
+input CE_EXT ;
+input CLK ;
+input CLK_EXT ;
+input [8:0] CNTVALUEIN ;
+input [8:0] CNTVALUEIN_EXT ;
+input DATAIN ;
+input EN_VTC ;
+input EN_VTC_EXT ;
+input FIFO_RD_CLK ;
+input FIFO_RD_EN ;
+input INC ;
+input INC_EXT ;
+input LOAD ;
+input LOAD_EXT ;
+input RST ;
+input RST_DLY ;
+input RST_DLY_EXT ;
+input [39:0] RX_BIT_CTRL_IN ;
+input [39:0] TX_BIT_CTRL_IN ;
+endmodule /* RX_BITSLICE */
+
+module RXTX_BITSLICE (
+  FIFO_EMPTY,
+  FIFO_WRCLK_OUT,
+  O,
+  Q,
+  RX_BIT_CTRL_OUT,
+  RX_CNTVALUEOUT,
+  TX_BIT_CTRL_OUT,
+  TX_CNTVALUEOUT,
+  T_OUT,
+  D,
+  DATAIN,
+  FIFO_RD_CLK,
+  FIFO_RD_EN,
+  RX_BIT_CTRL_IN,
+  RX_CE,
+  RX_CLK,
+  RX_CNTVALUEIN,
+  RX_EN_VTC,
+  RX_INC,
+  RX_LOAD,
+  RX_RST,
+  RX_RST_DLY,
+  T,
+  TBYTE_IN,
+  TX_BIT_CTRL_IN,
+  TX_CE,
+  TX_CLK,
+  TX_CNTVALUEIN,
+  TX_EN_VTC,
+  TX_INC,
+  TX_LOAD,
+  TX_RST,
+  TX_RST_DLY
+)
+;
+output FIFO_EMPTY ;
+output FIFO_WRCLK_OUT ;
+output O ;
+output [7:0] Q ;
+output [39:0] RX_BIT_CTRL_OUT ;
+output [8:0] RX_CNTVALUEOUT ;
+output [39:0] TX_BIT_CTRL_OUT ;
+output [8:0] TX_CNTVALUEOUT ;
+output T_OUT ;
+input [7:0] D ;
+input DATAIN ;
+input FIFO_RD_CLK ;
+input FIFO_RD_EN ;
+input [39:0] RX_BIT_CTRL_IN ;
+input RX_CE ;
+input RX_CLK ;
+input [8:0] RX_CNTVALUEIN ;
+input RX_EN_VTC ;
+input RX_INC ;
+input RX_LOAD ;
+input RX_RST ;
+input RX_RST_DLY ;
+input T ;
+input TBYTE_IN ;
+input [39:0] TX_BIT_CTRL_IN ;
+input TX_CE ;
+input TX_CLK ;
+input [8:0] TX_CNTVALUEIN ;
+input TX_EN_VTC ;
+input TX_INC ;
+input TX_LOAD ;
+input TX_RST ;
+input TX_RST_DLY ;
+endmodule /* RXTX_BITSLICE */
+
+(* haps_ip_type="bsa19_system_ip" , DONT_TOUCH="TRUE" *)
+`ifndef PC_SIMULATION
+module bsa19_system_ip (
+  umr3_sib_link_in,
+  umr3_sib_link_out,
+  afpga_glnk_out,
+  afpga_lock_cdo_glnk_i,
+  afpga_lock_clk_i,
+  afpga_lock_ce_i,
+  afpga_lock_cdi_o,
+  ref_clk_p,
+  ref_clk_n,
+  ref_reset,
+  dummy_port,
+  mnglink_tx,
+  mnglink_rx,
+  gt1_refclk_p,
+  gt1_refclk_n,
+  gt1_txp,
+  gt1_txn,
+  gt1_rxp,
+  gt1_rxn,
+  DBG_RXP,
+  DBG_RXN,
+  DBG_TXP,
+  DBG_TXN,
+  DBG_REFCLKP_0,
+  DBG_REFCLKN_0,
+  dbg_xcvr_user_clk,
+  dbg_dtd_reset,
+  dbg_capiclk,
+  dbg_inta,
+  dbg_intr,
+  dbg_dout_wr,
+  dbg_bram_dout,
+  dbg_din_rd,
+  dbg_bram_din,
+  dbg_snps_dtdpipe_inbus,
+  dbg_snps_dtdpipe_outbus,
+  zpl_out_sib_rst,
+  zpl_out_sib_clk,
+  zpl_out_dsib_tdata,
+  zpl_out_dsib_tsop,
+  zpl_out_dsib_tlast,
+  zpl_out_dsib_twkeep,
+  zpl_out_dsib_tvalid,
+  zpl_iwa_dsib_tready,
+  zpl_iwo_usib_tdata,
+  zpl_iwo_usib_tsop,
+  zpl_iwo_usib_tlast,
+  zpl_iwo_usib_twkeep,
+  zpl_iwo_usib_tvalid,
+  zpl_out_usib_tready,
+  zpl1ton_usib_in0_req,
+  zpl1ton_usib_gnt,
+  zpl_out_wc_ip_clk,
+  zpl_out_srb_clk,
+  zpl_out_srb_rst,
+  zpl_out_srb_addr,
+  zpl_out_srb_data_wr,
+  zpl_iwo_srb_data_rd,
+  zpl_out_srb_wr,
+  umr3_ds0,
+  umr3_ds1,
+  haps_fpga_id,
+  ufpga_lock_clk_o,
+  ufpga_lock_ce_o,
+  ufpga_lock_cdo_o,
+  ufpga_lock_cdi_i,
+  ufpga_hstdm_ctrl_o,
+  ufpga_hstdm_status_i,
+  ufpga_scratch_o,
+  ufpga_scratch_i,
+  ufpga_reset_n_o,
+  ufpga_type_id_o,
+  ufpga_loc_id_o,
+  ufpga_id_o,
+  ufpga_usr_id_o,
+  ufpga_handle_o,
+  ufpga_timestamp_o,
+  HAPS_SIGNATURE_i,
+  capim2_data_in_0,
+  capim2_data_out_0,
+  capim2_rd_out_0,
+  capim2_wr_out_0,
+  capim2_enable_out_0,
+  capim2_data_in_1,
+  capim2_data_out_1,
+  capim2_rd_out_1,
+  capim2_wr_out_1,
+  capim2_enable_out_1,
+  capim2_data_in_2,
+  capim2_data_out_2,
+  capim2_rd_out_2,
+  capim2_wr_out_2,
+  capim2_enable_out_2,
+  capim2_data_in_3,
+  capim2_data_out_3,
+  capim2_rd_out_3,
+  capim2_wr_out_3,
+  capim2_enable_out_3,
+  capim2_data_in_4,
+  capim2_data_out_4,
+  capim2_rd_out_4,
+  capim2_wr_out_4,
+  capim2_enable_out_4,
+  capim2_data_in_6,
+  capim2_data_out_6,
+  capim2_rd_out_6,
+  capim2_wr_out_6,
+  capim2_enable_out_6,
+  capim2_data_in_7,
+  capim2_data_out_7,
+  capim2_rd_out_7,
+  capim2_wr_out_7,
+  capim2_enable_out_7,
+  capim3_enable_out_0,
+  capim3_command_out_0,
+  capim3_command_valid_out_0,
+  capim3_count_out_0,
+  capim3_dout_out_0,
+  capim3_dout_valid_out_0,
+  capim3_din_in_0,
+  capim3_din_valid_in_0,
+  capim3_din_ready_out_0,
+  capim3_inti_type_in_0,
+  capim3_inti_req_in_0,
+  capim3_inti_ack_out_0,
+  reg_if_wr,
+  reg_if_addr,
+  reg_if_din,
+  reg_if_dout_0,
+  reg_if_en_0,
+  reg_if_dout_1,
+  reg_if_en_1,
+  sys_clk,
+  sys_reset_n,
+  gclk0,
+  umr3_clk,
+  umr3_reset,
+  umr2_clk,
+  umr2_reset,
+  haps_clk_200,
+  haps_clk_10,
+  umr3_clk_div_val,
+  haps_clk_160,
+  haps_clk_10_2_sync,
+  haps_clk_50_2_sync,
+  hstdm_refclk_100
+)
+;
+parameter UMR3_DATA_BITWIDTH=256;
+input [1:0] umr3_sib_link_in ;
+output [1:0] umr3_sib_link_out ;
+output afpga_glnk_out ;
+input afpga_lock_cdo_glnk_i ;
+input afpga_lock_clk_i ;
+input afpga_lock_ce_i ;
+output afpga_lock_cdi_o ;
+input ref_clk_p ;
+input ref_clk_n ;
+input ref_reset ;
+output dummy_port ;
+output mnglink_tx ;
+input mnglink_rx ;
+input gt1_refclk_p ;
+input gt1_refclk_n ;
+output [0:3] gt1_txp ;
+output [0:3] gt1_txn ;
+input [0:3] gt1_rxp ;
+input [0:3] gt1_rxn ;
+input [7:0] DBG_RXP ;
+input [7:0] DBG_RXN ;
+output [7:0] DBG_TXP ;
+output [7:0] DBG_TXN ;
+input [3:0] DBG_REFCLKP_0 ;
+input [3:0] DBG_REFCLKN_0 ;
+output [3:0] dbg_xcvr_user_clk ;
+output dbg_dtd_reset ;
+output dbg_capiclk ;
+output dbg_inta ;
+input dbg_intr ;
+output dbg_dout_wr ;
+output [31:0] dbg_bram_dout ;
+output dbg_din_rd ;
+input [31:0] dbg_bram_din ;
+input [3999:0] dbg_snps_dtdpipe_inbus ;
+output [3999:0] dbg_snps_dtdpipe_outbus ;
+output zpl_out_sib_rst ;
+output zpl_out_sib_clk ;
+output [255:0] zpl_out_dsib_tdata ;
+output zpl_out_dsib_tsop ;
+output zpl_out_dsib_tlast ;
+output [7:0] zpl_out_dsib_twkeep ;
+output zpl_out_dsib_tvalid ;
+input zpl_iwa_dsib_tready ;
+input [255:0] zpl_iwo_usib_tdata ;
+input zpl_iwo_usib_tsop ;
+input zpl_iwo_usib_tlast ;
+input [7:0] zpl_iwo_usib_twkeep ;
+input zpl_iwo_usib_tvalid ;
+output zpl_out_usib_tready ;
+input [5:0] zpl1ton_usib_in0_req ;
+output [5:0] zpl1ton_usib_gnt ;
+output zpl_out_wc_ip_clk ;
+output zpl_out_srb_clk ;
+output zpl_out_srb_rst ;
+output [15:0] zpl_out_srb_addr ;
+output [31:0] zpl_out_srb_data_wr ;
+input [31:0] zpl_iwo_srb_data_rd ;
+output zpl_out_srb_wr ;
+inout [519:0] umr3_ds0 /* synthesis syn_tristate = 1 */ ;
+inout [519:0] umr3_ds1 /* synthesis syn_tristate = 1 */ ;
+output [2:0] haps_fpga_id ;
+output ufpga_lock_clk_o ;
+output ufpga_lock_ce_o ;
+output ufpga_lock_cdo_o ;
+input ufpga_lock_cdi_i ;
+output [31:0] ufpga_hstdm_ctrl_o ;
+input [31:0] ufpga_hstdm_status_i ;
+output [31:0] ufpga_scratch_o ;
+input [31:0] ufpga_scratch_i ;
+output ufpga_reset_n_o ;
+output [31:0] ufpga_type_id_o ;
+output [31:0] ufpga_loc_id_o ;
+output [31:0] ufpga_id_o ;
+output [31:0] ufpga_usr_id_o ;
+output [31:0] ufpga_handle_o ;
+output [31:0] ufpga_timestamp_o ;
+input [31:0] HAPS_SIGNATURE_i ;
+input [31:0] capim2_data_in_0 ;
+output [31:0] capim2_data_out_0 ;
+output capim2_rd_out_0 ;
+output capim2_wr_out_0 ;
+output capim2_enable_out_0 ;
+input [31:0] capim2_data_in_1 ;
+output [31:0] capim2_data_out_1 ;
+output capim2_rd_out_1 ;
+output capim2_wr_out_1 ;
+output capim2_enable_out_1 ;
+input [31:0] capim2_data_in_2 ;
+output [31:0] capim2_data_out_2 ;
+output capim2_rd_out_2 ;
+output capim2_wr_out_2 ;
+output capim2_enable_out_2 ;
+input [31:0] capim2_data_in_3 ;
+output [31:0] capim2_data_out_3 ;
+output capim2_rd_out_3 ;
+output capim2_wr_out_3 ;
+output capim2_enable_out_3 ;
+input [31:0] capim2_data_in_4 ;
+output [31:0] capim2_data_out_4 ;
+output capim2_rd_out_4 ;
+output capim2_wr_out_4 ;
+output capim2_enable_out_4 ;
+input [31:0] capim2_data_in_6 ;
+output [31:0] capim2_data_out_6 ;
+output capim2_rd_out_6 ;
+output capim2_wr_out_6 ;
+output capim2_enable_out_6 ;
+input [31:0] capim2_data_in_7 ;
+output [31:0] capim2_data_out_7 ;
+output capim2_rd_out_7 ;
+output capim2_wr_out_7 ;
+output capim2_enable_out_7 ;
+output capim3_enable_out_0 ;
+output [31:0] capim3_command_out_0 ;
+output capim3_command_valid_out_0 ;
+output [31:0] capim3_count_out_0 ;
+output [31:0] capim3_dout_out_0 ;
+output capim3_dout_valid_out_0 ;
+input [31:0] capim3_din_in_0 ;
+input capim3_din_valid_in_0 ;
+output capim3_din_ready_out_0 ;
+input [31:0] capim3_inti_type_in_0 ;
+input capim3_inti_req_in_0 ;
+output capim3_inti_ack_out_0 ;
+output reg_if_wr ;
+output [15:0] reg_if_addr ;
+output [31:0] reg_if_din ;
+input [31:0] reg_if_dout_0 ;
+output reg_if_en_0 ;
+input [31:0] reg_if_dout_1 ;
+output reg_if_en_1 ;
+output sys_clk ;
+output sys_reset_n ;
+output gclk0 ;
+output umr3_clk ;
+output umr3_reset ;
+output umr2_clk ;
+output umr2_reset ;
+output haps_clk_200 ;
+output haps_clk_10 ;
+output [3:0] umr3_clk_div_val ;
+output haps_clk_160 ;
+output haps_clk_10_2_sync ;
+output haps_clk_50_2_sync ;
+output hstdm_refclk_100 ;
+endmodule /* bsa19_system_ip */
+
+
+`endif

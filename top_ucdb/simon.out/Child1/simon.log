@@ -1,0 +1,36 @@
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: MUX Parameterized Name: MUX
+
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: DM Parameterized Name: DM
+
+
+Note-[SM_CHLDRUN_DONE] Child process run completed
+  Child process number '1' with process id '21005'
+  is done with synthesis of total '2' modules
+  SIMON Child CPU Time        : 0.03 sec
+  SIMON Child Wall-Clock Time : 0.09 sec
+  SIMON Child Current Memory  : 379 MB
+  SIMON Child Peak Memory     : 380 MB
+  SIMON Distribution          : 0.01,0.00,0.00,0.00 sec
+  End time                    : Sun Apr  9 22:37:46 2023
+  .
+
+
+Note-[SM_POME] Processing Module/Entity
+  Performing post-processing optimizations on Module/Entity: PC
+
+
+Note-[SM_CHLDRUN_DONE] Child process run completed
+  Child process number '1' with process id '21021'
+  is done with post-processing optimizations of total '1' modules
+  SIMON Child CPU Time        : 0.00 sec
+  SIMON Child Wall-Clock Time : 0.02 sec
+  SIMON Child Current Memory  : 380 MB
+  SIMON Child Peak Memory     : 380 MB
+  SIMON Distribution          : 0.00,0.00,0.00,0.00 sec
+  End time                    : Sun Apr  9 22:37:46 2023
+  .
+

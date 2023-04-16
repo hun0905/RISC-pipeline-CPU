@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> <span style="font-family: courier, monospace; font-weight: bold; font-size:24px">
+<a name="TOP">Pre-partition Log</a></span></head><body style="font-family: courier,monospace; line-height: 1.0; margin-top: 0em; margin-bottom: 0em; font-size:14px; white-space:pre;">
+<span style="color:red; font-family: courier, monospace; font-size:16px">2 Warnings: <a href="#W0"> First Warning</a></span>
+<table><tr><td>1</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px"><a href="#S1" name="SFrom1">Clock Summary</a></td></tr>
+<tr><td>2</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px"><a href="#S2" name="SFrom2">Clock Load Summary</a></td></tr>
+<tr><td>3</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px"><a href="#S3" name="SFrom3">Design Info Report</a></td></tr>
+</table><span># Sun Apr  9 22:39:18 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|pp0
+Synopsys Xilinx Technology Pre-mapping, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 237MB peak: 237MB)
+
+See report top_scck.rpt@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N0"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MF248">MF248</a> Running in 64-bit mode.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N1"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MF666">MF666</a> Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)</span>
+<span>Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+</span><span style="color:red;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="W0"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=FX1020">FX1020</a>Warning:  A simulation mismatch is possible. Ignoring vendor library default initial value on registers, because the default value is not set. To enable vendor library default initial values, add the command "set_option -support_implicit_init_netlist 1" to the project file. <a href="#W1">Next</a></span>
+<span>Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+Pre-partition Prep and Area Estimation steps are being run in parallel.
+Target platform is HAPS-100, running ProtoCompiler.
+
+Fast pre-partition flow is enabled
+
+Target platform is HAPS-100, running ProtoCompiler.
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 255MB peak: 255MB)
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N2"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BZ108">BZ108</a> SCO : Total number of LUTs added: 0.</span>
+<span style="color:red;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="W1"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MT682">MT682</a>Warning:  "/home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc":11:0:11:0|set_input_delay command has no effect on unconnected port. Remove input port rst_n from set_input_delay command. </span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a name="S1">Section 1</a> Clock Summary <a href="#SFrom1">Back</a>
+</span>
+<span>******************
+
+          Start           Requested     Requested     Clock        Clock                Clock
+Level     Clock           Frequency     Period        Type         Group                Load 
+---------------------------------------------------------------------------------------------
+0 -       clk (p:clk)     2.0 MHz       500.000       declared     default_clkgroup     828  
+=============================================================================================
+
+
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a name="S2">Section 2</a> Clock Load Summary <a href="#SFrom2">Back</a>
+</span>
+<span>***********************
+
+          Clock     Source        Clock Pin          Non-clock Pin     Non-clock Pin
+Clock     Load      Pin           Seq Example        Seq Example       Comb Example 
+------------------------------------------------------------------------------------
+clk       828       clk(port)     pc1.PC[63:0].C     -                 -            
+====================================================================================
+
+
+Marking clock path (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+
+Done marking clock path (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N3"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN225">BN225</a> Writing default property annotation file /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/top.sap.</span>
+<span>Finished clock netlist generation (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 255MB peak: 255MB)
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N4"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[13] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N5"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[14] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N6"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[15] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N7"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[16] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N8"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[17] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N9"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[18] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N10"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[19] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N11"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[20] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N12"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[21] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N13"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[22] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N14"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[23] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N15"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[24] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N16"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[25] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N17"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[26] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N18"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[27] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N19"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[28] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N20"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[29] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N21"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[30] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N22"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[31] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N23"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[32] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N24"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[33] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N25"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[34] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N26"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[35] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N27"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[36] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N28"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[37] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N29"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[38] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N30"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[39] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N31"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[40] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N32"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[41] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N33"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[42] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N34"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[43] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N35"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[44] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N36"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[45] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N37"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[46] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N38"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[47] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N39"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[48] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N40"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[49] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N41"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[50] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N42"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[51] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N43"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[52] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N44"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[53] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N45"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[54] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N46"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[55] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N47"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[56] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N48"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[57] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N49"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[58] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N50"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[59] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N51"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[60] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N52"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[61] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N53"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[62] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N54"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN496">BN496</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[63] of work.top(verilog) driven by constant</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N55"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN497">BN497</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[12] of work.top(verilog) -- port has same driver as other top-level ports</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N56"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN497">BN497</a> "/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[11] of work.top(verilog) -- port has same driver as other top-level ports</span>
+<span>Starting top-down timing model generation (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+Adding Clock Info
+Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB
+Computing Async Clock Info
+Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 788MB peak: 788MB
+Saving Clock Database
+Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 788MB peak: 788MB
+
+Top-down timing model generation completed successfully (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 848MB peak: 848MB)
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a name="S3">Section 3</a> Design Info Report <a href="#SFrom3">Back</a>
+</span>
+<span>Found 4 RAM/ROM instances in the design
+Found 0 Big Multiplier(width >= 10) instances in the design
+Found 0 Black Box instances in the design
+Found 0 hierarchies with high no of latches (>10) in the design
+Refer to design_info.rpt for details
+
+####### End of Design Info Report #########
+
+
+Starting constraint checker (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 848MB peak: 848MB)
+
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/top_ucdb/cclock_map.tcl
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 848MB peak: 848MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 848MB peak: 848MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 848MB peak: 848MB)
+
+Process took 0h:00m:11s realtime, 0h:00m:11s cputime
+# Sun Apr  9 22:39:30 2023
+
+###########################################################]
+</body>
+</html>

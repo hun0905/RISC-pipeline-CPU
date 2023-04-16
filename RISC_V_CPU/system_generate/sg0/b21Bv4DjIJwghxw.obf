@@ -1,0 +1,7 @@
+if {[pcf_mode] == "route"} {
+cell_utilization -cell FB1.uA -resource {LUT 225.818 LUTM 0 DFF 193 BRAM 0 URAM 0 DSP 0 ZDPIMOD 0 IO 0 }
+cell_utilization -cell FB1.uB -resource {LUT 578.026 LUTM 0 DFF 205 BRAM 0 URAM 0 DSP 0 ZDPIMOD 0 IO 0 }
+cell_utilization -cell FB1.uC -resource {LUT 436.737 LUTM 0 DFF 137 BRAM 0 URAM 0 DSP 0 ZDPIMOD 0 IO 0 }
+cell_utilization -cell FB1.uD -resource {LUT 226.419 LUTM 0 DFF 144 BRAM 0 URAM 0 DSP 0 ZDPIMOD 0 IO 0 }
+reset_synchronize -top_reset_kb {aptn_reset_sync_rst_n} -init 0 -repl_bins {FB1.uA FB1.uB FB1.uC FB1.uD } -extra_pipeline_stages 2
+}

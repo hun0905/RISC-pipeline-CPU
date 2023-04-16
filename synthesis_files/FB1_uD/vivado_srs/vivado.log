@@ -1,0 +1,1521 @@
+#-----------------------------------------------------------
+# Vivado v2021.1_AR76722 (64-bit)
+# SW Build 3428450 on Thu Jan 13 11:43:02 MST 2022
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Apr  9 23:15:24 2023
+# Process ID: 416
+# Current directory: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs
+# Command line: vivado -mode batch -source /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/run_vivado_haps.tcl -log /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/vivado.log
+# Log file: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/vivado.log
+# Journal file: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/usr/cadtool/csr5306/synopsys/xilinx_vivado/2021.1-ep9/tools/XILINX_VIVADO/patches/AR76722/vivado/scripts/Vivado_init.tcl'
+source /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/run_vivado_haps.tcl
+# source -notrace ./vivado_pc_flags.tcl
+Script version is $Header: //synplicity/ui_dev/misc/vivado_flags_template.tcl#205 $
+# source -notrace ./vivado_pc_env.tcl
+290 Beta devices matching pattern found, 0 enabled.
+# source -notrace ./vivado_pc_procs.tcl
+StrategyMode is fast_turn_around
+WARNING: [Vivado_Tcl 4-252] No drc_checks matched for command 'get_drc_checks PDRC-194'
+Adding HAPS design rule checks: HAUMR-1 HAUMR-2 HATDM-1 HATDM-2 HATDM-3 HATDM-4 HADRC-1
+# global env
+# global VivadoOptionFiles
+# global VivadoPostLinkOptionFiles
+# hVivado_read_netlist
+WARNING: [filemgmt 56-12] File '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD.edf' cannot be added to the project because it already exists in the project, skipping this file
+# hVivado_source_system_ip_option_files
+## set hapstype [lindex $argv 0]
+## set part [lindex $argv 1]
+## set package [lindex $argv 2]
+## set speedgrade [lindex $argv 3]
+## set designname [lindex $argv 4]
+## puts hapstype:$hapstype
+hapstype:hapsaxd
+## puts part:$part
+part:XCVU19P
+## puts package:$package
+package:FSVA3824
+## puts speedgrade:$speedgrade
+speedgrade:-1-e
+## set systemlist [list "hapsaxd" "hapsleo" "haps8x"]
+## proc add_haps_ip {hapstype part package speedgrade designname systemlist} {
+## 	puts proc_hapstype:$hapstype
+## 	puts proc_part:$part
+##         puts proc_package:$package
+## 	puts proc_speedgrade:$speedgrade
+## 	set TclFiles [list]
+## 	set HapsType $hapstype
+## 	set DesignName $designname
+## 	set SpeedGrade $speedgrade
+## 
+## 	foreach system $systemlist {
+## 		if {[string compare $hapstype $system] == 0} {
+## 			puts "$system system of part:$part speedgrade:$speedgrade detected..."
+## 			puts "sourcing IP files..."
+## 			## source all tcl files
+## 			lappend TclFiles {*}[glob -dir ${designname}_hapsip/${system} *.tcl]
+## 			foreach tclfile $TclFiles {
+## 				source $tclfile
+## 			}
+## 		}
+## 	}
+## }
+## add_haps_ip $hapstype $part $package $speedgrade $designname $systemlist
+proc_hapstype:hapsaxd
+proc_part:XCVU19P
+proc_package:FSVA3824
+proc_speedgrade:-1-e
+hapsaxd system of part:XCVU19P speedgrade:-1-e detected...
+sourcing IP files...
+### set HapsIpPath ${designname}_hapsip
+### if {[file exists ${HapsIpPath}/hapsaxd/system_ip/bsa19_haps_systemip.tcl]} { 
+###     source ${HapsIpPath}/hapsaxd/system_ip/bsa19_haps_systemip.tcl
+### }
+#### set ModuleName bsa19_system_ip
+#### set InputMode "EDIF"
+#### set HapsIpPath ${designname}_hapsip
+#### set xsystemlist [list "XCVU3P" "XCVU19P"]
+#### set edif_exist 0
+#### set lock_var "LOCK_V2"
+#### if {${InputMode} == "EDIF"} {
+####    foreach system $xsystemlist {
+####         
+#### 		#Going forward lock v2 will be ON by default. (Even without env variable "pc_haps100_lock_impl_v_2")
+#### 		#make AX3P to old locking. Otherwise regressions will fail.
+#### 		
+####         if {$system=="XCVU3P"} {
+#### 			set env(pc_haps100_lock_impl_v_2) 0
+#### 		}
+#### 		
+#### 		if {[string compare $part $system] == 0} {
+#### 			if {[file exists ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system.edf] || [file exists ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system\_$lock_var.edf]} { 
+#### 				if {[info exists ::env(pc_haps100_lock_impl_v_2)]} {
+#### 					set lock_v2 $::env(pc_haps100_lock_impl_v_2)
+#### 					if {$lock_v2 == 1} {
+#### 						if {[file exists ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system\_$lock_var.edf]} { 
+#### 							file copy -force ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system\_$lock_var.edf ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}.edf
+#### 						} else {
+#### 							puts "ERROR: pc_haps100_lock_impl_v_2 is set to 1 but not able to find ${ModuleName}_$system\_$lock_var.edf"
+#### 							exit 1
+#### 						}
+#### 					} else {
+#### 						if {[file exists ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system.edf]} { 
+#### 							file copy -force ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system.edf ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}.edf
+#### 						} else {
+#### 							puts "ERROR: pc_haps100_lock_impl_v_2 is set to 0 but not able to find ${ModuleName}_$system.edf"
+#### 							exit 1
+#### 						}
+#### 					}
+#### 				} else {
+#### 					if {[file exists ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system\_$lock_var.edf]} { 
+#### 						file copy -force ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system\_$lock_var.edf ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}.edf
+#### 					} else {
+#### 						puts "ERROR: Not able to find ${ModuleName}_$system\_$lock_var.edf"
+#### 						exit 1
+#### 					}
+#### 				}
+####                 read_edif ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}.edf 
+####                 set edif_exist 1
+#### 			} 
+#### 		}
+####    }   
+#### }
+#### if {$edif_exist==0} { 
+####     puts "WARNING: No EDIF found for ${ModuleName} "
+#### } 
+#### foreach system $xsystemlist {
+####   if {[string compare $part $system] == 0} {
+####      if {[file exists ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_edif_$system.xdc]} { 
+####           read_xdc ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_edif_$system.xdc 
+####           puts "Reading ${ModuleName}_edif_$system.xdc constraint file..."
+####         }
+####     }
+#### }
+Reading bsa19_system_ip_edif_XCVU19P.xdc constraint file...
+#### source ${HapsIpPath}/hapsaxd/system_ip/haps_sysip_infra_clocks/haps_sysip_infra_clocks.tcl
+##### set ModuleName haps_sysip_infra_clocks
+##### set InputMode "EDIF"
+##### set HapsIpPath ${designname}_hapsip
+##### set xsystemlist [list "XCVU3P" "XCVU19P"]
+##### if {${InputMode} == "EDIF"} {
+#####      if {[file exists ${HapsIpPath}/hapsaxd/system_ip/haps_sysip_infra_clocks/${ModuleName}.edf]} { 
+#####         read_edif ${HapsIpPath}/hapsaxd/system_ip/haps_sysip_infra_clocks/${ModuleName}.edf 
+#####      } else {
+#####         #puts "WARNING: ${ModuleName}.edf does not exist"
+#####      } 
+##### }
+##### if {[file exists "${HapsIpPath}/hapsaxd/system_ip/haps_sysip_infra_clocks/${ModuleName}.dcp"]} {
+#####      read_checkpoint ${HapsIpPath}/hapsaxd/system_ip/haps_sysip_infra_clocks/${ModuleName}.dcp
+##### }
+##### foreach system $xsystemlist {
+#####   if {[string compare $part $system] == 0} {
+#####     if {[file exists "${HapsIpPath}/hapsaxd/system_ip/haps_sysip_infra_clocks/${ModuleName}_$system.xdc"]} {
+#####      read_xdc ${HapsIpPath}/hapsaxd/system_ip/haps_sysip_infra_clocks/${ModuleName}_$system.xdc
+#####      puts "Reading ${ModuleName}_$system.xdc constraint file..."
+#####        }
+#####     }
+##### }
+Reading haps_sysip_infra_clocks_XCVU19P.xdc constraint file...
+#### source ${HapsIpPath}/hapsaxd/system_ip/umr3_sib/umr3_sib.tcl
+##### proc read_xci {XCI_FILE} {
+#####     upvar IP_PATH ip_path
+##### 
+#####     set ip_name     [file rootname [file tail $XCI_FILE]]
+#####     set ip_dir      ${ip_path}/${ip_name}
+#####     set ip_xci      ${ip_dir}/${ip_name}.xci
+#####     set ip_dcp      ${ip_dir}/${ip_name}.dcp
+##### 
+#####     # ## copy xci into ip repository if not exist or newer
+#####     if {[file exists $ip_xci] == 0 || [expr {[file mtime $XCI_FILE] > [file mtime $ip_xci]}]} {
+#####         puts "INFO: \[read_xci\] copy IP ${ip_xci} to ${ip_dir}"
+#####         file delete -force ${ip_dir}
+#####         file mkdir $ip_dir
+#####         file copy -force $XCI_FILE $ip_dir
+#####     }
+##### 
+#####     # ## read xci file
+#####     read_ip $ip_xci
+##### 
+#####     # ## check if ip needs to be upgraded
+##### 	
+#####     set locked [get_property IS_LOCKED [get_ips $ip_name]]
+#####     set upgrade [get_property UPGRADE_VERSIONS [get_ips $ip_name]]
+#####     if {$upgrade != "" && $locked} {
+#####         puts "INFO: \[read_xci\] upgrade IP ${ip_name}"
+#####         upgrade_ip [get_ips $ip_name]
+#####     }
+##### 
+#####     # ## check if ip needs to be re-generated
+#####     if {([file exists $ip_dcp] == 0) || [expr {[file mtime $ip_xci ] > [file mtime $ip_dcp]}]} {
+#####         # re-generate the IP
+#####         puts "INFO: \[read_xci\] synthesize IP ${ip_name}"
+#####         generate_target all [get_ips $ip_name]
+#####         synth_ip -quiet [get_ips $ip_name]
+#####     }
+##### }
+##### set ModuleName umr3_sib_FPGA_top
+##### set InputMode "EDIF"
+##### set HapsIpPath ${designname}_hapsip
+##### set PATH "${HapsIpPath}/hapsaxd/system_ip/umr3_sib"
+##### puts $PATH
+FB1_uD_hapsip/hapsaxd/system_ip/umr3_sib
+##### set IP_PATH  "${PATH}/ip"
+##### puts $IP_PATH
+FB1_uD_hapsip/hapsaxd/system_ip/umr3_sib/ip
+##### set xsystemlist [list "XCVU3P" "XCVU19P"]
+##### if {${InputMode} == "EDIF"} {
+#####   if {[file exists ${HapsIpPath}/hapsaxd/system_ip/umr3_sib/${ModuleName}.edf]} { 
+#####      read_edif ${HapsIpPath}/hapsaxd/system_ip/umr3_sib/${ModuleName}.edf
+#####     } else {
+#####       #puts "WARNING: ${ModuleName}.edf does not exist"
+#####     }
+#####   }
+##### foreach system $xsystemlist {
+##### if {[string compare $part $system] == 0} {
+#####   read_xdc "${HapsIpPath}/hapsaxd/system_ip/umr3_sib/umr3_sib_$system.xdc"
+#####   }
+##### }
+#### source ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/debug_static_ip.tcl
+##### set ModuleName debug_static_ip
+##### set InputMode "EDIF"
+##### set HapsIpPath ${designname}_hapsip
+##### set h100_adtd 0
+##### set h100_egsv 0
+##### set adtd_mux_factor 1
+##### set xsystemlist [list "XCVU3P" "XCVU19P"]
+##### if {${InputMode} == "EDIF"} {
+#####    if {[file exists ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}.edf]} { 
+#####       read_edif ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}.edf 
+#####    } else {
+#####          #puts "WARNING: ${ModuleName}.edf does not exist"
+#####    } 
+##### }
+##### if {[file exists ${HapsIpPath}/../h100_debug.tcl]} {
+#####   source ${HapsIpPath}/../h100_debug.tcl
+#####   puts " HAPS-100 Mux factor = ${adtd_mux_factor}"
+#####   }
+##### if {[file exists "${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}.dcp"]} {
+#####      read_checkpoint "${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}.dcp"
+##### }
+##### foreach system $xsystemlist {
+#####   if {[string compare $part $system] == 0} {
+#####   
+#####     if {$system=="XCVU3P"} {
+#####        read_edif ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/edif_l2_logic/vu3p/snps_axd_dtdpipe_uFPGA_x1.edf
+#####        read_edif ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/edif_l2_logic/vu3p/snps_axd_dtdpipe_uFPGA_x2.edf
+#####        read_edif ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/edif_l2_logic/vu3p/snps_axd_dtdpipe_uFPGA_x4.edf
+#####        read_edif ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/edif_l2_logic/vu3p/snps_axd_dtdpipe_uFPGA_x8.edf
+#####        read_edif ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/edif_l2_logic/vu3p/snps_axd_dtdpipe_uFPGA_x16.edf
+#####        
+#####        if {[file exists "${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}_$system.xdc"]} {
+#####         read_xdc ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}_$system.xdc
+#####         puts "Reading ${ModuleName}_$system.xdc constraint file..."
+#####           }
+#####       }    
+#####     
+#####     if {$system=="XCVU19P"} {
+#####        
+#####        # Read files only if ADTD is enabled
+#####        if {$h100_adtd == 1 || $h100_egsv == 1} {
+##### 
+#####          #  DTD Netlist specific to mux factor
+#####          if {[file exists ${HapsIpPath}/../snps_axd_dtdpipe_uFPGA_x${adtd_mux_factor}.dcp]} {
+#####           read_checkpoint ${HapsIpPath}/../snps_axd_dtdpipe_uFPGA_x${adtd_mux_factor}.dcp
+#####           } else {
+#####           puts "WARNING: snps_axd_dtdpipe_uFPGA_x${adtd_mux_factor}.dcp does not exist"
+#####           }
+#####          
+#####          # Constraints specific to mux factor
+#####          if {[file exists ${HapsIpPath}/../snps_axd_dtdpipe_uFPGA_x${adtd_mux_factor}.xdc]} {
+#####           read_xdc ${HapsIpPath}/../snps_axd_dtdpipe_uFPGA_x${adtd_mux_factor}.xdc
+#####           } else {
+#####           puts "WARNING: snps_axd_dtdpipe_uFPGA_x${adtd_mux_factor}.xdc does not exist"
+#####           }
+#####        
+#####          # Multi FPGA SyncTree fifo edn
+#####          if {[file exists ${HapsIpPath}/../snps_adtd_SyncTree_async_fifo.edn]} {
+#####          read_edif ${HapsIpPath}/../snps_adtd_SyncTree_async_fifo.edn
+#####          } else {
+#####           #puts "WARNING: snps_adtd_SyncTree_async_fifo.edn  does not exist"
+#####          }
+#####        
+#####          # -- Common Constraints
+#####          if {[file exists "${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}_$system.xdc"]} {
+#####           read_xdc ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}_$system.xdc
+#####           puts "Reading ${ModuleName}_$system.xdc constraint file..."
+#####           }
+#####        }
+#####        
+#####        #              Read eGSV Source files
+#####        if {[file exists ${HapsIpPath}/../egsv_icap_ctrl.edf]} {
+#####        read_edif ${HapsIpPath}/../egsv_icap_ctrl.edf
+#####        } 
+#####        
+#####        if {[file exists ${HapsIpPath}/../egsv_rbdata_ctrl.edf]} {
+#####        read_edif ${HapsIpPath}/../egsv_rbdata_ctrl.edf
+#####        }
+#####        
+#####        if {[file exists ${HapsIpPath}/../snps_h100_egsv_cons.xdc]} {
+#####        read_xdc ${HapsIpPath}/../snps_h100_egsv_cons.xdc
+#####        }
+#####     
+#####     }       
+#####   }
+##### }
+### if {[file exists run_haps_mem_flow.tcl]} {
+### 	if {[file exists ${DesignName}_hapsip/hapsaxd/haps_mem/haps_mem.tcl]} {
+### 		source ${DesignName}_hapsip/hapsaxd/haps_mem/haps_mem.tcl
+### 	}
+### }
+### if {[file exists run_mgtdm_flow.tcl]} {
+### 	source run_mgtdm_flow.tcl
+### 	if {[file exists ${DesignName}_hapsip/hapsaxd/mgtdm_gen2/mgtdm_gen2.tcl]} { 
+### 		source ${DesignName}_hapsip/hapsaxd/mgtdm_gen2/mgtdm_gen2.tcl
+### 	}
+### }
+## if {[file exists run_clockgen_flow.tcl]} {
+##   source run_clockgen_flow.tcl
+## }
+# foreach parOptionFile $VivadoOptionFiles {
+#         if {[file exists $parOptionFile]} {
+#                 source $parOptionFile
+#         }
+# }
+# hVivado_get_cpu-mem_status link_design 
+##  phase:link_design  -  Host: ws35  -  MemFree: 22 GB  -  LoadAverage (5s|5min|15min / NBcpu): 4.00|4.21|5.00 / 16 
+# hVivado_link_design
+Command: link_design -top FB1_uD
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xcvu19p-fsva3824-1-e
+INFO: [Device 21-403] Loading part xcvu19p-fsva3824-1-e
+Parsing EDIF File [./FB1_uD.edf]
+Finished Parsing EDIF File [./FB1_uD.edf]
+Parsing EDIF File [./FB1_uD_hapsip/hapsaxd/system_ip/bsa19_system_ip.edf]
+Finished Parsing EDIF File [./FB1_uD_hapsip/hapsaxd/system_ip/bsa19_system_ip.edf]
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3215.188 ; gain = 0.000 ; free physical = 18099 ; free virtual = 37772
+INFO: [Netlist 29-17] Analyzing 3421 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1_EP03_AR159266
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin0' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin1' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin10' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin10' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin11' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin11' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin2' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin3' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin4' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin5' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin6' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin6' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin7' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin7' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin8' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin8' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin9' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin9' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'hstdm_clkgen_1200_rx_bank36_block10/BASE4.rxclkdiv4_bufg' is LOCed to site 'BUFGCE_DIV_X0Y68'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'hstdm_clkgen_1200_rx_bank69_block8/BASE4.rxclkdiv4_bufg' is LOCed to site 'BUFGCE_DIV_X1Y40'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'hstdm_clkgen_1200_rx_bank71_block9/BASE4.rxclkdiv4_bufg' is LOCed to site 'BUFGCE_DIV_X1Y48'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc]
+create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3531.500 ; gain = 23.785 ; free physical = 16761 ; free virtual = 36459
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'System_FB1_uD' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:9]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:27]
+INFO: [Timing 38-2] Deriving generated clocks [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:27]
+create_generated_clock: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 3896.562 ; gain = 365.062 ; free physical = 16404 ; free virtual = 36106
+WARNING: [Constraints 18-4434] Global Clock Buffer 'hstdm_clkgen_1200_rx_bank69_block8/BASE4.rxclkdiv4_bufg' is LOCed to site 'BUFGCE_DIV_X1Y40'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2100]
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'hstdm_clkgen_1200_rx_bank71_block9/BASE4.rxclkdiv4_bufg' is LOCed to site 'BUFGCE_DIV_X1Y48'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2105]
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'hstdm_clkgen_1200_rx_bank36_block10/BASE4.rxclkdiv4_bufg' is LOCed to site 'BUFGCE_DIV_X0Y68'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2110]
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Vivado 12-584] No ports matched 'WRMEM_aptn_ft_obuf[4]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRMEM_aptn_ft_obuf[3]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2203]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2203]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRMEM_aptn_ft_obuf[2]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRMEM_aptn_ft_obuf[1]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2209]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRMEM_aptn_ft_obuf[0]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2212]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2212]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ALUOUTMEM_aptn_ft_obuf[10]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2351]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2351]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ALUOUTMEM_aptn_ft_obuf[9]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2354]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2354]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ALUOUTMEM_aptn_ft_obuf[8]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2357]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2357]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ALUOUTMEM_aptn_ft_obuf[7]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2360]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2360]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ALUOUTMEM_aptn_ft_obuf[6]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2363]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2363]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ALUOUTMEM_aptn_ft_obuf[5]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2366]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2366]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ALUOUTMEM_aptn_ft_obuf[4]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2369]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2369]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ALUOUTMEM_aptn_ft_obuf[3]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2372]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2372]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ALUOUTMEM_aptn_ft_obuf[2]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2375]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2375]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ALUOUTMEM_aptn_ft_obuf[1]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2378]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2378]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ALUOUTMEM_aptn_ft_obuf[0]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2381]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2381]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MEMREADMEM_aptn_ft_obuf'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2388]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2388]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[63]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2399]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2399]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[62]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2402]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2402]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[61]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2405]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2405]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[60]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2408]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2408]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[59]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2411]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2411]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[58]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2414]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2414]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[57]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2417]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2417]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[56]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2420]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2420]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[55]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2423]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2423]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[54]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2426]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2426]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[53]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2429]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2429]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[52]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2432]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2432]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[51]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2435]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2435]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[50]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2438]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2438]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[49]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2441]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2441]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[48]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2444]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2444]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[47]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2447]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2447]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[46]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2450]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2450]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[45]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2453]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2453]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[44]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2456]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2456]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[43]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2459]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2459]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[42]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2462]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2462]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[41]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2465]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2465]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[40]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2468]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2468]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[39]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2471]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2471]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[38]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2474]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2474]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[37]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2477]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2477]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[36]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2480]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2480]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[35]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2483]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2483]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[34]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2486]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2486]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[33]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2489]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2489]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[32]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2492]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2492]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[31]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2495]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2495]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[30]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2498]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2498]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[29]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2501]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2501]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[28]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2504]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2504]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[27]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2507]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2507]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[26]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2510]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2510]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[25]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2513]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2513]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[24]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2516]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2516]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[23]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2519]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2519]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[22]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2522]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2522]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[21]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2525]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2525]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[20]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2528]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2528]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[19]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2531]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2531]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[18]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2534]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2534]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[17]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2537]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2537]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[16]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2540]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2540]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[15]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2543]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2543]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[14]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2546]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2546]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[13]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2549]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2549]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[12]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2552]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2552]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[11]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2555]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2555]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[10]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2558]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2558]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[9]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2561]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2561]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[8]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2564]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2564]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[7]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2567]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2567]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[6]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2570]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2570]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[5]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2573]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2573]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[4]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2576]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2576]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[3]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2579]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2579]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[2]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2582]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2582]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[1]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2585]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2585]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRITEDATAWB_obuf[0]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2588]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2588]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'REGWRITEWB_0_obuf'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2591]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2591]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRWB_obuf[4]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2596]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2596]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRWB_obuf[3]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2599]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2599]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRWB_obuf[2]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2602]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2602]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRWB_obuf[1]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2605]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2605]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'WRWB_obuf[0]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2608]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2608]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DMOUTWB_obuf[63]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2611]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2611]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DMOUTWB_obuf[62]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2614]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2614]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DMOUTWB_obuf[61]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2617]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2617]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DMOUTWB_obuf[60]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2620]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2620]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DMOUTWB_obuf[59]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2623]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2623]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DMOUTWB_obuf[58]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2626]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2626]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DMOUTWB_obuf[57]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2629]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2629]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DMOUTWB_obuf[56]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2632]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2632]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DMOUTWB_obuf[55]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2635]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2635]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DMOUTWB_obuf[54]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2638]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2638]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DMOUTWB_obuf[53]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2641]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2641]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DMOUTWB_obuf[52]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2644]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2644]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DMOUTWB_obuf[51]'. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2647]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2647]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2647]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:2647]
+Finished Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc]
+Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_hapsip/hapsaxd/system_ip/bsa19_system_ip_edif_XCVU19P.xdc]
+Finished Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_hapsip/hapsaxd/system_ip/bsa19_system_ip_edif_XCVU19P.xdc]
+Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_hapsip/hapsaxd/system_ip/haps_sysip_infra_clocks/haps_sysip_infra_clocks_XCVU19P.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_hapsip/hapsaxd/system_ip/haps_sysip_infra_clocks/haps_sysip_infra_clocks_XCVU19P.xdc:5]
+Finished Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_hapsip/hapsaxd/system_ip/haps_sysip_infra_clocks/haps_sysip_infra_clocks_XCVU19P.xdc]
+Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_hapsip/hapsaxd/system_ip/umr3_sib/umr3_sib_XCVU19P.xdc]
+WARNING: [Timing 38-278] The instance 'sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/I_umr3_sib_dlm_us_quad/I_umr3_sib_aurora_socket_0/I_umr3_sib_aurora_socket_wrapper/I_aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE/inst/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_wrapper_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_multi_gt_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_i/inst/gen_gtwizard_gtye4_top.aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST' has TXRATE pins that are not constant, so the worst case divide value of 1 will be used for automatic derivation of generated clocks [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_hapsip/hapsaxd/system_ip/umr3_sib/umr3_sib_XCVU19P.xdc:5]
+WARNING: [Timing 38-278] The instance 'sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/I_umr3_sib_dlm_us_quad/I_umr3_sib_aurora_socket_0/I_umr3_sib_aurora_socket_wrapper/I_aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE/inst/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_wrapper_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_multi_gt_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_i/inst/gen_gtwizard_gtye4_top.aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[1].GTYE4_CHANNEL_PRIM_INST' has TXRATE pins that are not constant, so the worst case divide value of 1 will be used for automatic derivation of generated clocks [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_hapsip/hapsaxd/system_ip/umr3_sib/umr3_sib_XCVU19P.xdc:5]
+WARNING: [Timing 38-278] The instance 'sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/I_umr3_sib_dlm_us_quad/I_umr3_sib_aurora_socket_0/I_umr3_sib_aurora_socket_wrapper/I_aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE/inst/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_wrapper_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_multi_gt_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_i/inst/gen_gtwizard_gtye4_top.aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[2].GTYE4_CHANNEL_PRIM_INST' has TXRATE pins that are not constant, so the worst case divide value of 1 will be used for automatic derivation of generated clocks [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_hapsip/hapsaxd/system_ip/umr3_sib/umr3_sib_XCVU19P.xdc:5]
+WARNING: [Timing 38-278] The instance 'sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/I_umr3_sib_dlm_us_quad/I_umr3_sib_aurora_socket_0/I_umr3_sib_aurora_socket_wrapper/I_aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE/inst/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_wrapper_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_multi_gt_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_i/inst/gen_gtwizard_gtye4_top.aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[3].GTYE4_CHANNEL_PRIM_INST' has TXRATE pins that are not constant, so the worst case divide value of 1 will be used for automatic derivation of generated clocks [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_hapsip/hapsaxd/system_ip/umr3_sib/umr3_sib_XCVU19P.xdc:5]
+INFO: [Timing 38-2] Deriving generated clocks [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_hapsip/hapsaxd/system_ip/umr3_sib/umr3_sib_XCVU19P.xdc:5]
+Finished Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_hapsip/hapsaxd/system_ip/umr3_sib/umr3_sib_XCVU19P.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell haps_system_memory/memory_core.memory_inst_memory_inst_0_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3948.234 ; gain = 0.000 ; free physical = 15466 ; free virtual = 35175
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2857 instances were transformed.
+  BUFG => BUFGCE: 4 instances
+  CFGLUT5 => SRLC32E: 11 instances
+  FD => FDRE: 893 instances
+  FDC => FDCE: 352 instances
+  FDE => FDRE: 478 instances
+  FDP => FDPE: 33 instances
+  FDR => FDRE: 383 instances
+  FDS => FDSE: 29 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 110 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 3 instances
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  INV => LUT1: 338 instances
+  PLLE3_ADV => PLLE4_ADV: 3 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 189 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 21 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 9 instances
+
+15 Infos, 128 Warnings, 100 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:01:47 ; elapsed = 00:01:35 . Memory (MB): peak = 3948.234 ; gain = 1232.164 ; free physical = 15441 ; free virtual = 35150
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.51 . Memory (MB): peak = 3988.254 ; gain = 0.004 ; free physical = 15282 ; free virtual = 35001
+INFO: [Common 17-1381] The checkpoint '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/post_link.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:37 ; elapsed = 00:00:29 . Memory (MB): peak = 3988.254 ; gain = 40.020 ; free physical = 15116 ; free virtual = 34903
+# foreach postLinkOptionFile $VivadoPostLinkOptionFiles {
+#         if {[file exists $postLinkOptionFile]} {
+#                 source $postLinkOptionFile
+#         }
+# }
+# hVivado_post_link_design_proc
+Checking HSTDM missing constraints!
+Reporting constraint problems between HSTDM and user. 04/09/2023:23:18:00
+Collecting paths between HSTDM and user.
+Collecting paths between HSTDM and user: 5/52 done.
+Collecting paths between HSTDM and user: 10/52 done.
+Collecting paths between HSTDM and user: 15/52 done.
+Collecting paths between HSTDM and user: 20/52 done.
+Collecting paths between HSTDM and user: 25/52 done.
+Collecting paths between HSTDM and user: 30/52 done.
+Collecting paths between HSTDM and user: 35/52 done.
+Collecting paths between HSTDM and user: 40/52 done.
+Collecting paths between HSTDM and user: 45/52 done.
+Collecting paths between HSTDM and user: 50/52 done.
+Checking for constraint problems between HSTDM and user.
+Checking for constraint problems between HSTDM and user: 5/52 done.
+Checking for constraint problems between HSTDM and user: 10/52 done.
+Checking for constraint problems between HSTDM and user: 15/52 done.
+Checking for constraint problems between HSTDM and user: 20/52 done.
+Checking for constraint problems between HSTDM and user: 25/52 done.
+Checking for constraint problems between HSTDM and user: 30/52 done.
+Checking for constraint problems between HSTDM and user: 35/52 done.
+Checking for constraint problems between HSTDM and user: 40/52 done.
+Checking for constraint problems between HSTDM and user: 45/52 done.
+Checking for constraint problems between HSTDM and user: 50/52 done.
+Found no issues of constraints between HSTDM and user.
+Cleaning up temporary files.
+Reporting constraint problems between HSTDM and user. DONE. 04/09/2023:23:19:50
+Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/run_hstdm_exc_pla_var.xdc]
+Finished Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/run_hstdm_exc_pla_var.xdc]
+Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/run_hstdm_loc.xdc]
+Finished Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/run_hstdm_loc.xdc]
+read_xdc: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 5120.598 ; gain = 0.000 ; free physical = 11922 ; free virtual = 31805
+# hVivado_source_clockgen_option_files
+# hVivado_disconnect_ip
+# hVivado_get_cpu-mem_status opt_design 
+##  phase:opt_design  -  Host: ws35  -  MemFree: 11 GB  -  LoadAverage (5s|5min|15min / NBcpu): 7.20|5.49|5.31 / 16 
+# hVivado_opt_design
+WARNING: [Vivado 12-180] No cells matched '*cfglut*'.
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -of_objects [get_cells -hier *cfglut* -filter {REF_NAME =~ *SRLC32E*}]'.
+Command: opt_design -directive RuntimeOptimized
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu19p'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 5160.617 ; gain = 40.020 ; free physical = 11891 ; free virtual = 31773
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 109 inverter(s) to 3229 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1ed33f8b3
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 5160.617 ; gain = 0.000 ; free physical = 11824 ; free virtual = 31707
+INFO: [Opt 31-389] Phase Retarget created 701 cells and removed 23712 cells
+INFO: [Opt 31-1021] In phase Retarget, 1034 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 18 inverter(s) to 26 load pin(s).
+Phase 2 Constant propagation | Checksum: 17ff96216
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 5160.617 ; gain = 0.000 ; free physical = 11777 ; free virtual = 31660
+INFO: [Opt 31-389] Phase Constant propagation created 1487 cells and removed 6636 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 929 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 12bcac901
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:35 . Memory (MB): peak = 5160.617 ; gain = 0.000 ; free physical = 11674 ; free virtual = 31588
+INFO: [Opt 31-389] Phase Sweep created 65 cells and removed 9080 cells
+INFO: [Opt 31-1021] In phase Sweep, 6149 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/clk_out2_clk_wiz_0_BUFG_inst to drive 10 load(s) on clock net sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/clk_out2_clk_wiz_0_BUFGCE
+INFO: [Opt 31-194] Inserted BUFG sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/clk_out5_clk_wiz_0_BUFG_inst to drive 4 load(s) on clock net sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/clk_out5_clk_wiz_0_BUFGCE
+INFO: [Opt 31-193] Inserted 2 BUFG(s) on clock nets
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+INFO: [Opt 31-274] Optimized connectivity to 2 cascaded buffer cells
+Phase 4 BUFG optimization | Checksum: 19b882b53
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:37 . Memory (MB): peak = 5160.617 ; gain = 0.000 ; free physical = 11669 ; free virtual = 31586
+INFO: [Opt 31-662] Phase BUFG optimization created 2 cells of which 2 are BUFGs and removed 3 cells.
+INFO: [Opt 31-1021] In phase BUFG optimization, 7 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 19b882b53
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:38 . Memory (MB): peak = 5160.617 ; gain = 0.000 ; free physical = 11667 ; free virtual = 31585
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 192cfd1aa
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:38 . Memory (MB): peak = 5160.617 ; gain = 0.000 ; free physical = 11671 ; free virtual = 31590
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 946 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             701  |           23712  |                                           1034  |
+|  Constant propagation         |            1487  |            6636  |                                            929  |
+|  Sweep                        |              65  |            9080  |                                           6149  |
+|  BUFG optimization            |               2  |               3  |                                              7  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            946  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.19 . Memory (MB): peak = 5160.617 ; gain = 0.000 ; free physical = 11662 ; free virtual = 31584
+Ending Logic Optimization Task | Checksum: 137a3fef9
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:43 . Memory (MB): peak = 5160.617 ; gain = 0.000 ; free physical = 11662 ; free virtual = 31583
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5160.617 ; gain = 0.000 ; free physical = 11662 ; free virtual = 31584
+Ending Netlist Obfuscation Task | Checksum: 137a3fef9
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5160.617 ; gain = 0.000 ; free physical = 11662 ; free virtual = 31583
+INFO: [Common 17-83] Releasing license: Implementation
+26 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:02 ; elapsed = 00:00:50 . Memory (MB): peak = 5160.617 ; gain = 40.020 ; free physical = 11662 ; free virtual = 31584
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'System_FB1_uD' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:9]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.90 . Memory (MB): peak = 5160.617 ; gain = 0.000 ; free physical = 11510 ; free virtual = 31440
+INFO: [Common 17-1381] The checkpoint '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/post_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:55 ; elapsed = 00:00:35 . Memory (MB): peak = 5160.617 ; gain = 0.000 ; free physical = 11482 ; free virtual = 31406
+# hVivado_post_opt_design_proc
+Flow is Standard
+# hVivado_get_cpu-mem_status place_design 
+##  phase:place_design  -  Host: ws35  -  MemFree: 11 GB  -  LoadAverage (5s|5min|15min / NBcpu): 8.01|6.18|5.57 / 16 
+# hVivado_place_design
+[PC_FPGA] - INFO : Vivado place_design runs in fast_turn_around mode
+Command: place_design -directive RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+run_haps_drc_HAUMR-2
+run_haps_drc_HATDM-4
+run_haps_drc_HADRC-1
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'RuntimeOptimized' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5208.148 ; gain = 0.000 ; free physical = 10996 ; free virtual = 31036
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: e6aeaf71
+
+Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.17 . Memory (MB): peak = 5208.148 ; gain = 0.000 ; free physical = 10997 ; free virtual = 31036
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5208.148 ; gain = 0.000 ; free physical = 10996 ; free virtual = 31036
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 3f1b2cc1
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:46 . Memory (MB): peak = 5237.039 ; gain = 28.891 ; free physical = 10394 ; free virtual = 30369
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: b6e5ec68
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:28 . Memory (MB): peak = 6906.543 ; gain = 1698.395 ; free physical = 9680 ; free virtual = 29655
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: b6e5ec68
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:28 . Memory (MB): peak = 6906.543 ; gain = 1698.395 ; free physical = 9673 ; free virtual = 29648
+Phase 1 Placer Initialization | Checksum: b6e5ec68
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:28 . Memory (MB): peak = 6906.543 ; gain = 1698.395 ; free physical = 9601 ; free virtual = 29576
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+INFO: [Place 30-1906] Running placement in ultrathreads mode using maximum of 8 CPUs
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: a187eb7b
+
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:53 . Memory (MB): peak = 6906.543 ; gain = 1698.395 ; free physical = 9402 ; free virtual = 29377
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 1d47f2e6d
+
+Time (s): cpu = 00:03:57 ; elapsed = 00:02:50 . Memory (MB): peak = 6906.543 ; gain = 1698.395 ; free physical = 6092 ; free virtual = 26067
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 1d47f2e6d
+
+Time (s): cpu = 00:04:10 ; elapsed = 00:03:02 . Memory (MB): peak = 7257.309 ; gain = 2049.160 ; free physical = 5302 ; free virtual = 25277
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 1407500c5
+
+Time (s): cpu = 00:04:21 ; elapsed = 00:03:06 . Memory (MB): peak = 7257.309 ; gain = 2049.160 ; free physical = 5198 ; free virtual = 25174
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 1407500c5
+
+Time (s): cpu = 00:04:21 ; elapsed = 00:03:06 . Memory (MB): peak = 7257.309 ; gain = 2049.160 ; free physical = 5196 ; free virtual = 25172
+Phase 2.1.1 Partition Driven Placement | Checksum: 1407500c5
+
+Time (s): cpu = 00:04:21 ; elapsed = 00:03:06 . Memory (MB): peak = 7257.309 ; gain = 2049.160 ; free physical = 5226 ; free virtual = 25202
+Phase 2.1 Floorplanning | Checksum: 19c8d281c
+
+Time (s): cpu = 00:04:21 ; elapsed = 00:03:06 . Memory (MB): peak = 7257.309 ; gain = 2049.160 ; free physical = 5232 ; free virtual = 25208
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 19c8d281c
+
+Time (s): cpu = 00:04:21 ; elapsed = 00:03:06 . Memory (MB): peak = 7257.309 ; gain = 2049.160 ; free physical = 5231 ; free virtual = 25207
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 19c8d281c
+
+Time (s): cpu = 00:04:22 ; elapsed = 00:03:07 . Memory (MB): peak = 7257.309 ; gain = 2049.160 ; free physical = 5124 ; free virtual = 25100
+
+Phase 2.4 Global Placement Core
+Phase 2.4 Global Placement Core | Checksum: 1775d8578
+
+Time (s): cpu = 00:12:57 ; elapsed = 00:08:00 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 6567 ; free virtual = 20122
+Phase 2 Global Placement | Checksum: 1775d8578
+
+Time (s): cpu = 00:12:57 ; elapsed = 00:08:01 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 7090 ; free virtual = 20644
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 12b8212d6
+
+Time (s): cpu = 00:13:19 ; elapsed = 00:08:17 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 7181 ; free virtual = 20737
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1977a1b1c
+
+Time (s): cpu = 00:13:42 ; elapsed = 00:08:26 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 6771 ; free virtual = 20328
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 108aa7ea1
+
+Time (s): cpu = 00:13:54 ; elapsed = 00:08:38 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 6769 ; free virtual = 20326
+
+Phase 3.4 Small Shape DP
+
+Phase 3.4.1 splitSLRCrossingNets
+Phase 3.4.1 splitSLRCrossingNets | Checksum: 14aba911c
+
+Time (s): cpu = 00:14:10 ; elapsed = 00:08:54 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 6612 ; free virtual = 20188
+Phase 3.4 Small Shape DP | Checksum: 1b1d9cb56
+
+Time (s): cpu = 00:15:37 ; elapsed = 00:09:42 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 11635 ; free virtual = 25228
+
+Phase 3.5 Re-assign LUT pins
+Phase 3.5 Re-assign LUT pins | Checksum: 115f757ad
+
+Time (s): cpu = 00:15:43 ; elapsed = 00:09:47 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 11718 ; free virtual = 25312
+Phase 3 Detail Placement | Checksum: 115f757ad
+
+Time (s): cpu = 00:15:45 ; elapsed = 00:09:50 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 11533 ; free virtual = 25127
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'System_FB1_uD' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_edif.xdc:9]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1e24e0cb7
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.273 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 26ed504ce
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 11548.379 ; gain = 0.000 ; free physical = 11459 ; free virtual = 25054
+INFO: [Place 46-35] Processed net sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/I_rsync_umr3_sib_reset/umr3_sib_reset_o, inserted BUFG to drive 11217 loads.
+INFO: [Place 46-45] Replicated bufg driver sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/I_rsync_umr3_sib_reset/reset_sync_o_reg_replica
+INFO: [Place 46-33] Processed net sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/I_rsync_sys_reset/sys_reset_o, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 2 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 1, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1742eae61
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 11548.379 ; gain = 0.000 ; free physical = 12834 ; free virtual = 26439
+Phase 4.1.1.1 BUFG Insertion | Checksum: 19d44b90b
+
+Time (s): cpu = 00:18:13 ; elapsed = 00:10:57 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 12856 ; free virtual = 26462
+
+Phase 4.1.1.2 BUFG Replication
+INFO: [Place 46-68] Processed net sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/I_rsync_umr3_sib_reset/umr3_sib_reset_o, BUFG replication was skipped in SLR 0 as timing constraints are met.
+INFO: [Place 46-63] BUFG replication identified 1 candidate nets: Replicated nets: 0, Replicated BUFGs: 0, Replicated BUFG Driver: 0, Skipped due to Placement / Routing Conflict: 0, Skipped due to Timing: 1, Skipped due to constraints: 0
+Phase 4.1.1.2 BUFG Replication | Checksum: 19d44b90b
+
+Time (s): cpu = 00:18:15 ; elapsed = 00:10:59 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 12849 ; free virtual = 26455
+
+Phase 4.1.1.3 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=1.273. For the most accurate timing information please run report_timing.
+Phase 4.1.1.3 Post Placement Timing Optimization | Checksum: 1727a9cf9
+
+Time (s): cpu = 00:18:16 ; elapsed = 00:11:00 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 12856 ; free virtual = 26462
+
+Phase 4.1.1.4 Replication
+INFO: [Place 46-19] Post Replication Timing Summary WNS=1.273. For the most accurate timing information please run report_timing.
+Phase 4.1.1.4 Replication | Checksum: 1727a9cf9
+
+Time (s): cpu = 00:18:17 ; elapsed = 00:11:01 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 12922 ; free virtual = 26528
+
+Time (s): cpu = 00:18:17 ; elapsed = 00:11:01 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 12938 ; free virtual = 26543
+Phase 4.1 Post Commit Optimization | Checksum: 1727a9cf9
+
+Time (s): cpu = 00:18:18 ; elapsed = 00:11:02 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 12643 ; free virtual = 26248
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 11548.379 ; gain = 0.000 ; free physical = 11756 ; free virtual = 25404
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 25c51f0d1
+
+Time (s): cpu = 00:19:36 ; elapsed = 00:12:22 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 11889 ; free virtual = 25538
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       East|                2x2|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 25c51f0d1
+
+Time (s): cpu = 00:19:36 ; elapsed = 00:12:22 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 11829 ; free virtual = 25479
+Phase 4.3 Placer Reporting | Checksum: 25c51f0d1
+
+Time (s): cpu = 00:19:37 ; elapsed = 00:12:23 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 11785 ; free virtual = 25435
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 11548.379 ; gain = 0.000 ; free physical = 11786 ; free virtual = 25435
+
+Time (s): cpu = 00:19:37 ; elapsed = 00:12:23 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 11786 ; free virtual = 25435
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1f4c361b0
+
+Time (s): cpu = 00:19:38 ; elapsed = 00:12:24 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 11781 ; free virtual = 25430
+Ending Placer Task | Checksum: 1acd28cd8
+
+Time (s): cpu = 00:19:38 ; elapsed = 00:12:24 . Memory (MB): peak = 11548.379 ; gain = 6340.230 ; free physical = 11778 ; free virtual = 25428
+INFO: [Common 17-83] Releasing license: Implementation
+19 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:21:37 ; elapsed = 00:13:23 . Memory (MB): peak = 11548.379 ; gain = 6387.762 ; free physical = 13035 ; free virtual = 26685
+# hVivado_post_place_design_proc
+report_timing_summary: Time (s): cpu = 00:01:37 ; elapsed = 00:00:29 . Memory (MB): peak = 11548.379 ; gain = 0.000 ; free physical = 12904 ; free virtual = 26564
+report_timing_summary: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 11548.379 ; gain = 0.000 ; free physical = 13053 ; free virtual = 26713
+# hVivado_post_place_phys_opt_design
+INFO : Slack 1.308 is better than -0.8, so no need to run phys_opt_design
+INFO : Slack -0.617 is worse than -0.5 and better than -1.5 , so running phys_opt_design to see if it improves hold timing
+Command: phys_opt_design -hold_fix
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.250 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 18.54s |  WALL: 3.28s
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 11548.379 ; gain = 0.000 ; free physical = 12979 ; free virtual = 26639
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.308 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 7959f22e
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:12 . Memory (MB): peak = 11548.379 ; gain = 0.000 ; free physical = 12734 ; free virtual = 26395
+INFO: [Physopt 32-801] Found 9 high priority path groups.
+
+Phase 2 Hold Fix Optimization
+INFO: [Physopt 32-668] Estimated Timing Summary | WNS=1.308 | TNS=0.000 | WHS=-0.617 | THS=-86.622 |
+INFO: [Physopt 32-45] Identified 105 candidate nets for hold slack optimization.
+INFO: [Physopt 32-234] Optimized 105 nets. Inserted 0 new ZHOLD_DELAYs. Calibrated 0 existing ZHOLD_DELAYs. Inserted 105 buffers.
+
+INFO: [Physopt 32-668] Estimated Timing Summary | WNS=1.275 | TNS=0.000 | WHS=-0.249 | THS=-54.800 |
+Phase 2 Hold Fix Optimization | Checksum: 7959f22e
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:20 . Memory (MB): peak = 11548.379 ; gain = 0.000 ; free physical = 12754 ; free virtual = 26415
+Netlist sorting complete. Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.29 . Memory (MB): peak = 11548.379 ; gain = 0.000 ; free physical = 12754 ; free virtual = 26415
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=1.275 | TNS=0.000 | WHS=-0.249 | THS=-54.800 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization  |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Total         |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Summary of Hold Fix Optimizations
+=================================
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization               |  WHS Gain (ns)  |  THS Gain (ns)  |  Added LUTs  |  Added FFs  |  Optimized Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT1 and ZHOLD Insertion   |          0.368  |         31.822  |         105  |          0  |             105  |           0  |           1  |  00:00:05  |
+|  Total                      |          0.368  |         31.822  |         105  |          0  |             105  |           0  |           1  |  00:00:05  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 11548.379 ; gain = 0.000 ; free physical = 12753 ; free virtual = 26415
+Ending Physical Synthesis Task | Checksum: 1926fa251
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:21 . Memory (MB): peak = 11548.379 ; gain = 0.000 ; free physical = 12753 ; free virtual = 26414
+INFO: [Common 17-83] Releasing license: Implementation
+12 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:01:23 ; elapsed = 00:00:25 . Memory (MB): peak = 11548.379 ; gain = 0.000 ; free physical = 12890 ; free virtual = 26551
+# hVivado_post_phys_opt_design_proc
+# hVivado_disable_sysmon
+# hVivado_reconnect_ip
+# hVivado_get_cpu-mem_status route_design 
+##  phase:route_design  -  Host: ws35  -  MemFree: 12 GB  -  LoadAverage (5s|5min|15min / NBcpu): 7.60|7.73|6.97 / 16 
+# hVivado_route_design
+[PC_FPGA] - INFO : Vivado route_design runs in fast_turn_around mode
+Command: route_design -directive RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+run_haps_drc_HAUMR-2
+run_haps_drc_HATDM-3
+WARNING: [DRC PLCK-58] Clock Placer Checks: Sub-optimal placement for a global clock-capable IO pin and BUFG pair.
+Resolution: A dedicated routing path between the two can be used if: (a) The global clock-capable IO (GCIO) is placed on a GCIO capable site (b) The BUFG is placed in the same bank of the device as the GCIO pin. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	AFPGA_LOCK_CLK_I_ibuf/IBUFCTRL_INST (IBUFCTRL.O) is locked to IOB_X1Y360 (in SLR 1)
+	sysip_inst/bsa19_system_ip_u/anaconda_systemip_afpga_if_u/G_lock_clk_bufg.I_bufg_lock_clk (BUFGCE.I) is provisionally placed by clockplacer on BUFGCE_X1Y151 (in SLR 1)
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'RuntimeOptimized'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 15837443 ConstDB: 0 ShapeSum: 203698f5 RouteDB: e9d753d8
+
+Phase 1 Build RT Design
+Nodegraph reading from file.  Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 11548.387 ; gain = 0.000 ; free physical = 13608 ; free virtual = 27276
+Phase 1 Build RT Design | Checksum: e7c310a5
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:01:48 . Memory (MB): peak = 11548.387 ; gain = 0.000 ; free physical = 14139 ; free virtual = 27818
+Post Restoration Checksum: NetGraph: 2060653e NumContArr: a974b796 Constraints: 5200e1c6 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 11bd5fe9a
+
+Time (s): cpu = 00:03:12 ; elapsed = 00:01:49 . Memory (MB): peak = 11548.387 ; gain = 0.000 ; free physical = 13877 ; free virtual = 27556
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 11bd5fe9a
+
+Time (s): cpu = 00:03:12 ; elapsed = 00:01:50 . Memory (MB): peak = 11548.387 ; gain = 0.000 ; free physical = 13875 ; free virtual = 27554
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 1002d143f
+
+Time (s): cpu = 00:04:40 ; elapsed = 00:02:51 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 10757 ; free virtual = 24437
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1dd9108e9
+
+Time (s): cpu = 00:05:36 ; elapsed = 00:03:11 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 11983 ; free virtual = 25662
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.279  | TNS=0.000  | WHS=-0.213 | THS=-24.843|
+
+Phase 2 Router Initialization | Checksum: 206df1713
+
+Time (s): cpu = 00:06:50 ; elapsed = 00:03:29 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 10918 ; free virtual = 24597
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000222499 %
+  Global Horizontal Routing Utilization  = 3.87531e-05 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 60650
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 49719
+  Number of Partially Routed Nets     = 10931
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+
+Phase 3.1.1 SLL Assignment
+Number SLLs per Column: 1440
+Estimated SLL Demand Per Column: 
+  SLR [2-3]      108 (  8%)     2 (  0%)    10 (  1%)     6 (  0%)     1 (  0%)     6 (  0%)     5 (  0%)     4 (  0%)     1 (  0%)     7 (  0%)     2 (  0%)     1 (  0%)     1 (  0%)     1 (  0%)     8 (  1%)     4 (  0%)  Demand:   167 Available: 23040 Utilization(%): 0.72
+  SLR [1-2]      116 (  8%)     4 (  0%)    10 (  1%)    28 (  2%)     3 (  0%)     6 (  0%)     6 (  0%)     3 (  0%)     2 (  0%)     2 (  0%)     2 (  0%)     6 (  0%)     2 (  0%)     2 (  0%)    61 (  4%)     7 (  0%)  Demand:   260 Available: 23040 Utilization(%): 1.13
+  SLR [0-1]      117 (  8%)     2 (  0%)     8 (  1%)    28 (  2%)     1 (  0%)     1 (  0%)     1 (  0%)     1 (  0%)     1 (  0%)     1 (  0%)     1 (  0%)     1 (  0%)     1 (  0%)     2 (  0%)    46 (  3%)     6 (  0%)  Demand:   218 Available: 23040 Utilization(%): 0.95
+Phase 3.1.1 SLL Assignment | Checksum: 25ec523d9
+
+Time (s): cpu = 00:07:31 ; elapsed = 00:03:42 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 10282 ; free virtual = 23961
+Phase 3.1 Global Routing | Checksum: 25ec523d9
+
+Time (s): cpu = 00:07:31 ; elapsed = 00:03:42 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 10278 ; free virtual = 23957
+Phase 3 Initial Routing | Checksum: 2c5780083
+
+Time (s): cpu = 00:08:49 ; elapsed = 00:04:11 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 11689 ; free virtual = 25368
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 4631
+ Number of Nodes with overlaps = 242
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.836  | TNS=0.000  | WHS=-0.028 | THS=-0.254 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 15910ed88
+
+Time (s): cpu = 00:13:03 ; elapsed = 00:06:49 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12121 ; free virtual = 25805
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.836  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 28dd0c9e0
+
+Time (s): cpu = 00:13:36 ; elapsed = 00:07:04 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12141 ; free virtual = 25825
+Phase 4 Rip-up And Reroute | Checksum: 28dd0c9e0
+
+Time (s): cpu = 00:13:36 ; elapsed = 00:07:04 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12159 ; free virtual = 25843
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 2572a55fb
+
+Time (s): cpu = 00:14:20 ; elapsed = 00:07:20 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12147 ; free virtual = 25831
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.836  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 2572a55fb
+
+Time (s): cpu = 00:14:25 ; elapsed = 00:07:21 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12146 ; free virtual = 25830
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 2572a55fb
+
+Time (s): cpu = 00:14:26 ; elapsed = 00:07:21 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12147 ; free virtual = 25831
+Phase 5 Delay and Skew Optimization | Checksum: 2572a55fb
+
+Time (s): cpu = 00:14:26 ; elapsed = 00:07:22 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12145 ; free virtual = 25829
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 254b47d02
+
+Time (s): cpu = 00:15:03 ; elapsed = 00:07:34 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12131 ; free virtual = 25815
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.836  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1a09596e4
+
+Time (s): cpu = 00:15:07 ; elapsed = 00:07:35 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12127 ; free virtual = 25812
+Phase 6 Post Hold Fix | Checksum: 1a09596e4
+
+Time (s): cpu = 00:15:08 ; elapsed = 00:07:35 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12127 ; free virtual = 25811
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.304376 %
+  Global Horizontal Routing Utilization  = 0.316153 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 19d5a52c6
+
+Time (s): cpu = 00:15:29 ; elapsed = 00:07:41 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12151 ; free virtual = 25835
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 19d5a52c6
+
+Time (s): cpu = 00:15:29 ; elapsed = 00:07:42 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12152 ; free virtual = 25836
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 19d5a52c6
+
+Time (s): cpu = 00:15:43 ; elapsed = 00:07:52 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12037 ; free virtual = 25721
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 19d5a52c6
+
+Time (s): cpu = 00:15:46 ; elapsed = 00:07:56 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12089 ; free virtual = 25773
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.836  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 19d5a52c6
+
+Time (s): cpu = 00:16:05 ; elapsed = 00:07:59 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12091 ; free virtual = 25775
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:16:06 ; elapsed = 00:08:00 . Memory (MB): peak = 11564.410 ; gain = 16.023 ; free physical = 12621 ; free virtual = 26305
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:17:03 ; elapsed = 00:08:23 . Memory (MB): peak = 11564.410 ; gain = 16.031 ; free physical = 12621 ; free virtual = 26306
+route_design completed
+# hVivado_get_route_status
+[PC_FPGA] - INFO : Checking router status
+report_route_status: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 11564.410 ; gain = 0.000 ; free physical = 12586 ; free virtual = 26271
+   |- 60723 routable nets / 108570 Total nets
+   |- 0 nets in errors
+   |- NA nets in errors
+# hVivado_hstdm_postroute
+# hVivado_post_route_design_proc
+INFO : Hold Slack is 0.010, Design met hold timing requirements
+Generating post router reports
+report_timing_summary: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 11564.410 ; gain = 0.000 ; free physical = 12521 ; free virtual = 26208
+report_clock_utilization: Time (s): cpu = 00:02:07 ; elapsed = 00:02:11 . Memory (MB): peak = 11564.410 ; gain = 0.000 ; free physical = 12134 ; free virtual = 25885
+report_io: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 11564.410 ; gain = 0.000 ; free physical = 11978 ; free virtual = 25731
+Command: report_drc -file post_route_drc.txt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/cadtool/csr5306/synopsys/xilinx_vivado/2021.1-ep9/tools/XILINX_VIVADO/patches/AR76722/vivado/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/cadtool/csr5306/synopsys/xilinx_vivado/2021.1-ep9/tools/XILINX_VIVADO/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+run_haps_drc_HAUMR-1
+run_haps_drc_HAUMR-2
+run_haps_drc_HATDM-1
+run_haps_drc_HATDM-2
+run_haps_drc_HATDM-3
+run_haps_drc_HATDM-4
+run_haps_drc_HADRC-1
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/post_route_drc.txt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:59 ; elapsed = 00:00:26 . Memory (MB): peak = 11564.418 ; gain = 0.008 ; free physical = 11681 ; free virtual = 25435
+WARNING: [Timing 38-164] This design has multiple clocks. Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+# hVivado_get_cpu-mem_status bitstream 
+##  phase:bitstream  -  Host: ws35  -  MemFree: 11 GB  -  LoadAverage (5s|5min|15min / NBcpu): 7.77|8.29|7.87 / 16 
+# hVivado_generate_bitstream
+Command: write_bitstream -force FB1_uD.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu19p'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+run_haps_drc_HAUMR-1
+run_haps_drc_HAUMR-2
+run_haps_drc_HATDM-1
+run_haps_drc_HATDM-2
+run_haps_drc_HATDM-3
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port ALUOUTMEM spans more than one Super Logic Region (SLR).   Bits placed in SLR 2:  61, 58, 57, 54, 51, 49, 46, 43, 41, 39, 37, 34, 31, 29, 26, 23, 22, 19, 17, 14, 11, 5, 4, 3, 2, 1, 0.  
+  Bits placed in SLR 3:  63, 62, 60, 59, 56, 55, 53, 52, 50, 48, 47, 45, 44, 42, 40, 38, 36, 35, 33, 32, 30, 28, 27, 25, 24, 21, 20, 18, 16, 15, 13, 12, 10, 9, 8, 7, 6.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port DBG_REFCLKN_0 spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  0.  
+  Bits placed in SLR 0:  1.  
+  Bits placed in SLR 2:  3.  
+  Bits placed in SLR 3:  2.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port DBG_REFCLKP_0 spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  0.  
+  Bits placed in SLR 0:  1.  
+  Bits placed in SLR 2:  3.  
+  Bits placed in SLR 3:  2.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port DBG_RXN spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  1, 0.  
+  Bits placed in SLR 0:  3, 2.  
+  Bits placed in SLR 2:  7, 6.  
+  Bits placed in SLR 3:  5, 4.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port DBG_RXP spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  1, 0.  
+  Bits placed in SLR 0:  3, 2.  
+  Bits placed in SLR 2:  7, 6.  
+  Bits placed in SLR 3:  5, 4.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port DBG_TXN spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  1, 0.  
+  Bits placed in SLR 0:  3, 2.  
+  Bits placed in SLR 2:  7, 6.  
+  Bits placed in SLR 3:  5, 4.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port DBG_TXP spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  1, 0.  
+  Bits placed in SLR 0:  3, 2.  
+  Bits placed in SLR 2:  7, 6.  
+  Bits placed in SLR 3:  5, 4.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port WRITEDATAWB_aptn_s spans more than one Super Logic Region (SLR).   Bits placed in SLR 2:  40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0.  
+  Bits placed in SLR 3:  63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41.  
+WARNING: [DRC REQP-1877] BUFGCE_has_no_loads: Global Clock buffer BUFGCE cell sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/clkout1_buf has no loads and may be unnecessarily using clock routing/distribution resources. This buffer should be removed from the design.
+WARNING: [DRC RTSTAT-10] No routable loads: 141 net(s) have no routable loads. The problem bus(es) and/or net(s) are sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[0], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[3], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[4], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[5], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[6], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[7], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[8], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[9], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[10], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[11], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[12], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[13], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[14], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[15], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[16]... and (the first 15 of 125 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 10 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 297920640 bits.
+Bitstream compression saved 280274528 bits.
+Bitstream compression saved 297635808 bits.
+Bitstream compression saved 267119840 bits.
+Writing bitstream ./FB1_uD.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Mon Apr 10 00:04:06 2023. For additional details about this file, please refer to the WebTalk help file at /usr/cadtool/csr5306/synopsys/xilinx_vivado/2021.1-ep9/tools/XILINX_VIVADO/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+7 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:19:48 ; elapsed = 00:15:49 . Memory (MB): peak = 11564.418 ; gain = 0.000 ; free physical = 14987 ; free virtual = 29328
+# hVivado_post_bitstream_proc
+
+ Report file /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD_io_reg.rpt has been generated
+
+WARNING: [Constraints 18-4434] Global Clock Buffer 'hstdm_clkgen_1200_rx_bank69_block8/BASE4.rxclkdiv4_bufg' is LOCed to site 'BUFGCE_DIV_X1Y40'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'hstdm_clkgen_1200_rx_bank71_block9/BASE4.rxclkdiv4_bufg' is LOCed to site 'BUFGCE_DIV_X1Y48'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'hstdm_clkgen_1200_rx_bank36_block10/BASE4.rxclkdiv4_bufg' is LOCed to site 'BUFGCE_DIV_X0Y68'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+write_xdc: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 11564.418 ; gain = 0.000 ; free physical = 14884 ; free virtual = 29316
+Writing routed design checkpoint
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 11564.418 ; gain = 0.000 ; free physical = 14388 ; free virtual = 29408
+INFO: [Common 17-1381] The checkpoint '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/FB1_uD.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:41 ; elapsed = 00:00:25 . Memory (MB): peak = 11564.418 ; gain = 0.000 ; free physical = 19079 ; free virtual = 33917
+# hVivado_generate_sllTdm_analysis
+# hVivado_reportMissingDPOs
+# hVivado_copy_parff_files
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 10 00:05:10 2023...

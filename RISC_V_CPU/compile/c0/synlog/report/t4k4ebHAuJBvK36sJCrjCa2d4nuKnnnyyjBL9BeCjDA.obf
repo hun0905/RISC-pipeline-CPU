@@ -1,0 +1,9 @@
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MF990 |On Demand Uniquification flow enabled 
+@N: MO111 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":1:0:1:0|Tristate driver un4 (in view: work.top(verilog)) on net un6 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":1:0:1:0|Tristate driver un3 (in view: work.top(verilog)) on net un7 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":1:0:1:0|Tristate driver un5 (in view: work.top(verilog)) on net un8 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":1:0:1:0|Tristate driver un2 (in view: work.top(verilog)) on net un9 (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/ID_EX.v":33:0:33:0|Removing sequential instance pc_out[63:0] (in view: work.ID_EX(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.

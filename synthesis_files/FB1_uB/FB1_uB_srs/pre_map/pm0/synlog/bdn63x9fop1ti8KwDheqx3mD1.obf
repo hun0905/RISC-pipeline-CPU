@@ -1,0 +1,2 @@
+ckid0_0:@|S:clk@|E:dut_inst.aptn_reset_sync_rst_n_6@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
+ckid0_1:@|S:sysip_inst.bsa19_system_ip_u.umr2_clk@|E:pipelineReg_hstdm_training_monitor_7_infopipe_data_out[3]@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1

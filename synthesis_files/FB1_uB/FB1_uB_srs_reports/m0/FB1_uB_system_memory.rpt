@@ -1,0 +1,123 @@
+System Memory report for FB1_uB
+==============================================================
+SLP project checksum             : 0x1ea929ab
+Partition tool version           : R-2020.12-SP1-1 (Apr  8 2022 21:27:16)
+Synthesis tool version           : R-2020.12-SP1-1 (Apr  8 2022 21:27:16)
+FPGA Location                    : FB?_B (Type HAPS100_4F) (board cde order unspecified) 
+System CAPIM address             : 57
+System CAPIM type                : 0x304
+Speed grade                      : -1-e
+Chip ID                          : 1
+
+End System Memory report
+==============================================================
+
+High Speed TDM report for FB1_uB
+==============================================================
+High Speed TDM Info:
+HSTDM memory format version      : 0xabcf
+HSTDM IP version                 : 2020.03.0.11
+HSTDM bit rate                   : 1200 Mbps
+HSTDM UMR or I2C address         : N/A (no accessible data on this chip)
+HSTDM fast clock port            : None
+HSTDM fast-clock frequency       : 100MHz
+Training will be done at         : system configuration
+
+TDM block 1 settings: Bit rate 1200 Mbps, POD12 Pre-emphasis and equalization enabled:
+TDM block 1 channels: Async Single-Ended (iobank #69 SLR2_R):
+	Receiver cpm_rcv_HSTDM_4_FB1_AI1_N_18 : Ratio 4 (Base 4) : Trace FB1.AI1_N[18], Pin (17N) J36 (byte 2 upper nibble bit 3) : RxIndex=0 
+	Receiver cpm_rcv_HSTDM_4_FB1_AI1_P_18 : Ratio 4 (Base 4) : Trace FB1.AI1_P[18], Pin (17P) J35 (byte 2 upper nibble bit 2) : RxIndex=1 
+	Clock input hstdm_clkgen_1200_rx_bank69_block1 : Trace FB1.AI1_P[19], Pin pair (16) F34-E34 (byte 2 upper nibble bit 0) 
+
+TDM block 2 settings: Bit rate 1200 Mbps:
+TDM block 2 channels: Async Single-Ended (iobank #71 SLR2_R):
+	Clock input hstdm_clkgen_1200_rx_bank71_block2 : Trace FB1.AI3_P[15], Pin pair (10) B33-B32 (byte 1 upper nibble bit 0) 
+	Receiver cpm_rcv_HSTDM_4_FB1_BI3_N_8 : Ratio 4 (Base 4) : Trace FB1.BI3_N[8], Pin (8N) C33 (byte 1 lower nibble bit 3) : RxIndex=2 
+	Receiver cpm_rcv_HSTDM_4_FB1_BI3_P_8 : Ratio 4 (Base 4) : Trace FB1.BI3_P[8], Pin (8P) D33 (byte 1 lower nibble bit 2) : RxIndex=3 
+	Receiver cpm_rcv_HSTDM_4_FB1_BI3_N_7 : Ratio 4 (Base 4) : Trace FB1.BI3_N[7], Pin (7N) A31 (byte 1 lower nibble bit 1) : RxIndex=4 
+	Receiver cpm_rcv_HSTDM_4_FB1_BI3_P_7 : Ratio 4 (Base 4) : Trace FB1.BI3_P[7], Pin (7P) A32 (byte 1 lower nibble bit 0) : RxIndex=5 
+
+TDM block 3 settings: Bit rate 1200 Mbps, POD12 Pre-emphasis and equalization enabled:
+TDM block 3 channels: Async Single-Ended on HAPS connector J20 (iobank #36 SLR3_L):
+	Receiver cpm_rcv_HSTDM_4_FB1_A2_C_1 : Ratio 4 (Base 4) : Trace FB1_A2_C[1], Pin (15N) K50 (byte 2 lower nibble bit 5) : RxIndex=6 
+	Receiver cpm_rcv_HSTDM_4_FB1_A2_C_0 : Ratio 4 (Base 4) : Trace FB1_A2_C[0], Pin (15P) K49 (byte 2 lower nibble bit 4) : RxIndex=7 
+	Receiver cpm_rcv_HSTDM_4_FB1_A2_D_3 : Ratio 4 (Base 4) : Trace FB1_A2_D[3], Pin (14N) L50 (byte 2 lower nibble bit 3) : RxIndex=8 
+	Receiver cpm_rcv_HSTDM_4_FB1_A2_D_2 : Ratio 4 (Base 4) : Trace FB1_A2_D[2], Pin (14P) L49 (byte 2 lower nibble bit 2) : RxIndex=9 
+	Clock input hstdm_clkgen_1200_rx_bank36_block3 : Trace FB1_A2_C[2], Pin pair (13) M48-M49 (byte 2 lower nibble bit 0) 
+
+TDM block 4 settings: Bit rate 1200 Mbps, POD12 Pre-emphasis and equalization enabled:
+TDM block 4 channels: Async Single-Ended on HAPS connector J21 (iobank #37 SLR3_L):
+	Receiver cpm_rcv_HSTDM_4_FB1_A3_C_1 : Ratio 4 (Base 4) : Trace FB1_A3_C[1], Pin (15N) C41 (byte 2 lower nibble bit 5) : RxIndex=10 
+	Receiver cpm_rcv_HSTDM_4_FB1_A3_C_0 : Ratio 4 (Base 4) : Trace FB1_A3_C[0], Pin (15P) D41 (byte 2 lower nibble bit 4) : RxIndex=11 
+	Receiver cpm_rcv_HSTDM_4_FB1_A3_D_3 : Ratio 4 (Base 4) : Trace FB1_A3_D[3], Pin (14N) E45 (byte 2 lower nibble bit 3) : RxIndex=12 
+	Receiver cpm_rcv_HSTDM_4_FB1_A3_D_2 : Ratio 4 (Base 4) : Trace FB1_A3_D[2], Pin (14P) E44 (byte 2 lower nibble bit 2) : RxIndex=13 
+	Clock input hstdm_clkgen_1200_rx_bank37_block4 : Trace FB1_A3_C[2], Pin pair (13) D45-D46 (byte 2 lower nibble bit 0) 
+
+TDM block 5 settings: Bit rate 1200 Mbps, POD12 Pre-emphasis and equalization enabled:
+TDM block 5 channels: Async Single-Ended on HAPS connector J22 (iobank #38 SLR3_L):
+	Receiver cpm_rcv_HSTDM_4_FB1_A4_C_1 : Ratio 4 (Base 4) : Trace FB1_A4_C[1], Pin (15N) L42 (byte 2 lower nibble bit 5) : RxIndex=14 
+	Receiver cpm_rcv_HSTDM_4_FB1_A4_C_0 : Ratio 4 (Base 4) : Trace FB1_A4_C[0], Pin (15P) L41 (byte 2 lower nibble bit 4) : RxIndex=15 
+	Receiver cpm_rcv_HSTDM_4_FB1_A4_D_3 : Ratio 4 (Base 4) : Trace FB1_A4_D[3], Pin (14N) M43 (byte 2 lower nibble bit 3) : RxIndex=16 
+	Receiver cpm_rcv_HSTDM_4_FB1_A4_D_2 : Ratio 4 (Base 4) : Trace FB1_A4_D[2], Pin (14P) N43 (byte 2 lower nibble bit 2) : RxIndex=17 
+	Clock input hstdm_clkgen_1200_rx_bank38_block5 : Trace FB1_A4_C[2], Pin pair (13) N44-M44 (byte 2 lower nibble bit 0) 
+
+TDM block 6 settings: Bit rate 1200 Mbps, POD12 Pre-emphasis and equalization enabled:
+TDM block 6 channels: Async Single-Ended on HAPS connector J2 (iobank #60 SLR0_R):
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_A_11 : Ratio 4 (Base 4) : Trace FB1_B2_A[11], Pin (24N) BK13 (byte 3 upper nibble bit 5) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_A_10 : Ratio 4 (Base 4) : Trace FB1_B2_A[10], Pin (24P) BJ13 (byte 3 upper nibble bit 4) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_A_9 : Ratio 4 (Base 4) : Trace FB1_B2_A[9], Pin (23N) BK14 (byte 3 upper nibble bit 3) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_A_8 : Ratio 4 (Base 4) : Trace FB1_B2_A[8], Pin (23P) BK15 (byte 3 upper nibble bit 2) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_A_7 : Ratio 4 (Base 4) : Trace FB1_B2_A[7], Pin (22N) BJ15 (byte 3 upper nibble bit 1) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_A_6 : Ratio 4 (Base 4) : Trace FB1_B2_A[6], Pin (22P) BH15 (byte 3 upper nibble bit 0) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_A_5 : Ratio 4 (Base 4) : Trace FB1_B2_A[5], Pin (21N) BJ16 (byte 3 lower nibble bit 5) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_A_4 : Ratio 4 (Base 4) : Trace FB1_B2_A[4], Pin (21P) BH16 (byte 3 lower nibble bit 4) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_A_3 : Ratio 4 (Base 4) : Trace FB1_B2_A[3], Pin (20N) BJ18 (byte 3 lower nibble bit 3) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_A_2 : Ratio 4 (Base 4) : Trace FB1_B2_A[2], Pin (20P) BH18 (byte 3 lower nibble bit 2) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_B_11 : Ratio 4 (Base 4) : Trace FB1_B2_B[11], Pin (19N) BK17 (byte 3 lower nibble bit 1) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_B_10 : Ratio 4 (Base 4) : Trace FB1_B2_B[10], Pin (19P) BJ17 (byte 3 lower nibble bit 0) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_B_9 : Ratio 4 (Base 4) : Trace FB1_B2_B[9], Pin (18N) BM13 (byte 2 upper nibble bit 5) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_B_8 : Ratio 4 (Base 4) : Trace FB1_B2_B[8], Pin (18P) BM14 (byte 2 upper nibble bit 4) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_B_7 : Ratio 4 (Base 4) : Trace FB1_B2_B[7], Pin (17N) BM17 (byte 2 upper nibble bit 3) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_B_6 : Ratio 4 (Base 4) : Trace FB1_B2_B[6], Pin (17P) BL17 (byte 2 upper nibble bit 2) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_B_5 : Ratio 4 (Base 4) : Trace FB1_B2_B[5], Pin (16N) BN13 (byte 2 upper nibble bit 1) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_B_4 : Ratio 4 (Base 4) : Trace FB1_B2_B[4], Pin (16P) BN14 (byte 2 upper nibble bit 0) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_B_3 : Ratio 4 (Base 4) : Trace FB1_B2_B[3], Pin (15N) BL14 (byte 2 lower nibble bit 5) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_B_2 : Ratio 4 (Base 4) : Trace FB1_B2_B[2], Pin (15P) BL15 (byte 2 lower nibble bit 4) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_C_1 : Ratio 4 (Base 4) : Trace FB1_B2_C[1], Pin (12N) BP15 (byte 1 upper nibble bit 5) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_C_0 : Ratio 4 (Base 4) : Trace FB1_B2_C[0], Pin (12P) BP16 (byte 1 upper nibble bit 4) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_D_1 : Ratio 4 (Base 4) : Trace FB1_B2_D[1], Pin (11N) BR14 (byte 1 upper nibble bit 3) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_D_0 : Ratio 4 (Base 4) : Trace FB1_B2_D[0], Pin (11P) BR15 (byte 1 upper nibble bit 2) : tap=0 
+	Clock output hstdm_clkgen_1200_tx_bank60_block6 : Trace FB1_B2_C[2], Pin pair (10) BP13-BR13 (byte 1 upper nibble bit 0) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_C_5 : Ratio 4 (Base 4) : Trace FB1_B2_C[5], Pin (9N) BT14 (byte 1 lower nibble bit 5) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_C_4 : Ratio 4 (Base 4) : Trace FB1_B2_C[4], Pin (9P) BT15 (byte 1 lower nibble bit 4) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_C_7 : Ratio 4 (Base 4) : Trace FB1_B2_C[7], Pin (8N) BP18 (byte 1 lower nibble bit 3) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_C_6 : Ratio 4 (Base 4) : Trace FB1_B2_C[6], Pin (8P) BN18 (byte 1 lower nibble bit 2) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_C_9 : Ratio 4 (Base 4) : Trace FB1_B2_C[9], Pin (7N) BR17 (byte 1 lower nibble bit 1) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_C_8 : Ratio 4 (Base 4) : Trace FB1_B2_C[8], Pin (7P) BP17 (byte 1 lower nibble bit 0) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_C_11 : Ratio 4 (Base 4) : Trace FB1_B2_C[11], Pin (6N) BU16 (byte 0 upper nibble bit 5) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_C_10 : Ratio 4 (Base 4) : Trace FB1_B2_C[10], Pin (6P) BT16 (byte 0 upper nibble bit 4) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_D_3 : Ratio 4 (Base 4) : Trace FB1_B2_D[3], Pin (5N) BU13 (byte 0 upper nibble bit 3) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_D_2 : Ratio 4 (Base 4) : Trace FB1_B2_D[2], Pin (5P) BU14 (byte 0 upper nibble bit 2) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_D_5 : Ratio 4 (Base 4) : Trace FB1_B2_D[5], Pin (4N) BU17 (byte 0 upper nibble bit 1) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_D_4 : Ratio 4 (Base 4) : Trace FB1_B2_D[4], Pin (4P) BT17 (byte 0 upper nibble bit 0) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_D_7 : Ratio 4 (Base 4) : Trace FB1_B2_D[7], Pin (3N) BV13 (byte 0 lower nibble bit 5) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_D_6 : Ratio 4 (Base 4) : Trace FB1_B2_D[6], Pin (3P) BV14 (byte 0 lower nibble bit 4) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_D_9 : Ratio 4 (Base 4) : Trace FB1_B2_D[9], Pin (2N) BV18 (byte 0 lower nibble bit 3) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_D_8 : Ratio 4 (Base 4) : Trace FB1_B2_D[8], Pin (2P) BU18 (byte 0 lower nibble bit 2) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_D_11 : Ratio 4 (Base 4) : Trace FB1_B2_D[11], Pin (1N) BV15 (byte 0 lower nibble bit 1) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_B2_D_10 : Ratio 4 (Base 4) : Trace FB1_B2_D[10], Pin (1P) BV16 (byte 0 lower nibble bit 0) : tap=0 
+
+TDM block 7 settings: Bit rate 1200 Mbps, POD12 Pre-emphasis and equalization enabled:
+TDM block 7 channels: Async Single-Ended on HAPS connector J2 (iobank #60 SLR0_R):
+	Receiver cpm_rcv_HSTDM_4_FB1_B2_A_1 : Ratio 4 (Base 4) : Trace FB1_B2_A[1], Pin (14N) BM16 (byte 2 lower nibble bit 3) : RxIndex=18 
+	Receiver cpm_rcv_HSTDM_4_FB1_B2_A_0 : Ratio 4 (Base 4) : Trace FB1_B2_A[0], Pin (14P) BL16 (byte 2 lower nibble bit 2) : RxIndex=19 
+	Clock input hstdm_clkgen_1200_rx_bank60_block7 : Trace FB1_B2_B[0], Pin pair (13) BN16-BN15 (byte 2 lower nibble bit 0) 
+
+High Speed TDM Summary:
+	Transmit: 168 bits transmitted over 42 pin(s)
+		with 2 pin(s) used as clocks
+	Receive: 80 bits received over 20 pin(s)
+		with 12 pin(s) used as clocks
+
+End High Speed TDM report
+==============================================================

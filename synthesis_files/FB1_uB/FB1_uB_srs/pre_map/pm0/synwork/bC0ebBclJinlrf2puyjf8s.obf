@@ -1,0 +1,50 @@
+i clk
+m 0 0
+u 25 183
+p {p:clk}{t:dut_inst.clk}{p:dut_inst.clk}{t:dut_inst.aptn_reset_sync_rst_n_6.C}
+e ckid0_0 {t:dut_inst.aptn_reset_sync_rst_n_6.C} dffr
+c ckid0_0 {p:clk} port Unsupported/too complex instance on clock path
+i sysip_inst.umr2_clk
+m 0 0
+u 40 40
+p {t:sysip_inst.bsa19_system_ip_u.umr2_clk}{p:sysip_inst.umr2_clk}{t:sysip_inst.umr2_clk}{t:pipelineReg_hstdm_training_monitor_7_infopipe_data_out[3].C}
+e ckid0_1 {t:pipelineReg_hstdm_training_monitor_7_infopipe_data_out[3].C} dff
+c ckid0_1 {t:sysip_inst.bsa19_system_ip_u.umr2_clk} bsa19_system_ip Unsupported/too complex instance on clock path
+i pin_F34
+m 0 0
+u 0 0
+i pin_F34_0
+m 0 0
+u 0 0
+i pin_B33
+m 0 0
+u 0 0
+i pin_B33_0
+m 0 0
+u 0 0
+i pin_M48
+m 0 0
+u 0 0
+i pin_M48_0
+m 0 0
+u 0 0
+i pin_D45
+m 0 0
+u 0 0
+i pin_D45_0
+m 0 0
+u 0 0
+i pin_N44
+m 0 0
+u 0 0
+i pin_N44_0
+m 0 0
+u 0 0
+i pin_BN16
+m 0 0
+u 0 0
+i pin_BN16_0
+m 0 0
+u 0 0
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

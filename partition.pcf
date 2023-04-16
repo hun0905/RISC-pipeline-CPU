@@ -1,0 +1,20 @@
+#For partition
+tdm_control -type hstdm
+tdm_control -hstdm_bit_rate 1400
+tdm_control -qualification_mode  all
+#tdm_control -max_ratio 16
+tdm_control -max_ratio 4 
+
+#cell assign
+assign_cell {mux3 pc1 im1 adder1 ifid1} {FB1.uA}
+assign_cell {hazard1 control1 registers1 adder2 immgen1 mux3_1_1 mux3_1_2 cp1 idex1} {FB1.uB}
+assign_cell {mux3_1_3 mux3_1_4 mux1 alucontrol alu1 forward1 exmem1} {FB1.uC}
+assign_cell {dm1 memwb1 mux2} {FB1.uD}
+#replicate_cell {clk}{FB1.uA FB1.uB FB1.uC FB1.uD}
+#Global clock assign
+assign_global_net {clk} {GCLK1}
+
+
+#reset
+assign_virtual_port -port {rst_n} -type USR_LOCAL_RESET -bin {FB1.uA}
+reset_synchronize -toplevel_net {rst_n} -clock {clk} -init {0} -extra_pipeline_stages {2}

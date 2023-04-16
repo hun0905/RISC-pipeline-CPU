@@ -1,0 +1,65 @@
+---------------------------------------
+Resource Usage Report for FB1_uA 
+
+Mapping to part: xcvu19p-fsva3824-1-e
+Cell usage:
+RAM32X1D       4 uses
+BITSLICE_CONTROL  10 uses
+CARRY8          37 uses
+FD              1291 uses
+FDC             109 uses
+FDCE            200 uses
+FDE             239 uses
+FDP             36 uses
+FDR             78 uses
+FDRE            182 uses
+FDS             3 uses
+GND             44 uses
+PLLE3_ADV       5 uses
+RAM32M16        2 uses
+RAMB18E2        2 uses
+RXTX_BITSLICE   23 uses
+USR_ACCESSE2    1 use
+VCC             25 uses
+bsa19_system_ip  1 use
+LUT1            102 uses
+LUT2            386 uses
+LUT3            181 uses
+LUT4            179 uses
+LUT5            151 uses
+LUT6            233 uses
+LUT6_2          1 use
+CFGLUT5         33 uses
+
+I/O ports: 728
+I/O primitives: 662
+IBUF           325 uses
+IBUFGDS        1 use
+OBUF           331 uses
+OBUFDS         5 uses
+
+BUFG           4 uses
+BUFGCE         5 uses
+SRL primitives:
+SRLC32E        29 uses
+
+I/O Register bits:                  2
+Register bits not including I/Os:   2136 of 8171520 (0%)
+
+RAM/ROM usage summary
+Dual Port Rams (RAM32X1D): 4
+Occupied Block RAM sites (RAMB36) : 1 of 2160 (0%)
+
+
+Global Clock Buffers: 9 of 320 (2%)
+
+
+@S |Mapping Summary:
+Total  LUTs: 1276 (0%)
+
+Distribution of All Consumed LUTs = SRL + RAM + LUT1 + LUT2 + LUT3 + LUT4 + LUT5 + LUT6 + LUT6_2 + CFGLUT5- SOFT_HLUTNM/2 
+Distribution of All Consumed Luts 1276 = 29 + 24 + 102 + 386 + 181 + 179 + 151 + 233 + 1 + 33- 86/2 
+
+
+ Number of unique control sets:              52
+

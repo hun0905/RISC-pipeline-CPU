@@ -1,0 +1,11 @@
+/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/bin/p_plan  -fpga_path  /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files  -slp_generate  -split_generated_modules 1  -noreservepads  -flatten  -prodtype  protocompiler_s  -config  /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/config_certify.fp  -physicalnl  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_generate/sg0/targetsystem.srs  -post_partition_nl  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_generate/sg0/top_rt_final.srp  -encrypt  -write_slp  8  -fast_slp  -osvlog  1  -prjfile  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_generate/sg0/datastate_slp.prs  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_generate/sg0/top_slpgenwri.srp  -identpath  /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1  -impl  sg0  -loga  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_generate/sg0/top_slpgen.srr  -jobname  "slp_project_gen" 
+relcom:/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/bin/p_plan -fpga_path ../../../../synthesis_files -slp_generate -split_generated_modules 1 -noreservepads -flatten -prodtype protocompiler_s -config /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/config_certify.fp -physicalnl ../targetsystem.srs -post_partition_nl ../top_rt_final.srp -encrypt -write_slp 8 -fast_slp -osvlog 1 -prjfile ../datastate_slp.prs ../top_slpgenwri.srp -identpath /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1 -impl sg0 -loga ../top_slpgen.srr -jobname "slp_project_gen"
+rc:0 success:1 runtime:4
+file:../../../../synthesis_files|io:o|time:1681051287|size:4096|exec:0|csum:
+file:/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/config_certify.fp|io:i|time:1649477836|size:78354|exec:0|csum:
+file:../targetsystem.srs|io:i|time:1681051104|size:326563|exec:0|csum:
+file:../top_rt_final.srp|io:i|time:1681051278|size:263213|exec:0|csum:
+file:../datastate_slp.prs|io:i|time:1681051284|size:2869|exec:0|csum:
+file:../top_slpgenwri.srp|io:o|time:1681051288|size:903004|exec:0|csum:
+file:../top_slpgen.srr|io:o|time:1681051288|size:2410|exec:0|csum:
+file:/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/bin/p_plan|io:i|time:1649477855|size:367|exec:1|csum:

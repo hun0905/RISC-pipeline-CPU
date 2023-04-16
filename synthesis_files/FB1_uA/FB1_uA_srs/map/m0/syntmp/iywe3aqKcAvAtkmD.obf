@@ -1,0 +1,20 @@
+@N: CD630 :"/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_srs/map/m0/syntmp/gentmp120740weI3":4:7:4:9|Synthesizing work.top.gen.
+@N: CD630 :"syng0a0EmZ7":10:7:10:13|Synthesizing work.seq_srl.static_srl.
+@N: CD630 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim.vhd":29840:10:29840:16|Synthesizing unisim.srlc32e.syn_black_box.
+Post processing for unisim.srlc32e.syn_black_box
+@W: CD638 :"syng0a0EmZ7":108:7:108:17|Signal tmp_d_array_1 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"syng0a0EmZ7":109:7:109:14|Signal tmp_addr is undriven. Either assign the signal a value or remove the signal declaration.
+Post processing for work.seq_srl.static_srl
+Running optimization stage 1 on SEQ_SRL .......
+@W: CL240 :"syng0a0EmZ7":108:7:108:17|Signal tmp_d_array_1 is floating; a simulation mismatch is possible.
+Finished optimization stage 1 on SEQ_SRL (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)
+Post processing for work.top.gen
+Running optimization stage 1 on top .......
+Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)
+Running optimization stage 2 on SEQ_SRL .......
+@N: CL159 :"syng0a0EmZ7":18:6:18:10|Input RADDR is unused.
+@N: CL159 :"syng0a0EmZ7":22:6:22:10|Input A_RST is unused.
+@N: CL159 :"syng0a0EmZ7":23:6:23:10|Input S_RST is unused.
+Finished optimization stage 2 on SEQ_SRL (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)
+Running optimization stage 2 on top .......
+Finished optimization stage 2 on top (CPU Time 0h:00m:00s, Memory Used current: 186MB peak: 186MB)

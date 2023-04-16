@@ -1,0 +1,856 @@
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 8388608 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|pp0
+Synopsys Verilog Compiler, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:14, @4216327
+
+@N|Running in 64-bit mode
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library __hyper__lib__)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_him_async_fifo_2048x258_xcvu440_stub.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80_xcvu440_mgb1_stub.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80d_xcvu440_mgb1_stub.v" (library snps_haps)
+@N: CG1222 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80_xcvu440_mgb1_stub.v":17:7:17:43|Previous declaration of module umr3_pcie_gen2_x4_haps80_xcvu440_mgb1 found
+@W: CG275 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80d_xcvu440_mgb1_stub.v":17:7:17:43|Duplicate module name umr3_pcie_gen2_x4_haps80_xcvu440_mgb1 (using last description encountered)!
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v" (library snps_haps)
+@N: CG334 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":925:15:925:27|Read directive translate_off.
+@N: CG333 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":930:15:930:26|Read directive translate_on.
+@W: CS138 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":16493:3:16327:8|Macro definition for UMR3___GUARD__DW_AXI_GM_ALL_INCLUDES__VH__ not found. Cannot undefine.
+@W: CS138 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":21144:3:20944:8|Macro definition for UMR3___GUARD__DW_AXI_GS_ALL_INCLUDES__VH__ not found. Cannot undefine.
+@W: CG966 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":25410:5:25410:5|Newline found within a string in a comment - should preferably be preceded with a '\'
+@W: CG966 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":25410:5:25410:5|Newline found within a string in a comment - should preferably be preceded with a '\'
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/clocks/gsv_trigger_hypermods.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/scemi_objects.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/scemi_pipes.svh" (library snps_haps)
+@I::"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/targetsystem.vb" (library work)
+@I:"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/targetsystem.vb":"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v" (library work)
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":13:13:13:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":30:13:30:25|User defined pragma syn_black_box detected
+
+@I:"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/targetsystem.vb":"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v" (library work)
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":559:15:559:27|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":811:13:811:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":915:13:915:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":983:14:983:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":1048:13:1048:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":1219:13:1219:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":1331:13:1331:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":1353:13:1353:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":1370:13:1370:25|User defined pragma syn_black_box detected
+
+@W: CG1249 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":1450:5:1450:11|Redeclaration of implicit signal SDA_INT
+@W: CG1249 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":1451:5:1451:11|Redeclaration of implicit signal SCL_INT
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":1467:16:1467:28|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":1647:13:1647:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":1830:14:1830:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":1937:14:1937:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":2045:14:2045:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":2168:14:2168:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":2288:14:2288:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":2349:14:2349:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":2487:14:2487:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":2516:14:2516:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":2531:14:2531:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":2548:14:2548:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":2567:14:2567:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":2666:14:2666:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":2736:14:2736:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":2752:14:2752:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":14518:16:14518:28|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":14973:14:14973:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":14989:14:14989:26|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":15006:16:15006:28|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":15147:13:15147:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":15264:13:15264:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":15398:13:15398:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":15555:13:15555:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":15679:13:15679:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":15691:13:15691:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":15705:13:15705:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":15714:13:15714:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":15722:13:15722:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":15730:13:15730:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":15739:13:15739:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":15748:13:15748:25|User defined pragma syn_black_box detected
+
+@I:"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/targetsystem.vb":"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v" (library work)
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":2535:13:2535:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":2555:13:2555:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":2661:13:2661:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":2765:13:2765:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":3365:13:3365:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":3506:13:3506:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":3653:13:3653:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":3665:13:3665:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":3968:13:3968:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":3980:13:3980:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":4303:13:4303:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":4543:13:4543:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":4765:13:4765:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":4951:13:4951:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":5184:13:5184:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":5201:13:5201:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":5218:13:5218:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":5231:13:5231:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":5243:13:5243:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":5259:13:5259:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":5274:13:5274:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":5289:13:5289:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":5300:13:5300:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":5311:13:5311:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":5326:13:5326:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":5337:13:5337:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":5352:13:5352:25|User defined pragma syn_black_box detected
+
+@I:"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/targetsystem.vb":"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/cables_ht3.v" (library work)
+@I:"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/targetsystem.vb":"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/mgb_cards.v" (library work)
+@W: CG921 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/mgb_cards.v":196:9:196:9|i is already declared in this scope.
+@W: CG921 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/mgb_cards.v":207:9:207:9|i is already declared in this scope.
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/mgb_cards.v":312:13:312:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/mgb_cards.v":323:13:323:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/mgb_cards.v":396:13:396:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/mgb_cards.v":478:13:478:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/mgb_cards.v":557:13:557:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/mgb_cards.v":841:13:841:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/mgb_cards.v":992:13:992:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/mgb_cards.v":1004:13:1004:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/mgb_cards.v":1015:13:1015:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/mgb_cards.v":1029:13:1029:25|User defined pragma syn_black_box detected
+
+@I:"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/targetsystem.vb":"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/customboards.v" (library work)
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/customboards.v":85:13:85:25|User defined pragma syn_black_box detected
+
+@I:"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/targetsystem.vb":"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/ECDB.v" (library work)
+@I:"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/targetsystem.vb":"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v" (library work)
+@I:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_modules.v" (library work)
+@I:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_modules.v":"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/modules_hc2.v" (library work)
+@I:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_modules.v":"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/modules_mgb2.v" (library work)
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/modules_mgb2.v":611:13:611:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_modules.v":53:13:53:25|User defined pragma syn_black_box detected
+
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_modules.v":68:13:68:25|User defined pragma syn_black_box detected
+
+@I:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/FPGA100_4F.v" (library work)
+@I:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/FPGA100_4F.v":"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/xcvu19p-fsva3824.v" (library work)
+@W: CG100 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/xcvu19p-fsva3824.v":2318:13:2318:25|User defined pragma syn_black_box detected
+
+@W: CG921 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":1157:9:1157:9|i is already declared in this scope.
+@W: CG921 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":1169:9:1169:9|i is already declared in this scope.
+@W: CG921 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":1188:9:1188:9|i is already declared in this scope.
+@W: CG921 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":1215:9:1215:9|i is already declared in this scope.
+@W: CG921 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":1239:9:1239:9|i is already declared in this scope.
+@I:"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/targetsystem.vb":"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/cutomdb_top_io_ht3.v" (library work)
+@W: CG100 :"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/cutomdb_top_io_ht3.v":11:14:11:26|User defined pragma syn_black_box detected
+
+@N|stack limit increased to max
+Verilog syntax check successful!
+Selecting top level module haps100
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/cutomdb_top_io_ht3.v":2:7:2:16|Synthesizing module TOP_IO_HT3 in library work.
+Running optimization stage 1 on TOP_IO_HT3 .......
+Finished optimization stage 1 on TOP_IO_HT3 (CPU Time 0h:00m:00s, Memory Used current: 179MB peak: 179MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000001110
+	priority=32'b11111111111111111111111111111111
+	attributes=168'b001011100110100001100001011100000111001101011111011000110110000101100010011011000110010101011111011011000110010101101110011001110111010001101000001111010011010100110000
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_14s_18446744073709551615s_.haps_cable_length=50__0s_Z1
+Running optimization stage 1 on syn_trace_attr_14s_18446744073709551615s_.haps_cable_length=50__0s_Z1 .......
+Finished optimization stage 1 on syn_trace_attr_14s_18446744073709551615s_.haps_cable_length=50__0s_Z1 (CPU Time 0h:00m:00s, Memory Used current: 180MB peak: 180MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000000001
+	priority=32'b11111111111111111111111111111111
+	attributes=168'b001011100110100001100001011100000111001101011111011000110110000101100010011011000110010101011111011011000110010101101110011001110111010001101000001111010011010100110000
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_1s_18446744073709551615s_.haps_cable_length=50__0s_Z2
+Running optimization stage 1 on syn_trace_attr_1s_18446744073709551615s_.haps_cable_length=50__0s_Z2 .......
+Finished optimization stage 1 on syn_trace_attr_1s_18446744073709551615s_.haps_cable_length=50__0s_Z2 (CPU Time 0h:00m:00s, Memory Used current: 180MB peak: 180MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":792:7:792:22|Synthesizing module CON_CABLE_50_HT3 in library work.
+Running optimization stage 1 on CON_CABLE_50_HT3 .......
+Finished optimization stage 1 on CON_CABLE_50_HT3 (CPU Time 0h:00m:00s, Memory Used current: 181MB peak: 181MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/xcvu19p-fsva3824.v":4:7:4:21|Synthesizing module XCVU19PFSVA3824 in library work.
+Running optimization stage 1 on XCVU19PFSVA3824 .......
+Finished optimization stage 1 on XCVU19PFSVA3824 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000000001
+	priority=32'b11111111111111111111111111111111
+	attributes=1328'b01110011011110010110111001011111011001110110001101101100011010110101111101110000011011000110110001011111011101000110010001110110001111010011001000110010001011100011000100110000001000000111001101111001011011100101111101100111011000110110110001101011010111110110011001110000011001110110000101011111011101000110010001110110001111010011001000111001001011100011100000110000001000000111001101111001011011100101111101101000011000010111000001110011010111110110011001110101011011100110001101100111011100100110111101110101011100000011110101000111010000110100110001001011001000000111001101111001011011100101111101101000011000010111000001110011010111110110010001101001011001100110011001100101011100100110010101101110011101000110100101100001011011000101111101100011011011000110111101100011011010110011110101101001011011100010000001101000011000010111000001110011010111110110000101101100011011000110111101110111011001010110010001011111011010010110111101110011011101000110000101101110011001000110000101110010011001000111001100111101010110000100001101010110010101010011010000110100001100000011101001001100010101100100010001010011010111110011000100111000001110110101100001000011010101100101010100110001001110010101000000111010010001000100100101000110010001100101111101010000010011110100010000110001001100100010110001000100010000110100100100101100
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_Z3
+Running optimization stage 1 on syn_trace_attr_Z3 .......
+Finished optimization stage 1 on syn_trace_attr_Z3 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000000001
+	priority=32'b11111111111111111111111111111111
+	attributes=1552'b0111001101111001011011100101111101100111011000110110110001101011010111110111000001101100011011000101111101110100011001000111011000111101001100100011001000101110001100010011000000100000011100110111100101101110010111110110011101100011011011000110101101011111011001100111000001100111011000010101111101110100011001000111011000111101001100100011100100101110001110000011000000100000011100110111100101101110010111110110100001100001011100000111001101011111011001100111010101101110011000110110011101110010011011110111010101110000001111010100011101000011010011000100101100100000011100110111100101101110010111110110100001100001011100000111001101011111011001000110100101100110011001100110010101110010011001010110111001110100011010010110000101101100010111110110001101101100011011110110001101101011001111010110100101101110001000000100001101001100010011110100001101001011010111110100010001000101010001000100100101000011010000010101010001000101010001000101111101010010010011110101010101010100010001010011110101000110010000010100110001010011010001010010000001101000011000010111000001110011010111110110000101101100011011000110111101110111011001010110010001011111011010010110111101110011011101000110000101101110011001000110000101110010011001000111001100111101010110000100001101010110010101010011010000110100001100000011101001001100010101100100010001010011010111110011000100111000001110110101100001000011010101100101010100110001001110010101000000111010010001000100100101000110010001100101111101010000010011110100010000110001001100100010110001000100010000110100100100101100
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_Z4
+Running optimization stage 1 on syn_trace_attr_Z4 .......
+Finished optimization stage 1 on syn_trace_attr_Z4 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000000001
+	priority=32'b11111111111111111111111111111111
+	attributes=1000'b0111001101111001011011100101111101101000011000010111000001110011010111110110011001110101011011100110001101100111011100100110111101110101011100000011110101000111010000110100110001001011001000000111001101111001011011100101111101101000011000010111000001110011010111110110010001101001011001100110011001100101011100100110010101101110011101000110100101100001011011000101111101100011011011000110111101100011011010110011110101101111011101010111010000100000011010000110000101110000011100110101111101100001011011000110110001101111011101110110010101100100010111110110100101101111011100110111010001100001011011100110010001100001011100100110010001110011001111010101100001000011010101100101010100110100001101000011000000111010010011000101011001000100010100110101111100110001001110000011101101011000010000110101011001010101001100010011100101010000001110100100010001001001010001100100011001011111010100000100111101000100001100010011001000101100010001000100001101001001001011000010110001000110010000010101001101010100
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_Z5
+Running optimization stage 1 on syn_trace_attr_Z5 .......
+Finished optimization stage 1 on syn_trace_attr_Z5 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000000010
+	priority=32'b11111111111111111111111111111111
+	attributes=232'b0111001101111001011011100101111101101000011000010111000001110011010111110110011001110101011011100110001101100111011100100110111101110101011100000011110101001101010001110101010001011111010100100100010101000110010000110100110001001011
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_2s_18446744073709551615s_syn_haps_funcgroup=MGT_REFCLK__0s_Z6
+Running optimization stage 1 on syn_trace_attr_2s_18446744073709551615s_syn_haps_funcgroup=MGT_REFCLK__0s_Z6 .......
+Finished optimization stage 1 on syn_trace_attr_2s_18446744073709551615s_syn_haps_funcgroup=MGT_REFCLK__0s_Z6 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000000100
+	priority=32'b11111111111111111111111111111111
+	attributes=176'b01110011011110010110111001011111011010000110000101110000011100110101111101100110011101010110111001100011011001110111001001101111011101010111000000111101010011010100011101010100
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_4s_18446744073709551615s_syn_haps_funcgroup=MGT__0s_Z7
+Running optimization stage 1 on syn_trace_attr_4s_18446744073709551615s_syn_haps_funcgroup=MGT__0s_Z7 .......
+Finished optimization stage 1 on syn_trace_attr_4s_18446744073709551615s_syn_haps_funcgroup=MGT__0s_Z7 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000000001
+	priority=32'b11111111111111111111111111111111
+	attributes=232'b0111001101111001011011100101111101101000011000010111000001110011010111110110011001110101011011100110001101100111011100100110111101110101011100000011110101001101010001110101010001011111010100100100010101000110010000110100110001001011
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_1s_18446744073709551615s_syn_haps_funcgroup=MGT_REFCLK__0s_Z8
+Running optimization stage 1 on syn_trace_attr_1s_18446744073709551615s_syn_haps_funcgroup=MGT_REFCLK__0s_Z8 .......
+Finished optimization stage 1 on syn_trace_attr_1s_18446744073709551615s_syn_haps_funcgroup=MGT_REFCLK__0s_Z8 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000000001
+	priority=32'b11111111111111111111111111111111
+	attributes=224'b01110011011110010110111001011111011010000110000101110000011100110101111101100110011101010110111001100011011001110111001001101111011101010111000000111101010011010100011101010100010111110100010001000101010000100101010101000111
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_1s_18446744073709551615s_syn_haps_funcgroup=MGT_DEBUG__0s_Z9
+Running optimization stage 1 on syn_trace_attr_1s_18446744073709551615s_syn_haps_funcgroup=MGT_DEBUG__0s_Z9 .......
+Finished optimization stage 1 on syn_trace_attr_1s_18446744073709551615s_syn_haps_funcgroup=MGT_DEBUG__0s_Z9 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000000100
+	priority=32'b11111111111111111111111111111111
+	attributes=224'b01110011011110010110111001011111011010000110000101110000011100110101111101100110011101010110111001100011011001110111001001101111011101010111000000111101010011010100011101010100010111110100010001000101010000100101010101000111
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_4s_18446744073709551615s_syn_haps_funcgroup=MGT_DEBUG__0s_Z10
+Running optimization stage 1 on syn_trace_attr_4s_18446744073709551615s_syn_haps_funcgroup=MGT_DEBUG__0s_Z10 .......
+Finished optimization stage 1 on syn_trace_attr_4s_18446744073709551615s_syn_haps_funcgroup=MGT_DEBUG__0s_Z10 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000001110
+	priority=32'b11111111111111111111111111111111
+	attributes=448'b0111001101111001011011100101111101101110011011110101111101101000011100110111010001100100011011010011110100110001001000000110100001100001011100000111001101011111011101000110010001101101010111110110110101100010011100100101111101110011011001010101111100110000001111010011000100100000011010000110000101110000011100110101111101110100011001000110110101011111011011010110001001110010010111110110010001101001011001100110011001011111001100000011110100110001
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_14s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z11
+Running optimization stage 1 on syn_trace_attr_14s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z11 .......
+Finished optimization stage 1 on syn_trace_attr_14s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z11 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000000001
+	priority=32'b11111111111111111111111111111111
+	attributes=448'b0111001101111001011011100101111101101110011011110101111101101000011100110111010001100100011011010011110100110001001000000110100001100001011100000111001101011111011101000110010001101101010111110110110101100010011100100101111101110011011001010101111100110000001111010011000100100000011010000110000101110000011100110101111101110100011001000110110101011111011011010110001001110010010111110110010001101001011001100110011001011111001100000011110100110001
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_1s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z12
+Running optimization stage 1 on syn_trace_attr_1s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z12 .......
+Finished optimization stage 1 on syn_trace_attr_1s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z12 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000011000
+	priority=32'b11111111111111111111111111111111
+	attributes=448'b0111001101111001011011100101111101101110011011110101111101101000011100110111010001100100011011010011110100110001001000000110100001100001011100000111001101011111011101000110010001101101010111110110110101100010011100100101111101110011011001010101111100110000001111010011000100100000011010000110000101110000011100110101111101110100011001000110110101011111011011010110001001110010010111110110010001101001011001100110011001011111001100000011110100110001
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_24s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z13
+Running optimization stage 1 on syn_trace_attr_24s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z13 .......
+Finished optimization stage 1 on syn_trace_attr_24s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z13 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000000011
+	priority=32'b11111111111111111111111111111111
+	attributes=448'b0111001101111001011011100101111101101110011011110101111101101000011100110111010001100100011011010011110100110001001000000110100001100001011100000111001101011111011101000110010001101101010111110110110101100010011100100101111101110011011001010101111100110000001111010011000100100000011010000110000101110000011100110101111101110100011001000110110101011111011011010110001001110010010111110110010001101001011001100110011001011111001100000011110100110001
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_3s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z14
+Running optimization stage 1 on syn_trace_attr_3s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z14 .......
+Finished optimization stage 1 on syn_trace_attr_3s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z14 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000000001
+	priority=32'b11111111111111111111111111111111
+	attributes=184'b0010111001101000011000010111000001110011010111110110011001101111011100100110001101100101010111110111000001101001011000110110101101011111011100110111001100111101010100010100001001000011
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_1s_18446744073709551615s_.haps_force_pick_ss=QBC__0s_Z15
+Running optimization stage 1 on syn_trace_attr_1s_18446744073709551615s_.haps_force_pick_ss=QBC__0s_Z15 .......
+Finished optimization stage 1 on syn_trace_attr_1s_18446744073709551615s_.haps_force_pick_ss=QBC__0s_Z15 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000011000
+	priority=32'b11111111111111111111111111111111
+	attributes=376'b0110100001100001011100000111001101011111011000010110110001101100011011110111011101100101011001000101111101101001011011110111001101110100011000010110111001100100011000010111001001100100011100110011110101011000010000110101011001010101001100010011100101010000001110100101001101010011010101000100110001011111001100010011001000101100010001000100001101001001001011000010110000101100
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_24s_18446744073709551615s_haps_allowed_iostandards=XCVU19P:SSTL_12,DCI,,,__0s_Z16
+Running optimization stage 1 on syn_trace_attr_24s_18446744073709551615s_haps_allowed_iostandards=XCVU19P:SSTL_12,DCI,,,__0s_Z16 .......
+Finished optimization stage 1 on syn_trace_attr_24s_18446744073709551615s_haps_allowed_iostandards=XCVU19P:SSTL_12,DCI,,,__0s_Z16 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":11:7:11:20|Synthesizing module syn_trace_attr in library work.
+
+	width=32'b00000000000000000000000000000011
+	priority=32'b11111111111111111111111111111111
+	attributes=376'b0110100001100001011100000111001101011111011000010110110001101100011011110111011101100101011001000101111101101001011011110111001101110100011000010110111001100100011000010111001001100100011100110011110101011000010000110101011001010101001100010011100101010000001110100101001101010011010101000100110001011111001100010011001000101100010001000100001101001001001011000010110000101100
+	reserved=1'b0
+	first_bit=32'b00000000000000000000000000000000
+   Generated name = syn_trace_attr_3s_18446744073709551615s_haps_allowed_iostandards=XCVU19P:SSTL_12,DCI,,,__0s_Z17
+Running optimization stage 1 on syn_trace_attr_3s_18446744073709551615s_haps_allowed_iostandards=XCVU19P:SSTL_12,DCI,,,__0s_Z17 .......
+Finished optimization stage 1 on syn_trace_attr_3s_18446744073709551615s_haps_allowed_iostandards=XCVU19P:SSTL_12,DCI,,,__0s_Z17 (CPU Time 0h:00m:00s, Memory Used current: 187MB peak: 187MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/FPGA100_4F.v":44:7:44:16|Synthesizing module FPGA100_4F in library work.
+
+	V1=16'b0100000100110001
+	V2=16'b0100000100110010
+	V3=16'b0100000100110011
+	V4=16'b0100000100110100
+	V5=16'b0100000100110101
+	V6=16'b0100000100110110
+	V7=16'b0100000100110111
+	V8=16'b0100000100111000
+	V9=16'b0100000100111001
+	V10=24'b010000010011000100110000
+	V11=24'b010000010011000100110001
+	V12=24'b010000010011000100110010
+	V13=24'b010000010011000100110011
+	V14=24'b010000010011000100110100
+	V15=24'b010000010011000100110101
+	V16=24'b010000010011000100110110
+	V17=24'b010000010011000100110111
+	V18=24'b010000010011000100111000
+	V19=24'b010000010011000100111001
+	V20=24'b010000010011001000110000
+	V21=24'b010000010011001000110001
+	V22=24'b010000010011001000110010
+	V23=24'b010000010011001000110011
+	V24=24'b010000010011001000110100
+	V25=24'b010000010011001000110101
+	V26=24'b010000010011001000110110
+	V27=24'b010000010011001000110111
+	V28=24'b010000010011001000111000
+	V29=24'b010000010011001000111001
+	V30=24'b010000010011001100110000
+	V31=24'b010000010011001100110001
+	V32=24'b010000010011001100110010
+	V33=24'b010000010011001100110011
+	V34=24'b010000010011001100110100
+	V35=24'b010000010011001100110101
+	V36=24'b010000010011001100110110
+	speedgrade=32'b00101101001100010010110101100101
+   Generated name = FPGA100_4F_Z18
+Running optimization stage 1 on FPGA100_4F_Z18 .......
+Finished optimization stage 1 on FPGA100_4F_Z18 (CPU Time 0h:00m:00s, Memory Used current: 199MB peak: 199MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/FPGA100_4F.v":44:7:44:16|Synthesizing module FPGA100_4F in library work.
+
+	V1=16'b0100001000110001
+	V2=16'b0100001000110010
+	V3=16'b0100001000110011
+	V4=16'b0100001000110100
+	V5=16'b0100001000110101
+	V6=16'b0100001000110110
+	V7=16'b0100001000110111
+	V8=16'b0100001000111000
+	V9=16'b0100001000111001
+	V10=24'b010000100011000100110000
+	V11=24'b010000100011000100110001
+	V12=24'b010000100011000100110010
+	V13=24'b010000100011000100110011
+	V14=24'b010000100011000100110100
+	V15=24'b010000100011000100110101
+	V16=24'b010000100011000100110110
+	V17=24'b010000100011000100110111
+	V18=24'b010000100011000100111000
+	V19=24'b010000100011000100111001
+	V20=24'b010000100011001000110000
+	V21=24'b010000100011001000110001
+	V22=24'b010000100011001000110010
+	V23=24'b010000100011001000110011
+	V24=24'b010000100011001000110100
+	V25=24'b010000100011001000110101
+	V26=24'b010000100011001000110110
+	V27=24'b010000100011001000110111
+	V28=24'b010000100011001000111000
+	V29=24'b010000100011001000111001
+	V30=24'b010000100011001100110000
+	V31=24'b010000100011001100110001
+	V32=24'b010000100011001100110010
+	V33=24'b010000100011001100110011
+	V34=24'b010000100011001100110100
+	V35=24'b010000100011001100110101
+	V36=24'b010000100011001100110110
+	speedgrade=32'b00101101001100010010110101100101
+   Generated name = FPGA100_4F_Z19
+Running optimization stage 1 on FPGA100_4F_Z19 .......
+Finished optimization stage 1 on FPGA100_4F_Z19 (CPU Time 0h:00m:00s, Memory Used current: 207MB peak: 207MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/FPGA100_4F.v":44:7:44:16|Synthesizing module FPGA100_4F in library work.
+
+	V1=16'b0100001100110001
+	V2=16'b0100001100110010
+	V3=16'b0100001100110011
+	V4=16'b0100001100110100
+	V5=16'b0100001100110101
+	V6=16'b0100001100110110
+	V7=16'b0100001100110111
+	V8=16'b0100001100111000
+	V9=16'b0100001100111001
+	V10=24'b010000110011000100110000
+	V11=24'b010000110011000100110001
+	V12=24'b010000110011000100110010
+	V13=24'b010000110011000100110011
+	V14=24'b010000110011000100110100
+	V15=24'b010000110011000100110101
+	V16=24'b010000110011000100110110
+	V17=24'b010000110011000100110111
+	V18=24'b010000110011000100111000
+	V19=24'b010000110011000100111001
+	V20=24'b010000110011001000110000
+	V21=24'b010000110011001000110001
+	V22=24'b010000110011001000110010
+	V23=24'b010000110011001000110011
+	V24=24'b010000110011001000110100
+	V25=24'b010000110011001000110101
+	V26=24'b010000110011001000110110
+	V27=24'b010000110011001000110111
+	V28=24'b010000110011001000111000
+	V29=24'b010000110011001000111001
+	V30=24'b010000110011001100110000
+	V31=24'b010000110011001100110001
+	V32=24'b010000110011001100110010
+	V33=24'b010000110011001100110011
+	V34=24'b010000110011001100110100
+	V35=24'b010000110011001100110101
+	V36=24'b010000110011001100110110
+	speedgrade=32'b00101101001100010010110101100101
+   Generated name = FPGA100_4F_Z20
+Running optimization stage 1 on FPGA100_4F_Z20 .......
+Finished optimization stage 1 on FPGA100_4F_Z20 (CPU Time 0h:00m:00s, Memory Used current: 213MB peak: 213MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/FPGA100_4F.v":44:7:44:16|Synthesizing module FPGA100_4F in library work.
+
+	V1=16'b0100010000110001
+	V2=16'b0100010000110010
+	V3=16'b0100010000110011
+	V4=16'b0100010000110100
+	V5=16'b0100010000110101
+	V6=16'b0100010000110110
+	V7=16'b0100010000110111
+	V8=16'b0100010000111000
+	V9=16'b0100010000111001
+	V10=24'b010001000011000100110000
+	V11=24'b010001000011000100110001
+	V12=24'b010001000011000100110010
+	V13=24'b010001000011000100110011
+	V14=24'b010001000011000100110100
+	V15=24'b010001000011000100110101
+	V16=24'b010001000011000100110110
+	V17=24'b010001000011000100110111
+	V18=24'b010001000011000100111000
+	V19=24'b010001000011000100111001
+	V20=24'b010001000011001000110000
+	V21=24'b010001000011001000110001
+	V22=24'b010001000011001000110010
+	V23=24'b010001000011001000110011
+	V24=24'b010001000011001000110100
+	V25=24'b010001000011001000110101
+	V26=24'b010001000011001000110110
+	V27=24'b010001000011001000110111
+	V28=24'b010001000011001000111000
+	V29=24'b010001000011001000111001
+	V30=24'b010001000011001100110000
+	V31=24'b010001000011001100110001
+	V32=24'b010001000011001100110010
+	V33=24'b010001000011001100110011
+	V34=24'b010001000011001100110100
+	V35=24'b010001000011001100110101
+	V36=24'b010001000011001100110110
+	speedgrade=32'b00101101001100010010110101100101
+   Generated name = FPGA100_4F_Z21
+Running optimization stage 1 on FPGA100_4F_Z21 .......
+Finished optimization stage 1 on FPGA100_4F_Z21 (CPU Time 0h:00m:00s, Memory Used current: 218MB peak: 218MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_modules.v":64:7:64:12|Synthesizing module SI5340 in library work.
+Running optimization stage 1 on SI5340 .......
+Finished optimization stage 1 on SI5340 (CPU Time 0h:00m:00s, Memory Used current: 218MB peak: 218MB)
+@N: CG364 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":53:7:53:16|Synthesizing module HAPS100_4F in library work.
+
+	bfg_syn_board_type=88'b0110110101101111011101000110100001100101011100100110001001101111011000010111001001100100
+	bfg_num_row=32'b00000000000000000000000000100101
+	bfg_num_col=32'b00000000000000000000000000000100
+	bfg_num_special=32'b00000000000000000000000000011000
+	bfg_uA_conn=3232'b0100000100110001001110100011001000110011001110100011000000100000010000010011001000111010001100100011001000111010001100000010000001000001001100110011101000110010001100010011101000110000001000000100000100110100001110100011001000110000001110100011000000100000010000010011010100111010001100010011100100111010001100000010000001000001001101100011101000110001001110000011101000110000001000000100000100110111001110100011000100110111001110100011000000100000010000010011100000111010001100010011011000111010001100000010000001000001001110010011101000110001001101010011101000110000001000000100000100110001001100000011101000110001001101000011101000110000001000000100000100110001001100010011101000110001001100110011101000110000001000000100000100110001001100100011101000110001001100100011101000110000001000000100000100110001001100110011101000110011001101100011101000110010001000000100000100110001001101000011101000110011001101010011101000110010001000000100000100110001001101010011101000110011001101000011101000110010001000000100000100110001001101100011101000110011001100110011101000110010001000000100000100110001001101110011101000110011001100100011101000110010001000000100000100110001001110000011101000110011001100010011101000110010001000000100000100110001001110010011101000110001001100100011101000110001001000000100000100110010001100000011101000110001001100110011101000110001001000000100000100110010001100010011101000110001001101000011101000110001001000000100000100110010001100100011101000110001001101010011101000110001001000000100000100110010001100110011101000110001001101100011101000110001001000000100000100110010001101000011101000110001001101110011101000110001001000000100000100110010001101010011101000110001001110000011101000110001001000000100000100110010001101100011101000110001001110010011101000110001001000000100000100110010001101110011101000110010001100000011101000110001001000000100000100110010001110000011101000110010001100010011101000110001001000000100000100110010001110010011101000110010001100100011101000110001001000000100000100110011001100000011101000110010001100110011101000110001001000000100000100110011001100010011101000110011001100010011101000110011001000000100000100110011001100100011101000110011001100100011101000110011001000000100000100110011001100110011101000110011001100110011101000110011001000000100000100110011001101000011101000110011001101000011101000110011001000000100000100110011001101010011101000110011001101010011101000110011001000000100000100110011001101100011101000110011001101100011101000110011001000000100000101001101001100100011001000110001001110100010110100110001001110100010110100110001001110100011000100110101001000000100000101001101001100100011001000110010001110100010110100110001001110100010110100110001001110100011000100110101001000000100000101001101001100100011001100110001001110100010110100110001001110100010110100110001001110100011000100110101001000000100000101001101001100100011001100110010001110100010110100110001001110100010110100110001001110100011000100110101001000000100000101001101001100100011001100110110001110100010110100110001001110100010110100110001001110100011000100110101001000000100000101001101001100100011001100110111001110100010110100110001001110100010110100110001001110100011000100110101
+	bfg_uB_conn=3072'b010000100011000100111010001100000011101000110001001000000100001000110010001110100011000100111010001100010010000001000010001100110011101000110010001110100011000100100000010000100011010000111010001100110011101000110001001000000100001000110101001110100011010000111010001100010010000001000010001101100011101000110101001110100011000100100000010000100011011100111010001101100011101000110001001000000100001000111000001110100011011100111010001100010010000001000010001110010011101000111000001110100011000100100000010000100011000100110000001110100011100100111010001100010010000001000010001100010011000100111010001100010011000000111010001100010010000001000010001100010011001000111010001100010011000100111010001100010010000001000010001100010011001100111010001100110011000100111010001100010010000001000010001100010011010000111010001100110011001000111010001100010010000001000010001100010011010100111010001100110011001100111010001100010010000001000010001100010011011000111010001100110011010000111010001100010010000001000010001100010011011100111010001100110011010100111010001100010010000001000010001100010011100000111010001100110011011000111010001100010010000001000010001100010011100100111010001100010011000100111010001100000010000001000010001100100011000000111010001100010011000000111010001100000010000001000010001100100011000100111010001110010011101000110000001000000100001000110010001100100011101000111000001110100011000000100000010000100011001000110011001110100011011100111010001100000010000001000010001100100011010000111010001101100011101000110000001000000100001000110010001101010011101000110101001110100011000000100000010000100011001000110110001110100011010000111010001100000010000001000010001100100011011100111010001100110011101000110000001000000100001000110010001110000011101000110010001110100011000000100000010000100011001000111001001110100011000100111010001100000010000001000010001100110011000000111010001100000011101000110000001000000100001000110011001100010011101000110011001101100011101000110000001000000100001000110011001100100011101000110011001101010011101000110000001000000100001000110011001100110011101000110011001101000011101000110000001000000100001000110011001101000011101000110011001100110011101000110000001000000100001000110011001101010011101000110011001100100011101000110000001000000100001000110011001101100011101000110011001100010011101000110000001000000100001001001101001100100011001000110001001110100010110100110001001110100010110100110001001110100011000100110101001000000100001001001101001100100011001000110010001110100010110100110001001110100010110100110001001110100011000100110101001000000100001001001101001100100011001100110001001110100010110100110001001110100010110100110001001110100011000100110101001000000100001001001101001100100011001100110010001110100010110100110001001110100010110100110001001110100011000100110101001000000100001001001101001100100011001100110110001110100010110100110001001110100010110100110001001110100011000100110101001000000100001001001101001100100011001100110111001110100010110100110001001110100010110100110001001110100011000100110101
+	bfg_uC_conn=3072'b010000110011000100111010001100000011101000110011001000000100001100110010001110100011000100111010001100110010000001000011001100110011101000110010001110100011001100100000010000110011010000111010001100110011101000110011001000000100001100110101001110100011010000111010001100110010000001000011001101100011101000110101001110100011001100100000010000110011011100111010001101100011101000110011001000000100001100111000001110100011011100111010001100110010000001000011001110010011101000111000001110100011001100100000010000110011000100110000001110100011100100111010001100110010000001000011001100010011000100111010001100010011000000111010001100110010000001000011001100010011001000111010001100010011000100111010001100110010000001000011001100010011001100111010001100100011010100111010001100010010000001000011001100010011010000111010001100100011011000111010001100010010000001000011001100010011010100111010001100100011011100111010001100010010000001000011001100010011011000111010001100100011100000111010001100010010000001000011001100010011011100111010001100100011100100111010001100010010000001000011001100010011100000111010001100110011000000111010001100010010000001000011001100010011100100111010001100010011000100111010001100100010000001000011001100100011000000111010001100010011000000111010001100100010000001000011001100100011000100111010001110010011101000110010001000000100001100110010001100100011101000111000001110100011001000100000010000110011001000110011001110100011011100111010001100100010000001000011001100100011010000111010001101100011101000110010001000000100001100110010001101010011101000110101001110100011001000100000010000110011001000110110001110100011010000111010001100100010000001000011001100100011011100111010001100110011101000110010001000000100001100110010001110000011101000110010001110100011001000100000010000110011001000111001001110100011000100111010001100100010000001000011001100110011000000111010001100000011101000110010001000000100001100110011001100010011101000110011001100000011101000110000001000000100001100110011001100100011101000110010001110010011101000110000001000000100001100110011001100110011101000110010001110000011101000110000001000000100001100110011001101000011101000110010001101110011101000110000001000000100001100110011001101010011101000110010001101100011101000110000001000000100001100110011001101100011101000110010001101010011101000110000001000000100001101001101001100100011001000110001001110100010110100110001001110100010110100110001001110100011000100110101001000000100001101001101001100100011001000110010001110100010110100110001001110100010110100110001001110100011000100110101001000000100001101001101001100100011001100110001001110100010110100110001001110100010110100110001001110100011000100110101001000000100001101001101001100100011001100110010001110100010110100110001001110100010110100110001001110100011000100110101001000000100001101001101001100100011001100110110001110100010110100110001001110100010110100110001001110100011000100110101001000000100001101001101001100100011001100110111001110100010110100110001001110100010110100110001001110100011000100110101
+	bfg_uD_conn=3232'b0100010000110001001110100011001000110011001110100011001000100000010001000011001000111010001100100011001000111010001100100010000001000100001100110011101000110010001100010011101000110010001000000100010000110100001110100011001000110000001110100011001000100000010001000011010100111010001100010011100100111010001100100010000001000100001101100011101000110001001110000011101000110010001000000100010000110111001110100011000100110111001110100011001000100000010001000011100000111010001100010011011000111010001100100010000001000100001110010011101000110001001101010011101000110010001000000100010000110001001100000011101000110001001101000011101000110010001000000100010000110001001100010011101000110001001100110011101000110010001000000100010000110001001100100011101000110001001100100011101000110010001000000100010000110001001100110011101000110011001100000011101000110010001000000100010000110001001101000011101000110010001110010011101000110010001000000100010000110001001101010011101000110010001110000011101000110010001000000100010000110001001101100011101000110010001101110011101000110010001000000100010000110001001101110011101000110010001101100011101000110010001000000100010000110001001110000011101000110010001101010011101000110010001000000100010000110001001110010011101000110001001100100011101000110011001000000100010000110010001100000011101000110001001100110011101000110011001000000100010000110010001100010011101000110001001101000011101000110011001000000100010000110010001100100011101000110001001101010011101000110011001000000100010000110010001100110011101000110001001101100011101000110011001000000100010000110010001101000011101000110001001101110011101000110011001000000100010000110010001101010011101000110001001110000011101000110011001000000100010000110010001101100011101000110001001110010011101000110011001000000100010000110010001101110011101000110010001100000011101000110011001000000100010000110010001110000011101000110010001100010011101000110011001000000100010000110010001110010011101000110010001100100011101000110011001000000100010000110011001100000011101000110010001100110011101000110011001000000100010000110011001100010011101000110010001101010011101000110011001000000100010000110011001100100011101000110010001101100011101000110011001000000100010000110011001100110011101000110010001101110011101000110011001000000100010000110011001101000011101000110010001110000011101000110011001000000100010000110011001101010011101000110010001110010011101000110011001000000100010000110011001101100011101000110011001100000011101000110011001000000100010001001101001100100011001000110001001110100010110100110001001110100010110100110001001110100011000100110101001000000100010001001101001100100011001000110010001110100010110100110001001110100010110100110001001110100011000100110101001000000100010001001101001100100011001100110001001110100010110100110001001110100010110100110001001110100011000100110101001000000100010001001101001100100011001100110010001110100010110100110001001110100010110100110001001110100011000100110101001000000100010001001101001100100011001100110110001110100010110100110001001110100010110100110001001110100011000100110101001000000100010001001101001100100011001100110111001110100010110100110001001110100010110100110001001110100011000100110101
+	clksettings=600'b010001100100001000110001001011100101000001001100010011000011000100101110010000110100110001001011001100010011110101000111010000110100110001001011001100010010110001010101010000010010111001000011010011000100101100110001001111010100011101000011010011000100101100110001001110100101010101000010001011100100001101001100010010110011000100111101010001110100001101001100010010110011000100111010010101010100001100101110010000110100110001001011001100010011110101000111010000110100110001001011001100010011101001010101010001000010111001000011010011000100101100110001001111010100011101000011010011000100101100110001
+	muxsettings=1'b0
+	refclksettings=1'b0
+	uA_speedgrade=32'b00101101001100010010110101100101
+	uB_speedgrade=32'b00101101001100010010110101100101
+	uC_speedgrade=32'b00101101001100010010110101100101
+	uD_speedgrade=32'b00101101001100010010110101100101
+	A1=32'b00110001001011100011001000110000
+	A2=32'b00110001001011100011001000110000
+	A3=32'b00110001001011100011001000110000
+	A4=32'b00110001001011100011001000110000
+	A5=32'b00110001001011100011100000110000
+	A6=32'b00110001001011100011100000110000
+	A7=32'b00110001001011100011001000110000
+	A8=32'b00110001001011100011001000110000
+	A9=32'b00110001001011100011001000110000
+	A10=32'b00110001001011100011001000110000
+	A11=32'b00110001001011100011100000110000
+	A12=32'b00110001001011100011100000110000
+	A13=32'b00110001001011100011001000110000
+	A14=32'b00110001001011100011001000110000
+	A15=32'b00110001001011100011001000110000
+	A16=32'b00110001001011100011001000110000
+	A17=32'b00110001001011100011001000110000
+	A18=32'b00110001001011100011001000110000
+	A19=32'b00110001001011100011001000110000
+	A20=32'b00110001001011100011001000110000
+	A21=32'b00110001001011100011001000110000
+	A22=32'b00110001001011100011001000110000
+	A23=32'b00110001001011100011001000110000
+	A24=32'b00110001001011100011001000110000
+	A25=32'b00110001001011100011001000110000
+	A26=32'b00110001001011100011001000110000
+	A27=32'b00110001001011100011001000110000
+	A28=32'b00110001001011100011001000110000
+	A29=32'b00110001001011100011001000110000
+	A30=32'b00110001001011100011001000110000
+	A31=32'b00110001001011100011001000110000
+	A32=32'b00110001001011100011001000110000
+	A33=32'b00110001001011100011001000110000
+	A34=32'b00110001001011100011001000110000
+	A35=32'b00110001001011100011001000110000
+	A36=32'b00110001001011100011001000110000
+	B1=32'b00110001001011100011001000110000
+	B2=32'b00110001001011100011001000110000
+	B3=32'b00110001001011100011001000110000
+	B4=32'b00110001001011100011001000110000
+	B5=32'b00110001001011100011100000110000
+	B6=32'b00110001001011100011100000110000
+	B7=32'b00110001001011100011100000110000
+	B8=32'b00110001001011100011100000110000
+	B9=32'b00110001001011100011001000110000
+	B10=32'b00110001001011100011001000110000
+	B11=32'b00110001001011100011001000110000
+	B12=32'b00110001001011100011001000110000
+	B13=32'b00110001001011100011001000110000
+	B14=32'b00110001001011100011001000110000
+	B15=32'b00110001001011100011001000110000
+	B16=32'b00110001001011100011001000110000
+	B17=32'b00110001001011100011001000110000
+	B18=32'b00110001001011100011001000110000
+	B19=32'b00110001001011100011001000110000
+	B20=32'b00110001001011100011001000110000
+	B21=32'b00110001001011100011001000110000
+	B22=32'b00110001001011100011001000110000
+	B23=32'b00110001001011100011001000110000
+	B24=32'b00110001001011100011001000110000
+	B25=32'b00110001001011100011001000110000
+	B26=32'b00110001001011100011001000110000
+	B27=32'b00110001001011100011001000110000
+	B28=32'b00110001001011100011001000110000
+	B29=32'b00110001001011100011001000110000
+	B30=32'b00110001001011100011001000110000
+	B31=32'b00110001001011100011001000110000
+	B32=32'b00110001001011100011001000110000
+	B33=32'b00110001001011100011001000110000
+	B34=32'b00110001001011100011001000110000
+	B35=32'b00110001001011100011001000110000
+	B36=32'b00110001001011100011001000110000
+	C1=32'b00110001001011100011001000110000
+	C2=32'b00110001001011100011001000110000
+	C3=32'b00110001001011100011001000110000
+	C4=32'b00110001001011100011001000110000
+	C5=32'b00110001001011100011100000110000
+	C6=32'b00110001001011100011100000110000
+	C7=32'b00110001001011100011100000110000
+	C8=32'b00110001001011100011100000110000
+	C9=32'b00110001001011100011001000110000
+	C10=32'b00110001001011100011001000110000
+	C11=32'b00110001001011100011001000110000
+	C12=32'b00110001001011100011001000110000
+	C13=32'b00110001001011100011001000110000
+	C14=32'b00110001001011100011001000110000
+	C15=32'b00110001001011100011001000110000
+	C16=32'b00110001001011100011001000110000
+	C17=32'b00110001001011100011001000110000
+	C18=32'b00110001001011100011001000110000
+	C19=32'b00110001001011100011001000110000
+	C20=32'b00110001001011100011001000110000
+	C21=32'b00110001001011100011001000110000
+	C22=32'b00110001001011100011001000110000
+	C23=32'b00110001001011100011001000110000
+	C24=32'b00110001001011100011001000110000
+	C25=32'b00110001001011100011001000110000
+	C26=32'b00110001001011100011001000110000
+	C27=32'b00110001001011100011001000110000
+	C28=32'b00110001001011100011001000110000
+	C29=32'b00110001001011100011001000110000
+	C30=32'b00110001001011100011001000110000
+	C31=32'b00110001001011100011001000110000
+	C32=32'b00110001001011100011001000110000
+	C33=32'b00110001001011100011001000110000
+	C34=32'b00110001001011100011001000110000
+	C35=32'b00110001001011100011001000110000
+	C36=32'b00110001001011100011001000110000
+	D1=32'b00110001001011100011001000110000
+	D2=32'b00110001001011100011001000110000
+	D3=32'b00110001001011100011100000110000
+	D4=32'b00110001001011100011100000110000
+	D5=32'b00110001001011100011100000110000
+	D6=32'b00110001001011100011100000110000
+	D7=32'b00110001001011100011001000110000
+	D8=32'b00110001001011100011001000110000
+	D9=32'b00110001001011100011001000110000
+	D10=32'b00110001001011100011001000110000
+	D11=32'b00110001001011100011001000110000
+	D12=32'b00110001001011100011001000110000
+	D13=32'b00110001001011100011001000110000
+	D14=32'b00110001001011100011001000110000
+	D15=32'b00110001001011100011001000110000
+	D16=32'b00110001001011100011001000110000
+	D17=32'b00110001001011100011001000110000
+	D18=32'b00110001001011100011001000110000
+	D19=32'b00110001001011100011001000110000
+	D20=32'b00110001001011100011001000110000
+	D21=32'b00110001001011100011001000110000
+	D22=32'b00110001001011100011001000110000
+	D23=32'b00110001001011100011001000110000
+	D24=32'b00110001001011100011001000110000
+	D25=32'b00110001001011100011001000110000
+	D26=32'b00110001001011100011001000110000
+	D27=32'b00110001001011100011001000110000
+	D28=32'b00110001001011100011001000110000
+	D29=32'b00110001001011100011001000110000
+	D30=32'b00110001001011100011001000110000
+	D31=32'b00110001001011100011001000110000
+	D32=32'b00110001001011100011001000110000
+	D33=32'b00110001001011100011001000110000
+	D34=32'b00110001001011100011001000110000
+	D35=32'b00110001001011100011001000110000
+	D36=32'b00110001001011100011001000110000
+   Generated name = HAPS100_4F_Z22
+Running optimization stage 1 on HAPS100_4F_Z22 .......
+Finished optimization stage 1 on HAPS100_4F_Z22 (CPU Time 0h:00m:00s, Memory Used current: 221MB peak: 221MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/targetsystem.vb":51:7:51:13|Synthesizing module haps100 in library work.
+Running optimization stage 1 on haps100 .......
+Finished optimization stage 1 on haps100 (CPU Time 0h:00m:00s, Memory Used current: 221MB peak: 221MB)
+Running optimization stage 2 on haps100 .......
+Finished optimization stage 2 on haps100 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on HAPS100_4F_Z22 .......
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":369:17:369:24|Inout AM221_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":370:17:370:24|Inout AM222_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":371:17:371:24|Inout AM231_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":372:17:372:24|Inout AM232_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":373:17:373:24|Inout AM236_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":374:17:374:24|Inout AM237_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":391:17:391:24|Inout BM221_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":392:17:392:24|Inout BM222_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":393:17:393:24|Inout BM231_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":394:17:394:24|Inout BM232_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":395:17:395:24|Inout BM236_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":396:17:396:24|Inout BM237_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":413:17:413:24|Inout CM221_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":414:17:414:24|Inout CM222_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":415:17:415:24|Inout CM231_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":416:17:416:24|Inout CM232_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":417:17:417:24|Inout CM236_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":418:17:418:24|Inout CM237_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":435:17:435:24|Inout DM221_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":436:17:436:24|Inout DM222_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":437:17:437:24|Inout DM231_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":438:17:438:24|Inout DM232_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":439:17:439:24|Inout DM236_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":440:17:440:24|Inout DM237_IO is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":443:17:443:24|Inout CLK_OUT1 is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":443:27:443:33|Inout CLK_IN1 is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":444:17:444:24|Inout CLK_OUT2 is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":444:27:444:33|Inout CLK_IN2 is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":445:17:445:24|Inout CLK_OUT3 is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":445:27:445:33|Inout CLK_IN3 is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":446:17:446:24|Inout CLK_OUT4 is unused
+@W: CL158 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":446:27:446:33|Inout CLK_IN4 is unused
+Finished optimization stage 2 on HAPS100_4F_Z22 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on SI5340 .......
+Finished optimization stage 2 on SI5340 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on FPGA100_4F_Z21 .......
+Finished optimization stage 2 on FPGA100_4F_Z21 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on FPGA100_4F_Z20 .......
+Finished optimization stage 2 on FPGA100_4F_Z20 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on FPGA100_4F_Z19 .......
+Finished optimization stage 2 on FPGA100_4F_Z19 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on FPGA100_4F_Z18 .......
+Finished optimization stage 2 on FPGA100_4F_Z18 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_3s_18446744073709551615s_haps_allowed_iostandards=XCVU19P:SSTL_12,DCI,,,__0s_Z17 .......
+Finished optimization stage 2 on syn_trace_attr_3s_18446744073709551615s_haps_allowed_iostandards=XCVU19P:SSTL_12,DCI,,,__0s_Z17 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_24s_18446744073709551615s_haps_allowed_iostandards=XCVU19P:SSTL_12,DCI,,,__0s_Z16 .......
+Finished optimization stage 2 on syn_trace_attr_24s_18446744073709551615s_haps_allowed_iostandards=XCVU19P:SSTL_12,DCI,,,__0s_Z16 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_1s_18446744073709551615s_.haps_force_pick_ss=QBC__0s_Z15 .......
+Finished optimization stage 2 on syn_trace_attr_1s_18446744073709551615s_.haps_force_pick_ss=QBC__0s_Z15 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_3s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z14 .......
+Finished optimization stage 2 on syn_trace_attr_3s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z14 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_24s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z13 .......
+Finished optimization stage 2 on syn_trace_attr_24s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z13 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_1s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z12 .......
+Finished optimization stage 2 on syn_trace_attr_1s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z12 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_14s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z11 .......
+Finished optimization stage 2 on syn_trace_attr_14s_18446744073709551615s_syn_no_hstdm=1 haps_tdm_mbr_se_0=1 haps_tdm_mbr_diff_0=1__0s_Z11 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_4s_18446744073709551615s_syn_haps_funcgroup=MGT_DEBUG__0s_Z10 .......
+Finished optimization stage 2 on syn_trace_attr_4s_18446744073709551615s_syn_haps_funcgroup=MGT_DEBUG__0s_Z10 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_1s_18446744073709551615s_syn_haps_funcgroup=MGT_DEBUG__0s_Z9 .......
+Finished optimization stage 2 on syn_trace_attr_1s_18446744073709551615s_syn_haps_funcgroup=MGT_DEBUG__0s_Z9 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_1s_18446744073709551615s_syn_haps_funcgroup=MGT_REFCLK__0s_Z8 .......
+Finished optimization stage 2 on syn_trace_attr_1s_18446744073709551615s_syn_haps_funcgroup=MGT_REFCLK__0s_Z8 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_4s_18446744073709551615s_syn_haps_funcgroup=MGT__0s_Z7 .......
+Finished optimization stage 2 on syn_trace_attr_4s_18446744073709551615s_syn_haps_funcgroup=MGT__0s_Z7 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_2s_18446744073709551615s_syn_haps_funcgroup=MGT_REFCLK__0s_Z6 .......
+Finished optimization stage 2 on syn_trace_attr_2s_18446744073709551615s_syn_haps_funcgroup=MGT_REFCLK__0s_Z6 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_Z5 .......
+Finished optimization stage 2 on syn_trace_attr_Z5 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_Z4 .......
+Finished optimization stage 2 on syn_trace_attr_Z4 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_Z3 .......
+Finished optimization stage 2 on syn_trace_attr_Z3 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on XCVU19PFSVA3824 .......
+Finished optimization stage 2 on XCVU19PFSVA3824 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on CON_CABLE_50_HT3 .......
+Finished optimization stage 2 on CON_CABLE_50_HT3 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_1s_18446744073709551615s_.haps_cable_length=50__0s_Z2 .......
+Finished optimization stage 2 on syn_trace_attr_1s_18446744073709551615s_.haps_cable_length=50__0s_Z2 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on syn_trace_attr_14s_18446744073709551615s_.haps_cable_length=50__0s_Z1 .......
+Finished optimization stage 2 on syn_trace_attr_14s_18446744073709551615s_.haps_cable_length=50__0s_Z1 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+Running optimization stage 2 on TOP_IO_HT3 .......
+Finished optimization stage 2 on TOP_IO_HT3 (CPU Time 0h:00m:00s, Memory Used current: 223MB peak: 223MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/targetsystem.rt.csv
+
+@END
+
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 223MB peak: 223MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:38:23 2023
+
+###########################################################]

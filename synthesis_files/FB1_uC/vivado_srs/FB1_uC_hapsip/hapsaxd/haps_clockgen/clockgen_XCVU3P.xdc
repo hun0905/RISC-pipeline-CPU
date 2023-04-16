@@ -1,0 +1,118 @@
+set_property CLOCK_DELAY_GROUP group1 [get_nets -of_objects [list [get_pins -hierarchical -filter {NAME=~"*haps_infra_clock_generator_load_inst*/*/BUFG_inst/O"}] [get_pins -hierarchical -filter {NAME=~"*haps_infra_clock_generator_load_inst*/*BUFGCE_mclkload*/O"}] [get_pins -hierarchical -filter {NAME=~"*haps_infra_clock_generator_load_inst*/*BUFG_cclock*/O"}] [get_pins -hierarchical -filter {NAME=~"*haps_infra_clock_generator_load_inst*/*BUFG_local*/O"}]]]
+set_property USER_CLOCK_ROOT [get_clock_regions -of_objects [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*/BUFG_inst"]] [get_nets -of_objects [list [get_pins -hierarchical -filter {NAME=~"*haps_infra_clock_generator_load_inst*/*BUFGCE_mclkload*/O"}] [get_pins -hierarchical -filter {NAME=~"*haps_infra_clock_generator_load_inst*/*BUFG_cclock*/O"}] [get_pins -hierarchical -filter {NAME=~"*haps_infra_clock_generator_load_inst*/*BUFG_local*/O"}]]]
+
+set_multicycle_path -start 4 -to [get_pins  -hierarchical -filter {NAME=~"*initcount*/D"}]
+set_multicycle_path -start 3 -hold -to [get_pins  -hierarchical -filter {NAME=~"*initcount*/D"}]
+set_multicycle_path -start 4 -to [get_pins  -hierarchical -filter {NAME=~"*minval012*/D"}]
+set_multicycle_path -start 3 -hold -to [get_pins  -hierarchical -filter {NAME=~"*minval012*/D"}]
+set_multicycle_path -start 4 -to [get_pins  -hierarchical -filter {NAME=~"*accumulator*/D"}]
+set_multicycle_path -start 3 -hold -to [get_pins  -hierarchical -filter {NAME=~"*accumulator*/D"}]
+set_multicycle_path -start 4 -to [get_pins  -hierarchical -filter {NAME=~"*quotient*/D"}]
+set_multicycle_path -start 3 -hold -to [get_pins  -hierarchical -filter {NAME=~"*quotient*/D"}]
+set_multicycle_path -start 4 -to [get_pins  -hierarchical -filter {NAME=~"*divcount*/D"}]
+set_multicycle_path -start 3 -hold -to [get_pins  -hierarchical -filter {NAME=~"*divcount*/D"}]
+set_multicycle_path -start 4 -to [get_pins  -hierarchical -filter {NAME=~"*remainder*/D"}]
+set_multicycle_path -start 3 -hold -to [get_pins  -hierarchical -filter {NAME=~"*remainder*/D"}]
+
+set_max_delay [get_property PERIOD [get_clocks driverclk0]] -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*quotient*/C"] -through [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*cclockPosedgeEnabled*"]
+set_max_delay [get_property PERIOD [get_clocks driverclk0]] -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*quotient*/C"] -through [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*cclockNegedgeEnabled*"]
+set_max_delay [get_property PERIOD [get_clocks driverclk0]] -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*quotient*/C"] -through [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*cclockCompositeEnabled*"]
+
+set_max_delay [get_property PERIOD [get_clocks driverclk0]] -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*remainder*/C"] -through [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*cclockPosedgeEnabled*"]
+set_max_delay [get_property PERIOD [get_clocks driverclk0]] -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*remainder*/C"] -through [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*cclockNegedgeEnabled*"]
+set_max_delay [get_property PERIOD [get_clocks driverclk0]] -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*remainder*/C"] -through [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*cclockCompositeEnabled*"]
+
+set_max_delay [get_property PERIOD [get_clocks driverclk0]] -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*minval012*/C"] -through [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*cclockPosedgeEnabled*"]
+set_max_delay [get_property PERIOD [get_clocks driverclk0]] -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*minval012*/C"] -through [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*cclockNegedgeEnabled*"]
+set_max_delay [get_property PERIOD [get_clocks driverclk0]] -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*minval012*/C"] -through [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*cclockCompositeEnabled*"]
+
+set_max_delay [get_property PERIOD [get_clocks driverclk0]] -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*initcount*/C"] -through [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*cclockPosedgeEnabled*"]
+set_max_delay [get_property PERIOD [get_clocks driverclk0]] -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*initcount*/C"] -through [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*cclockNegedgeEnabled*"]
+set_max_delay [get_property PERIOD [get_clocks driverclk0]] -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*initcount*/C"] -through [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*cclockCompositeEnabled*"]
+
+set_max_delay [get_property PERIOD [get_clocks driverclk0]] -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*reset_int*/C"] -through [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*cclockPosedgeEnabled*"]
+set_max_delay [get_property PERIOD [get_clocks driverclk0]] -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*reset_int*/C"] -through [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*cclockNegedgeEnabled*"]
+set_max_delay [get_property PERIOD [get_clocks driverclk0]] -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*reset_int*/C"] -through [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load*/*clkgen_integrated_1*/*cclockCompositeEnabled*"]
+
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*remainder*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*rem_run_ainder*/CE"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*minval012*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*rem_run_ainder*/CE"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quotient*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*rem_run_ainder*/CE"]  
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*initcount*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*rem_run_ainder*/CE"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*reset_int*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*rem_run_ainder*/CE"] 
+
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*remainder*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*rem_run_ainder*/R"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*minval012*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*rem_run_ainder*/R"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quotient*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*rem_run_ainder*/R"]  
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*initcount*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*rem_run_ainder*/R"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*reset_int*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*rem_run_ainder*/R"] 
+
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*remainder*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*rem_run_ainder*/D"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*minval012*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*rem_run_ainder*/D"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quotient*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*rem_run_ainder*/D"]  
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*initcount*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*rem_run_ainder*/D"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*reset_int*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*rem_run_ainder*/D"] 
+
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*remainder*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quo_run_tient*/CE"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*minval012*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quo_run_tient*/CE"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quotient*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quo_run_tient*/CE"]  
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*initcount*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quo_run_tient*/CE"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*reset_int*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quo_run_tient*/CE"] 
+
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*remainder*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quo_run_tient*/R"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*minval012*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quo_run_tient*/R"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quotient*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quo_run_tient*/R"]  
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*initcount*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quo_run_tient*/R"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*reset_int*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quo_run_tient*/R"] 
+
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*remainder*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quo_run_tient*/D"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*minval012*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quo_run_tient*/D"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quotient*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quo_run_tient*/D"]  
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*initcount*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quo_run_tient*/D"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*reset_int*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quo_run_tient*/D"] 
+
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*remainder*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*cclock_int*/CE"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*minval012*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*cclock_int*/CE"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quotient*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*cclock_int*/CE"]  
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*initcount*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*clock_int*/CE"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*reset_int*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*cclock_int*/CE"] 
+
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*remainder*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*cclock_int*/R"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*minval012*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*cclock_int*/R"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quotient*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*cclock_int*/R"]  
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*initcount*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*clock_int*/R"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*reset_int*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*cclock_int*/R"] 
+
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*remainder*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*cclock_int*/D"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*minval012*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*cclock_int*/D"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quotient*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*cclock_int*/D"]  
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*initcount*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*cclock_int*/D"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*reset_int*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*cclock_int*/D"] 
+
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*remainder*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*current*/CE"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*minval012*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*current*/CE"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quotient*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*current*/CE"]  
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*initcount*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*current*/CE"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*reset_int*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*current*/CE"] 
+
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*remainder*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*current*/R"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*minval012*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*current*/R"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quotient*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*current*/R"]  
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*initcount*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*current*/R"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*reset_int*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*current*/R"] 
+
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*remainder*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*current*/D"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*minval012*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*current*/D"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*quotient*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*current*/D"]  
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*initcount*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*current*/D"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*reset_int*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*current*/D"] 
+
+set_property BEL BUFCE [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*/BUFG_inst"]
+set_property CLOCK_REGION X4Y2 [get_cells -hierarchical -filter "NAME=~*haps_infra_clock_generator_load_inst*/*/BUFG_inst"]
+
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_master_inst*/*/*sw_umr3*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clksrc_mclk_sync_out*/D"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_master_inst*/*/*sw_umr3*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clksrc_mclk_sync_out*/CE"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_master_inst*/*/*sw_umr3*/C"] -to [get_pins -hierarchical -filter "NAME=~*haps_infra_clksrc_mclk_sync_out*/R"] 
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clksrc_*_sync_out*"]
+set_false_path -from [get_pins -hierarchical -filter "NAME=~*haps_infra_clock_generator_master*/*sw_umr3_init*/C"]
+
+

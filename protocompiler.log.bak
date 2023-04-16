@@ -1,0 +1,637 @@
+
+                          HAPS (R) ProtoCompiler 100 
+
+               Version R-2020.12-SP1-1 for RHEL64 - Apr 08, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+Starting:    /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/linux_a_64/mbin/protobatch
+Install:     /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+Hostname:    ws35
+Date:        Sun Apr  9 22:32:57 2023
+Version:     R-2020.12-SP1-1
+
+Arguments:   -product protocompiler100 -shell
+ProductType: protocompiler100
+
+License checkout: ProtoCompiler100
+License: ProtoCompiler100 from server ws26 
+Licensed Vendor: All FPGA
+
+External Tools          Supported Version       Install Environment Variable
+Vivado                  2020.1                  XILINX_VIVADO=/usr/cadtool/csr5306/synopsys/xilinx_vivado/2021.1-ep9/tools/XILINX_VIVADO
+Formality               2020.09-SP5             FORMALITY=""
+Verdi                   R-2020.12-SP2-6         VERDI_HOME=/usr/cad/synopsys/verdi/2022.06
+VC Formal               2020.12-SP2-6           VC_STATIC_HOME=""
+Confpro                 2020.12-SP1-1           HAPS_INSTALL_DIR=/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+Design Compiler         2020.09-SP5             DC_ROOT=""
+Design Ware             2020.09-SP5-5           SYNOPSYS=""
+  (Please make sure that DC_ROOT and SYNOPSYS points to the same location.)
+VCS                     2020.03-SP2-10          VCS_HOME=/usr/cadtool/csr5306/synopsys/vcs/Q-2020.03-SP2-10-T-20220405
+% % % invalid command name "run.tc"
+% @E:|Invalid argument on command line: run.tcl. Try -help option.
+   Command: 'run run.tcl' 
+
+% invalid command name "-help"
+% couldn't execute "run.tcl": no such file or directory
+% wrong # args: should be "llength list"
+% AN.DB
+RISC_V_CPU.html
+TEST.v
+board.tss
+cell_list.txt
+clean.sh
+design.fdc
+option.tcl
+partition.pcf
+protocompiler.log
+run.tcl
+simv.daidir
+src
+synlog.tcl
+uc_compile.utf
+vcs_dut.csh
+vlog_input_generator.py
+vlog_inputs.txt
+% couldn't execute "run.tcl": no such file or directory
+% invalid command name "chmod"
+% chmod: cannot access 'vcs_dut.txt': No such file or directory
+% 
+Note: Standard compile is no longer the recommended flow. Use Unified Compile for future projects.
+Using -top_module "top" as the base name of result files
+report rtl_diagnostics -srclist vlog_inputs.txt -top_module top
+Running: compile_flow in foreground
+
+
+Running Flow: compile_flow (Compile HDL/EDIF) on datastate|root.rtl0
+# Sun Apr  9 22:37:31 2023
+
+Running Flow: main_compile_processes (Main Compile Processes) on datastate|root.rtl0
+# Sun Apr  9 22:37:31 2023
+
+Running Parallel Flow: compiler_db (Compile with Debug) on datastate|root.rtl0
+# Sun Apr  9 22:37:31 2023
+
+Running: compiler (Compile Input) on datastate|root.rtl0
+# Sun Apr  9 22:37:31 2023
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root.rtl0/distcomp0.tlg
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root.rtl0/incr_compile.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root.rtl0/top_compiler.srr
+
+compiler completed
+# Sun Apr  9 22:37:36 2023
+
+Return Code: 0
+Run Time:00h:00m:05s
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root.rtl0/incr_compile.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root.rtl0/top_compiler.srr
+Complete: Compile with Debug on datastate|root.rtl0
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root.rtl0/incr_compile.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root.rtl0/top_compiler.srr
+Complete: Main Compile Processes on datastate|root.rtl0
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root.rtl0/incr_compile.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root.rtl0/top_compiler.srr
+Complete: Compile HDL/EDIF on datastate|root.rtl0
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root.rtl0/incr_compile.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root.rtl0/top_compiler.srr
+To see "root.rtl0" state log details, open "/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU.html" file from any standard browser.
+Reports and files available for state root.rtl0 (use "export file <filename>" to access them):
+  distcomp0.tlg: An incremental, partial HDL compilation log file that may allow early access to errors or other messages. (22:37:34  4月 09 2023)
+  incr_compile.rpt: Incremental Compile Report (22:37:36  4月 09 2023)
+  top_compiler.srr: RTL Diagnostics Report (22:37:36  4月 09 2023)
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root.rtl0/incr_compile.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root.rtl0/top_compiler.srr
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root/rtl0.distcomp0.tlg
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root/rtl0.incr_compile.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/root/rtl0.top_compiler.srr
+launch uc -utf uc_compile.utf -ucdb top_ucdb -v 2.0
+Running: Unified compile in foreground
+
+Running: Unified compile
+# Sun Apr  9 22:37:39 2023
+
+Unified compile completed
+# Sun Apr  9 22:37:46 2023
+
+Return Code: 0
+Run Time:00h:00m:07s
+File already added: "/home/u108/u108061217/RISC-V-pipeline-CPU/top_ucdb"
+run compile -ucdb top_ucdb -out c0
+Running: compile_flow in foreground
+
+
+Running Flow: compile_flow (Compile HDL/EDIF) on datastate|c0
+# Sun Apr  9 22:37:47 2023
+
+Running Flow: main_compile_processes (Main Compile Processes) on datastate|c0
+# Sun Apr  9 22:37:47 2023
+
+Running: identify_db_generator (Identify Database Generator) on datastate|c0
+# Sun Apr  9 22:37:47 2023
+Copied /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/../../../top_ucdb/uc.log to /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/c0/uc.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/c0/top_identify_db_generator.srr
+
+identify_db_generator completed
+# Sun Apr  9 22:37:49 2023
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+Running Parallel Flow: compiler_db (Compile with Debug) on datastate|c0
+# Sun Apr  9 22:37:49 2023
+
+Running: compiler (Compile Input) on datastate|c0
+# Sun Apr  9 22:37:49 2023
+Imported /home/u108/u108061217/RISC-V-pipeline-CPU/top_ucdb/vcs.xcui
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/c0/top_identify_db_generator.srr
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/c0/linker.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/c0/top_comp.rt.csv
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/c0/compile_summary.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/c0/top_compiler.srr
+
+compiler completed
+# Sun Apr  9 22:38:00 2023
+
+Return Code: 0
+Run Time:00h:00m:10s
+Complete: Compile with Debug on datastate|c0
+Complete: Main Compile Processes on datastate|c0
+
+Running Parallel Flow: post_compile_processes (Post Compile Processes) on datastate|c0
+# Sun Apr  9 22:38:00 2023
+
+Running: multi_srs_gen (Multi-srs Generator) on datastate|c0
+# Sun Apr  9 22:38:00 2023
+
+Running Flow: post_compile_optimizations (Post Compile Optimizations) on datastate|c0
+# Sun Apr  9 22:38:00 2023
+
+Running: global_optimizer (Global Optimizer) on datastate|c0
+# Sun Apr  9 22:38:00 2023
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/c0/top_multi_srs_gen.srr
+
+multi_srs_gen completed
+# Sun Apr  9 22:38:00 2023
+
+Return Code: 0
+Run Time:00h:00m:00s
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/c0/top_multi_srs_gen.srr
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/c0/top_port_consts.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/c0/top_opt.srr
+
+global_optimizer completed with warnings
+# Sun Apr  9 22:38:12 2023
+
+Return Code: 1
+Run Time:00h:00m:12s
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/c0/top_opt.srr
+Complete: Post Compile Optimizations on datastate|c0
+Complete: Post Compile Processes on datastate|c0
+Complete: Compile HDL/EDIF on datastate|c0
+To see "c0" state log details, open "/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU.html" file from any standard browser.
+Reports and files available for state c0 (use "export file <filename>" to access them):
+  uc.rpt: Unified Compiler Report (OUT OF DATE 22:37:46  4月 09 2023)
+  top_identify_db_generator.srr: Pre-Instrument Log (22:37:49  4月 09 2023)
+  linker.rpt: Summary of linker messages for components that did not bind (22:37:56  4月 09 2023)
+  top_comp.rt.csv: Module Runtime Summary (22:37:56  4月 09 2023)
+  compile_summary.rpt: Incremental Compiler Summary Report (22:37:58  4月 09 2023)
+  top_compiler.srr: Compile Log (22:37:58  4月 09 2023)
+  top_multi_srs_gen.srr: Multi-srs Generator Log (22:38:00  4月 09 2023)
+  const_out_top.nle: Netlist editing script to propagate constants out of this module. (22:38:11  4月 09 2023)
+  top_port_consts.rpt: Constants driving top level ports. (22:38:11  4月 09 2023)
+  top_opt.srr: Post compilation optimization Log (22:38:12  4月 09 2023)
+File already added: "/home/u108/u108061217/RISC-V-pipeline-CPU/board.tss"
+run pre_partition -tss board.tss -fdc design.fdc -area_est 1 -out pp0
+Running: target_system_spec_gen in foreground
+
+Running: target_system_spec_gen (Target System Spec Converter)
+# Sun Apr  9 22:38:15 2023
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/incr_compile.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/tss.log
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/tss.rpt
+
+target_system_spec_gen completed
+# Sun Apr  9 22:38:37 2023
+
+Return Code: 0
+Run Time:00h:00m:21s
+System technology extracted from TSS: (Xilinx:HAPS-100)
+Running: pre_partition in foreground
+
+Warning: Expected input netlist 'lw-db.srs' does not match netlist 'top_post.srs' generated by previous state 'c0'.
+Previous state may have been run with incompatible options and should be rerun
+
+Running Flow: pre_partition (Prepartition Flow) on datastate|pp0
+# Sun Apr  9 22:38:37 2023
+
+Running Parallel Flow: partition_premap_estimation (Partition Premap and Estimate Area) on datastate|pp0
+# Sun Apr  9 22:38:37 2023
+
+Running Flow: partition_premap_clock_tree_gen (Partition Pre-Map and Clock Tree) on datastate|pp0
+# Sun Apr  9 22:38:37 2023
+
+Running Parallel Flow: distributed_constraint_apply_and_clock_tree_gen on datastate|pp0
+# Sun Apr  9 22:38:37 2023
+
+Running: clock_tree_conversion (Clock Tree Conversion) on datastate|pp0
+# Sun Apr  9 22:38:37 2023
+
+Running: distributed_constraint_applier (Distributed Constraint Applier) on datastate|pp0
+# Sun Apr  9 22:38:37 2023
+
+Running Flow: distributed_prep_estimation (Distributed Prep and Estimation) on datastate|pp0
+# Sun Apr  9 22:38:37 2023
+
+Running Flow: distributed_prep (Distributed Ultra Flow Preparation) on datastate|pp0
+# Sun Apr  9 22:38:37 2023
+
+Running: od_constraint_applier (On Demand Constraint Applier) on datastate|pp0
+# Sun Apr  9 22:38:37 2023
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/area_est_constraints_application.srr
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/pre_partition_constraints_application.srr
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/pre_partition.srr
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/syntax_constraint_check.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/top_scck.rpt
+
+clock_tree_conversion completed with warnings
+# Sun Apr  9 22:38:49 2023
+
+Return Code: 1
+Run Time:00h:00m:12s
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/pre_partition.srr
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/syntax_constraint_check.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/top_scck.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/pre_partition_constraints_application.srr
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/area_est_constraints_application.srr
+
+od_constraint_applier completed
+# Sun Apr  9 22:39:06 2023
+
+Return Code: 0
+Run Time:00h:00m:29s
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/area_est_constraints_application.srr
+Complete: Distributed Ultra Flow Preparation on datastate|pp0
+
+Running: estimate_area_job (Estimate Area) on datastate|pp0
+# Sun Apr  9 22:39:07 2023
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/area_estimation.log
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/pre_partition_constraints_application.srr
+
+distributed_constraint_applier completed with warnings
+# Sun Apr  9 22:39:18 2023
+
+Return Code: 1
+Run Time:00h:00m:41s
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/area_estimation.log
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/pre_partition_constraints_application.srr
+Complete: distributed_constraint_apply_and_clock_tree_gen on datastate|pp0
+
+Running: partition_premap (ProtoCompiler Pre_map) on datastate|pp0
+# Sun Apr  9 22:39:18 2023
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/pre_partition_constraints_application.srr
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/syntax_constraint_check.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/top_scck.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/area_estimation.log
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/design_info.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/partitioner_timing_model.log
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/constraint_check.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/pre_partition.srr
+
+partition_premap completed with warnings
+# Sun Apr  9 22:39:30 2023
+
+Return Code: 1
+Run Time:00h:00m:12s
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/constraint_check.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/pre_partition.srr
+Complete: Partition Pre-Map and Clock Tree on datastate|pp0
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/constraint_check.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/pre_partition.srr
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/area_estimation.log
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/top.mem.rpt
+
+estimate_area_job completed
+# Sun Apr  9 22:39:38 2023
+
+Return Code: 0
+Run Time:00h:00m:31s
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/area_estimation.log
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/top.mem.rpt
+Complete: Distributed Prep and Estimation on datastate|pp0
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/area_estimation.log
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/top.mem.rpt
+Complete: Partition Premap and Estimate Area on datastate|pp0
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/area_estimation.log
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/top.mem.rpt
+Complete: Prepartition Flow on datastate|pp0
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/area_estimation.log
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pp0/top.mem.rpt
+To see "pp0" state log details, open "/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU.html" file from any standard browser.
+Reports and files available for state pp0 (use "export file <filename>" to access them):
+  incr_compile.rpt: Incremental Compile Report (OUT OF DATE 22:38:22  4月 09 2023)
+  tss.log: Target system specification log (OUT OF DATE 22:38:36  4月 09 2023)
+  tss.rpt: Target system specification report (OUT OF DATE 22:38:36  4月 09 2023)
+  inferred_clocks.fdc: Clocks inferred by the timing engine. This file can be used to augment user-supplied fdc files. (22:38:49  4月 09 2023)
+  area_est_constraints_application.srr: Area Est Constraint Application Log (22:39:06  4月 09 2023)
+  pre_partition_constraints_application.srr: Prepartition Constraint Application Log (22:39:18  4月 09 2023)
+  syntax_constraint_check.rpt: Syntax Constraint Check Report (22:39:18  4月 09 2023)
+  top_scck.rpt: Constraint check report (22:39:18  4月 09 2023)
+  design_info.rpt: Design Info Report. (22:39:29  4月 09 2023)
+  hapsip_assign.pcf: HAPS IP Assignment File (22:39:29  4月 09 2023)
+  partitioner_timing_model.log: Hierarchical timing models are used in the partitioner and router. Look here for warnings regarding unsupported timing models (22:39:29  4月 09 2023)
+  constraint_check.rpt: Constraint Check Report (22:39:30  4月 09 2023)
+  pre_partition.srr: Pre-partition Log (22:39:30  4月 09 2023)
+  area_estimation.log: Area Estimation Log (22:39:38  4月 09 2023)
+  top.est: Area estimation file (22:39:38  4月 09 2023)
+  top.mem.rpt: RAM/ROM mapping report (22:39:38  4月 09 2023)
+  top_est.csv: Area estimation results (22:39:38  4月 09 2023)
+  top_uniquified_est.csv: Area estimation results (22:39:38  4月 09 2023)
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/pp0_area/top.est
+run partition -pcf partition.pcf -out pa0
+Running: partition in foreground
+
+
+Running Flow: partition (Partition) on datastate|pa0
+# Sun Apr  9 22:39:42 2023
+
+Running: auto_partitioner (Auto-Partitioner) on datastate|pa0
+# Sun Apr  9 22:39:42 2023
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pa0/timing_partition.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pa0/tdm_nonqualified.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pa0/tdm_qualified.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pa0/cell_assignments.csv
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pa0/partition.log
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/pa0/partition.rpt
+
+auto_partitioner completed
+# Sun Apr  9 22:40:03 2023
+
+Return Code: 0
+Run Time:00h:00m:20s
+Complete: Partition on datastate|pa0
+To see "pa0" state log details, open "/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU.html" file from any standard browser.
+Reports and files available for state pa0 (use "export file <filename>" to access them):
+  timing_partition.rpt: Multi-hop Path Report (22:40:00  4月 09 2023)
+  assignments.db: SQL database containing cell assignments and net information (22:40:01  4月 09 2023)
+  tdm_nonqualified.rpt: Report of all nets disqualified for TDM (22:40:01  4月 09 2023)
+  tdm_qualified.rpt: Report of all nets qualified for TDM (22:40:01  4月 09 2023)
+  assignments.pcf: Partition Assignment Results (22:40:02  4月 09 2023)
+  cell_assignments.csv: Assignment CSV File (22:40:02  4月 09 2023)
+  dissolve_control.pcf: Partition dissolve statements (22:40:02  4月 09 2023)
+  net_attributes.pcf: User Net Attributes (22:40:02  4月 09 2023)
+  partition.log: Partition Log (22:40:02  4月 09 2023)
+  partition.rpt: Partition Report (22:40:02  4月 09 2023)
+run system_route -pcf partition.pcf -fdc design.fdc -optimization_priority multi_hop_path -estimate_timing 1 -out sr0
+Running: system_route in foreground
+
+
+Running Flow: system_route (System Router) on datastate|sr0
+# Sun Apr  9 22:40:05 2023
+
+Running: estimate_timing_cpm_job (Timing Estimation) on datastate|sr0
+# Sun Apr  9 22:40:05 2023
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sr0/timing_estimation.log
+
+estimate_timing_cpm_job completed with warnings
+# Sun Apr  9 22:41:01 2023
+
+Return Code: 1
+Run Time:00h:00m:55s
+
+Running: system_router (System Routing and TDM Insertion) on datastate|sr0
+# Sun Apr  9 22:41:01 2023
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sr0/timing_estimation.log
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sr0/system_route.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sr0/timing_route.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sr0/tdm_nonqualified.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sr0/tdm_qualified.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sr0/system_route.log
+
+system_router completed
+# Sun Apr  9 22:41:19 2023
+
+Return Code: 0
+Run Time:00h:00m:18s
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sr0/system_route.log
+Complete: System Router on datastate|sr0
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sr0/system_route.log
+To see "sr0" state log details, open "/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU.html" file from any standard browser.
+Reports and files available for state sr0 (use "export file <filename>" to access them):
+  estimate_timing.est: Estimate Timing .est file (22:40:59  4月 09 2023)
+  timing_estimation.log: Timing Estimation Log (22:41:00  4月 09 2023)
+  system_route.rpt: System Route Report (22:41:17  4月 09 2023)
+  timing_route.rpt: Multi-hop Path Report (22:41:17  4月 09 2023)
+  tdm_nonqualified.rpt: Report of all nets disqualified for TDM (22:41:18  4月 09 2023)
+  tdm_qualified.rpt: Report of all nets qualified for TDM (22:41:18  4月 09 2023)
+  router_constraints.pcf: System-route Trace Assignment Results (22:41:19  4月 09 2023)
+  system_route.log: System Route Log (22:41:19  4月 09 2023)
+Note: Verilog output for system_generate is not supported in Unified Compile flow
+run system_generate -fdc design.fdc -path synthesis_files -out sg0
+Running: system_generate in foreground
+
+
+Running Flow: system_generate (System Generate) on datastate|sg0
+# Sun Apr  9 22:41:24 2023
+
+Running Flow: slp_generate (SLP Generation) on datastate|sg0
+# Sun Apr  9 22:41:24 2023
+
+Running: slp_project_gen (Generate SLP Projects) on datastate|sg0
+# Sun Apr  9 22:41:24 2023
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sg0/system_generate.log
+
+slp_project_gen completed
+# Sun Apr  9 22:41:30 2023
+
+Return Code: 0
+Run Time:00h:00m:04s
+
+Running: slp_mapper (Generate SLP data files) on datastate|sg0
+# Sun Apr  9 22:41:30 2023
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sg0/board_iostd_report.txt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sg0/system_generate.log
+
+slp_mapper completed
+# Sun Apr  9 22:41:51 2023
+
+Return Code: 0
+Run Time:00h:00m:21s
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sg0/system_generate.log
+Complete: SLP Generation on datastate|sg0
+
+Running: estimate_timing_job (Estimate Time-Budgets) on datastate|sg0
+# Sun Apr  9 22:41:52 2023
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sg0/inter_fpga_path_report.rpt
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sg0/inter_fpga_path_report.csv
+Wrote /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU_reports/sg0/time_budget.log
+
+estimate_timing_job completed
+# Sun Apr  9 22:42:15 2023
+
+Return Code: 0
+Run Time:00h:00m:19s
+Complete: System Generate on datastate|sg0
+To see "sg0" state log details, open "/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU.html" file from any standard browser.
+Reports and files available for state sg0 (use "export file <filename>" to access them):
+  Modified_Modules_FB1_uA.rpt: Modified Module Report for FPGA FB1_uA  (22:41:44  4月 09 2023)
+  Modified_Modules_FB1_uC.rpt: Modified Module Report for FPGA FB1_uC  (22:41:45  4月 09 2023)
+  Modified_Modules_FB1_uB.rpt: Modified Module Report for FPGA FB1_uB  (22:41:46  4月 09 2023)
+  Modified_Modules_FB1_uD.rpt: Modified Module Report for FPGA FB1_uD  (22:41:46  4月 09 2023)
+  board_iostd_report.txt: Board IO STD Report (22:41:46  4月 09 2023)
+  system_generate.log: System generate log (22:41:51  4月 09 2023)
+  inter_fpga_path_report.rpt: Inter-Fpga Paths Report (22:42:09  4月 09 2023)
+  inter_fpga_path_report.csv: inter_fpga_path_report.csv (22:42:11  4月 09 2023)
+  time_budget.log: Timing Budgets Generation Log (22:42:11  4月 09 2023)
+launch protocompiler -script ./synthesis_files/FB1_uA/FB1_uA_srs.tcl -script ./synthesis_files/FB1_uB/FB1_uB_srs.tcl -script ./synthesis_files/FB1_uC/FB1_uC_srs.tcl -script ./synthesis_files/FB1_uD/FB1_uD_srs.tcl
+auto-detect product: "protocompiler100" from script: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_srs.tcl
+Launching ProtoCompiler on script '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_srs.tcl':
+    max_parallel_jobs: 4 (use -max_parallel_jobs before -script to control this)
+    working directory: '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA' (use -run_dir to change this)
+    log file:          'protocompiler_run_FB1_uA_srs.log' (in working directory)
+auto-detect product: "protocompiler100" from script: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB/FB1_uB_srs.tcl
+Launching ProtoCompiler on script '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB/FB1_uB_srs.tcl':
+    max_parallel_jobs: 4 (use -max_parallel_jobs before -script to control this)
+    working directory: '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB' (use -run_dir to change this)
+    log file:          'protocompiler_run_FB1_uB_srs.log' (in working directory)
+auto-detect product: "protocompiler100" from script: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs.tcl
+Launching ProtoCompiler on script '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs.tcl':
+    max_parallel_jobs: 4 (use -max_parallel_jobs before -script to control this)
+    working directory: '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC' (use -run_dir to change this)
+    log file:          'protocompiler_run_FB1_uC_srs.log' (in working directory)
+auto-detect product: "protocompiler100" from script: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/FB1_uD_srs.tcl
+Launching ProtoCompiler on script '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/FB1_uD_srs.tcl':
+    max_parallel_jobs: 4 (use -max_parallel_jobs before -script to control this)
+    working directory: '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD' (use -run_dir to change this)
+    log file:          'protocompiler_run_FB1_uD_srs.log' (in working directory)
+@N:|Note 0 additional ProtoCompiler100 license(s) are required
+Running: protocompiler_tcl_run in foreground
+
+Running Parallel Flow: protocompiler_tcl_run (ProtoCompiler Tcl Run)
+# Sun Apr  9 22:42:15 2023
+
+Running: protocompiler_run_FB1_uA_srs (protocompiler_run_FB1_uA_srs ProtoCompiler Launch)
+# Sun Apr  9 22:42:15 2023
+
+Running: protocompiler_run_FB1_uB_srs (protocompiler_run_FB1_uB_srs ProtoCompiler Launch)
+# Sun Apr  9 22:42:15 2023
+
+Running: protocompiler_run_FB1_uC_srs (protocompiler_run_FB1_uC_srs ProtoCompiler Launch)
+# Sun Apr  9 22:42:15 2023
+
+Running: protocompiler_run_FB1_uD_srs (protocompiler_run_FB1_uD_srs ProtoCompiler Launch)
+# Sun Apr  9 22:42:15 2023
+
+protocompiler_run_FB1_uD_srs completed
+# Sun Apr  9 23:09:16 2023
+
+log file:/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/protocompiler_run_FB1_uD_srs.log
+Return Code: 0
+Run Time:00h:27m:01s
+
+protocompiler_run_FB1_uA_srs completed
+# Sun Apr  9 23:09:16 2023
+
+log file:/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/protocompiler_run_FB1_uA_srs.log
+Return Code: 0
+Run Time:00h:27m:01s
+
+protocompiler_run_FB1_uC_srs completed
+# Sun Apr  9 23:11:48 2023
+
+log file:/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/protocompiler_run_FB1_uC_srs.log
+Return Code: 0
+Run Time:00h:29m:33s
+
+protocompiler_run_FB1_uB_srs completed
+# Sun Apr  9 23:15:19 2023
+
+log file:/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB/protocompiler_run_FB1_uB_srs.log
+Return Code: 0
+Run Time:00h:33m:04s
+Complete: ProtoCompiler Tcl Run
+launch vivado -script ./synthesis_files/FB1_uA/vivado_srs/run_vivado_haps.tcl -script ./synthesis_files/FB1_uB/vivado_srs/run_vivado_haps.tcl ./synthesis_files/FB1_uC/vivado_srs/run_vivado_haps.tcl -script ./synthesis_files/FB1_uD/vivado_srs/run_vivado_haps.tcl
+Launching Vivado on script '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/vivado_srs/run_vivado_haps.tcl':
+Working directory: '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/vivado_srs' (use -run_dir to change this)
+Log file: '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/vivado_srs/vivado.log'
+
+Launching Vivado on script '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB/vivado_srs/run_vivado_haps.tcl':
+Working directory: '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB/vivado_srs' (use -run_dir to change this)
+Log file: '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB/vivado_srs/vivado.log'
+
+Launching Vivado on script '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/run_vivado_haps.tcl':
+Working directory: '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs' (use -run_dir to change this)
+Log file: '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/vivado.log'
+
+Launching Vivado on script '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/run_vivado_haps.tcl':
+Working directory: '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs' (use -run_dir to change this)
+Log file: '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/vivado.log'
+
+Setting PAR_BELDLYRPT environment variable to 1.
+Running: Vivado JobFlow in foreground
+
+Running Parallel Flow: Vivado JobFlow
+# Sun Apr  9 23:15:21 2023
+
+Running: launch_vivado_run_vivado_haps (Xilinx Vivado run_vivado_haps)
+# Sun Apr  9 23:15:21 2023
+
+Running: launch_vivado_run_vivado_haps (Xilinx Vivado run_vivado_haps)
+# Sun Apr  9 23:15:21 2023
+
+Running: launch_vivado_run_vivado_haps (Xilinx Vivado run_vivado_haps)
+# Sun Apr  9 23:15:21 2023
+
+Running: launch_vivado_run_vivado_haps (Xilinx Vivado run_vivado_haps)
+# Sun Apr  9 23:15:21 2023
+log file: "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/vivado_srs/vivado.log"
+
+launch_vivado_run_vivado_haps completed
+# Sun Apr  9 23:59:45 2023
+
+Return Code: 0
+Run Time:00h:44m:24s
+log file: "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB/vivado_srs/vivado.log"
+
+launch_vivado_run_vivado_haps completed
+# Mon Apr 10 00:05:09 2023
+
+Return Code: 0
+Run Time:00h:49m:48s
+log file: "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/vivado_srs/vivado.log"
+
+launch_vivado_run_vivado_haps completed
+# Mon Apr 10 00:05:22 2023
+
+Return Code: 0
+Run Time:00h:50m:01s
+log file: "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/vivado.log"
+
+launch_vivado_run_vivado_haps completed
+# Mon Apr 10 00:07:03 2023
+
+Return Code: 0
+Run Time:00h:51m:42s
+Complete: Vivado JobFlow
+Exported UC_LED_DEMO_runtime/system/connectivity.tcl ( 4月-09 22:38:20)
+Exported UC_LED_DEMO_runtime/system/targetsystem.tsd ( 4月-09 22:38:20)
+Exported UC_LED_DEMO_runtime/system/system4runtime.db ( 4月-09 22:41:17)
+Copying runtime files from single FPGA database state /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_srs|m0:
+@W: PC124 |Failed to export UC_LED_DEMO_runtime/FB1_uA/FB1_uA.bit. Are you sure you ran "import" after PAR finished?
+Exported UC_LED_DEMO_runtime/FB1_uA/FB1_uA4runtime.db ( 4月-09 22:43:04)
+Copying runtime files from single FPGA database state /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB/FB1_uB_srs|m0:
+@W: PC124 |Failed to export UC_LED_DEMO_runtime/FB1_uB/FB1_uB.bit. Are you sure you ran "import" after PAR finished?
+Exported UC_LED_DEMO_runtime/FB1_uB/FB1_uB4runtime.db ( 4月-09 22:43:04)
+Copying runtime files from single FPGA database state /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs|m0:
+@W: PC124 |Failed to export UC_LED_DEMO_runtime/FB1_uC/FB1_uC.bit. Are you sure you ran "import" after PAR finished?
+Exported UC_LED_DEMO_runtime/FB1_uC/FB1_uC4runtime.db ( 4月-09 22:43:02)
+Copying runtime files from single FPGA database state /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/FB1_uD_srs|m0:
+@W: PC124 |Failed to export UC_LED_DEMO_runtime/FB1_uD/FB1_uD.bit. Are you sure you ran "import" after PAR finished?
+Exported UC_LED_DEMO_runtime/FB1_uD/FB1_uD4runtime.db ( 4月-09 22:43:03)
+Created template DesignConfigFile /home/u108/u108061217/RISC-V-pipeline-CPU/UC_LED_DEMO_runtime/targetsystem.dcf
+couldn't execute "copybit.sh": no such file or directory
+% exit status=0
+License checkin: ProtoCompiler100

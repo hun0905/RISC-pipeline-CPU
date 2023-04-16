@@ -1,0 +1,783 @@
+#
+# IO Standards assignments for pins of FB1.uA
+# Written on Sun Apr  9 22:41:45 2023
+#
+
+###==== BEGIN ALL_SCOPE_TABS
+define_current_design {v:FB1_uA}
+
+
+
+# Pins in use in IO Bank 19 (52 pins total) in connector 6 in voltage region FB1.A6 (1.80 Volts):
+define_io_standard  {p:PC[19]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[14]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[29]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[20]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[35]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[30]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[40]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[37]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[42]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[41]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[47]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[46]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[49]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[48]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID[57]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID[56]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID[61]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID[58]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[1]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID[62]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[53]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[47]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[9]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[7]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[33]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[31]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[56]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[55]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_11_to_20[17]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_11_to_20[15]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_11_to_20[12]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[31]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[28]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[24]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[19]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[18]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[10]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[8]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[51]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[44]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[43]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[42]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[40]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[38]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[35]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[34]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[20]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[16]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[13]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[10]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[12]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[3]} syn_pad_type {LVCMOS_18}
+
+
+# Pins in use in IO Bank 20 (52 pins total) in connector 7 in voltage region FB1.A7 (1.20 Volts):
+define_io_standard  {p:WRMEM_aptn_ft[0]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[63]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRMEM_aptn_ft[2]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRMEM_aptn_ft[1]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRMEM_aptn_ft[4]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRMEM_aptn_ft[3]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRWB[1]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRWB[0]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRWB[3]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRWB[2]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[51]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[50]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[53]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[52]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[55]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[54]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[57]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[56]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[59]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[58]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WREX_aptn_ft[3]} syn_pad_type {POD12} syn_io_dci {DCI} syn_io_drive {12} syn_io_slew {FAST}
+define_io_standard  {p:WRWB[4]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[61]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[60]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[49]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[48]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[37]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[36]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[47]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[46]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[45]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[44]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[43]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[42]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[41]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[40]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[39]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[38]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[62]} syn_pad_type {POD12} syn_io_dci {DCI}
+
+
+# Pins in use in IO Bank 21 (52 pins total) in connector 8 in voltage region FB1.A8 (1.20 Volts):
+define_io_standard  {p:WRITEDATAWB[26]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[25]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[28]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[27]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[30]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[29]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[32]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[31]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[34]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[33]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[13]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[12]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[15]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[14]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[17]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[16]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[19]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[18]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[21]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[20]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WREX_aptn_ft[2]} syn_pad_type {POD12} syn_io_dci {DCI} syn_io_drive {12} syn_io_slew {FAST}
+define_io_standard  {p:WRITEDATAWB[35]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[23]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[22]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[11]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[10]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:REGWRITEWB_0} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:MEMREADMEM_aptn_ft} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[9]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[8]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[7]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[6]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[5]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[4]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[3]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[2]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[1]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[0]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WRITEDATAWB[24]} syn_pad_type {POD12} syn_io_dci {DCI}
+
+
+# Pins in use in IO Bank 22 (52 pins total) in connector 9 in voltage region FB1.A9 (1.20 Volts):
+define_io_standard  {p:DMOUTWB[55]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[54]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[57]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[56]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[59]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[58]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[61]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[60]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[63]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[62]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[42]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[41]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[44]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[43]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[46]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[45]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[48]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[47]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[50]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[49]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:WREX_aptn_ft[1]} syn_pad_type {POD12} syn_io_dci {DCI} syn_io_drive {12} syn_io_slew {FAST}
+define_io_standard  {p:WREX_aptn_ft[0]} syn_pad_type {POD12} syn_io_dci {DCI} syn_io_drive {12} syn_io_slew {FAST}
+define_io_standard  {p:DMOUTWB[52]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[51]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[40]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[39]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[28]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[27]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[38]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[37]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[36]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[35]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[34]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[33]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[32]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[31]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[30]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[29]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[53]} syn_pad_type {POD12} syn_io_dci {DCI}
+
+
+# Pins in use in IO Bank 23 (52 pins total) in connector 10 in voltage region FB1.A10 (1.20 Volts):
+define_io_standard  {p:DMOUTWB[18]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[17]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[20]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[19]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[22]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[21]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[24]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[23]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[26]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[25]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[5]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[4]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[7]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[6]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[9]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[8]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[11]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[10]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[13]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[12]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:rst_n_aptn_s} syn_pad_type {POD12} syn_io_dci {DCI} syn_io_drive {12} syn_io_slew {FAST}
+define_io_standard  {p:MEMREADEX_aptn_ft} syn_pad_type {POD12} syn_io_dci {DCI} syn_io_drive {12} syn_io_slew {FAST}
+define_io_standard  {p:DMOUTWB[15]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[14]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[3]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[2]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft[2]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft[1]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[1]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[0]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft[10]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft[9]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft[8]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft[7]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft[6]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft[5]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft[4]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft[3]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft[0]} syn_pad_type {POD12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB[16]} syn_pad_type {POD12} syn_io_dci {DCI}
+
+
+# Pins in use in IO Bank 24 (52 pins total) in connector 14 in voltage region FB1.A14 (1.20 Volts):
+
+
+# Pins in use in IO Bank 25 (52 pins total) in connector 15 in voltage region FB1.A15 (1.20 Volts):
+
+
+# Pins in use in IO Bank 26 (52 pins total) in connector 16 in voltage region FB1.A16 (1.20 Volts):
+
+
+# Pins in use in IO Bank 27 (52 pins total) in connector 17 in voltage region FB1.A17 (1.20 Volts):
+
+
+# Pins in use in IO Bank 28 (52 pins total) in connector 18 in voltage region FB1.A18 (1.20 Volts):
+
+
+# Pins in use in IO Bank 29 (52 pins total) in connector 36 in voltage region FB1.A36 (1.20 Volts):
+
+
+# Pins in use in IO Bank 30 (52 pins total) in connector 35 in voltage region FB1.A35 (1.20 Volts):
+
+
+# Pins in use in IO Bank 31 (52 pins total) in connector 34 in voltage region FB1.A34 (1.20 Volts):
+
+
+# Pins in use in IO Bank 32 (52 pins total) in connector 33 in voltage region FB1.A33 (1.20 Volts):
+
+
+# Pins in use in IO Bank 33 (52 pins total) in connector 32 in voltage region FB1.A32 (1.20 Volts):
+
+
+# Pins in use in IO Bank 34 (52 pins total) in connector 11 in voltage region FB1.A11 (1.80 Volts):
+define_io_standard  {p:PC[2]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID[53]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[21]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[8]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[23]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[22]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[38]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[27]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[45]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[43]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[30]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[29]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_22_to_22[22]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_11_to_20[18]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_24_to_26[26]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_24_to_26[25]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[32]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[29]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[38]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[35]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[54]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[49]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[43]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[39]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[23]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[22]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[39]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[37]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[20]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[14]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[12]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[9]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[7]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[60]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[58]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[57]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[53]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[46]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[31]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[26]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[25]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[23]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[22]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[19]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[18]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[17]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[15]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[14]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[50]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[7]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[9]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[4]} syn_pad_type {LVCMOS_18}
+
+
+# Pins in use in IO Bank 35 (52 pins total) in connector 19 in voltage region FB1.A19 (1.20 Volts):
+
+
+# Pins in use in IO Bank 36 (52 pins total) in connector 20 in voltage region FB1.A20 (1.20 Volts):
+
+
+# Pins in use in IO Bank 37 (52 pins total) in connector 21 in voltage region FB1.A21 (1.20 Volts):
+
+
+# Pins in use in IO Bank 38 (52 pins total) in connector 22 in voltage region FB1.A22 (1.20 Volts):
+
+
+# Pins in use in IO Bank 59 (52 pins total) in connector 28 in voltage region FB1.A28 (1.20 Volts):
+
+
+# Pins in use in IO Bank 60 (52 pins total) in connector 2 in voltage region FB1.A2 (1.20 Volts):
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[58] (BJ13); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[57] (BK13); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[60] (BK15); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[59] (BK14); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[62] (BH15); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[61] (BJ15); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRMEM_aptn_ft_0[0] (BH16); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[63] (BJ16); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRMEM_aptn_ft_0[2] (BH18); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRMEM_aptn_ft_0[1] (BJ18); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[45] (BJ17); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[44] (BK17); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[47] (BM14); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[46] (BM13); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[49] (BL17); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[48] (BM17); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[51] (BN14); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[50] (BN13); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[53] (BL15); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[52] (BL14); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRMEM_aptn_ft_0[4] (BL16); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRMEM_aptn_ft_0[3] (BM16); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[55] (BN16); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[54] (BN15); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_A2_C_0 (BP16); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_A2_C_1 (BP15); standard to be determined by Synthesis
+# Skipping IOSTD for pin WREX[1] (BR15); standard to be determined by Synthesis
+# Skipping IOSTD for pin WREX[0] (BR14); standard to be determined by Synthesis
+# Skipping IOSTD for pin pin_BP13 (BP13); standard to be determined by Synthesis
+# Skipping IOSTD for pin pin_BR13 (BR13); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[43] (BT15); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[42] (BT14); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[41] (BN18); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[40] (BP18); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[39] (BP17); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[38] (BR17); standard to be determined by Synthesis
+# Skipping IOSTD for pin WREX[3] (BT16); standard to be determined by Synthesis
+# Skipping IOSTD for pin WREX[2] (BU16); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_A2_D_2 (BU14); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_A2_D_3 (BU13); standard to be determined by Synthesis
+# Skipping IOSTD for pin stall_0 (BT17); standard to be determined by Synthesis
+# Skipping IOSTD for pin PCSRCID (BU17); standard to be determined by Synthesis
+# Skipping IOSTD for pin N_1 (BV14); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[63] (BV13); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[62] (BU18); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[61] (BV18); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[58] (BV16); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[57] (BV15); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[56] (BK18); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[56] (BR18); standard to be determined by Synthesis
+
+
+# Pins in use in IO Bank 61 (52 pins total) in connector 3 in voltage region FB1.A3 (1.20 Volts):
+# Skipping IOSTD for pin INSTRUCID_15_26[21] (BF22); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_15_26[20] (BF21); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_15_26[23] (BE24); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_15_26[22] (BF24); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_15_26[25] (BE20); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_15_26[24] (BF20); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_28_29[28] (BG24); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_15_26[26] (BH24); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_31[31] (BG22); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_28_29[29] (BG21); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_0_11[5] (BE23); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_0_11[4] (BE22); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_0_11[7] (BK20); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_0_11[6] (BK19); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_0_11[9] (BH20); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_0_11[8] (BH19); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_0_11[11] (BK24); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_0_11[10] (BK23); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_15_26[16] (BH23); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_15_26[15] (BJ23); standard to be determined by Synthesis
+# Skipping IOSTD for pin WRITEDATAWB_aptn_ft[37] (BJ22); standard to be determined by Synthesis
+# Skipping IOSTD for pin MEMREADMEM_aptn_ft_0 (BK22); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_15_26[18] (BH21); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_15_26[17] (BJ21); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_A3_C_0 (BL21); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_A3_C_1 (BM21); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[53] (BL22); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[52] (BM22); standard to be determined by Synthesis
+# Skipping IOSTD for pin pin_BN21 (BN21); standard to be determined by Synthesis
+# Skipping IOSTD for pin pin_BN20 (BN20); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_0_11[3] (BL20); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_0_11[2] (BL19); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_0_11[1] (BN23); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_0_11[0] (BP23); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[63] (BM19); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[62] (BN19); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[55] (BR23); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[54] (BR22); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_A3_D_2 (BR20); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_A3_D_3 (BR19); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[51] (BU23); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[50] (BU22); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[49] (BT21); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[48] (BT20); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[47] (BP22); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[44] (BP21); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[43] (BT22); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[42] (BU21); standard to be determined by Synthesis
+# Skipping IOSTD for pin INSTRUCID_15_26[19] (BG23); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[41] (BM23); standard to be determined by Synthesis
+
+
+# Pins in use in IO Bank 62 (52 pins total) in connector 4 in voltage region FB1.A4 (1.20 Volts):
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[51] (BF29); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[50] (BG29); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[53] (BE25); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[52] (BF25); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[55] (BF26); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[54] (BG26); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[57] (BE28); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[56] (BE27); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[59] (BH26); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[58] (BH25); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[38] (BF27); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[37] (BG27); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[40] (BK29); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[39] (BL29); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[42] (BJ28); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[41] (BK28); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[44] (BK25); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[43] (BL25); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[46] (BJ26); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[45] (BJ25); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[61] (BL27); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[60] (BL26); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[48] (BJ27); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[47] (BK27); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_A4_C_0 (BN26); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_A4_C_1 (BP26); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[36] (BM27); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[35] (BM26); standard to be determined by Synthesis
+# Skipping IOSTD for pin pin_BM29 (BM29); standard to be determined by Synthesis
+# Skipping IOSTD for pin pin_BN29 (BN29); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[36] (BN25); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[35] (BP25); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[34] (BM28); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[33] (BN28); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[40] (BM24); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[39] (BN24); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[38] (BR28); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[37] (BR27); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_A4_D_2 (BR25); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_A4_D_3 (BR24); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[34] (BT27); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[33] (BU26); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[30] (BT26); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[29] (BT25); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[28] (BR29); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[27] (BT29); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[26] (BT24); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[25] (BU24); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[49] (BH28); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[24] (BP27); standard to be determined by Synthesis
+
+
+# Pins in use in IO Bank 63 (52 pins total) in connector 5 in voltage region FB1.A5 (1.80 Volts):
+define_io_standard  {p:PC[25]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[17]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[28]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[26]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[36]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[32]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[44]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[39]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[52]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[48]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_11_to_20[19]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_11_to_20[11]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[36]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_11_to_20[20]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID[55]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[42]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[0]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID[60]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[10]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[6]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[60]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[58]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[15]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[11]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[26]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[25]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[52]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[50]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[21]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[17]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[6]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[4]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[3]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[2]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[0]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[63]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[61]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[54]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[49]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[45]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[36]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[33]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[32]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[30]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[28]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[24]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[11]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[8]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[16]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[5]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[6]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[2]} syn_pad_type {LVCMOS_18}
+
+
+# Pins in use in IO Bank 64 (52 pins total) in connector 13 in voltage region FB1.A13 (1.20 Volts):
+
+
+# Pins in use in IO Bank 65 (52 pins total) in voltage region FB1.1.8v (1.80 Volts):
+
+
+# Pins in use in IO Bank 66 (52 pins total) in connector 12 in voltage region FB1.A12 (1.80 Volts):
+define_io_standard  {p:PC[34]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[33]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[50]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[46]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[55]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[51]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[57]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[56]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[61]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[59]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[45]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[44]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID[54]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[51]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID[63]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID[59]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[4]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[3]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[12]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[5]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[63]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[62]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[24]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[18]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[41]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[40]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[15]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[13]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[37]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[34]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[30]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_28_to_51[28]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_24_to_26[24]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_11_to_20[16]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_11_to_20[14]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:IMMID_11_to_20[13]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[27]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[16]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[11]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[5]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_instruc[1]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:in_enable} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[62]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[59]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[48]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[47]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[41]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[29]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:PC[31]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[21]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[27]} syn_pad_type {LVCMOS_18}
+define_io_standard  {p:Addr[13]} syn_pad_type {LVCMOS_18}
+
+
+# Pins in use in IO Bank 69 (52 pins total) in voltage region FB1.1.2v (1.20 Volts):
+# Skipping IOSTD for pin ADDOUTID_63_0[18] (K39); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[21] (K40); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[17] (J37); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[20] (J38); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[16] (J40); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[19] (H40); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[15] (H38); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[24] (G38); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[16] (G37); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[25] (F37); standard to be determined by Synthesis
+# Skipping IOSTD for pin pin_H39 (H39); standard to be determined by Synthesis
+# Skipping IOSTD for pin pin_G39 (G39); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_AI1_P_18 (H34); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_AI1_N_18 (G34); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[17] (J35); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[26] (J36); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[18] (F34); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[27] (E34); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[19] (H35); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[28] (H36); standard to be determined by Synthesis
+define_io_standard  {p:clk} syn_pad_type {DIFF_POD12} syn_io_dci {DCI}
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[20] (B36); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[29] (A36); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[21] (C34); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[30] (B34); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[22] (B37); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[31] (A37); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[23] (A34); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[32] (A35); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[22] (F39); standard to be determined by Synthesis
+# Skipping IOSTD for pin ADDOUTID_63_0[23] (E37); standard to be determined by Synthesis
+# Skipping IOSTD for pin DMOUTWB_aptn_ft[14] (D37); standard to be determined by Synthesis
+
+
+# Pins in use in IO Bank 70 (52 pins total) in voltage region FB1.1.2v (1.20 Volts):
+define_io_standard  {p:ADDOUTID_63_0[0]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:ADDOUTID_63_0[1]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[1]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[2]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:REGWRITEWB_aptn_ft} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:rst_n} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[0]} syn_pad_type {LVCMOS_12}
+
+
+# Pins in use in IO Bank 71 (52 pins total) in voltage region FB1.1.2v (1.20 Volts):
+define_io_standard  {p:ADDOUTID_63_0[10]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft_0[1]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ADDOUTID_63_0[8]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft_0[0]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ADDOUTID_63_0[7]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ADDOUTID_63_0[15]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ADDOUTID_63_0[6]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ADDOUTID_63_0[14]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ADDOUTID_63_0[5]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ADDOUTID_63_0[13]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ADDOUTID_63_0[4]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ADDOUTID_63_0[12]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_BI3_P_7 (H33); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_BI3_N_7 (G33); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_BI3_P_8 (J33); standard to be determined by Synthesis
+# Skipping IOSTD for pin cpm_s_HSTDM_4_FB1_BI3_N_8 (J32); standard to be determined by Synthesis
+define_io_standard  {p:ADDOUTID_63_0[3]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ADDOUTID_63_0[11]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+# Skipping IOSTD for pin pin_J31 (J31); standard to be determined by Synthesis
+# Skipping IOSTD for pin pin_H31 (H31); standard to be determined by Synthesis
+define_io_standard  {p:ALUOUTMEM_aptn_ft_0[5]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB_aptn_ft[4]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft_0[6]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB_aptn_ft[5]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft_0[7]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB_aptn_ft[6]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft_0[8]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB_aptn_ft[7]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft_0[9]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB_aptn_ft[8]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft_0[10]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB_aptn_ft[9]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB_aptn_ft[0]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB_aptn_ft[10]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB_aptn_ft[1]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB_aptn_ft[11]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB_aptn_ft[2]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB_aptn_ft[12]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB_aptn_ft[3]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:DMOUTWB_aptn_ft[13]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft_0[2]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft_0[3]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+define_io_standard  {p:ALUOUTMEM_aptn_ft_0[4]} syn_pad_type {SSTL_12} syn_io_dci {DCI}
+
+
+# Pins in use in IO Bank 72 (52 pins total) in connector 31 in voltage region FB1.A31 (1.20 Volts):
+
+
+# Pins in use in IO Bank 73 (52 pins total) in connector 29 in voltage region FB1.A29 (1.20 Volts):
+
+
+# Pins in use in IO Bank 74 (52 pins total) in connector 23 in voltage region FB1.A23 (1.20 Volts):
+
+
+# Pins in use in IO Bank 75 (52 pins total) in connector 24 in voltage region FB1.A24 (1.20 Volts):
+
+
+# Pins in use in IO Bank 76 (52 pins total) in connector 25 in voltage region FB1.A25 (1.20 Volts):
+
+
+# Pins in use in IO Bank 77 (52 pins total) in connector 26 in voltage region FB1.A26 (1.20 Volts):
+
+
+# Pins in use in IO Bank 78 (52 pins total) in connector 27 in voltage region FB1.A27 (1.20 Volts):
+
+
+# Pins in use in IO Bank 83 (24 pins total) in connector 1 in voltage region FB1.A1 (1.20 Volts):
+define_io_standard  {p:WRITEDATAWB_aptn_ft[31]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[30]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[33]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[32]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[35]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[34]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRWB_aptn_ft[0]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[36]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRWB_aptn_ft[2]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRWB_aptn_ft[1]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRWB_aptn_ft[4]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRWB_aptn_ft[3]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[29]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[28]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:ADDOUTID_63_0[59]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:ADDOUTID_63_0[46]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:MEMREADEX} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:ADDOUTID_63_0[60]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[23]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[22]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[25]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[24]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[27]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[26]} syn_pad_type {LVCMOS_12}
+
+
+# Pins in use in IO Bank 88 (24 pins total) in connector 1 in voltage region FB1.A1 (1.20 Volts):
+define_io_standard  {p:WRITEDATAWB_aptn_ft[19]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[18]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[17]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[16]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[15]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[14]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[13]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[12]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[11]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[10]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[21]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[20]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[9]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[8]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[7]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[6]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[5]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[4]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:WRITEDATAWB_aptn_ft[3]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:ADDOUTID_63_0[45]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:ADDOUTID_63_0[32]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:ADDOUTID_63_0[31]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:ADDOUTID_63_0[9]} syn_pad_type {LVCMOS_12}
+define_io_standard  {p:ADDOUTID_63_0[2]} syn_pad_type {LVCMOS_12}
+
+
+# Pins in use in IO Bank 93 (24 pins total) in connector 30 in voltage region FB1.A30 (1.20 Volts):
+
+
+# Pins in use in IO Bank 98 (24 pins total) in connector 30 in voltage region FB1.A30 (1.20 Volts):
+
+#end of IO banks
+
+###==== END ALL_SCOPE_TABS

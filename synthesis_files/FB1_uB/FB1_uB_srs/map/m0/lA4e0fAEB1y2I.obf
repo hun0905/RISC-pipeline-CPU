@@ -1,0 +1,1 @@
+-link -encrypt -top TraceBuildLib.FB1_uB -osyn /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB/FB1_uB_srs/compile/c0/synwork/FB1_uB_comp.srs  /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB/FB1_uB.srs -jobname linker  

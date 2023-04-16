@@ -1,0 +1,20 @@
+/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/linux_a_64/aptn  \
+-hpcf /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/ptn_opt.pcf  \
+-haps_target HAPS-100  \
+-timingRpt 1  \
+-srpBuild  \
+-clksrs /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/dump_clock_tree.srs  \
+-relpath  \
+-srs /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/synwork/top_part.srs  \
+-partitionOnly  \
+-part XCVU19P-FSVA3824-1-e  \
+-board /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/targetsystem.srs  \
+-aptn_ts 1  \
+-est /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/top.est  \
+-hpcf /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/hapsip_assign.pcf  \
+-pcf /home/u108/u108061217/RISC-V-pipeline-CPU/partition.pcf  \
+-log /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/partition.log  \
+-out /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/top  \
+-oprops /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/syntmp/auto_partitioner_props.txt  \
+-jobname auto_partitioner 
+

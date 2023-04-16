@@ -1,0 +1,78 @@
+# HAPS constraint file for partition FB1_uD
+
+
+###==== BEGIN ALL_SCOPE_TABS
+define_current_design {v:FB1_uD}
+
+# High-speed TDM clocks
+# High-speed TDM clocks would be declared during IP insertion.
+# Clock constraints in this section are intentionally disabled.
+# create_clock -comment {HSTDM ref clock} [get_nets {hstdm_clkgeninst.hstdm_refclk}] -name {hstdm_refclk} -period {inf} -force_sync_all_clocks
+
+# High-speed TDM source-synchronous clock input pin definitions
+# High-speed TDM clocks would be declared during IP insertion.
+# Clock constraints in this section are intentionally disabled.
+# create_clock -comment {HSTDM rx clock for block 9 (bank 71)} [get_ports {pin_B33}] -name {hstdm_rxclk_block9_pin_B33} -period {inf} -force_sync_all_clocks
+# create_generated_clock -comment {HSTDM rx clock for block 9 (bank 71)} [get_nets {hstdm_rxclkgen_9.hstdm_rxclkdiv2}] -name {hstdm_rxclkdiv2_block9} -source [get_ports {pin_B33}] -divide_by {2} -multiply_by {1}
+# create_generated_clock -comment {HSTDM rx clock for block 9 (bank 71)} [get_nets {hstdm_rxclkgen_9.hstdm_rxclkdiv4}] -name {hstdm_rxclkdiv4_block9} -source [get_ports {pin_B33}] -divide_by {4} -multiply_by {1}
+# create_clock -comment {HSTDM rx clock for block 8 (bank 69)} [get_ports {pin_F34}] -name {hstdm_rxclk_block8_pin_F34} -period {inf} -force_sync_all_clocks
+# create_generated_clock -comment {HSTDM rx clock for block 8 (bank 69)} [get_nets {hstdm_rxclkgen_8.hstdm_rxclkdiv2}] -name {hstdm_rxclkdiv2_block8} -source [get_ports {pin_F34}] -divide_by {2} -multiply_by {1}
+# create_generated_clock -comment {HSTDM rx clock for block 8 (bank 69)} [get_nets {hstdm_rxclkgen_8.hstdm_rxclkdiv4}] -name {hstdm_rxclkdiv4_block8} -source [get_ports {pin_F34}] -divide_by {4} -multiply_by {1}
+# create_clock -comment {HSTDM rx clock for block 10 (bank 36)} [get_ports {pin_M48}] -name {hstdm_rxclk_block10_pin_M48} -period {inf} -force_sync_all_clocks
+# create_generated_clock -comment {HSTDM rx clock for block 10 (bank 36)} [get_nets {hstdm_rxclkgen_10.hstdm_rxclkdiv2}] -name {hstdm_rxclkdiv2_block10} -source [get_ports {pin_M48}] -divide_by {2} -multiply_by {1}
+# create_generated_clock -comment {HSTDM rx clock for block 10 (bank 36)} [get_nets {hstdm_rxclkgen_10.hstdm_rxclkdiv4}] -name {hstdm_rxclkdiv4_block10} -source [get_ports {pin_M48}] -divide_by {4} -multiply_by {1}
+
+# no special HAPS reset logic found
+
+# Constraint for HSTDM transmitter clock pins
+# These paths should be deterministic, independent of constraints.
+# Constraints in this section are intentionally disabled, because equivalent constraints will be added during IP insertion.
+
+# Constraint for HSTDM transmitter data pins
+# These paths should be deterministic, independent of constraints.
+# Constraints in this section are intentionally disabled, because equivalent constraints will be added during IP insertion.
+
+# Constraint for HSTDM receiver data pins
+# These paths should be deterministic, independent of constraints.
+# Constraints in this section are intentionally disabled, because equivalent constraints will be added during IP insertion.
+# set_false_path -comment {HSTDM data pin of cpm_rcv_HSTDM_4_FB1_DI3_P_8 (HSTDM_4) in block 9 (bank 71)} -from [get_ports {cpm_r_HSTDM_4_FB1_DI3_P_8}] -fa_keep
+# set_false_path -comment {HSTDM data pin of cpm_rcv_HSTDM_4_FB1_DI3_N_8 (HSTDM_4) in block 9 (bank 71)} -from [get_ports {cpm_r_HSTDM_4_FB1_DI3_N_8}] -fa_keep
+# set_false_path -comment {HSTDM data pin of cpm_rcv_HSTDM_4_FB1_DI3_P_7 (HSTDM_4) in block 9 (bank 71)} -from [get_ports {cpm_r_HSTDM_4_FB1_DI3_P_7}] -fa_keep
+# set_false_path -comment {HSTDM data pin of cpm_rcv_HSTDM_4_FB1_DI3_N_7 (HSTDM_4) in block 9 (bank 71)} -from [get_ports {cpm_r_HSTDM_4_FB1_DI3_N_7}] -fa_keep
+# set_false_path -comment {HSTDM data pin of cpm_rcv_HSTDM_4_FB1_CI1_P_17 (HSTDM_4) in block 8 (bank 69)} -from [get_ports {cpm_r_HSTDM_4_FB1_CI1_P_17}] -fa_keep
+# set_false_path -comment {HSTDM data pin of cpm_rcv_HSTDM_4_FB1_CI1_N_17 (HSTDM_4) in block 8 (bank 69)} -from [get_ports {cpm_r_HSTDM_4_FB1_CI1_N_17}] -fa_keep
+# set_false_path -comment {HSTDM data pin of cpm_rcv_HSTDM_4_FB1_CI1_P_18 (HSTDM_4) in block 8 (bank 69)} -from [get_ports {cpm_r_HSTDM_4_FB1_CI1_P_18}] -fa_keep
+# set_false_path -comment {HSTDM data pin of cpm_rcv_HSTDM_4_FB1_CI1_N_18 (HSTDM_4) in block 8 (bank 69)} -from [get_ports {cpm_r_HSTDM_4_FB1_CI1_N_18}] -fa_keep
+# set_false_path -comment {HSTDM data pin of cpm_rcv_HSTDM_4_FB1_C2_C_6 (HSTDM_4) in block 10 (bank 36)} -from [get_ports {cpm_r_HSTDM_4_FB1_C2_C_6}] -fa_keep
+# set_false_path -comment {HSTDM data pin of cpm_rcv_HSTDM_4_FB1_C2_C_0 (HSTDM_4) in block 10 (bank 36)} -from [get_ports {cpm_r_HSTDM_4_FB1_C2_C_0}] -fa_keep
+# set_false_path -comment {HSTDM data pin of cpm_rcv_HSTDM_4_FB1_C2_C_1 (HSTDM_4) in block 10 (bank 36)} -from [get_ports {cpm_r_HSTDM_4_FB1_C2_C_1}] -fa_keep
+# set_false_path -comment {HSTDM data pin of cpm_rcv_HSTDM_4_FB1_C2_D_2 (HSTDM_4) in block 10 (bank 36)} -from [get_ports {cpm_r_HSTDM_4_FB1_C2_D_2}] -fa_keep
+# set_false_path -comment {HSTDM data pin of cpm_rcv_HSTDM_4_FB1_C2_D_3 (HSTDM_4) in block 10 (bank 36)} -from [get_ports {cpm_r_HSTDM_4_FB1_C2_D_3}] -fa_keep
+
+# Default constraints for design signals that use the high speed TDM logic.
+# You can enable them to improve timing on the inter-FPGA, but they are not required.
+# If you run the time-budgeting step, more detailed time-budget constraints for
+# these paths and others will be written into another constraint file
+
+# Default time budgeting constraints for paths from user logic to HSTDM logic (transmit side)
+# Note: "set_datapathonly_delay" constraints require start points to work properly.
+# Add the start points via "-from" argument to following constraints before enabling them.
+# (Use property syn_hstdm_tx_budget on FPGA or on the individual ports to control the value manually.)
+
+# Default time budgeting constraints for paths from HSTDM logic to user logic (receive side)
+# (Use property syn_hstdm_rx_budget on FPGA or on the individual ports to control the value manually.)
+set_datapathonly_delay -disable -comment {default HSTDM rx budget for cpm_rcv_HSTDM_4_FB1_DI3_P_8 (FB1.uC:bank71)->(FB1.uD:bank71)} -from {i:cpm_rcv_HSTDM_4_FB1_DI3_P_8.rxbit.XiPhy_Bitslip.dataout[*]} 3.000 -fa_keep
+set_datapathonly_delay -disable -comment {default HSTDM rx budget for cpm_rcv_HSTDM_4_FB1_DI3_N_8 (FB1.uC:bank71)->(FB1.uD:bank71)} -from {i:cpm_rcv_HSTDM_4_FB1_DI3_N_8.rxbit.XiPhy_Bitslip.dataout[*]} 3.000 -fa_keep
+set_datapathonly_delay -disable -comment {default HSTDM rx budget for cpm_rcv_HSTDM_4_FB1_DI3_P_7 (FB1.uC:bank71)->(FB1.uD:bank71)} -from {i:cpm_rcv_HSTDM_4_FB1_DI3_P_7.rxbit.XiPhy_Bitslip.dataout[*]} 3.000 -fa_keep
+set_datapathonly_delay -disable -comment {default HSTDM rx budget for cpm_rcv_HSTDM_4_FB1_DI3_N_7 (FB1.uC:bank71)->(FB1.uD:bank71)} -from {i:cpm_rcv_HSTDM_4_FB1_DI3_N_7.rxbit.XiPhy_Bitslip.dataout[*]} 3.000 -fa_keep
+set_datapathonly_delay -disable -comment {default HSTDM rx budget for cpm_rcv_HSTDM_4_FB1_CI1_P_17 (FB1.uC:bank69)->(FB1.uD:bank69)} -from {i:cpm_rcv_HSTDM_4_FB1_CI1_P_17.rxbit.XiPhy_Bitslip.dataout[*]} 3.000 -fa_keep
+set_datapathonly_delay -disable -comment {default HSTDM rx budget for cpm_rcv_HSTDM_4_FB1_CI1_N_17 (FB1.uC:bank69)->(FB1.uD:bank69)} -from {i:cpm_rcv_HSTDM_4_FB1_CI1_N_17.rxbit.XiPhy_Bitslip.dataout[*]} 3.000 -fa_keep
+set_datapathonly_delay -disable -comment {default HSTDM rx budget for cpm_rcv_HSTDM_4_FB1_CI1_P_18 (FB1.uC:bank69)->(FB1.uD:bank69)} -from {i:cpm_rcv_HSTDM_4_FB1_CI1_P_18.rxbit.XiPhy_Bitslip.dataout[*]} 3.000 -fa_keep
+set_datapathonly_delay -disable -comment {default HSTDM rx budget for cpm_rcv_HSTDM_4_FB1_CI1_N_18 (FB1.uC:bank69)->(FB1.uD:bank69)} -from {i:cpm_rcv_HSTDM_4_FB1_CI1_N_18.rxbit.XiPhy_Bitslip.dataout[*]} 3.000 -fa_keep
+set_datapathonly_delay -disable -comment {default HSTDM rx budget for cpm_rcv_HSTDM_4_FB1_C2_C_6 (FB1.uC:J2)->(FB1.uD:J20)} -from {i:cpm_rcv_HSTDM_4_FB1_C2_C_6.rxbit.XiPhy_Bitslip.dataout[*]} 3.000 -fa_keep
+set_datapathonly_delay -disable -comment {default HSTDM rx budget for cpm_rcv_HSTDM_4_FB1_C2_C_0 (FB1.uC:J2)->(FB1.uD:J20)} -from {i:cpm_rcv_HSTDM_4_FB1_C2_C_0.rxbit.XiPhy_Bitslip.dataout[*]} 3.000 -fa_keep
+set_datapathonly_delay -disable -comment {default HSTDM rx budget for cpm_rcv_HSTDM_4_FB1_C2_C_1 (FB1.uC:J2)->(FB1.uD:J20)} -from {i:cpm_rcv_HSTDM_4_FB1_C2_C_1.rxbit.XiPhy_Bitslip.dataout[*]} 3.000 -fa_keep
+set_datapathonly_delay -disable -comment {default HSTDM rx budget for cpm_rcv_HSTDM_4_FB1_C2_D_2 (FB1.uC:J2)->(FB1.uD:J20)} -from {i:cpm_rcv_HSTDM_4_FB1_C2_D_2.rxbit.XiPhy_Bitslip.dataout[*]} 3.000 -fa_keep
+set_datapathonly_delay -disable -comment {default HSTDM rx budget for cpm_rcv_HSTDM_4_FB1_C2_D_3 (FB1.uC:J2)->(FB1.uD:J20)} -from {i:cpm_rcv_HSTDM_4_FB1_C2_D_3.rxbit.XiPhy_Bitslip.dataout[*]} 3.000 -fa_keep
+
+###==== END ALL_SCOPE_TABS

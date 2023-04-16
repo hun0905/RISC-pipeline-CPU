@@ -1,0 +1,9 @@
+read_ip ${DesignName}_hapsip/hapsaxd/haps_mem/snps_async_fwft_128bx32.xcix
+read_ip ${DesignName}_hapsip/hapsaxd/haps_mem/snps_async_fwft_256bx32.xcix
+read_ip ${DesignName}_hapsip/hapsaxd/haps_mem/snps_async_fwft_256bx128.xcix
+read_ip ${DesignName}_hapsip/hapsaxd/haps_mem/snps_async_fwft_684bx32.xcix
+read_ip ${DesignName}_hapsip/hapsaxd/haps_mem/snps_sync_fwft_16bx64.xcix
+read_ip ${DesignName}_hapsip/hapsaxd/haps_mem/snps_sync_fwft_19bx64.xcix
+read_ip ${DesignName}_hapsip/hapsaxd/haps_mem/snps_sync_fwft_687bx64.xcix
+read_ip ${DesignName}_hapsip/hapsaxd/haps_mem/snps_ddr4_mig.xcix
+read_ip ${DesignName}_hapsip/hapsaxd/haps_mem/snps_dp_blkmem_64x64.xcix

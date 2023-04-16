@@ -1,0 +1,6 @@
+@N: MF835 |Distributed Synthesis is enabled. 
+@N: MF836 |In distributed synthesis compile-point constraints are disregarded by the mapper. 
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MF796 |Maximum number of parallel jobs set to 4

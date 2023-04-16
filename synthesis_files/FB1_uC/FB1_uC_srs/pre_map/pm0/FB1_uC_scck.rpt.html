@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> <span style="font-family: courier, monospace; font-weight: bold; font-size:24px">
+<a name="TOP">Constraint check report</a></span></head><body style="font-family: courier,monospace; line-height: 1.0; margin-top: 0em; margin-bottom: 0em; font-size:14px; white-space:pre;">
+<table></table><span>Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs/|pm0
+
+# Written on Sun Apr  9 22:42:34 2023
+
+##### FILES SYNTAX CHECKED ##############################################
+Constraint File(s):      "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/common_files/srs_cons_var.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/common_files/tdm_cons_var.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_pinloc.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_iostd.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_attr.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_timing.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/common_files/clockgen_cons.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_haps_timing.fdc"
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+*************
+
+          Start                                       Requested      Requested     Clock                                                                                        Clock                   Clock
+Level     Clock                                       Frequency      Period        Type                                                                                         Group                   Load 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       hstdm_rxclk_1200_bank36_block6              600.0 MHz      1.667         declared {hstdm_rxclk_1200_bank36_block6}                                                    default_clkgroup        0    
+1 .         hstdm_rxclk_1200_bank36_block6_div2       300.0 MHz      3.333         derived (from hstdm_rxclk_1200_bank36_block6) {hstdm_rxclk_1200_bank36_block6}               default_clkgroup        4872 
+2 ..          hstdm_rxclk_1200_bank36_block6_div4     150.0 MHz      6.667         derived (from hstdm_rxclk_1200_bank36_block6_div2) {hstdm_rxclk_1200_bank36_block6_div2}     default_clkgroup        1041 
+
+0 -       hstdm_refclk_100                            100.0 MHz      10.000        declared                                                                                     default_clkgroup        575  
+1 .         hstdm_txclk_1200_bank60_div2              300.0 MHz      3.333         derived (from hstdm_refclk_100)                                                              default_clkgroup        340  
+1 .         hstdm_txclk_1200_bank69_div2              300.0 MHz      3.333         derived (from hstdm_refclk_100)                                                              default_clkgroup        272  
+1 .         hstdm_txclk_1200_bank71_div2              300.0 MHz      3.333         derived (from hstdm_refclk_100)                                                              default_clkgroup        272  
+1 .         hstdm_txclk_1200_bank36_div2              300.0 MHz      3.333         derived (from hstdm_refclk_100)                                                              default_clkgroup        136  
+1 .         hstdm_txclk_1200_bank36_clkoutphy         1200.0 MHz     0.833         derived (from hstdm_refclk_100)                                                              default_clkgroup        0    
+1 .         hstdm_txclk_1200_bank60_clkoutphy         1200.0 MHz     0.833         derived (from hstdm_refclk_100)                                                              default_clkgroup        0    
+1 .         hstdm_txclk_1200_bank69_clkoutphy         1200.0 MHz     0.833         derived (from hstdm_refclk_100)                                                              default_clkgroup        0    
+1 .         hstdm_txclk_1200_bank71_clkoutphy         1200.0 MHz     0.833         derived (from hstdm_refclk_100)                                                              default_clkgroup        0    
+
+0 -       umr3_clk                                    125.0 MHz      8.000         declared                                                                                     default_clkgroup        793  
+
+0 -       umr2_clk                                    100.0 MHz      10.000        declared                                                                                     default_clkgroup        546  
+
+0 -       clk                                         2.0 MHz        500.000       declared                                                                                     default_clkgroup        140  
+
+0 -       System_FB1_uC                               1.0 MHz        1000.000      virtual                                                                                      default_clkgroup        0    
+
+0 -       dbg_capiclk                                 40.0 MHz       25.000        declared                                                                                     default_clkgroup        0    
+
+0 -       dbg_xcvr_user_clk_0                         140.6 MHz      7.111         declared                                                                                     default_clkgroup        0    
+
+0 -       dbg_xcvr_user_clk_1                         140.6 MHz      7.111         declared                                                                                     default_clkgroup        0    
+
+0 -       dbg_xcvr_user_clk_2                         140.6 MHz      7.111         declared                                                                                     default_clkgroup        0    
+
+0 -       dbg_xcvr_user_clk_3                         140.6 MHz      7.111         declared                                                                                     default_clkgroup        0    
+
+0 -       gclk0                                       100.0 MHz      10.000        declared                                                                                     default_clkgroup        0    
+
+0 -       haps_clk_10                                 10.0 MHz       100.000       declared                                                                                     group_219_18            0    
+
+0 -       haps_clk_10_2_sync                          10.0 MHz       100.000       declared                                                                                     default_clkgroup        0    
+
+0 -       haps_clk_50_2_sync                          50.0 MHz       20.000        declared                                                                                     default_clkgroup        0    
+
+0 -       haps_clk_200                                200.0 MHz      5.000         declared                                                                                     default_clkgroup        0    
+
+0 -       sys_clk                                     100.0 MHz      10.000        declared                                                                                     default_clkgroup        0    
+
+0 -       ufpga_lock_clk_o                            1.0 MHz        1000.000      declared                                                                                     ufpga_lock_clkgroup     0    
+=============================================================================================================================================================================================================
+
+
+Clock Load Summary
+******************
+
+                                        Clock     Source                                                                               Clock Pin                                                                           Non-clock Pin                                                                       Non-clock Pin                                                           
+Clock                                   Load      Pin                                                                                  Seq Example                                                                         Seq Example                                                                         Comb Example                                                            
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+hstdm_rxclk_1200_bank36_block6          0         pin_M48(port)                                                                        -                                                                                   -                                                                                   ibufds_pin_M48.I(IBUFDS)                                                
+hstdm_rxclk_1200_bank36_block6_div2     4872      hstdm_clkgen_1200_rx_bank36_block6.bitslice_rx_clock.FIFO_WRCLK_OUT(RX_BITSLICE)     cpm_rcv_HSTDM_4_FB1_B2_A_8.rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr1.IntQ.C          -                                                                                   hstdm_clkgen_1200_rx_bank36_block6.BASE4\.rxclkdiv2_bufg.I(BUFGCE)      
+hstdm_rxclk_1200_bank36_block6_div4     1041      hstdm_clkgen_1200_rx_bank36_block6.BASE4\.rxclkdiv4_bufg.O(BUFGCE_DIV)               cpm_rcv_HSTDM_4_FB1_B2_A_8.rx_core.idelay_load_delay.REG\.ASYNC\.out.C              -                                                                                   hstdm_clkgen_1200_rx_bank36_block6.rxclkdiv4_derived_clock.I[0](keepbuf)
+
+hstdm_refclk_100                        575       hstdm_clkgen_1200_bank71.hstdm_plle3.CLKOUT1B(PLLE3_ADV)                             hstdm_bitslice_ctrl_bank71.NIBBLE\[5\]\.BITSLICE_CTRL\.bitslice_control.RIU_CLK     -                                                                                   -                                                                       
+hstdm_txclk_1200_bank60_div2            340       hstdm_clkgen_1200_bank60.hstdm_plle3.CLKOUT1(PLLE3_ADV)                              cpm_snd_HSTDM_4_FB1_C2_D_2.ar_tx_ctrl0.R0.C                                         -                                                                                   hstdm_clkgen_1200_bank60.TXCLKDIV2\.txclkdiv2_bufg.I(BUFGCE)            
+hstdm_txclk_1200_bank69_div2            272       hstdm_clkgen_1200_bank69.hstdm_plle3.CLKOUT1(PLLE3_ADV)                              cpm_snd_HSTDM_4_FB1_CI1_P_17.ar_tx_ctrl0.R0.C                                       -                                                                                   hstdm_clkgen_1200_bank69.TXCLKDIV2\.txclkdiv2_bufg.I(BUFGCE)            
+hstdm_txclk_1200_bank71_div2            272       hstdm_clkgen_1200_bank71.hstdm_plle3.CLKOUT1(PLLE3_ADV)                              cpm_snd_HSTDM_4_FB1_DI3_P_8.ar_tx_ctrl0.R0.C                                        -                                                                                   hstdm_clkgen_1200_bank71.TXCLKDIV2\.txclkdiv2_bufg.I(BUFGCE)            
+hstdm_txclk_1200_bank36_div2            136       hstdm_clkgen_1200_bank36.hstdm_plle3.CLKOUT1(PLLE3_ADV)                              cpm_snd_HSTDM_4_FB1_B2_A_0.ar_tx_ctrl0.R0.C                                         -                                                                                   hstdm_clkgen_1200_bank36.TXCLKDIV2\.txclkdiv2_bufg.I(BUFGCE)            
+hstdm_txclk_1200_bank36_clkoutphy       0         hstdm_clkgen_1200_bank36.hstdm_plle3.CLKOUTPHY(PLLE3_ADV)                            -                                                                                   hstdm_bitslice_ctrl_bank36.NIBBLE\[4\]\.BITSLICE_CTRL\.bitslice_control.PLL_CLK     hstdm_clkgen_1200_bank36.clkoutphy_derived_clock.I[0](keepbuf)          
+hstdm_txclk_1200_bank60_clkoutphy       0         hstdm_clkgen_1200_bank60.hstdm_plle3.CLKOUTPHY(PLLE3_ADV)                            -                                                                                   hstdm_bitslice_ctrl_bank60.NIBBLE\[1\]\.BITSLICE_CTRL\.bitslice_control.PLL_CLK     hstdm_clkgen_1200_bank60.clkoutphy_derived_clock.I[0](keepbuf)          
+hstdm_txclk_1200_bank69_clkoutphy       0         hstdm_clkgen_1200_bank69.hstdm_plle3.CLKOUTPHY(PLLE3_ADV)                            -                                                                                   hstdm_bitslice_ctrl_bank69.NIBBLE\[6\]\.BITSLICE_CTRL\.bitslice_control.PLL_CLK     hstdm_clkgen_1200_bank69.clkoutphy_derived_clock.I[0](keepbuf)          
+hstdm_txclk_1200_bank71_clkoutphy       0         hstdm_clkgen_1200_bank71.hstdm_plle3.CLKOUTPHY(PLLE3_ADV)                            -                                                                                   hstdm_bitslice_ctrl_bank71.NIBBLE\[5\]\.BITSLICE_CTRL\.bitslice_control.PLL_CLK     hstdm_clkgen_1200_bank71.clkoutphy_derived_clock.I[0](keepbuf)          
+
+umr3_clk                                793       sysip_inst.bsa19_system_ip_u.umr3_clk(bsa19_system_ip)                               hstdm_memory.memory_core.memory_out[31:0].C                                         -                                                                                   -                                                                       
+
+umr2_clk                                546       sysip_inst.bsa19_system_ip_u.umr2_clk(bsa19_system_ip)                               pipelineReg_hstdm_training_monitor_6_infopipe_empty_out.C                           -                                                                                   -                                                                       
+
+clk                                     140       clk(port)                                                                            dut_inst.aptn_reset_sync_rst_n.C                                                    -                                                                                   -                                                                       
+
+System_FB1_uC                           0         -                                                                                    -                                                                                   -                                                                                   -                                                                       
+
+dbg_capiclk                             0         sysip_inst.bsa19_system_ip_u.dbg_capiclk(bsa19_system_ip)                            -                                                                                   -                                                                                   -                                                                       
+
+dbg_xcvr_user_clk_0                     0         sysip_inst.bsa19_system_ip_u.dbg_xcvr_user_clk[0](bsa19_system_ip)                   -                                                                                   -                                                                                   -                                                                       
+
+dbg_xcvr_user_clk_1                     0         sysip_inst.bsa19_system_ip_u.dbg_xcvr_user_clk[1](bsa19_system_ip)                   -                                                                                   -                                                                                   -                                                                       
+
+dbg_xcvr_user_clk_2                     0         sysip_inst.bsa19_system_ip_u.dbg_xcvr_user_clk[2](bsa19_system_ip)                   -                                                                                   -                                                                                   -                                                                       
+
+dbg_xcvr_user_clk_3                     0         sysip_inst.bsa19_system_ip_u.dbg_xcvr_user_clk[3](bsa19_system_ip)                   -                                                                                   -                                                                                   -                                                                       
+
+gclk0                                   0         sysip_inst.bsa19_system_ip_u.gclk0(bsa19_system_ip)                                  -                                                                                   -                                                                                   -                                                                       
+
+haps_clk_10                             0         sysip_inst.bsa19_system_ip_u.haps_clk_10(bsa19_system_ip)                            -                                                                                   -                                                                                   -                                                                       
+
+haps_clk_10_2_sync                      0         sysip_inst.bsa19_system_ip_u.haps_clk_10_2_sync(bsa19_system_ip)                     -                                                                                   -                                                                                   -                                                                       
+
+haps_clk_50_2_sync                      0         sysip_inst.bsa19_system_ip_u.haps_clk_50_2_sync(bsa19_system_ip)                     -                                                                                   -                                                                                   -                                                                       
+
+haps_clk_200                            0         sysip_inst.bsa19_system_ip_u.haps_clk_200(bsa19_system_ip)                           -                                                                                   -                                                                                   -                                                                       
+
+sys_clk                                 0         sysip_inst.bsa19_system_ip_u.sys_clk(bsa19_system_ip)                                -                                                                                   -                                                                                   -                                                                       
+
+ufpga_lock_clk_o                        0         sysip_inst.bsa19_system_ip_u.ufpga_lock_clk_o(bsa19_system_ip)                       -                                                                                   -                                                                                   ufpga_lock_clk_o_keep.I[0](keepbuf)                                     
+=======================================================================================================================================================================================================================================================================================================================================================================================
+</body>
+</html>

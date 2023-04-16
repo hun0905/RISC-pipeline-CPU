@@ -1,0 +1,1021 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> <span style="font-family: courier, monospace; font-weight: bold; font-size:24px">
+<a name="TOP">Timing Budgets Generation Log</a></span></head><body style="font-family: courier,monospace; line-height: 1.0; margin-top: 0em; margin-bottom: 0em; font-size:14px; white-space:pre;">
+<table><tr><td>1</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px"><a href="#S1" name="SFrom1">##### START OF TIMING REPORT #####[</a></td></tr>
+<tr><td>1.1</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S1.1" name="SFrom1.1">Performance Summary</a></td></tr>
+<tr><td>1.2</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S1.2" name="SFrom1.2">Clock Relationships</a></td></tr>
+<tr><td>1.3</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S1.3" name="SFrom1.3">Detailed Report for Clock: clk</a></td></tr>
+<tr><td>1.4</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S1.4" name="SFrom1.4">Detailed Report for Clock: System</a></td></tr>
+<tr><td>1.5</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S1.5" name="SFrom1.5">Timing exceptions that could not be applied</a></td></tr>
+</table><span># Sun Apr  9 22:41:52 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|sg0
+Synopsys Xilinx Technology Mapper, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 237MB peak: 237MB)
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N0"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MF913">MF913</a> Option synthesis_strategy=fast is enabled. </span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N1"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MF248">MF248</a> Running in 64-bit mode.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N2"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MF666">MF666</a> Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)</span>
+<span>Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 262MB peak: 262MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 262MB peak: 262MB)
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N3"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MF119">MF119</a> Unified Time Budget flow enabled </span>
+<span>Start loading fpga timing model (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 262MB peak: 262MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 262MB peak: 262MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 264MB peak: 264MB)
+
+
+Finished loading fpga timing model (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 791MB peak: 791MB)
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N4"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN362">BN362</a> |Removing sequential instance aptn_reset_sync_rst_n_0 (in view: PartitionBuildLib.FB1_uA_dut(internal)) of type view:PrimLib.dff(prim) because it does not drive other instances.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N5"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN362">BN362</a> |Removing sequential instance aptn_reset_sync_rst_n_1 (in view: PartitionBuildLib.FB1_uA_dut(internal)) of type view:PrimLib.dff(prim) because it does not drive other instances.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N6"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN362">BN362</a> |Removing sequential instance aptn_reset_sync_rst_n_2 (in view: PartitionBuildLib.FB1_uA_dut(internal)) of type view:PrimLib.dff(prim) because it does not drive other instances.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N7"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN362">BN362</a> |Removing sequential instance aptn_reset_sync_rst_n_3 (in view: PartitionBuildLib.FB1_uA_dut(internal)) of type view:PrimLib.dff(prim) because it does not drive other instances.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N8"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN362">BN362</a> |Removing sequential instance aptn_reset_sync_rst_n_4 (in view: PartitionBuildLib.FB1_uA_dut(internal)) of type view:PrimLib.dff(prim) because it does not drive other instances.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N9"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN362">BN362</a> |Removing sequential instance aptn_reset_sync_rst_n_5 (in view: PartitionBuildLib.FB1_uA_dut(internal)) of type view:PrimLib.dff(prim) because it does not drive other instances.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N10"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN362">BN362</a> |Removing sequential instance aptn_reset_sync_rst_n_6 (in view: PartitionBuildLib.FB1_uA_dut(internal)) of type view:PrimLib.dff(prim) because it does not drive other instances.</span>
+<span>Finished insertion of fpga timing model (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 802MB peak: 802MB)
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N11"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MF404">MF404</a> Running Normal timing estimation with effort level 'LOW'</span>
+<span>Finished time budget netlist preparation (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 804MB peak: 804MB)
+
+
+Finished writer setup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 804MB peak: 804MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 804MB peak: 804MB)
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N12"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MT649">MT649</a> During time budgeting, Vivado latch mode is off. </span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N13"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MT650">MT650</a> During time budgeting, latch-based time borrowing is disabled. </span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N14"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MT615">MT615</a> Found clock clk with period 500.00ns </span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a name="S1">Section 1</a> ##### START OF TIMING REPORT #####[ <a href="#SFrom1">Back</a>
+</span>
+<span># Timing report written on Sun Apr  9 22:42:06 2023
+#
+
+
+Top view:               top
+Requested Frequency:    2.0 MHz
+Wire load mode:         top
+Paths requested:        5
+The system contains the following FPGAs:
+    FB1.uA : XCVU19PFSVA3824, speedgrade -1-e
+    FB1.uB : XCVU19PFSVA3824, speedgrade -1-e
+    FB1.uC : XCVU19PFSVA3824, speedgrade -1-e
+    FB1.uD : XCVU19PFSVA3824, speedgrade -1-e
+Constraint File(s):    /home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N15"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MT320">MT320</a> This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a name="S1.1">Section 1.1</a> Performance Summary <a href="#SFrom1.1">Back</a>
+</span>
+<span>*******************
+
+
+Worst slack in design: 429.170
+
+                   Requested     Estimated     Requested     Estimated                 Clock        Clock           
+Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group           
+--------------------------------------------------------------------------------------------------------------------
+clk                2.0 MHz       14.1 MHz      500.000       70.830        429.170     declared     default_clkgroup
+System             1.0 MHz       2.0 MHz       1000.000      502.882       497.118     system       system_clkgroup 
+====================================================================================================================
+
+
+
+
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a name="S1.2">Section 1.2</a> Clock Relationships <a href="#SFrom1.2">Back</a>
+</span>
+<span>*******************
+
+Clocks            |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------
+System    clk     |  500.000     497.118  |  No paths    -      |  No paths    -      |  No paths    -    
+clk       System  |  500.000     434.533  |  No paths    -      |  No paths    -      |  No paths    -    
+clk       clk     |  500.000     429.170  |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+
+
+Input Ports: 
+
+Port               Starting            User           Arrival     Required            
+Name               Reference           Constraint     Time        Time         Slack  
+                   Clock                                                              
+--------------------------------------------------------------------------------------
+Addr[0]            NA                  NA             NA          NA           NA     
+Addr[1]            NA                  NA             NA          NA           NA     
+Addr[2]            System (rising)     NA             0.000       498.404      498.404
+Addr[3]            System (rising)     NA             0.000       498.398      498.398
+Addr[4]            System (rising)     NA             0.000       497.766      497.766
+Addr[5]            System (rising)     NA             0.000       498.404      498.404
+Addr[6]            System (rising)     NA             0.000       498.404      498.404
+Addr[7]            System (rising)     NA             0.000       497.536      497.536
+Addr[8]            System (rising)     NA             0.000       498.142      498.142
+Addr[9]            System (rising)     NA             0.000       497.536      497.536
+Addr[10]           System (rising)     NA             0.000       498.139      498.139
+Addr[11]           System (rising)     NA             0.000       498.012      498.012
+Addr[12]           System (rising)     NA             0.000       498.009      498.009
+Addr[13]           System (rising)     NA             0.000       497.862      497.862
+Addr[14]           System (rising)     NA             0.000       497.421      497.421
+Addr[15]           System (rising)     NA             0.000       497.392      497.392
+Addr[16]           System (rising)     NA             0.000       498.007      498.007
+Addr[17]           System (rising)     NA             0.000       497.392      497.392
+Addr[18]           System (rising)     NA             0.000       497.392      497.392
+Addr[19]           System (rising)     NA             0.000       497.277      497.277
+Addr[20]           System (rising)     NA             0.000       497.880      497.880
+Addr[21]           System (rising)     NA             0.000       497.716      497.716
+Addr[22]           System (rising)     NA             0.000       497.277      497.277
+Addr[23]           System (rising)     NA             0.000       497.527      497.527
+Addr[24]           System (rising)     NA             0.000       498.133      498.133
+Addr[25]           System (rising)     NA             0.000       497.527      497.527
+Addr[26]           System (rising)     NA             0.000       497.527      497.527
+Addr[27]           System (rising)     NA             0.000       497.807      497.807
+Addr[28]           System (rising)     NA             0.000       497.958      497.958
+Addr[29]           System (rising)     NA             0.000       497.807      497.807
+Addr[30]           System (rising)     NA             0.000       497.958      497.958
+Addr[31]           System (rising)     NA             0.000       497.412      497.412
+Addr[32]           System (rising)     NA             0.000       498.004      498.004
+Addr[33]           System (rising)     NA             0.000       498.004      498.004
+Addr[34]           System (rising)     NA             0.000       498.001      498.001
+Addr[35]           System (rising)     NA             0.000       497.874      497.874
+Addr[36]           System (rising)     NA             0.000       497.877      497.877
+Addr[37]           System (rising)     NA             0.000       497.286      497.286
+Addr[38]           System (rising)     NA             0.000       497.874      497.874
+Addr[39]           System (rising)     NA             0.000       497.393      497.393
+Addr[40]           System (rising)     NA             0.000       497.979      497.979
+Addr[41]           System (rising)     NA             0.000       497.832      497.832
+Addr[42]           System (rising)     NA             0.000       497.979      497.979
+Addr[43]           System (rising)     NA             0.000       497.856      497.856
+Addr[44]           System (rising)     NA             0.000       497.856      497.856
+Addr[45]           System (rising)     NA             0.000       497.859      497.859
+Addr[46]           System (rising)     NA             0.000       497.267      497.267
+Addr[47]           System (rising)     NA             0.000       497.832      497.832
+Addr[48]           System (rising)     NA             0.000       497.832      497.832
+Addr[49]           System (rising)     NA             0.000       497.986      497.986
+Addr[50]           System (rising)     NA             0.000       497.986      497.986
+Addr[51]           System (rising)     NA             0.000       497.856      497.856
+Addr[52]           System (rising)     NA             0.000       497.859      497.859
+Addr[53]           System (rising)     NA             0.000       497.267      497.267
+Addr[54]           System (rising)     NA             0.000       497.859      497.859
+Addr[55]           System (rising)     NA             0.000       497.979      497.979
+Addr[56]           System (rising)     NA             0.000       497.979      497.979
+Addr[57]           System (rising)     NA             0.000       497.373      497.373
+Addr[58]           System (rising)     NA             0.000       497.373      497.373
+Addr[59]           System (rising)     NA             0.000       497.689      497.689
+Addr[60]           System (rising)     NA             0.000       497.267      497.267
+Addr[61]           System (rising)     NA             0.000       497.859      497.859
+Addr[62]           System (rising)     NA             0.000       497.689      497.689
+Addr[63]           System (rising)     NA             0.000       498.184      498.184
+clk                NA                  NA             NA          NA           NA     
+in_enable          System (rising)     NA             0.000       497.118      497.118
+in_instruc[0]      System (rising)     NA             0.000       498.404      498.404
+in_instruc[1]      System (rising)     NA             0.000       498.225      498.225
+in_instruc[2]      System (rising)     NA             0.000       498.404      498.404
+in_instruc[3]      System (rising)     NA             0.000       498.404      498.404
+in_instruc[4]      System (rising)     NA             0.000       498.404      498.404
+in_instruc[5]      System (rising)     NA             0.000       498.225      498.225
+in_instruc[6]      System (rising)     NA             0.000       498.404      498.404
+in_instruc[7]      System (rising)     NA             0.000       497.766      497.766
+in_instruc[8]      System (rising)     NA             0.000       498.398      498.398
+in_instruc[9]      System (rising)     NA             0.000       497.766      497.766
+in_instruc[10]     System (rising)     NA             0.000       498.398      498.398
+in_instruc[11]     System (rising)     NA             0.000       498.225      498.225
+in_instruc[12]     System (rising)     NA             0.000       497.766      497.766
+in_instruc[13]     System (rising)     NA             0.000       498.225      498.225
+in_instruc[14]     System (rising)     NA             0.000       497.766      497.766
+in_instruc[15]     System (rising)     NA             0.000       498.225      498.225
+in_instruc[16]     System (rising)     NA             0.000       498.225      498.225
+in_instruc[17]     System (rising)     NA             0.000       498.404      498.404
+in_instruc[18]     System (rising)     NA             0.000       498.398      498.398
+in_instruc[19]     System (rising)     NA             0.000       498.398      498.398
+in_instruc[20]     System (rising)     NA             0.000       497.766      497.766
+in_instruc[21]     System (rising)     NA             0.000       498.404      498.404
+in_instruc[22]     System (rising)     NA             0.000       497.766      497.766
+in_instruc[23]     System (rising)     NA             0.000       497.766      497.766
+in_instruc[24]     System (rising)     NA             0.000       498.398      498.398
+in_instruc[25]     System (rising)     NA             0.000       498.404      498.404
+in_instruc[26]     System (rising)     NA             0.000       498.404      498.404
+in_instruc[27]     System (rising)     NA             0.000       498.225      498.225
+in_instruc[28]     System (rising)     NA             0.000       498.398      498.398
+in_instruc[29]     System (rising)     NA             0.000       497.766      497.766
+in_instruc[30]     System (rising)     NA             0.000       497.766      497.766
+in_instruc[31]     System (rising)     NA             0.000       498.398      498.398
+======================================================================================
+
+
+Output Ports: 
+
+Port             Starting         User           Arrival     Required            
+Name             Reference        Constraint     Time        Time         Slack  
+                 Clock                                                           
+---------------------------------------------------------------------------------
+ADDOUTID[0]      clk (rising)     NA             32.508      500.000      467.492
+ADDOUTID[1]      clk (rising)     NA             32.880      500.000      467.120
+ADDOUTID[2]      clk (rising)     NA             33.276      500.000      466.724
+ADDOUTID[3]      clk (rising)     NA             33.300      500.000      466.700
+ADDOUTID[4]      clk (rising)     NA             33.305      500.000      466.695
+ADDOUTID[5]      clk (rising)     NA             33.342      500.000      466.658
+ADDOUTID[6]      clk (rising)     NA             33.370      500.000      466.630
+ADDOUTID[7]      clk (rising)     NA             33.360      500.000      466.640
+ADDOUTID[8]      clk (rising)     NA             33.371      500.000      466.629
+ADDOUTID[9]      clk (rising)     NA             33.399      500.000      466.601
+ADDOUTID[10]     clk (rising)     NA             33.414      500.000      466.586
+ADDOUTID[11]     clk (rising)     NA             33.416      500.000      466.584
+ADDOUTID[12]     clk (rising)     NA             33.416      500.000      466.584
+ADDOUTID[13]     clk (rising)     NA             33.419      500.000      466.581
+ADDOUTID[14]     clk (rising)     NA             33.439      500.000      466.561
+ADDOUTID[15]     clk (rising)     NA             33.429      500.000      466.571
+ADDOUTID[16]     clk (rising)     NA             33.440      500.000      466.560
+ADDOUTID[17]     clk (rising)     NA             33.436      500.000      466.564
+ADDOUTID[18]     clk (rising)     NA             33.444      500.000      466.556
+ADDOUTID[19]     clk (rising)     NA             33.452      500.000      466.548
+ADDOUTID[20]     clk (rising)     NA             33.447      500.000      466.553
+ADDOUTID[21]     clk (rising)     NA             33.455      500.000      466.545
+ADDOUTID[22]     clk (rising)     NA             33.476      500.000      466.524
+ADDOUTID[23]     clk (rising)     NA             33.466      500.000      466.534
+ADDOUTID[24]     clk (rising)     NA             33.470      500.000      466.530
+ADDOUTID[25]     clk (rising)     NA             33.467      500.000      466.533
+ADDOUTID[26]     clk (rising)     NA             33.487      500.000      466.513
+ADDOUTID[27]     clk (rising)     NA             33.489      500.000      466.511
+ADDOUTID[28]     clk (rising)     NA             33.483      500.000      466.517
+ADDOUTID[29]     clk (rising)     NA             33.492      500.000      466.508
+ADDOUTID[30]     clk (rising)     NA             33.512      500.000      466.488
+ADDOUTID[31]     clk (rising)     NA             33.503      500.000      466.497
+ADDOUTID[32]     clk (rising)     NA             33.513      500.000      466.487
+ADDOUTID[33]     clk (rising)     NA             33.503      500.000      466.497
+ADDOUTID[34]     clk (rising)     NA             33.518      500.000      466.482
+ADDOUTID[35]     clk (rising)     NA             33.525      500.000      466.475
+ADDOUTID[36]     clk (rising)     NA             33.526      500.000      466.474
+ADDOUTID[37]     clk (rising)     NA             33.528      500.000      466.472
+ADDOUTID[38]     clk (rising)     NA             33.549      500.000      466.451
+ADDOUTID[39]     clk (rising)     NA             33.545      500.000      466.455
+ADDOUTID[40]     clk (rising)     NA             33.549      500.000      466.451
+ADDOUTID[41]     clk (rising)     NA             33.546      500.000      466.454
+ADDOUTID[42]     clk (rising)     NA             33.560      500.000      466.440
+ADDOUTID[43]     clk (rising)     NA             33.562      500.000      466.438
+ADDOUTID[44]     clk (rising)     NA             33.563      500.000      466.437
+ADDOUTID[45]     clk (rising)     NA             33.565      500.000      466.435
+ADDOUTID[46]     clk (rising)     NA             33.585      500.000      466.415
+ADDOUTID[47]     clk (rising)     NA             33.582      500.000      466.418
+ADDOUTID[48]     clk (rising)     NA             33.586      500.000      466.414
+ADDOUTID[49]     clk (rising)     NA             33.582      500.000      466.418
+ADDOUTID[50]     clk (rising)     NA             33.591      500.000      466.409
+ADDOUTID[51]     clk (rising)     NA             33.593      500.000      466.407
+ADDOUTID[52]     clk (rising)     NA             33.599      500.000      466.401
+ADDOUTID[53]     clk (rising)     NA             33.602      500.000      466.398
+ADDOUTID[54]     clk (rising)     NA             33.622      500.000      466.378
+ADDOUTID[55]     clk (rising)     NA             33.612      500.000      466.388
+ADDOUTID[56]     clk (rising)     NA             33.623      500.000      466.377
+ADDOUTID[57]     clk (rising)     NA             33.619      500.000      466.381
+ADDOUTID[58]     clk (rising)     NA             33.633      500.000      466.367
+ADDOUTID[59]     clk (rising)     NA             33.629      500.000      466.371
+ADDOUTID[60]     clk (rising)     NA             33.630      500.000      466.370
+ADDOUTID[61]     clk (rising)     NA             33.638      500.000      466.362
+ADDOUTID[62]     clk (rising)     NA             33.659      500.000      466.341
+ADDOUTID[63]     clk (rising)     NA             33.655      500.000      466.345
+ALUOUTEX[0]      clk (rising)     NA             35.314      500.000      464.686
+ALUOUTEX[1]      clk (rising)     NA             35.707      500.000      464.293
+ALUOUTEX[2]      clk (rising)     NA             35.732      500.000      464.268
+ALUOUTEX[3]      clk (rising)     NA             35.736      500.000      464.264
+ALUOUTEX[4]      clk (rising)     NA             35.774      500.000      464.226
+ALUOUTEX[5]      clk (rising)     NA             35.795      500.000      464.205
+ALUOUTEX[6]      clk (rising)     NA             35.797      500.000      464.203
+ALUOUTEX[7]      clk (rising)     NA             35.802      500.000      464.198
+ALUOUTEX[8]      clk (rising)     NA             35.831      500.000      464.169
+ALUOUTEX[9]      clk (rising)     NA             35.845      500.000      464.155
+ALUOUTEX[10]     clk (rising)     NA             35.847      500.000      464.153
+ALUOUTEX[11]     clk (rising)     NA             35.848      500.000      464.152
+ALUOUTEX[12]     clk (rising)     NA             35.850      500.000      464.150
+ALUOUTEX[13]     clk (rising)     NA             35.870      500.000      464.130
+ALUOUTEX[14]     clk (rising)     NA             35.867      500.000      464.133
+ALUOUTEX[15]     clk (rising)     NA             35.865      500.000      464.135
+ALUOUTEX[16]     clk (rising)     NA             35.867      500.000      464.133
+ALUOUTEX[17]     clk (rising)     NA             35.882      500.000      464.118
+ALUOUTEX[18]     clk (rising)     NA             35.884      500.000      464.116
+ALUOUTEX[19]     clk (rising)     NA             35.884      500.000      464.116
+ALUOUTEX[20]     clk (rising)     NA             35.887      500.000      464.113
+ALUOUTEX[21]     clk (rising)     NA             35.907      500.000      464.093
+ALUOUTEX[22]     clk (rising)     NA             35.903      500.000      464.097
+ALUOUTEX[23]     clk (rising)     NA             35.908      500.000      464.092
+ALUOUTEX[24]     clk (rising)     NA             35.904      500.000      464.096
+ALUOUTEX[25]     clk (rising)     NA             35.918      500.000      464.082
+ALUOUTEX[26]     clk (rising)     NA             35.914      500.000      464.086
+ALUOUTEX[27]     clk (rising)     NA             35.921      500.000      464.079
+ALUOUTEX[28]     clk (rising)     NA             35.923      500.000      464.077
+ALUOUTEX[29]     clk (rising)     NA             35.944      500.000      464.056
+ALUOUTEX[30]     clk (rising)     NA             35.940      500.000      464.060
+ALUOUTEX[31]     clk (rising)     NA             35.938      500.000      464.062
+ALUOUTEX[32]     clk (rising)     NA             35.941      500.000      464.059
+ALUOUTEX[33]     clk (rising)     NA             35.949      500.000      464.051
+ALUOUTEX[34]     clk (rising)     NA             35.957      500.000      464.043
+ALUOUTEX[35]     clk (rising)     NA             35.951      500.000      464.049
+ALUOUTEX[36]     clk (rising)     NA             35.960      500.000      464.040
+ALUOUTEX[37]     clk (rising)     NA             35.980      500.000      464.020
+ALUOUTEX[38]     clk (rising)     NA             35.971      500.000      464.029
+ALUOUTEX[39]     clk (rising)     NA             35.981      500.000      464.019
+ALUOUTEX[40]     clk (rising)     NA             35.977      500.000      464.023
+ALUOUTEX[41]     clk (rising)     NA             35.986      500.000      464.014
+ALUOUTEX[42]     clk (rising)     NA             35.993      500.000      464.007
+ALUOUTEX[43]     clk (rising)     NA             35.994      500.000      464.006
+ALUOUTEX[44]     clk (rising)     NA             35.996      500.000      464.004
+ALUOUTEX[45]     clk (rising)     NA             36.017      500.000      463.983
+ALUOUTEX[46]     clk (rising)     NA             36.013      500.000      463.987
+ALUOUTEX[47]     clk (rising)     NA             36.017      500.000      463.983
+ALUOUTEX[48]     clk (rising)     NA             36.784      500.000      463.216
+ALUOUTEX[49]     clk (rising)     NA             36.814      500.000      463.186
+ALUOUTEX[50]     clk (rising)     NA             36.813      500.000      463.187
+ALUOUTEX[51]     clk (rising)     NA             36.857      500.000      463.143
+ALUOUTEX[52]     clk (rising)     NA             36.878      500.000      463.122
+ALUOUTEX[53]     clk (rising)     NA             36.868      500.000      463.132
+ALUOUTEX[54]     clk (rising)     NA             36.879      500.000      463.121
+ALUOUTEX[55]     clk (rising)     NA             36.908      500.000      463.092
+ALUOUTEX[56]     clk (rising)     NA             36.922      500.000      463.078
+ALUOUTEX[57]     clk (rising)     NA             36.924      500.000      463.076
+ALUOUTEX[58]     clk (rising)     NA             36.925      500.000      463.075
+ALUOUTEX[59]     clk (rising)     NA             36.927      500.000      463.073
+ALUOUTEX[60]     clk (rising)     NA             36.947      500.000      463.053
+ALUOUTEX[61]     clk (rising)     NA             36.944      500.000      463.056
+ALUOUTEX[62]     clk (rising)     NA             36.948      500.000      463.052
+ALUOUTEX[63]     clk (rising)     NA             36.886      500.000      463.114
+DMout[0]         clk (rising)     NA             11.357      500.000      488.643
+DMout[1]         clk (rising)     NA             11.363      500.000      488.637
+DMout[2]         clk (rising)     NA             11.363      500.000      488.637
+DMout[3]         clk (rising)     NA             11.363      500.000      488.637
+DMout[4]         clk (rising)     NA             11.357      500.000      488.643
+DMout[5]         clk (rising)     NA             11.363      500.000      488.637
+DMout[6]         clk (rising)     NA             11.357      500.000      488.643
+DMout[7]         clk (rising)     NA             11.363      500.000      488.637
+DMout[8]         clk (rising)     NA             11.357      500.000      488.643
+DMout[9]         clk (rising)     NA             11.357      500.000      488.643
+DMout[10]        clk (rising)     NA             11.363      500.000      488.637
+DMout[11]        clk (rising)     NA             11.357      500.000      488.643
+DMout[12]        clk (rising)     NA             11.363      500.000      488.637
+DMout[13]        clk (rising)     NA             11.357      500.000      488.643
+DMout[14]        clk (rising)     NA             11.357      500.000      488.643
+DMout[15]        clk (rising)     NA             11.363      500.000      488.637
+DMout[16]        clk (rising)     NA             11.363      500.000      488.637
+DMout[17]        clk (rising)     NA             11.357      500.000      488.643
+DMout[18]        clk (rising)     NA             11.363      500.000      488.637
+DMout[19]        clk (rising)     NA             11.357      500.000      488.643
+DMout[20]        clk (rising)     NA             11.357      500.000      488.643
+DMout[21]        clk (rising)     NA             11.357      500.000      488.643
+DMout[22]        clk (rising)     NA             11.357      500.000      488.643
+DMout[23]        clk (rising)     NA             11.357      500.000      488.643
+DMout[24]        clk (rising)     NA             11.363      500.000      488.637
+DMout[25]        clk (rising)     NA             11.363      500.000      488.637
+DMout[26]        clk (rising)     NA             11.357      500.000      488.643
+DMout[27]        clk (rising)     NA             11.357      500.000      488.643
+DMout[28]        clk (rising)     NA             11.357      500.000      488.643
+DMout[29]        clk (rising)     NA             11.357      500.000      488.643
+DMout[30]        clk (rising)     NA             11.363      500.000      488.637
+DMout[31]        clk (rising)     NA             11.357      500.000      488.643
+DMout[32]        clk (rising)     NA             11.357      500.000      488.643
+DMout[33]        clk (rising)     NA             11.357      500.000      488.643
+DMout[34]        clk (rising)     NA             11.357      500.000      488.643
+DMout[35]        clk (rising)     NA             11.363      500.000      488.637
+DMout[36]        clk (rising)     NA             11.363      500.000      488.637
+DMout[37]        clk (rising)     NA             11.357      500.000      488.643
+DMout[38]        clk (rising)     NA             11.363      500.000      488.637
+DMout[39]        clk (rising)     NA             11.357      500.000      488.643
+DMout[40]        clk (rising)     NA             11.363      500.000      488.637
+DMout[41]        clk (rising)     NA             11.357      500.000      488.643
+DMout[42]        clk (rising)     NA             11.357      500.000      488.643
+DMout[43]        clk (rising)     NA             11.357      500.000      488.643
+DMout[44]        clk (rising)     NA             11.363      500.000      488.637
+DMout[45]        clk (rising)     NA             11.357      500.000      488.643
+DMout[46]        clk (rising)     NA             11.357      500.000      488.643
+DMout[47]        clk (rising)     NA             11.363      500.000      488.637
+DMout[48]        clk (rising)     NA             11.357      500.000      488.643
+DMout[49]        clk (rising)     NA             11.357      500.000      488.643
+DMout[50]        clk (rising)     NA             11.363      500.000      488.637
+DMout[51]        clk (rising)     NA             11.357      500.000      488.643
+DMout[52]        clk (rising)     NA             11.357      500.000      488.643
+DMout[53]        clk (rising)     NA             11.363      500.000      488.637
+DMout[54]        clk (rising)     NA             11.357      500.000      488.643
+DMout[55]        clk (rising)     NA             11.363      500.000      488.637
+DMout[56]        clk (rising)     NA             11.363      500.000      488.637
+DMout[57]        clk (rising)     NA             11.357      500.000      488.643
+DMout[58]        clk (rising)     NA             11.357      500.000      488.643
+DMout[59]        clk (rising)     NA             11.357      500.000      488.643
+DMout[60]        clk (rising)     NA             11.357      500.000      488.643
+DMout[61]        clk (rising)     NA             11.357      500.000      488.643
+DMout[62]        clk (rising)     NA             11.363      500.000      488.637
+DMout[63]        clk (rising)     NA             11.357      500.000      488.643
+IMMID[0]         clk (rising)     NA             12.095      500.000      487.904
+IMMID[1]         clk (rising)     NA             11.967      500.000      488.033
+IMMID[2]         clk (rising)     NA             11.961      500.000      488.039
+IMMID[3]         clk (rising)     NA             11.967      500.000      488.033
+IMMID[4]         clk (rising)     NA             11.967      500.000      488.033
+IMMID[5]         clk (rising)     NA             12.000      500.000      488.000
+IMMID[6]         clk (rising)     NA             32.926      500.000      467.074
+IMMID[7]         clk (rising)     NA             32.932      500.000      467.068
+IMMID[8]         clk (rising)     NA             12.000      500.000      488.000
+IMMID[9]         clk (rising)     NA             32.932      500.000      467.068
+IMMID[10]        clk (rising)     NA             32.932      500.000      467.068
+IMMID[11]        clk (rising)     NA             19.100      500.000      480.900
+IMMID[12]        clk (rising)     NA             19.106      500.000      480.894
+IMMID[13]        NA               NA             NA          NA           NA     
+IMMID[14]        NA               NA             NA          NA           NA     
+IMMID[15]        NA               NA             NA          NA           NA     
+IMMID[16]        NA               NA             NA          NA           NA     
+IMMID[17]        NA               NA             NA          NA           NA     
+IMMID[18]        NA               NA             NA          NA           NA     
+IMMID[19]        NA               NA             NA          NA           NA     
+IMMID[20]        NA               NA             NA          NA           NA     
+IMMID[21]        NA               NA             NA          NA           NA     
+IMMID[22]        NA               NA             NA          NA           NA     
+IMMID[23]        NA               NA             NA          NA           NA     
+IMMID[24]        NA               NA             NA          NA           NA     
+IMMID[25]        NA               NA             NA          NA           NA     
+IMMID[26]        NA               NA             NA          NA           NA     
+IMMID[27]        NA               NA             NA          NA           NA     
+IMMID[28]        NA               NA             NA          NA           NA     
+IMMID[29]        NA               NA             NA          NA           NA     
+IMMID[30]        NA               NA             NA          NA           NA     
+IMMID[31]        NA               NA             NA          NA           NA     
+IMMID[32]        NA               NA             NA          NA           NA     
+IMMID[33]        NA               NA             NA          NA           NA     
+IMMID[34]        NA               NA             NA          NA           NA     
+IMMID[35]        NA               NA             NA          NA           NA     
+IMMID[36]        NA               NA             NA          NA           NA     
+IMMID[37]        NA               NA             NA          NA           NA     
+IMMID[38]        NA               NA             NA          NA           NA     
+IMMID[39]        NA               NA             NA          NA           NA     
+IMMID[40]        NA               NA             NA          NA           NA     
+IMMID[41]        NA               NA             NA          NA           NA     
+IMMID[42]        NA               NA             NA          NA           NA     
+IMMID[43]        NA               NA             NA          NA           NA     
+IMMID[44]        NA               NA             NA          NA           NA     
+IMMID[45]        NA               NA             NA          NA           NA     
+IMMID[46]        NA               NA             NA          NA           NA     
+IMMID[47]        NA               NA             NA          NA           NA     
+IMMID[48]        NA               NA             NA          NA           NA     
+IMMID[49]        NA               NA             NA          NA           NA     
+IMMID[50]        NA               NA             NA          NA           NA     
+IMMID[51]        NA               NA             NA          NA           NA     
+IMMID[52]        NA               NA             NA          NA           NA     
+IMMID[53]        NA               NA             NA          NA           NA     
+IMMID[54]        NA               NA             NA          NA           NA     
+IMMID[55]        NA               NA             NA          NA           NA     
+IMMID[56]        NA               NA             NA          NA           NA     
+IMMID[57]        NA               NA             NA          NA           NA     
+IMMID[58]        NA               NA             NA          NA           NA     
+IMMID[59]        NA               NA             NA          NA           NA     
+IMMID[60]        NA               NA             NA          NA           NA     
+IMMID[61]        NA               NA             NA          NA           NA     
+IMMID[62]        NA               NA             NA          NA           NA     
+IMMID[63]        NA               NA             NA          NA           NA     
+MEMTOREGWB       clk (rising)     NA             3.774       500.000      496.226
+PC[0]            clk (rising)     NA             3.510       500.000      496.490
+PC[1]            clk (rising)     NA             3.516       500.000      496.484
+PC[2]            clk (rising)     NA             4.178       500.000      495.822
+PC[3]            clk (rising)     NA             3.719       500.000      496.281
+PC[4]            clk (rising)     NA             3.719       500.000      496.281
+PC[5]            clk (rising)     NA             3.719       500.000      496.281
+PC[6]            clk (rising)     NA             3.540       500.000      496.460
+PC[7]            clk (rising)     NA             3.516       500.000      496.484
+PC[8]            clk (rising)     NA             4.148       500.000      495.852
+PC[9]            clk (rising)     NA             3.516       500.000      496.484
+PC[10]           clk (rising)     NA             3.510       500.000      496.490
+PC[11]           clk (rising)     NA             3.510       500.000      496.490
+PC[12]           clk (rising)     NA             3.689       500.000      496.311
+PC[13]           clk (rising)     NA             3.516       500.000      496.484
+PC[14]           clk (rising)     NA             3.516       500.000      496.484
+PC[15]           clk (rising)     NA             3.510       500.000      496.490
+PC[16]           clk (rising)     NA             3.510       500.000      496.490
+PC[17]           clk (rising)     NA             3.510       500.000      496.490
+PC[18]           clk (rising)     NA             3.689       500.000      496.311
+PC[19]           clk (rising)     NA             3.516       500.000      496.484
+PC[20]           clk (rising)     NA             3.516       500.000      496.484
+PC[21]           clk (rising)     NA             4.148       500.000      495.852
+PC[22]           clk (rising)     NA             4.148       500.000      495.852
+PC[23]           clk (rising)     NA             4.148       500.000      495.852
+PC[24]           clk (rising)     NA             3.689       500.000      496.311
+PC[25]           clk (rising)     NA             3.510       500.000      496.490
+PC[26]           clk (rising)     NA             3.510       500.000      496.490
+PC[27]           clk (rising)     NA             4.148       500.000      495.852
+PC[28]           clk (rising)     NA             3.510       500.000      496.490
+PC[29]           clk (rising)     NA             3.516       500.000      496.484
+PC[30]           clk (rising)     NA             3.516       500.000      496.484
+PC[31]           clk (rising)     NA             3.689       500.000      496.311
+PC[32]           clk (rising)     NA             3.510       500.000      496.490
+PC[33]           clk (rising)     NA             3.689       500.000      496.311
+PC[34]           clk (rising)     NA             3.689       500.000      496.311
+PC[35]           clk (rising)     NA             3.516       500.000      496.484
+PC[36]           clk (rising)     NA             3.510       500.000      496.490
+PC[37]           clk (rising)     NA             3.516       500.000      496.484
+PC[38]           clk (rising)     NA             4.148       500.000      495.852
+PC[39]           clk (rising)     NA             3.510       500.000      496.490
+PC[40]           clk (rising)     NA             3.516       500.000      496.484
+PC[41]           clk (rising)     NA             3.516       500.000      496.484
+PC[42]           clk (rising)     NA             3.516       500.000      496.484
+PC[43]           clk (rising)     NA             4.148       500.000      495.852
+PC[44]           clk (rising)     NA             3.510       500.000      496.490
+PC[45]           clk (rising)     NA             4.148       500.000      495.852
+PC[46]           clk (rising)     NA             3.689       500.000      496.311
+PC[47]           clk (rising)     NA             3.516       500.000      496.484
+PC[48]           clk (rising)     NA             3.510       500.000      496.490
+PC[49]           clk (rising)     NA             4.148       500.000      495.852
+PC[50]           clk (rising)     NA             3.689       500.000      496.311
+PC[51]           clk (rising)     NA             3.689       500.000      496.311
+PC[52]           clk (rising)     NA             3.510       500.000      496.490
+PC[53]           clk (rising)     NA             3.516       500.000      496.484
+PC[54]           clk (rising)     NA             4.148       500.000      495.852
+PC[55]           clk (rising)     NA             3.689       500.000      496.311
+PC[56]           clk (rising)     NA             3.689       500.000      496.311
+PC[57]           clk (rising)     NA             3.689       500.000      496.311
+PC[58]           clk (rising)     NA             3.510       500.000      496.490
+PC[59]           clk (rising)     NA             3.689       500.000      496.311
+PC[60]           clk (rising)     NA             3.510       500.000      496.490
+PC[61]           clk (rising)     NA             3.689       500.000      496.311
+PC[62]           clk (rising)     NA             3.689       500.000      496.311
+PC[63]           clk (rising)     NA             3.689       500.000      496.311
+RD1ID[0]         clk (rising)     NA             19.020      500.000      480.980
+RD1ID[1]         clk (rising)     NA             19.020      500.000      480.980
+RD1ID[2]         clk (rising)     NA             19.020      500.000      480.980
+RD1ID[3]         clk (rising)     NA             19.024      500.000      480.976
+RD1ID[4]         clk (rising)     NA             19.030      500.000      480.970
+RD1ID[5]         clk (rising)     NA             19.030      500.000      480.970
+RD1ID[6]         clk (rising)     NA             19.030      500.000      480.970
+RD1ID[7]         clk (rising)     NA             19.024      500.000      480.976
+RD1ID[8]         clk (rising)     NA             19.030      500.000      480.970
+RD1ID[9]         clk (rising)     NA             19.024      500.000      480.976
+RD1ID[10]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[11]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[12]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[13]        clk (rising)     NA             19.024      500.000      480.976
+RD1ID[14]        clk (rising)     NA             19.024      500.000      480.976
+RD1ID[15]        clk (rising)     NA             19.024      500.000      480.976
+RD1ID[16]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[17]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[18]        clk (rising)     NA             19.024      500.000      480.976
+RD1ID[19]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[20]        clk (rising)     NA             19.024      500.000      480.976
+RD1ID[21]        clk (rising)     NA             19.024      500.000      480.976
+RD1ID[22]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[23]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[24]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[25]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[26]        clk (rising)     NA             19.024      500.000      480.976
+RD1ID[27]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[28]        clk (rising)     NA             19.024      500.000      480.976
+RD1ID[29]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[30]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[31]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[32]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[33]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[34]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[35]        clk (rising)     NA             19.030      500.000      480.970
+RD1ID[36]        clk (rising)     NA             19.024      500.000      480.976
+RD1ID[37]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[38]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[39]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[40]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[41]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[42]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[43]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[44]        clk (rising)     NA             19.014      500.000      480.986
+RD1ID[45]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[46]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[47]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[48]        clk (rising)     NA             19.014      500.000      480.986
+RD1ID[49]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[50]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[51]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[52]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[53]        clk (rising)     NA             19.014      500.000      480.986
+RD1ID[54]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[55]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[56]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[57]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[58]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[59]        clk (rising)     NA             19.014      500.000      480.986
+RD1ID[60]        clk (rising)     NA             19.020      500.000      480.980
+RD1ID[61]        clk (rising)     NA             19.014      500.000      480.986
+RD1ID[62]        clk (rising)     NA             19.014      500.000      480.986
+RD1ID[63]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[0]         clk (rising)     NA             19.020      500.000      480.980
+RD2ID[1]         clk (rising)     NA             19.020      500.000      480.980
+RD2ID[2]         clk (rising)     NA             19.020      500.000      480.980
+RD2ID[3]         clk (rising)     NA             19.030      500.000      480.970
+RD2ID[4]         clk (rising)     NA             19.024      500.000      480.976
+RD2ID[5]         clk (rising)     NA             19.030      500.000      480.970
+RD2ID[6]         clk (rising)     NA             19.030      500.000      480.970
+RD2ID[7]         clk (rising)     NA             19.030      500.000      480.970
+RD2ID[8]         clk (rising)     NA             19.024      500.000      480.976
+RD2ID[9]         clk (rising)     NA             19.030      500.000      480.970
+RD2ID[10]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[11]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[12]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[13]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[14]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[15]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[16]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[17]        clk (rising)     NA             19.024      500.000      480.976
+RD2ID[18]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[19]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[20]        clk (rising)     NA             19.024      500.000      480.976
+RD2ID[21]        clk (rising)     NA             19.024      500.000      480.976
+RD2ID[22]        clk (rising)     NA             19.024      500.000      480.976
+RD2ID[23]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[24]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[25]        clk (rising)     NA             19.024      500.000      480.976
+RD2ID[26]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[27]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[28]        clk (rising)     NA             19.024      500.000      480.976
+RD2ID[29]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[30]        clk (rising)     NA             19.024      500.000      480.976
+RD2ID[31]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[32]        clk (rising)     NA             19.024      500.000      480.976
+RD2ID[33]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[34]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[35]        clk (rising)     NA             19.024      500.000      480.976
+RD2ID[36]        clk (rising)     NA             19.030      500.000      480.970
+RD2ID[37]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[38]        clk (rising)     NA             19.014      500.000      480.986
+RD2ID[39]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[40]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[41]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[42]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[43]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[44]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[45]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[46]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[47]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[48]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[49]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[50]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[51]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[52]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[53]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[54]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[55]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[56]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[57]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[58]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[59]        clk (rising)     NA             19.014      500.000      480.986
+RD2ID[60]        clk (rising)     NA             19.014      500.000      480.986
+RD2ID[61]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[62]        clk (rising)     NA             19.020      500.000      480.980
+RD2ID[63]        clk (rising)     NA             19.020      500.000      480.980
+REGWRITEWB       clk (rising)     NA             3.516       500.000      496.484
+equal            clk (rising)     NA             65.467      500.000      434.533
+stall            clk (rising)     NA             26.089      500.000      473.911
+=================================================================================
+
+
+
+====================================
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a name="S1.3">Section 1.3</a> Detailed Report for Clock: clk <a href="#SFrom1.3">Back</a>
+</span>
+<span>====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                        Starting                                        Arrival            
+Instance                                Reference     Type     Pin     Net              Time        Slack  
+                                        Clock                                                              
+-----------------------------------------------------------------------------------------------------------
+FB1.uB.dut_inst.idex1.regrs1_out[1]     clk           FDC      Q       REGRS1_EX[1]     0.817       429.170
+FB1.uB.dut_inst.idex1.regrs1_out[2]     clk           FDC      Q       REGRS1_EX[2]     0.817       429.170
+FB1.uB.dut_inst.idex1.regrs1_out[3]     clk           FDC      Q       REGRS1_EX[3]     0.817       429.170
+FB1.uB.dut_inst.idex1.regrs1_out[4]     clk           FDC      Q       REGRS1_EX[4]     0.817       429.170
+FB1.uB.dut_inst.idex1.regrs2_out[1]     clk           FDC      Q       REGRS2_EX[1]     0.817       429.170
+FB1.uB.dut_inst.idex1.regrs2_out[2]     clk           FDC      Q       REGRS2_EX[2]     0.817       429.170
+FB1.uB.dut_inst.idex1.regrs2_out[3]     clk           FDC      Q       REGRS2_EX[3]     0.817       429.170
+FB1.uB.dut_inst.idex1.regrs2_out[4]     clk           FDC      Q       REGRS2_EX[4]     0.817       429.170
+FB1.uB.dut_inst.idex1.regrs1_out[0]     clk           FDC      Q       REGRS1_EX[0]     0.817       429.312
+FB1.uB.dut_inst.idex1.regrs2_out[0]     clk           FDC      Q       REGRS2_EX[0]     0.817       429.312
+===========================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                         Starting                                                     Required            
+Instance                                 Reference     Type     Pin     Net                           Time         Slack  
+                                         Clock                                                                            
+--------------------------------------------------------------------------------------------------------------------------
+FB1.uA.dut_inst.ifid1.out_instruc[0]     clk           FDCE     CE      dut_inst.ifid1.un1_hazard     500.737      429.170
+FB1.uA.dut_inst.ifid1.out_instruc[1]     clk           FDCE     CE      dut_inst.ifid1.un1_hazard     500.737      429.170
+FB1.uA.dut_inst.ifid1.out_instruc[2]     clk           FDCE     CE      dut_inst.ifid1.un1_hazard     500.737      429.170
+FB1.uA.dut_inst.ifid1.out_instruc[3]     clk           FDCE     CE      dut_inst.ifid1.un1_hazard     500.737      429.170
+FB1.uA.dut_inst.ifid1.out_instruc[4]     clk           FDCE     CE      dut_inst.ifid1.un1_hazard     500.737      429.170
+FB1.uA.dut_inst.ifid1.out_instruc[5]     clk           FDCE     CE      dut_inst.ifid1.un1_hazard     500.737      429.170
+FB1.uA.dut_inst.ifid1.out_instruc[6]     clk           FDCE     CE      dut_inst.ifid1.un1_hazard     500.737      429.170
+FB1.uA.dut_inst.ifid1.out_instruc[7]     clk           FDCE     CE      dut_inst.ifid1.un1_hazard     500.737      429.170
+FB1.uA.dut_inst.ifid1.out_instruc[8]     clk           FDCE     CE      dut_inst.ifid1.un1_hazard     500.737      429.170
+FB1.uA.dut_inst.ifid1.out_instruc[9]     clk           FDCE     CE      dut_inst.ifid1.un1_hazard     500.737      429.170
+==========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      500.000
+    - Setup time:                            0.029
+    + Clock delay at ending point:           0.767
+    = Required time:                         500.737
+
+    - Propagation time:                      70.801
+    - Clock delay at starting point:         0.767
+    = Slack (critical) :                     429.170
+
+    Number of logic level(s):                17
+    Starting point:                          FB1.uB.dut_inst.idex1.regrs1_out[1] / Q
+    Ending point:                            FB1.uA.dut_inst.ifid1.out_instruc[0] / CE
+    The start point is clocked by            clk [rising] (rise=0.000 fall=250.000 period=500.000) on pin C
+    The end   point is clocked by            clk [rising] (rise=0.000 fall=250.000 period=500.000) on pin C
+
+Instance / Net                                                                 Pin       Pin                Arrival      No. of    
+Name                                            Type                           Name      Dir     Delay      Time         Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------
+FB1.uB.dut_inst.idex1.regrs1_out[1]             FDC                            Q         Out     0.050      0.817 r      -         
+REGRS1_EX[1]                                    Net                            -         -       2.273      -            1         
+FB1.uB.cpm_snd_HSTDM_4_FB1_B2_C_0_buf_1         HSTDM_4_Tx_b4f9t9t0r0b1200     I         In      -          3.090 r      -         
+FB1.uB.cpm_snd_HSTDM_4_FB1_B2_C_0_buf_1         HSTDM_4_Tx_b4f9t9t0r0b1200     O         Out     10.000     13.090 r     -         
+cpm_snd_HSTDM_4_FB1_B2_C_0_buf_1_o              Net                            -         -       5.039      -            1         
+FB1.uC.cpm_rcv_HSTDM_4_FB1_B2_C_0_buf_1         HSTDM_4_Rx_b4f9t9t0r0b1200     I         In      -          18.129 r     -         
+FB1.uC.cpm_rcv_HSTDM_4_FB1_B2_C_0_buf_1         HSTDM_4_Rx_b4f9t9t0r0b1200     O         Out     10.000     28.129 r     -         
+cpm_rcv_HSTDM_4_FB1_B2_C_0_keep_1               Net                            -         -       2.319      -            2         
+FB1.uC.dut_inst.forward1.un1_regwrite_mem_2     LUT4                           I2        In      -          30.447 r     -         
+FB1.uC.dut_inst.forward1.un1_regwrite_mem_2     LUT4                           O         Out     0.047      30.494 r     -         
+dut_inst.forwardA_c_2[0]                        Net                            -         -       0.115      -            1         
+FB1.uC.dut_inst.forward1.un1_regwrite_mem       LUT6                           I3        In      -          30.609 r     -         
+FB1.uC.dut_inst.forward1.un1_regwrite_mem       LUT6                           O         Out     0.047      30.656 r     -         
+forwardA[0]                                     Net                            -         -       0.614      -            66        
+FB1.uC.dut_inst.forward1.forwardA_1_6[1]        LUT6                           I5        In      -          31.269 r     -         
+FB1.uC.dut_inst.forward1.forwardA_1_6[1]        LUT6                           O         Out     0.029      31.299 f     -         
+dut_inst.forwardA_c_6[1]                        Net                            -         -       0.613      -            65        
+FB1.uC.dut_inst.forward1.forwardA_1[1]          LUT2                           I1        In      -          31.912 f     -         
+FB1.uC.dut_inst.forward1.forwardA_1[1]          LUT2                           O         Out     0.029      31.941 f     -         
+forwardA[1]                                     Net                            -         -       2.273      -            1         
+FB1.uC.cpm_snd_HSTDM_4_FB1_B2_A_0_buf_1         HSTDM_4_Tx_b4f9t9t0r0b1200     I         In      -          34.214 f     -         
+FB1.uC.cpm_snd_HSTDM_4_FB1_B2_A_0_buf_1         HSTDM_4_Tx_b4f9t9t0r0b1200     O         Out     10.000     44.214 r     -         
+cpm_snd_HSTDM_4_FB1_B2_A_0_buf_1_o              Net                            -         -       5.039      -            1         
+FB1.uB.cpm_rcv_HSTDM_4_FB1_B2_A_0_buf_1         HSTDM_4_Rx_b4f9t9t0r0b1200     I         In      -          49.253 r     -         
+FB1.uB.cpm_rcv_HSTDM_4_FB1_B2_A_0_buf_1         HSTDM_4_Rx_b4f9t9t0r0b1200     O         Out     10.000     59.253 r     -         
+cpm_rcv_HSTDM_4_FB1_B2_A_0_keep_1               Net                            -         -       2.613      -            64        
+FB1.uB.dut_inst.mux3_1_1.out[0]                 LUT5                           I3        In      -          61.866 r     -         
+FB1.uB.dut_inst.mux3_1_1.out[0]                 LUT5                           O         Out     0.029      61.895 r     -         
+dut_inst.comparatorin1_0[0]                     Net                            -         -       0.273      -            1         
+FB1.uB.dut_inst.cp1.out_0_I_10                  LUT6                           I0        In      -          62.168 r     -         
+FB1.uB.dut_inst.cp1.out_0_I_10                  LUT6                           O         Out     0.108      62.276 r     -         
+dut_inst.out_0_I_10                             Net                            -         -       0.273      -            1         
+FB1.uB.dut_inst.cp1.out_0_I_35                  CARRY8                         S[0]      In      -          62.549 r     -         
+FB1.uB.dut_inst.cp1.out_0_I_35                  CARRY8                         CO[7]     Out     0.130      62.679 r     -         
+dut_inst.cp1.out_0_data_tmp[7]                  Net                            -         -       0.000      -            1         
+FB1.uB.dut_inst.cp1.out_0_I_75                  CARRY8                         CI        In      -          62.679 r     -         
+FB1.uB.dut_inst.cp1.out_0_I_75                  CARRY8                         CO[7]     Out     0.037      62.716 r     -         
+dut_inst.cp1.out_0_data_tmp[15]                 Net                            -         -       0.000      -            1         
+FB1.uB.dut_inst.cp1.out_0_I_59                  CARRY8                         CI        In      -          62.716 r     -         
+FB1.uB.dut_inst.cp1.out_0_I_59                  CARRY8                         CO[5]     Out     0.082      62.798 r     -         
+dut_inst.equal_c                                Net                            -         -       0.319      -            2         
+FB1.uB.dut_inst.control1.PCSRCID_lut6_2_o6      LUT4                           I2        In      -          63.117 r     -         
+FB1.uB.dut_inst.control1.PCSRCID_lut6_2_o6      LUT4                           O         Out     0.029      63.146 r     -         
+dut_inst.PCSRCID_c                              Net                            -         -       0.273      -            1         
+FB1.uB.dut_inst.PCSRCID_obuf                    OBUF                           I         In      -          63.419 r     -         
+FB1.uB.dut_inst.PCSRCID_obuf                    OBUF                           O         Out     1.026      64.445 r     -         
+PCSRCID                                         Net                            -         -       5.039      -            1         
+FB1.uA.dut_inst.PCSRCID_ibuf                    IBUF                           I         In      -          69.484 r     -         
+FB1.uA.dut_inst.PCSRCID_ibuf                    IBUF                           O         Out     0.790      70.274 r     -         
+dut_inst.PCSRCID_c                              Net                            -         -       0.630      -            161       
+FB1.uA.dut_inst.ifid1.un1_hazard                LUT2                           I1        In      -          70.905 r     -         
+FB1.uA.dut_inst.ifid1.un1_hazard                LUT2                           O         Out     0.029      70.934 r     -         
+dut_inst.ifid1.un1_hazard                       Net                            -         -       0.634      -            96        
+FB1.uA.dut_inst.ifid1.out_instruc[0]            FDCE                           CE        In      -          71.568 r     -         
+===================================================================================================================================
+Total path delay (propagation time + setup) of 70.830 is 42.491(60.0%) logic and 28.339(40.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Start clock path:
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                    Type      Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+Start Clock :                           clk                                                        
+------------                                                                                       
+clk                                     Port      clk      In      -         0.000 r     -         
+clk                                     Net       -        -       0.000     -           31        
+FB1.uB.dut_inst.clk_ibuf_iso            IBUFG     I        In      -         0.000 r     -         
+FB1.uB.dut_inst.clk_ibuf_iso            IBUFG     O        Out     0.509     0.509 r     -         
+FB1.uB.dut_inst.clk_ibuf_iso            Net       -        -       0.157     -           1         
+FB1.uB.dut_inst.clk_ibuf                BUFG      I        In      -         0.666 r     -         
+FB1.uB.dut_inst.clk_ibuf                BUFG      O        Out     0.101     0.767 r     -         
+FB1.uB.dut_inst.clk_c                   Net       -        -       0.000     -           314       
+FB1.uB.dut_inst.idex1.regrs1_out[1]     FDC       C        In      -         0.767 r     -         
+===================================================================================================
+
+
+End clock path:
+
+Instance / Net                                     Pin      Pin               Arrival     No. of    
+Name                                     Type      Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------
+Start Clock :                            clk                                                        
+------------                                                                                        
+clk                                      Port      clk      In      -         0.000 r     -         
+clk                                      Net       -        -       0.000     -           31        
+FB1.uA.dut_inst.clk_ibuf_iso             IBUFG     I        In      -         0.000 r     -         
+FB1.uA.dut_inst.clk_ibuf_iso             IBUFG     O        Out     0.509     0.509 r     -         
+FB1.uA.dut_inst.clk_ibuf_iso             Net       -        -       0.157     -           1         
+FB1.uA.dut_inst.clk_ibuf                 BUFG      I        In      -         0.666 r     -         
+FB1.uA.dut_inst.clk_ibuf                 BUFG      O        Out     0.101     0.767 r     -         
+FB1.uA.dut_inst.clk_c                    Net       -        -       0.000     -           200       
+FB1.uA.dut_inst.ifid1.out_instruc[0]     FDCE      C        In      -         0.767 r     -         
+====================================================================================================
+
+
+
+
+====================================
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a name="S1.4">Section 1.4</a> Detailed Report for Clock: System <a href="#SFrom1.4">Back</a>
+</span>
+<span>====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+               Starting                                           Arrival            
+Instance       Reference     Type     Pin           Net           Time        Slack  
+               Clock                                                                 
+-------------------------------------------------------------------------------------
+in_enable      System        Port     in_enable     in_enable     0.000       497.118
+Addr[63:0]     System        Port     Addr[46]      Addr[46]      0.000       497.267
+Addr[63:0]     System        Port     Addr[53]      Addr[53]      0.000       497.267
+Addr[63:0]     System        Port     Addr[60]      Addr[60]      0.000       497.267
+Addr[63:0]     System        Port     Addr[19]      Addr[19]      0.000       497.277
+Addr[63:0]     System        Port     Addr[22]      Addr[22]      0.000       497.277
+Addr[63:0]     System        Port     Addr[37]      Addr[37]      0.000       497.286
+Addr[63:0]     System        Port     Addr[57]      Addr[57]      0.000       497.373
+Addr[63:0]     System        Port     Addr[58]      Addr[58]      0.000       497.373
+Addr[63:0]     System        Port     Addr[15]      Addr[15]      0.000       497.392
+=====================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                         Starting                                                              Required            
+Instance                                 Reference     Type     Pin     Net                                    Time         Slack  
+                                         Clock                                                                                     
+-----------------------------------------------------------------------------------------------------------------------------------
+FB1.uA.dut_inst.ifid1.out_instruc[0]     System        FDCE     D       dut_inst.un1_instruc_lut6_2_O6[0]      500.059      497.118
+FB1.uA.dut_inst.ifid1.out_instruc[1]     System        FDCE     D       dut_inst.un1_instruc_lut6_2_O5[0]      500.059      497.118
+FB1.uA.dut_inst.ifid1.out_instruc[2]     System        FDCE     D       dut_inst.un1_instruc_lut6_2_O6[2]      500.059      497.118
+FB1.uA.dut_inst.ifid1.out_instruc[3]     System        FDCE     D       dut_inst.un1_instruc_lut6_2_O6[3]      500.059      497.118
+FB1.uA.dut_inst.ifid1.out_instruc[4]     System        FDCE     D       dut_inst.un1_instruc_lut6_2_O5[2]      500.059      497.118
+FB1.uA.dut_inst.ifid1.out_instruc[5]     System        FDCE     D       dut_inst.un1_instruc_lut6_2_O6[5]      500.059      497.118
+FB1.uA.dut_inst.ifid1.out_instruc[6]     System        FDCE     D       dut_inst.un1_instruc_lut6_2_O5[5]      500.059      497.118
+FB1.uA.dut_inst.ifid1.out_instruc[7]     System        FDCE     D       dut_inst.un1_instruc_lut6_2_O6[7]      500.059      497.118
+FB1.uA.dut_inst.ifid1.out_instruc[8]     System        FDCE     D       dut_inst.un1_instruc_lut6_2_O5[31]     500.059      497.118
+FB1.uA.dut_inst.ifid1.out_instruc[9]     System        FDCE     D       dut_inst.un1_instruc_lut6_2_O6[9]      500.059      497.118
+===================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      500.000
+    - Setup time:                            -0.036
+    + Clock delay at ending point:           0.767
+    = Required time:                         500.803
+
+    - Propagation time:                      2.942
+    - Estimated clock delay at start point:  0.743
+    = Slack (non-critical) :                 497.118
+
+    Number of logic level(s):                2
+    Starting point:                          in_enable / in_enable
+    Ending point:                            FB1.uA.dut_inst.ifid1.out_instruc[1] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            clk [rising] (rise=0.000 fall=250.000 period=500.000) on pin C
+
+Instance / Net                                              Pin           Pin               Arrival     No. of    
+Name                                               Type     Name          Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------
+in_enable                                          Port     in_enable     In      0.000     0.000 r     -         
+in_enable                                          Net      -             -       1.497     -           1         
+FB1.uA.dut_inst.in_enable_ibuf                     IBUF     I             In      -         1.497 r     -         
+FB1.uA.dut_inst.in_enable_ibuf                     IBUF     O             Out     0.790     2.287 r     -         
+dut_inst.in_enable_c                               Net      -             -       0.608     -           34        
+FB1.uA.dut_inst.ifid1.un1_instruc_lut6_2_o5[0]     LUT3     I2            In      -         2.895 r     -         
+FB1.uA.dut_inst.ifid1.un1_instruc_lut6_2_o5[0]     LUT3     O             Out     0.047     2.942 f     -         
+dut_inst.un1_instruc_lut6_2_O5[0]                  Net      -             -       0.000     -           1         
+FB1.uA.dut_inst.ifid1.out_instruc[1]               FDCE     D             In      -         2.942 f     -         
+==================================================================================================================
+Total path delay (propagation time + setup) of 2.906 is 0.801(27.6%) logic and 2.105(72.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+End clock path:
+
+Instance / Net                                     Pin      Pin               Arrival     No. of    
+Name                                     Type      Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------
+Start Clock :                            clk                                                        
+------------                                                                                        
+clk                                      Port      clk      In      -         0.000 r     -         
+clk                                      Net       -        -       0.000     -           31        
+FB1.uA.dut_inst.clk_ibuf_iso             IBUFG     I        In      -         0.000 r     -         
+FB1.uA.dut_inst.clk_ibuf_iso             IBUFG     O        Out     0.509     0.509 r     -         
+FB1.uA.dut_inst.clk_ibuf_iso             Net       -        -       0.157     -           1         
+FB1.uA.dut_inst.clk_ibuf                 BUFG      I        In      -         0.666 r     -         
+FB1.uA.dut_inst.clk_ibuf                 BUFG      O        Out     0.101     0.767 r     -         
+FB1.uA.dut_inst.clk_c                    Net       -        -       0.000     -           200       
+FB1.uA.dut_inst.ifid1.out_instruc[1]     FDCE      C        In      -         0.767 r     -         
+====================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a name="S1.5">Section 1.5</a> Timing exceptions that could not be applied <a href="#SFrom1.5">Back</a>
+</span>
+<span>Finished final timing analysis (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 1256MB peak: 1256MB)
+
+
+Starting Time budgeting (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 1256MB peak: 1256MB)
+
+
+Starting CTB multihop constraint generation  (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 1256MB peak: 1256MB)
+
+
+Time-Budgeting stats:
+-----------------------------------------------------
+	 # partitions  			=          5
+	 # paths       			=       4816
+		 # 2-hop paths     	=        803
+		 # 3-hop paths     	=       3797
+		 # 4-hop paths     	=        193
+		 # 5-hop paths     	=         23
+	 # timing segments 		=      13884
+	 # logic segments  		=       5698
+-----------------------------------------------------
+
+Finished CTB multihop constraint generation  (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:15s; Memory used current: 1284MB peak: 1284MB)
+
+
+Finished Time budgeting (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:15s; Memory used current: 1284MB peak: 1284MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:15s; Memory used current: 1284MB peak: 1284MB)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:15s; Memory used current: 1284MB peak: 1284MB)
+
+Process took 0h:00m:19s realtime, 0h:00m:15s cputime
+# Sun Apr  9 22:42:11 2023
+
+###########################################################]
+</body>
+</html>

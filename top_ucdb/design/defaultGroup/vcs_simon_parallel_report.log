@@ -1,0 +1,20 @@
+            module     frist user(s)    second user(s)     total user(s)   total system(s)       total nodes      total vm(kb)             files
+               ALU                 0                 0                 0                 0               876            778752 Child14/fullStats.log,Child13/fullStats.post.log
+        ALUControl                 0                 0                 0                 0               884            778752 Child13/fullStats.log,Child12/fullStats.post.log
+             Adder                 0                 0                 0                 0               746            778752 Child4/fullStats.log,Child3/fullStats.post.log
+           Control                 0                 0                 0                 0              1212            778820 Child7/fullStats.log,Child6/fullStats.post.log
+                DM                 0                 0                 0                 0               883            778752 Child1/fullStats.log,Child10/fullStats.post.log
+            EX_MEM                 0                 0                 0                 0               916            778876 Child2/fullStats.log,Child15/fullStats.post.log
+        Forwarding                 0                 0                 0                 0               854            778752 Child15/fullStats.log,Child14/fullStats.post.log
+            Hazard                 0                 0                 0                 0               838            778752 Child6/fullStats.log,Child5/fullStats.post.log
+             ID_EX                 0                 0                 0                 0              1142            779140 Child12/fullStats.log,Child11/fullStats.post.log
+             IF_ID                 0                 0                 0                 0               847            778752 Child5/fullStats.log,Child4/fullStats.post.log
+                IM                 0                 0                 0                 0               907            778752 Child3/fullStats.log,Child2/fullStats.post.log
+            ImmGen                 0                 0                 0                 0               889            778752 Child9/fullStats.log,Child8/fullStats.post.log
+            MEM_WB                 0                 0                 0                 0               923            778752 Child13/fullStats.log,Child13/fullStats.post.log
+               MUX                 0                 0                 0                 0               763            778752 Child1/fullStats.log,Child0/fullStats.post.log
+            MUX3_1                 0                 0                 0                 0               793            778752 Child10/fullStats.log,Child9/fullStats.post.log
+                PC                 0                 0                 0                 0               782            778752 Child2/fullStats.log,Child1/fullStats.post.log
+         Registers                 0                 0                 0                 0               927            778752 Child8/fullStats.log,Child7/fullStats.post.log
+        comparator                 0                 0                 0                 0               743            778752 Child11/fullStats.log,Child10/fullStats.post.log
+               top                 0                 0                 0                 0              1227            780328 Child0/fullStats.log,Child12/fullStats.post.log

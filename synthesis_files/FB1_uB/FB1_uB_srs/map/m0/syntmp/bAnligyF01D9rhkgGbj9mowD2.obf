@@ -1,0 +1,158 @@
+<html> 
+ 			<head> 			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+			<title>Project Status Summary Page</title>
+			<link rel="stylesheet" type="text/css" href="projectstatuspage.css" />
+			<script type = "text/javascript" src="projectstatuspage.js"></script>
+			</head>
+
+ 			<body style="background-color:#f0f0ff;">
+ 			
+<table style="border:none;" width="100%" ><tr> <td class="outline">
+<br>	 <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
+ 				   <thead class="tablehead"><tr><th   colspan="9">Run Status</th></tr></thead>
+         <tbody>
+ 		<tr>
+ 			<th align="left" width="17%">Job Name</th>
+			<th align="left">Status</th>
+ 			<td class="lnote" align="center" title="Notes"></td>
+ 			<td class="lwarn" align="center" title="Warnings"></td>
+ 			<td class="lerror" align="center" title="Errors"></td>
+ 			<th align="left">CPU Time</th>
+ 			<th align="left">Real Time</th>
+ 			<th align="left">Memory</th>
+ 			<th align="left">Date/Time</th>
+         </tr>
+ <tr>
+  <td class="optionTitle">Identify Database Generator</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">Compiler Constraint Processor</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">Compile Instrumentation</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">Compile Input</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">Compiler Constraint Applier</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">Multi-srs Generator</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">Optimize Design</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">On Demand UPF Applier</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">Global Optimizer</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">Compile Instrumentation and Generate IDC</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">WriteNetlist Generator</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">Planner</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">Process Xilinx Constraints</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">IO Placement Conversion</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">ProtoCompiler Pre_map</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">Premap</td>
+  <td>-</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td></td><tr>
+  <td class="optionTitle">Map & Optimize</td>
+  <td>Complete</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td>028m:48s</td><td class="empty"></td><td class="empty"></td><td></td> 		</tbody>
+     </table>
+ <br> 
+ <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
+ 				   <thead class="tablehead"><tr><th   colspan="4">Area Summary</th></tr></thead>
+<tfoot> <tr> <td class="optionTitle" colspan="2"></td><td class="optionTitle" colspan="2"></td></tr> 
+ </tfoot> 
+ <tbody> <tr> 
+<td title ="Total I/O ports used" class="optionTitle" align="left">I/O ports
+(io_port)</td> <td>666</td>
+<td title ="Total Non I/O Register bits used" class="optionTitle" align="left">Non I/O Register bits
+(non_io_reg)</td> <td>8475 (0%)</td>
+</tr>
+<tr> 
+<td title ="Total I/O Register bits used" class="optionTitle" align="left">I/O Register bits
+(total_io_reg)</td> <td>1</td>
+<td title ="Total Ultra Rams used" class="optionTitle" align="left">Ultra Rams</td> <td>0 (320)</td>
+</tr>
+<tr> 
+<td title ="Total Block Rams used" class="optionTitle" align="left">Block Rams
+(v_ram)</td> <td>1 (2160)</td>
+<td title ="Total DSP48s used" class="optionTitle" align="left">DSP48s
+(dsp_used)</td> <td>0 (3840)</td>
+</tr>
+<tr> 
+<td title ="Total LUTs used" class="optionTitle" align="left">LUTs
+(total_luts)</td> <td>5866 (0%)</td>
+<td class="optionTitle"></td><td></td></tr> 
+</tbody>
+    </table><br>
+ <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
+ 				   <thead class="tablehead"><tr><th   colspan="4">Timing Summary</th></tr></thead>
+<tfoot> <tr> <td class="optionTitle" colspan="4"></td></tr> 
+ </tfoot> 
+<tbody> 
+   <tr><th class="optionTitle" align= "left ">Clock Name</th><th class="optionTitle" align= "left ">Req Freq</th><th class="optionTitle" align= "left ">Est Freq</th><th class="optionTitle" align= "left ">Slack</th></tr> 
+<tr> <td  align="left">System_FB1_uB</td><td  align="left">1.0 MHz</td><td  align="left">20.9 MHz</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">clk</td><td  align="left">2.0 MHz</td><td  align="left">41.8 MHz</td><td  align="left">237.775</td></tr> 
+<tr> <td  align="left">dbg_capiclk</td><td  align="left">40.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">dbg_xcvr_user_clk_0</td><td  align="left">140.6 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">dbg_xcvr_user_clk_1</td><td  align="left">140.6 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">dbg_xcvr_user_clk_2</td><td  align="left">140.6 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">dbg_xcvr_user_clk_3</td><td  align="left">140.6 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">gclk0</td><td  align="left">100.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">haps_clk_10</td><td  align="left">10.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">haps_clk_10_2_sync</td><td  align="left">10.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">haps_clk_50_2_sync</td><td  align="left">50.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">haps_clk_200</td><td  align="left">200.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">hstdm_refclk_100</td><td  align="left">100.0 MHz</td><td  align="left">701.4 MHz</td><td  align="left">8.574</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank36_block3</td><td  align="left">600.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank36_block3_div2</td><td  align="left">300.0 MHz</td><td  align="left">491.3 MHz</td><td  align="left">1.298</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank36_block3_div4</td><td  align="left">150.0 MHz</td><td  align="left">290.6 MHz</td><td  align="left">2.052</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank37_block4</td><td  align="left">600.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank37_block4_div2</td><td  align="left">300.0 MHz</td><td  align="left">489.0 MHz</td><td  align="left">1.288</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank37_block4_div4</td><td  align="left">150.0 MHz</td><td  align="left">292.3 MHz</td><td  align="left">1.623</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank38_block5</td><td  align="left">600.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank38_block5_div2</td><td  align="left">300.0 MHz</td><td  align="left">571.1 MHz</td><td  align="left">1.582</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank38_block5_div4</td><td  align="left">150.0 MHz</td><td  align="left">335.0 MHz</td><td  align="left">2.466</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank60_block7</td><td  align="left">600.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank60_block7_div2</td><td  align="left">300.0 MHz</td><td  align="left">441.5 MHz</td><td  align="left">1.068</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank60_block7_div4</td><td  align="left">150.0 MHz</td><td  align="left">298.6 MHz</td><td  align="left">2.379</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank69_block1</td><td  align="left">600.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank69_block1_div2</td><td  align="left">300.0 MHz</td><td  align="left">407.2 MHz</td><td  align="left">0.878</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank69_block1_div4</td><td  align="left">150.0 MHz</td><td  align="left">306.4 MHz</td><td  align="left">2.956</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank71_block2</td><td  align="left">600.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank71_block2_div2</td><td  align="left">300.0 MHz</td><td  align="left">414.2 MHz</td><td  align="left">0.919</td></tr> 
+<tr> <td  align="left">hstdm_rxclk_1200_bank71_block2_div4</td><td  align="left">150.0 MHz</td><td  align="left">315.8 MHz</td><td  align="left">2.317</td></tr> 
+<tr> <td  align="left">hstdm_txclk_1200_bank36_clkoutphy</td><td  align="left">1200.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">hstdm_txclk_1200_bank37_clkoutphy</td><td  align="left">1200.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">hstdm_txclk_1200_bank38_clkoutphy</td><td  align="left">1200.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">hstdm_txclk_1200_bank60_clkoutphy</td><td  align="left">1200.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">hstdm_txclk_1200_bank60_div2</td><td  align="left">300.0 MHz</td><td  align="left">408.8 MHz</td><td  align="left">0.887</td></tr> 
+<tr> <td  align="left">hstdm_txclk_1200_bank69_clkoutphy</td><td  align="left">1200.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">hstdm_txclk_1200_bank71_clkoutphy</td><td  align="left">1200.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">sys_clk</td><td  align="left">100.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">ufpga_lock_clk_o</td><td  align="left">1.0 MHz</td><td  align="left">NA</td><td  align="left">NA</td></tr> 
+<tr> <td  align="left">umr2_clk</td><td  align="left">100.0 MHz</td><td  align="left">104.2 MHz</td><td  align="left">0.380</td></tr> 
+<tr> <td  align="left">umr3_clk</td><td  align="left">125.0 MHz</td><td  align="left">154.3 MHz</td><td  align="left">1.811</td></tr> 
+<tr> <td  align="left">System</td><td  align="left">1.0 MHz</td><td  align="left">1.0 MHz</td><td  align="left">5.678</td></tr> 
+</tbody> 
+ </table>
+<br>
+ <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
+ 				   <thead class="tablehead"><tr><th   colspan="4">Optimizations Summary</th></tr></thead>
+ <tbody> <tr> 
+<td title ="Non-gated/non-generated clock trees / Gated/generated clock trees" class="optionTitle" align="left">Combined Clock Conversion</td> <td>2 / 0</td>
+<td class="optionTitle"></td><td></td></tr> 
+</tbody>
+    </table><br>
+ <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
+ 				   <thead class="tablehead"><tr><th   colspan="5">Compile Points Summary</th></tr></thead>
+<tbody> 
+   <tr><th class="optionTitle" align= "left ">Name</th><th class="optionTitle" align= "left ">Status</th><th class="optionTitle" align= "left ">Reason</th><th class="optionTitle" align= "left ">Real Time</th><th class="optionTitle" align= "left ">CPU Time</th></tr> 
+<tr> <td  align="left">FB1_uB</td><td  align="left">Mapped</td><td  align="left">No database</td><td  align="left">0h:03m:14s</td><td  align="left">0h:03m:12s</td></tr> 
+</tbody> 
+ </table>
+<br>
+<br> 
+</td></tr></table></body> 
+ </html>

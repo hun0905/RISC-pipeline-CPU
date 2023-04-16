@@ -1,0 +1,513 @@
+######################################################
+##
+## report_io_reg (01/23/2015)
+##
+## Vivado v2021.1_AR76722 (64-bit)
+## SW Build 3428450 on Thu Jan 13 11:43:02 MST 2022
+## IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+## Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+##
+## Generated on Mon Apr 10 00:04:12 CST 2023
+##
+######################################################
+
+
+ +-------------------------------------------------------------------------------------------------------------------------------------+
+ | IO Ports Summary                                                                                                                    |
+ +----------------------------+-----+--------+-------------+---------+--------------+--------+--------+--------+--------+--------------+
+ | Port                       | Dir | Coord  | Package pin | IO Bank | Clock Region | IDELAY | ODELAY | ILOGIC | OLOGIC | Info         |
+ +----------------------------+-----+--------+-------------+---------+--------------+--------+--------+--------+--------+--------------+
+ | AFPGA_GLNK_OUT             | OUT | X1Y337 | BY35        | 65      | X7Y6         | 0      | 0      | 0      | 1      |              |
+ | AFPGA_LOCK_CDi_O           | OUT | X1Y359 | BR39        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Output FF |
+ | AFPGA_LOCK_CDO_GLNK_I[0]   | IN  | X1Y363 | BW38        | 65      | X7Y6         | 0      | 0      | 1      | 0      |              |
+ | AFPGA_LOCK_CE_I            | IN  | X1Y361 | BV41        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Input FF  |
+ | AFPGA_LOCK_CLK_I           | IN  | X1Y360 | BR40        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[0]               | IN  | X1Y590 | L37         | 70      | X7Y11        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[1]               | IN  | X1Y597 | M38         | 70      | X7Y11        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[2]               | IN  | X1Y610 | K37         | 70      | X7Y11        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[3]               | IN  | X1Y623 | T37         | 70      | X7Y11        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[4]               | IN  | X1Y591 | L39         | 70      | X7Y11        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[5]               | IN  | X1Y592 | L40         | 70      | X7Y11        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[6]               | IN  | X0Y881 | B52         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[7]               | IN  | X0Y876 | C54         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[8]               | IN  | X0Y875 | C53         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[9]               | IN  | X0Y878 | A55         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[10]              | IN  | X0Y877 | A54         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[11]              | IN  | X1Y671 | J28         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[12]              | IN  | X0Y861 | E55         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[13]              | IN  | X0Y860 | F55         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[14]              | IN  | X1Y673 | E28         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[15]              | IN  | X0Y874 | B54         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[16]              | IN  | X0Y873 | B53         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[17]              | IN  | X1Y655 | H31         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[18]              | IN  | X0Y869 | G54         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[19]              | IN  | X1Y657 | H30         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[20]              | IN  | X0Y868 | H54         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[21]              | IN  | X0Y872 | D53         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[22]              | IN  | X1Y659 | J32         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[23]              | IN  | X1Y661 | G33         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[24]              | IN  | X0Y871 | D52         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[25]              | IN  | X0Y865 | H55         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[26]              | IN  | X1Y664 | G28         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[27]              | IN  | X0Y864 | J55         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[28]              | IN  | X0Y867 | F52         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[29]              | IN  | X1Y666 | F27         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[30]              | IN  | X0Y866 | G52         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[31]              | IN  | X1Y668 | H28         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[32]              | IN  | X0Y859 | E54         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[33]              | IN  | X0Y858 | F54         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[34]              | IN  | X1Y670 | E29         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[35]              | IN  | X0Y863 | G53         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[36]              | IN  | X0Y862 | H53         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[37]              | IN  | X1Y672 | J27         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[38]              | IN  | X0Y843 | C56         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[39]              | IN  | X1Y674 | E27         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[40]              | IN  | X0Y842 | D56         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[41]              | IN  | X1Y569 | K39         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[42]              | IN  | X0Y850 | G56         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[43]              | IN  | X1Y540 | A36         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[44]              | IN  | X0Y849 | H56         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[45]              | IN  | X0Y848 | H58         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[46]              | IN  | X1Y551 | H36         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[47]              | IN  | X0Y847 | J58         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[48]              | IN  | X0Y856 | F57         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[49]              | IN  | X1Y560 | G39         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[50]              | IN  | X0Y855 | F56         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[51]              | IN  | X1Y562 | F37         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[52]              | IN  | X0Y852 | G58         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[53]              | IN  | X0Y851 | G57         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[54]              | IN  | X1Y564 | G38         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[55]              | IN  | X0Y835 | D58         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[56]              | IN  | X0Y834 | D57         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[57]              | IN  | X1Y566 | H40         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[58]              | IN  | X1Y568 | J38         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[59]              | IN  | X0Y833 | C59         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[60]              | IN  | X0Y832 | C58         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[61]              | IN  | X1Y570 | K40         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[62]              | IN  | X0Y903 | P50         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM[63]              | IN  | X0Y909 | T50         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Input FF  |
+ | ALUOUTMEM_aptn_ft[0]       | OUT | X0Y236 | BN56        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | ALUOUTMEM_aptn_ft[1]       | OUT | X0Y250 | BM57        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | ALUOUTMEM_aptn_ft[2]       | OUT | X0Y249 | BL57        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | ALUOUTMEM_aptn_ft[3]       | OUT | X0Y245 | BN58        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | ALUOUTMEM_aptn_ft[4]       | OUT | X0Y244 | BM58        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | ALUOUTMEM_aptn_ft[5]       | OUT | X0Y248 | BL54        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | ALUOUTMEM_aptn_ft[6]       | OUT | X0Y247 | BK54        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | ALUOUTMEM_aptn_ft[7]       | OUT | X0Y241 | BP58        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | ALUOUTMEM_aptn_ft[8]       | OUT | X0Y240 | BP57        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | ALUOUTMEM_aptn_ft[9]       | OUT | X0Y243 | BR58        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | ALUOUTMEM_aptn_ft[10]      | OUT | X0Y242 | BR57        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | clk                        | IN  | X1Y548 | F35         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Input FF  |
+ | clk_0                      | IN  | X1Y549 | E35         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Input FF  |
+ | cpm_r_HSTDM_4_FB1_C2_C_0   | IN  | X0Y914 | K49         | 36      | X0Y17        | 1      | 0      | 0      | 0      | No Input FF  |
+ | cpm_r_HSTDM_4_FB1_C2_C_1   | IN  | X0Y915 | K50         | 36      | X0Y17        | 1      | 0      | 0      | 0      | No Input FF  |
+ | cpm_r_HSTDM_4_FB1_C2_C_6   | IN  | X0Y916 | L46         | 36      | X0Y17        | 1      | 0      | 0      | 0      | No Input FF  |
+ | cpm_r_HSTDM_4_FB1_C2_D_2   | IN  | X0Y912 | L49         | 36      | X0Y17        | 1      | 0      | 0      | 0      | No Input FF  |
+ | cpm_r_HSTDM_4_FB1_C2_D_3   | IN  | X0Y913 | L50         | 36      | X0Y17        | 1      | 0      | 0      | 0      | No Input FF  |
+ | cpm_r_HSTDM_4_FB1_CI1_N_17 | IN  | X1Y557 | G34         | 69      | X7Y10        | 1      | 0      | 0      | 0      | No Input FF  |
+ | cpm_r_HSTDM_4_FB1_CI1_N_18 | IN  | X1Y555 | J36         | 69      | X7Y10        | 1      | 0      | 0      | 0      | No Input FF  |
+ | cpm_r_HSTDM_4_FB1_CI1_P_17 | IN  | X1Y556 | H34         | 69      | X7Y10        | 1      | 0      | 0      | 0      | No Input FF  |
+ | cpm_r_HSTDM_4_FB1_CI1_P_18 | IN  | X1Y554 | J35         | 69      | X7Y10        | 1      | 0      | 0      | 0      | No Input FF  |
+ | cpm_r_HSTDM_4_FB1_DI3_N_7  | IN  | X1Y638 | A31         | 71      | X7Y12        | 1      | 0      | 0      | 0      | No Input FF  |
+ | cpm_r_HSTDM_4_FB1_DI3_N_8  | IN  | X1Y640 | C33         | 71      | X7Y12        | 1      | 0      | 0      | 0      | No Input FF  |
+ | cpm_r_HSTDM_4_FB1_DI3_P_7  | IN  | X1Y637 | A32         | 71      | X7Y12        | 1      | 0      | 0      | 0      | No Input FF  |
+ | cpm_r_HSTDM_4_FB1_DI3_P_8  | IN  | X1Y639 | D33         | 71      | X7Y12        | 1      | 0      | 0      | 0      | No Input FF  |
+ | DBG_DOUT_0                 | OUT | X1Y326 | CA35        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Output FF |
+ | DBG_DOUT_1                 | OUT | X1Y325 | CA34        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Output FF |
+ | DBG_DOUT_2                 | OUT | X1Y323 | BR38        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Output FF |
+ | DBG_DOUT_3                 | OUT | X1Y322 | BR37        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Output FF |
+ | DBG_DOUT_4                 | OUT | X1Y321 | BV36        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Output FF |
+ | DBG_DOUT_5                 | OUT | X1Y320 | BU36        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Output FF |
+ | DBG_DOUT_6                 | OUT | X1Y319 | BV38        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Output FF |
+ | DBG_DOUT_7                 | OUT | X1Y318 | BU38        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Output FF |
+ | DBG_REFCLKN_0[0]           | IN  | X0Y6   | BJ10        | 225     |              |        |        |        |        | Unconnected  |
+ | DBG_REFCLKN_0[1]           | IN  | X0Y1   | CB8         | 220     |              |        |        |        |        | Unconnected  |
+ | DBG_REFCLKN_0[2]           | IN  | X0Y16  | AJ10        | 235     |              |        |        |        |        | Unconnected  |
+ | DBG_REFCLKN_0[3]           | IN  | X0Y11  | AU10        | 230     |              |        |        |        |        | Unconnected  |
+ | DBG_REFCLKP_0[0]           | IN  | X0Y6   | BJ11        | 225     |              |        |        |        |        | Unconnected  |
+ | DBG_REFCLKP_0[1]           | IN  | X0Y1   | CB9         | 220     |              |        |        |        |        | Unconnected  |
+ | DBG_REFCLKP_0[2]           | IN  | X0Y16  | AJ11        | 235     |              |        |        |        |        | Unconnected  |
+ | DBG_REFCLKP_0[3]           | IN  | X0Y11  | AU11        | 230     |              |        |        |        |        | Unconnected  |
+ | DBG_RXN[0]                 | IN  | X0Y24  | BH3         | 225     |              |        |        |        |        | Unconnected  |
+ | DBG_RXN[1]                 | IN  | X0Y25  | BG1         | 225     |              |        |        |        |        | Unconnected  |
+ | DBG_RXN[2]                 | IN  | X0Y4   | BY3         | 220     |              |        |        |        |        | Unconnected  |
+ | DBG_RXN[3]                 | IN  | X0Y5   | BW1         | 220     |              |        |        |        |        | Unconnected  |
+ | DBG_RXN[4]                 | IN  | X0Y64  | AD3         | 235     |              |        |        |        |        | Unconnected  |
+ | DBG_RXN[5]                 | IN  | X0Y65  | AC1         | 235     |              |        |        |        |        | Unconnected  |
+ | DBG_RXN[6]                 | IN  | X0Y44  | AT3         | 230     |              |        |        |        |        | Unconnected  |
+ | DBG_RXN[7]                 | IN  | X0Y45  | AR1         | 230     |              |        |        |        |        | Unconnected  |
+ | DBG_RXP[0]                 | IN  | X0Y24  | BH4         | 225     |              |        |        |        |        | Unconnected  |
+ | DBG_RXP[1]                 | IN  | X0Y25  | BG2         | 225     |              |        |        |        |        | Unconnected  |
+ | DBG_RXP[2]                 | IN  | X0Y4   | BY4         | 220     |              |        |        |        |        | Unconnected  |
+ | DBG_RXP[3]                 | IN  | X0Y5   | BW2         | 220     |              |        |        |        |        | Unconnected  |
+ | DBG_RXP[4]                 | IN  | X0Y64  | AD4         | 235     |              |        |        |        |        | Unconnected  |
+ | DBG_RXP[5]                 | IN  | X0Y65  | AC2         | 235     |              |        |        |        |        | Unconnected  |
+ | DBG_RXP[6]                 | IN  | X0Y44  | AT4         | 230     |              |        |        |        |        | Unconnected  |
+ | DBG_RXP[7]                 | IN  | X0Y45  | AR2         | 230     |              |        |        |        |        | Unconnected  |
+ | DBG_TXN[0]                 | OUT | X0Y24  | BK8         | 225     |              |        |        |        |        | Unconnected  |
+ | DBG_TXN[1]                 | OUT | X0Y25  | BJ6         | 225     |              |        |        |        |        | Unconnected  |
+ | DBG_TXN[2]                 | OUT | X0Y4   | CC6         | 220     |              |        |        |        |        | Unconnected  |
+ | DBG_TXN[3]                 | OUT | X0Y5   | CB4         | 220     |              |        |        |        |        | Unconnected  |
+ | DBG_TXN[4]                 | OUT | X0Y64  | AF8         | 235     |              |        |        |        |        | Unconnected  |
+ | DBG_TXN[5]                 | OUT | X0Y65  | AE6         | 235     |              |        |        |        |        | Unconnected  |
+ | DBG_TXN[6]                 | OUT | X0Y44  | AV8         | 230     |              |        |        |        |        | Unconnected  |
+ | DBG_TXN[7]                 | OUT | X0Y45  | AU6         | 230     |              |        |        |        |        | Unconnected  |
+ | DBG_TXP[0]                 | OUT | X0Y24  | BK9         | 225     |              |        |        |        |        | Unconnected  |
+ | DBG_TXP[1]                 | OUT | X0Y25  | BJ7         | 225     |              |        |        |        |        | Unconnected  |
+ | DBG_TXP[2]                 | OUT | X0Y4   | CC7         | 220     |              |        |        |        |        | Unconnected  |
+ | DBG_TXP[3]                 | OUT | X0Y5   | CB5         | 220     |              |        |        |        |        | Unconnected  |
+ | DBG_TXP[4]                 | OUT | X0Y64  | AF9         | 235     |              |        |        |        |        | Unconnected  |
+ | DBG_TXP[5]                 | OUT | X0Y65  | AE7         | 235     |              |        |        |        |        | Unconnected  |
+ | DBG_TXP[6]                 | OUT | X0Y44  | AV9         | 230     |              |        |        |        |        | Unconnected  |
+ | DBG_TXP[7]                 | OUT | X0Y45  | AU7         | 230     |              |        |        |        |        | Unconnected  |
+ | DMout[0]                   | OUT | X1Y234 | CA29        | 63      | X7Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[1]                   | OUT | X0Y40  | BU46        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[2]                   | OUT | X0Y39  | BT46        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[3]                   | OUT | X0Y37  | CA42        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[4]                   | OUT | X1Y207 | BH28        | 62      | X7Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[5]                   | OUT | X0Y36  | BY42        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[6]                   | OUT | X1Y206 | BG29        | 62      | X7Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[7]                   | OUT | X0Y35  | CC44        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[8]                   | OUT | X1Y259 | BY32        | 63      | X7Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[9]                   | OUT | X1Y258 | BV33        | 63      | X7Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[10]                  | OUT | X0Y34  | CC43        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[11]                  | OUT | X1Y136 | BK24        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[12]                  | OUT | X0Y33  | CB43        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[13]                  | OUT | X1Y135 | BJ23        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[14]                  | OUT | X1Y134 | BH23        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[15]                  | OUT | X0Y32  | CB42        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[16]                  | OUT | X0Y31  | CC45        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[17]                  | OUT | X1Y257 | BV34        | 63      | X7Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[18]                  | OUT | X0Y30  | CB44        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[19]                  | OUT | X1Y131 | BJ21        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[20]                  | OUT | X1Y256 | BV30        | 63      | X7Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[21]                  | OUT | X1Y255 | BV31        | 63      | X7Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[22]                  | OUT | X1Y254 | BY33        | 63      | X7Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[23]                  | OUT | X1Y205 | BF29        | 62      | X7Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[24]                  | OUT | X0Y27  | CA44        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[25]                  | OUT | X0Y26  | BY44        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[26]                  | OUT | X1Y130 | BH21        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[27]                  | OUT | X1Y155 | BG23        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[28]                  | OUT | X1Y204 | BF25        | 62      | X7Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[29]                  | OUT | X1Y253 | BY34        | 63      | X7Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[30]                  | OUT | X0Y51  | BT45        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[31]                  | OUT | X1Y203 | BE25        | 62      | X7Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[32]                  | OUT | X1Y154 | BF21        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[33]                  | OUT | X1Y202 | BG26        | 62      | X7Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[34]                  | OUT | X1Y153 | BF22        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[35]                  | OUT | X0Y50  | BT44        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[36]                  | OUT | X0Y49  | BR44        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[37]                  | OUT | X1Y201 | BF26        | 62      | X7Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[38]                  | OUT | X0Y48  | BV44        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[39]                  | OUT | X1Y152 | BF24        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[40]                  | OUT | X0Y47  | BU44        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[41]                  | OUT | X1Y151 | BE24        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[42]                  | OUT | X1Y200 | BE27        | 62      | X7Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[43]                  | OUT | X1Y150 | BF20        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[44]                  | OUT | X0Y46  | BU42        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[45]                  | OUT | X1Y252 | BW30        | 63      | X7Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[46]                  | OUT | X1Y149 | BE20        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[47]                  | OUT | X0Y45  | BT42        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[48]                  | OUT | X1Y251 | BW31        | 63      | X7Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[49]                  | OUT | X1Y199 | BE28        | 62      | X7Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[50]                  | OUT | X0Y44  | BV46        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[51]                  | OUT | X1Y148 | BH24        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[52]                  | OUT | X1Y198 | BH25        | 62      | X7Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[53]                  | OUT | X0Y43  | BV45        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[54]                  | OUT | X1Y250 | BW32        | 63      | X7Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[55]                  | OUT | X0Y42  | BV43        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[56]                  | OUT | X0Y41  | BU43        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[57]                  | OUT | X1Y147 | BG24        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[58]                  | OUT | X1Y146 | BG21        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[59]                  | OUT | X1Y197 | BH26        | 62      | X7Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[60]                  | OUT | X1Y249 | BW33        | 63      | X7Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[61]                  | OUT | X1Y145 | BG22        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[62]                  | OUT | X0Y29  | BY43        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMout[63]                  | OUT | X1Y133 | BK22        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[0]                 | OUT | X0Y235 | BP55        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[1]                 | OUT | X0Y234 | BN55        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[2]                 | OUT | X0Y239 | BR55        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[3]                 | OUT | X0Y238 | BR54        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[4]                 | OUT | X0Y222 | BN51        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[5]                 | OUT | X0Y221 | BN50        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[6]                 | OUT | X0Y219 | BL50        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[7]                 | OUT | X0Y218 | BK50        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[8]                 | OUT | X0Y226 | BT51        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[9]                 | OUT | X0Y225 | BT50        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[10]                | OUT | X0Y224 | BR53        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[11]                | OUT | X0Y223 | BR52        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[12]                | OUT | X0Y232 | BP53        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[13]                | OUT | X0Y231 | BP52        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[14]                | OUT | X0Y228 | BR50        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[15]                | OUT | X0Y227 | BP50        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[16]                | OUT | X0Y233 | BP51        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[17]                | OUT | X0Y211 | BM52        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[18]                | OUT | X0Y210 | BM51        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[19]                | OUT | X0Y209 | BJ52        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[20]                | OUT | X0Y208 | BJ51        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[21]                | OUT | X0Y215 | BL52        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[22]                | OUT | X0Y214 | BL51        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[23]                | OUT | X0Y213 | BK53        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[24]                | OUT | X0Y212 | BK52        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[25]                | OUT | X0Y230 | BN54        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[26]                | OUT | X0Y229 | BN53        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[27]                | OUT | X0Y198 | BM62        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[28]                | OUT | X0Y197 | BL62        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[29]                | OUT | X0Y193 | BR63        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[30]                | OUT | X0Y192 | BR62        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[31]                | OUT | X0Y196 | BN60        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[32]                | OUT | X0Y195 | BN59        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[33]                | OUT | X0Y189 | BT59        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[34]                | OUT | X0Y188 | BR59        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[35]                | OUT | X0Y191 | BP61        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[36]                | OUT | X0Y190 | BN61        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[37]                | OUT | X0Y183 | BR60        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[38]                | OUT | X0Y182 | BP60        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[39]                | OUT | X0Y187 | BP63        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[40]                | OUT | X0Y186 | BP62        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[41]                | OUT | X0Y170 | BW58        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[42]                | OUT | X0Y169 | BV58        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[43]                | OUT | X0Y167 | BY59        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[44]                | OUT | X0Y166 | BY58        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[45]                | OUT | X0Y174 | BV63        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[46]                | OUT | X0Y173 | BU63        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[47]                | OUT | X0Y172 | BV59        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[48]                | OUT | X0Y171 | BU59        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[49]                | OUT | X0Y180 | BV61        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[50]                | OUT | X0Y179 | BU61        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[51]                | OUT | X0Y176 | BU62        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[52]                | OUT | X0Y175 | BT62        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[53]                | OUT | X0Y181 | BW61        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[54]                | OUT | X0Y159 | CC58        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[55]                | OUT | X0Y158 | CB58        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[56]                | OUT | X0Y157 | CA60        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[57]                | OUT | X0Y156 | CA59        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[58]                | OUT | X0Y163 | CC59        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[59]                | OUT | X0Y162 | CB59        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[60]                | OUT | X0Y161 | CA61        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[61]                | OUT | X0Y160 | BY60        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[62]                | OUT | X0Y178 | BW60        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DMOUTWB[63]                | OUT | X0Y177 | BV60        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | DUMMY_GSR_PORT             | OUT | X1Y313 | BT36        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Output FF |
+ | DUMMY_PORT                 | OUT | X1Y332 | CB37        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Output FF |
+ | GT1_REFCLK_N               | IN  | X0Y8   | BA10        | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_REFCLK_P               | IN  | X0Y8   | BA11        | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_RXN[0]                 | IN  | X0Y32  | AY3         | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_RXN[1]                 | IN  | X0Y33  | AW1         | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_RXN[2]                 | IN  | X0Y34  | AV3         | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_RXN[3]                 | IN  | X0Y35  | AU1         | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_RXP[0]                 | IN  | X0Y32  | AY4         | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_RXP[1]                 | IN  | X0Y33  | AW2         | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_RXP[2]                 | IN  | X0Y34  | AV4         | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_RXP[3]                 | IN  | X0Y35  | AU2         | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_TXN[0]                 | OUT | X0Y32  | BB8         | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_TXN[1]                 | OUT | X0Y33  | BA6         | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_TXN[2]                 | OUT | X0Y34  | AY8         | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_TXN[3]                 | OUT | X0Y35  | AW6         | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_TXP[0]                 | OUT | X0Y32  | BB9         | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_TXP[1]                 | OUT | X0Y33  | BA7         | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_TXP[2]                 | OUT | X0Y34  | AY9         | 227     |              |        |        |        |        | Unconnected  |
+ | GT1_TXP[3]                 | OUT | X0Y35  | AW7         | 227     |              |        |        |        |        | Unconnected  |
+ | IMMID[52]                  | OUT | X1Y184 | BL27        | 62      | X7Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | IMMID_21_to_21[21]         | OUT | X1Y237 | CA30        | 63      | X7Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | IMMID_23_to_23[23]         | OUT | X1Y185 | BL26        | 62      | X7Y3         | 0      | 0      | 0      | 0      | No Output FF |
+ | IMMID_27_to_27[27]         | OUT | X1Y132 | BJ22        | 61      | X7Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | MEMREADEX_aptn_ft          | IN  | X0Y217 | BM54        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Input FF  |
+ | MEMREADEX_aptn_ft_0        | OUT | X1Y589 | M37         | 70      | X7Y11        | 0      | 0      | 0      | 0      | No Output FF |
+ | MEMREADMEM                 | IN  | X0Y839 | A56         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | MEMREADMEM_aptn_ft         | OUT | X0Y146 | BW50        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | MEMTOREGWB                 | OUT | X1Y236 | CA31        | 63      | X7Y4         | 0      | 0      | 0      | 0      | No Output FF |
+ | MEMWRITEMEM                | IN  | X0Y838 | B56         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | MNGLINK_RX                 | IN  | X1Y328 | CC36        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Input FF  |
+ | MNGLINK_TX                 | OUT | X1Y327 | CC35        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Output FF |
+ | pin_B32                    | IN  | X1Y644 | B32         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Input FF  |
+ | pin_B33                    | IN  | X1Y643 | B33         | 71      | X7Y12        | 1      | 0      | 0      | 0      | No Input FF  |
+ | pin_E34                    | IN  | X1Y553 | E34         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Input FF  |
+ | pin_F34                    | IN  | X1Y552 | F34         | 69      | X7Y10        | 1      | 0      | 0      | 0      | No Input FF  |
+ | pin_M48                    | IN  | X0Y910 | M48         | 36      | X0Y17        | 1      | 0      | 0      | 0      | No Input FF  |
+ | pin_M49                    | IN  | X0Y911 | M49         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Input FF  |
+ | RD2MEM_3[3]                | IN  | X0Y887 | V50         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Input FF  |
+ | RD2MEM_5[5]                | IN  | X0Y886 | W50         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Input FF  |
+ | RD2MEM_12[12]              | IN  | X0Y885 | U49         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Input FF  |
+ | RD2MEM_15[15]              | IN  | X0Y884 | V49         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Input FF  |
+ | RD2MEM_25[25]              | IN  | X0Y891 | W48         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Input FF  |
+ | RD2MEM_27[27]              | IN  | X0Y890 | W47         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Input FF  |
+ | RD2MEM_35[35]              | IN  | X0Y889 | U48         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Input FF  |
+ | RD2MEM_40[40]              | IN  | X0Y888 | V48         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Input FF  |
+ | RD2MEM_47[47]              | IN  | X0Y906 | P48         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Input FF  |
+ | RD2MEM_49[49]              | IN  | X0Y905 | P47         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Input FF  |
+ | RD2MEM_60[60]              | IN  | X0Y893 | U46         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Input FF  |
+ | RD2MEM_63[63]              | IN  | X0Y892 | V46         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Input FF  |
+ | REF_CLK_N                  | IN  | X0Y8   | AW10        | 227     |              |        |        |        |        | Unconnected  |
+ | REF_CLK_P                  | IN  | X0Y8   | AW11        | 227     |              |        |        |        |        | Unconnected  |
+ | REF_RESET                  | IN  | X1Y348 | CC40        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Input FF  |
+ | REGWRITEMEM                | IN  | X0Y837 | A59         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | REGWRITEWB_0               | OUT | X0Y145 | BV50        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | REGWRITEWB_aptn_s          | OUT | X0Y880 | C55         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Output FF |
+ | REGWRITEWB_aptn_s_0        | OUT | X0Y28  | BW43        | 19      | X0Y0         | 0      | 0      | 0      | 0      | No Output FF |
+ | rst_n                      | IN  | X0Y216 | BM53        | 23      | X0Y4         | 0      | 0      | 0      | 0      | No Input FF  |
+ | UMR3_SIB_LINK_IN[0]        | IN  | X1Y345 | CB41        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Input FF  |
+ | UMR3_SIB_LINK_IN[1]        | IN  | X1Y344 | CA41        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Input FF  |
+ | UMR3_SIB_LINK_OUT[0]       | OUT | X1Y330 | CC34        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Output FF |
+ | UMR3_SIB_LINK_OUT[1]       | OUT | X1Y329 | CB34        | 65      | X7Y6         | 0      | 0      | 0      | 0      | No Output FF |
+ | WREX_aptn_ft[0]            | IN  | X0Y165 | BW63        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Input FF  |
+ | WREX_aptn_ft[1]            | IN  | X0Y164 | BW62        | 22      | X0Y3         | 0      | 0      | 0      | 0      | No Input FF  |
+ | WREX_aptn_ft[2]            | IN  | X0Y112 | BY50        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Input FF  |
+ | WREX_aptn_ft[3]            | IN  | X0Y60  | BL47        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Input FF  |
+ | WREX_aptn_ft_0[0]          | OUT | X0Y879 | D55         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Output FF |
+ | WREX_aptn_ft_0[1]          | OUT | X0Y882 | A52         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Output FF |
+ | WREX_aptn_ft_0[2]          | OUT | X0Y846 | J57         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Output FF |
+ | WREX_aptn_ft_0[3]          | OUT | X0Y845 | J56         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[0]             | OUT | X0Y141 | BV56        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[1]             | OUT | X0Y140 | BU56        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[2]             | OUT | X0Y144 | BW51        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[3]             | OUT | X0Y143 | BV51        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[4]             | OUT | X0Y137 | BY57        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[5]             | OUT | X0Y136 | BW57        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[6]             | OUT | X0Y139 | BT56        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[7]             | OUT | X0Y138 | BT55        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[8]             | OUT | X0Y131 | BW56        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[9]             | OUT | X0Y130 | BV55        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[10]            | OUT | X0Y135 | BU58        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[11]            | OUT | X0Y134 | BT57        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[12]            | OUT | X0Y118 | CC55        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[13]            | OUT | X0Y117 | CC54        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[14]            | OUT | X0Y115 | CC53        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[15]            | OUT | X0Y114 | CB52        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[16]            | OUT | X0Y122 | CB54        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[17]            | OUT | X0Y121 | CB53        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[18]            | OUT | X0Y120 | CB57        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[19]            | OUT | X0Y119 | CB56        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[20]            | OUT | X0Y128 | BY54        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[21]            | OUT | X0Y127 | BY53        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[22]            | OUT | X0Y124 | CA57        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[23]            | OUT | X0Y123 | CA56        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[24]            | OUT | X0Y129 | CC56        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[25]            | OUT | X0Y107 | CB51        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[26]            | OUT | X0Y106 | CA51        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[27]            | OUT | X0Y105 | CC50        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[28]            | OUT | X0Y104 | CC49        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[29]            | OUT | X0Y111 | CA52        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[30]            | OUT | X0Y110 | BY52        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[31]            | OUT | X0Y109 | CB49        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[32]            | OUT | X0Y108 | CA49        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[33]            | OUT | X0Y126 | CA55        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[34]            | OUT | X0Y125 | CA54        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[35]            | OUT | X0Y113 | CA50        | 21      | X0Y2         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[36]            | OUT | X0Y94  | BG42        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[37]            | OUT | X0Y93  | BG41        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[38]            | OUT | X0Y89  | BM46        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[39]            | OUT | X0Y88  | BL46        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[40]            | OUT | X0Y92  | BF42        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[41]            | OUT | X0Y91  | BF41        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[42]            | OUT | X0Y85  | BL42        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[43]            | OUT | X0Y84  | BK42        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[44]            | OUT | X0Y87  | BJ47        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[45]            | OUT | X0Y86  | BJ46        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[46]            | OUT | X0Y79  | BK43        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[47]            | OUT | X0Y78  | BJ43        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[48]            | OUT | X0Y83  | BK45        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[49]            | OUT | X0Y82  | BJ45        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[50]            | OUT | X0Y66  | BP46        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[51]            | OUT | X0Y65  | BN46        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[52]            | OUT | X0Y63  | BK48        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[53]            | OUT | X0Y62  | BJ48        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[54]            | OUT | X0Y70  | BP45        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[55]            | OUT | X0Y69  | BN45        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[56]            | OUT | X0Y68  | BR43        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[57]            | OUT | X0Y67  | BR42        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[58]            | OUT | X0Y76  | BN43        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[59]            | OUT | X0Y75  | BM43        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[60]            | OUT | X0Y72  | BP43        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[61]            | OUT | X0Y71  | BP42        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[62]            | OUT | X0Y77  | BM42        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB[63]            | OUT | X0Y55  | BN49        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[0]      | OUT | X1Y641 | C31         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[1]      | OUT | X1Y634 | B29         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[2]      | OUT | X1Y632 | E30         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[3]      | OUT | X1Y630 | A30         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[4]      | OUT | X1Y628 | C30         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[5]      | OUT | X1Y626 | B27         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[6]      | OUT | X1Y624 | D28         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[7]      | OUT | X1Y642 | B31         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[8]      | OUT | X1Y635 | B28         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[9]      | OUT | X1Y633 | D30         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[10]     | OUT | X1Y631 | A29         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[11]     | OUT | X1Y629 | C29         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[12]     | OUT | X1Y627 | A27         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[13]     | OUT | X1Y625 | D27         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[14]     | OUT | X1Y649 | E33         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[15]     | OUT | X1Y662 | K29         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[16]     | OUT | X1Y675 | K28         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[17]     | OUT | X1Y654 | J31         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[18]     | OUT | X1Y656 | J30         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[19]     | OUT | X1Y658 | J33         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[20]     | OUT | X1Y660 | H33         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[21]     | OUT | X1Y663 | G29         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[22]     | OUT | X1Y665 | G27         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[23]     | OUT | X1Y667 | H29         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[24]     | OUT | X1Y669 | F29         | 71      | X7Y12        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[25]     | OUT | X1Y537 | C34         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[26]     | OUT | X1Y535 | B37         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[27]     | OUT | X1Y533 | A34         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[28]     | OUT | X1Y538 | B34         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[29]     | OUT | X1Y536 | A37         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[30]     | OUT | X1Y534 | A35         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[31]     | OUT | X1Y545 | D37         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[32]     | OUT | X1Y558 | E37         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[33]     | OUT | X1Y571 | F39         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[34]     | OUT | X1Y539 | B36         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[35]     | OUT | X1Y550 | H35         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[36]     | OUT | X1Y559 | H39         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[37]     | OUT | X1Y561 | G37         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[38]     | OUT | X1Y563 | H38         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[39]     | OUT | X1Y565 | J40         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[40]     | OUT | X1Y567 | J37         | 69      | X7Y10        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[41]     | OUT | X0Y935 | H46         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[42]     | OUT | X0Y932 | J48         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[43]     | OUT | X0Y931 | J47         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[44]     | OUT | X0Y934 | G47         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[45]     | OUT | X0Y933 | G46         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[46]     | OUT | X0Y928 | G51         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[47]     | OUT | X0Y927 | H51         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[48]     | OUT | X0Y930 | G48         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[49]     | OUT | X0Y929 | H48         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[50]     | OUT | X0Y926 | G49         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[51]     | OUT | X0Y925 | H49         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[52]     | OUT | X0Y921 | K48         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[53]     | OUT | X0Y920 | K47         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[54]     | OUT | X0Y924 | H50         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[55]     | OUT | X0Y923 | J50         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[56]     | OUT | X0Y919 | M47         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[57]     | OUT | X0Y918 | M46         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[58]     | OUT | X0Y898 | R48         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[59]     | OUT | X0Y897 | R47         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[60]     | OUT | X0Y895 | T47         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[61]     | OUT | X0Y894 | U47         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[62]     | OUT | X0Y902 | N46         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRITEDATAWB_aptn_s[63]     | OUT | X0Y901 | P46         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRMEM[0]                   | IN  | X0Y836 | B59         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | WRMEM[1]                   | IN  | X0Y854 | E58         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | WRMEM[2]                   | IN  | X0Y853 | E57         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | WRMEM[3]                   | IN  | X0Y841 | B58         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | WRMEM[4]                   | IN  | X0Y840 | B57         | 35      | X0Y16        | 0      | 0      | 0      | 0      | No Input FF  |
+ | WRMEM_aptn_ft[0]           | OUT | X0Y54  | BM49        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRMEM_aptn_ft[1]           | OUT | X0Y53  | BP48        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRMEM_aptn_ft[2]           | OUT | X0Y52  | BP47        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRMEM_aptn_ft[3]           | OUT | X0Y59  | BL49        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRMEM_aptn_ft[4]           | OUT | X0Y58  | BK49        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRWB[0]                    | OUT | X0Y57  | BN48        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRWB[1]                    | OUT | X0Y56  | BM48        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRWB[2]                    | OUT | X0Y74  | BN44        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRWB[3]                    | OUT | X0Y73  | BM44        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRWB[4]                    | OUT | X0Y61  | BM47        | 20      | X0Y1         | 0      | 0      | 0      | 0      | No Output FF |
+ | WRWB_aptn_s[0]             | OUT | X0Y900 | R50         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRWB_aptn_s[1]             | OUT | X0Y899 | R49         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRWB_aptn_s[2]             | OUT | X0Y908 | N49         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRWB_aptn_s[3]             | OUT | X0Y907 | N48         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ | WRWB_aptn_s[4]             | OUT | X0Y904 | N50         | 36      | X0Y17        | 0      | 0      | 0      | 0      | No Output FF |
+ +----------------------------+-----+--------+-------------+---------+--------------+--------+--------+--------+--------+--------------+
+
+ # Ports with no Input FF: 117
+ # Ports with no Output FF: 310
+ # Unconnected Ports: 60

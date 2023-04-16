@@ -1,0 +1,1 @@
+@W: FX1020 |A simulation mismatch is possible. Ignoring vendor library default initial value on registers, because the default value is not set. To enable vendor library default initial values, add the command "set_option -support_implicit_init_netlist 1" to the project file.

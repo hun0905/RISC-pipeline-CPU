@@ -1,0 +1,5 @@
+@N: MF913 |Option synthesis_strategy=fast is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MF796 |Maximum number of parallel jobs set to 4
+@N: BN569 |Target FPGA is located at FBx_x (Type HAPS-100_Sx).  

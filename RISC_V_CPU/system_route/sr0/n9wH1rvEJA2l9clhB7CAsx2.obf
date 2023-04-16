@@ -1,0 +1,3 @@
+-referencedir ../../../
+-pcf partition.pcf
+-fdc design.fdc

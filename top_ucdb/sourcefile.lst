@@ -1,0 +1,3 @@
+-type uc_xcui /home/u108/u108061217/RISC-V-pipeline-CPU/top_ucdb/vcs.xcui
+-type uc_namemap /home/u108/u108061217/RISC-V-pipeline-CPU/top_ucdb/design/defaultGroup/RTLDB/ESX.STT
+-type uc_xmr /home/u108/u108061217/RISC-V-pipeline-CPU/top_ucdb/design/defaultGroup/zconnectnew.script

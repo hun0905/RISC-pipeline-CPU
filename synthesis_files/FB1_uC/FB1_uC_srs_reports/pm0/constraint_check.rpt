@@ -1,0 +1,612 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs/|pm0
+
+# Written on Sun Apr  9 22:44:39 2023
+
+##### DESIGN INFO #######################################################
+
+Top View:                "FB1_uC"
+Constraint File(s):      "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/common_files/srs_cons_var.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/common_files/tdm_cons_var.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_pinloc.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_iostd.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_attr.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_timing.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/common_files/clockgen_cons.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_haps_timing.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 1351 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                                Ending                                  |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                  System                                  |     1000.000         |     No paths         |     No paths         |     No paths                         
+System                                  umr3_clk                                |     8.000            |     No paths         |     No paths         |     No paths                         
+clk                                     clk                                     |     500.000          |     No paths         |     No paths         |     No paths                         
+clk                                     System_FB1_uC                           |     500.000          |     No paths         |     No paths         |     No paths                         
+clk                                     hstdm_txclk_1200_bank71_div2            |     2.500            |     No paths         |     No paths         |     No paths                         
+clk                                     hstdm_txclk_1200_bank36_div2            |     2.500            |     No paths         |     No paths         |     No paths                         
+clk                                     hstdm_txclk_1200_bank60_div2            |     2.500            |     No paths         |     No paths         |     No paths                         
+clk                                     hstdm_txclk_1200_bank69_div2            |     2.500            |     No paths         |     No paths         |     No paths                         
+umr2_clk                                umr2_clk                                |     10.000           |     No paths         |     No paths         |     No paths                         
+umr2_clk                                umr3_clk                                |     2.000            |     No paths         |     No paths         |     No paths                         
+umr2_clk                                hstdm_rxclk_1200_bank36_block6_div2     |     3.333            |     No paths         |     No paths         |     No paths                         
+umr2_clk                                hstdm_rxclk_1200_bank36_block6_div4     |     3.333            |     No paths         |     No paths         |     No paths                         
+umr3_clk                                System                                  |     8.000            |     No paths         |     No paths         |     No paths                         
+umr3_clk                                umr2_clk                                |     2.000            |     No paths         |     No paths         |     No paths                         
+umr3_clk                                umr3_clk                                |     8.000            |     No paths         |     No paths         |     No paths                         
+umr3_clk                                hstdm_txclk_1200_bank71_div2            |     0.500            |     No paths         |     No paths         |     No paths                         
+umr3_clk                                hstdm_txclk_1200_bank36_div2            |     0.500            |     No paths         |     No paths         |     No paths                         
+umr3_clk                                hstdm_txclk_1200_bank60_div2            |     0.500            |     No paths         |     No paths         |     No paths                         
+umr3_clk                                hstdm_txclk_1200_bank69_div2            |     0.500            |     No paths         |     No paths         |     No paths                         
+umr3_clk                                hstdm_rxclk_1200_bank36_block6_div2     |     0.667            |     No paths         |     No paths         |     No paths                         
+umr3_clk                                hstdm_rxclk_1200_bank36_block6_div4     |     1.333            |     No paths         |     No paths         |     No paths                         
+hstdm_refclk_100                        hstdm_refclk_100                        |     10.000           |     No paths         |     No paths         |     No paths                         
+hstdm_refclk_100                        hstdm_rxclk_1200_bank36_block6_div2     |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_refclk_100                        hstdm_rxclk_1200_bank36_block6_div4     |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_txclk_1200_bank71_div2            hstdm_txclk_1200_bank71_div2            |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_txclk_1200_bank36_div2            hstdm_txclk_1200_bank36_div2            |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_txclk_1200_bank60_div2            hstdm_txclk_1200_bank60_div2            |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_txclk_1200_bank69_div2            hstdm_txclk_1200_bank69_div2            |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_rxclk_1200_bank36_block6_div2     clk                                     |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_rxclk_1200_bank36_block6_div2     System_FB1_uC                           |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_rxclk_1200_bank36_block6_div2     umr2_clk                                |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_rxclk_1200_bank36_block6_div2     umr3_clk                                |     0.667            |     No paths         |     No paths         |     No paths                         
+hstdm_rxclk_1200_bank36_block6_div2     hstdm_txclk_1200_bank36_div2            |     2.500            |     No paths         |     No paths         |     No paths                         
+hstdm_rxclk_1200_bank36_block6_div2     hstdm_rxclk_1200_bank36_block6_div2     |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_rxclk_1200_bank36_block6_div2     hstdm_rxclk_1200_bank36_block6_div4     |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_rxclk_1200_bank36_block6_div4     umr2_clk                                |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_rxclk_1200_bank36_block6_div4     umr3_clk                                |     1.333            |     No paths         |     No paths         |     No paths                         
+hstdm_rxclk_1200_bank36_block6_div4     hstdm_rxclk_1200_bank36_block6_div2     |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_rxclk_1200_bank36_block6_div4     hstdm_rxclk_1200_bank36_block6_div4     |     6.667            |     No paths         |     No paths         |     No paths                         
+===========================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:AFPGA_GLNK_OUT
+p:AFPGA_LOCK_CDO_GLNK_I[0]
+p:AFPGA_LOCK_CDi_O
+p:AFPGA_LOCK_CE_I
+p:AFPGA_LOCK_CLK_I
+p:ALUOUTEX[0]
+p:ALUOUTEX[1]
+p:ALUOUTEX[2]
+p:ALUOUTEX[3]
+p:ALUOUTEX[4]
+p:ALUOUTEX[5]
+p:ALUOUTEX[6]
+p:ALUOUTEX[7]
+p:ALUOUTEX[8]
+p:ALUOUTEX[9]
+p:ALUOUTEX[10]
+p:ALUOUTEX[11]
+p:ALUOUTEX[12]
+p:ALUOUTEX[13]
+p:ALUOUTEX[14]
+p:ALUOUTEX[15]
+p:ALUOUTEX[16]
+p:ALUOUTEX[17]
+p:ALUOUTEX[18]
+p:ALUOUTEX[19]
+p:ALUOUTEX[20]
+p:ALUOUTEX[21]
+p:ALUOUTEX[22]
+p:ALUOUTEX[23]
+p:ALUOUTEX[24]
+p:ALUOUTEX[25]
+p:ALUOUTEX[26]
+p:ALUOUTEX[27]
+p:ALUOUTEX[28]
+p:ALUOUTEX[29]
+p:ALUOUTEX[30]
+p:ALUOUTEX[31]
+p:ALUOUTEX[32]
+p:ALUOUTEX[33]
+p:ALUOUTEX[34]
+p:ALUOUTEX[35]
+p:ALUOUTEX[36]
+p:ALUOUTEX[37]
+p:ALUOUTEX[38]
+p:ALUOUTEX[39]
+p:ALUOUTEX[40]
+p:ALUOUTEX[41]
+p:ALUOUTEX[42]
+p:ALUOUTEX[43]
+p:ALUOUTEX[44]
+p:ALUOUTEX[45]
+p:ALUOUTEX[46]
+p:ALUOUTEX[47]
+p:ALUOUTEX[48]
+p:ALUOUTEX[49]
+p:ALUOUTEX[50]
+p:ALUOUTEX[51]
+p:ALUOUTEX[52]
+p:ALUOUTEX[53]
+p:ALUOUTEX[54]
+p:ALUOUTEX[55]
+p:ALUOUTEX[56]
+p:ALUOUTEX[57]
+p:ALUOUTEX[58]
+p:ALUOUTEX[59]
+p:ALUOUTEX[60]
+p:ALUOUTEX[61]
+p:ALUOUTMEM[0]
+p:ALUOUTMEM[1]
+p:ALUOUTMEM[2]
+p:ALUOUTMEM[3]
+p:ALUOUTMEM[4]
+p:ALUOUTMEM[5]
+p:ALUOUTMEM[6]
+p:ALUOUTMEM[7]
+p:ALUOUTMEM[8]
+p:ALUOUTMEM[9]
+p:ALUOUTMEM[10]
+p:ALUOUTMEM[11]
+p:ALUOUTMEM[12]
+p:ALUOUTMEM[13]
+p:ALUOUTMEM[14]
+p:ALUOUTMEM[15]
+p:ALUOUTMEM[16]
+p:ALUOUTMEM[17]
+p:ALUOUTMEM[18]
+p:ALUOUTMEM[19]
+p:ALUOUTMEM[20]
+p:ALUOUTMEM[21]
+p:ALUOUTMEM[22]
+p:ALUOUTMEM[23]
+p:ALUOUTMEM[24]
+p:ALUOUTMEM[25]
+p:ALUOUTMEM[26]
+p:ALUOUTMEM[27]
+p:ALUOUTMEM[28]
+p:ALUOUTMEM[29]
+p:ALUOUTMEM[30]
+p:ALUOUTMEM[31]
+p:ALUOUTMEM[32]
+p:ALUOUTMEM[33]
+p:ALUOUTMEM[34]
+p:ALUOUTMEM[35]
+p:ALUOUTMEM[36]
+p:ALUOUTMEM[37]
+p:ALUOUTMEM[38]
+p:ALUOUTMEM[39]
+p:ALUOUTMEM[40]
+p:ALUOUTMEM[41]
+p:ALUOUTMEM[42]
+p:ALUOUTMEM[43]
+p:ALUOUTMEM[44]
+p:ALUOUTMEM[45]
+p:ALUOUTMEM[46]
+p:ALUOUTMEM[47]
+p:ALUOUTMEM[48]
+p:ALUOUTMEM[49]
+p:ALUOUTMEM[50]
+p:ALUOUTMEM[51]
+p:ALUOUTMEM[52]
+p:ALUOUTMEM[53]
+p:ALUOUTMEM[54]
+p:ALUOUTMEM[55]
+p:ALUOUTMEM[56]
+p:ALUOUTMEM[57]
+p:ALUOUTMEM[58]
+p:ALUOUTMEM[59]
+p:ALUOUTMEM_aptn_s[11]
+p:ALUOUTMEM_aptn_s[12]
+p:ALUOUTMEM_aptn_s[13]
+p:ALUOUTMEM_aptn_s[14]
+p:ALUOUTMEM_aptn_s[15]
+p:ALUOUTMEM_aptn_s[16]
+p:ALUOUTMEM_aptn_s[17]
+p:ALUOUTMEM_aptn_s[18]
+p:ALUOUTMEM_aptn_s[19]
+p:ALUOUTMEM_aptn_s[20]
+p:ALUOUTMEM_aptn_s[21]
+p:ALUOUTMEM_aptn_s[22]
+p:ALUOUTMEM_aptn_s[23]
+p:ALUOUTMEM_aptn_s[24]
+p:ALUOUTMEM_aptn_s[25]
+p:ALUOUTMEM_aptn_s[26]
+p:ALUOUTMEM_aptn_s[27]
+p:ALUOUTMEM_aptn_s[28]
+p:ALUOUTMEM_aptn_s[29]
+p:ALUOUTMEM_aptn_s[30]
+p:ALUOUTMEM_aptn_s[31]
+p:ALUOUTMEM_aptn_s[32]
+p:ALUOUTMEM_aptn_s[33]
+p:ALUOUTMEM_aptn_s[34]
+p:ALUOUTMEM_aptn_s[35]
+p:ALUOUTMEM_aptn_s[36]
+p:ALUOUTMEM_aptn_s[37]
+p:ALUOUTMEM_aptn_s[38]
+p:ALUOUTMEM_aptn_s[39]
+p:ALUOUTMEM_aptn_s[40]
+p:ALUOUTMEM_aptn_s[41]
+p:ALUOUTMEM_aptn_s[42]
+p:ALUOUTMEM_aptn_s[43]
+p:ALUOUTMEM_aptn_s[44]
+p:ALUOUTMEM_aptn_s[45]
+p:ALUOUTMEM_aptn_s[46]
+p:ALUOUTMEM_aptn_s[47]
+p:ALUOUTMEM_aptn_s[48]
+p:ALUOUTMEM_aptn_s[49]
+p:ALUOUTMEM_aptn_s[50]
+p:ALUOUTMEM_aptn_s[51]
+p:ALUOUTMEM_aptn_s[52]
+p:ALUOUTMEM_aptn_s[53]
+p:ALUOUTMEM_aptn_s[54]
+p:ALUOUTMEM_aptn_s[55]
+p:ALUOUTMEM_aptn_s[56]
+p:ALUOUTMEM_aptn_s[57]
+p:ALUOUTMEM_aptn_s[58]
+p:ALUOUTMEM_aptn_s[59]
+p:ALUOUTMEM_aptn_s[60]
+p:ALUOUTMEM_aptn_s[61]
+p:ALUOUTMEM_aptn_s[62]
+p:ALUOUTMEM_aptn_s[63]
+p:Addr[0]
+p:Addr[1]
+p:DBG_DOUT_0
+p:DBG_DOUT_1
+p:DBG_DOUT_2
+p:DBG_DOUT_3
+p:DBG_DOUT_4
+p:DBG_DOUT_5
+p:DBG_DOUT_6
+p:DBG_DOUT_7
+p:DBG_REFCLKN_0[0]
+p:DBG_REFCLKN_0[1]
+p:DBG_REFCLKN_0[2]
+p:DBG_REFCLKN_0[3]
+p:DBG_REFCLKP_0[0]
+p:DBG_REFCLKP_0[1]
+p:DBG_REFCLKP_0[2]
+p:DBG_REFCLKP_0[3]
+p:DBG_RXN[0]
+p:DBG_RXN[1]
+p:DBG_RXN[2]
+p:DBG_RXN[3]
+p:DBG_RXN[4]
+p:DBG_RXN[5]
+p:DBG_RXN[6]
+p:DBG_RXN[7]
+p:DBG_RXP[0]
+p:DBG_RXP[1]
+p:DBG_RXP[2]
+p:DBG_RXP[3]
+p:DBG_RXP[4]
+p:DBG_RXP[5]
+p:DBG_RXP[6]
+p:DBG_RXP[7]
+p:DBG_TXN[0]
+p:DBG_TXN[1]
+p:DBG_TXN[2]
+p:DBG_TXN[3]
+p:DBG_TXN[4]
+p:DBG_TXN[5]
+p:DBG_TXN[6]
+p:DBG_TXN[7]
+p:DBG_TXP[0]
+p:DBG_TXP[1]
+p:DBG_TXP[2]
+p:DBG_TXP[3]
+p:DBG_TXP[4]
+p:DBG_TXP[5]
+p:DBG_TXP[6]
+p:DBG_TXP[7]
+p:DUMMY_GSR_PORT
+p:DUMMY_PORT
+p:GT1_REFCLK_N
+p:GT1_REFCLK_P
+p:GT1_RXN[0]
+p:GT1_RXN[1]
+p:GT1_RXN[2]
+p:GT1_RXN[3]
+p:GT1_RXP[0]
+p:GT1_RXP[1]
+p:GT1_RXP[2]
+p:GT1_RXP[3]
+p:GT1_TXN[0]
+p:GT1_TXN[1]
+p:GT1_TXN[2]
+p:GT1_TXN[3]
+p:GT1_TXP[0]
+p:GT1_TXP[1]
+p:GT1_TXP[2]
+p:GT1_TXP[3]
+p:MEMREADEX
+p:MEMREADMEM
+p:MEMWRITEMEM
+p:MNGLINK_RX
+p:MNGLINK_TX
+p:RD2MEM_3[3]
+p:RD2MEM_5[5]
+p:RD2MEM_12[12]
+p:RD2MEM_15[15]
+p:RD2MEM_25[25]
+p:RD2MEM_27[27]
+p:RD2MEM_35[35]
+p:RD2MEM_40[40]
+p:RD2MEM_47[47]
+p:RD2MEM_49[49]
+p:RD2MEM_60[60]
+p:RD2MEM_63[63]
+p:REF_CLK_N
+p:REF_CLK_P
+p:REF_RESET
+p:REGWRITEMEM
+p:REGWRITEWB_0
+p:UMR3_SIB_LINK_IN[0]
+p:UMR3_SIB_LINK_IN[1]
+p:UMR3_SIB_LINK_OUT[0]
+p:UMR3_SIB_LINK_OUT[1]
+p:WREX[0]
+p:WREX[1]
+p:WREX[2]
+p:WREX[3]
+p:WRITEDATAWB[0]
+p:WRITEDATAWB[1]
+p:WRITEDATAWB[2]
+p:WRITEDATAWB[3]
+p:WRITEDATAWB[4]
+p:WRITEDATAWB[5]
+p:WRITEDATAWB[6]
+p:WRITEDATAWB[7]
+p:WRITEDATAWB[8]
+p:WRITEDATAWB[9]
+p:WRITEDATAWB[10]
+p:WRITEDATAWB[11]
+p:WRITEDATAWB[12]
+p:WRITEDATAWB[13]
+p:WRITEDATAWB[14]
+p:WRITEDATAWB[15]
+p:WRITEDATAWB[16]
+p:WRITEDATAWB[17]
+p:WRITEDATAWB[18]
+p:WRITEDATAWB[19]
+p:WRITEDATAWB[20]
+p:WRITEDATAWB[21]
+p:WRITEDATAWB[22]
+p:WRITEDATAWB[23]
+p:WRITEDATAWB[24]
+p:WRITEDATAWB[25]
+p:WRITEDATAWB[26]
+p:WRITEDATAWB[27]
+p:WRITEDATAWB[28]
+p:WRITEDATAWB[29]
+p:WRITEDATAWB[30]
+p:WRITEDATAWB[31]
+p:WRITEDATAWB[32]
+p:WRITEDATAWB[33]
+p:WRITEDATAWB[34]
+p:WRITEDATAWB[35]
+p:WRITEDATAWB[36]
+p:WRITEDATAWB[37]
+p:WRITEDATAWB[38]
+p:WRITEDATAWB[39]
+p:WRITEDATAWB[40]
+p:WRITEDATAWB[41]
+p:WRITEDATAWB[42]
+p:WRITEDATAWB[43]
+p:WRITEDATAWB[44]
+p:WRITEDATAWB[45]
+p:WRITEDATAWB[46]
+p:WRITEDATAWB[47]
+p:WRITEDATAWB[48]
+p:WRITEDATAWB[49]
+p:WRITEDATAWB[50]
+p:WRITEDATAWB[51]
+p:WRITEDATAWB[52]
+p:WRITEDATAWB[53]
+p:WRITEDATAWB[54]
+p:WRITEDATAWB[55]
+p:WRITEDATAWB[56]
+p:WRITEDATAWB[57]
+p:WRITEDATAWB[58]
+p:WRITEDATAWB[59]
+p:WRITEDATAWB[60]
+p:WRITEDATAWB[61]
+p:WRITEDATAWB[62]
+p:WRITEDATAWB[63]
+p:WRMEM[0]
+p:WRMEM[1]
+p:WRMEM[2]
+p:WRMEM[3]
+p:WRMEM[4]
+p:WRWB[0]
+p:WRWB[1]
+p:WRWB[2]
+p:WRWB[3]
+p:WRWB[4]
+p:cpm_r_HSTDM_4_FB1_B2_A_2
+p:cpm_r_HSTDM_4_FB1_B2_A_3
+p:cpm_r_HSTDM_4_FB1_B2_A_4
+p:cpm_r_HSTDM_4_FB1_B2_A_5
+p:cpm_r_HSTDM_4_FB1_B2_A_6
+p:cpm_r_HSTDM_4_FB1_B2_A_7
+p:cpm_r_HSTDM_4_FB1_B2_A_8
+p:cpm_r_HSTDM_4_FB1_B2_A_9
+p:cpm_r_HSTDM_4_FB1_B2_A_10
+p:cpm_r_HSTDM_4_FB1_B2_A_11
+p:cpm_r_HSTDM_4_FB1_B2_B_2
+p:cpm_r_HSTDM_4_FB1_B2_B_3
+p:cpm_r_HSTDM_4_FB1_B2_B_4
+p:cpm_r_HSTDM_4_FB1_B2_B_5
+p:cpm_r_HSTDM_4_FB1_B2_B_6
+p:cpm_r_HSTDM_4_FB1_B2_B_7
+p:cpm_r_HSTDM_4_FB1_B2_B_8
+p:cpm_r_HSTDM_4_FB1_B2_B_9
+p:cpm_r_HSTDM_4_FB1_B2_B_10
+p:cpm_r_HSTDM_4_FB1_B2_B_11
+p:cpm_r_HSTDM_4_FB1_B2_C_0
+p:cpm_r_HSTDM_4_FB1_B2_C_1
+p:cpm_r_HSTDM_4_FB1_B2_C_4
+p:cpm_r_HSTDM_4_FB1_B2_C_5
+p:cpm_r_HSTDM_4_FB1_B2_C_6
+p:cpm_r_HSTDM_4_FB1_B2_C_7
+p:cpm_r_HSTDM_4_FB1_B2_C_8
+p:cpm_r_HSTDM_4_FB1_B2_C_9
+p:cpm_r_HSTDM_4_FB1_B2_C_10
+p:cpm_r_HSTDM_4_FB1_B2_C_11
+p:cpm_r_HSTDM_4_FB1_B2_D_0
+p:cpm_r_HSTDM_4_FB1_B2_D_1
+p:cpm_r_HSTDM_4_FB1_B2_D_2
+p:cpm_r_HSTDM_4_FB1_B2_D_3
+p:cpm_r_HSTDM_4_FB1_B2_D_4
+p:cpm_r_HSTDM_4_FB1_B2_D_5
+p:cpm_r_HSTDM_4_FB1_B2_D_6
+p:cpm_r_HSTDM_4_FB1_B2_D_7
+p:cpm_r_HSTDM_4_FB1_B2_D_8
+p:cpm_r_HSTDM_4_FB1_B2_D_9
+p:cpm_r_HSTDM_4_FB1_B2_D_10
+p:cpm_r_HSTDM_4_FB1_B2_D_11
+p:cpm_s_HSTDM_4_FB1_B2_A_0
+p:cpm_s_HSTDM_4_FB1_B2_A_1
+p:cpm_s_HSTDM_4_FB1_C2_C_0
+p:cpm_s_HSTDM_4_FB1_C2_C_1
+p:cpm_s_HSTDM_4_FB1_C2_C_6
+p:cpm_s_HSTDM_4_FB1_C2_D_2
+p:cpm_s_HSTDM_4_FB1_C2_D_3
+p:cpm_s_HSTDM_4_FB1_CI1_N_17
+p:cpm_s_HSTDM_4_FB1_CI1_N_18
+p:cpm_s_HSTDM_4_FB1_CI1_P_17
+p:cpm_s_HSTDM_4_FB1_CI1_P_18
+p:cpm_s_HSTDM_4_FB1_DI3_N_7
+p:cpm_s_HSTDM_4_FB1_DI3_N_8
+p:cpm_s_HSTDM_4_FB1_DI3_P_7
+p:cpm_s_HSTDM_4_FB1_DI3_P_8
+p:pin_BP13
+p:pin_BR13
+p:pin_G39
+p:pin_H31
+p:pin_H39
+p:pin_J31
+p:pin_M49
+p:pin_N50
+p:pin_P50
+
+
+Ports without properties
+************************
+
+p:DBG_REFCLKN_0[0] Missing IO Standard attribute
+p:DBG_REFCLKN_0[1] Missing IO Standard attribute
+p:DBG_REFCLKN_0[2] Missing IO Standard attribute
+p:DBG_REFCLKN_0[3] Missing IO Standard attribute
+p:DBG_REFCLKP_0[0] Missing IO Standard attribute
+p:DBG_REFCLKP_0[1] Missing IO Standard attribute
+p:DBG_REFCLKP_0[2] Missing IO Standard attribute
+p:DBG_REFCLKP_0[3] Missing IO Standard attribute
+p:DBG_RXN[0] Missing IO Standard attribute
+p:DBG_RXN[1] Missing IO Standard attribute
+p:DBG_RXN[2] Missing IO Standard attribute
+p:DBG_RXN[3] Missing IO Standard attribute
+p:DBG_RXN[4] Missing IO Standard attribute
+p:DBG_RXN[5] Missing IO Standard attribute
+p:DBG_RXN[6] Missing IO Standard attribute
+p:DBG_RXN[7] Missing IO Standard attribute
+p:DBG_RXP[0] Missing IO Standard attribute
+p:DBG_RXP[1] Missing IO Standard attribute
+p:DBG_RXP[2] Missing IO Standard attribute
+p:DBG_RXP[3] Missing IO Standard attribute
+p:DBG_RXP[4] Missing IO Standard attribute
+p:DBG_RXP[5] Missing IO Standard attribute
+p:DBG_RXP[6] Missing IO Standard attribute
+p:DBG_RXP[7] Missing IO Standard attribute
+p:DBG_TXN[0] Missing IO Standard attribute
+p:DBG_TXN[1] Missing IO Standard attribute
+p:DBG_TXN[2] Missing IO Standard attribute
+p:DBG_TXN[3] Missing IO Standard attribute
+p:DBG_TXN[4] Missing IO Standard attribute
+p:DBG_TXN[5] Missing IO Standard attribute
+p:DBG_TXN[6] Missing IO Standard attribute
+p:DBG_TXN[7] Missing IO Standard attribute
+p:DBG_TXP[0] Missing IO Standard attribute
+p:DBG_TXP[1] Missing IO Standard attribute
+p:DBG_TXP[2] Missing IO Standard attribute
+p:DBG_TXP[3] Missing IO Standard attribute
+p:DBG_TXP[4] Missing IO Standard attribute
+p:DBG_TXP[5] Missing IO Standard attribute
+p:DBG_TXP[6] Missing IO Standard attribute
+p:DBG_TXP[7] Missing IO Standard attribute
+p:GT1_REFCLK_N Missing IO Standard attribute
+p:GT1_REFCLK_P Missing IO Standard attribute
+p:GT1_RXN[0] Missing IO Standard attribute
+p:GT1_RXN[1] Missing IO Standard attribute
+p:GT1_RXN[2] Missing IO Standard attribute
+p:GT1_RXN[3] Missing IO Standard attribute
+p:GT1_RXP[0] Missing IO Standard attribute
+p:GT1_RXP[1] Missing IO Standard attribute
+p:GT1_RXP[2] Missing IO Standard attribute
+p:GT1_RXP[3] Missing IO Standard attribute
+p:GT1_TXN[0] Missing IO Standard attribute
+p:GT1_TXN[1] Missing IO Standard attribute
+p:GT1_TXN[2] Missing IO Standard attribute
+p:GT1_TXN[3] Missing IO Standard attribute
+p:GT1_TXP[0] Missing IO Standard attribute
+p:GT1_TXP[1] Missing IO Standard attribute
+p:GT1_TXP[2] Missing IO Standard attribute
+p:GT1_TXP[3] Missing IO Standard attribute
+p:REF_CLK_N Missing IO Standard attribute
+p:REF_CLK_P Missing IO Standard attribute
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Identical constraints
+**********************************************
+
+@W:"/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_timing.fdc":8:0:8:0|	There are 5 identical constraints define_current_design define_current_design 
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

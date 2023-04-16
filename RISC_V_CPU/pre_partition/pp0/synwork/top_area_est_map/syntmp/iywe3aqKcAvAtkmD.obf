@@ -1,0 +1,79 @@
+@N: CD630 :"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/synwork/top_area_est_map/syntmp/gentmp2058xOhurI":4:7:4:9|Synthesizing work.top.gen.
+@N: CD630 :"syng0dyTUgK":123:7:123:13|Synthesizing work.ram_r_w.select_ram.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@N: CD630 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim.vhd":23029:10:23029:18|Synthesizing unisim.ram128x1d.syn_black_box.
+Post processing for unisim.ram128x1d.syn_black_box
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"syng0dyTUgK":1848:12:1848:15|Port spo of entity unisim.ram128x1d is unconnected. If a port needs to remain unconnected, use the keyword open.
+Post processing for work.ram_r_w.select_ram
+Running optimization stage 1 on RAM_R_W .......
+Finished optimization stage 1 on RAM_R_W (CPU Time 0h:00m:00s, Memory Used current: 192MB peak: 192MB)
+Post processing for work.top.gen
+Running optimization stage 1 on top .......
+Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 192MB peak: 192MB)
+Running optimization stage 2 on RAM_R_W .......
+@N: CL159 :"syng0dyTUgK":141:2:141:5|Input OCLK is unused.
+Finished optimization stage 2 on RAM_R_W (CPU Time 0h:00m:00s, Memory Used current: 192MB peak: 192MB)
+Running optimization stage 2 on top .......
+Finished optimization stage 2 on top (CPU Time 0h:00m:00s, Memory Used current: 192MB peak: 192MB)

@@ -1,0 +1,102 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2021.1_AR76722 (lin64) Build 3428450 Thu Jan 13 11:43:02 MST 2022
+| Date              : Sun Apr  9 23:47:54 2023
+| Host              : ws35 running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command           : report_clock_interaction -file FB1_uD_clock_interaction.rpt
+| Design            : FB1_uD
+| Device            : xcvu19p-fsva3824
+| Speed File        : -1  PRODUCTION 1.31 12-02-2020
+| Temperature Grade : E
+-------------------------------------------------------------------------------------------------
+
+Clock Interaction Report
+
+Clock Interaction Table
+-----------------------
+
+                                                                                              WNS                            TNS Failing  TNS Total    WNS Path         Clock-Pair           Inter-Clock              
+From Clock                                     To Clock                                       Clock Edges  WNS(ns)  TNS(ns)    Endpoints    Endpoints  Requirement(ns)  Classification       Constraints              
+---------------------------------------------  ---------------------------------------------  -----------  -------  -------  -----------  -----------  ---------------  -------------------  -----------------------  
+GTYE4_CHANNEL_TXOUTCLKPCS[0]                   GTYE4_CHANNEL_TXOUTCLKPCS[0]                   rise - rise     4.02     0.00            0           34             5.33  Clean                Timed                    
+GTYE4_CHANNEL_TXOUTCLKPCS[1]                   GTYE4_CHANNEL_TXOUTCLKPCS[1]                   rise - rise     3.82     0.00            0           34             5.33  Clean                Timed                    
+GTYE4_CHANNEL_TXOUTCLKPCS[2]                   GTYE4_CHANNEL_TXOUTCLKPCS[2]                   rise - rise     4.29     0.00            0           34             5.33  Clean                Timed                    
+GTYE4_CHANNEL_TXOUTCLKPCS[3]                   GTYE4_CHANNEL_TXOUTCLKPCS[3]                   rise - rise     4.05     0.00            0           34             5.33  Clean                Timed                    
+afpga_lock_clk                                 afpga_lock_clk                                 rise - rise   998.95     0.00            0            7          1000.00  Clean                Timed                    
+afpga_lock_clk                                 clk                                                                                     0            8                   Ignored              Asynchronous Groups      
+clk                                            System_FB1_uD                                  rise - rise   481.66     0.00            0            1           500.00  Virtual Clock        Timed                    
+clk                                            clk                                            rise - rise   239.87     0.00            0          443           247.40  Clean                Timed                    
+gt1_refclk                                     gt1_refclk                                     rise - rise     9.41     0.00            0            3            10.00  Clean                Timed                    
+gt1_refclk                                     haps_infra_clk_200                                                                      0            1                   Ignored              Asynchronous Groups      
+haps_infra_clk_10                              haps_infra_clk_10                              rise - rise    95.42     0.00            0         3462           100.00  Clean                Timed                    
+haps_infra_clk_10                              haps_infra_clk_50_2_sync                                                                0          113                   Ignored              Asynchronous Groups      
+haps_infra_clk_10                              haps_infra_clk_umr3                                                                     0           20                   Ignored              Asynchronous Groups      
+haps_infra_clk_10                              txoutclk_out[2]                                                                         0            3                   Ignored              Asynchronous Groups      
+haps_infra_clk_100                             haps_infra_clk_100                             rise - rise     2.85     0.00            0        11280            10.00  Clean                Partial False Path       
+haps_infra_clk_100                             haps_infra_clk_umr3                                                                     0           81                   Ignored              Asynchronous Groups      
+haps_infra_clk_100                             hstdm_rxclk_1200_bank36_block10_div2                                                    0           25                   Ignored              Asynchronous Groups      
+haps_infra_clk_100                             hstdm_rxclk_1200_bank36_block10_div4                                                    0            7                   Ignored              Asynchronous Groups      
+haps_infra_clk_100                             hstdm_rxclk_1200_bank69_block8_div2                                                     0           20                   Ignored              Asynchronous Groups      
+haps_infra_clk_100                             hstdm_rxclk_1200_bank69_block8_div4                                                     0            6                   Ignored              Asynchronous Groups      
+haps_infra_clk_100                             hstdm_rxclk_1200_bank71_block9_div2                                                     0           20                   Ignored              Asynchronous Groups      
+haps_infra_clk_100                             hstdm_rxclk_1200_bank71_block9_div4                                                     0            6                   Ignored              Asynchronous Groups      
+haps_infra_clk_100                             ref_clk_p                                      rise - rise     5.19     0.00            0            1            10.00  Clean                Timed                    
+haps_infra_clk_200                             haps_infra_clk_10                                                                       0           32                   Ignored              Asynchronous Groups      
+haps_infra_clk_200                             haps_infra_clk_200                             rise - rise     2.61     0.00            0          378             5.00  Clean                Timed                    
+haps_infra_clk_50_2_sync                       haps_infra_clk_10                                                                       0          142                   Ignored              Asynchronous Groups      
+haps_infra_clk_50_2_sync                       haps_infra_clk_100                                                                      0            5                   Ignored              Asynchronous Groups      
+haps_infra_clk_50_2_sync                       haps_infra_clk_200                                                                      0            1                   Ignored              Asynchronous Groups      
+haps_infra_clk_50_2_sync                       haps_infra_clk_50_2_sync                       rise - rise    17.23     0.00            0         1163            20.00  Clean                Partial False Path       
+haps_infra_clk_50_2_sync                       rxoutclk_out[2]                                                                         0            9                   Ignored              Asynchronous Groups      
+haps_infra_clk_50_2_sync                       txoutclk_out[2]                                                                         0           14                   Ignored              Asynchronous Groups      
+haps_infra_clk_umr3                            haps_infra_clk_10                                                                       0           24                   Ignored              Asynchronous Groups      
+haps_infra_clk_umr3                            haps_infra_clk_100                                                                      0          102                   Ignored              Asynchronous Groups      
+haps_infra_clk_umr3                            haps_infra_clk_50_2_sync                                                                0            5                   Ignored              Asynchronous Groups      
+haps_infra_clk_umr3                            haps_infra_clk_umr3                            rise - rise     3.16     0.00            0        50232             8.00  Clean                Partial False Path       
+haps_infra_clk_umr3                            hstdm_rxclk_1200_bank36_block10_div2                                                    0           81                   Ignored              Asynchronous Groups      
+haps_infra_clk_umr3                            hstdm_rxclk_1200_bank36_block10_div4                                                    0           28                   Ignored              Asynchronous Groups      
+haps_infra_clk_umr3                            hstdm_rxclk_1200_bank69_block8_div2                                                     0           65                   Ignored              Asynchronous Groups      
+haps_infra_clk_umr3                            hstdm_rxclk_1200_bank69_block8_div4                                                     0           27                   Ignored              Asynchronous Groups      
+haps_infra_clk_umr3                            hstdm_rxclk_1200_bank71_block9_div2                                                     0           65                   Ignored              Asynchronous Groups      
+haps_infra_clk_umr3                            hstdm_rxclk_1200_bank71_block9_div4                                                     0           27                   Ignored              Asynchronous Groups      
+haps_infra_clk_umr3                            txoutclk_out[2]                                                                         0           27                   Ignored              Asynchronous Groups      
+hstdm_rxclk_1200_bank36_block10_div2           clk                                            rise - rise   232.60     0.00            0           20           237.60  Ignored              Max Delay Datapath Only  
+hstdm_rxclk_1200_bank36_block10_div2           haps_infra_clk_100                                                                      0            4                   Ignored              Asynchronous Groups      
+hstdm_rxclk_1200_bank36_block10_div2           haps_infra_clk_umr3                                                                     0            3                   Ignored              Asynchronous Groups      
+hstdm_rxclk_1200_bank36_block10_div2           hstdm_rxclk_1200_bank36_block10_div2           rise - rise     1.03     0.00            0          410             3.33  Clean                Timed                    
+hstdm_rxclk_1200_bank36_block10_div2           hstdm_rxclk_1200_bank36_block10_div4           rise - rise     1.63     0.00            0           46             3.33  Clean                Partial False Path       
+hstdm_rxclk_1200_bank36_block10_div4           haps_infra_clk_100                                                                      0           53                   Ignored              Asynchronous Groups      
+hstdm_rxclk_1200_bank36_block10_div4           haps_infra_clk_umr3                                                                     0            4                   Ignored              Asynchronous Groups      
+hstdm_rxclk_1200_bank36_block10_div4           hstdm_rxclk_1200_bank36_block10_div2           rise - rise     2.16     0.00            0           25             3.33  Clean                Partial False Path       
+hstdm_rxclk_1200_bank36_block10_div4           hstdm_rxclk_1200_bank36_block10_div4           rise - rise     3.85     0.00            0          805             6.67  Clean                Partial False Path       
+hstdm_rxclk_1200_bank69_block8_div2            clk                                            rise - rise   234.30     0.00            0           16           238.20  Ignored              Max Delay Datapath Only  
+hstdm_rxclk_1200_bank69_block8_div2            haps_infra_clk_100                                                                      0            4                   Ignored              Asynchronous Groups      
+hstdm_rxclk_1200_bank69_block8_div2            haps_infra_clk_umr3                                                                     0            3                   Ignored              Asynchronous Groups      
+hstdm_rxclk_1200_bank69_block8_div2            hstdm_rxclk_1200_bank69_block8_div2            rise - rise     1.09     0.00            0          328             3.33  Clean                Timed                    
+hstdm_rxclk_1200_bank69_block8_div2            hstdm_rxclk_1200_bank69_block8_div4            rise - rise     0.95     0.00            0           37             3.33  Clean                Partial False Path       
+hstdm_rxclk_1200_bank69_block8_div4            haps_infra_clk_100                                                                      0           53                   Ignored              Asynchronous Groups      
+hstdm_rxclk_1200_bank69_block8_div4            haps_infra_clk_umr3                                                                     0            4                   Ignored              Asynchronous Groups      
+hstdm_rxclk_1200_bank69_block8_div4            hstdm_rxclk_1200_bank69_block8_div2            rise - rise     2.17     0.00            0           20             3.33  Clean                Partial False Path       
+hstdm_rxclk_1200_bank69_block8_div4            hstdm_rxclk_1200_bank69_block8_div4            rise - rise     3.97     0.00            0          781             6.67  Clean                Partial False Path       
+hstdm_rxclk_1200_bank71_block9_div2            clk                                            rise - rise   233.64     0.00            0           16           237.70  Ignored              Max Delay Datapath Only  
+hstdm_rxclk_1200_bank71_block9_div2            haps_infra_clk_100                                                                      0            4                   Ignored              Asynchronous Groups      
+hstdm_rxclk_1200_bank71_block9_div2            haps_infra_clk_umr3                                                                     0            3                   Ignored              Asynchronous Groups      
+hstdm_rxclk_1200_bank71_block9_div2            hstdm_rxclk_1200_bank71_block9_div2            rise - rise     1.19     0.00            0          328             3.33  Clean                Timed                    
+hstdm_rxclk_1200_bank71_block9_div2            hstdm_rxclk_1200_bank71_block9_div4            rise - rise     0.84     0.00            0           37             3.33  Clean                Partial False Path       
+hstdm_rxclk_1200_bank71_block9_div4            haps_infra_clk_100                                                                      0           53                   Ignored              Asynchronous Groups      
+hstdm_rxclk_1200_bank71_block9_div4            haps_infra_clk_umr3                                                                     0            4                   Ignored              Asynchronous Groups      
+hstdm_rxclk_1200_bank71_block9_div4            hstdm_rxclk_1200_bank71_block9_div2            rise - rise     2.21     0.00            0           20             3.33  Clean                Partial False Path       
+hstdm_rxclk_1200_bank71_block9_div4            hstdm_rxclk_1200_bank71_block9_div4            rise - rise     3.53     0.00            0          780             6.67  Clean                Partial False Path       
+ref_clk_p                                      afpga_lock_clk                                                                          0            1                   Ignored              Asynchronous Groups      
+ref_clk_p                                      haps_infra_clk_100                             rise - rise     4.62     0.00            0            1            10.00  Clean                Timed                    
+rxoutclk_out[2]                                haps_infra_clk_50_2_sync                                                                0           11                   Ignored              Asynchronous Groups      
+rxoutclk_out[2]                                rxoutclk_out[2]                                rise - rise     2.14     0.00            0         5403             5.33  Clean                Partial False Path       
+rxoutclk_out[2]                                txoutclk_out[2]                                                                         0           22                   Ignored              False Path               
+txoutclk_out[2]                                haps_infra_clk_10                                                                       0          240                   Ignored              Asynchronous Groups      
+txoutclk_out[2]                                haps_infra_clk_200                                                                      0            2                   Ignored              Asynchronous Groups      
+txoutclk_out[2]                                haps_infra_clk_50_2_sync                                                                0           10                   Ignored              Asynchronous Groups      
+txoutclk_out[2]                                haps_infra_clk_umr3                                                                     0           27                   Ignored              Asynchronous Groups      
+txoutclk_out[2]                                rxoutclk_out[2]                                                                         0           16                   Ignored              False Path               
+txoutclk_out[2]                                txoutclk_out[2]                                rise - rise     1.83     0.00            0        11657             5.33  Clean                Partial False Path       
+
+

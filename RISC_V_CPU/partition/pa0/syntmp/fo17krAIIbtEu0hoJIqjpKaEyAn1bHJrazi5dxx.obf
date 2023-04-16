@@ -1,0 +1,14 @@
+/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/bin/aptn  -hpcf  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/ptn_opt.pcf  -haps_target  HAPS-100  -timingRpt  1  -srpBuild  -clksrs  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/dump_clock_tree.srs  -relpath  -srs  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/synwork/top_part.srs  -partitionOnly   -part XCVU19P-FSVA3824-1-e    -board  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/targetsystem.srs  -aptn_ts  1  -est  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/top.est  -hpcf  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/hapsip_assign.pcf  -pcf  /home/u108/u108061217/RISC-V-pipeline-CPU/partition.pcf  -log  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/partition.log  -out  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/top  -oprops  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/partition/pa0/syntmp/auto_partitioner_props.txt  -jobname  "auto_partitioner" 
+relcom:/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/bin/aptn -hpcf ../ptn_opt.pcf -haps_target HAPS-100 -timingRpt 1 -srpBuild -clksrs ../dump_clock_tree.srs -relpath -srs ../synwork/top_part.srs -partitionOnly -part XCVU19P-FSVA3824-1-e -board ../targetsystem.srs -aptn_ts 1 -est ../top.est -hpcf ../hapsip_assign.pcf -pcf ../../../../partition.pcf -log ../partition.log -out ../top -oprops auto_partitioner_props.txt -jobname "auto_partitioner"
+rc:0 success:1 runtime:20
+file:../ptn_opt.pcf|io:i|time:1681051182|size:196|exec:0|csum:
+file:../dump_clock_tree.srs|io:i|time:1681051129|size:11977|exec:0|csum:
+file:../synwork/top_part.srs|io:i|time:1681051170|size:55294|exec:0|csum:
+file:../targetsystem.srs|io:i|time:1681051104|size:326563|exec:0|csum:
+file:../top.est|io:i|time:1681051178|size:3860|exec:0|csum:
+file:../hapsip_assign.pcf|io:i|time:1681051169|size:548|exec:0|csum:
+file:../../../../partition.pcf|io:i|time:1681038822|size:708|exec:0|csum:
+file:../partition.log|io:o|time:1681051202|size:54586|exec:0|csum:
+file:auto_partitioner_props.txt|io:o|time:1681051202|size:57|exec:0|csum:
+file:/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/linux_a_64/aptn|io:i|time:1649478651|size:48484784|exec:1|csum:
+file:/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/bin/aptn|io:i|time:1649478382|size:347|exec:1|csum:

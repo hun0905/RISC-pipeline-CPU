@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> <span style="font-family: courier, monospace; font-weight: bold; font-size:24px">
+<a name="TOP">Post compilation optimization Log</a></span></head><body style="font-family: courier,monospace; line-height: 1.0; margin-top: 0em; margin-bottom: 0em; font-size:14px; white-space:pre;">
+<span style="color:red; font-family: courier, monospace; font-size:16px">1 Warnings: <a href="#W0"> First Warning</a></span>
+<table></table><span># Sun Apr  9 22:42:20 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/FB1_uD_srs/|c0
+Synopsys Xilinx Technology Mapper, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 238MB peak: 238MB)
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N0"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MF915">MF915</a> Option synthesis_strategy=advanced is enabled. </span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N1"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MF248">MF248</a> Running in 64-bit mode.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N2"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MF666">MF666</a> Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)</span>
+<span>Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+</span><span style="color:red;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="W0"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=FX1020">FX1020</a>Warning:  A simulation mismatch is possible. Ignoring vendor library default initial value on registers, because the default value is not set. To enable vendor library default initial values, add the command "set_option -support_implicit_init_netlist 1" to the project file.</span>
+<span>Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Target platform is HAPS-100, running ProtoCompiler.
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N3"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MF990">MF990</a> On Demand Uniquification flow enabled </span>
+<span>Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+NConnInternalConnection caching is on
+
+Starting functional verification of DisTri Cleanupfolded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Started DisTri Cleanup folded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Starting disabled tri cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Finished disabled tri cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Finished DisTri Cleanup folded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Finished functional verification of DisTri Cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Starting bidir resolution (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Finished bidir resolution (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Start optimization across hierarchy (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Finished optimization across hierarchy (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Starting functional verification of DisTri Cleanupfolded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Started DisTri Cleanup folded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Starting disabled tri cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Finished disabled tri cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Finished DisTri Cleanup folded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Finished functional verification of DisTri Cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+No subsystems found. Skipping subsystem constant report.
+
+Start clock netlist generation (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+ODU CTE is ON (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+ODU CTE: doing uniquification (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+ODU CTE: done uniquification (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Deleting unused ports (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Deleted 14 (52) unused ports across 4 views (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+ODU CTE: removed non-clocks (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+
+Finished clock netlist generation (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+Finished Prepass Opt Phase.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 784MB peak: 784MB)
+
+Process took 0h:00m:11s realtime, 0h:00m:11s cputime
+# Sun Apr  9 22:42:32 2023
+
+###########################################################]
+</body>
+</html>

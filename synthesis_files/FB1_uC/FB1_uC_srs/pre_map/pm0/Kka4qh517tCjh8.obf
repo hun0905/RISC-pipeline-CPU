@@ -1,0 +1,938 @@
+#Build: HAPS (R) ProtoCompiler 100 R-2020.12-SP1-1, Build 198R, Apr  8 2022
+#install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+#OS: Linux 
+#Hostname: ws35
+
+# Sun Apr  9 22:42:17 2023
+
+#Implementation: c0
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 8388608 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs/|c0
+Synopsys HDL Compiler, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:14, @4216327
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 8388608 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs/|c0
+Synopsys Synopsys Netlist Linker, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:14, @4216327
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 145MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:42:18 2023
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs/compile/c0/synwork/FB1_uC_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 56MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:42:18 2023
+
+###########################################################]
+Global Optimizer Report
+
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 8388608 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs/|c0
+Synopsys Synopsys Netlist Linker, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:14, @4216327
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 146MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:42:20 2023
+
+###########################################################]
+# Sun Apr  9 22:42:20 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs/|c0
+Synopsys Xilinx Technology Mapper, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 238MB peak: 238MB)
+
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+@W: FX1020 |A simulation mismatch is possible. Ignoring vendor library default initial value on registers, because the default value is not set. To enable vendor library default initial values, add the command "set_option -support_implicit_init_netlist 1" to the project file.
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Target platform is HAPS-100, running ProtoCompiler.
+
+@N: MF990 |On Demand Uniquification flow enabled 
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+NConnInternalConnection caching is on
+
+Starting functional verification of DisTri Cleanupfolded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+
+Started DisTri Cleanup folded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+
+Starting disabled tri cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+
+Finished disabled tri cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+
+Finished DisTri Cleanup folded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+
+Finished functional verification of DisTri Cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+
+Starting bidir resolution (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+
+Finished bidir resolution (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+
+Start optimization across hierarchy (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+@N: MO111 :|Tristate driver pin_BR13_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_BR13 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver pin_BP13_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_BP13 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver pin_J31_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_J31 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver pin_H31_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_H31 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver pin_H39_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_H39 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver pin_G39_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_G39 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver pin_N50_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_N50 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver pin_P50_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_P50 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.
+
+Finished optimization across hierarchy (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+
+Starting functional verification of DisTri Cleanupfolded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+
+Started DisTri Cleanup folded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+
+Starting disabled tri cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+
+Finished disabled tri cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+
+Finished DisTri Cleanup folded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+
+Finished functional verification of DisTri Cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 785MB peak: 785MB)
+
+No subsystems found. Skipping subsystem constant report.
+
+Start clock netlist generation (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+ODU CTE is ON (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+ODU CTE: doing uniquification (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+ODU CTE: done uniquification (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Deleting unused ports (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Deleted 18 (80) unused ports across 8 views (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+ODU CTE: removed non-clocks (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Finished clock netlist generation (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+Finished Prepass Opt Phase.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+Process took 0h:00m:11s realtime, 0h:00m:11s cputime
+# Sun Apr  9 22:42:32 2023
+
+###########################################################]
+Premap Report
+
+# Sun Apr  9 22:42:33 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs/|pm0
+Synopsys Xilinx Technology Pre-mapping, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 238MB peak: 238MB)
+
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/common_files/srs_cons_var.fdc
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/common_files/tdm_cons_var.fdc
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_pinloc.fdc
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_iostd.fdc
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_attr.fdc
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_timing.fdc
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/common_files/clockgen_cons.fdc
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_haps_timing.fdc
+See report FB1_uC_scck.rpt@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 258MB peak: 258MB)
+
+@W: FX1020 |A simulation mismatch is possible. Ignoring vendor library default initial value on registers, because the default value is not set. To enable vendor library default initial values, add the command "set_option -support_implicit_init_netlist 1" to the project file.
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 258MB peak: 258MB)
+
+@W: FX161 :|Ignoring improper width location constraint CC43 
+@W: FX161 :|Ignoring improper width location constraint BV55 
+@W: FX161 :|Ignoring improper width location constraint BV34 
+@W: FX161 :|Ignoring improper width location constraint BJ47 
+@W: FX161 :|Ignoring improper width location constraint BJ46 
+@W: FX161 :|Ignoring improper width location constraint CB43 
+@W: FX161 :|Ignoring improper width location constraint BV30 
+@W: FX161 :|Ignoring improper width location constraint BV31 
+@W: FX161 :|Ignoring improper width location constraint CB42 
+@W: FX161 :|Ignoring improper width location constraint BU53 
+@W: FX161 :|Ignoring improper width location constraint CC45 
+@W: FX161 :|Ignoring improper width location constraint BL42 
+@W: FX161 :|Ignoring improper width location constraint CB44 
+@W: FX161 :|Ignoring improper width location constraint CA44 
+@W: FX161 :|Ignoring improper width location constraint BV54 
+@W: FX161 :|Ignoring improper width location constraint BY44 
+@W: FX161 :|Ignoring improper width location constraint BT45 
+@W: FX161 :|Ignoring improper width location constraint BY33 
+@W: FX161 :|Ignoring improper width location constraint BV53 
+@W: FX161 :|Ignoring improper width location constraint BT44 
+@W: FX161 :|Ignoring improper width location constraint BR44 
+@W: FX161 :|Ignoring improper width location constraint BK42 
+@W: FX161 :|Ignoring improper width location constraint BK45 
+@W: FX161 :|Ignoring improper width location constraint BJ45 
+@W: FX161 :|Ignoring improper width location constraint BK43 
+@W: FX161 :|Ignoring improper width location constraint BJ43 
+@W: FX161 :|Ignoring improper width location constraint BH41 
+@W: FX161 :|Ignoring improper width location constraint BU54 
+@W: FX161 :|Ignoring improper width location constraint BY34 
+@W: FX161 :|Ignoring improper width location constraint BT54 
+@W: FX161 :|Ignoring improper width location constraint BV44 
+@W: FX161 :|Ignoring improper width location constraint BU52 
+@W: FX161 :|Ignoring improper width location constraint BU51 
+@W: FX161 :|Ignoring improper width location constraint BW30 
+@W: FX161 :|Ignoring improper width location constraint BU44 
+@W: FX161 :|Ignoring improper width location constraint BW31 
+@W: FX161 :|Ignoring improper width location constraint BW53 
+@W: FX161 :|Ignoring improper width location constraint BW32 
+@W: FX161 :|Ignoring improper width location constraint BW52 
+@W: FX161 :|Ignoring improper width location constraint BH44 
+@W: FX161 :|Ignoring improper width location constraint BW33 
+@W: FX161 :|Ignoring improper width location constraint BU42 
+@W: FX161 :|Ignoring improper width location constraint BT42 
+@W: FX161 :|Ignoring improper width location constraint CA30 
+@W: FX161 :|Ignoring improper width location constraint BV46 
+@W: FX161 :|Ignoring improper width location constraint BG44 
+@W: FX161 :|Ignoring improper width location constraint BE43 
+@W: FX161 :|Ignoring improper width location constraint BW50 
+@W: FX161 :|Ignoring improper width location constraint BE42 
+@W: FX161 :|Ignoring improper width location constraint BV45 
+@W: FX161 :|Ignoring improper width location constraint BV43 
+@W: FX161 :|Ignoring improper width location constraint BH43 
+@W: FX161 :|Ignoring improper width location constraint BU43 
+@W: FX161 :|Ignoring improper width location constraint BG43 
+@W: FX161 :|Ignoring improper width location constraint BV50 
+@W: FX161 :|Ignoring improper width location constraint CA31 
+@W: FX161 :|Ignoring improper width location constraint BF44 
+@W: FX161 :|Ignoring improper width location constraint BY55 
+@W: FX161 :|Ignoring improper width location constraint BE44 
+@W: FX161 :|Ignoring improper width location constraint BG42 
+@W: FX161 :|Ignoring improper width location constraint BW55 
+@W: FX161 :|Ignoring improper width location constraint BY43 
+@W: FX161 :|Ignoring improper width location constraint BG41 
+@W: FX161 :|Ignoring improper width location constraint BW43 
+@W: FX161 :|Ignoring improper width location constraint BL44 
+@W: FX161 :|Ignoring improper width location constraint BK44 
+@W: FX161 :|Ignoring improper width location constraint J30 
+@W: FX161 :|Ignoring improper width location constraint G29 
+@W: FX161 :|Ignoring improper width location constraint G27 
+@W: FX161 :|Ignoring improper width location constraint H29 
+@W: FX161 :|Ignoring improper width location constraint F29 
+@W: FX161 :|Ignoring improper width location constraint J28 
+@W: FX161 :|Ignoring improper width location constraint E28 
+@W: FX161 :|Ignoring improper width location constraint H30 
+@W: FX161 :|Ignoring improper width location constraint G28 
+@W: FX161 :|Ignoring improper width location constraint F27 
+@W: FX161 :|Ignoring improper width location constraint H28 
+@W: FX161 :|Ignoring improper width location constraint E29 
+@W: FX161 :|Ignoring improper width location constraint J27 
+@W: FX161 :|Ignoring improper width location constraint E27 
+@W: FX161 :|Ignoring improper width location constraint K28 
+@W: FX161 :|Ignoring improper width location constraint K29 
+@W: FX161 :|Ignoring improper width location constraint E33 
+@W: FX161 :|Ignoring improper width location constraint B33 
+@W: FX161 :|Ignoring improper width location constraint C31 
+@W: FX161 :|Ignoring improper width location constraint D33 
+@W: FX161 :|Ignoring improper width location constraint A32 
+@W: FX161 :|Ignoring improper width location constraint B29 
+@W: FX161 :|Ignoring improper width location constraint E30 
+@W: FX161 :|Ignoring improper width location constraint A30 
+@W: FX161 :|Ignoring improper width location constraint C30 
+@W: FX161 :|Ignoring improper width location constraint J40 
+@W: FX161 :|Ignoring improper width location constraint J37 
+@W: FX161 :|Ignoring improper width location constraint K39 
+@W: FX161 :|Ignoring improper width location constraint H40 
+@W: FX161 :|Ignoring improper width location constraint J38 
+@W: FX161 :|Ignoring improper width location constraint K40 
+@W: FX161 :|Ignoring improper width location constraint F39 
+@W: FX161 :|Ignoring improper width location constraint E37 
+@W: FX161 :|Ignoring improper width location constraint D37 
+
+Only the first 100 messages of id 'FX161' are reported. To see all messages use 'report messages -id FX161' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {FX161} -count unlimited' in the Tcl shell.
+
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 260MB peak: 260MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 262MB peak: 262MB)
+
+
+Target FPGA is on a HAPS-100 board, running ProtoCompiler.
+@N: BN569 |Target FPGA is located at FBx_C (Type HAPS100_4F).  
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[25]
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[26]
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[27]
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[28]
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[29]
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[30]
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[31]
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[32]
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[33]
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[34]
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[35]
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[36]
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[37]
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[38]
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[39]
+@N: Z361 |Setting IO Standard SSTL_12 on port WRITEDATAWB[40]
+@N: Z361 |Setting IO Standard SSTL_12 on port ALUOUTMEM_aptn_s[41]
+@N: Z361 |Setting IO Standard SSTL_12 on port ALUOUTMEM_aptn_s[43]
+@N: Z361 |Setting IO Standard SSTL_12 on port ALUOUTMEM_aptn_s[46]
+@N: Z361 |Setting IO Standard SSTL_12 on port ALUOUTMEM_aptn_s[49]
+@N: Z361 |Setting IO Standard SSTL_12 on port ALUOUTMEM_aptn_s[51]
+@N: Z361 |Setting IO Standard SSTL_12 on port ALUOUTMEM_aptn_s[54]
+@N: Z361 |Setting IO Standard SSTL_12 on port ALUOUTMEM_aptn_s[57]
+@N: Z361 |Setting IO Standard SSTL_12 on port ALUOUTMEM_aptn_s[58]
+@N: Z361 |Setting IO Standard SSTL_12 on port ALUOUTMEM_aptn_s[61]
+@N: Z361 |Setting IO Standard SSTL_12 on port cpm_s_HSTDM_4_FB1_CI1_N_17
+@N: Z361 |Setting IO Standard SSTL_12 on port cpm_s_HSTDM_4_FB1_CI1_N_18
+@N: Z361 |Setting IO Standard SSTL_12 on port pin_G39
+@N: Z361 |Setting IO Standard SSTL_12 on port cpm_s_HSTDM_4_FB1_CI1_P_17
+@N: Z361 |Setting IO Standard SSTL_12 on port cpm_s_HSTDM_4_FB1_CI1_P_18
+@N: Z361 |Setting IO Standard SSTL_12 on port pin_H39
+@N: Z361 |Setting IO Standard SSTL_12 on port pin_H31
+@N: Z361 |Setting IO Standard SSTL_12 on port cpm_s_HSTDM_4_FB1_DI3_N_8
+@N: Z361 |Setting IO Standard SSTL_12 on port cpm_s_HSTDM_4_FB1_DI3_N_7
+@N: Z361 |Setting IO Standard SSTL_12 on port pin_J31
+@N: Z361 |Setting IO Standard SSTL_12 on port cpm_s_HSTDM_4_FB1_DI3_P_8
+@N: Z361 |Setting IO Standard SSTL_12 on port cpm_s_HSTDM_4_FB1_DI3_P_7
+NConnInternalConnection caching is on
+@N: FX493 |Applying initial value "0" on instance aptn_reset_sync_rst_n.
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "0" on instance aptn_reset_sync_rst_n_0.
+@N: FX493 |Applying initial value "0" on instance aptn_reset_sync_rst_n_1.
+@N: FX493 |Applying initial value "0" on instance aptn_reset_sync_rst_n_2.
+@N: FX493 |Applying initial value "0" on instance rst_in_sync1.
+@N: FX493 |Applying initial value "0" on instance rst_in_sync3.
+@N: FX493 |Applying initial value "0" on instance rst_in_meta.
+@N: FX493 |Applying initial value "0" on instance rst_in_out.
+@N: FX493 |Applying initial value "0" on instance rst_in_sync2.
+@N: BN576 |Inserting bsa19_system_ip_wrapper root module 'bsa19_system_ip_wrapper' inside module FB1_uC.
+System Memory report for FB1_uC
+==============================================================
+SLP project checksum             : 0x1ea929ab
+Partition tool version           : R-2020.12-SP1-1 (Apr  8 2022 21:27:16)
+Synthesis tool version           : R-2020.12-SP1-1 (Apr  8 2022 21:27:16)
+FPGA Location                    : FB?_C (Type HAPS100_4F) (board cde order unspecified) 
+System CAPIM address             : 58
+System CAPIM type                : 0x304
+Speed grade                      : -1-e
+Chip ID                          : 2
+
+End System Memory report
+==============================================================
+
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; Memory used current: 1163MB peak: 1163MB)
+
+Pins on view:TraceBuildLib.FB1_uC(verilog_0) marked syn_hstdm_clk_pin    :    syn_hstdm_clk_pin 
+@N: BN567 |HSTDM training will be done during system configuration. 
+
+HSTDM: inserting high speed TDM logic
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_resetn.R1 (in view: VerGenLib.hstdm_controller_0s_1048576s_1s_4s_12s_48s_32s_2s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":326:1:326:6|Removing sequential instance ar_resetn.R0 (in view: VerGenLib.hstdm_controller_0s_1048576s_1s_4s_12s_48s_32s_2s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance reset_gen_inst.reset_release_pulse_gen_inst.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_gen_inst.reset_release_pulse_gen_inst.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_gen_inst.longer_pulse_inst.out.
+@N: FX493 |Applying initial value "1" on instance reset_gen_inst.ar_hstdm_reset.R0.
+@N: FX493 |Applying initial value "1" on instance reset_gen_inst.ar_hstdm_reset.R1.
+@N: FX493 |Applying initial value "0" on instance reset_gen_inst.first_reset_done.
+@N: FX493 |Applying initial value "1" on instance reset_gen_inst.reset_pulse.
+@N: FX493 |Applying initial value "0" on instance hstdm_ctrl_inst.longer_pulse_inst.out.
+@N: FX493 |Applying initial value "00" on instance hstdm_ctrl_inst.self_test_start_rx_out[1:0].
+@N: FX493 |Applying initial value "00" on instance hstdm_ctrl_inst.self_test_start_tx_out[1:0].
+@N: FX493 |Applying initial value "000" on instance hstdm_ctrl_inst.tc_status[2:0].
+@N: FX493 |Applying initial value "0" on instance cmd_script_ack_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance cmd_script_ack_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance TXCTRL_OVERLAP.out.
+@N: FX493 |Applying initial value "1" on instance ar_infopipe_reset.R0.
+@N: FX493 |Applying initial value "1" on instance ar_infopipe_reset.R1.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance SIM_TRAINING_DONE.
+@N: FX493 |Applying initial value "0" on instance SIM_TRAINING_ERROR.
+@N: FX493 |Applying initial value "0" on instance SIM_TRAINING_TIMEOUT.
+@N: FX493 |Applying initial value "0" on instance SIMULATION.
+@N: FX493 |Applying initial value "0" on instance SIMULATION_DISABLE_TRAINING.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R0.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R1.
+@N: FX493 |Applying initial value "0" on instance rst_delay.out.
+@N: FX493 |Applying initial value "0" on instance phy_en_delay.out.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R0.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R1.
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":7196:9:7196:22|Assigning HSTDM BUFGCE TXCLKDIV2\.txclkdiv2_bufg in hstdm_clkgen_1200_bank36 (in view: TraceBuildLib.FB1_uC(verilog_0)) to CLOCK_REGION X0Y17 
+@N: FX493 |Applying initial value "1" on instance ar_locked.R0.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R1.
+@N: FX493 |Applying initial value "0" on instance rst_delay.out.
+@N: FX493 |Applying initial value "0" on instance phy_en_delay.out.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R0.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R1.
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":7196:9:7196:22|Assigning HSTDM BUFGCE TXCLKDIV2\.txclkdiv2_bufg in hstdm_clkgen_1200_bank60 (in view: TraceBuildLib.FB1_uC(verilog_0)) to CLOCK_REGION X7Y1 
+@N: FX493 |Applying initial value "1" on instance ar_locked.R0.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R1.
+@N: FX493 |Applying initial value "0" on instance rst_delay.out.
+@N: FX493 |Applying initial value "0" on instance phy_en_delay.out.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R0.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R1.
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":7196:9:7196:22|Assigning HSTDM BUFGCE TXCLKDIV2\.txclkdiv2_bufg in hstdm_clkgen_1200_bank69 (in view: TraceBuildLib.FB1_uC(verilog_0)) to CLOCK_REGION X7Y10 
+@N: FX493 |Applying initial value "1" on instance ar_locked.R0.
+@N: FX493 |Applying initial value "1" on instance ar_locked.R1.
+@N: FX493 |Applying initial value "0" on instance rst_delay.out.
+@N: FX493 |Applying initial value "0" on instance phy_en_delay.out.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R0.
+@N: FX493 |Applying initial value "0" on instance ar_en_vtc.R1.
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":7196:9:7196:22|Assigning HSTDM BUFGCE TXCLKDIV2\.txclkdiv2_bufg in hstdm_clkgen_1200_bank71 (in view: TraceBuildLib.FB1_uC(verilog_0)) to CLOCK_REGION X7Y12 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4477:3:4477:16|Assigning HSTDM BUFGCE_DIV BASE4\.rxclkdiv4_bufg in hstdm_clkgen_1200_rx_bank36_block6 (in view: TraceBuildLib.FB1_uC(verilog_0)) to CLOCK_REGION X0Y17 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4477:3:4477:16|Assigning HSTDM BUFGCE_DIV BASE4\.rxclkdiv4_bufg in hstdm_clkgen_1200_rx_bank36_block6 (in view: TraceBuildLib.FB1_uC(verilog_0)) to BUFGCE_DIV site(s) BUFGCE_DIV_X0Y68 
+@N: FX989 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":4475:3:4475:16|Assigning HSTDM BUFGCE BASE4\.rxclkdiv2_bufg in hstdm_clkgen_1200_rx_bank36_block6 (in view: TraceBuildLib.FB1_uC(verilog_0)) to CLOCK_REGION X0Y17 
+@N: FX493 |Applying initial value "0" on instance ar_txctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_txctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance txctrl0_delay.
+@N: FX493 |Applying initial value "00000000" on instance clkpattern[7:0].
+@N: FX493 |Applying initial value "0" on instance ar_txctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_txctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance txctrl0_delay.
+@N: FX493 |Applying initial value "00000000" on instance clkpattern[7:0].
+@N: FX493 |Applying initial value "0" on instance ar_txctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_txctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance txctrl0_delay.
+@N: FX493 |Applying initial value "00000000" on instance clkpattern[7:0].
+@N: FX493 |Applying initial value "0" on instance ar_txctrl0.R0.
+@N: FX493 |Applying initial value "0" on instance ar_txctrl0.R1.
+@N: FX493 |Applying initial value "0" on instance txctrl0_delay.
+@N: FX493 |Applying initial value "00000000" on instance clkpattern[7:0].
+@N: FX493 |Applying initial value "0" on instance ar_train_latched.R0.
+@N: FX493 |Applying initial value "0" on instance ar_train_latched.R1.
+@N: FX493 |Applying initial value "0" on instance channel_rst_pulse_inst.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance channel_rst_pulse_inst.fdcr2.IntQ.
+@N: FX493 |Applying initial value "1" on instance ar_infop_reset.R0.
+@N: FX493 |Applying initial value "1" on instance ar_infop_reset.R1.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance ssc_detector.clkin_div.
+@N: FX493 |Applying initial value "0" on instance ar_ssc_start.R0.
+@N: FX493 |Applying initial value "0" on instance ar_ssc_start.R1.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance infopipe_snd_inst.accept_pulse_gen.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance flag_ssc_start.
+@N: FX493 |Applying initial value "0" on instance hold_done_flag.
+@N: FX493 |Applying initial value "0" on instance flag_ssc.
+@N: FX493 |Applying initial value "0" on instance training_disabled.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr2.IntQ.
+@N: FX493 |Applying initial value "0" on instance rx_core.set_fifo.rd_en.
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[0\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[1\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[2\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "000000000000000" on instance training_bit_pattern_decoder.BIT\[3\]\.descrambler.shift[14:0].
+@N: FX493 |Applying initial value "0" on instance training_bit_pattern_rebuild.BASE4\.switch.
+@N: FX493 |Applying initial value "0" on instance training_word_inst.train_done_out.
+@N: FX493 |Applying initial value "0" on instance self_test.flag_bit.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr1.IntQ.
+@N: FX493 |Applying initial value "0" on instance reset_st_bit.fdcr2.IntQ.
+
+Only the first 100 messages of id 'FX493' are reported. To see all messages use 'report messages -id FX493' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {FX493} -count unlimited' in the Tcl shell.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_0(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_1(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_2(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_2(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_3(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_3(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_4(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_4(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_5(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_5(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_6(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_6(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_7(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_7(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_8(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_8(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_9(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_9(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_10(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_10(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_11(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_11(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_12(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_12(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_13(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_13(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_14(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_14(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_15(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_15(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_16(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_16(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_17(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_17(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_18(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_18(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_19(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_19(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_20(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_20(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_21(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_21(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_22(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_22(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_23(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_23(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_24(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_24(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_25(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_25(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_26(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_26(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_27(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_27(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_28(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_28(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_29(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_29(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_30(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_30(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_31(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_31(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_32(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_32(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_33(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_33(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_34(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_34(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_35(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_35(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_36(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_36(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_37(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_37(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_38(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_38(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_39(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_39(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5664:1:5664:6|Removing sequential instance EN_VTC (in view: VerGenLib.hstdm_rx_Z3_40(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":5713:1:5713:6|Removing sequential instance wordsel_to_decoder[0] (in view: VerGenLib.hstdm_rx_Z3_40(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_1(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_2(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_3(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_4(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_5(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_6(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_7(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_8(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_9(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_10(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_11(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_ultrascale_hstdm_base4_mux.v":23936:5:23936:10|Removing sequential instance HARDTXMUX\.hard_txmux.wordsel_inst.genblk1\.wordsel[0] (in view: VerGenLib.hstdm_tx_Z2_12(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+
+Only the first 100 messages of id 'BN362' are reported. To see all messages use 'report messages -id BN362' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN362} -count unlimited' in the Tcl shell.
+@N: FX1031 |HSTDM unable to find a user reset. Reset may not exist or may have been released prior to HSTDM training complete.
+High Speed TDM report for FB1_uC
+==============================================================
+High Speed TDM Info:
+HSTDM memory format version      : 0xabcf
+HSTDM IP version                 : 2020.03.0.11
+HSTDM bit rate                   : 1200 Mbps
+HSTDM UMR or I2C address         : N/A (no accessible data on this chip)
+HSTDM fast clock port            : None
+HSTDM fast-clock frequency       : 100MHz
+Training will be done at         : system configuration
+
+High Speed TDM Summary:
+	Transmit: 60 bits transmitted over 15 pin(s)
+		with 8 pin(s) used as clocks
+	Receive: 168 bits received over 42 pin(s)
+		with 2 pin(s) used as clocks
+
+End High Speed TDM report
+==============================================================
+See FB1_uC_system_memory.rpt for High Speed TDM details
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:01m:34s; CPU Time elapsed 0h:01m:26s; Memory used current: 1396MB peak: 1396MB)
+
+
+Making connections to hyper_source modules
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1081:76:1081:108|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_enable_out_2, tag haps_system_capim_enable_out_2 to syn_hyper_source sysip_inst.hp_haps_system_capim_enable_out_2
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1080:72:1080:100|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_rd_raw_2, tag haps_system_capim_rd_raw_2 to syn_hyper_source sysip_inst.hp_haps_system_capim_rd_raw_2
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1079:72:1079:100|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_wr_raw_2, tag haps_system_capim_wr_raw_2 to syn_hyper_source sysip_inst.hp_haps_system_capim_wr_raw_2
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1078:74:1078:104|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_data_out_2, tag haps_system_capim_data_out_2 to syn_hyper_source sysip_inst.hp_haps_system_capim_data_out_2
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1075:69:1075:101|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_enable_out_3, tag haps_system_capim_enable_out_3 to syn_hyper_source sysip_inst.hp_haps_system_capim_enable_out_3
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1074:65:1074:93|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_rd_raw_3, tag haps_system_capim_rd_raw_3 to syn_hyper_source sysip_inst.hp_haps_system_capim_rd_raw_3
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1073:65:1073:93|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_wr_raw_3, tag haps_system_capim_wr_raw_3 to syn_hyper_source sysip_inst.hp_haps_system_capim_wr_raw_3
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":1072:67:1072:97|Connected syn_hyper_connect hstdm_system_capim_interface.hp_haps_system_capim_data_out_3, tag haps_system_capim_data_out_3 to syn_hyper_source sysip_inst.hp_haps_system_capim_data_out_3
+@N: BN397 :|Connected syn_hyper_connect hyper_connect_hstdm_refclk_100, tag hstdm_refclk_100 to syn_hyper_source hyper_src_hstdm_refclk_100
+@N: BN397 :|Connected syn_hyper_connect hyper_connect_umr_clk, tag umr_clk to syn_hyper_source hyper_src_umr_clk
+Ignoring hyper connect with no loads pin:out1[0] inst:hyper_connect_hstdm_training_start of syn_hyper_bb_lib.syn_hyper_connect_internal_1(bb),  tag hstdm_training_start
+@N: BN397 :|Connected syn_hyper_connect hyper_connect_hstdm_training_start, tag hstdm_training_start to syn_hyper_source hyper_src_hstdm_training_start
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/haps_systemip/system_memory.v":638:72:638:104|Connected syn_hyper_connect haps_system_memory_interface.hp_haps_system_capim_enable_out_1, tag haps_system_capim_enable_out_1 to syn_hyper_source sysip_inst.hp_haps_system_capim_enable_out_1
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/haps_systemip/system_memory.v":637:67:637:95|Connected syn_hyper_connect haps_system_memory_interface.hp_haps_system_capim_rd_raw_1, tag haps_system_capim_rd_raw_1 to syn_hyper_source sysip_inst.hp_haps_system_capim_rd_raw_1
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/haps_systemip/system_memory.v":636:67:636:95|Connected syn_hyper_connect haps_system_memory_interface.hp_haps_system_capim_wr_raw_1, tag haps_system_capim_wr_raw_1 to syn_hyper_source sysip_inst.hp_haps_system_capim_wr_raw_1
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/haps_systemip/system_memory.v":635:82:635:112|Connected syn_hyper_connect haps_system_memory_interface.hp_haps_system_capim_data_out_1, tag haps_system_capim_data_out_1 to syn_hyper_source sysip_inst.hp_haps_system_capim_data_out_1
+@N: BN397 :|Connected syn_hyper_connect hyper_connect_haps_umr3_reset, tag haps_umr3_reset to syn_hyper_source hyper_src_haps_umr3_reset
+@N: BN397 :|Connected syn_hyper_connect hyper_connect_haps_umr3_clk, tag haps_umr3_clk to syn_hyper_source hyper_src_haps_umr3_clk
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":714:84:714:113|Connected syn_hyper_connect sysip_inst.hp_haps_system_capim_data_in_3, tag haps_system_capim_data_in_3 to syn_hyper_source hstdm_system_capim_interface.hp_haps_system_capim_data_in_3
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":713:84:713:113|Connected syn_hyper_connect sysip_inst.hp_haps_system_capim_data_in_2, tag haps_system_capim_data_in_2 to syn_hyper_source hstdm_system_capim_interface.hp_haps_system_capim_data_in_2
+@N: BN397 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":712:84:712:113|Connected syn_hyper_connect sysip_inst.hp_haps_system_capim_data_in_1, tag haps_system_capim_data_in_1 to syn_hyper_source haps_system_memory_interface.hp_haps_system_capim_data_in_1
+Deleting unused hyper source ufpga_reset (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog))
+Deleting unused hyper source dbg_xcvr_user_clk_conn (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog))
+Deleting unused hyper source dbg_xcvr_dtd_reset_conn (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog))
+Deleting unused hyper source snps_dtdpipe_outbus_conn (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog))
+Deleting unused hyper source cmp2capiclk_conn (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog))
+Deleting unused hyper source inta_conn (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog))
+Deleting unused hyper source dout_wr_conn (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog))
+Deleting unused hyper source dout_conn (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog))
+Deleting unused hyper source din_ready_conn (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog))
+Deleting unused hyper source reset_conn (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog))
+Deleting unused hyper source hyper_src_hstdm_training_start (in view: TraceBuildLib.FB1_uC(verilog_0))
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":332:51:332:58|Tristate driver capim2_data_in_0_1 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_1 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_2 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_2 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_3 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_3 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_4 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_4 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_5 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_5 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_6 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_6 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_7 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_7 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_8 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_8 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_9 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_9 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@N: MO111 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/stubs/bsa19_sysip/bsa19_system_ip_wrapper.v":360:43:360:58|Tristate driver capim2_data_in_0_10 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) on net capim2_data_in_0_10 (in view: SysIPLib.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078(verilog)) has its enable tied to GND.
+@W: MO129 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/tdm/hstdm/virtex/virtex_hstdm.v":2897:1:2897:6|Sequential instance hstdm_training_monitor_6.bsc_rdy_local is reduced to a combinational gate by constant propagation.
+
+Started DisTri Cleanup (Real Time elapsed 0h:01m:35s; CPU Time elapsed 0h:01m:28s; Memory used current: 1401MB peak: 1401MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:01m:35s; CPU Time elapsed 0h:01m:28s; Memory used current: 1401MB peak: 1401MB)
+
+
+Beginning opaque latch detection (Real Time elapsed 0h:01m:41s; CPU Time elapsed 0h:01m:34s; Memory used current: 1411MB peak: 1411MB)
+
+
+Finished opaque latch detection (Real Time elapsed 0h:01m:41s; CPU Time elapsed 0h:01m:34s; Memory used current: 1411MB peak: 1411MB)
+
+
+
+
+
+
+
+
+Starting clock optimization phase (Real Time elapsed 0h:01m:42s; CPU Time elapsed 0h:01m:34s; Memory used current: 1411MB peak: 1411MB)
+
+
+ mixed edge conversion for GCC is ON
+Finished clock optimization phase (Real Time elapsed 0h:01m:43s; CPU Time elapsed 0h:01m:36s; Memory used current: 1412MB peak: 1412MB)
+
+@N: MT611 :"/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs/pre_map/pm0/TraceBuildLib_FB1_uC_udMWvu":35:0:35:0|Automatically generated clock haps_gclk0_100 is not used and is being removed
+
+Starting clock optimization report phase (Real Time elapsed 0h:01m:45s; CPU Time elapsed 0h:01m:38s; Memory used current: 1412MB peak: 1412MB)
+
+
+ mixed edge conversion for GCC is ON
+ mixed edge conversion for GCC is ON
+ mixed edge conversion for GCC is ON
+ mixed edge conversion for GCC is ON
+Finished clock optimization report phase (Real Time elapsed 0h:01m:46s; CPU Time elapsed 0h:01m:39s; Memory used current: 1412MB peak: 1412MB)
+
+@N: FX1184 |Applying syn_allowed_resources ultrarams=320 on top level netlist FB1_uC 
+
+Finished netlist restructuring (Real Time elapsed 0h:01m:47s; CPU Time elapsed 0h:01m:39s; Memory used current: 1412MB peak: 1412MB)
+
+
+
+@S0 |Clock Summary
+******************
+
+          Start                                       Requested      Requested     Clock                                                                                        Clock                   Clock
+Level     Clock                                       Frequency      Period        Type                                                                                         Group                   Load 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       hstdm_rxclk_1200_bank36_block6              600.0 MHz      1.667         declared {hstdm_rxclk_1200_bank36_block6}                                                    default_clkgroup        0    
+1 .         hstdm_rxclk_1200_bank36_block6_div2       300.0 MHz      3.333         derived (from hstdm_rxclk_1200_bank36_block6) {hstdm_rxclk_1200_bank36_block6}               default_clkgroup        4872 
+2 ..          hstdm_rxclk_1200_bank36_block6_div4     150.0 MHz      6.667         derived (from hstdm_rxclk_1200_bank36_block6_div2) {hstdm_rxclk_1200_bank36_block6_div2}     default_clkgroup        1041 
+                                                                                                                                                                                                             
+0 -       hstdm_refclk_100                            100.0 MHz      10.000        declared                                                                                     default_clkgroup        575  
+1 .         hstdm_txclk_1200_bank60_div2              300.0 MHz      3.333         derived (from hstdm_refclk_100)                                                              default_clkgroup        340  
+1 .         hstdm_txclk_1200_bank69_div2              300.0 MHz      3.333         derived (from hstdm_refclk_100)                                                              default_clkgroup        272  
+1 .         hstdm_txclk_1200_bank71_div2              300.0 MHz      3.333         derived (from hstdm_refclk_100)                                                              default_clkgroup        272  
+1 .         hstdm_txclk_1200_bank36_div2              300.0 MHz      3.333         derived (from hstdm_refclk_100)                                                              default_clkgroup        136  
+1 .         hstdm_txclk_1200_bank36_clkoutphy         1200.0 MHz     0.833         derived (from hstdm_refclk_100)                                                              default_clkgroup        0    
+1 .         hstdm_txclk_1200_bank60_clkoutphy         1200.0 MHz     0.833         derived (from hstdm_refclk_100)                                                              default_clkgroup        0    
+1 .         hstdm_txclk_1200_bank69_clkoutphy         1200.0 MHz     0.833         derived (from hstdm_refclk_100)                                                              default_clkgroup        0    
+1 .         hstdm_txclk_1200_bank71_clkoutphy         1200.0 MHz     0.833         derived (from hstdm_refclk_100)                                                              default_clkgroup        0    
+                                                                                                                                                                                                             
+0 -       umr3_clk                                    125.0 MHz      8.000         declared                                                                                     default_clkgroup        793  
+                                                                                                                                                                                                             
+0 -       umr2_clk                                    100.0 MHz      10.000        declared                                                                                     default_clkgroup        546  
+                                                                                                                                                                                                             
+0 -       clk                                         2.0 MHz        500.000       declared                                                                                     default_clkgroup        140  
+                                                                                                                                                                                                             
+0 -       System_FB1_uC                               1.0 MHz        1000.000      virtual                                                                                      default_clkgroup        0    
+                                                                                                                                                                                                             
+0 -       dbg_capiclk                                 40.0 MHz       25.000        declared                                                                                     default_clkgroup        0    
+                                                                                                                                                                                                             
+0 -       dbg_xcvr_user_clk_0                         140.6 MHz      7.111         declared                                                                                     default_clkgroup        0    
+                                                                                                                                                                                                             
+0 -       dbg_xcvr_user_clk_1                         140.6 MHz      7.111         declared                                                                                     default_clkgroup        0    
+                                                                                                                                                                                                             
+0 -       dbg_xcvr_user_clk_2                         140.6 MHz      7.111         declared                                                                                     default_clkgroup        0    
+                                                                                                                                                                                                             
+0 -       dbg_xcvr_user_clk_3                         140.6 MHz      7.111         declared                                                                                     default_clkgroup        0    
+                                                                                                                                                                                                             
+0 -       gclk0                                       100.0 MHz      10.000        declared                                                                                     default_clkgroup        0    
+                                                                                                                                                                                                             
+0 -       haps_clk_10                                 10.0 MHz       100.000       declared                                                                                     group_219_18            0    
+                                                                                                                                                                                                             
+0 -       haps_clk_10_2_sync                          10.0 MHz       100.000       declared                                                                                     default_clkgroup        0    
+                                                                                                                                                                                                             
+0 -       haps_clk_50_2_sync                          50.0 MHz       20.000        declared                                                                                     default_clkgroup        0    
+                                                                                                                                                                                                             
+0 -       haps_clk_200                                200.0 MHz      5.000         declared                                                                                     default_clkgroup        0    
+                                                                                                                                                                                                             
+0 -       sys_clk                                     100.0 MHz      10.000        declared                                                                                     default_clkgroup        0    
+                                                                                                                                                                                                             
+0 -       ufpga_lock_clk_o                            1.0 MHz        1000.000      declared                                                                                     ufpga_lock_clkgroup     0    
+=============================================================================================================================================================================================================
+
+
+
+@S0 |Clock Load Summary
+***********************
+
+                                        Clock     Source                                                                               Clock Pin                                                                           Non-clock Pin                                                                       Non-clock Pin                                                           
+Clock                                   Load      Pin                                                                                  Seq Example                                                                         Seq Example                                                                         Comb Example                                                            
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+hstdm_rxclk_1200_bank36_block6          0         pin_M48(port)                                                                        -                                                                                   -                                                                                   ibufds_pin_M48.I(IBUFDS)                                                
+hstdm_rxclk_1200_bank36_block6_div2     4872      hstdm_clkgen_1200_rx_bank36_block6.bitslice_rx_clock.FIFO_WRCLK_OUT(RX_BITSLICE)     cpm_rcv_HSTDM_4_FB1_B2_A_8.rx_core.ICE_BASE4\.PulseGenBitSlip.fdcr1.IntQ.C          -                                                                                   hstdm_clkgen_1200_rx_bank36_block6.BASE4\.rxclkdiv2_bufg.I(BUFGCE)      
+hstdm_rxclk_1200_bank36_block6_div4     1041      hstdm_clkgen_1200_rx_bank36_block6.BASE4\.rxclkdiv4_bufg.O(BUFGCE_DIV)               cpm_rcv_HSTDM_4_FB1_B2_A_8.rx_core.idelay_load_delay.REG\.ASYNC\.out.C              -                                                                                   hstdm_clkgen_1200_rx_bank36_block6.rxclkdiv4_derived_clock.I[0](keepbuf)
+                                                                                                                                                                                                                                                                                                                                                                                       
+hstdm_refclk_100                        575       hstdm_clkgen_1200_bank71.hstdm_plle3.CLKOUT1B(PLLE3_ADV)                             hstdm_bitslice_ctrl_bank71.NIBBLE\[5\]\.BITSLICE_CTRL\.bitslice_control.RIU_CLK     -                                                                                   -                                                                       
+hstdm_txclk_1200_bank60_div2            340       hstdm_clkgen_1200_bank60.hstdm_plle3.CLKOUT1(PLLE3_ADV)                              cpm_snd_HSTDM_4_FB1_C2_D_2.ar_tx_ctrl0.R0.C                                         -                                                                                   hstdm_clkgen_1200_bank60.TXCLKDIV2\.txclkdiv2_bufg.I(BUFGCE)            
+hstdm_txclk_1200_bank69_div2            272       hstdm_clkgen_1200_bank69.hstdm_plle3.CLKOUT1(PLLE3_ADV)                              cpm_snd_HSTDM_4_FB1_CI1_P_17.ar_tx_ctrl0.R0.C                                       -                                                                                   hstdm_clkgen_1200_bank69.TXCLKDIV2\.txclkdiv2_bufg.I(BUFGCE)            
+hstdm_txclk_1200_bank71_div2            272       hstdm_clkgen_1200_bank71.hstdm_plle3.CLKOUT1(PLLE3_ADV)                              cpm_snd_HSTDM_4_FB1_DI3_P_8.ar_tx_ctrl0.R0.C                                        -                                                                                   hstdm_clkgen_1200_bank71.TXCLKDIV2\.txclkdiv2_bufg.I(BUFGCE)            
+hstdm_txclk_1200_bank36_div2            136       hstdm_clkgen_1200_bank36.hstdm_plle3.CLKOUT1(PLLE3_ADV)                              cpm_snd_HSTDM_4_FB1_B2_A_0.ar_tx_ctrl0.R0.C                                         -                                                                                   hstdm_clkgen_1200_bank36.TXCLKDIV2\.txclkdiv2_bufg.I(BUFGCE)            
+hstdm_txclk_1200_bank36_clkoutphy       0         hstdm_clkgen_1200_bank36.hstdm_plle3.CLKOUTPHY(PLLE3_ADV)                            -                                                                                   hstdm_bitslice_ctrl_bank36.NIBBLE\[4\]\.BITSLICE_CTRL\.bitslice_control.PLL_CLK     hstdm_clkgen_1200_bank36.clkoutphy_derived_clock.I[0](keepbuf)          
+hstdm_txclk_1200_bank60_clkoutphy       0         hstdm_clkgen_1200_bank60.hstdm_plle3.CLKOUTPHY(PLLE3_ADV)                            -                                                                                   hstdm_bitslice_ctrl_bank60.NIBBLE\[1\]\.BITSLICE_CTRL\.bitslice_control.PLL_CLK     hstdm_clkgen_1200_bank60.clkoutphy_derived_clock.I[0](keepbuf)          
+hstdm_txclk_1200_bank69_clkoutphy       0         hstdm_clkgen_1200_bank69.hstdm_plle3.CLKOUTPHY(PLLE3_ADV)                            -                                                                                   hstdm_bitslice_ctrl_bank69.NIBBLE\[6\]\.BITSLICE_CTRL\.bitslice_control.PLL_CLK     hstdm_clkgen_1200_bank69.clkoutphy_derived_clock.I[0](keepbuf)          
+hstdm_txclk_1200_bank71_clkoutphy       0         hstdm_clkgen_1200_bank71.hstdm_plle3.CLKOUTPHY(PLLE3_ADV)                            -                                                                                   hstdm_bitslice_ctrl_bank71.NIBBLE\[5\]\.BITSLICE_CTRL\.bitslice_control.PLL_CLK     hstdm_clkgen_1200_bank71.clkoutphy_derived_clock.I[0](keepbuf)          
+                                                                                                                                                                                                                                                                                                                                                                                       
+umr3_clk                                793       sysip_inst.bsa19_system_ip_u.umr3_clk(bsa19_system_ip)                               hstdm_memory.memory_core.memory_out[31:0].C                                         -                                                                                   -                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                       
+umr2_clk                                546       sysip_inst.bsa19_system_ip_u.umr2_clk(bsa19_system_ip)                               pipelineReg_hstdm_training_monitor_6_infopipe_empty_out.C                           -                                                                                   -                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                       
+clk                                     140       clk(port)                                                                            dut_inst.aptn_reset_sync_rst_n.C                                                    -                                                                                   -                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                       
+System_FB1_uC                           0         -                                                                                    -                                                                                   -                                                                                   -                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                       
+dbg_capiclk                             0         sysip_inst.bsa19_system_ip_u.dbg_capiclk(bsa19_system_ip)                            -                                                                                   -                                                                                   -                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                       
+dbg_xcvr_user_clk_0                     0         sysip_inst.bsa19_system_ip_u.dbg_xcvr_user_clk[0](bsa19_system_ip)                   -                                                                                   -                                                                                   -                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                       
+dbg_xcvr_user_clk_1                     0         sysip_inst.bsa19_system_ip_u.dbg_xcvr_user_clk[1](bsa19_system_ip)                   -                                                                                   -                                                                                   -                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                       
+dbg_xcvr_user_clk_2                     0         sysip_inst.bsa19_system_ip_u.dbg_xcvr_user_clk[2](bsa19_system_ip)                   -                                                                                   -                                                                                   -                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                       
+dbg_xcvr_user_clk_3                     0         sysip_inst.bsa19_system_ip_u.dbg_xcvr_user_clk[3](bsa19_system_ip)                   -                                                                                   -                                                                                   -                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                       
+gclk0                                   0         sysip_inst.bsa19_system_ip_u.gclk0(bsa19_system_ip)                                  -                                                                                   -                                                                                   -                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                       
+haps_clk_10                             0         sysip_inst.bsa19_system_ip_u.haps_clk_10(bsa19_system_ip)                            -                                                                                   -                                                                                   -                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                       
+haps_clk_10_2_sync                      0         sysip_inst.bsa19_system_ip_u.haps_clk_10_2_sync(bsa19_system_ip)                     -                                                                                   -                                                                                   -                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                       
+haps_clk_50_2_sync                      0         sysip_inst.bsa19_system_ip_u.haps_clk_50_2_sync(bsa19_system_ip)                     -                                                                                   -                                                                                   -                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                       
+haps_clk_200                            0         sysip_inst.bsa19_system_ip_u.haps_clk_200(bsa19_system_ip)                           -                                                                                   -                                                                                   -                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                       
+sys_clk                                 0         sysip_inst.bsa19_system_ip_u.sys_clk(bsa19_system_ip)                                -                                                                                   -                                                                                   -                                                                       
+                                                                                                                                                                                                                                                                                                                                                                                       
+ufpga_lock_clk_o                        0         sysip_inst.bsa19_system_ip_u.ufpga_lock_clk_o(bsa19_system_ip)                       -                                                                                   -                                                                                   ufpga_lock_clk_o_keep.I[0](keepbuf)                                     
+=======================================================================================================================================================================================================================================================================================================================================================================================
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+2 non-gated/non-generated clock tree(s) driving 170 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+============================================================ Non-Gated/Non-Generated Clocks =============================================================
+Clock Tree ID     Driving Element                           Drive Element Type     Fanout     Sample Instance                                            
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       clk                                       port                   140        dut_inst.aptn_reset_sync_rst_n_2                           
+@KP:ckid0_1       sysip_inst.bsa19_system_ip_u.umr2_clk     bsa19_system_ip        30         pipelineReg_hstdm_training_monitor_6_infopipe_data_out_1[3]
+=========================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1146 |Assigning INTERNAL_VREF of iobank 60 to 0.840, which is required by IO standard POD12_DCI of pin WRITEDATAWB[41] at BR18
+@N: FX1146 |Assigning INTERNAL_VREF of iobank 36 to 0.840, which is required by IO standard POD12_DCI of pin cpm_r_HSTDM_4_FB1_B2_A_2 at P47
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs/pre_map/pm0/FB1_uC.sap.
+
+Starting constraint checker (Real Time elapsed 0h:02m:02s; CPU Time elapsed 0h:01m:55s; Memory used current: 1413MB peak: 1413MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:02m:03s; CPU Time elapsed 0h:01m:55s; Memory used current: 1413MB peak: 1413MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:02m:06s; CPU Time elapsed 0h:01m:58s; Memory used current: 1413MB peak: 1413MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:02m:06s; CPU Time elapsed 0h:01m:59s; Memory used current: 1413MB peak: 1413MB)
+
+Process took 0h:02m:06s realtime, 0h:01m:59s cputime
+# Sun Apr  9 22:44:40 2023
+
+###########################################################]

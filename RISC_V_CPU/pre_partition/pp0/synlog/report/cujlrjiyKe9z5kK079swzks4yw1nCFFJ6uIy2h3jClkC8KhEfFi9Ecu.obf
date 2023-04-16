@@ -1,0 +1,2 @@
+@W: FX1020 |A simulation mismatch is possible. Ignoring vendor library default initial value on registers, because the default value is not set. To enable vendor library default initial values, add the command "set_option -support_implicit_init_netlist 1" to the project file.
+@W: MT682 :"/home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc":11:0:11:0|set_input_delay command has no effect on unconnected port. Remove input port rst_n from set_input_delay command. 

@@ -1,0 +1,4 @@
+partition_optimization_control -priority tdm_ratio
+partition_optimization_control -route_priority tdm_ratio
+partition_optimization_control -effort normal
+partition_optimization_control -threads 4

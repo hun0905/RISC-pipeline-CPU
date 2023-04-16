@@ -1,0 +1,4 @@
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF286 |Writing single-chip design and constraint files...
+@N: BW135 |Skipping creation of system level timing setup constraint file slp_system_timing.fdc since the file already exists

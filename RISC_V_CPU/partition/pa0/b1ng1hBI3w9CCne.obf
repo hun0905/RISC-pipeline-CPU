@@ -1,0 +1,68 @@
+reset_synchronize running in partition
+
+reset_synchronize cmds supplied by PCF: 1
+  Reducing specified resets to unique prim driver nets.
+reset_synchronize unique cmds: 1
+
+
+[1/1] Processing reset sync for orig-net: rst_n
+  New reset_synchronize prim driver target net: rst_n
+  no user constraints, no global switch, default tdm = false
+  Inserting D-FF on net 'rst_n' : rst_n
+    TrackCell ID = 129
+  Inserting load keepbuf on net 'clk' : clk
+    TrackCell ID = 130
+  No load bins given. Switch -forceRepl is false. Replicating to ALL FPGAs with force=false.
+  
+  Replicating Keepbuf 'rst_n' to following FPGA bins:
+    FB1.uA FB1.uB FB1.uC FB1.uD 
+
+  Setting noReplicate flag on driver cell 'hyper_connect_USR_LOCAL_RESET'
+
+
+Finished keepbuf insertion.
+
+Updating reset synchronize loads with actual routing path bins:
+  SynHier DSN:  ID 0 Cells 86 Adr 0x347c5800
+  HGraph  DSN:  ID 7 Cells 86 Adr 0xf300d00
+
+  [1/1] Processing orig-net 'rst_n'
+  Actual reset_synchronize target net:  rst_n
+    Searching: D-FF: rst_n
+    Searching: KB:   clk
+  Actual solution load:
+    RstKb: rst_n  on bins  FB1.uA FB1.uB FB1.uC FB1.uD
+    ClkKb: clk  on bins  FB1.uA
+ Fpga-driven case: Adding driver solution bin regardless of reset net load: FB1.uA
+  Final Pre routing replication bins: {FB1.uA FB1.uB FB1.uC FB1.uD}
+    Performed routing to determine feedthrough FPGAs.
+    NetRoute: 
+	NR: FB1.uA-{FB1.uB} CH:FB1_A1_B19_1_EQUIV_6(6867 R:1 T:DIRECT)
+	TR:FB1.uA FB1.uB FB1.uC CH:FB1_A1_B19_1_EQUIV_6(6867 R:1 T:DIRECT) FB1_B1_C19_1_EQUIV_2(6855 R:1 T:DIRECT) DLY:160000
+	NR: FB1.uA-{FB1.uD} CH:FB1_A9_D9_EQUIV_7(6871 R:1 T:DIRECT)
+    Replicating rst_kb and clk_kb to following path bins:
+      FB1.uA FB1.uB FB1.uC FB1.uD 
+    Done.
+
+
+Partition SRP build reset_synchronize actions
+
+[1/1] Processing reset sync for orig-net: rst_n
+  Rst-DFF: aptn_reset_sync_rst_n
+  Clk-KB:  aptn_reset_sync_clk
+  Processing FB1.uA
+    Setting n_aptn_reset_sync_clk_id = 1 on clk: clk
+    Setting n_aptn_reset_sync_port on bitport: rst_n
+  Processing FB1.uB
+    Setting n_aptn_reset_sync_clk_id = 2 on clk: clk
+    Setting n_aptn_reset_sync_port on bitport: rst_n
+  Processing FB1.uC
+    Setting n_aptn_reset_sync_clk_id = 3 on clk: clk
+    Setting n_aptn_reset_sync_port on bitport: rst_n
+  Processing FB1.uD
+    Setting n_aptn_reset_sync_clk_id = 4 on clk: clk
+    Setting n_aptn_reset_sync_port on bitport: rst_n
+
+Finished.
+
+Finished all partition actions.

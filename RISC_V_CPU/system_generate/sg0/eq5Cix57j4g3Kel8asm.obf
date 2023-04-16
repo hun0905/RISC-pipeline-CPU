@@ -1,0 +1,8 @@
+#-- Synopsys, Inc.
+#-- Version 201809 
+#-- Tcl File db_create.tcl
+#-- Written on Sun Apr  9 22:41:27 2023
+ 
+array set ::pc::fpga_srs_script {FB1_uA {/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_srs.tcl} FB1_uB {/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB/FB1_uB_srs.tcl} FB1_uC {/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs.tcl} FB1_uD {/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/FB1_uD_srs.tcl}}
+array set ::pc::fpga_srs_link {FB1_uA {/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_srs|m0} FB1_uB {/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB/FB1_uB_srs|m0} FB1_uC {/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs|m0} FB1_uD {/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/FB1_uD_srs|m0} }
+set ::pc::fpga_view_names {FB1_uA FB1_uB FB1_uC FB1_uD}

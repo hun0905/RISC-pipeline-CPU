@@ -1,0 +1,20 @@
+reset_synchronize running in route
+
+
+[1/1] Processing reset sync for orig-net: rst_n
+  no user constraints, no global switch, default tdm = false
+
+Finished.
+
+Processing aptn_net_id flags:
+
+  orig-net: rst_n
+  Bin: FB1.uA
+  Bin: FB1.uB
+  Moving  n_aptn_net_id = 3  from aptn_reset_sync_rst_n_5 to load flop FB1.uB.aptn_reset_sync_rst_n
+  Bin: FB1.uC
+  Moving  n_aptn_net_id = 3  from aptn_reset_sync_rst_n_2 to load flop FB1.uC.aptn_reset_sync_rst_n
+  Bin: FB1.uD
+  Moving  n_aptn_net_id = 3  from aptn_reset_sync_rst_n_5 to load flop FB1.uD.aptn_reset_sync_rst_n
+
+Finished all system route actions.

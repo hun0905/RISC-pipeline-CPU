@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uB/FB1_uB_srs/map/m0/synlog/FB1_uB_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>System_FB1_uB</data>
+<data>1.0 MHz</data>
+<data>20.9 MHz</data>
+<data>NA</data>
+</row>
+<row>
+<data>clk</data>
+<data>2.0 MHz</data>
+<data>41.8 MHz</data>
+<data>237.775</data>
+</row>
+<row>
+<data>dbg_capiclk</data>
+<data>40.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>dbg_xcvr_user_clk_0</data>
+<data>140.6 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>dbg_xcvr_user_clk_1</data>
+<data>140.6 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>dbg_xcvr_user_clk_2</data>
+<data>140.6 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>dbg_xcvr_user_clk_3</data>
+<data>140.6 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>gclk0</data>
+<data>100.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>haps_clk_10</data>
+<data>10.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>haps_clk_10_2_sync</data>
+<data>10.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>haps_clk_50_2_sync</data>
+<data>50.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>haps_clk_200</data>
+<data>200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>hstdm_refclk_100</data>
+<data>100.0 MHz</data>
+<data>701.4 MHz</data>
+<data>8.574</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank36_block3</data>
+<data>600.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank36_block3_div2</data>
+<data>300.0 MHz</data>
+<data>491.3 MHz</data>
+<data>1.298</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank36_block3_div4</data>
+<data>150.0 MHz</data>
+<data>290.6 MHz</data>
+<data>2.052</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank37_block4</data>
+<data>600.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank37_block4_div2</data>
+<data>300.0 MHz</data>
+<data>489.0 MHz</data>
+<data>1.288</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank37_block4_div4</data>
+<data>150.0 MHz</data>
+<data>292.3 MHz</data>
+<data>1.623</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank38_block5</data>
+<data>600.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank38_block5_div2</data>
+<data>300.0 MHz</data>
+<data>571.1 MHz</data>
+<data>1.582</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank38_block5_div4</data>
+<data>150.0 MHz</data>
+<data>335.0 MHz</data>
+<data>2.466</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank60_block7</data>
+<data>600.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank60_block7_div2</data>
+<data>300.0 MHz</data>
+<data>441.5 MHz</data>
+<data>1.068</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank60_block7_div4</data>
+<data>150.0 MHz</data>
+<data>298.6 MHz</data>
+<data>2.379</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank69_block1</data>
+<data>600.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank69_block1_div2</data>
+<data>300.0 MHz</data>
+<data>407.2 MHz</data>
+<data>0.878</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank69_block1_div4</data>
+<data>150.0 MHz</data>
+<data>306.4 MHz</data>
+<data>2.956</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank71_block2</data>
+<data>600.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank71_block2_div2</data>
+<data>300.0 MHz</data>
+<data>414.2 MHz</data>
+<data>0.919</data>
+</row>
+<row>
+<data>hstdm_rxclk_1200_bank71_block2_div4</data>
+<data>150.0 MHz</data>
+<data>315.8 MHz</data>
+<data>2.317</data>
+</row>
+<row>
+<data>hstdm_txclk_1200_bank36_clkoutphy</data>
+<data>1200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>hstdm_txclk_1200_bank37_clkoutphy</data>
+<data>1200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>hstdm_txclk_1200_bank38_clkoutphy</data>
+<data>1200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>hstdm_txclk_1200_bank60_clkoutphy</data>
+<data>1200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>hstdm_txclk_1200_bank60_div2</data>
+<data>300.0 MHz</data>
+<data>408.8 MHz</data>
+<data>0.887</data>
+</row>
+<row>
+<data>hstdm_txclk_1200_bank69_clkoutphy</data>
+<data>1200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>hstdm_txclk_1200_bank71_clkoutphy</data>
+<data>1200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>sys_clk</data>
+<data>100.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>ufpga_lock_clk_o</data>
+<data>1.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>umr2_clk</data>
+<data>100.0 MHz</data>
+<data>104.2 MHz</data>
+<data>0.380</data>
+</row>
+<row>
+<data>umr3_clk</data>
+<data>125.0 MHz</data>
+<data>154.3 MHz</data>
+<data>1.811</data>
+</row>
+<row>
+<data>System</data>
+<data>1.0 MHz</data>
+<data>1.0 MHz</data>
+<data>5.678</data>
+</row>
+</report_table>

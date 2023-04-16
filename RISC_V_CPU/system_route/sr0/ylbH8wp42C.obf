@@ -1,0 +1,650 @@
+# remove the line below to allow additional dissolves when re-running partition
+partition_optimization_control -hierarchy_dissolve_pass 1
+
+# change the value of these variables to -soft to allow re-assignments
+if {[pcf_mode] == "route"} {
+	set port_soft {-soft}
+} else {
+	set port_soft {-hard}
+}
+set cell_soft {-hard}
+set repl_soft {-hard}
+
+tdm_control -hstdm_bit_rate 1400
+tdm_control -type HSTDM
+tdm_control -max_ratio 4
+tdm_control -qualification_mode all
+reset_synchronize -net {rst_n} -clock {clk} -init 0 -extra_pipeline_stages 2
+# bin_utilization constraints
+#
+assign_port -fwd $port_soft {ADDOUTID[0]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {ADDOUTID[10]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {ADDOUTID[11]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {ADDOUTID[12]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[13]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[14]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[15]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[16]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {ADDOUTID[17]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {ADDOUTID[18]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[19]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[1]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[20]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[21]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[22]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {ADDOUTID[23]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[24]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[25]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[26]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {ADDOUTID[27]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {ADDOUTID[28]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[29]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {ADDOUTID[2]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {ADDOUTID[30]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[31]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[32]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[33]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[34]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[35]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {ADDOUTID[36]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {ADDOUTID[37]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {ADDOUTID[38]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[39]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[3]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {ADDOUTID[40]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {ADDOUTID[41]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {ADDOUTID[42]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {ADDOUTID[43]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {ADDOUTID[44]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {ADDOUTID[45]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[46]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {ADDOUTID[47]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {ADDOUTID[48]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[49]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[4]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[50]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[51]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[52]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[53]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {ADDOUTID[54]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[55]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[56]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {ADDOUTID[57]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[58]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {ADDOUTID[59]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[5]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[60]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[61]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {ADDOUTID[62]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {ADDOUTID[63]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {ADDOUTID[6]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {ADDOUTID[7]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {ADDOUTID[8]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {ADDOUTID[9]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {ALUOUTEX[0]} {TOP_IO_HT3_FB1_C5}
+assign_port -fwd $port_soft {ALUOUTEX[10]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[11]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[12]} {TOP_IO_HT3_FB1_C8}
+assign_port -fwd $port_soft {ALUOUTEX[13]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[14]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[15]} {TOP_IO_HT3_FB1_C5}
+assign_port -fwd $port_soft {ALUOUTEX[16]} {TOP_IO_HT3_FB1_C8}
+assign_port -fwd $port_soft {ALUOUTEX[17]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[18]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[19]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[1]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[20]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[21]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[22]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[23]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[24]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[25]} {TOP_IO_HT3_FB1_C8}
+assign_port -fwd $port_soft {ALUOUTEX[26]} {TOP_IO_HT3_FB1_C5}
+assign_port -fwd $port_soft {ALUOUTEX[27]} {TOP_IO_HT3_FB1_C8}
+assign_port -fwd $port_soft {ALUOUTEX[28]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[29]} {TOP_IO_HT3_FB1_C8}
+assign_port -fwd $port_soft {ALUOUTEX[2]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[30]} {TOP_IO_HT3_FB1_C8}
+assign_port -fwd $port_soft {ALUOUTEX[31]} {TOP_IO_HT3_FB1_C5}
+assign_port -fwd $port_soft {ALUOUTEX[32]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[33]} {TOP_IO_HT3_FB1_C5}
+assign_port -fwd $port_soft {ALUOUTEX[34]} {TOP_IO_HT3_FB1_C8}
+assign_port -fwd $port_soft {ALUOUTEX[35]} {TOP_IO_HT3_FB1_C5}
+assign_port -fwd $port_soft {ALUOUTEX[36]} {TOP_IO_HT3_FB1_C8}
+assign_port -fwd $port_soft {ALUOUTEX[37]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[38]} {TOP_IO_HT3_FB1_C5}
+assign_port -fwd $port_soft {ALUOUTEX[39]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[3]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[40]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[41]} {TOP_IO_HT3_FB1_C5}
+assign_port -fwd $port_soft {ALUOUTEX[42]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[43]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[44]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[45]} {TOP_IO_HT3_FB1_C8}
+assign_port -fwd $port_soft {ALUOUTEX[46]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[47]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[48]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[49]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[4]} {TOP_IO_HT3_FB1_C5}
+assign_port -fwd $port_soft {ALUOUTEX[50]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[51]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[52]} {TOP_IO_HT3_FB1_C8}
+assign_port -fwd $port_soft {ALUOUTEX[53]} {TOP_IO_HT3_FB1_C5}
+assign_port -fwd $port_soft {ALUOUTEX[54]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[55]} {TOP_IO_HT3_FB1_C8}
+assign_port -fwd $port_soft {ALUOUTEX[56]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[57]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[58]} {TOP_IO_HT3_FB1_C8}
+assign_port -fwd $port_soft {ALUOUTEX[59]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[5]} {TOP_IO_HT3_FB1_C5}
+assign_port -fwd $port_soft {ALUOUTEX[60]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[61]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[62]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[63]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {ALUOUTEX[6]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[7]} {TOP_IO_HT3_FB1_C8}
+assign_port -fwd $port_soft {ALUOUTEX[8]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {ALUOUTEX[9]} {TOP_IO_HT3_FB1_C7}
+assign_port -fwd $port_soft {Addr[0]} {TOP_IO_HT3_FB1_C6}
+assign_port -fwd $port_soft {Addr[10]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {Addr[11]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[12]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {Addr[13]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {Addr[14]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[15]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[16]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {Addr[17]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[18]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[19]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[1]} {TOP_IO_HT3_FB1_C8}
+assign_port -fwd $port_soft {Addr[20]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {Addr[21]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {Addr[22]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[23]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[24]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[25]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[26]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[27]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {Addr[28]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[29]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {Addr[2]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[30]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[31]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[32]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[33]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[34]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {Addr[35]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {Addr[36]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[37]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[38]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {Addr[39]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[3]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {Addr[40]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {Addr[41]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {Addr[42]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {Addr[43]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {Addr[44]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {Addr[45]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[46]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[47]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {Addr[48]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {Addr[49]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[4]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[50]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[51]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {Addr[52]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[53]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[54]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[55]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {Addr[56]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {Addr[57]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[58]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[59]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {Addr[5]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[60]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[61]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[62]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {Addr[63]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[6]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[7]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {Addr[8]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {Addr[9]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {DMout[0]} {TOP_IO_HT3_FB1_D5}
+assign_port -fwd $port_soft {DMout[10]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[11]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[12]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[13]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[14]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[15]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[16]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[17]} {TOP_IO_HT3_FB1_D5}
+assign_port -fwd $port_soft {DMout[18]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[19]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[1]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[20]} {TOP_IO_HT3_FB1_D5}
+assign_port -fwd $port_soft {DMout[21]} {TOP_IO_HT3_FB1_D5}
+assign_port -fwd $port_soft {DMout[22]} {TOP_IO_HT3_FB1_D5}
+assign_port -fwd $port_soft {DMout[23]} {TOP_IO_HT3_FB1_D4}
+assign_port -fwd $port_soft {DMout[24]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[25]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[26]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[27]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[28]} {TOP_IO_HT3_FB1_D4}
+assign_port -fwd $port_soft {DMout[29]} {TOP_IO_HT3_FB1_D5}
+assign_port -fwd $port_soft {DMout[2]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[30]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[31]} {TOP_IO_HT3_FB1_D4}
+assign_port -fwd $port_soft {DMout[32]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[33]} {TOP_IO_HT3_FB1_D4}
+assign_port -fwd $port_soft {DMout[34]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[35]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[36]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[37]} {TOP_IO_HT3_FB1_D4}
+assign_port -fwd $port_soft {DMout[38]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[39]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[3]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[40]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[41]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[42]} {TOP_IO_HT3_FB1_D4}
+assign_port -fwd $port_soft {DMout[43]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[44]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[45]} {TOP_IO_HT3_FB1_D5}
+assign_port -fwd $port_soft {DMout[46]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[47]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[48]} {TOP_IO_HT3_FB1_D5}
+assign_port -fwd $port_soft {DMout[49]} {TOP_IO_HT3_FB1_D4}
+assign_port -fwd $port_soft {DMout[4]} {TOP_IO_HT3_FB1_D4}
+assign_port -fwd $port_soft {DMout[50]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[51]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[52]} {TOP_IO_HT3_FB1_D4}
+assign_port -fwd $port_soft {DMout[53]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[54]} {TOP_IO_HT3_FB1_D5}
+assign_port -fwd $port_soft {DMout[55]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[56]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[57]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[58]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[59]} {TOP_IO_HT3_FB1_D4}
+assign_port -fwd $port_soft {DMout[5]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[60]} {TOP_IO_HT3_FB1_D5}
+assign_port -fwd $port_soft {DMout[61]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[62]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[63]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {DMout[6]} {TOP_IO_HT3_FB1_D4}
+assign_port -fwd $port_soft {DMout[7]} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {DMout[8]} {TOP_IO_HT3_FB1_D5}
+assign_port -fwd $port_soft {DMout[9]} {TOP_IO_HT3_FB1_D5}
+assign_port -fwd $port_soft {IMMID[0]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {IMMID[10]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {IMMID[11]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {IMMID[12]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {IMMID[13]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[14]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[15]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {IMMID[16]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[17]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {IMMID[18]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {IMMID[19]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {IMMID[1]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {IMMID[20]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {IMMID[21]} {TOP_IO_HT3_FB1_D5}
+assign_port -fwd $port_soft {IMMID[22]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {IMMID[23]} {TOP_IO_HT3_FB1_D4}
+assign_port -fwd $port_soft {IMMID[24]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[25]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {IMMID[26]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {IMMID[27]} {TOP_IO_HT3_FB1_D3}
+assign_port -fwd $port_soft {IMMID[28]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[29]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {IMMID[2]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {IMMID[30]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[31]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {IMMID[32]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {IMMID[33]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {IMMID[34]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[35]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {IMMID[36]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {IMMID[37]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[38]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {IMMID[39]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {IMMID[3]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {IMMID[40]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[41]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[42]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {IMMID[43]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {IMMID[44]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[45]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[46]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {IMMID[47]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {IMMID[48]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {IMMID[49]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {IMMID[4]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {IMMID[50]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {IMMID[51]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[52]} {TOP_IO_HT3_FB1_D4}
+assign_port -fwd $port_soft {IMMID[53]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {IMMID[54]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[55]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {IMMID[56]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {IMMID[57]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {IMMID[58]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {IMMID[59]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[5]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {IMMID[60]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {IMMID[61]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {IMMID[62]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {IMMID[63]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {IMMID[6]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {IMMID[7]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {IMMID[8]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {IMMID[9]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {MEMTOREGWB} {TOP_IO_HT3_FB1_D5}
+assign_port -fwd $port_soft {PC[0]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[10]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[11]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[12]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[13]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {PC[14]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {PC[15]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[16]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[17]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[18]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[19]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {PC[1]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {PC[20]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {PC[21]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {PC[22]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {PC[23]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {PC[24]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[25]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[26]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[27]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {PC[28]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[29]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {PC[2]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {PC[30]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {PC[31]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[32]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[33]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[34]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[35]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {PC[36]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[37]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {PC[38]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {PC[39]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[3]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[40]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {PC[41]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {PC[42]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {PC[43]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {PC[44]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[45]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {PC[46]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[47]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {PC[48]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[49]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {PC[4]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[50]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[51]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[52]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[53]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {PC[54]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {PC[55]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[56]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[57]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[58]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[59]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[5]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[60]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[61]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[62]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[63]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {PC[6]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {PC[7]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {PC[8]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {PC[9]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {RD1ID[0]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD1ID[10]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[11]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD1ID[12]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD1ID[13]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[14]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[15]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[16]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD1ID[17]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD1ID[18]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[19]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD1ID[1]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[20]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[21]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[22]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[23]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD1ID[24]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD1ID[25]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[26]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[27]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[28]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[29]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD1ID[2]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[30]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[31]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD1ID[32]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[33]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[34]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[35]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD1ID[36]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[37]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[38]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[39]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[3]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[40]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[41]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD1ID[42]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[43]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD1ID[44]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[45]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD1ID[46]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD1ID[47]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD1ID[48]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[49]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[4]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[50]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD1ID[51]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD1ID[52]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD1ID[53]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[54]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD1ID[55]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[56]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[57]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD1ID[58]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD1ID[59]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[5]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD1ID[60]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD1ID[61]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[62]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[63]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD1ID[6]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD1ID[7]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD1ID[8]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD1ID[9]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD2ID[0]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[10]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD2ID[11]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[12]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[13]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD2ID[14]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD2ID[15]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[16]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[17]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD2ID[18]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[19]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD2ID[1]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[20]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD2ID[21]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD2ID[22]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD2ID[23]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[24]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[25]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD2ID[26]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[27]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[28]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD2ID[29]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD2ID[2]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[30]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD2ID[31]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[32]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD2ID[33]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD2ID[34]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD2ID[35]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD2ID[36]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[37]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[38]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD2ID[39]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[3]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD2ID[40]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[41]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[42]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[43]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[44]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[45]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[46]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[47]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD2ID[48]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[49]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[4]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD2ID[50]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD2ID[51]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[52]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[53]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD2ID[54]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD2ID[55]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD2ID[56]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[57]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD2ID[58]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[59]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD2ID[5]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[60]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD2ID[61]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[62]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[63]} {TOP_IO_HT3_FB1_B8}
+assign_port -fwd $port_soft {RD2ID[6]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {RD2ID[7]} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {RD2ID[8]} {TOP_IO_HT3_FB1_B5}
+assign_port -fwd $port_soft {RD2ID[9]} {TOP_IO_HT3_FB1_B6}
+assign_port -fwd $port_soft {REGWRITEWB} {TOP_IO_HT3_FB1_D6}
+assign_port -fwd $port_soft {clk} {FB1.PLL1}
+assign_port -fwd $port_soft {equal} {TOP_IO_HT3_FB1_B7}
+assign_port -fwd $port_soft {in_enable} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {in_instruc[0]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {in_instruc[10]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {in_instruc[11]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {in_instruc[12]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {in_instruc[13]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {in_instruc[14]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {in_instruc[15]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {in_instruc[16]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {in_instruc[17]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {in_instruc[18]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {in_instruc[19]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {in_instruc[1]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {in_instruc[20]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {in_instruc[21]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {in_instruc[22]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {in_instruc[23]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {in_instruc[24]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {in_instruc[25]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {in_instruc[26]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {in_instruc[27]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {in_instruc[28]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {in_instruc[29]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {in_instruc[2]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {in_instruc[30]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {in_instruc[31]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {in_instruc[3]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {in_instruc[4]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {in_instruc[5]} {TOP_IO_HT3_FB1_A12}
+assign_port -fwd $port_soft {in_instruc[6]} {TOP_IO_HT3_FB1_A5}
+assign_port -fwd $port_soft {in_instruc[7]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {in_instruc[8]} {TOP_IO_HT3_FB1_A6}
+assign_port -fwd $port_soft {in_instruc[9]} {TOP_IO_HT3_FB1_A11}
+assign_port -fwd $port_soft {stall} {TOP_IO_HT3_FB1_B7}
+assign_cell $cell_soft {IMMID[11]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[12]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[13]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[14]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[15]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[16]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[17]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[18]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[19]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[20]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[22]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[24]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[25]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[26]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[28]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[29]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[30]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[31]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[32]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[33]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[34]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[35]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[36]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[37]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[38]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[39]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[40]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[41]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[42]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[43]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[44]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[45]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[46]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[47]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[48]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[49]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[50]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[51]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[53]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[54]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[55]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[56]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[57]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[58]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[59]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[60]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[61]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[62]} {FB1.uA} 
+assign_cell $cell_soft {IMMID[63]} {FB1.uA} 
+assign_cell $cell_soft {adder1} {FB1.uA} 
+assign_cell $cell_soft {ifid1} {FB1.uA} 
+assign_cell $cell_soft {im1} {FB1.uA} 
+assign_cell $cell_soft {mux3} {FB1.uA} 
+assign_cell $cell_soft {pc1} {FB1.uA} 
+assign_cell $cell_soft {stop} {FB1.uA} 
+assign_cell $cell_soft {PCSRCID} {FB1.uB} 
+assign_cell $cell_soft {adder2} {FB1.uB} 
+assign_cell $cell_soft {control1} {FB1.uB} 
+assign_cell $cell_soft {cp1} {FB1.uB} 
+assign_cell $cell_soft {hazard1} {FB1.uB} 
+assign_cell $cell_soft {idex1} {FB1.uB} 
+assign_cell $cell_soft {immgen1} {FB1.uB} 
+assign_cell $cell_soft {mux3_1_1} {FB1.uB} 
+assign_cell $cell_soft {mux3_1_2} {FB1.uB} 
+assign_cell $cell_soft {registers1} {FB1.uB} 
+assign_cell $cell_soft {Addr[0]} {FB1.uC} 
+assign_cell $cell_soft {Addr[1]} {FB1.uC} 
+assign_cell $cell_soft {alu1} {FB1.uC} 
+assign_cell $cell_soft {alucontrol} {FB1.uC} 
+assign_cell $cell_soft {exmem1} {FB1.uC} 
+assign_cell $cell_soft {forward1} {FB1.uC} 
+assign_cell $cell_soft {mux1} {FB1.uC} 
+assign_cell $cell_soft {mux3_1_3} {FB1.uC} 
+assign_cell $cell_soft {mux3_1_4} {FB1.uC} 
+assign_cell $cell_soft {IMMID[21]} {FB1.uD} 
+assign_cell $cell_soft {IMMID[23]} {FB1.uD} 
+assign_cell $cell_soft {IMMID[27]} {FB1.uD} 
+assign_cell $cell_soft {IMMID[52]} {FB1.uD} 
+assign_cell $cell_soft {dm1} {FB1.uD} 
+assign_cell $cell_soft {memwb1} {FB1.uD} 
+assign_cell $cell_soft {mux2} {FB1.uD} 

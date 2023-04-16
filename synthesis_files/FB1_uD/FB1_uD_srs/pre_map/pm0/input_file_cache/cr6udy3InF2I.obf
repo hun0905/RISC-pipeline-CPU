@@ -1,0 +1,9 @@
+-fdc /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/common_files/srs_cons_var.fdc
+-fdc /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/common_files/tdm_cons_var.fdc
+-fdc /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/FB1_uD_pinloc.fdc
+-fdc /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/FB1_uD_iostd.fdc
+-fdc /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/FB1_uD_attr.fdc
+-fdc /home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc
+-fdc /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/FB1_uD_timing.fdc
+-fdc /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/common_files/clockgen_cons.fdc
+-fdc /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/FB1_uD_haps_timing.fdc

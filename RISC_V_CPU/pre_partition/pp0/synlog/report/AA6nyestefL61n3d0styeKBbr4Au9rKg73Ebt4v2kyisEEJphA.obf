@@ -1,0 +1,5 @@
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: BZ108 |SCO : Total number of LUTs added: 0.
+@N: BN225 |Writing default property annotation file /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/top.sap.

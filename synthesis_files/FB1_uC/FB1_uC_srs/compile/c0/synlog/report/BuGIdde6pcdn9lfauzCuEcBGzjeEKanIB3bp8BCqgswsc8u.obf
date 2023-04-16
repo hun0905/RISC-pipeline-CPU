@@ -1,0 +1,12 @@
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MF990 |On Demand Uniquification flow enabled 
+@N: MO111 :|Tristate driver pin_BR13_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_BR13 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver pin_BP13_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_BP13 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver pin_J31_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_J31 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver pin_H31_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_H31 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver pin_H39_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_H39 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver pin_G39_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_G39 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver pin_N50_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_N50 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.
+@N: MO111 :|Tristate driver pin_P50_t (in view: TraceBuildLib.FB1_uC(verilog_0)) on net pin_P50 (in view: TraceBuildLib.FB1_uC(verilog_0)) has its enable tied to GND.

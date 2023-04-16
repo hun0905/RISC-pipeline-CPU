@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+							 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+							 <html xmlns="http://www.w3.org/1999/xhtml">
+							 <head> <p style="font-family: courier,monospace; line-height: 1.0; font-weight: bold; font-size:24px">
+ProtoCompiler Database "FB1_uC_srs"
+</p><script language="javascript" type="text/javascript">
+	<!--
+function get_browser_info(){
+    var ua=navigator.userAgent,tem,M=ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || []; 
+    if(/trident/i.test(M[1])){
+        tem=/\brv[ :]+(\d+)/g.exec(ua) || []; 
+        return {name:'IE ',version:(tem[1]||'')};
+        }   
+    if(M[1]==='Chrome'){
+        tem=ua.match(/\bOPR\/(\d+)/)
+        if(tem!=null)   {return {name:'Opera', version:tem[1]};}
+        }   
+    M=M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+    if((tem=ua.match(/version\/(\d+)/i))!=null) {M.splice(1,1,tem[1]);}
+    return {
+      name: M[0],
+      version: M[1]
+    };
+ }
+ function warnbrowserversion(browser, msg) {
+	txt = 'WARNING: The current browser ' +  browser.name +  ' ' +  browser.version  + ' ' + msg + ' and may not function well with Synopsys ProtoCompiler log files. Chrome version 27 or higher, or Firefox version 16 or higher is recommended.';
+	window.alert(txt);
+}
+var browser=get_browser_info();
+if((browser.name=='Firefox' && parseInt(browser.version) < 16) ||
+	(browser.name=='Chrome' && parseInt(browser.version) < 27)) {
+	warnbrowserversion(browser, 'is outdated');
+}else if(browser.name != 'Firefox' && browser.name != 'Chrome' && browser.name != 'IE') {
+	warnbrowserversion(browser, 'is untested');
+}
+// -->
+</script> </head>
+<body>
+<style type='text/css'>
+<!--
+.errortext { color: #FF0000; }
+.running { color: #9933FF; }
+.complete { color: #008000; }
+.state { width:100%; }
+.th {background-color:ActiveCaption; }
+b { font-weight: bold;}
+-->
+</style>
+<table class = "state" width="100%" border="1" >
+ <tr><th class="th" colspan="2"align="left">Database Details</th></tr>
+<tbody> <tr> <th class="summaryTitle" align="left"> Database Name</th> <td>FB1_uC_srs</td> </tr>
+<tr><th align="left">Path</th><td class="sp" colspan="3">/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/FB1_uC_srs</tr>
+ 
+</tbody> 
+<tr><th align="left">Target Device</th><td class="sp" colspan="3">proto: Synopsys HAPS-100 : XCVU19P</tr>
+ 
+</tbody> 
+  </table>
+<h3>Browse logs and reports by state:</h3>
+<table class="state" border="1px" >
+<tr><th class="th">State Details</th><th class="th">Reports</th> </tr>
+<tr>
+ <td valign="top"><table cellspacing="0" cellpadding="1" >
+<tr><th align="left" colspan="2">
+<b>c0 (compile)</b>
+</th></tr>
+<tr><td valign="top">
+Command:<td><dfn>run compile -srclist src_srs.txt -out c0 -cdclist cdc_files.txt -top_module TraceBuildLib.FB1_uC -include_path {$LIB/board; /home/u108/u108061217/RISC-V-pipeline-CPU}</dfn></td></tr>
+<tr><td>Run Time:<td>15 seconds</td></tr>
+<tr><td>Run Status: <td><span class="complete">Complete</span>
+</td></tr>
+</table>
+
+<td> <ul> 
+<li><span>Module Runtime Summary: <a href="FB1_uC_srs/compile/c0/synwork/FB1_uC_comp.rt.csv.html">FB1_uC_comp.rt.csv</a> (22:42:20  4月 09 2023)
+</span></li>
+<li><span>Compile Log: <a href="FB1_uC_srs/compile/c0/synlog/FB1_uC_compiler.srr.html">FB1_uC_compiler.srr</a> (22:42:20  4月 09 2023)
+</span></li>
+<li><span>Multi-srs Generator Log: <a href="FB1_uC_srs/compile/c0/synlog/FB1_uC_multi_srs_gen.srr.html">FB1_uC_multi_srs_gen.srr</a> (22:42:21  4月 09 2023)
+</span></li>
+<li><span>Constants driving top level ports.: <a href="FB1_uC_srs/compile/c0/synlog/topconst.rpt.html">FB1_uC_port_consts.rpt</a> (22:42:32  4月 09 2023)
+</span></li>
+<li><span>Post compilation optimization Log: <a href="FB1_uC_srs/compile/c0/synlog/FB1_uC_global_optimizer.srr.html">FB1_uC_opt.srr</a> (22:42:32  4月 09 2023)
+</span></li>
+</ul></td>
+
+<tr>
+ <td valign="top"><ul><table cellspacing="0" cellpadding="1" >
+<tr><th align="left" colspan="2">
+<b>pm0 (pre_map)</b>
+</th></tr>
+<tr><td valign="top">
+Command:<td><dfn>run pre_map -fdclist fdc_files.txt -out pm0</dfn></td></tr>
+<tr><td>Run Time:<td>2 minutes 8 seconds</td></tr>
+<tr><td>Run Status: <td><span class="complete">Complete</span>
+</td></tr>
+</table>
+</ul>
+<td> <ul> 
+<li><span>HAPS IO Report: <a href="FB1_uC_srs/pre_map/pm0/FB1_uC_haps_io_report.txt.html">haps_io_report.txt</a> (22:44:40  4月 09 2023)
+</span></li>
+<li><span>system memory report: <a href="FB1_uC_srs/pre_map/pm0/FB1_uC_system_memory_report.txt.html">FB1_uC_system_memory.rpt</a> (22:44:40  4月 09 2023)
+</span></li>
+<li><span>Constraint check report: <a href="FB1_uC_srs/pre_map/pm0/FB1_uC_scck.rpt.html">FB1_uC_scck.rpt</a> (22:44:40  4月 09 2023)
+</span></li>
+<li><span>Syntax Constraint Check Report: <a href="FB1_uC_srs/pre_map/pm0/FB1_uC_scck.rpt.html">syntax_constraint_check.rpt</a> (22:44:40  4月 09 2023)
+</span></li>
+<li><span>Constraint Check Report: <a href="FB1_uC_srs/pre_map/pm0/FB1_uC_cck.rpt.html">constraint_check.rpt</a> (22:44:41  4月 09 2023)
+</span></li>
+<li><span>Pre-map Log: <a href="FB1_uC_srs/pre_map/pm0/synlog/FB1_uC_premap.srr.html">pre_map.srr</a> (22:44:41  4月 09 2023)
+</span></li>
+</ul></td>
+
+<tr>
+ <td valign="top"><ul><ul><table cellspacing="0" cellpadding="1" >
+<tr><th align="left" colspan="2">
+<b>m0 (map)</b>
+</th></tr>
+<tr><td valign="top">
+Command:<td><dfn>run map -out m0</dfn></td></tr>
+<tr><td>Run Time:<td>26 minutes 55 seconds</td></tr>
+<tr><td>Run Status: <td><span class="complete">Complete</span>
+</td></tr>
+
+<tr><td>Exports: </td><td><dfn><a href="./vivado_srs">export vivado -path ./vivado_srs</a> (23:11:48  4月 09 2023)</dfn></td></tr>
+</table>
+</ul></ul>
+<td> <ul> 
+<li><span>system memory report: <a href="FB1_uC_srs/map/m0/FB1_uC_system_memory_report.txt.html">FB1_uC_system_memory.rpt</a> (23:11:37  4月 09 2023)
+</span></li>
+<li><span>CSV file generated for mapped netlist: <a href="FB1_uC_srs/map/m0/rpt_FB1_uC_areasrr.csv.html">hierarea.csv</a> (23:11:37  4月 09 2023)
+</span></li>
+<li><span>Hierarchical Area Report: <a href="FB1_uC_srs/map/m0/rpt_FB1_uC.areasrr.html">hierarea.rpt</a> (23:11:37  4月 09 2023)
+</span></li>
+<li><span>Synthesis Log: <a href="FB1_uC_srs/map/m0/synlog/FB1_uC_fpga_mapper.srr.html">map.srr</a> (23:11:37  4月 09 2023)
+</span></li>
+</ul></td>
+
+</table></body></html>

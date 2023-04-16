@@ -1,0 +1,8 @@
+/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/bin/hcprocess  -batch  -tcl  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/targetsystem.tcl  -log  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/tss.log 
+relcom:/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/bin/hcprocess -batch -tcl ../targetsystem.tcl -log ../tss.log
+rc:0 success:1 runtime:21
+file:../../../../board.tss|io:i|time:1681041382|size:4191|exec:0|csum:
+file:../targetsystem.tcl|io:i|time:1681051095|size:806|exec:0|csum:
+file:../tss.log|io:o|time:1681051116|size:2267|exec:0|csum:
+file:../targetsystem.srs|io:o|time:1681051104|size:326563|exec:0|csum:
+file:/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/bin/hcprocess|io:i|time:1649477855|size:399|exec:1|csum:

@@ -1,0 +1,13 @@
+@W: FX1020 |A simulation mismatch is possible. Ignoring vendor library default initial value on registers, because the default value is not set. To enable vendor library default initial values, add the command "set_option -support_implicit_init_netlist 1" to the project file.
+**** Begin Compile Point : FB1_uA ****
+@W: FX1020 |A simulation mismatch is possible. Ignoring vendor library default initial value on registers, because the default value is not set. To enable vendor library default initial values, add the command "set_option -support_implicit_init_netlist 1" to the project file.
+**** End Compile Point : FB1_uA ****
+**** Begin Compile Point : FB1_uB ****
+@W: FX1020 |A simulation mismatch is possible. Ignoring vendor library default initial value on registers, because the default value is not set. To enable vendor library default initial values, add the command "set_option -support_implicit_init_netlist 1" to the project file.
+**** End Compile Point : FB1_uB ****
+**** Begin Compile Point : FB1_uC ****
+@W: FX1020 |A simulation mismatch is possible. Ignoring vendor library default initial value on registers, because the default value is not set. To enable vendor library default initial values, add the command "set_option -support_implicit_init_netlist 1" to the project file.
+**** End Compile Point : FB1_uC ****
+**** Begin Compile Point : FB1_uD ****
+@W: FX1020 |A simulation mismatch is possible. Ignoring vendor library default initial value on registers, because the default value is not set. To enable vendor library default initial values, add the command "set_option -support_implicit_init_netlist 1" to the project file.
+**** End Compile Point : FB1_uD ****

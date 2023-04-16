@@ -1,0 +1,2 @@
+net_attribute [design_list_nets -exact_name {clk}] -function GCLK
+assign_global_net {clk} {GCLK1} -constrain_cells 1

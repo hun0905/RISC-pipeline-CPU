@@ -1,0 +1,1345 @@
+#Build: HAPS (R) ProtoCompiler 100 R-2020.12-SP1-1, Build 198R, Apr  8 2022
+#install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+#OS: Linux 
+#Hostname: ws35
+
+# Sun Apr  9 22:37:47 2023
+
+#Implementation: c0
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 8388608 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|c0
+Synopsys HDL Compiler, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:14, @4216327
+
+@N|Running in 64-bit mode
+@N: Compiling unified compile database from "/home/u108/u108061217/RISC-V-pipeline-CPU/top_ucdb"
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 8388608 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|c0
+Synopsys SCM Compiler, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:28, @4216327
+
+@N: Running in 64-bit mode
+@N: Reading unified compile database from "/home/u108/u108061217/RISC-V-pipeline-CPU/top_ucdb/"
+@N: Running compiler in Fast Synthesis mode
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Db generation time summary:
+###########################################################[
+Runtime for reading SCMs  = Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
+Runtime for converting    = Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
+Runtime for IDB writing   = Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
+###########################################################]
+
+At c_scm Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 221MB peak: 221MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:49 2023
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 64MB peak: 64MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:49 2023
+
+###########################################################]
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 8388608 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|c0
+Synopsys HDL Compiler, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:14, @4216327
+
+@N|Running in 64-bit mode
+@N: Compiling unified compile database from "/home/u108/u108061217/RISC-V-pipeline-CPU/top_ucdb"
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 8388608 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|c0
+Synopsys SCM Compiler, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:28, @4216327
+
+@N: Running in 64-bit mode
+@N: Reading unified compile database from "/home/u108/u108061217/RISC-V-pipeline-CPU/top_ucdb/"
+@N: Running compiler in Fast Synthesis mode
+@N: Distributing compilation using maximum of 4 parallel jobs
+@N: Created 19 jobs for distributed compilation
+@N: Compilation of distcomp0 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp1 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp2 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp3 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp4 finished. Run time 0h:00m:02s
+@N: Compilation of distcomp5 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp6 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp7 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp8 finished. Run time 0h:00m:02s
+@N: Compilation of distcomp9 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp10 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp11 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp12 finished. Run time 0h:00m:02s
+@N: Compilation of distcomp13 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp14 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp15 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp16 finished. Run time 0h:00m:02s
+@N: Compilation of distcomp17 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp18 finished. Run time 0h:00m:01s
+###########################################################[
+@N: Running distributed compile: job0
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module top in library work of instance top.
+Running optimization stage 1 on top .......
+Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on top .......
+Finished optimization stage 2 on top (CPU Time 0h:00m:00s, Memory Used current: 213MB peak: 213MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp0/distcomp0.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 213MB peak: 213MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:50 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job1
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module MEM_WB in library work of instance MEM_WB.
+Running optimization stage 1 on MEM_WB .......
+Finished optimization stage 1 on MEM_WB (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on MEM_WB .......
+Finished optimization stage 2 on MEM_WB (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp1/distcomp1.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:50 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job2
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module IM in library work of instance IM.
+Running optimization stage 1 on __ZEBU_mem_a32_d32_ra_ws_1 .......
+Finished optimization stage 1 on __ZEBU_mem_a32_d32_ra_ws_1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+@N: CL134 :"./src/IM.v":1:0:1:0|Found RAM instrucmem, depth=32, width=32
+Running optimization stage 1 on IM .......
+Finished optimization stage 1 on IM (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 1 on __ZEBU_mem_a32_d32_ra_ws_2 .......
+Finished optimization stage 1 on __ZEBU_mem_a32_d32_ra_ws_2 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on __ZEBU_mem_a32_d32_ra_ws_2 .......
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input asyncreset is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input syncreset is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input resetdata is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input addr0 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input clock0 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input enable0 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input bitEnable0 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input addr1 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input data1 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input clock1 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input enable1 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input bitEnable1 is unused.
+Finished optimization stage 2 on __ZEBU_mem_a32_d32_ra_ws_2 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on __ZEBU_mem_a32_d32_ra_ws_1 .......
+Finished optimization stage 2 on __ZEBU_mem_a32_d32_ra_ws_1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on IM .......
+@W: CL246 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/IM.v":11:0:11:0|Input port bits 63 to 7 of PCAddr[63:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/IM.v":11:0:11:0|Input port bits 1 to 0 of PCAddr[63:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/IM.v":11:0:11:0|Input port bits 1 to 0 of in_addr[63:0] are unused. Assign logic for all port bits or change the input port size.
+@N: CL159 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/IM.v":9:0:9:0|Input _anonport_8 is unused.
+Finished optimization stage 2 on IM (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp2/distcomp2.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:50 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job3
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module Adder in library work of instance Adder.
+Running optimization stage 1 on Adder .......
+Finished optimization stage 1 on Adder (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 211MB)
+Running optimization stage 2 on Adder .......
+Finished optimization stage 2 on Adder (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp3/distcomp3.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:50 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job4
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module MUX in library work of instance MUX.
+Running optimization stage 1 on MUX .......
+Finished optimization stage 1 on MUX (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 211MB)
+Running optimization stage 2 on MUX .......
+Finished optimization stage 2 on MUX (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 211MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp4/distcomp4.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:51 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job5
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module MUX3_1 in library work of instance MUX3_1.
+Running optimization stage 1 on MUX3_1 .......
+Finished optimization stage 1 on MUX3_1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on MUX3_1 .......
+Finished optimization stage 2 on MUX3_1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp5/distcomp5.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:51 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job6
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module DM in library work of instance DM.
+Running optimization stage 1 on __ZEBU_mem_a64_d64_ra_ws_1 .......
+Finished optimization stage 1 on __ZEBU_mem_a64_d64_ra_ws_1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+@N: CL134 :"./src/DM.v":1:0:1:0|Found RAM memory, depth=64, width=64
+Running optimization stage 1 on DM .......
+Finished optimization stage 1 on DM (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 1 on __ZEBU_mem_a64_d64_ra_ws_2 .......
+Finished optimization stage 1 on __ZEBU_mem_a64_d64_ra_ws_2 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on __ZEBU_mem_a64_d64_ra_ws_2 .......
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input asyncreset is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input syncreset is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input resetdata is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input addr0 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input clock0 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input enable0 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input bitEnable0 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input addr1 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input data1 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input clock1 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input enable1 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input bitEnable1 is unused.
+Finished optimization stage 2 on __ZEBU_mem_a64_d64_ra_ws_2 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on __ZEBU_mem_a64_d64_ra_ws_1 .......
+Finished optimization stage 2 on __ZEBU_mem_a64_d64_ra_ws_1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on DM .......
+Finished optimization stage 2 on DM (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp6/distcomp6.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:51 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job7
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module IF_ID in library work of instance IF_ID.
+Running optimization stage 1 on IF_ID .......
+Finished optimization stage 1 on IF_ID (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on IF_ID .......
+Finished optimization stage 2 on IF_ID (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp7/distcomp7.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:51 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job8
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module PC in library work of instance PC.
+Running optimization stage 1 on PC .......
+Finished optimization stage 1 on PC (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 211MB)
+Running optimization stage 2 on PC .......
+Finished optimization stage 2 on PC (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 211MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp8/distcomp8.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:52 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job9
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module Hazard in library work of instance Hazard.
+Running optimization stage 1 on Hazard .......
+Finished optimization stage 1 on Hazard (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on Hazard .......
+@N: CL159 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/Hazard.v":10:0:10:0|Input _anonport_9 is unused.
+Finished optimization stage 2 on Hazard (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp9/distcomp9.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:52 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job10
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module ALU in library work of instance ALU.
+Running optimization stage 1 on ALU .......
+Finished optimization stage 1 on ALU (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on ALU .......
+@N: CL159 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/ALU.v":10:0:10:0|Input _anonport_7 is unused.
+@N: CL159 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/ALU.v":15:0:15:0|Input clk is unused.
+@N: CL159 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/ALU.v":15:0:15:0|Input rst_n is unused.
+Finished optimization stage 2 on ALU (CPU Time 0h:00m:00s, Memory Used current: 214MB peak: 214MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp10/distcomp10.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 214MB peak: 214MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:52 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job11
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module Control in library work of instance Control.
+Running optimization stage 1 on Control .......
+Finished optimization stage 1 on Control (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on Control .......
+Finished optimization stage 2 on Control (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp11/distcomp11.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:52 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job12
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module Registers in library work of instance Registers.
+Running optimization stage 1 on __ZEBU_mem_a32_d64_ra_ra_ws_1 .......
+Finished optimization stage 1 on __ZEBU_mem_a32_d64_ra_ra_ws_1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+@N: CL134 :"./src/Registers.v":1:0:1:0|Found RAM Registers, depth=32, width=64
+Running optimization stage 1 on Registers .......
+Finished optimization stage 1 on Registers (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 1 on __ZEBU_mem_a32_d64_ra_ra_ws_2 .......
+Finished optimization stage 1 on __ZEBU_mem_a32_d64_ra_ra_ws_2 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on __ZEBU_mem_a32_d64_ra_ra_ws_2 .......
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input asyncreset is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input syncreset is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input resetdata is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input addr0 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input clock0 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input enable0 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input bitEnable0 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input addr1 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input clock1 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input enable1 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input bitEnable1 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input addr2 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input data2 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input clock2 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input enable2 is unused.
+@N: CL159 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":0:0:0:0|Input bitEnable2 is unused.
+Finished optimization stage 2 on __ZEBU_mem_a32_d64_ra_ra_ws_2 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on __ZEBU_mem_a32_d64_ra_ra_ws_1 .......
+Finished optimization stage 2 on __ZEBU_mem_a32_d64_ra_ra_ws_1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on Registers .......
+@N: CL159 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/Registers.v":11:0:11:0|Input _anonport_10 is unused.
+Finished optimization stage 2 on Registers (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp12/distcomp12.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:53 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job13
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module Forwarding in library work of instance Forwarding.
+Running optimization stage 1 on Forwarding .......
+Finished optimization stage 1 on Forwarding (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on Forwarding .......
+Finished optimization stage 2 on Forwarding (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp13/distcomp13.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:53 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job14
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module ImmGen in library work of instance ImmGen.
+Running optimization stage 1 on ImmGen .......
+Finished optimization stage 1 on ImmGen (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on ImmGen .......
+@W: CL246 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/ImmGen.v":5:0:5:0|Input port bits 19 to 12 of in[31:0] are unused. Assign logic for all port bits or change the input port size.
+Finished optimization stage 2 on ImmGen (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp14/distcomp14.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:53 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job15
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module EX_MEM in library work of instance EX_MEM.
+Running optimization stage 1 on EX_MEM .......
+Finished optimization stage 1 on EX_MEM (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on EX_MEM .......
+Finished optimization stage 2 on EX_MEM (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp15/distcomp15.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:54 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job16
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module comparator in library work of instance comparator.
+Running optimization stage 1 on comparator .......
+Finished optimization stage 1 on comparator (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on comparator .......
+Finished optimization stage 2 on comparator (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp16/distcomp16.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:55 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job17
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module ID_EX in library work of instance ID_EX.
+Running optimization stage 1 on ID_EX .......
+Finished optimization stage 1 on ID_EX (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on ID_EX .......
+Finished optimization stage 2 on ID_EX (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp17/distcomp17.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:55 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job18
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module ALUControl in library work of instance ALUControl.
+Running optimization stage 1 on ALUControl .......
+Finished optimization stage 1 on ALUControl (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on ALUControl .......
+Finished optimization stage 2 on ALUControl (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/distcomp/distcomp18/distcomp18.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:55 2023
+
+###########################################################]
+
+At c_scm Exit (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:14s; Memory used current: 189MB peak: 189MB)
+
+Process took 0h:00m:08s realtime, 0h:00m:14s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:58 2023
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/top_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:14s; Memory used current: 64MB peak: 64MB)
+
+Process took 0h:00m:08s realtime, 0h:00m:14s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:37:58 2023
+
+###########################################################]
+Global Optimizer Report
+
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 8388608 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|c0
+Synopsys Synopsys Netlist Linker, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:14, @4216327
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 148MB peak: 148MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Apr  9 22:38:00 2023
+
+###########################################################]
+# Sun Apr  9 22:38:00 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|c0
+Synopsys Xilinx Technology Mapper, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 237MB peak: 237MB)
+
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/top_ucdb/cclock_map.tcl
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+@W: FX1020 |A simulation mismatch is possible. Ignoring vendor library default initial value on registers, because the default value is not set. To enable vendor library default initial values, add the command "set_option -support_implicit_init_netlist 1" to the project file.
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Target platform is HAPS-100, running ProtoCompiler.
+
+@N: MF990 |On Demand Uniquification flow enabled 
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+NConnInternalConnection caching is on
+
+Starting functional verification of DisTri Cleanupfolded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Started DisTri Cleanup folded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Starting disabled tri cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Finished disabled tri cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Finished DisTri Cleanup folded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Finished functional verification of DisTri Cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Starting bidir resolution (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Finished bidir resolution (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Start optimization across hierarchy (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+@N: MO111 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":1:0:1:0|Tristate driver un4 (in view: work.top(verilog)) on net un6 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":1:0:1:0|Tristate driver un3 (in view: work.top(verilog)) on net un7 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":1:0:1:0|Tristate driver un5 (in view: work.top(verilog)) on net un8 (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":1:0:1:0|Tristate driver un2 (in view: work.top(verilog)) on net un9 (in view: work.top(verilog)) has its enable tied to GND.
+@W: BN132 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/ID_EX.v":61:0:61:0|Removing sequential instance idex1.memtoreg_out because it is equivalent to instance idex1.memread_out. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/ID_EX.v":33:0:33:0|Removing sequential instance pc_out[63:0] (in view: work.ID_EX(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@W: BN132 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/EX_MEM.v":45:0:45:0|Removing sequential instance exmem1.memtoreg_out because it is equivalent to instance exmem1.memread_out. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Finished optimization across hierarchy (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Starting functional verification of DisTri Cleanupfolded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Started DisTri Cleanup folded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Starting disabled tri cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Finished disabled tri cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Finished DisTri Cleanup folded (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Finished functional verification of DisTri Cleanup (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+No subsystems found. Skipping subsystem constant report.
+
+Start clock netlist generation (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+ODU CTE is ON (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+ODU CTE: doing uniquification (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+ODU CTE: done uniquification (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Deleting unused ports (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Deleted 65 (166) unused ports across 21 views (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+ODU CTE: removed non-clocks (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+
+Finished clock netlist generation (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+Finished Prepass Opt Phase.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 785MB peak: 785MB)
+
+Process took 0h:00m:11s realtime, 0h:00m:11s cputime
+# Sun Apr  9 22:38:12 2023
+
+###########################################################]
+Clock Tree Conversion Report
+
+On Demand Constraint Applier Report
+
+# Sun Apr  9 22:38:37 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|pp0
+Synopsys Xilinx Technology Mapper, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 237MB peak: 237MB)
+
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/top_ucdb/cclock_map.tcl
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc
+See report top_scck.rpt@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+@W: FX1020 |A simulation mismatch is possible. Ignoring vendor library default initial value on registers, because the default value is not set. To enable vendor library default initial values, add the command "set_option -support_implicit_init_netlist 1" to the project file.
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Begin ct process log
+
+
+Target platform is HAPS-100, running ProtoCompiler.
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 255MB peak: 255MB)
+
+@N: BZ108 |SCO : Total number of LUTs added: 0.
+@W: MT682 :"/home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc":11:0:11:0|set_input_delay command has no effect on unconnected port. Remove input port rst_n from set_input_delay command. 
+
+
+@S0 |Clock Summary
+******************
+
+          Start           Requested     Requested     Clock        Clock                Clock
+Level     Clock           Frequency     Period        Type         Group                Load 
+---------------------------------------------------------------------------------------------
+0 -       clk (p:clk)     2.0 MHz       500.000       declared     default_clkgroup     828  
+=============================================================================================
+
+
+
+@S0 |Clock Load Summary
+***********************
+
+          Clock     Source        Clock Pin          Non-clock Pin     Non-clock Pin
+Clock     Load      Pin           Seq Example        Seq Example       Comb Example 
+------------------------------------------------------------------------------------
+clk       828       clk(port)     pc1.PC[63:0].C     -                 -            
+====================================================================================
+
+
+Marking clock path (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+
+Done marking clock path (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+@N: BN225 |Writing default property annotation file /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/top.sap.
+
+Finished clock netlist generation (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+
+End ct process log
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+Process took 0h:00m:11s realtime, 0h:00m:11s cputime
+# Sun Apr  9 22:38:49 2023
+
+###########################################################]
+# Sun Apr  9 22:38:38 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|pp0
+Synopsys Xilinx Technology Pre-mapping, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 237MB peak: 237MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 248MB peak: 248MB)
+
+@N: MF913 |Option synthesis_strategy=fast is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 248MB peak: 248MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 248MB peak: 249MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 249MB peak: 249MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+@N: MF796 |Maximum number of parallel jobs set to 4
+
+Target FPGA is on a HAPS-100 board, running ProtoCompiler.
+@N: BN569 |Target FPGA is located at FBx_x (Type HAPS-100_Sx).  
+@S1 | Messages from rgrp_0.srr
+# Sun Apr  9 22:38:49 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|pp0
+Synopsys Xilinx Technology Pre-mapping, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 237MB peak: 237MB)
+
+@N: MF913 |Option synthesis_strategy=fast is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+Child process successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 256MB peak: 256MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sun Apr  9 22:38:50 2023
+
+###########################################################]
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 795MB peak: 795MB)
+
+See report top_scck.rpt
+Applying constraints in parallel area estimation flow (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:13s; Memory used current: 799MB peak: 799MB)
+
+
+Annotating constraints on skeleton netlist (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:24s; Memory used current: 799MB peak: 799MB)
+
+
+Constraints annotated on skeleton netlist (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:24s; Memory used current: 799MB peak: 799MB)
+
+
+Done applying constraints in parallel area estimation flow (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:24s; Memory used current: 799MB peak: 799MB)
+
+On-demand Constraint Applier successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:24s; Memory used current: 799MB peak: 799MB)
+
+Process took 0h:00m:27s realtime, 0h:00m:24s cputime
+# Sun Apr  9 22:39:06 2023
+
+###########################################################]
+ProtoCompiler Pre_map Report
+
+# Sun Apr  9 22:39:18 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|pp0
+Synopsys Xilinx Technology Pre-mapping, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 237MB peak: 237MB)
+
+See report top_scck.rpt@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+@W: FX1020 |A simulation mismatch is possible. Ignoring vendor library default initial value on registers, because the default value is not set. To enable vendor library default initial values, add the command "set_option -support_implicit_init_netlist 1" to the project file.
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+Pre-partition Prep and Area Estimation steps are being run in parallel.
+Target platform is HAPS-100, running ProtoCompiler.
+
+Fast pre-partition flow is enabled
+
+Target platform is HAPS-100, running ProtoCompiler.
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 255MB peak: 255MB)
+
+@N: BZ108 |SCO : Total number of LUTs added: 0.
+@W: MT682 :"/home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc":11:0:11:0|set_input_delay command has no effect on unconnected port. Remove input port rst_n from set_input_delay command. 
+
+
+@S0 |Clock Summary
+******************
+
+          Start           Requested     Requested     Clock        Clock                Clock
+Level     Clock           Frequency     Period        Type         Group                Load 
+---------------------------------------------------------------------------------------------
+0 -       clk (p:clk)     2.0 MHz       500.000       declared     default_clkgroup     828  
+=============================================================================================
+
+
+
+@S0 |Clock Load Summary
+***********************
+
+          Clock     Source        Clock Pin          Non-clock Pin     Non-clock Pin
+Clock     Load      Pin           Seq Example        Seq Example       Comb Example 
+------------------------------------------------------------------------------------
+clk       828       clk(port)     pc1.PC[63:0].C     -                 -            
+====================================================================================
+
+
+Marking clock path (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+
+Done marking clock path (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+@N: BN225 |Writing default property annotation file /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/top.sap.
+
+Finished clock netlist generation (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 255MB peak: 255MB)
+
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[13] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[14] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[15] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[16] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[17] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[18] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[19] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[20] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[21] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[22] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[23] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[24] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[25] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[26] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[27] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[28] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[29] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[30] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[31] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[32] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[33] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[34] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[35] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[36] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[37] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[38] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[39] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[40] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[41] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[42] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[43] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[44] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[45] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[46] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[47] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[48] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[49] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[50] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[51] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[52] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[53] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[54] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[55] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[56] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[57] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[58] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[59] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[60] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[61] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[62] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[63] of work.top(verilog) driven by constant
+@N: BN497 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[12] of work.top(verilog) -- port has same driver as other top-level ports
+@N: BN497 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[11] of work.top(verilog) -- port has same driver as other top-level ports
+
+Starting top-down timing model generation (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+Adding Clock Info
+Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB
+Computing Async Clock Info
+Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 788MB peak: 788MB
+Saving Clock Database
+Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 788MB peak: 788MB
+
+Top-down timing model generation completed successfully (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 848MB peak: 848MB)
+
+@S |Design Info Report
+Found 4 RAM/ROM instances in the design
+Found 0 Big Multiplier(width >= 10) instances in the design
+Found 0 Black Box instances in the design
+Found 0 hierarchies with high no of latches (>10) in the design
+Refer to design_info.rpt for details
+
+####### End of Design Info Report #########
+
+
+Starting constraint checker (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 848MB peak: 848MB)
+
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/top_ucdb/cclock_map.tcl
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 848MB peak: 848MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 848MB peak: 848MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 848MB peak: 848MB)
+
+Process took 0h:00m:11s realtime, 0h:00m:11s cputime
+# Sun Apr  9 22:39:30 2023
+
+###########################################################]

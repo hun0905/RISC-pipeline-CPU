@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ZeBuUiDoc type="xcui" version="1.1" creator="VCSSplitter">
+    <UCFlowType>UC2.0</UCFlowType>
+    <DUT>
+        <topname>top</topname>
+        <groupname>Default_RTL_Group</groupname>
+        <modules>
+            <module>
+                <name>design/defaultGroup/edif/MUX/MUX.edf.gz</name>
+                <label>MUX</label>
+                <script>design/defaultGroup/script/MUX.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="4036452180">design/defaultGroup/src/MUX.scm</dependency>
+                </dependencies>
+                <weight>192</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/PC/PC.edf.gz</name>
+                <label>PC</label>
+                <script>design/defaultGroup/script/PC.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="2081261226">design/defaultGroup/src/PC.scm</dependency>
+                </dependencies>
+                <weight>257</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/IM/IM.edf.gz</name>
+                <label>IM</label>
+                <script>design/defaultGroup/script/IM.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="423834794">design/defaultGroup/src/IM.scm</dependency>
+                </dependencies>
+                <weight>33</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/Adder/Adder.edf.gz</name>
+                <label>Adder</label>
+                <script>design/defaultGroup/script/Adder.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="3682945461">design/defaultGroup/src/Adder.scm</dependency>
+                </dependencies>
+                <weight>189</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/IF_ID/IF_ID.edf.gz</name>
+                <label>IF_ID</label>
+                <script>design/defaultGroup/script/IF_ID.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="4111914491">design/defaultGroup/src/IF_ID.scm</dependency>
+                </dependencies>
+                <weight>485</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/Hazard/Hazard.edf.gz</name>
+                <label>Hazard</label>
+                <script>design/defaultGroup/script/Hazard.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="559069682">design/defaultGroup/src/Hazard.scm</dependency>
+                </dependencies>
+                <weight>14</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/Control/Control.edf.gz</name>
+                <label>Control</label>
+                <script>design/defaultGroup/script/Control.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="3011035590">design/defaultGroup/src/Control.scm</dependency>
+                </dependencies>
+                <weight>54</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/Registers/Registers.edf.gz</name>
+                <label>Registers</label>
+                <script>design/defaultGroup/script/Registers.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="2526739720">design/defaultGroup/src/Registers.scm</dependency>
+                </dependencies>
+                <weight>389</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/ImmGen/ImmGen.edf.gz</name>
+                <label>ImmGen</label>
+                <script>design/defaultGroup/script/ImmGen.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="3309167322">design/defaultGroup/src/ImmGen.scm</dependency>
+                </dependencies>
+                <weight>11</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/MUX3_1/MUX3_1.edf.gz</name>
+                <label>MUX3_1</label>
+                <script>design/defaultGroup/script/MUX3_1.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="1289199031">design/defaultGroup/src/MUX3_1.scm</dependency>
+                </dependencies>
+                <weight>386</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/comparator/comparator.edf.gz</name>
+                <label>comparator</label>
+                <script>design/defaultGroup/script/comparator.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="1922089486">design/defaultGroup/src/comparator.scm</dependency>
+                </dependencies>
+                <weight>2</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/ID_EX/ID_EX.edf.gz</name>
+                <label>ID_EX</label>
+                <script>design/defaultGroup/script/ID_EX.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="2168838914">design/defaultGroup/src/ID_EX.scm</dependency>
+                </dependencies>
+                <weight>290</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/ALUControl/ALUControl.edf.gz</name>
+                <label>ALUControl</label>
+                <script>design/defaultGroup/script/ALUControl.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="2429914121">design/defaultGroup/src/ALUControl.scm</dependency>
+                </dependencies>
+                <weight>46</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/ALU/ALU.edf.gz</name>
+                <label>ALU</label>
+                <script>design/defaultGroup/script/ALU.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="2791289080">design/defaultGroup/src/ALU.scm</dependency>
+                </dependencies>
+                <weight>1278</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/Forwarding/Forwarding.edf.gz</name>
+                <label>Forwarding</label>
+                <script>design/defaultGroup/script/Forwarding.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="78218344">design/defaultGroup/src/Forwarding.scm</dependency>
+                </dependencies>
+                <weight>24</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/EX_MEM/EX_MEM.edf.gz</name>
+                <label>EX_MEM</label>
+                <script>design/defaultGroup/script/EX_MEM.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="304061779">design/defaultGroup/src/EX_MEM.scm</dependency>
+                </dependencies>
+                <weight>138</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/DM/DM.edf.gz</name>
+                <label>DM</label>
+                <script>design/defaultGroup/script/DM.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="2414029051">design/defaultGroup/src/DM.scm</dependency>
+                </dependencies>
+                <weight>65</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/MEM_WB/MEM_WB.edf.gz</name>
+                <label>MEM_WB</label>
+                <script>design/defaultGroup/script/MEM_WB.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="2752420238">design/defaultGroup/src/MEM_WB.scm</dependency>
+                </dependencies>
+                <weight>136</weight>
+            </module>
+            <module>
+                <name>design/defaultGroup/edif/top/top.edf.gz</name>
+                <label>top</label>
+                <script>design/defaultGroup/script/top.tcl</script>
+                <techmapping>REGULAR</techmapping>
+                <dependencies>
+                    <dependency checksum="2644304702">design/defaultGroup/src/top.scm</dependency>
+                </dependencies>
+                <weight>2</weight>
+            </module>
+        </modules>
+    </DUT>
+    <protect_db>
+        <file path="/home/u108/u108061217/RISC-V-pipeline-CPU/top_ucdb/protect_db.xml"></file>
+    </protect_db>
+</ZeBuUiDoc>

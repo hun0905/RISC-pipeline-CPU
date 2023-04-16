@@ -1,0 +1,83 @@
+# Netlist editing commands to push constants out of this module.
+
+# given an instance path, find the path to it's containing instance
+proc containpath {inst} {
+	set idx [ string last . $inst ]
+	if { $idx == -1 } { return {} }
+	incr idx -1
+	set p [ string range $inst 0 $idx ]
+	# if the last dot was unescaped, look for the one before it 
+	if { [ string index $inst $idx ] == "\\" } { return [ containpath $p ] }
+	return $p
+}
+# define tie_opin because tie_pin only allows input pins:
+proc tie_opin {inst pin val} {
+	set net [ get_net $inst.$pin ]
+	# get_net returns the local net. construct hiernet
+	set path [containpath $inst]
+	if { $path != "" } {
+		set netpath "$path.$net"
+	} else {
+		set netpath $net
+	}
+	tie_net $netpath $val
+}
+
+# Tie constant output pins of each instance of the subsystem:
+foreach ssinst [get_insts work.top] {
+    tie_opin $ssinst {IMMID[13]} 0
+    tie_opin $ssinst {IMMID[14]} 0
+    tie_opin $ssinst {IMMID[15]} 0
+    tie_opin $ssinst {IMMID[16]} 0
+    tie_opin $ssinst {IMMID[17]} 0
+    tie_opin $ssinst {IMMID[18]} 0
+    tie_opin $ssinst {IMMID[19]} 0
+    tie_opin $ssinst {IMMID[20]} 0
+    tie_opin $ssinst {IMMID[21]} 0
+    tie_opin $ssinst {IMMID[22]} 0
+    tie_opin $ssinst {IMMID[23]} 0
+    tie_opin $ssinst {IMMID[24]} 0
+    tie_opin $ssinst {IMMID[25]} 0
+    tie_opin $ssinst {IMMID[26]} 0
+    tie_opin $ssinst {IMMID[27]} 0
+    tie_opin $ssinst {IMMID[28]} 0
+    tie_opin $ssinst {IMMID[29]} 0
+    tie_opin $ssinst {IMMID[30]} 0
+    tie_opin $ssinst {IMMID[31]} 0
+    tie_opin $ssinst {IMMID[32]} 0
+    tie_opin $ssinst {IMMID[33]} 0
+    tie_opin $ssinst {IMMID[34]} 0
+    tie_opin $ssinst {IMMID[35]} 0
+    tie_opin $ssinst {IMMID[36]} 0
+    tie_opin $ssinst {IMMID[37]} 0
+    tie_opin $ssinst {IMMID[38]} 0
+    tie_opin $ssinst {IMMID[39]} 0
+    tie_opin $ssinst {IMMID[40]} 0
+    tie_opin $ssinst {IMMID[41]} 0
+    tie_opin $ssinst {IMMID[42]} 0
+    tie_opin $ssinst {IMMID[43]} 0
+    tie_opin $ssinst {IMMID[44]} 0
+    tie_opin $ssinst {IMMID[45]} 0
+    tie_opin $ssinst {IMMID[46]} 0
+    tie_opin $ssinst {IMMID[47]} 0
+    tie_opin $ssinst {IMMID[48]} 0
+    tie_opin $ssinst {IMMID[49]} 0
+    tie_opin $ssinst {IMMID[50]} 0
+    tie_opin $ssinst {IMMID[51]} 0
+    tie_opin $ssinst {IMMID[52]} 0
+    tie_opin $ssinst {IMMID[53]} 0
+    tie_opin $ssinst {IMMID[54]} 0
+    tie_opin $ssinst {IMMID[55]} 0
+    tie_opin $ssinst {IMMID[56]} 0
+    tie_opin $ssinst {IMMID[57]} 0
+    tie_opin $ssinst {IMMID[58]} 0
+    tie_opin $ssinst {IMMID[59]} 0
+    tie_opin $ssinst {IMMID[60]} 0
+    tie_opin $ssinst {IMMID[61]} 0
+    tie_opin $ssinst {IMMID[62]} 0
+    tie_opin $ssinst {IMMID[63]} 0
+}
+
+# Remove ports anywhere all bits were constant:
+define_current_view work.top
+# CANNOT remove IMMID[63:0], only 51 of 64 bits constant

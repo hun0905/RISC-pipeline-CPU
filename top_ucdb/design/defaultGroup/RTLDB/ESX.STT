@@ -1,0 +1,476 @@
+Module top {
+	Port in_enable IN
+	Port clk IN
+	Port rst_n IN
+	Port Addr IN
+	Port in_instruc IN
+	Port PC OUT
+	Port stall OUT
+	Port equal OUT
+	Port RD1ID OUT
+	Port RD2ID OUT
+	Port IMMID OUT
+	Port ADDOUTID OUT
+	Port ALUOUTEX OUT
+	Port DMout OUT
+	Port MEMTOREGWB OUT
+	Port REGWRITEWB OUT
+	Net in_enable wire -dir IN -sign UN
+	Net clk wire -dir IN -sign UN
+	Net rst_n wire -dir IN -sign UN
+	Net in_instruc {31:0} wire -dir IN -sign UN
+	Net Addr {63:0} wire -dir IN -sign UN
+	Var i integer -dir UN 
+	Var b integer -dir UN 
+	Var input_instruc integer -dir UN 
+	Net stop wire -dir UN -sign UN
+	Net PC {63:0} wire -dir OUT -sign UN
+	Net ADDOUTIF {63:0} wire -dir UN -sign UN
+	Net PCIF {63:0} wire -dir UN -sign UN
+	Net INSTRUCIF {31:0} wire -dir UN -sign UN
+	Net stall wire -dir OUT -sign UN
+	Net equal wire -dir OUT -sign UN
+	Net PCSRCID wire -dir UN -sign UN
+	Net comparatorin1 {63:0} wire -dir UN -sign UN
+	Net comparatorin2 {63:0} wire -dir UN -sign UN
+	Net INSTRUCID {31:0} wire -dir UN -sign UN
+	Net ALUOP1ID wire -dir UN -sign UN
+	Net ALUOP2ID wire -dir UN -sign UN
+	Net ALUOP3ID wire -dir UN -sign UN
+	Net ALUSRCID wire -dir UN -sign UN
+	Net BRANCHID wire -dir UN -sign UN
+	Net MEMREADID wire -dir UN -sign UN
+	Net MEMWRITEID wire -dir UN -sign UN
+	Net MEMTOREGID wire -dir UN -sign UN
+	Net REGWRITEID wire -dir UN -sign UN
+	Net RD1ID {63:0} wire -dir OUT -sign UN
+	Net RD2ID {63:0} wire -dir OUT -sign UN
+	Net IMMID {63:0} wire -dir OUT -sign UN
+	Net ADDOUTID {63:0} wire -dir OUT -sign UN
+	Net PCID {63:0} wire -dir UN -sign UN
+	Net ALUOP1EX wire -dir UN -sign UN
+	Net ALUOP2EX wire -dir UN -sign UN
+	Net ALUOP3EX wire -dir UN -sign UN
+	Net ALUSRCEX wire -dir UN -sign UN
+	Net MEMREADEX wire -dir UN -sign UN
+	Net MEMWRITEEX wire -dir UN -sign UN
+	Net MEMTOREGEX wire -dir UN -sign UN
+	Net REGWRITEEX wire -dir UN -sign UN
+	Net aluin1 {63:0} wire -dir UN -sign UN
+	Net muxin1 {63:0} wire -dir UN -sign UN
+	Net WREX {4:0} wire -dir UN -sign UN
+	Net REGRS1_EX {4:0} wire -dir UN -sign UN
+	Net REGRS2_EX {4:0} wire -dir UN -sign UN
+	Net FUNC7EX {6:0} wire -dir UN -sign UN
+	Net FUNC3EX {2:0} wire -dir UN -sign UN
+	Net ALUOUTEX {63:0} wire -dir OUT -sign UN
+	Net PCEX {63:0} wire -dir UN -sign UN
+	Net aluin2 {63:0} wire -dir UN -sign UN
+	Net RD1EX {63:0} wire -dir UN -sign UN
+	Net RD2EX {63:0} wire -dir UN -sign UN
+	Net IMMEX {63:0} wire -dir UN -sign UN
+	Net Op {3:0} wire -dir UN -sign UN
+	Net forwardA {1:0} wire -dir UN -sign UN
+	Net forwardB {1:0} wire -dir UN -sign UN
+	Net MEMREADMEM wire -dir UN -sign UN
+	Net MEMWRITEMEM wire -dir UN -sign UN
+	Net MEMTOREGMEM wire -dir UN -sign UN
+	Net REGWRITEMEM wire -dir UN -sign UN
+	Net RD2MEM {63:0} wire -dir UN -sign UN
+	Net ALUOUTMEM {63:0} wire -dir UN -sign UN
+	Net WRMEM {4:0} wire -dir UN -sign UN
+	Net DMout {63:0} wire -dir OUT -sign UN
+	Net MEMTOREGWB wire -dir OUT -sign UN
+	Net REGWRITEWB wire -dir OUT -sign UN
+	Net WRWB {4:0} wire -dir UN -sign UN
+	Net ALUOUTWB {63:0} wire -dir UN -sign UN
+	Net WRITEDATAWB {63:0} wire -dir UN -sign UN
+	Net DMOUTWB {63:0} wire -dir UN -sign UN
+	Instance MUX mux3	
+	Instance PC pc1	
+	Instance IM im1	
+	Instance Adder adder1	
+	Instance IF_ID ifid1	
+	Instance Hazard hazard1	
+	Instance Control control1	
+	Instance Registers registers1	
+	Instance Adder adder2	
+	Instance ImmGen immgen1	
+	Instance MUX3_1 mux3_1_1	
+	Instance MUX3_1 mux3_1_2	
+	Instance comparator cp1	
+	Instance ID_EX idex1	
+	Instance MUX3_1 mux3_1_3	
+	Instance MUX3_1 mux3_1_4	
+	Instance MUX mux1	
+	Instance ALUControl alucontrol	
+	Instance ALU alu1	
+	Instance Forwarding forward1	
+	Instance EX_MEM exmem1	
+	Instance DM dm1	
+	Instance MEM_WB memwb1	
+	Instance MUX mux2	
+}
+Module MUX {
+	Port in1 IN
+	Port in2 IN
+	Port sel IN
+	Port out OUT
+	Net in1 {63:0} wire -dir IN -sign UN
+	Net in2 {63:0} wire -dir IN -sign UN
+	Net sel wire -dir IN -sign UN
+	Net out {63:0} wire -dir OUT -sign UN
+}
+Module PC {
+	Port clk IN
+	Port rst_n IN
+	Port next_pc IN
+	Port hazard IN
+	Port PC OUT
+	Net clk wire -dir IN -sign UN
+	Net rst_n wire -dir IN -sign UN
+	Net hazard wire -dir IN -sign UN
+	Net next_pc {63:0} wire -dir IN -sign UN
+	Net PC {63:0} reg -dir OUT -sign UN
+}
+Module IM {
+	Port clk IN
+	Port rst_n IN
+	Port in_enable IN
+	Port in IN
+	Port in_addr IN
+	Port PCAddr IN
+	Port instruc OUT
+	Port "\\::unp " IN
+	Net clk wire -dir IN -sign UN
+	Net rst_n wire -dir IN -sign UN
+	Net in_enable wire -dir IN -sign UN
+	Net PCAddr {63:0} wire -dir IN -sign UN
+	Net in_addr {63:0} wire -dir IN -sign UN
+	Net in {31:0} wire -dir IN -sign UN
+	Net instruc {31:0} reg -dir OUT -sign UN
+	Var i integer -dir UN 
+	Net instrucmem {31:0} reg {31:0} -dir UN -sign UN
+}
+Module Adder {
+	Port in1 IN
+	Port in2 IN
+	Port out OUT
+	Net in1 {63:0} wire -dir IN 
+	Net in2 {63:0} wire -dir IN 
+	Net out {63:0} wire -dir OUT -sign UN
+}
+Module IF_ID {
+	Port clk IN
+	Port rst_n IN
+	Port pc IN
+	Port instruc IN
+	Port hazard IN
+	Port flush IN
+	Port out_pc OUT
+	Port out_instruc OUT
+	Net clk wire -dir IN -sign UN
+	Net rst_n wire -dir IN -sign UN
+	Net hazard wire -dir IN -sign UN
+	Net flush wire -dir IN -sign UN
+	Net pc {63:0} wire -dir IN -sign UN
+	Net instruc {31:0} wire -dir IN -sign UN
+	Net out_pc {63:0} reg -dir OUT -sign UN
+	Net out_instruc {31:0} reg -dir OUT -sign UN
+}
+Module Hazard {
+	Parameter SB 7'b1100011
+	Port memread_ex IN
+	Port memread_mem IN
+	Port wr_ex IN
+	Port wr_mem IN
+	Port regrs1_id IN
+	Port regrs2_id IN
+	Port Opcode IN
+	Port stall OUT
+	Port "\\::unp " IN
+	Net memread_ex wire -dir IN -sign UN
+	Net memread_mem wire -dir IN -sign UN
+	Net wr_ex {4:0} wire -dir IN -sign UN
+	Net wr_mem {4:0} wire -dir IN -sign UN
+	Net regrs1_id {4:0} wire -dir IN -sign UN
+	Net regrs2_id {4:0} wire -dir IN -sign UN
+	Net Opcode {6:0} wire -dir IN -sign UN
+	Net stall reg -dir OUT -sign UN
+}
+Module Control {
+	Parameter R 7'b0110011
+	Parameter ld 7'b0000011
+	Parameter sd 7'b0100011
+	Parameter beq 7'b1100011
+	Parameter i 7'b0010011
+	Port instruc IN
+	Port alusrc OUT
+	Port memtoreg OUT
+	Port regwrite OUT
+	Port memread OUT
+	Port memwrite OUT
+	Port hazard IN
+	Port branch OUT
+	Port aluop1 OUT
+	Port aluop2 OUT
+	Port aluop3 OUT
+	Net instruc {6:0} wire -dir IN -sign UN
+	Net hazard wire -dir IN -sign UN
+	Net alusrc reg -dir OUT -sign UN
+	Net memtoreg reg -dir OUT -sign UN
+	Net regwrite reg -dir OUT -sign UN
+	Net memread reg -dir OUT -sign UN
+	Net memwrite reg -dir OUT -sign UN
+	Net branch reg -dir OUT -sign UN
+	Net aluop1 reg -dir OUT -sign UN
+	Net aluop2 reg -dir OUT -sign UN
+	Net aluop3 reg -dir OUT -sign UN
+}
+Module Registers {
+	Port clk IN
+	Port rst_n IN
+	Port ReadReg1 IN
+	Port ReadReg2 IN
+	Port WriteReg IN
+	Port WriteData IN
+	Port RegWriteEnable IN
+	Port ReadData1 OUT
+	Port ReadData2 OUT
+	Port "\\::unp " IN
+	Net clk wire -dir IN -sign UN
+	Net rst_n wire -dir IN -sign UN
+	Net ReadReg1 {4:0} wire -dir IN -sign UN
+	Net ReadReg2 {4:0} wire -dir IN -sign UN
+	Net WriteReg {4:0} wire -dir IN -sign UN
+	Net WriteData {63:0} wire -dir IN -sign UN
+	Net RegWriteEnable wire -dir IN -sign UN
+	Net ReadData1 {63:0} reg -dir OUT -sign UN
+	Net ReadData2 {63:0} reg -dir OUT -sign UN
+	Var i integer -dir UN 
+	Net Registers {63:0} reg {31:0} -dir UN -sign UN
+}
+Module ImmGen {
+	Port in IN
+	Port out OUT
+	Net in {31:0} wire -dir IN -sign UN
+	Net out {63:0} reg -dir OUT -sign UN
+}
+Module MUX3_1 {
+	Port in1 IN
+	Port in2 IN
+	Port in3 IN
+	Port sel IN
+	Port out OUT
+	Net in1 {63:0} wire -dir IN -sign UN
+	Net in2 {63:0} wire -dir IN -sign UN
+	Net in3 {63:0} wire -dir IN -sign UN
+	Net sel {1:0} wire -dir IN -sign UN
+	Net out {63:0} reg -dir OUT -sign UN
+}
+Module comparator {
+	Port in1 IN
+	Port in2 IN
+	Port out OUT
+	Net in1 {63:0} wire -dir IN -sign UN
+	Net in2 {63:0} wire -dir IN -sign UN
+	Net out wire -dir OUT -sign UN
+}
+Module ID_EX {
+	Port clk IN
+	Port rst_n IN
+	Port readdata1 IN
+	Port readdata2 IN
+	Port imm IN
+	Port pc IN
+	Port writeregister IN
+	Port aluop1 IN
+	Port aluop2 IN
+	Port aluop3 IN
+	Port alusrc IN
+	Port memread IN
+	Port memwrite IN
+	Port memtoreg IN
+	Port regwrite IN
+	Port func7 IN
+	Port func3 IN
+	Port regrs1 IN
+	Port regrs2 IN
+	Port readdata1_out OUT
+	Port readdata2_out OUT
+	Port imm_out OUT
+	Port pc_out OUT
+	Port writeregister_out OUT
+	Port aluop1_out OUT
+	Port aluop2_out OUT
+	Port aluop3_out OUT
+	Port alusrc_out OUT
+	Port memread_out OUT
+	Port memwrite_out OUT
+	Port memtoreg_out OUT
+	Port regwrite_out OUT
+	Port func7_out OUT
+	Port func3_out OUT
+	Port regrs1_out OUT
+	Port regrs2_out OUT
+	Net clk wire -dir IN -sign UN
+	Net rst_n wire -dir IN -sign UN
+	Net readdata1 {63:0} wire -dir IN -sign UN
+	Net readdata2 {63:0} wire -dir IN -sign UN
+	Net imm {63:0} wire -dir IN -sign UN
+	Net pc {63:0} wire -dir IN -sign UN
+	Net aluop1 wire -dir IN -sign UN
+	Net aluop2 wire -dir IN -sign UN
+	Net aluop3 wire -dir IN -sign UN
+	Net alusrc wire -dir IN -sign UN
+	Net memread wire -dir IN -sign UN
+	Net memwrite wire -dir IN -sign UN
+	Net memtoreg wire -dir IN -sign UN
+	Net regwrite wire -dir IN -sign UN
+	Net writeregister {4:0} wire -dir IN -sign UN
+	Net regrs1 {4:0} wire -dir IN -sign UN
+	Net regrs2 {4:0} wire -dir IN -sign UN
+	Net func7 {6:0} wire -dir IN -sign UN
+	Net func3 {2:0} wire -dir IN -sign UN
+	Net readdata1_out {63:0} reg -dir OUT -sign UN
+	Net readdata2_out {63:0} reg -dir OUT -sign UN
+	Net imm_out {63:0} reg -dir OUT -sign UN
+	Net pc_out {63:0} reg -dir OUT -sign UN
+	Net aluop1_out reg -dir OUT -sign UN
+	Net aluop2_out reg -dir OUT -sign UN
+	Net aluop3_out reg -dir OUT -sign UN
+	Net alusrc_out reg -dir OUT -sign UN
+	Net memread_out reg -dir OUT -sign UN
+	Net memwrite_out reg -dir OUT -sign UN
+	Net memtoreg_out reg -dir OUT -sign UN
+	Net regwrite_out reg -dir OUT -sign UN
+	Net writeregister_out {4:0} reg -dir OUT -sign UN
+	Net regrs1_out {4:0} reg -dir OUT -sign UN
+	Net regrs2_out {4:0} reg -dir OUT -sign UN
+	Net func7_out {6:0} reg -dir OUT -sign UN
+	Net func3_out {2:0} reg -dir OUT -sign UN
+}
+Module ALUControl {
+	Port ALUop IN
+	Port func7 IN
+	Port func3 IN
+	Port Op OUT
+	Net ALUop {2:0} wire -dir IN -sign UN
+	Net func7 {6:0} wire -dir IN -sign UN
+	Net func3 {2:0} wire -dir IN -sign UN
+	Net Op {3:0} wire -dir OUT -sign UN
+}
+Module ALU {
+	Parameter WIDTH 64
+	Port clk IN
+	Port rst_n IN
+	Port aluctrl IN
+	Port in1 IN
+	Port in2 IN
+	Port result OUT
+	Port "\\::unp " IN
+	Net clk wire -dir IN -sign UN
+	Net rst_n wire -dir IN -sign UN
+	Net aluctrl {3:0} wire -dir IN -sign UN
+	Net in1 {63:0} wire -dir IN 
+	Net in2 {63:0} wire -dir IN 
+	Net result {63:0} reg -dir OUT 
+}
+Module Forwarding {
+	Port regwrite_wb IN
+	Port wr_wb IN
+	Port regwrite_mem IN
+	Port wr_mem IN
+	Port regrs1_ex IN
+	Port regrs2_ex IN
+	Port forwardA OUT
+	Port forwardB OUT
+	Net regwrite_wb wire -dir IN -sign UN
+	Net regwrite_mem wire -dir IN -sign UN
+	Net wr_wb {4:0} wire -dir IN -sign UN
+	Net wr_mem {4:0} wire -dir IN -sign UN
+	Net regrs1_ex {4:0} wire -dir IN -sign UN
+	Net regrs2_ex {4:0} wire -dir IN -sign UN
+	Net forwardA {1:0} reg -dir OUT -sign UN
+	Net forwardB {1:0} reg -dir OUT -sign UN
+}
+Module EX_MEM {
+	Port clk IN
+	Port rst_n IN
+	Port aluout IN
+	Port writeregister IN
+	Port memread IN
+	Port memwrite IN
+	Port memtoreg IN
+	Port regwrite IN
+	Port readdata2 IN
+	Port aluout_out OUT
+	Port writeregister_out OUT
+	Port memread_out OUT
+	Port memwrite_out OUT
+	Port memtoreg_out OUT
+	Port regwrite_out OUT
+	Port readdata2_out OUT
+	Net clk wire -dir IN -sign UN
+	Net rst_n wire -dir IN -sign UN
+	Net writeregister {4:0} wire -dir IN -sign UN
+	Net memread wire -dir IN -sign UN
+	Net memwrite wire -dir IN -sign UN
+	Net memtoreg wire -dir IN -sign UN
+	Net regwrite wire -dir IN -sign UN
+	Net readdata2 {63:0} wire -dir IN -sign UN
+	Net aluout {63:0} wire -dir IN -sign UN
+	Net memread_out reg -dir OUT -sign UN
+	Net memwrite_out reg -dir OUT -sign UN
+	Net memtoreg_out reg -dir OUT -sign UN
+	Net regwrite_out reg -dir OUT -sign UN
+	Net writeregister_out {4:0} reg -dir OUT -sign UN
+	Net readdata2_out {63:0} reg -dir OUT -sign UN
+	Net aluout_out {63:0} reg -dir OUT -sign UN
+}
+Module DM {
+	Port clk IN
+	Port rst_n IN
+	Port Addr IN
+	Port WriteData IN
+	Port ReadData OUT
+	Port MemWrite IN
+	Port MemRead IN
+	Net clk wire -dir IN -sign UN
+	Net rst_n wire -dir IN -sign UN
+	Net MemRead wire -dir IN -sign UN
+	Net MemWrite wire -dir IN -sign UN
+	Net WriteData {63:0} wire -dir IN -sign UN
+	Net Addr {63:0} wire -dir IN -sign UN
+	Net ReadData {63:0} reg -dir OUT -sign UN
+	Var i integer -dir UN 
+	Net memory {63:0} reg {63:0} -dir UN -sign UN
+}
+Module MEM_WB {
+	Port clk IN
+	Port rst_n IN
+	Port dmout IN
+	Port aluout IN
+	Port writeregister IN
+	Port memtoreg IN
+	Port regwrite IN
+	Port dmout_out OUT
+	Port aluout_out OUT
+	Port writeregister_out OUT
+	Port memtoreg_out OUT
+	Port regwrite_out OUT
+	Net clk wire -dir IN -sign UN
+	Net rst_n wire -dir IN -sign UN
+	Net memtoreg wire -dir IN -sign UN
+	Net regwrite wire -dir IN -sign UN
+	Net writeregister {4:0} wire -dir IN -sign UN
+	Net dmout {63:0} wire -dir IN -sign UN
+	Net aluout {63:0} wire -dir IN -sign UN
+	Net memtoreg_out reg -dir OUT -sign UN
+	Net regwrite_out reg -dir OUT -sign UN
+	Net dmout_out {63:0} reg -dir OUT -sign UN
+	Net aluout_out {63:0} reg -dir OUT -sign UN
+	Net writeregister_out {4:0} reg -dir OUT -sign UN
+}
+# Reopened for append : Uniq
+# Reopened for append : native force

@@ -1,0 +1,115 @@
+@N:: Applying property .distcompmodetop with value 1 on module top in library work
+@N:: Applying property .distcompnoprune with value 1 on module top in library work
+@N:: Applying property .noprune with value 1 on module top in library work
+@N:: Applying property .distcompnoprune with value 1 on module MUX in library work
+@N:: Applying property .noprune with value 1 on module MUX in library work
+@N:: Applying property .distcompnoprune with value 1 on module MEM_WB in library work
+@N:: Applying property .noprune with value 1 on module MEM_WB in library work
+@N:: Applying property .distcompnoprune with value 1 on module DM in library work
+@N:: Applying property .noprune with value 1 on module DM in library work
+@N:: Applying property .distcompnoprune with value 1 on module EX_MEM in library work
+@N:: Applying property .noprune with value 1 on module EX_MEM in library work
+@N:: Applying property .distcompnoprune with value 1 on module Forwarding in library work
+@N:: Applying property .noprune with value 1 on module Forwarding in library work
+@N:: Applying property .distcompnoprune with value 1 on module ALU in library work
+@N:: Applying property .noprune with value 1 on module ALU in library work
+@N:: Applying property .distcompnoprune with value 1 on module ALUControl in library work
+@N:: Applying property .noprune with value 1 on module ALUControl in library work
+@N:: Applying property .distcompnoprune with value 1 on module MUX3_1 in library work
+@N:: Applying property .noprune with value 1 on module MUX3_1 in library work
+@N:: Applying property .distcompnoprune with value 1 on module ID_EX in library work
+@N:: Applying property .noprune with value 1 on module ID_EX in library work
+@N:: Applying property .distcompnoprune with value 1 on module comparator in library work
+@N:: Applying property .noprune with value 1 on module comparator in library work
+@N:: Applying property .distcompnoprune with value 1 on module ImmGen in library work
+@N:: Applying property .noprune with value 1 on module ImmGen in library work
+@N:: Applying property .distcompnoprune with value 1 on module Adder in library work
+@N:: Applying property .noprune with value 1 on module Adder in library work
+@N:: Applying property .distcompnoprune with value 1 on module Registers in library work
+@N:: Applying property .noprune with value 1 on module Registers in library work
+@N:: Applying property .distcompnoprune with value 1 on module Control in library work
+@N:: Applying property .noprune with value 1 on module Control in library work
+@N:: Applying property .distcompnoprune with value 1 on module Hazard in library work
+@N:: Applying property .noprune with value 1 on module Hazard in library work
+@N:: Applying property .distcompnoprune with value 1 on module IF_ID in library work
+@N:: Applying property .noprune with value 1 on module IF_ID in library work
+@N:: Applying property .distcompnoprune with value 1 on module IM in library work
+@N:: Applying property .noprune with value 1 on module IM in library work
+@N:: Applying property .distcompnoprune with value 1 on module PC in library work
+@N:: Applying property .noprune with value 1 on module PC in library work
+Selecting top level module top
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/MUX.v":1:7:1:9|Synthesizing module MUX in library work.
+Running optimization stage 1 on MUX .......
+Finished optimization stage 1 on MUX (CPU Time 0h:00m:00s, Memory Used current: 213MB peak: 213MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/PC.v":1:7:1:8|Synthesizing module PC in library work.
+@N: CG179 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/PC.v":13:23:13:24|Removing redundant assignment.
+Running optimization stage 1 on PC .......
+Finished optimization stage 1 on PC (CPU Time 0h:00m:00s, Memory Used current: 213MB peak: 213MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/IM.v":1:7:1:8|Synthesizing module IM in library work.
+Running optimization stage 1 on IM .......
+@W: CL246 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/IM.v":11:12:11:17|Input port bits 1 to 0 of PCAddr[63:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/IM.v":11:19:11:25|Input port bits 1 to 0 of in_addr[63:0] are unused. Assign logic for all port bits or change the input port size.
+Finished optimization stage 1 on IM (CPU Time 0h:00m:00s, Memory Used current: 215MB peak: 215MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/Adder.v":1:7:1:11|Synthesizing module Adder in library work.
+Running optimization stage 1 on Adder .......
+Finished optimization stage 1 on Adder (CPU Time 0h:00m:00s, Memory Used current: 215MB peak: 215MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/IF_ID.v":1:7:1:11|Synthesizing module IF_ID in library work.
+@N: CG179 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/IF_ID.v":19:27:19:32|Removing redundant assignment.
+@N: CG179 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/IF_ID.v":25:32:25:42|Removing redundant assignment.
+Running optimization stage 1 on IF_ID .......
+Finished optimization stage 1 on IF_ID (CPU Time 0h:00m:00s, Memory Used current: 215MB peak: 215MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/Hazard.v":1:7:1:12|Synthesizing module Hazard in library work.
+Running optimization stage 1 on Hazard .......
+Finished optimization stage 1 on Hazard (CPU Time 0h:00m:00s, Memory Used current: 215MB peak: 215MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/Control.v":1:7:1:13|Synthesizing module Control in library work.
+Running optimization stage 1 on Control .......
+Finished optimization stage 1 on Control (CPU Time 0h:00m:00s, Memory Used current: 215MB peak: 215MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/Registers.v":1:7:1:15|Synthesizing module Registers in library work.
+Running optimization stage 1 on Registers .......
+Finished optimization stage 1 on Registers (CPU Time 0h:00m:00s, Memory Used current: 217MB peak: 217MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/ImmGen.v":1:7:1:12|Synthesizing module ImmGen in library work.
+Running optimization stage 1 on ImmGen .......
+@W: CL246 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/ImmGen.v":5:12:5:13|Input port bits 19 to 12 of in[31:0] are unused. Assign logic for all port bits or change the input port size.
+Finished optimization stage 1 on ImmGen (CPU Time 0h:00m:00s, Memory Used current: 217MB peak: 217MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/MUX3_1.v":1:7:1:12|Synthesizing module MUX3_1 in library work.
+Running optimization stage 1 on MUX3_1 .......
+Finished optimization stage 1 on MUX3_1 (CPU Time 0h:00m:00s, Memory Used current: 217MB peak: 217MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/comparator.v":1:7:1:16|Synthesizing module comparator in library work.
+Running optimization stage 1 on comparator .......
+Finished optimization stage 1 on comparator (CPU Time 0h:00m:00s, Memory Used current: 217MB peak: 217MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/ID_EX.v":1:7:1:11|Synthesizing module ID_EX in library work.
+Running optimization stage 1 on ID_EX .......
+Finished optimization stage 1 on ID_EX (CPU Time 0h:00m:00s, Memory Used current: 217MB peak: 217MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/ALUControl.v":1:7:1:16|Synthesizing module ALUControl in library work.
+Running optimization stage 1 on ALUControl .......
+Finished optimization stage 1 on ALUControl (CPU Time 0h:00m:00s, Memory Used current: 217MB peak: 217MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/ALU.v":1:7:1:9|Synthesizing module ALU in library work.
+
+	WIDTH=32'b00000000000000000000000001000000
+	AND=32'b00000000000000000000000000000000
+	OR=32'b00000000000000000000000000000001
+	ADD=32'b00000000000000000000000000000010
+	SUB=32'b00000000000000000000000000000110
+   Generated name = ALU_64s_0s_1s_2s_6s
+Running optimization stage 1 on ALU_64s_0s_1s_2s_6s .......
+@N: CL159 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/ALU.v":15:6:15:8|Input clk is unused.
+@N: CL159 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/ALU.v":15:10:15:14|Input rst_n is unused.
+Finished optimization stage 1 on ALU_64s_0s_1s_2s_6s (CPU Time 0h:00m:00s, Memory Used current: 217MB peak: 217MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/Forwarding.v":1:7:1:16|Synthesizing module Forwarding in library work.
+Running optimization stage 1 on Forwarding .......
+Finished optimization stage 1 on Forwarding (CPU Time 0h:00m:00s, Memory Used current: 217MB peak: 217MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/EX_MEM.v":1:7:1:12|Synthesizing module EX_MEM in library work.
+Running optimization stage 1 on EX_MEM .......
+Finished optimization stage 1 on EX_MEM (CPU Time 0h:00m:00s, Memory Used current: 217MB peak: 217MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/DM.v":1:7:1:8|Synthesizing module DM in library work.
+Running optimization stage 1 on DM .......
+Finished optimization stage 1 on DM (CPU Time 0h:00m:00s, Memory Used current: 221MB peak: 221MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/MEM_WB.v":1:7:1:12|Synthesizing module MEM_WB in library work.
+Running optimization stage 1 on MEM_WB .......
+Finished optimization stage 1 on MEM_WB (CPU Time 0h:00m:00s, Memory Used current: 221MB peak: 221MB)
+@N: CG364 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/top.v":1:7:1:9|Synthesizing module top in library work.
+@W: CG133 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/top.v":23:8:23:8|Object i is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/top.v":23:10:23:10|Object b is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"/home/u108/u108061217/RISC-V-pipeline-CPU/src/top.v":23:12:23:24|Object input_instruc is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on top .......
+Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 221MB peak: 221MB)

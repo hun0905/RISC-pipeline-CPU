@@ -1,0 +1,18 @@
+
+
+
+ -------------------------------------------------
+|SLP WRITE REASON FOR MACHINE GENERATION OF MODULE FOR FB1_uB FPGA|
+ --------------------------------------------------
+
+	 OrigViewName                                       	|	 ViewName                                           	|	Status     	|	Reason			
+======================================================================================================================================================
+	 NA                                                 	|	 FB1_uB_dut                                         	|	MODIFIED   	|	UMR, SCEMI and other HAPS	
+	 Hazard                                             	|	 Hazard                                             	|	ORIGINAL   	|	NA	
+	 Control                                            	|	 Control                                            	|	NON-INCR   	|	Optimization propagated out of this module	
+	 Registers                                          	|	 Registers                                          	|	ORIGINAL   	|	NA	
+	 Adder                                              	|	 Adder                                              	|	ORIGINAL   	|	NA	
+	 ImmGen                                             	|	 ImmGen                                             	|	NON-INCR   	|	Optimization propagated out of this module	
+	 MUX3_1                                             	|	 MUX3_1                                             	|	ORIGINAL   	|	NA	
+	 comparator                                         	|	 comparator                                         	|	ORIGINAL   	|	NA	
+	 ID_EX                                              	|	 ID_EX                                              	|	NON-INCR   	|	Optimization propagated out of this module	

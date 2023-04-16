@@ -1,0 +1,4 @@
+define_compile_point  -comment {FPGA as a compile point}  {v:PartitionBuildLib.FB1_uA} -type {locked}
+define_compile_point  -comment {FPGA as a compile point}  {v:PartitionBuildLib.FB1_uB} -type {locked}
+define_compile_point  -comment {FPGA as a compile point}  {v:PartitionBuildLib.FB1_uC} -type {locked}
+define_compile_point  -comment {FPGA as a compile point}  {v:PartitionBuildLib.FB1_uD} -type {locked}

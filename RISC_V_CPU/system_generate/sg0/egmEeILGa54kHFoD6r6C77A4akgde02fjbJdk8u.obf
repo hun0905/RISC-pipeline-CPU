@@ -1,0 +1,15 @@
+
+
+
+ -------------------------------------------------
+|SLP WRITE REASON FOR MACHINE GENERATION OF MODULE FOR FB1_uA FPGA|
+ --------------------------------------------------
+
+	 OrigViewName                                       	|	 ViewName                                           	|	Status     	|	Reason			
+======================================================================================================================================================
+	 NA                                                 	|	 FB1_uA_dut                                         	|	MODIFIED   	|	UMR, SCEMI and other HAPS	
+	 MUX                                                	|	 MUX                                                	|	ORIGINAL   	|	NA	
+	 PC                                                 	|	 PC                                                 	|	ORIGINAL   	|	NA	
+	 IM                                                 	|	 IM                                                 	|	NON-INCR   	|	Optimization propagated out of this module	
+	 Adder                                              	|	 Adder_0                                            	|	ORIGINAL   	|	NA	
+	 IF_ID                                              	|	 IF_ID                                              	|	ORIGINAL   	|	NA	

@@ -1,0 +1,1117 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uD/FB1_uD_srs/|m0
+
+#### START OF AREA REPORT #####[
+
+Part:			XCVU19P-FSVA3824-1-E (Xilinx)
+
+----------------------------------------------------------------------
+########   Utilization report for  Top level view:   FB1_uD   ########
+======================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     3403               3403           100 %                
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD:	3403 (45.04 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name            Total elements     Total area     Utilization     Notes
+-----------------------------------------------------------------------
+LUTS            3042               3042           100 %                
+Shared LUTS     80                 -40            100 %                
+=======================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD:	3122 (41.32 % Utilization)
+
+
+MEMORY ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+SYNC RAMS     2                  2              100 %                
+=====================================================================
+Total MEMORY ELEMENTS in the block FB1_uD:	2 (0.03 % Utilization)
+
+
+Distributed Memory
+Name                Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------------
+Distributed RAM     30                 93             100 %                
+SRLS                73                 73             100 %                
+===========================================================================
+Total Distributed Memory in the block FB1_uD:	103 (1.36 % Utilization)
+
+
+IO PADS
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+PADS     425                425            100 %                
+================================================================
+Total IO PADS in the block FB1_uD:	425 (5.62 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     3145               3168                                
+====================================================================
+----------------------------------------------------------------
+########   Utilization report for  cell:   FB1_uD_dut   ########
+Instance path:   FB1_uD.FB1_uD_dut                              
+================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     150                150            4.41 %               
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.FB1_uD_dut:	150 (1.99 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name            Total elements     Total area     Utilization     Notes
+-----------------------------------------------------------------------
+LUTS            161                161            5.29 %               
+Shared LUTS     44                 -22            55 %                 
+=======================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.FB1_uD_dut:	205 (2.71 % Utilization)
+
+
+Distributed Memory
+Name                Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------------
+Distributed RAM     30                 93             100 %                
+===========================================================================
+Total Distributed Memory in the block FB1_uD.FB1_uD_dut:	30 (0.40 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     191                232                                 
+====================================================================
+--------------------------------------------------------
+########   Utilization report for  cell:   DM   ########
+Instance path:   FB1_uD_dut.DM                          
+========================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     8                  8              0.2350 %             
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD_dut.DM:	8 (0.11 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name            Total elements     Total area     Utilization     Notes
+-----------------------------------------------------------------------
+LUTS            97                 97             3.19 %               
+Shared LUTS     16                 -8             20 %                 
+=======================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD_dut.DM:	113 (1.50 % Utilization)
+
+
+Distributed Memory
+Name                Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------------
+Distributed RAM     30                 93             100 %                
+===========================================================================
+Total Distributed Memory in the block FB1_uD_dut.DM:	30 (0.40 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     127                182                                 
+====================================================================
+------------------------------------------------------------
+########   Utilization report for  cell:   MEM_WB   ########
+Instance path:   FB1_uD_dut.MEM_WB                          
+============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     135                135            3.97 %               
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD_dut.MEM_WB:	135 (1.79 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     0                  0                                   
+====================================================================
+---------------------------------------------------------
+########   Utilization report for  cell:   MUX   ########
+Instance path:   FB1_uD_dut.MUX                          
+=========================================================
+
+COMBINATIONAL LOGIC
+Name            Total elements     Total area     Utilization     Notes
+-----------------------------------------------------------------------
+LUTS            64                 64             2.1 %                
+Shared LUTS     28                 -14            35 %                 
+=======================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD_dut.MUX:	92 (1.22 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     64                 50                                  
+====================================================================
+-----------------------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078   ########
+Instance path:   FB1_uD.bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078                              
+===========================================================================================================
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     0                  0                                   
+====================================================================
+---------------------------------------------------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   haps_system_memory_32s_28s_32s_haps_system_memoryDini_147s_114s_113s_1s_Z2_FB1_uD   ########
+Instance path:   FB1_uD.haps_system_memory_32s_28s_32s_haps_system_memoryDini_147s_114s_113s_1s_Z2_FB1_uD                              
+=======================================================================================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     129                129            3.79 %               
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.haps_system_memory_32s_28s_32s_haps_system_memoryDini_147s_114s_113s_1s_Z2_FB1_uD:	129 (1.71 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name            Total elements     Total area     Utilization     Notes
+-----------------------------------------------------------------------
+LUTS            194                194            6.38 %               
+Shared LUTS     32                 -16            40 %                 
+=======================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.haps_system_memory_32s_28s_32s_haps_system_memoryDini_147s_114s_113s_1s_Z2_FB1_uD:	226 (2.99 % Utilization)
+
+
+MEMORY ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+SYNC RAMS     1                  1              50 %                 
+=====================================================================
+Total MEMORY ELEMENTS in the block FB1_uD.haps_system_memory_32s_28s_32s_haps_system_memoryDini_147s_114s_113s_1s_Z2_FB1_uD:	1 (0.01 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     194                178                                 
+====================================================================
+--------------------------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_controller_0s_1048576s_3s_4s_12s_48s_32s_2s_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_controller_0s_1048576s_3s_4s_12s_48s_32s_2s_FB1_uD                              
+==============================================================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     284                284            8.35 %               
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_controller_0s_1048576s_3s_4s_12s_48s_32s_2s_FB1_uD:	284 (3.76 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name            Total elements     Total area     Utilization     Notes
+-----------------------------------------------------------------------
+LUTS            367                367            12.1 %               
+Shared LUTS     4                  -2             5 %                  
+=======================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_controller_0s_1048576s_3s_4s_12s_48s_32s_2s_FB1_uD:	371 (4.91 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     9                  9              12.3 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_controller_0s_1048576s_3s_4s_12s_48s_32s_2s_FB1_uD:	9 (0.12 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     376                374                                 
+====================================================================
+----------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_memory_Z1_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_memory_Z1_FB1_uD                              
+============================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     205                205            6.02 %               
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_memory_Z1_FB1_uD:	205 (2.71 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     186                186            6.11 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_memory_Z1_FB1_uD:	186 (2.46 % Utilization)
+
+
+MEMORY ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+SYNC RAMS     1                  1              50 %                 
+=====================================================================
+Total MEMORY ELEMENTS in the block FB1_uD.hstdm_memory_Z1_FB1_uD:	1 (0.01 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     186                186                                 
+====================================================================
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_Z3_0_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_Z3_0_FB1_uD                              
+==========================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     68                 68             2 %                  
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_Z3_0_FB1_uD:	68 (0.90 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     39                 39             1.28 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_Z3_0_FB1_uD:	39 (0.52 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_rx_Z3_0_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     43                 43                                  
+====================================================================
+---------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_Z3_10_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_Z3_10_FB1_uD                              
+===========================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     68                 68             2 %                  
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_Z3_10_FB1_uD:	68 (0.90 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     39                 39             1.28 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_Z3_10_FB1_uD:	39 (0.52 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_rx_Z3_10_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     43                 43                                  
+====================================================================
+---------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_Z3_11_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_Z3_11_FB1_uD                              
+===========================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     68                 68             2 %                  
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_Z3_11_FB1_uD:	68 (0.90 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     39                 39             1.28 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_Z3_11_FB1_uD:	39 (0.52 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_rx_Z3_11_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     43                 43                                  
+====================================================================
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_Z3_1_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_Z3_1_FB1_uD                              
+==========================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     68                 68             2 %                  
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_Z3_1_FB1_uD:	68 (0.90 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     39                 39             1.28 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_Z3_1_FB1_uD:	39 (0.52 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_rx_Z3_1_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     43                 43                                  
+====================================================================
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_Z3_2_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_Z3_2_FB1_uD                              
+==========================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     68                 68             2 %                  
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_Z3_2_FB1_uD:	68 (0.90 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     39                 39             1.28 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_Z3_2_FB1_uD:	39 (0.52 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_rx_Z3_2_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     43                 43                                  
+====================================================================
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_Z3_3_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_Z3_3_FB1_uD                              
+==========================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     68                 68             2 %                  
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_Z3_3_FB1_uD:	68 (0.90 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     39                 39             1.28 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_Z3_3_FB1_uD:	39 (0.52 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_rx_Z3_3_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     43                 43                                  
+====================================================================
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_Z3_4_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_Z3_4_FB1_uD                              
+==========================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     68                 68             2 %                  
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_Z3_4_FB1_uD:	68 (0.90 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     39                 39             1.28 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_Z3_4_FB1_uD:	39 (0.52 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_rx_Z3_4_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     43                 43                                  
+====================================================================
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_Z3_5_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_Z3_5_FB1_uD                              
+==========================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     68                 68             2 %                  
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_Z3_5_FB1_uD:	68 (0.90 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     39                 39             1.28 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_Z3_5_FB1_uD:	39 (0.52 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_rx_Z3_5_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     43                 43                                  
+====================================================================
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_Z3_6_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_Z3_6_FB1_uD                              
+==========================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     68                 68             2 %                  
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_Z3_6_FB1_uD:	68 (0.90 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     39                 39             1.28 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_Z3_6_FB1_uD:	39 (0.52 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_rx_Z3_6_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     43                 43                                  
+====================================================================
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_Z3_7_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_Z3_7_FB1_uD                              
+==========================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     68                 68             2 %                  
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_Z3_7_FB1_uD:	68 (0.90 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     39                 39             1.28 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_Z3_7_FB1_uD:	39 (0.52 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_rx_Z3_7_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     43                 43                                  
+====================================================================
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_Z3_8_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_Z3_8_FB1_uD                              
+==========================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     68                 68             2 %                  
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_Z3_8_FB1_uD:	68 (0.90 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     39                 39             1.28 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_Z3_8_FB1_uD:	39 (0.52 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_rx_Z3_8_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     43                 43                                  
+====================================================================
+--------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_Z3_9_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_Z3_9_FB1_uD                              
+==========================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     68                 68             2 %                  
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_Z3_9_FB1_uD:	68 (0.90 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     39                 39             1.28 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_Z3_9_FB1_uD:	39 (0.52 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_rx_Z3_9_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     43                 43                                  
+====================================================================
+------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_Z3_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_Z3_FB1_uD                              
+========================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     68                 68             2 %                  
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_Z3_FB1_uD:	68 (0.90 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     39                 39             1.28 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_Z3_FB1_uD:	39 (0.52 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_rx_Z3_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     43                 43                                  
+====================================================================
+------------------------------------------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_clkgen_4s_1200s_1s_150s_0s_300s_40s_ULTRASCALE_PLUS_0_Z1_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_clkgen_4s_1200s_1s_150s_0s_300s_40s_ULTRASCALE_PLUS_0_Z1_FB1_uD                              
+==============================================================================================================================
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     0                  0                                   
+====================================================================
+--------------------------------------------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_clkgen_4s_1200s_1s_150s_1s_300s_40s_ULTRASCALE_PLUS_0_Z1_0_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_clkgen_4s_1200s_1s_150s_1s_300s_40s_ULTRASCALE_PLUS_0_Z1_0_FB1_uD                              
+================================================================================================================================
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     0                  0                                   
+====================================================================
+------------------------------------------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_clkgen_4s_1200s_1s_150s_1s_300s_40s_ULTRASCALE_PLUS_0_Z1_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_clkgen_4s_1200s_1s_150s_1s_300s_40s_ULTRASCALE_PLUS_0_Z1_FB1_uD                              
+==============================================================================================================================
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     0                  0                                   
+====================================================================
+----------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_trainer_Z1_0_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_trainer_Z1_0_FB1_uD                              
+==================================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     301                301            8.85 %               
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_trainer_Z1_0_FB1_uD:	301 (3.98 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     322                322            10.6 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_trainer_Z1_0_FB1_uD:	322 (4.26 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     322                322                                 
+====================================================================
+----------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_trainer_Z1_1_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_trainer_Z1_1_FB1_uD                              
+==================================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     308                308            9.05 %               
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_trainer_Z1_1_FB1_uD:	308 (4.08 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     347                347            11.4 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_trainer_Z1_1_FB1_uD:	347 (4.59 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     347                347                                 
+====================================================================
+--------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_rx_trainer_Z1_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_rx_trainer_Z1_FB1_uD                              
+================================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     301                301            8.85 %               
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_rx_trainer_Z1_FB1_uD:	301 (3.98 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     321                321            10.6 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_rx_trainer_Z1_FB1_uD:	321 (4.25 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     321                321                                 
+====================================================================
+-----------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_simulation_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_simulation_FB1_uD                              
+=============================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     5                  5              0.1470 %             
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_simulation_FB1_uD:	5 (0.07 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     3                  3              0.09860 %            
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_simulation_FB1_uD:	3 (0.04 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     3                  3                                   
+====================================================================
+----------------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_training_monitor_Z1_0_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_training_monitor_Z1_0_FB1_uD                              
+========================================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     255                255            7.49 %               
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_training_monitor_Z1_0_FB1_uD:	255 (3.37 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     202                202            6.64 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_training_monitor_Z1_0_FB1_uD:	202 (2.67 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     202                202                                 
+====================================================================
+----------------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_training_monitor_Z1_1_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_training_monitor_Z1_1_FB1_uD                              
+========================================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     257                257            7.55 %               
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_training_monitor_Z1_1_FB1_uD:	257 (3.40 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     215                215            7.07 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_training_monitor_Z1_1_FB1_uD:	215 (2.85 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     215                215                                 
+====================================================================
+--------------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_training_monitor_Z1_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_training_monitor_Z1_FB1_uD                              
+======================================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     255                255            7.49 %               
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_training_monitor_Z1_FB1_uD:	255 (3.37 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     199                199            6.54 %               
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_training_monitor_Z1_FB1_uD:	199 (2.63 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     199                199                                 
+====================================================================
+------------------------------------------------------------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_ultrascale_bitslice_control_8s_40s_DIV2_12s_0s_8s_0s_0s_4s_ULTRASCALE_PLUS_Z1_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_ultrascale_bitslice_control_8s_40s_DIV2_12s_0s_8s_0s_0s_4s_ULTRASCALE_PLUS_Z1_FB1_uD                              
+================================================================================================================================================
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     0                  0                                   
+====================================================================
+-------------------------------------------------------------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_ultrascale_bitslice_control_8s_40s_DIV2_32s_0s_32s_0s_0s_0s_ULTRASCALE_PLUS_Z1_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_ultrascale_bitslice_control_8s_40s_DIV2_32s_0s_32s_0s_0s_0s_ULTRASCALE_PLUS_Z1_FB1_uD                              
+=================================================================================================================================================
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     0                  0                                   
+====================================================================
+--------------------------------------------------------------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_ultrascale_bitslice_control_8s_40s_DIV2_48s_0s_16s_0s_0s_32s_ULTRASCALE_PLUS_Z1_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_ultrascale_bitslice_control_8s_40s_DIV2_48s_0s_16s_0s_0s_32s_ULTRASCALE_PLUS_Z1_FB1_uD                              
+==================================================================================================================================================
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     0                  0                                   
+====================================================================
+----------------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_ultrascale_plle3_Z1_0_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_ultrascale_plle3_Z1_0_FB1_uD                              
+========================================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     13                 13             0.3820 %             
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_ultrascale_plle3_Z1_0_FB1_uD:	13 (0.17 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     6                  6              0.1970 %             
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_ultrascale_plle3_Z1_0_FB1_uD:	6 (0.08 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_ultrascale_plle3_Z1_0_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     10                 10                                  
+====================================================================
+----------------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_ultrascale_plle3_Z1_1_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_ultrascale_plle3_Z1_1_FB1_uD                              
+========================================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     13                 13             0.3820 %             
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_ultrascale_plle3_Z1_1_FB1_uD:	13 (0.17 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     6                  6              0.1970 %             
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_ultrascale_plle3_Z1_1_FB1_uD:	6 (0.08 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_ultrascale_plle3_Z1_1_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     10                 10                                  
+====================================================================
+--------------------------------------------------------------------------------------
+########   Utilization report for  cell:   hstdm_ultrascale_plle3_Z1_FB1_uD   ########
+Instance path:   FB1_uD.hstdm_ultrascale_plle3_Z1_FB1_uD                              
+======================================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Total area     Utilization     Notes
+---------------------------------------------------------------------
+REGISTERS     13                 13             0.3820 %             
+=====================================================================
+Total SEQUENTIAL ELEMENTS in the block FB1_uD.hstdm_ultrascale_plle3_Z1_FB1_uD:	13 (0.17 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+LUTS     6                  6              0.1970 %             
+================================================================
+Total COMBINATIONAL LOGIC in the block FB1_uD.hstdm_ultrascale_plle3_Z1_FB1_uD:	6 (0.08 % Utilization)
+
+
+Distributed Memory
+Name     Total elements     Total area     Utilization     Notes
+----------------------------------------------------------------
+SRLS     4                  4              5.48 %               
+================================================================
+Total Distributed Memory in the block FB1_uD.hstdm_ultrascale_plle3_Z1_FB1_uD:	4 (0.05 % Utilization)
+
+
+Summary Table
+Name         Total elements     Total area     Utilization     Notes
+--------------------------------------------------------------------
+LUT Site     10                 10                                  
+====================================================================
+#### START OF Block RAM DETAILED REPORT ####
+
+Total Block RAMs: 2
+
+hstdm_memory.memory_core.memory_inst_memory_inst_0_0
+----------------------------
+READ_WIDTH_A			36
+WRITE_WIDTH_A			18
+READ_WIDTH_B			18
+WRITE_WIDTH_B			36
+WRITE_MODE_A			READ_FIRST
+WRITE_MODE_B			READ_FIRST
+SRVAL_A					00000
+SRVAL_B					00000
+DOA_REG					0
+DOB_REG					0
+----------------------------
+
+haps_system_memory.memory_core.memory_inst_memory_inst_0_0
+----------------------------
+READ_WIDTH_A			36
+WRITE_WIDTH_A			18
+READ_WIDTH_B			18
+WRITE_WIDTH_B			36
+WRITE_MODE_A			READ_FIRST
+WRITE_MODE_B			READ_FIRST
+SRVAL_A					00000
+SRVAL_B					00000
+DOA_REG					0
+DOB_REG					0
+----------------------------
+
+#### END OF  Block RAM DETAILED REPORT ####
+
+
+##### END OF AREA REPORT #####]
+

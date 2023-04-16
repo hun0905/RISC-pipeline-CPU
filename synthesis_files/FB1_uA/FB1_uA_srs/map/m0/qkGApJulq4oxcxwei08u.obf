@@ -1,0 +1,903 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_srs/|pm0
+
+# Written on Sun Apr  9 22:44:27 2023
+
+##### DESIGN INFO #######################################################
+
+Top View:                "FB1_uA"
+Constraint File(s):      "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/common_files/srs_cons_var.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/common_files/tdm_cons_var.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_pinloc.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_iostd.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_attr.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_timing.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/common_files/clockgen_cons.fdc"
+                         "/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_haps_timing.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 1 issues in 1 out of 2188 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                         Ending                           |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                           System                           |     1000.000         |     No paths         |     No paths         |     No paths                         
+System                           clk                              |     500.000          |     No paths         |     No paths         |     No paths                         
+System                           umr3_clk                         |     8.000            |     No paths         |     No paths         |     No paths                         
+clk                              clk                              |     500.000          |     No paths         |     No paths         |     No paths                         
+clk                              hstdm_txclk_1200_bank71_div2     |     2.500            |     No paths         |     No paths         |     No paths                         
+clk                              hstdm_txclk_1200_bank60_div2     |     2.500            |     No paths         |     No paths         |     No paths                         
+clk                              hstdm_txclk_1200_bank61_div2     |     2.500            |     No paths         |     No paths         |     No paths                         
+clk                              hstdm_txclk_1200_bank62_div2     |     2.500            |     No paths         |     No paths         |     No paths                         
+clk                              hstdm_txclk_1200_bank69_div2     |     2.500            |     No paths         |     No paths         |     No paths                         
+umr2_clk                         umr2_clk                         |     10.000           |     No paths         |     No paths         |     No paths                         
+umr2_clk                         umr3_clk                         |     2.000            |     No paths         |     No paths         |     No paths                         
+umr3_clk                         System                           |     8.000            |     No paths         |     No paths         |     No paths                         
+umr3_clk                         umr2_clk                         |     2.000            |     No paths         |     No paths         |     No paths                         
+umr3_clk                         umr3_clk                         |     8.000            |     No paths         |     No paths         |     No paths                         
+umr3_clk                         hstdm_txclk_1200_bank71_div2     |     0.500            |     No paths         |     No paths         |     No paths                         
+umr3_clk                         hstdm_txclk_1200_bank60_div2     |     0.500            |     No paths         |     No paths         |     No paths                         
+umr3_clk                         hstdm_txclk_1200_bank61_div2     |     0.500            |     No paths         |     No paths         |     No paths                         
+umr3_clk                         hstdm_txclk_1200_bank62_div2     |     0.500            |     No paths         |     No paths         |     No paths                         
+umr3_clk                         hstdm_txclk_1200_bank69_div2     |     0.500            |     No paths         |     No paths         |     No paths                         
+hstdm_refclk_100                 hstdm_refclk_100                 |     10.000           |     No paths         |     No paths         |     No paths                         
+hstdm_txclk_1200_bank71_div2     hstdm_txclk_1200_bank71_div2     |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_txclk_1200_bank60_div2     hstdm_txclk_1200_bank60_div2     |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_txclk_1200_bank61_div2     hstdm_txclk_1200_bank61_div2     |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_txclk_1200_bank62_div2     hstdm_txclk_1200_bank62_div2     |     3.333            |     No paths         |     No paths         |     No paths                         
+hstdm_txclk_1200_bank69_div2     hstdm_txclk_1200_bank69_div2     |     3.333            |     No paths         |     No paths         |     No paths                         
+=============================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:ADDOUTID_63_0[0]
+p:ADDOUTID_63_0[1]
+p:ADDOUTID_63_0[2]
+p:ADDOUTID_63_0[3]
+p:ADDOUTID_63_0[4]
+p:ADDOUTID_63_0[5]
+p:ADDOUTID_63_0[6]
+p:ADDOUTID_63_0[7]
+p:ADDOUTID_63_0[8]
+p:ADDOUTID_63_0[9]
+p:ADDOUTID_63_0[10]
+p:ADDOUTID_63_0[11]
+p:ADDOUTID_63_0[12]
+p:ADDOUTID_63_0[13]
+p:ADDOUTID_63_0[14]
+p:ADDOUTID_63_0[15]
+p:ADDOUTID_63_0[16]
+p:ADDOUTID_63_0[17]
+p:ADDOUTID_63_0[18]
+p:ADDOUTID_63_0[19]
+p:ADDOUTID_63_0[20]
+p:ADDOUTID_63_0[21]
+p:ADDOUTID_63_0[22]
+p:ADDOUTID_63_0[23]
+p:ADDOUTID_63_0[24]
+p:ADDOUTID_63_0[25]
+p:ADDOUTID_63_0[26]
+p:ADDOUTID_63_0[27]
+p:ADDOUTID_63_0[28]
+p:ADDOUTID_63_0[29]
+p:ADDOUTID_63_0[30]
+p:ADDOUTID_63_0[31]
+p:ADDOUTID_63_0[32]
+p:ADDOUTID_63_0[33]
+p:ADDOUTID_63_0[34]
+p:ADDOUTID_63_0[35]
+p:ADDOUTID_63_0[36]
+p:ADDOUTID_63_0[37]
+p:ADDOUTID_63_0[38]
+p:ADDOUTID_63_0[39]
+p:ADDOUTID_63_0[40]
+p:ADDOUTID_63_0[41]
+p:ADDOUTID_63_0[42]
+p:ADDOUTID_63_0[43]
+p:ADDOUTID_63_0[44]
+p:ADDOUTID_63_0[45]
+p:ADDOUTID_63_0[46]
+p:ADDOUTID_63_0[47]
+p:ADDOUTID_63_0[48]
+p:ADDOUTID_63_0[49]
+p:ADDOUTID_63_0[50]
+p:ADDOUTID_63_0[51]
+p:ADDOUTID_63_0[52]
+p:ADDOUTID_63_0[53]
+p:ADDOUTID_63_0[54]
+p:ADDOUTID_63_0[55]
+p:ADDOUTID_63_0[56]
+p:ADDOUTID_63_0[57]
+p:ADDOUTID_63_0[58]
+p:ADDOUTID_63_0[59]
+p:ADDOUTID_63_0[60]
+p:ADDOUTID_63_0[61]
+p:ADDOUTID_63_0[62]
+p:ADDOUTID_63_0[63]
+p:AFPGA_GLNK_OUT
+p:AFPGA_LOCK_CDO_GLNK_I[0]
+p:AFPGA_LOCK_CDi_O
+p:AFPGA_LOCK_CE_I
+p:AFPGA_LOCK_CLK_I
+p:ALUOUTMEM_aptn_ft[0]
+p:ALUOUTMEM_aptn_ft[1]
+p:ALUOUTMEM_aptn_ft[2]
+p:ALUOUTMEM_aptn_ft[3]
+p:ALUOUTMEM_aptn_ft[4]
+p:ALUOUTMEM_aptn_ft[5]
+p:ALUOUTMEM_aptn_ft[6]
+p:ALUOUTMEM_aptn_ft[7]
+p:ALUOUTMEM_aptn_ft[8]
+p:ALUOUTMEM_aptn_ft[9]
+p:ALUOUTMEM_aptn_ft[10]
+p:ALUOUTMEM_aptn_ft_0[0]
+p:ALUOUTMEM_aptn_ft_0[1]
+p:ALUOUTMEM_aptn_ft_0[2]
+p:ALUOUTMEM_aptn_ft_0[3]
+p:ALUOUTMEM_aptn_ft_0[4]
+p:ALUOUTMEM_aptn_ft_0[5]
+p:ALUOUTMEM_aptn_ft_0[6]
+p:ALUOUTMEM_aptn_ft_0[7]
+p:ALUOUTMEM_aptn_ft_0[8]
+p:ALUOUTMEM_aptn_ft_0[9]
+p:ALUOUTMEM_aptn_ft_0[10]
+p:Addr[2]
+p:Addr[3]
+p:Addr[4]
+p:Addr[5]
+p:Addr[6]
+p:Addr[7]
+p:Addr[8]
+p:Addr[9]
+p:Addr[10]
+p:Addr[11]
+p:Addr[12]
+p:Addr[13]
+p:Addr[14]
+p:Addr[15]
+p:Addr[16]
+p:Addr[17]
+p:Addr[18]
+p:Addr[19]
+p:Addr[20]
+p:Addr[21]
+p:Addr[22]
+p:Addr[23]
+p:Addr[24]
+p:Addr[25]
+p:Addr[26]
+p:Addr[27]
+p:Addr[28]
+p:Addr[29]
+p:Addr[30]
+p:Addr[31]
+p:Addr[32]
+p:Addr[33]
+p:Addr[34]
+p:Addr[35]
+p:Addr[36]
+p:Addr[37]
+p:Addr[38]
+p:Addr[39]
+p:Addr[40]
+p:Addr[41]
+p:Addr[42]
+p:Addr[43]
+p:Addr[44]
+p:Addr[45]
+p:Addr[46]
+p:Addr[47]
+p:Addr[48]
+p:Addr[49]
+p:Addr[50]
+p:Addr[51]
+p:Addr[52]
+p:Addr[53]
+p:Addr[54]
+p:Addr[55]
+p:Addr[56]
+p:Addr[57]
+p:Addr[58]
+p:Addr[59]
+p:Addr[60]
+p:Addr[61]
+p:Addr[62]
+p:Addr[63]
+p:DBG_DOUT_0
+p:DBG_DOUT_1
+p:DBG_DOUT_2
+p:DBG_DOUT_3
+p:DBG_DOUT_4
+p:DBG_DOUT_5
+p:DBG_DOUT_6
+p:DBG_DOUT_7
+p:DBG_REFCLKN_0[0]
+p:DBG_REFCLKN_0[1]
+p:DBG_REFCLKN_0[2]
+p:DBG_REFCLKN_0[3]
+p:DBG_REFCLKP_0[0]
+p:DBG_REFCLKP_0[1]
+p:DBG_REFCLKP_0[2]
+p:DBG_REFCLKP_0[3]
+p:DBG_RXN[0]
+p:DBG_RXN[1]
+p:DBG_RXN[2]
+p:DBG_RXN[3]
+p:DBG_RXN[4]
+p:DBG_RXN[5]
+p:DBG_RXN[6]
+p:DBG_RXN[7]
+p:DBG_RXP[0]
+p:DBG_RXP[1]
+p:DBG_RXP[2]
+p:DBG_RXP[3]
+p:DBG_RXP[4]
+p:DBG_RXP[5]
+p:DBG_RXP[6]
+p:DBG_RXP[7]
+p:DBG_TXN[0]
+p:DBG_TXN[1]
+p:DBG_TXN[2]
+p:DBG_TXN[3]
+p:DBG_TXN[4]
+p:DBG_TXN[5]
+p:DBG_TXN[6]
+p:DBG_TXN[7]
+p:DBG_TXP[0]
+p:DBG_TXP[1]
+p:DBG_TXP[2]
+p:DBG_TXP[3]
+p:DBG_TXP[4]
+p:DBG_TXP[5]
+p:DBG_TXP[6]
+p:DBG_TXP[7]
+p:DMOUTWB[0]
+p:DMOUTWB[1]
+p:DMOUTWB[2]
+p:DMOUTWB[3]
+p:DMOUTWB[4]
+p:DMOUTWB[5]
+p:DMOUTWB[6]
+p:DMOUTWB[7]
+p:DMOUTWB[8]
+p:DMOUTWB[9]
+p:DMOUTWB[10]
+p:DMOUTWB[11]
+p:DMOUTWB[12]
+p:DMOUTWB[13]
+p:DMOUTWB[14]
+p:DMOUTWB[15]
+p:DMOUTWB[16]
+p:DMOUTWB[17]
+p:DMOUTWB[18]
+p:DMOUTWB[19]
+p:DMOUTWB[20]
+p:DMOUTWB[21]
+p:DMOUTWB[22]
+p:DMOUTWB[23]
+p:DMOUTWB[24]
+p:DMOUTWB[25]
+p:DMOUTWB[26]
+p:DMOUTWB[27]
+p:DMOUTWB[28]
+p:DMOUTWB[29]
+p:DMOUTWB[30]
+p:DMOUTWB[31]
+p:DMOUTWB[32]
+p:DMOUTWB[33]
+p:DMOUTWB[34]
+p:DMOUTWB[35]
+p:DMOUTWB[36]
+p:DMOUTWB[37]
+p:DMOUTWB[38]
+p:DMOUTWB[39]
+p:DMOUTWB[40]
+p:DMOUTWB[41]
+p:DMOUTWB[42]
+p:DMOUTWB[43]
+p:DMOUTWB[44]
+p:DMOUTWB[45]
+p:DMOUTWB[46]
+p:DMOUTWB[47]
+p:DMOUTWB[48]
+p:DMOUTWB[49]
+p:DMOUTWB[50]
+p:DMOUTWB[51]
+p:DMOUTWB[52]
+p:DMOUTWB[53]
+p:DMOUTWB[54]
+p:DMOUTWB[55]
+p:DMOUTWB[56]
+p:DMOUTWB[57]
+p:DMOUTWB[58]
+p:DMOUTWB[59]
+p:DMOUTWB[60]
+p:DMOUTWB[61]
+p:DMOUTWB[62]
+p:DMOUTWB[63]
+p:DMOUTWB_aptn_ft[0]
+p:DMOUTWB_aptn_ft[1]
+p:DMOUTWB_aptn_ft[2]
+p:DMOUTWB_aptn_ft[3]
+p:DMOUTWB_aptn_ft[4]
+p:DMOUTWB_aptn_ft[5]
+p:DMOUTWB_aptn_ft[6]
+p:DMOUTWB_aptn_ft[7]
+p:DMOUTWB_aptn_ft[8]
+p:DMOUTWB_aptn_ft[9]
+p:DMOUTWB_aptn_ft[10]
+p:DMOUTWB_aptn_ft[11]
+p:DMOUTWB_aptn_ft[12]
+p:DMOUTWB_aptn_ft[13]
+p:DMOUTWB_aptn_ft[14]
+p:DMOUTWB_aptn_ft[15]
+p:DMOUTWB_aptn_ft[16]
+p:DMOUTWB_aptn_ft[17]
+p:DMOUTWB_aptn_ft[18]
+p:DMOUTWB_aptn_ft[19]
+p:DMOUTWB_aptn_ft[20]
+p:DMOUTWB_aptn_ft[21]
+p:DMOUTWB_aptn_ft[22]
+p:DMOUTWB_aptn_ft[23]
+p:DMOUTWB_aptn_ft[24]
+p:DMOUTWB_aptn_ft[25]
+p:DMOUTWB_aptn_ft[26]
+p:DMOUTWB_aptn_ft[27]
+p:DMOUTWB_aptn_ft[28]
+p:DMOUTWB_aptn_ft[29]
+p:DMOUTWB_aptn_ft[30]
+p:DMOUTWB_aptn_ft[31]
+p:DMOUTWB_aptn_ft[32]
+p:DMOUTWB_aptn_ft[33]
+p:DMOUTWB_aptn_ft[34]
+p:DMOUTWB_aptn_ft[35]
+p:DMOUTWB_aptn_ft[36]
+p:DMOUTWB_aptn_ft[37]
+p:DMOUTWB_aptn_ft[38]
+p:DMOUTWB_aptn_ft[39]
+p:DMOUTWB_aptn_ft[40]
+p:DMOUTWB_aptn_ft[41]
+p:DMOUTWB_aptn_ft[42]
+p:DMOUTWB_aptn_ft[43]
+p:DMOUTWB_aptn_ft[44]
+p:DMOUTWB_aptn_ft[45]
+p:DMOUTWB_aptn_ft[46]
+p:DMOUTWB_aptn_ft[47]
+p:DMOUTWB_aptn_ft[48]
+p:DMOUTWB_aptn_ft[49]
+p:DMOUTWB_aptn_ft[50]
+p:DMOUTWB_aptn_ft[51]
+p:DMOUTWB_aptn_ft[52]
+p:DMOUTWB_aptn_ft[53]
+p:DMOUTWB_aptn_ft[54]
+p:DMOUTWB_aptn_ft[55]
+p:DMOUTWB_aptn_ft[56]
+p:DMOUTWB_aptn_ft[57]
+p:DMOUTWB_aptn_ft[58]
+p:DMOUTWB_aptn_ft[59]
+p:DMOUTWB_aptn_ft[60]
+p:DMOUTWB_aptn_ft[61]
+p:DMOUTWB_aptn_ft[62]
+p:DMOUTWB_aptn_ft[63]
+p:DUMMY_GSR_PORT
+p:DUMMY_PORT
+p:GT1_REFCLK_N
+p:GT1_REFCLK_P
+p:GT1_RXN[0]
+p:GT1_RXN[1]
+p:GT1_RXN[2]
+p:GT1_RXN[3]
+p:GT1_RXP[0]
+p:GT1_RXP[1]
+p:GT1_RXP[2]
+p:GT1_RXP[3]
+p:GT1_TXN[0]
+p:GT1_TXN[1]
+p:GT1_TXN[2]
+p:GT1_TXN[3]
+p:GT1_TXP[0]
+p:GT1_TXP[1]
+p:GT1_TXP[2]
+p:GT1_TXP[3]
+p:IMMID[53]
+p:IMMID[54]
+p:IMMID[55]
+p:IMMID[56]
+p:IMMID[57]
+p:IMMID[58]
+p:IMMID[59]
+p:IMMID[60]
+p:IMMID[61]
+p:IMMID[62]
+p:IMMID[63]
+p:IMMID_11_to_20[11]
+p:IMMID_11_to_20[13]
+p:IMMID_11_to_20[14]
+p:IMMID_11_to_20[15]
+p:IMMID_11_to_20[16]
+p:IMMID_11_to_20[17]
+p:IMMID_11_to_20[18]
+p:IMMID_11_to_20[19]
+p:IMMID_11_to_20[20]
+p:IMMID_22_to_22[22]
+p:IMMID_24_to_26[24]
+p:IMMID_24_to_26[25]
+p:IMMID_24_to_26[26]
+p:IMMID_28_to_51[28]
+p:IMMID_28_to_51[29]
+p:IMMID_28_to_51[30]
+p:IMMID_28_to_51[31]
+p:IMMID_28_to_51[32]
+p:IMMID_28_to_51[33]
+p:IMMID_28_to_51[34]
+p:IMMID_28_to_51[35]
+p:IMMID_28_to_51[36]
+p:IMMID_28_to_51[37]
+p:IMMID_28_to_51[38]
+p:IMMID_28_to_51[39]
+p:IMMID_28_to_51[40]
+p:IMMID_28_to_51[41]
+p:IMMID_28_to_51[42]
+p:IMMID_28_to_51[43]
+p:IMMID_28_to_51[44]
+p:IMMID_28_to_51[45]
+p:IMMID_28_to_51[46]
+p:IMMID_28_to_51[47]
+p:IMMID_28_to_51[48]
+p:IMMID_28_to_51[49]
+p:IMMID_28_to_51[50]
+p:IMMID_28_to_51[51]
+p:INSTRUCID_0_11[0]
+p:INSTRUCID_0_11[1]
+p:INSTRUCID_0_11[2]
+p:INSTRUCID_0_11[3]
+p:INSTRUCID_0_11[4]
+p:INSTRUCID_0_11[5]
+p:INSTRUCID_0_11[6]
+p:INSTRUCID_0_11[7]
+p:INSTRUCID_0_11[8]
+p:INSTRUCID_0_11[9]
+p:INSTRUCID_0_11[10]
+p:INSTRUCID_0_11[11]
+p:INSTRUCID_15_26[15]
+p:INSTRUCID_15_26[16]
+p:INSTRUCID_15_26[17]
+p:INSTRUCID_15_26[18]
+p:INSTRUCID_15_26[19]
+p:INSTRUCID_15_26[20]
+p:INSTRUCID_15_26[21]
+p:INSTRUCID_15_26[22]
+p:INSTRUCID_15_26[23]
+p:INSTRUCID_15_26[24]
+p:INSTRUCID_15_26[25]
+p:INSTRUCID_15_26[26]
+p:INSTRUCID_28_29[28]
+p:INSTRUCID_28_29[29]
+p:INSTRUCID_31[31]
+p:MEMREADEX
+p:MEMREADEX_aptn_ft
+p:MEMREADMEM_aptn_ft
+p:MEMREADMEM_aptn_ft_0
+p:MNGLINK_RX
+p:MNGLINK_TX
+p:N_1
+p:PCSRCID
+p:PC[0]
+p:PC[1]
+p:PC[2]
+p:PC[3]
+p:PC[4]
+p:PC[5]
+p:PC[6]
+p:PC[7]
+p:PC[8]
+p:PC[9]
+p:PC[10]
+p:PC[11]
+p:PC[12]
+p:PC[13]
+p:PC[14]
+p:PC[15]
+p:PC[16]
+p:PC[17]
+p:PC[18]
+p:PC[19]
+p:PC[20]
+p:PC[21]
+p:PC[22]
+p:PC[23]
+p:PC[24]
+p:PC[25]
+p:PC[26]
+p:PC[27]
+p:PC[28]
+p:PC[29]
+p:PC[30]
+p:PC[31]
+p:PC[32]
+p:PC[33]
+p:PC[34]
+p:PC[35]
+p:PC[36]
+p:PC[37]
+p:PC[38]
+p:PC[39]
+p:PC[40]
+p:PC[41]
+p:PC[42]
+p:PC[43]
+p:PC[44]
+p:PC[45]
+p:PC[46]
+p:PC[47]
+p:PC[48]
+p:PC[49]
+p:PC[50]
+p:PC[51]
+p:PC[52]
+p:PC[53]
+p:PC[54]
+p:PC[55]
+p:PC[56]
+p:PC[57]
+p:PC[58]
+p:PC[59]
+p:PC[60]
+p:PC[61]
+p:PC[62]
+p:PC[63]
+p:REF_CLK_N
+p:REF_CLK_P
+p:REF_RESET
+p:REGWRITEWB_0
+p:REGWRITEWB_aptn_ft
+p:UMR3_SIB_LINK_IN[0]
+p:UMR3_SIB_LINK_IN[1]
+p:UMR3_SIB_LINK_OUT[0]
+p:UMR3_SIB_LINK_OUT[1]
+p:WREX[0]
+p:WREX[1]
+p:WREX[2]
+p:WREX[3]
+p:WREX_aptn_ft[0]
+p:WREX_aptn_ft[1]
+p:WREX_aptn_ft[2]
+p:WREX_aptn_ft[3]
+p:WRITEDATAWB[0]
+p:WRITEDATAWB[1]
+p:WRITEDATAWB[2]
+p:WRITEDATAWB[3]
+p:WRITEDATAWB[4]
+p:WRITEDATAWB[5]
+p:WRITEDATAWB[6]
+p:WRITEDATAWB[7]
+p:WRITEDATAWB[8]
+p:WRITEDATAWB[9]
+p:WRITEDATAWB[10]
+p:WRITEDATAWB[11]
+p:WRITEDATAWB[12]
+p:WRITEDATAWB[13]
+p:WRITEDATAWB[14]
+p:WRITEDATAWB[15]
+p:WRITEDATAWB[16]
+p:WRITEDATAWB[17]
+p:WRITEDATAWB[18]
+p:WRITEDATAWB[19]
+p:WRITEDATAWB[20]
+p:WRITEDATAWB[21]
+p:WRITEDATAWB[22]
+p:WRITEDATAWB[23]
+p:WRITEDATAWB[24]
+p:WRITEDATAWB[25]
+p:WRITEDATAWB[26]
+p:WRITEDATAWB[27]
+p:WRITEDATAWB[28]
+p:WRITEDATAWB[29]
+p:WRITEDATAWB[30]
+p:WRITEDATAWB[31]
+p:WRITEDATAWB[32]
+p:WRITEDATAWB[33]
+p:WRITEDATAWB[34]
+p:WRITEDATAWB[35]
+p:WRITEDATAWB[36]
+p:WRITEDATAWB[37]
+p:WRITEDATAWB[38]
+p:WRITEDATAWB[39]
+p:WRITEDATAWB[40]
+p:WRITEDATAWB[41]
+p:WRITEDATAWB[42]
+p:WRITEDATAWB[43]
+p:WRITEDATAWB[44]
+p:WRITEDATAWB[45]
+p:WRITEDATAWB[46]
+p:WRITEDATAWB[47]
+p:WRITEDATAWB[48]
+p:WRITEDATAWB[49]
+p:WRITEDATAWB[50]
+p:WRITEDATAWB[51]
+p:WRITEDATAWB[52]
+p:WRITEDATAWB[53]
+p:WRITEDATAWB[54]
+p:WRITEDATAWB[55]
+p:WRITEDATAWB[56]
+p:WRITEDATAWB[57]
+p:WRITEDATAWB[58]
+p:WRITEDATAWB[59]
+p:WRITEDATAWB[60]
+p:WRITEDATAWB[61]
+p:WRITEDATAWB[62]
+p:WRITEDATAWB[63]
+p:WRITEDATAWB_aptn_ft[0]
+p:WRITEDATAWB_aptn_ft[1]
+p:WRITEDATAWB_aptn_ft[2]
+p:WRITEDATAWB_aptn_ft[3]
+p:WRITEDATAWB_aptn_ft[4]
+p:WRITEDATAWB_aptn_ft[5]
+p:WRITEDATAWB_aptn_ft[6]
+p:WRITEDATAWB_aptn_ft[7]
+p:WRITEDATAWB_aptn_ft[8]
+p:WRITEDATAWB_aptn_ft[9]
+p:WRITEDATAWB_aptn_ft[10]
+p:WRITEDATAWB_aptn_ft[11]
+p:WRITEDATAWB_aptn_ft[12]
+p:WRITEDATAWB_aptn_ft[13]
+p:WRITEDATAWB_aptn_ft[14]
+p:WRITEDATAWB_aptn_ft[15]
+p:WRITEDATAWB_aptn_ft[16]
+p:WRITEDATAWB_aptn_ft[17]
+p:WRITEDATAWB_aptn_ft[18]
+p:WRITEDATAWB_aptn_ft[19]
+p:WRITEDATAWB_aptn_ft[20]
+p:WRITEDATAWB_aptn_ft[21]
+p:WRITEDATAWB_aptn_ft[22]
+p:WRITEDATAWB_aptn_ft[23]
+p:WRITEDATAWB_aptn_ft[24]
+p:WRITEDATAWB_aptn_ft[25]
+p:WRITEDATAWB_aptn_ft[26]
+p:WRITEDATAWB_aptn_ft[27]
+p:WRITEDATAWB_aptn_ft[28]
+p:WRITEDATAWB_aptn_ft[29]
+p:WRITEDATAWB_aptn_ft[30]
+p:WRITEDATAWB_aptn_ft[31]
+p:WRITEDATAWB_aptn_ft[32]
+p:WRITEDATAWB_aptn_ft[33]
+p:WRITEDATAWB_aptn_ft[34]
+p:WRITEDATAWB_aptn_ft[35]
+p:WRITEDATAWB_aptn_ft[36]
+p:WRITEDATAWB_aptn_ft[37]
+p:WRITEDATAWB_aptn_ft[38]
+p:WRITEDATAWB_aptn_ft[39]
+p:WRITEDATAWB_aptn_ft[40]
+p:WRITEDATAWB_aptn_ft[41]
+p:WRITEDATAWB_aptn_ft[42]
+p:WRITEDATAWB_aptn_ft[43]
+p:WRITEDATAWB_aptn_ft[44]
+p:WRITEDATAWB_aptn_ft[45]
+p:WRITEDATAWB_aptn_ft[46]
+p:WRITEDATAWB_aptn_ft[47]
+p:WRITEDATAWB_aptn_ft[48]
+p:WRITEDATAWB_aptn_ft[49]
+p:WRITEDATAWB_aptn_ft[50]
+p:WRITEDATAWB_aptn_ft[51]
+p:WRITEDATAWB_aptn_ft[52]
+p:WRITEDATAWB_aptn_ft[53]
+p:WRITEDATAWB_aptn_ft[54]
+p:WRITEDATAWB_aptn_ft[55]
+p:WRITEDATAWB_aptn_ft[56]
+p:WRITEDATAWB_aptn_ft[57]
+p:WRITEDATAWB_aptn_ft[58]
+p:WRITEDATAWB_aptn_ft[59]
+p:WRITEDATAWB_aptn_ft[60]
+p:WRITEDATAWB_aptn_ft[61]
+p:WRITEDATAWB_aptn_ft[62]
+p:WRITEDATAWB_aptn_ft[63]
+p:WRMEM_aptn_ft[0]
+p:WRMEM_aptn_ft[1]
+p:WRMEM_aptn_ft[2]
+p:WRMEM_aptn_ft[3]
+p:WRMEM_aptn_ft[4]
+p:WRMEM_aptn_ft_0[0]
+p:WRMEM_aptn_ft_0[1]
+p:WRMEM_aptn_ft_0[2]
+p:WRMEM_aptn_ft_0[3]
+p:WRMEM_aptn_ft_0[4]
+p:WRWB[0]
+p:WRWB[1]
+p:WRWB[2]
+p:WRWB[3]
+p:WRWB[4]
+p:WRWB_aptn_ft[0]
+p:WRWB_aptn_ft[1]
+p:WRWB_aptn_ft[2]
+p:WRWB_aptn_ft[3]
+p:WRWB_aptn_ft[4]
+p:cpm_s_HSTDM_4_FB1_A2_C_0
+p:cpm_s_HSTDM_4_FB1_A2_C_1
+p:cpm_s_HSTDM_4_FB1_A2_D_2
+p:cpm_s_HSTDM_4_FB1_A2_D_3
+p:cpm_s_HSTDM_4_FB1_A3_C_0
+p:cpm_s_HSTDM_4_FB1_A3_C_1
+p:cpm_s_HSTDM_4_FB1_A3_D_2
+p:cpm_s_HSTDM_4_FB1_A3_D_3
+p:cpm_s_HSTDM_4_FB1_A4_C_0
+p:cpm_s_HSTDM_4_FB1_A4_C_1
+p:cpm_s_HSTDM_4_FB1_A4_D_2
+p:cpm_s_HSTDM_4_FB1_A4_D_3
+p:cpm_s_HSTDM_4_FB1_AI1_N_18
+p:cpm_s_HSTDM_4_FB1_AI1_P_18
+p:cpm_s_HSTDM_4_FB1_BI3_N_7
+p:cpm_s_HSTDM_4_FB1_BI3_N_8
+p:cpm_s_HSTDM_4_FB1_BI3_P_7
+p:cpm_s_HSTDM_4_FB1_BI3_P_8
+p:in_enable
+p:in_instruc[0]
+p:in_instruc[1]
+p:in_instruc[2]
+p:in_instruc[3]
+p:in_instruc[4]
+p:in_instruc[5]
+p:in_instruc[6]
+p:in_instruc[7]
+p:in_instruc[8]
+p:in_instruc[9]
+p:in_instruc[10]
+p:in_instruc[11]
+p:in_instruc[12]
+p:in_instruc[13]
+p:in_instruc[14]
+p:in_instruc[15]
+p:in_instruc[16]
+p:in_instruc[17]
+p:in_instruc[18]
+p:in_instruc[19]
+p:in_instruc[20]
+p:in_instruc[21]
+p:in_instruc[22]
+p:in_instruc[23]
+p:in_instruc[24]
+p:in_instruc[25]
+p:in_instruc[26]
+p:in_instruc[27]
+p:in_instruc[28]
+p:in_instruc[29]
+p:in_instruc[30]
+p:in_instruc[31]
+p:pin_BM29
+p:pin_BN20
+p:pin_BN21
+p:pin_BN29
+p:pin_BP13
+p:pin_BR13
+p:pin_G39
+p:pin_H31
+p:pin_H39
+p:pin_J31
+p:rst_n
+p:rst_n_aptn_s
+p:stall_0
+
+
+Ports without properties
+************************
+
+p:DBG_REFCLKN_0[0] Missing IO Standard attribute
+p:DBG_REFCLKN_0[1] Missing IO Standard attribute
+p:DBG_REFCLKN_0[2] Missing IO Standard attribute
+p:DBG_REFCLKN_0[3] Missing IO Standard attribute
+p:DBG_REFCLKP_0[0] Missing IO Standard attribute
+p:DBG_REFCLKP_0[1] Missing IO Standard attribute
+p:DBG_REFCLKP_0[2] Missing IO Standard attribute
+p:DBG_REFCLKP_0[3] Missing IO Standard attribute
+p:DBG_RXN[0] Missing IO Standard attribute
+p:DBG_RXN[1] Missing IO Standard attribute
+p:DBG_RXN[2] Missing IO Standard attribute
+p:DBG_RXN[3] Missing IO Standard attribute
+p:DBG_RXN[4] Missing IO Standard attribute
+p:DBG_RXN[5] Missing IO Standard attribute
+p:DBG_RXN[6] Missing IO Standard attribute
+p:DBG_RXN[7] Missing IO Standard attribute
+p:DBG_RXP[0] Missing IO Standard attribute
+p:DBG_RXP[1] Missing IO Standard attribute
+p:DBG_RXP[2] Missing IO Standard attribute
+p:DBG_RXP[3] Missing IO Standard attribute
+p:DBG_RXP[4] Missing IO Standard attribute
+p:DBG_RXP[5] Missing IO Standard attribute
+p:DBG_RXP[6] Missing IO Standard attribute
+p:DBG_RXP[7] Missing IO Standard attribute
+p:DBG_TXN[0] Missing IO Standard attribute
+p:DBG_TXN[1] Missing IO Standard attribute
+p:DBG_TXN[2] Missing IO Standard attribute
+p:DBG_TXN[3] Missing IO Standard attribute
+p:DBG_TXN[4] Missing IO Standard attribute
+p:DBG_TXN[5] Missing IO Standard attribute
+p:DBG_TXN[6] Missing IO Standard attribute
+p:DBG_TXN[7] Missing IO Standard attribute
+p:DBG_TXP[0] Missing IO Standard attribute
+p:DBG_TXP[1] Missing IO Standard attribute
+p:DBG_TXP[2] Missing IO Standard attribute
+p:DBG_TXP[3] Missing IO Standard attribute
+p:DBG_TXP[4] Missing IO Standard attribute
+p:DBG_TXP[5] Missing IO Standard attribute
+p:DBG_TXP[6] Missing IO Standard attribute
+p:DBG_TXP[7] Missing IO Standard attribute
+p:GT1_REFCLK_N Missing IO Standard attribute
+p:GT1_REFCLK_P Missing IO Standard attribute
+p:GT1_RXN[0] Missing IO Standard attribute
+p:GT1_RXN[1] Missing IO Standard attribute
+p:GT1_RXN[2] Missing IO Standard attribute
+p:GT1_RXN[3] Missing IO Standard attribute
+p:GT1_RXP[0] Missing IO Standard attribute
+p:GT1_RXP[1] Missing IO Standard attribute
+p:GT1_RXP[2] Missing IO Standard attribute
+p:GT1_RXP[3] Missing IO Standard attribute
+p:GT1_TXN[0] Missing IO Standard attribute
+p:GT1_TXN[1] Missing IO Standard attribute
+p:GT1_TXN[2] Missing IO Standard attribute
+p:GT1_TXN[3] Missing IO Standard attribute
+p:GT1_TXP[0] Missing IO Standard attribute
+p:GT1_TXP[1] Missing IO Standard attribute
+p:GT1_TXP[2] Missing IO Standard attribute
+p:GT1_TXP[3] Missing IO Standard attribute
+p:REF_CLK_N Missing IO Standard attribute
+p:REF_CLK_P Missing IO Standard attribute
+
+
+Inapplicable constraints
+************************
+
+set_input_delay -max 6.00 -clock c:clk -add_delay p:rst_n
+	@E:MF1014:"/home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc":11:0:11:0|input delay is invalid on output port "rst_n"
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Identical constraints
+**********************************************
+
+@W:"/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_haps_timing.fdc":5:0:5:0|	There are 5 identical constraints define_current_design define_current_design 
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

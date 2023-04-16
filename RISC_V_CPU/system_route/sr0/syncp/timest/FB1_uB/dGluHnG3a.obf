@@ -1,0 +1,9 @@
+n PartitionBuildLib FB1_uB verilog_0;
+av .compile_point_summary_status "Mapped";
+av .compile_point_summary_reason "No database";
+av .compile_point_update_model 0;
+av .compile_point_fast_synthesis "Yes";
+av .compile_point_cputime_used 15.6423;
+av .compile_point_starttime_stamp "Sun Apr  9 22:40:34 2023";
+av .compile_point_endtime_stamp "Sun Apr  9 22:40:49 2023";
+av .compile_point_realtime_used 15.4593;

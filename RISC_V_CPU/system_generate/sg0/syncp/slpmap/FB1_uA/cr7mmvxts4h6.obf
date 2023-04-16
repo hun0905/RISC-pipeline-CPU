@@ -1,0 +1,6 @@
+n TraceBuildLib FB1_uA verilog_0;
+av .slp_regroup_id 67;
+av .slp_regroup_id_range 22;
+av .slp_common_views {
+av 1 "work.MUX.verilog";
+};

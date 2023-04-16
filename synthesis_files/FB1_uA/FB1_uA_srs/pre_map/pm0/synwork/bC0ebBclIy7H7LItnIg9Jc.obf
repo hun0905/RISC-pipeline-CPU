@@ -1,0 +1,8 @@
+i clk
+m 0 0
+u 16 173
+p {p:clk}{t:dut_inst.clk}{p:dut_inst.clk}{t:dut_inst.aptn_reset_sync_rst_n_10.C}
+e ckid0_0 {t:dut_inst.aptn_reset_sync_rst_n_10.C} dffr
+c ckid0_0 {p:clk} port Unsupported/too complex instance on clock path
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

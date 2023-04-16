@@ -1,0 +1,71 @@
+System Memory report for FB1_uA
+==============================================================
+SLP project checksum             : 0x1ea929ab
+Partition tool version           : R-2020.12-SP1-1 (Apr  8 2022 21:27:16)
+Synthesis tool version           : R-2020.12-SP1-1 (Apr  8 2022 21:27:16)
+FPGA Location                    : FB?_A (Type HAPS100_4F) (board cde order unspecified) 
+System CAPIM address             : 56
+System CAPIM type                : 0x304
+Speed grade                      : -1-e
+Chip ID                          : 0
+
+End System Memory report
+==============================================================
+
+High Speed TDM report for FB1_uA
+==============================================================
+High Speed TDM Info:
+HSTDM memory format version      : 0xabcf
+HSTDM IP version                 : 2020.03.0.11
+HSTDM bit rate                   : 1200 Mbps
+HSTDM UMR or I2C address         : N/A (no accessible data on this chip)
+HSTDM fast clock port            : None
+HSTDM fast-clock frequency       : 100MHz
+Training will be done at         : system configuration
+
+TDM block 1 settings: Bit rate 1200 Mbps, POD12 Pre-emphasis and equalization enabled:
+TDM block 1 channels: Async Single-Ended (iobank #69 SLR2_R):
+	Clock output hstdm_clkgen_1200_tx_bank69_block1 : Trace FB1.AI1_P[19], Pin pair (19) H39-G39 (byte 3 lower nibble bit 0) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_AI1_N_18 : Ratio 4 (Base 4) : Trace FB1.AI1_N[18], Pin (18N) G34 (byte 2 upper nibble bit 5) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_AI1_P_18 : Ratio 4 (Base 4) : Trace FB1.AI1_P[18], Pin (18P) H34 (byte 2 upper nibble bit 4) : tap=0 
+
+TDM block 2 settings: Bit rate 1200 Mbps:
+TDM block 2 channels: Async Single-Ended (iobank #71 SLR2_R):
+	Transmitter cpm_snd_HSTDM_4_FB1_BI3_N_7 : Ratio 4 (Base 4) : Trace FB1.BI3_N[7], Pin (18N) G33 (byte 2 upper nibble bit 5) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_BI3_P_7 : Ratio 4 (Base 4) : Trace FB1.BI3_P[7], Pin (18P) H33 (byte 2 upper nibble bit 4) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_BI3_N_8 : Ratio 4 (Base 4) : Trace FB1.BI3_N[8], Pin (17N) J32 (byte 2 upper nibble bit 3) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_BI3_P_8 : Ratio 4 (Base 4) : Trace FB1.BI3_P[8], Pin (17P) J33 (byte 2 upper nibble bit 2) : tap=0 
+	Clock output hstdm_clkgen_1200_tx_bank71_block2 : Trace FB1.AI3_P[15], Pin pair (15) J31-H31 (byte 2 lower nibble bit 4) : tap=0 
+
+TDM block 3 settings: Bit rate 1200 Mbps, POD12 Pre-emphasis and equalization enabled:
+TDM block 3 channels: Async Single-Ended on HAPS connector J2 (iobank #60 SLR0_R):
+	Transmitter cpm_snd_HSTDM_4_FB1_A2_C_1 : Ratio 4 (Base 4) : Trace FB1_A2_C[1], Pin (12N) BP15 (byte 1 upper nibble bit 5) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_A2_C_0 : Ratio 4 (Base 4) : Trace FB1_A2_C[0], Pin (12P) BP16 (byte 1 upper nibble bit 4) : tap=0 
+	Clock output hstdm_clkgen_1200_tx_bank60_block3 : Trace FB1_A2_C[2], Pin pair (10) BP13-BR13 (byte 1 upper nibble bit 0) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_A2_D_3 : Ratio 4 (Base 4) : Trace FB1_A2_D[3], Pin (5N) BU13 (byte 0 upper nibble bit 3) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_A2_D_2 : Ratio 4 (Base 4) : Trace FB1_A2_D[2], Pin (5P) BU14 (byte 0 upper nibble bit 2) : tap=0 
+
+TDM block 4 settings: Bit rate 1200 Mbps, POD12 Pre-emphasis and equalization enabled:
+TDM block 4 channels: Async Single-Ended on HAPS connector J3 (iobank #61 SLR0_R):
+	Transmitter cpm_snd_HSTDM_4_FB1_A3_C_1 : Ratio 4 (Base 4) : Trace FB1_A3_C[1], Pin (12N) BM21 (byte 1 upper nibble bit 5) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_A3_C_0 : Ratio 4 (Base 4) : Trace FB1_A3_C[0], Pin (12P) BL21 (byte 1 upper nibble bit 4) : tap=0 
+	Clock output hstdm_clkgen_1200_tx_bank61_block4 : Trace FB1_A3_C[2], Pin pair (10) BN21-BN20 (byte 1 upper nibble bit 0) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_A3_D_3 : Ratio 4 (Base 4) : Trace FB1_A3_D[3], Pin (5N) BR19 (byte 0 upper nibble bit 3) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_A3_D_2 : Ratio 4 (Base 4) : Trace FB1_A3_D[2], Pin (5P) BR20 (byte 0 upper nibble bit 2) : tap=0 
+
+TDM block 5 settings: Bit rate 1200 Mbps, POD12 Pre-emphasis and equalization enabled:
+TDM block 5 channels: Async Single-Ended on HAPS connector J4 (iobank #62 SLR0_R):
+	Transmitter cpm_snd_HSTDM_4_FB1_A4_C_1 : Ratio 4 (Base 4) : Trace FB1_A4_C[1], Pin (12N) BP26 (byte 1 upper nibble bit 5) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_A4_C_0 : Ratio 4 (Base 4) : Trace FB1_A4_C[0], Pin (12P) BN26 (byte 1 upper nibble bit 4) : tap=0 
+	Clock output hstdm_clkgen_1200_tx_bank62_block5 : Trace FB1_A4_C[2], Pin pair (10) BM29-BN29 (byte 1 upper nibble bit 0) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_A4_D_3 : Ratio 4 (Base 4) : Trace FB1_A4_D[3], Pin (5N) BR24 (byte 0 upper nibble bit 3) : tap=0 
+	Transmitter cpm_snd_HSTDM_4_FB1_A4_D_2 : Ratio 4 (Base 4) : Trace FB1_A4_D[2], Pin (5P) BR25 (byte 0 upper nibble bit 2) : tap=0 
+
+High Speed TDM Summary:
+	Transmit: 72 bits transmitted over 18 pin(s)
+		with 10 pin(s) used as clocks
+	Receive: 0 bits received over 0 pin(s)
+		with 0 pin(s) used as clocks
+
+End High Speed TDM report
+==============================================================

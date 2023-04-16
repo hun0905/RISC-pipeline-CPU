@@ -1,0 +1,16 @@
+
+
+
+ -------------------------------------------------
+|SLP WRITE REASON FOR MACHINE GENERATION OF MODULE FOR FB1_uC FPGA|
+ --------------------------------------------------
+
+	 OrigViewName                                       	|	 ViewName                                           	|	Status     	|	Reason			
+======================================================================================================================================================
+	 NA                                                 	|	 FB1_uC_dut                                         	|	MODIFIED   	|	UMR, SCEMI and other HAPS	
+	 ALU                                                	|	 ALU                                                	|	NON-INCR   	|	Optimization propagated out of this module	
+	 MUX3_1                                             	|	 MUX3_1                                             	|	ORIGINAL   	|	NA	
+	 MUX                                                	|	 MUX_0                                              	|	ORIGINAL   	|	NA	
+	 ALUControl                                         	|	 ALUControl                                         	|	NON-INCR   	|	Optimization propagated out of this module	
+	 Forwarding                                         	|	 Forwarding                                         	|	ORIGINAL   	|	NA	
+	 EX_MEM                                             	|	 EX_MEM                                             	|	NON-INCR   	|	Optimization propagated out of this module	

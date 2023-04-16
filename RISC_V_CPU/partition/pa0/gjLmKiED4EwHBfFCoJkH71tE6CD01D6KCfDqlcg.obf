@@ -1,0 +1,1274 @@
+DetailView
+Version 15.03
+ConnectorType HT2 {CLK B[59:1] A[59:1]}
+			:Differential {
+				{B[58] B[57]} {B[56] B[55]} {B[54] B[53]} {B[52] B[51]} {B[50] B[49]} {B[48] B[47]} {B[46] B[45]} {B[44] B[43]} {B[42] B[41]}
+				{B[40] B[39]} {B[38] B[37]} {B[36] B[35]} {B[34] B[33]} {B[32] B[31]} {B[30] B[29]} {B[28] B[27]} {B[26] B[25]} {B[24] B[23]} {B[22] B[21]}
+				{B[20] B[19]} {B[18] B[17]} {B[16] B[15]} {B[14] B[13]} {B[12] B[11]} {B[10] B[9]} {B[8] B[7]} {B[6] B[5]} {B[4] B[3]} {B[2] B[1]}
+				{CLK A[59]} {A[58] A[57]} {A[56] A[55]} {A[54] A[53]} {A[52] A[51]} {A[50] A[49]} {A[48] A[47]} {A[46] A[45]} {A[44] A[43]} {A[42] A[41]}
+				{A[40] A[39]} {A[38] A[37]} {A[36] A[35]} {A[34] A[33]} {A[32] A[31]} {A[30] A[29]} {A[28] A[27]} {A[26] A[25]} {A[24] A[23]} {A[22] A[21]}
+				{A[20] A[19]} {A[18] A[17]} {A[16] A[15]} {A[14] A[13]} {A[12] A[11]} {A[10] A[9]} {A[8] A[7]} {A[6] A[5]} {A[4] A[3]} {A[2] A[1]}
+			}
+			:ClockInputs {B[43:33] B[50:40] A[59:58] A[48:47] A[32:31] A[16:15]} 
+
+ConnectorType HT3 {VRP VRN D[11:0] C[11:0] B[11:0] A[11:0]}
+			:Differential { 
+				{D[10] D[11]} {D[8] D[9]} {D[6] D[7]} {D[4] D[5]} {D[2] D[3]} {D[0] D[1]}
+				{C[10] C[11]} {C[8] C[9]} {C[6] C[7]} {C[4] C[5]} {C[2] C[3]} {C[0] C[1]}
+				{B[10] B[11]} {B[8] B[9]} {B[6] B[7]} {B[4] B[5]} {B[2] B[3]} {B[0] B[1]}
+				{A[10] A[11]} {A[8] A[9]} {A[6] A[7]} {A[4] A[5]} {A[2] A[3]} {A[0] A[1]}
+			}
+			:ClockInputs {D[0] C[0] B[0] A[0]} 
+
+ConnectorType HT3_SPECIAL {VRP VRN D[11:2] C[11:2] B[11:2] A[11:0]}
+			:Differential { 
+				{D[10] D[11]} {D[8] D[9]} {D[6] D[7]} {D[4] D[5]} {D[2] D[3]}
+				{C[10] C[11]} {C[8] C[9]} {C[6] C[7]} {C[4] C[5]} {C[2] C[3]}
+				{B[10] B[11]} {B[8] B[9]} {B[6] B[7]} {B[4] B[5]} {B[2] B[3]}
+				{A[10] A[11]} {A[8] A[9]} {A[6] A[7]} {A[4] A[5]} {A[2] A[3]} {A[0] A[1]}
+			}
+			:ClockInputs {A[0]} 
+
+ConnectorType HT3_SPECIAL_NONGSV {VRP VRN D[9:2] C[11:2] B[11:2] A[11:0]}
+			:Differential { 
+				{D[8] D[9]} {D[6] D[7]} {D[4] D[5]} {D[2] D[3]}
+				{C[10] C[11]} {C[8] C[9]} {C[6] C[7]} {C[4] C[5]} {C[2] C[3]}
+				{B[10] B[11]} {B[8] B[9]} {B[6] B[7]} {B[4] B[5]} {B[2] B[3]}
+				{A[10] A[11]} {A[8] A[9]} {A[6] A[7]} {A[4] A[5]} {A[2] A[3]} {A[0] A[1]}
+			}
+			:ClockInputs {A[0]} 
+
+ConnectorType HT3_SPECIAL_GSV {D[11:10]}
+			:Differential { 
+				{D[10] D[11]}
+			}
+
+ConnectorType HT3_8X {VRP VRN D[12:0] C[11:0] B[11:0] A[12:0]}
+			:Differential { 
+				{D[10] D[11]} {D[8] D[9]} {D[6] D[7]} {D[4] D[5]} {D[2] D[3]} {D[0] D[1]}
+				{C[10] C[11]} {C[8] C[9]} {C[6] C[7]} {C[4] C[5]} {C[2] C[3]} {C[0] C[1]}
+				{B[10] B[11]} {B[8] B[9]} {B[6] B[7]} {B[4] B[5]} {B[2] B[3]} {B[0] B[1]}
+				{A[10] A[11]} {A[8] A[9]} {A[6] A[7]} {A[4] A[5]} {A[2] A[3]} {A[0] A[1]}
+			}
+			:ClockInputs {D[0] C[0] B[0] A[0]} 
+
+ConnectorType HT3_8X_SPECIAL {VRP VRN D[10:0] C[11:0] B[11:0] A[12:0]}
+			:Differential { 
+				{D[8] D[9]} {D[6] D[7]} {D[4] D[5]} {D[2] D[3]} {D[0] D[1]}
+				{C[10] C[11]} {C[8] C[9]} {C[6] C[7]} {C[4] C[5]} {C[2] C[3]} {C[0] C[1]}
+				{B[10] B[11]} {B[8] B[9]} {B[6] B[7]} {B[4] B[5]} {B[2] B[3]} {B[0] B[1]}
+				{A[10] A[11]} {A[8] A[9]} {A[6] A[7]} {A[4] A[5]} {A[2] A[3]} {A[0] A[1]}
+			}
+			:ClockInputs {C[0] B[0] A[0]} 
+
+CreateBin FB1.PLL1 :External :Locked
+CreateBin FB1.PLL2 :External :Locked
+CreateBin FB1.PLL3 :External :Locked
+CreateBin FB1.PLL4 :External :Locked
+CreateBin FB1.PLL5 :External :Locked
+CreateBin FB1.PLL6 :External :Locked
+CreateBin FB1.PLL7 :External :Locked
+CreateBin FB1.PLL8 :External :Locked
+CreateBin {FB1.uA}
+	 : Resource LUT 4085760
+	 : Resource LUTM 956160
+	 : Resource DFF 8171520
+	 : Resource BRAM 2160
+	 : Resource URAM 320
+	 : Resource DSP 3840
+	 : Resource IO 2072
+	 : Part XCVU19P
+	 : Package FSVA3824
+	 : Grade -1-e
+		: Property HAPSType HAPS-100
+
+CreateBin FB1.uA_virtual_port :External :Locked
+CreateBin {FB1.uB}
+	 : Resource LUT 4085760
+	 : Resource LUTM 956160
+	 : Resource DFF 8171520
+	 : Resource BRAM 2160
+	 : Resource URAM 320
+	 : Resource DSP 3840
+	 : Resource IO 2072
+	 : Part XCVU19P
+	 : Package FSVA3824
+	 : Grade -1-e
+		: Property HAPSType HAPS-100
+
+CreateBin FB1.uB_virtual_port :External :Locked
+CreateBin {FB1.uC}
+	 : Resource LUT 4085760
+	 : Resource LUTM 956160
+	 : Resource DFF 8171520
+	 : Resource BRAM 2160
+	 : Resource URAM 320
+	 : Resource DSP 3840
+	 : Resource IO 2072
+	 : Part XCVU19P
+	 : Package FSVA3824
+	 : Grade -1-e
+		: Property HAPSType HAPS-100
+
+CreateBin FB1.uC_virtual_port :External :Locked
+CreateBin {FB1.uD}
+	 : Resource LUT 4085760
+	 : Resource LUTM 956160
+	 : Resource DFF 8171520
+	 : Resource BRAM 2160
+	 : Resource URAM 320
+	 : Resource DSP 3840
+	 : Resource IO 2072
+	 : Part XCVU19P
+	 : Package FSVA3824
+	 : Grade -1-e
+		: Property HAPSType HAPS-100
+
+CreateBin FB1.uD_virtual_port :External :Locked
+CreateBin TOP_IO_HT3_FB1_A11 : PortBin 58
+CreateBin TOP_IO_HT3_FB1_A12 : PortBin 58
+CreateBin TOP_IO_HT3_FB1_A5 : PortBin 58
+CreateBin TOP_IO_HT3_FB1_A6 : PortBin 58
+CreateBin TOP_IO_HT3_FB1_B5 : PortBin 58
+CreateBin TOP_IO_HT3_FB1_B6 : PortBin 58
+CreateBin TOP_IO_HT3_FB1_B7 : PortBin 58
+CreateBin TOP_IO_HT3_FB1_B8 : PortBin 58
+CreateBin TOP_IO_HT3_FB1_C5 : PortBin 58
+CreateBin TOP_IO_HT3_FB1_C6 : PortBin 58
+CreateBin TOP_IO_HT3_FB1_C7 : PortBin 58
+CreateBin TOP_IO_HT3_FB1_C8 : PortBin 58
+CreateBin TOP_IO_HT3_FB1_D3 : PortBin 58
+CreateBin TOP_IO_HT3_FB1_D4 : PortBin 58
+CreateBin TOP_IO_HT3_FB1_D5 : PortBin 58
+CreateBin TOP_IO_HT3_FB1_D6 : PortBin 58
+
+BinConnector FB1.uA
+		:Pins {J1_B[11] J1_B[10] J1_B[9] J1_B[8] J1_B[7] J1_B[6] J1_B[5] J1_B[4] J1_B[3] J1_B[2] 
+			J1_B[1] J1_B[0] J1_A[11] J1_A[10] J1_A[9] J1_A[8] J1_A[7] J1_A[6] J1_A[5] J1_A[4] 
+			J1_A[3] J1_A[2] J1_A[1] J1_A[0]}
+		:name BC0
+		:Differential {  {J1_A[0] J1_A[1]}  {J1_A[10] J1_A[11]}  {J1_A[2] J1_A[3]}  {J1_A[4] J1_A[5]} 
+			 {J1_A[6] J1_A[7]}  {J1_A[8] J1_A[9]}  {J1_B[0] J1_B[1]}  {J1_B[10] J1_B[11]} 
+			 {J1_B[2] J1_B[3]}  {J1_B[4] J1_B[5]}  {J1_B[6] J1_B[7]}  {J1_B[8] J1_B[9]} }
+		:ClockInputs { J1_A[0] J1_A[2] J1_B[0] J1_B[10] }		:slr 0		:edge RIGHT		:IobLocX 420 :IobLocY 255
+		:XLoc {BE17 BD17 BE18 BE19 BG19 BF19 BG16 BF17 BG17 BG18 BD16 BC16 BE13 BD13 BH13 BG13 BF14 BE14 BH14 BG14 
+			BE15 BD15 BF15 BF16}
+		:CName A1
+BinConnector FB1.uB
+		:Pins {J19_C[9] J19_C[8] J19_C[11] J19_C[10] J19_C[5] J19_C[4] J19_C[7] J19_C[6] J19_C[1] J19_C[0] 
+			J19_C[3] J19_C[2] J19_D[9] J19_D[8] J19_D[11] J19_D[10] J19_D[5] J19_D[4] J19_D[7] J19_D[6] 
+			J19_D[1] J19_D[0] J19_D[3] J19_D[2]}
+		:name BC1
+		:Differential {  {J19_C[0] J19_C[1]}  {J19_C[10] J19_C[11]}  {J19_C[2] J19_C[3]}  {J19_C[4] J19_C[5]} 
+			 {J19_C[6] J19_C[7]}  {J19_C[8] J19_C[9]}  {J19_D[0] J19_D[1]}  {J19_D[10] J19_D[11]} 
+			 {J19_D[2] J19_D[3]}  {J19_D[4] J19_D[5]}  {J19_D[6] J19_D[7]}  {J19_D[8] J19_D[9]} }
+		:ClockInputs { J19_D[0] J19_C[0] }		:slr 3		:edge LEFT		:IobLocX 0 :IobLocY 960
+		:XLoc {J57 J56 C56 D56 G56 H56 H58 J58 F57 F56 G58 G57 D58 D57 C59 C58 A56 B56 A59 B59 
+			E58 E57 B58 B57}
+		:CName B19
+CreateTraceGroup {FB1.uA/BC0 FB1.uB/BC1 } {FB1_A1_B[11:0] FB1_A1_A[11:0]} 
+			: Name T_FB1.uA_FB1.uB_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uA
+		:Pins {J1_D[11] J1_D[10] J1_D[9] J1_D[8] J1_D[7] J1_D[6] J1_D[5] J1_D[4] J1_D[3] J1_D[2] 
+			J1_D[1] J1_D[0] J1_C[11] J1_C[10] J1_C[9] J1_C[8] J1_C[7] J1_C[6] J1_C[5] J1_C[4] 
+			J1_C[3] J1_C[2] J1_C[1] J1_C[0]}
+		:name BC2
+		:Differential {  {J1_C[0] J1_C[1]}  {J1_C[10] J1_C[11]}  {J1_C[2] J1_C[3]}  {J1_C[4] J1_C[5]} 
+			 {J1_C[6] J1_C[7]}  {J1_C[8] J1_C[9]}  {J1_D[0] J1_D[1]}  {J1_D[10] J1_D[11]} 
+			 {J1_D[2] J1_D[3]}  {J1_D[4] J1_D[5]}  {J1_D[6] J1_D[7]}  {J1_D[8] J1_D[9]} }
+		:ClockInputs { J1_C[0] J1_C[10] J1_D[0] J1_D[2] }		:slr 1		:edge RIGHT		:IobLocX 420 :IobLocY 555
+		:XLoc {BC13 BB13 BC14 BC15 BB14 BA14 BB16 BB17 BA15 AY15 BA16 BA17 AW15 AW16 AY13 AY14 AV15 AV16 AU16 AU17 
+			AT15 AT16 AY17 AW17}
+		:CName A1
+BinConnector FB1.uB
+		:Pins {J19_A[9] J19_A[8] J19_A[11] J19_A[10] J19_A[5] J19_A[4] J19_A[7] J19_A[6] J19_A[1] J19_A[0] 
+			J19_A[3] J19_A[2] J19_B[9] J19_B[8] J19_B[11] J19_B[10] J19_B[5] J19_B[4] J19_B[7] J19_B[6] 
+			J19_B[1] J19_B[0] J19_B[3] J19_B[2]}
+		:name BC3
+		:Differential {  {J19_A[0] J19_A[1]}  {J19_A[10] J19_A[11]}  {J19_A[2] J19_A[3]}  {J19_A[4] J19_A[5]} 
+			 {J19_A[6] J19_A[7]}  {J19_A[8] J19_A[9]}  {J19_B[0] J19_B[1]}  {J19_B[10] J19_B[11]} 
+			 {J19_B[2] J19_B[3]}  {J19_B[4] J19_B[5]}  {J19_B[6] J19_B[7]}  {J19_B[8] J19_B[9]} }
+		:ClockInputs { J19_B[0] J19_A[0] }		:slr 3		:edge LEFT		:IobLocX 0 :IobLocY 990
+		:XLoc {C55 D55 A52 B52 C54 C53 A55 A54 E55 F55 B54 B53 G54 H54 D53 D52 H55 J55 F52 G52 
+			E54 F54 G53 H53}
+		:CName B19
+CreateTraceGroup {FB1.uA/BC2 FB1.uB/BC3 } {FB1_A1_D[11:0] FB1_A1_C[11:0]} 
+			: Name T_FB1.uA_FB1.uB_2		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uA
+		:Pins {I2_P[10] I2_N[10] I2_U[3] I2_U[2] I2_U[1] I2_P[9] I2_N[9]}
+		:name BC4
+		:Differential {  {I2_P[10] I2_N[10]}  {I2_P[9] I2_N[9]} }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 668
+		:XLoc {L39 L40 T37 K37 M38 M37 L37}
+		:CName FIXED
+BinConnector FB1.uB
+		:Pins {I2_P[9] I2_N[9] I2_U[1] I2_U[2] I2_U[3] I2_P[10] I2_N[10]}
+		:name BC5
+		:Differential {  {I2_P[10] I2_N[10]}  {I2_P[9] I2_N[9]} }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 668
+		:XLoc {M37 L37 M38 K37 T37 L39 L40}
+		:CName FIXED
+CreateTraceGroup {FB1.uA/BC4 FB1.uB/BC5 } {FB1.BI2_P[9] FB1.BI2_N[9] FB1.AI2_U[3:1] FB1.AI2_P[9] FB1.AI2_N[9]} 
+			: Name T_FB1.uA_FB1.uB_3		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uA
+		:Pins {J2_D[12] J2_D[11] J2_D[10] J2_D[9] J2_D[8] J2_D[7] J2_D[6] J2_D[5] J2_D[4] J2_D[3] 
+			J2_D[2] J2_D[1] J2_D[0] J2_C[11] J2_C[10] J2_C[9] J2_C[8] J2_C[7] J2_C[6] J2_C[5] 
+			J2_C[4] J2_C[3] J2_C[2] J2_C[1] J2_C[0] J2_B[11] J2_B[10] J2_B[9] J2_B[8] J2_B[7] 
+			J2_B[6] J2_B[5] J2_B[4] J2_B[3] J2_B[2] J2_B[1] J2_B[0] J2_A[12] J2_A[11] J2_A[10] 
+			J2_A[9] J2_A[8] J2_A[7] J2_A[6] J2_A[5] J2_A[4] J2_A[3] J2_A[2] J2_A[1] J2_A[0]}
+		:name BC6
+		:Differential {  {J2_A[0] J2_A[1]}  {J2_A[10] J2_A[11]}  {J2_A[2] J2_A[3]}  {J2_A[4] J2_A[5]} 
+			 {J2_A[6] J2_A[7]}  {J2_A[8] J2_A[9]}  {J2_B[0] J2_B[1]}  {J2_B[10] J2_B[11]} 
+			 {J2_B[2] J2_B[3]}  {J2_B[4] J2_B[5]}  {J2_B[6] J2_B[7]}  {J2_B[8] J2_B[9]} 
+			 {J2_C[0] J2_C[1]}  {J2_C[10] J2_C[11]}  {J2_C[2] J2_C[3]}  {J2_C[4] J2_C[5]} 
+			 {J2_C[6] J2_C[7]}  {J2_C[8] J2_C[9]}  {J2_D[0] J2_D[1]}  {J2_D[10] J2_D[11]} 
+			 {J2_D[2] J2_D[3]}  {J2_D[4] J2_D[5]}  {J2_D[6] J2_D[7]}  {J2_D[8] J2_D[9]} }
+		:ClockInputs { J2_A[0] J2_B[0] J2_C[0] J2_D[0] }
+		:SSClocks { J2_B[0] }		:slr 0		:edge RIGHT		:IobLocX 348 :IobLocY 75
+		:XLoc {BR18 BV15 BV16 BV18 BU18 BV13 BV14 BU17 BT17 BU13 BU14 BR14 BR15 BU16 BT16 BR17 BP17 BP18 BN18 BT14 
+			BT15 BR13 BP13 BP15 BP16 BK17 BJ17 BM13 BM14 BM17 BL17 BN13 BN14 BL14 BL15 BN15 BN16 BK18 BK13 BJ13 
+			BK14 BK15 BJ15 BH15 BJ16 BH16 BJ18 BH18 BM16 BL16}
+		:CName A2
+BinConnector FB1.uB
+		:Pins {J20_A[12] J20_A[9] J20_A[8] J20_A[11] J20_A[10] J20_A[5] J20_A[4] J20_A[7] J20_A[6] J20_A[1] 
+			J20_A[0] J20_A[3] J20_A[2] J20_B[9] J20_B[8] J20_B[11] J20_B[10] J20_B[5] J20_B[4] J20_B[7] 
+			J20_B[6] J20_B[1] J20_B[0] J20_B[3] J20_B[2] J20_C[9] J20_C[8] J20_C[11] J20_C[10] J20_C[5] 
+			J20_C[4] J20_C[7] J20_C[6] J20_C[1] J20_C[0] J20_C[3] J20_C[2] J20_D[12] J20_D[9] J20_D[8] 
+			J20_D[11] J20_D[10] J20_D[5] J20_D[4] J20_D[7] J20_D[6] J20_D[1] J20_D[0] J20_D[3] J20_D[2]}
+		:name BC7
+		:Differential {  {J20_A[0] J20_A[1]}  {J20_A[10] J20_A[11]}  {J20_A[2] J20_A[3]}  {J20_A[4] J20_A[5]} 
+			 {J20_A[6] J20_A[7]}  {J20_A[8] J20_A[9]}  {J20_B[0] J20_B[1]}  {J20_B[10] J20_B[11]} 
+			 {J20_B[2] J20_B[3]}  {J20_B[4] J20_B[5]}  {J20_B[6] J20_B[7]}  {J20_B[8] J20_B[9]} 
+			 {J20_C[0] J20_C[1]}  {J20_C[10] J20_C[11]}  {J20_C[2] J20_C[3]}  {J20_C[4] J20_C[5]} 
+			 {J20_C[6] J20_C[7]}  {J20_C[8] J20_C[9]}  {J20_D[0] J20_D[1]}  {J20_D[10] J20_D[11]} 
+			 {J20_D[2] J20_D[3]}  {J20_D[4] J20_D[5]}  {J20_D[6] J20_D[7]}  {J20_D[8] J20_D[9]} }
+		:ClockInputs { J20_D[0] J20_C[0] J20_B[0] J20_A[0] }
+		:SSClocks { J20_B[0] }		:slr 3		:edge LEFT		:IobLocX 0 :IobLocY 1035
+		:XLoc {H46 J48 J47 G47 G46 G51 H51 G48 H48 L50 L49 G49 H49 K48 K47 H50 J50 L47 L46 M47 
+			M46 M49 M48 K50 K49 R48 R47 T47 U47 N46 P46 R50 R49 N49 N48 N50 P50 T50 V50 W50 
+			U49 V49 W48 W47 U48 V48 P48 P47 U46 V46}
+		:CName B20
+CreateTraceGroup {FB1.uA/BC6 FB1.uB/BC7 } {FB1_A2_D[12:0] FB1_A2_C[11:0] FB1_A2_B[11:0] FB1_A2_A[12:0]} 
+			: Name T_FB1.uA_FB1.uB_4		: Property HSTDMSE_SUPPORT 1		: Property TDM_TYPE HSTDMSE		: Property DEF_BITRATE 1800
+
+BinConnector FB1.uA
+		:Pins {J3_D[12] J3_D[11] J3_D[10] J3_D[9] J3_D[8] J3_D[7] J3_D[6] J3_D[5] J3_D[4] J3_D[3] 
+			J3_D[2] J3_D[1] J3_D[0] J3_C[11] J3_C[10] J3_C[9] J3_C[8] J3_C[7] J3_C[6] J3_C[5] 
+			J3_C[4] J3_C[3] J3_C[2] J3_C[1] J3_C[0] J3_B[11] J3_B[10] J3_B[9] J3_B[8] J3_B[7] 
+			J3_B[6] J3_B[5] J3_B[4] J3_B[3] J3_B[2] J3_B[1] J3_B[0] J3_A[12] J3_A[11] J3_A[10] 
+			J3_A[9] J3_A[8] J3_A[7] J3_A[6] J3_A[5] J3_A[4] J3_A[3] J3_A[2] J3_A[1] J3_A[0]}
+		:name BC8
+		:Differential {  {J3_A[0] J3_A[1]}  {J3_A[10] J3_A[11]}  {J3_A[2] J3_A[3]}  {J3_A[4] J3_A[5]} 
+			 {J3_A[6] J3_A[7]}  {J3_A[8] J3_A[9]}  {J3_B[0] J3_B[1]}  {J3_B[10] J3_B[11]} 
+			 {J3_B[2] J3_B[3]}  {J3_B[4] J3_B[5]}  {J3_B[6] J3_B[7]}  {J3_B[8] J3_B[9]} 
+			 {J3_C[0] J3_C[1]}  {J3_C[10] J3_C[11]}  {J3_C[2] J3_C[3]}  {J3_C[4] J3_C[5]} 
+			 {J3_C[6] J3_C[7]}  {J3_C[8] J3_C[9]}  {J3_D[0] J3_D[1]}  {J3_D[10] J3_D[11]} 
+			 {J3_D[2] J3_D[3]}  {J3_D[4] J3_D[5]}  {J3_D[6] J3_D[7]}  {J3_D[8] J3_D[9]} }
+		:ClockInputs { J3_A[0] J3_B[0] J3_C[0] J3_D[0] }
+		:SSClocks { J3_B[0] }		:slr 0		:edge RIGHT		:IobLocX 348 :IobLocY 135
+		:XLoc {BM23 BU21 BT22 BP21 BP22 BT20 BT21 BU22 BU23 BR19 BR20 BM22 BL22 BR22 BR23 BN19 BM19 BP23 BN23 BL19 
+			BL20 BN20 BN21 BM21 BL21 BE22 BE23 BK19 BK20 BH19 BH20 BK23 BK24 BJ23 BH23 BJ21 BH21 BG23 BF21 BF22 
+			BF24 BE24 BF20 BE20 BH24 BG24 BG21 BG22 BK22 BJ22}
+		:CName A3
+BinConnector FB1.uB
+		:Pins {J21_A[12] J21_A[9] J21_A[8] J21_A[11] J21_A[10] J21_A[5] J21_A[4] J21_A[7] J21_A[6] J21_A[1] 
+			J21_A[0] J21_A[3] J21_A[2] J21_B[9] J21_B[8] J21_B[11] J21_B[10] J21_B[5] J21_B[4] J21_B[7] 
+			J21_B[6] J21_B[1] J21_B[0] J21_B[3] J21_B[2] J21_C[9] J21_C[8] J21_C[11] J21_C[10] J21_C[5] 
+			J21_C[4] J21_C[7] J21_C[6] J21_C[1] J21_C[0] J21_C[3] J21_C[2] J21_D[12] J21_D[9] J21_D[8] 
+			J21_D[11] J21_D[10] J21_D[5] J21_D[4] J21_D[7] J21_D[6] J21_D[1] J21_D[0] J21_D[3] J21_D[2]}
+		:name BC9
+		:Differential {  {J21_A[0] J21_A[1]}  {J21_A[10] J21_A[11]}  {J21_A[2] J21_A[3]}  {J21_A[4] J21_A[5]} 
+			 {J21_A[6] J21_A[7]}  {J21_A[8] J21_A[9]}  {J21_B[0] J21_B[1]}  {J21_B[10] J21_B[11]} 
+			 {J21_B[2] J21_B[3]}  {J21_B[4] J21_B[5]}  {J21_B[6] J21_B[7]}  {J21_B[8] J21_B[9]} 
+			 {J21_C[0] J21_C[1]}  {J21_C[10] J21_C[11]}  {J21_C[2] J21_C[3]}  {J21_C[4] J21_C[5]} 
+			 {J21_C[6] J21_C[7]}  {J21_C[8] J21_C[9]}  {J21_D[0] J21_D[1]}  {J21_D[10] J21_D[11]} 
+			 {J21_D[2] J21_D[3]}  {J21_D[4] J21_D[5]}  {J21_D[6] J21_D[7]}  {J21_D[8] J21_D[9]} }
+		:ClockInputs { J21_D[0] J21_C[0] J21_B[0] J21_A[0] }
+		:SSClocks { J21_B[0] }		:slr 3		:edge LEFT		:IobLocX 0 :IobLocY 1095
+		:XLoc {B44 A45 A44 A41 B41 C45 C44 A42 B42 E45 E44 B43 C43 E43 E42 B46 C46 D43 D42 F42 
+			F41 D46 D45 C41 D41 F50 F49 B48 B47 E50 E49 D51 D50 D47 E47 F47 F46 F51 C51 C50 
+			A51 B51 A47 A46 A50 A49 D48 E48 B49 C49}
+		:CName B21
+CreateTraceGroup {FB1.uA/BC8 FB1.uB/BC9 } {FB1_A3_D[12:0] FB1_A3_C[11:0] FB1_A3_B[11:0] FB1_A3_A[12:0]} 
+			: Name T_FB1.uA_FB1.uB_5		: Property HSTDMSE_SUPPORT 1		: Property TDM_TYPE HSTDMSE		: Property DEF_BITRATE 1800
+
+BinConnector FB1.uA
+		:Pins {J4_D[12] J4_D[11] J4_D[10] J4_D[9] J4_D[8] J4_D[7] J4_D[6] J4_D[5] J4_D[4] J4_D[3] 
+			J4_D[2] J4_D[1] J4_D[0] J4_C[11] J4_C[10] J4_C[9] J4_C[8] J4_C[7] J4_C[6] J4_C[5] 
+			J4_C[4] J4_C[3] J4_C[2] J4_C[1] J4_C[0] J4_B[11] J4_B[10] J4_B[9] J4_B[8] J4_B[7] 
+			J4_B[6] J4_B[5] J4_B[4] J4_B[3] J4_B[2] J4_B[1] J4_B[0] J4_A[12] J4_A[11] J4_A[10] 
+			J4_A[9] J4_A[8] J4_A[7] J4_A[6] J4_A[5] J4_A[4] J4_A[3] J4_A[2] J4_A[1] J4_A[0]}
+		:name BC10
+		:Differential {  {J4_A[0] J4_A[1]}  {J4_A[10] J4_A[11]}  {J4_A[2] J4_A[3]}  {J4_A[4] J4_A[5]} 
+			 {J4_A[6] J4_A[7]}  {J4_A[8] J4_A[9]}  {J4_B[0] J4_B[1]}  {J4_B[10] J4_B[11]} 
+			 {J4_B[2] J4_B[3]}  {J4_B[4] J4_B[5]}  {J4_B[6] J4_B[7]}  {J4_B[8] J4_B[9]} 
+			 {J4_C[0] J4_C[1]}  {J4_C[10] J4_C[11]}  {J4_C[2] J4_C[3]}  {J4_C[4] J4_C[5]} 
+			 {J4_C[6] J4_C[7]}  {J4_C[8] J4_C[9]}  {J4_D[0] J4_D[1]}  {J4_D[10] J4_D[11]} 
+			 {J4_D[2] J4_D[3]}  {J4_D[4] J4_D[5]}  {J4_D[6] J4_D[7]}  {J4_D[8] J4_D[9]} }
+		:ClockInputs { J4_A[0] J4_B[0] J4_C[0] J4_D[0] }
+		:SSClocks { J4_B[0] }		:slr 0		:edge RIGHT		:IobLocX 348 :IobLocY 195
+		:XLoc {BP27 BU24 BT24 BT29 BR29 BT25 BT26 BU26 BT27 BR24 BR25 BM26 BM27 BR27 BR28 BN24 BM24 BN28 BM28 BP25 
+			BN25 BN29 BM29 BP26 BN26 BG27 BF27 BL29 BK29 BK28 BJ28 BL25 BK25 BJ25 BJ26 BK27 BJ27 BH28 BG29 BF29 
+			BF25 BE25 BG26 BF26 BE27 BE28 BH25 BH26 BL26 BL27}
+		:CName A4
+BinConnector FB1.uB
+		:Pins {J22_A[12] J22_A[9] J22_A[8] J22_A[11] J22_A[10] J22_A[5] J22_A[4] J22_A[7] J22_A[6] J22_A[1] 
+			J22_A[0] J22_A[3] J22_A[2] J22_B[9] J22_B[8] J22_B[11] J22_B[10] J22_B[5] J22_B[4] J22_B[7] 
+			J22_B[6] J22_B[1] J22_B[0] J22_B[3] J22_B[2] J22_C[9] J22_C[8] J22_C[11] J22_C[10] J22_C[5] 
+			J22_C[4] J22_C[7] J22_C[6] J22_C[1] J22_C[0] J22_C[3] J22_C[2] J22_D[12] J22_D[9] J22_D[8] 
+			J22_D[11] J22_D[10] J22_D[5] J22_D[4] J22_D[7] J22_D[6] J22_D[1] J22_D[0] J22_D[3] J22_D[2]}
+		:name BC11
+		:Differential {  {J22_A[0] J22_A[1]}  {J22_A[10] J22_A[11]}  {J22_A[2] J22_A[3]}  {J22_A[4] J22_A[5]} 
+			 {J22_A[6] J22_A[7]}  {J22_A[8] J22_A[9]}  {J22_B[0] J22_B[1]}  {J22_B[10] J22_B[11]} 
+			 {J22_B[2] J22_B[3]}  {J22_B[4] J22_B[5]}  {J22_B[6] J22_B[7]}  {J22_B[8] J22_B[9]} 
+			 {J22_C[0] J22_C[1]}  {J22_C[10] J22_C[11]}  {J22_C[2] J22_C[3]}  {J22_C[4] J22_C[5]} 
+			 {J22_C[6] J22_C[7]}  {J22_C[8] J22_C[9]}  {J22_D[0] J22_D[1]}  {J22_D[10] J22_D[11]} 
+			 {J22_D[2] J22_D[3]}  {J22_D[4] J22_D[5]}  {J22_D[6] J22_D[7]}  {J22_D[8] J22_D[9]} }
+		:ClockInputs { J22_D[0] J22_C[0] J22_B[0] J22_A[0] }
+		:SSClocks { J22_B[0] }		:slr 3		:edge LEFT		:IobLocX 0 :IobLocY 1155
+		:XLoc {K44 G42 G41 H45 J45 G44 G43 H41 J41 M43 N43 J43 J42 L45 L44 H44 H43 M41 N41 K43 
+			K42 M44 N44 L42 L41 N45 P45 U44 U43 R45 R44 T45 T44 R43 R42 T42 T41 P41 V44 V43 
+			V41 W41 U42 U41 W43 W42 P43 P42 W46 W45}
+		:CName B22
+CreateTraceGroup {FB1.uA/BC10 FB1.uB/BC11 } {FB1_A4_D[12:0] FB1_A4_C[11:0] FB1_A4_B[11:0] FB1_A4_A[12:0]} 
+			: Name T_FB1.uA_FB1.uB_6		: Property HSTDMSE_SUPPORT 1		: Property TDM_TYPE HSTDMSE		: Property DEF_BITRATE 1800
+
+BinConnector FB1.uA
+		:Pins {I1_P[22] I1_P[23] I1_P[24] I1_N[22] I1_N[23] I1_N[24] I1_U[3] I1_U[2] I1_U[1] I1_P[21] 
+			I1_P[20] I1_P[19] I1_P[18] I1_P[17] I1_P[16] I1_P[15] I1_P[10] I1_P[9] I1_P[8] I1_P[7] 
+			I1_N[21] I1_N[20] I1_N[19] I1_N[18] I1_N[17] I1_N[16] I1_N[15] I1_N[10] I1_N[9] I1_N[8] 
+			I1_N[7]}
+		:name BC12
+		:Differential {  {I1_P[10] I1_N[10]}  {I1_P[15] I1_N[15]}  {I1_P[16] I1_N[16]}  {I1_P[17] I1_N[17]} 
+			 {I1_P[18] I1_N[18]}  {I1_P[19] I1_N[19]}  {I1_P[20] I1_N[20]}  {I1_P[21] I1_N[21]} 
+			 {I1_P[22] I1_N[22]}  {I1_P[23] I1_N[23]}  {I1_P[24] I1_N[24]}  {I1_P[7] I1_N[7]} 
+			 {I1_P[8] I1_N[8]}  {I1_P[9] I1_N[9]} }
+		:SSClocks { I1_P[16] }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 621
+		:XLoc {J40 J37 K39 H40 J38 K40 F39 E37 D37 H38 G37 H39 H34 J35 F34 H35 B36 C34 B37 A34 
+			G38 F37 G39 G34 J36 E34 H36 A36 B34 A37 A35}
+		:CName FIXED
+BinConnector FB1.uB
+		:Pins {I1_P[9] I1_P[8] I1_P[7] I1_N[9] I1_N[8] I1_N[7] I1_U[1] I1_U[2] I1_U[3] I1_P[10] 
+			I1_P[15] I1_P[16] I1_P[17] I1_P[18] I1_P[19] I1_P[20] I1_P[21] I1_P[22] I1_P[23] I1_P[24] 
+			I1_N[10] I1_N[15] I1_N[16] I1_N[17] I1_N[18] I1_N[19] I1_N[20] I1_N[21] I1_N[22] I1_N[23] 
+			I1_N[24]}
+		:name BC13
+		:Differential {  {I1_P[10] I1_N[10]}  {I1_P[15] I1_N[15]}  {I1_P[16] I1_N[16]}  {I1_P[17] I1_N[17]} 
+			 {I1_P[18] I1_N[18]}  {I1_P[19] I1_N[19]}  {I1_P[20] I1_N[20]}  {I1_P[21] I1_N[21]} 
+			 {I1_P[22] I1_N[22]}  {I1_P[23] I1_N[23]}  {I1_P[24] I1_N[24]}  {I1_P[7] I1_N[7]} 
+			 {I1_P[8] I1_N[8]}  {I1_P[9] I1_N[9]} }
+		:SSClocks { I1_P[16] }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 621
+		:XLoc {C34 B37 A34 B34 A37 A35 D37 E37 F39 B36 H35 F34 J35 H34 H39 G37 H38 J40 J37 K39 
+			A36 H36 E34 J36 G34 G39 F37 G38 H40 J38 K40}
+		:CName FIXED
+CreateTraceGroup {FB1.uA/BC12 FB1.uB/BC13 } {FB1.BI1_P[9:7] FB1.BI1_N[9:7] FB1.AI1_U[3:1] FB1.AI1_P[21:15] FB1.AI1_P[10:7] FB1.AI1_N[21:15] FB1.AI1_N[10:7]} 
+			: Name T_FB1.uA_FB1.uB_7		: Property HSTDMSE_SUPPORT 1		: Property TDM_TYPE HSTDMSE		: Property DEF_BITRATE 1800
+
+BinConnector FB1.uA
+		:Pins {I3_P[16] I3_P[17] I3_P[18] I3_P[19] I3_P[20] I3_P[21] I3_P[22] I3_P[23] I3_P[24] I3_N[16] 
+			I3_N[17] I3_N[18] I3_N[19] I3_N[20] I3_N[21] I3_N[22] I3_N[23] I3_N[24] I3_U[3] I3_U[2] 
+			I3_U[1] I3_P[15] I3_P[10] I3_P[9] I3_P[8] I3_P[7] I3_P[6] I3_P[5] I3_P[4] I3_P[3] 
+			I3_P[2] I3_P[1] I3_N[15] I3_N[10] I3_N[9] I3_N[8] I3_N[7] I3_N[6] I3_N[5] I3_N[4] 
+			I3_N[3] I3_N[2] I3_N[1]}
+		:name BC14
+		:Differential {  {I3_P[10] I3_N[10]}  {I3_P[15] I3_N[15]}  {I3_P[16] I3_N[16]}  {I3_P[17] I3_N[17]} 
+			 {I3_P[18] I3_N[18]}  {I3_P[19] I3_N[19]}  {I3_P[1] I3_N[1]}  {I3_P[20] I3_N[20]} 
+			 {I3_P[21] I3_N[21]}  {I3_P[22] I3_N[22]}  {I3_P[23] I3_N[23]}  {I3_P[24] I3_N[24]} 
+			 {I3_P[2] I3_N[2]}  {I3_P[3] I3_N[3]}  {I3_P[4] I3_N[4]}  {I3_P[5] I3_N[5]} 
+			 {I3_P[6] I3_N[6]}  {I3_P[7] I3_N[7]}  {I3_P[8] I3_N[8]}  {I3_P[9] I3_N[9]} }
+		:SSClocks { I3_P[10] }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 735
+		:XLoc {J30 J33 H33 G29 G27 H29 F29 J28 E28 H30 J32 G33 G28 F27 H28 E29 J27 E27 K28 K29 
+			E33 J31 B33 C31 D33 A32 B29 E30 A30 C30 B27 D28 H31 B32 B31 C33 A31 B28 D30 A29 
+			C29 A27 D27}
+		:CName FIXED
+BinConnector FB1.uB
+		:Pins {I3_P[9] I3_P[8] I3_P[7] I3_P[6] I3_P[5] I3_P[4] I3_P[3] I3_P[2] I3_P[1] I3_N[9] 
+			I3_N[8] I3_N[7] I3_N[6] I3_N[5] I3_N[4] I3_N[3] I3_N[2] I3_N[1] I3_U[1] I3_U[2] 
+			I3_U[3] I3_P[10] I3_P[15] I3_P[16] I3_P[17] I3_P[18] I3_P[19] I3_P[20] I3_P[21] I3_P[22] 
+			I3_P[23] I3_P[24] I3_N[10] I3_N[15] I3_N[16] I3_N[17] I3_N[18] I3_N[19] I3_N[20] I3_N[21] 
+			I3_N[22] I3_N[23] I3_N[24]}
+		:name BC15
+		:Differential {  {I3_P[10] I3_N[10]}  {I3_P[15] I3_N[15]}  {I3_P[16] I3_N[16]}  {I3_P[17] I3_N[17]} 
+			 {I3_P[18] I3_N[18]}  {I3_P[19] I3_N[19]}  {I3_P[1] I3_N[1]}  {I3_P[20] I3_N[20]} 
+			 {I3_P[21] I3_N[21]}  {I3_P[22] I3_N[22]}  {I3_P[23] I3_N[23]}  {I3_P[24] I3_N[24]} 
+			 {I3_P[2] I3_N[2]}  {I3_P[3] I3_N[3]}  {I3_P[4] I3_N[4]}  {I3_P[5] I3_N[5]} 
+			 {I3_P[6] I3_N[6]}  {I3_P[7] I3_N[7]}  {I3_P[8] I3_N[8]}  {I3_P[9] I3_N[9]} }
+		:SSClocks { I3_P[10] }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 735
+		:XLoc {C31 D33 A32 B29 E30 A30 C30 B27 D28 B31 C33 A31 B28 D30 A29 C29 A27 D27 E33 K29 
+			K28 B33 J31 J30 J33 H33 G29 G27 H29 F29 J28 E28 B32 H31 H30 J32 G33 G28 F27 H28 
+			E29 J27 E27}
+		:CName FIXED
+CreateTraceGroup {FB1.uA/BC14 FB1.uB/BC15 } {FB1.BI3_P[9:1] FB1.BI3_N[9:1] FB1.AI3_U[3:1] FB1.AI3_P[15] FB1.AI3_P[10:1] FB1.AI3_N[15] FB1.AI3_N[10:1]} 
+			: Name T_FB1.uA_FB1.uB_8		: Property HSTDMSE_SUPPORT 1		: Property TDM_TYPE HSTDMSE		: Property DEF_BITRATE 1800
+
+BinConnector FB1.uA
+		:Pins {GT226_TX[3] GT226_TX[2] GT226_TX[1] GT226_TX[0]}
+		:name BC16		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 420
+		:XLoc {BC7 BD9 BE7 BF9}
+		:CName MGT_FIXED
+BinConnector FB1.uB
+		:Pins {GT226_RX[3] GT226_RX[2] GT226_RX[1] GT226_RX[0]}
+		:name BC17		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 420
+		:XLoc {BA2 BB4 BC2 BD4}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uA/BC16 FB1.uB/BC17 } {FB1.AGT226_TX[3:0]} 
+			: Name T_FB1.uA_FB1.uB_9		: Function MGT Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uA
+		:Pins {GT226_RX[3] GT226_RX[2] GT226_RX[1] GT226_RX[0]}
+		:name BC18		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 420
+		:XLoc {BA2 BB4 BC2 BD4}
+		:CName MGT_FIXED
+BinConnector FB1.uB
+		:Pins {GT226_TX[3] GT226_TX[2] GT226_TX[1] GT226_TX[0]}
+		:name BC19		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 420
+		:XLoc {BC7 BD9 BE7 BF9}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uA/BC18 FB1.uB/BC19 } {FB1.BGT226_TX[3:0]} 
+			: Name T_FB1.uA_FB1.uB_10		: Function MGT Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uA
+		:Pins {GT220_TX[3] GT220_TX[2]}
+		:name BC20		:slr 0		:edge RIGHT		:IobLocX 431 :IobLocY 60
+		:XLoc {BW7 CA7}
+		:CName MGT_FIXED
+BinConnector FB1.uC
+		:Pins {GT220_RX[3] GT220_RX[2]}
+		:name BC21		:slr 0		:edge RIGHT		:IobLocX 431 :IobLocY 60
+		:XLoc {BU2 BV4}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uA/BC20 FB1.uC/BC21 } {FB1.AGT220_TX[3:2]} 
+			: Name T_FB1.uA_FB1.uC_1		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uA
+		:Pins {GT225_TX[3] GT225_TX[2]}
+		:name BC22		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 360
+		:XLoc {BG7 BH9}
+		:CName MGT_FIXED
+BinConnector FB1.uC
+		:Pins {GT225_RX[3] GT225_RX[2]}
+		:name BC23		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 360
+		:XLoc {BE2 BF4}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uA/BC22 FB1.uC/BC23 } {FB1.AGT225_TX[3:2]} 
+			: Name T_FB1.uA_FB1.uC_2		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uA
+		:Pins {GT220_RX[3] GT220_RX[2]}
+		:name BC24		:slr 0		:edge RIGHT		:IobLocX 431 :IobLocY 60
+		:XLoc {BU2 BV4}
+		:CName MGT_FIXED
+BinConnector FB1.uC
+		:Pins {GT220_TX[3] GT220_TX[2]}
+		:name BC25		:slr 0		:edge RIGHT		:IobLocX 431 :IobLocY 60
+		:XLoc {BW7 CA7}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uA/BC24 FB1.uC/BC25 } {FB1.CGT220_TX[3:2]} 
+			: Name T_FB1.uA_FB1.uC_3		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uA
+		:Pins {GT225_RX[3] GT225_RX[2]}
+		:name BC26		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 360
+		:XLoc {BE2 BF4}
+		:CName MGT_FIXED
+BinConnector FB1.uC
+		:Pins {GT225_TX[3] GT225_TX[2]}
+		:name BC27		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 360
+		:XLoc {BG7 BH9}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uA/BC26 FB1.uC/BC27 } {FB1.CGT225_TX[3:2]} 
+			: Name T_FB1.uA_FB1.uC_4		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uA
+		:Pins {J10_D[12] J10_D[11] J10_D[10] J10_D[9] J10_D[8] J10_D[7] J10_D[6] J10_D[5] J10_D[4] J10_D[3] 
+			J10_D[2] J10_D[1] J10_D[0] J10_C[11] J10_C[10] J10_C[9] J10_C[8] J10_C[7] J10_C[6] J10_C[5] 
+			J10_C[4] J10_C[3] J10_C[2] J10_C[1] J10_C[0] J10_B[11] J10_B[10] J10_B[9] J10_B[8] J10_B[7] 
+			J10_B[6] J10_B[5] J10_B[4] J10_B[3] J10_B[2] J10_B[1] J10_B[0] J10_A[12] J10_A[11] J10_A[10] 
+			J10_A[9] J10_A[8] J10_A[7] J10_A[6] J10_A[5] J10_A[4] J10_A[3] J10_A[2] J10_A[1] J10_A[0]}
+		:name BC28
+		:Differential {  {J10_A[0] J10_A[1]}  {J10_A[10] J10_A[11]}  {J10_A[2] J10_A[3]}  {J10_A[4] J10_A[5]} 
+			 {J10_A[6] J10_A[7]}  {J10_A[8] J10_A[9]}  {J10_B[0] J10_B[1]}  {J10_B[10] J10_B[11]} 
+			 {J10_B[2] J10_B[3]}  {J10_B[4] J10_B[5]}  {J10_B[6] J10_B[7]}  {J10_B[8] J10_B[9]} 
+			 {J10_C[0] J10_C[1]}  {J10_C[10] J10_C[11]}  {J10_C[2] J10_C[3]}  {J10_C[4] J10_C[5]} 
+			 {J10_C[6] J10_C[7]}  {J10_C[8] J10_C[9]}  {J10_D[0] J10_D[1]}  {J10_D[10] J10_D[11]} 
+			 {J10_D[2] J10_D[3]}  {J10_D[4] J10_D[5]}  {J10_D[6] J10_D[7]}  {J10_D[8] J10_D[9]} }
+		:ClockInputs { J10_A[0] J10_B[0] J10_C[0] J10_D[0] }
+		:SSClocks { J10_B[0] }		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 255
+		:XLoc {BP51 BJ52 BJ51 BM52 BM51 BK53 BK52 BL52 BL51 BM54 BM53 BN54 BN53 BL50 BK50 BN51 BN50 BR53 BR52 BT51 
+			BT50 BR50 BP50 BP53 BP52 BL54 BK54 BN58 BM58 BR58 BR57 BP58 BP57 BR55 BR54 BP55 BN55 BL56 BJ58 BJ57 
+			BJ56 BJ55 BK58 BK57 BL55 BK55 BM57 BL57 BP56 BN56}
+		:CName A10
+BinConnector FB1.uD
+		:Pins {J10_A[12] J10_A[9] J10_A[8] J10_A[11] J10_A[10] J10_A[5] J10_A[4] J10_A[7] J10_A[6] J10_A[1] 
+			J10_A[0] J10_A[3] J10_A[2] J10_B[9] J10_B[8] J10_B[11] J10_B[10] J10_B[5] J10_B[4] J10_B[7] 
+			J10_B[6] J10_B[1] J10_B[0] J10_B[3] J10_B[2] J10_C[9] J10_C[8] J10_C[11] J10_C[10] J10_C[5] 
+			J10_C[4] J10_C[7] J10_C[6] J10_C[1] J10_C[0] J10_C[3] J10_C[2] J10_D[12] J10_D[9] J10_D[8] 
+			J10_D[11] J10_D[10] J10_D[5] J10_D[4] J10_D[7] J10_D[6] J10_D[1] J10_D[0] J10_D[3] J10_D[2]}
+		:name BC29
+		:Differential {  {J10_A[0] J10_A[1]}  {J10_A[10] J10_A[11]}  {J10_A[2] J10_A[3]}  {J10_A[4] J10_A[5]} 
+			 {J10_A[6] J10_A[7]}  {J10_A[8] J10_A[9]}  {J10_B[0] J10_B[1]}  {J10_B[10] J10_B[11]} 
+			 {J10_B[2] J10_B[3]}  {J10_B[4] J10_B[5]}  {J10_B[6] J10_B[7]}  {J10_B[8] J10_B[9]} 
+			 {J10_C[0] J10_C[1]}  {J10_C[10] J10_C[11]}  {J10_C[2] J10_C[3]}  {J10_C[4] J10_C[5]} 
+			 {J10_C[6] J10_C[7]}  {J10_C[8] J10_C[9]}  {J10_D[0] J10_D[1]}  {J10_D[10] J10_D[11]} 
+			 {J10_D[2] J10_D[3]}  {J10_D[4] J10_D[5]}  {J10_D[6] J10_D[7]}  {J10_D[8] J10_D[9]} }
+		:ClockInputs { J10_D[0] J10_C[0] J10_B[0] J10_A[0] }
+		:SSClocks { J10_B[0] }		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 255
+		:XLoc {BL56 BJ56 BJ55 BJ58 BJ57 BL55 BK55 BK58 BK57 BP56 BN56 BM57 BL57 BN58 BM58 BL54 BK54 BP58 BP57 BR58 
+			BR57 BP55 BN55 BR55 BR54 BN51 BN50 BL50 BK50 BT51 BT50 BR53 BR52 BP53 BP52 BR50 BP50 BP51 BM52 BM51 
+			BJ52 BJ51 BL52 BL51 BK53 BK52 BN54 BN53 BM54 BM53}
+		:CName D10
+CreateTraceGroup {FB1.uA/BC28 FB1.uD/BC29 } {FB1_A10_D[12:0] FB1_A10_C[11:0] FB1_A10_B[11:0] FB1_A10_A[12:0]} 
+			: Name T_FB1.uA_FB1.uD_1		: Property HSTDMSE_SUPPORT 1		: Property TDM_TYPE HSTDMSE		: Property DEF_BITRATE 1800
+
+BinConnector FB1.uA
+		:Pins {J7_D[12] J7_D[11] J7_D[10] J7_D[9] J7_D[8] J7_D[7] J7_D[6] J7_D[5] J7_D[4] J7_D[3] 
+			J7_D[2] J7_D[1] J7_D[0] J7_C[11] J7_C[10] J7_C[9] J7_C[8] J7_C[7] J7_C[6] J7_C[5] 
+			J7_C[4] J7_C[3] J7_C[2] J7_C[1] J7_C[0] J7_B[11] J7_B[10] J7_B[9] J7_B[8] J7_B[7] 
+			J7_B[6] J7_B[5] J7_B[4] J7_B[3] J7_B[2] J7_B[1] J7_B[0] J7_A[12] J7_A[11] J7_A[10] 
+			J7_A[9] J7_A[8] J7_A[7] J7_A[6] J7_A[5] J7_A[4] J7_A[3] J7_A[2] J7_A[1] J7_A[0]}
+		:name BC30
+		:Differential {  {J7_A[0] J7_A[1]}  {J7_A[10] J7_A[11]}  {J7_A[2] J7_A[3]}  {J7_A[4] J7_A[5]} 
+			 {J7_A[6] J7_A[7]}  {J7_A[8] J7_A[9]}  {J7_B[0] J7_B[1]}  {J7_B[10] J7_B[11]} 
+			 {J7_B[2] J7_B[3]}  {J7_B[4] J7_B[5]}  {J7_B[6] J7_B[7]}  {J7_B[8] J7_B[9]} 
+			 {J7_C[0] J7_C[1]}  {J7_C[10] J7_C[11]}  {J7_C[2] J7_C[3]}  {J7_C[4] J7_C[5]} 
+			 {J7_C[6] J7_C[7]}  {J7_C[8] J7_C[9]}  {J7_D[0] J7_D[1]}  {J7_D[10] J7_D[11]} 
+			 {J7_D[2] J7_D[3]}  {J7_D[4] J7_D[5]}  {J7_D[6] J7_D[7]}  {J7_D[8] J7_D[9]} }
+		:ClockInputs { J7_A[0] J7_B[0] J7_C[0] J7_D[0] }
+		:SSClocks { J7_B[0] }		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 75
+		:XLoc {BM42 BP48 BP47 BN49 BM49 BN48 BM48 BL49 BK49 BM47 BL47 BN44 BM44 BK48 BJ48 BP46 BN46 BR43 BR42 BP45 
+			BN45 BP43 BP42 BN43 BM43 BF42 BF41 BM46 BL46 BJ47 BJ46 BL42 BK42 BK45 BJ45 BK43 BJ43 BH41 BH44 BG44 
+			BE43 BE42 BH43 BG43 BF44 BE44 BG42 BG41 BL44 BK44}
+		:CName A7
+BinConnector FB1.uD
+		:Pins {J7_A[12] J7_A[9] J7_A[8] J7_A[11] J7_A[10] J7_A[5] J7_A[4] J7_A[7] J7_A[6] J7_A[1] 
+			J7_A[0] J7_A[3] J7_A[2] J7_B[9] J7_B[8] J7_B[11] J7_B[10] J7_B[5] J7_B[4] J7_B[7] 
+			J7_B[6] J7_B[1] J7_B[0] J7_B[3] J7_B[2] J7_C[9] J7_C[8] J7_C[11] J7_C[10] J7_C[5] 
+			J7_C[4] J7_C[7] J7_C[6] J7_C[1] J7_C[0] J7_C[3] J7_C[2] J7_D[12] J7_D[9] J7_D[8] 
+			J7_D[11] J7_D[10] J7_D[5] J7_D[4] J7_D[7] J7_D[6] J7_D[1] J7_D[0] J7_D[3] J7_D[2]}
+		:name BC31
+		:Differential {  {J7_A[0] J7_A[1]}  {J7_A[10] J7_A[11]}  {J7_A[2] J7_A[3]}  {J7_A[4] J7_A[5]} 
+			 {J7_A[6] J7_A[7]}  {J7_A[8] J7_A[9]}  {J7_B[0] J7_B[1]}  {J7_B[10] J7_B[11]} 
+			 {J7_B[2] J7_B[3]}  {J7_B[4] J7_B[5]}  {J7_B[6] J7_B[7]}  {J7_B[8] J7_B[9]} 
+			 {J7_C[0] J7_C[1]}  {J7_C[10] J7_C[11]}  {J7_C[2] J7_C[3]}  {J7_C[4] J7_C[5]} 
+			 {J7_C[6] J7_C[7]}  {J7_C[8] J7_C[9]}  {J7_D[0] J7_D[1]}  {J7_D[10] J7_D[11]} 
+			 {J7_D[2] J7_D[3]}  {J7_D[4] J7_D[5]}  {J7_D[6] J7_D[7]}  {J7_D[8] J7_D[9]} }
+		:ClockInputs { J7_D[0] J7_C[0] J7_B[0] J7_A[0] }
+		:SSClocks { J7_B[0] }		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 75
+		:XLoc {BH41 BE43 BE42 BH44 BG44 BF44 BE44 BH43 BG43 BL44 BK44 BG42 BG41 BM46 BL46 BF42 BF41 BL42 BK42 BJ47 
+			BJ46 BK43 BJ43 BK45 BJ45 BP46 BN46 BK48 BJ48 BP45 BN45 BR43 BR42 BN43 BM43 BP43 BP42 BM42 BN49 BM49 
+			BP48 BP47 BL49 BK49 BN48 BM48 BN44 BM44 BM47 BL47}
+		:CName D7
+CreateTraceGroup {FB1.uA/BC30 FB1.uD/BC31 } {FB1_A7_D[12:0] FB1_A7_C[11:0] FB1_A7_B[11:0] FB1_A7_A[12:0]} 
+			: Name T_FB1.uA_FB1.uD_2		: Property HSTDMSE_SUPPORT 1		: Property TDM_TYPE HSTDMSE		: Property DEF_BITRATE 1800
+
+BinConnector FB1.uA
+		:Pins {J8_D[12] J8_D[11] J8_D[10] J8_D[9] J8_D[8] J8_D[7] J8_D[6] J8_D[5] J8_D[4] J8_D[3] 
+			J8_D[2] J8_D[1] J8_D[0] J8_C[11] J8_C[10] J8_C[9] J8_C[8] J8_C[7] J8_C[6] J8_C[5] 
+			J8_C[4] J8_C[3] J8_C[2] J8_C[1] J8_C[0] J8_B[11] J8_B[10] J8_B[9] J8_B[8] J8_B[7] 
+			J8_B[6] J8_B[5] J8_B[4] J8_B[3] J8_B[2] J8_B[1] J8_B[0] J8_A[12] J8_A[11] J8_A[10] 
+			J8_A[9] J8_A[8] J8_A[7] J8_A[6] J8_A[5] J8_A[4] J8_A[3] J8_A[2] J8_A[1] J8_A[0]}
+		:name BC32
+		:Differential {  {J8_A[0] J8_A[1]}  {J8_A[10] J8_A[11]}  {J8_A[2] J8_A[3]}  {J8_A[4] J8_A[5]} 
+			 {J8_A[6] J8_A[7]}  {J8_A[8] J8_A[9]}  {J8_B[0] J8_B[1]}  {J8_B[10] J8_B[11]} 
+			 {J8_B[2] J8_B[3]}  {J8_B[4] J8_B[5]}  {J8_B[6] J8_B[7]}  {J8_B[8] J8_B[9]} 
+			 {J8_C[0] J8_C[1]}  {J8_C[10] J8_C[11]}  {J8_C[2] J8_C[3]}  {J8_C[4] J8_C[5]} 
+			 {J8_C[6] J8_C[7]}  {J8_C[8] J8_C[9]}  {J8_D[0] J8_D[1]}  {J8_D[10] J8_D[11]} 
+			 {J8_D[2] J8_D[3]}  {J8_D[4] J8_D[5]}  {J8_D[6] J8_D[7]}  {J8_D[8] J8_D[9]} }
+		:ClockInputs { J8_A[0] J8_B[0] J8_C[0] J8_D[0] }
+		:SSClocks { J8_B[0] }		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 135
+		:XLoc {CC56 CC50 CC49 CB51 CA51 CB49 CA49 CA52 BY52 CA50 BY50 CA55 CA54 CC53 CB52 CC55 CC54 CB57 CB56 CB54 
+			CB53 CA57 CA56 BY54 BY53 BW51 BV51 BV56 BU56 BT56 BT55 BY57 BW57 BU58 BT57 BW56 BV55 BU53 BV54 BV53 
+			BU54 BT54 BU52 BU51 BW53 BW52 BW50 BV50 BY55 BW55}
+		:CName A8
+BinConnector FB1.uD
+		:Pins {J8_A[12] J8_A[9] J8_A[8] J8_A[11] J8_A[10] J8_A[5] J8_A[4] J8_A[7] J8_A[6] J8_A[1] 
+			J8_A[0] J8_A[3] J8_A[2] J8_B[9] J8_B[8] J8_B[11] J8_B[10] J8_B[5] J8_B[4] J8_B[7] 
+			J8_B[6] J8_B[1] J8_B[0] J8_B[3] J8_B[2] J8_C[9] J8_C[8] J8_C[11] J8_C[10] J8_C[5] 
+			J8_C[4] J8_C[7] J8_C[6] J8_C[1] J8_C[0] J8_C[3] J8_C[2] J8_D[12] J8_D[9] J8_D[8] 
+			J8_D[11] J8_D[10] J8_D[5] J8_D[4] J8_D[7] J8_D[6] J8_D[1] J8_D[0] J8_D[3] J8_D[2]}
+		:name BC33
+		:Differential {  {J8_A[0] J8_A[1]}  {J8_A[10] J8_A[11]}  {J8_A[2] J8_A[3]}  {J8_A[4] J8_A[5]} 
+			 {J8_A[6] J8_A[7]}  {J8_A[8] J8_A[9]}  {J8_B[0] J8_B[1]}  {J8_B[10] J8_B[11]} 
+			 {J8_B[2] J8_B[3]}  {J8_B[4] J8_B[5]}  {J8_B[6] J8_B[7]}  {J8_B[8] J8_B[9]} 
+			 {J8_C[0] J8_C[1]}  {J8_C[10] J8_C[11]}  {J8_C[2] J8_C[3]}  {J8_C[4] J8_C[5]} 
+			 {J8_C[6] J8_C[7]}  {J8_C[8] J8_C[9]}  {J8_D[0] J8_D[1]}  {J8_D[10] J8_D[11]} 
+			 {J8_D[2] J8_D[3]}  {J8_D[4] J8_D[5]}  {J8_D[6] J8_D[7]}  {J8_D[8] J8_D[9]} }
+		:ClockInputs { J8_D[0] J8_C[0] J8_B[0] J8_A[0] }
+		:SSClocks { J8_B[0] }		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 135
+		:XLoc {BU53 BU54 BT54 BV54 BV53 BW53 BW52 BU52 BU51 BY55 BW55 BW50 BV50 BV56 BU56 BW51 BV51 BY57 BW57 BT56 
+			BT55 BW56 BV55 BU58 BT57 CC55 CC54 CC53 CB52 CB54 CB53 CB57 CB56 BY54 BY53 CA57 CA56 CC56 CB51 CA51 
+			CC50 CC49 CA52 BY52 CB49 CA49 CA55 CA54 CA50 BY50}
+		:CName D8
+CreateTraceGroup {FB1.uA/BC32 FB1.uD/BC33 } {FB1_A8_D[12:0] FB1_A8_C[11:0] FB1_A8_B[11:0] FB1_A8_A[12:0]} 
+			: Name T_FB1.uA_FB1.uD_3		: Property HSTDMSE_SUPPORT 1		: Property TDM_TYPE HSTDMSE		: Property DEF_BITRATE 1800
+
+BinConnector FB1.uA
+		:Pins {J9_D[12] J9_D[11] J9_D[10] J9_D[9] J9_D[8] J9_D[7] J9_D[6] J9_D[5] J9_D[4] J9_D[3] 
+			J9_D[2] J9_D[1] J9_D[0] J9_C[11] J9_C[10] J9_C[9] J9_C[8] J9_C[7] J9_C[6] J9_C[5] 
+			J9_C[4] J9_C[3] J9_C[2] J9_C[1] J9_C[0] J9_B[11] J9_B[10] J9_B[9] J9_B[8] J9_B[7] 
+			J9_B[6] J9_B[5] J9_B[4] J9_B[3] J9_B[2] J9_B[1] J9_B[0] J9_A[12] J9_A[11] J9_A[10] 
+			J9_A[9] J9_A[8] J9_A[7] J9_A[6] J9_A[5] J9_A[4] J9_A[3] J9_A[2] J9_A[1] J9_A[0]}
+		:name BC34
+		:Differential {  {J9_A[0] J9_A[1]}  {J9_A[10] J9_A[11]}  {J9_A[2] J9_A[3]}  {J9_A[4] J9_A[5]} 
+			 {J9_A[6] J9_A[7]}  {J9_A[8] J9_A[9]}  {J9_B[0] J9_B[1]}  {J9_B[10] J9_B[11]} 
+			 {J9_B[2] J9_B[3]}  {J9_B[4] J9_B[5]}  {J9_B[6] J9_B[7]}  {J9_B[8] J9_B[9]} 
+			 {J9_C[0] J9_C[1]}  {J9_C[10] J9_C[11]}  {J9_C[2] J9_C[3]}  {J9_C[4] J9_C[5]} 
+			 {J9_C[6] J9_C[7]}  {J9_C[8] J9_C[9]}  {J9_D[0] J9_D[1]}  {J9_D[10] J9_D[11]} 
+			 {J9_D[2] J9_D[3]}  {J9_D[4] J9_D[5]}  {J9_D[6] J9_D[7]}  {J9_D[8] J9_D[9]} }
+		:ClockInputs { J9_A[0] J9_B[0] J9_C[0] J9_D[0] }
+		:SSClocks { J9_B[0] }		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 195
+		:XLoc {BW61 CA60 CA59 CC58 CB58 CA61 BY60 CC59 CB59 BW63 BW62 BW60 BV60 BY59 BY58 BW58 BV58 BV59 BU59 BV63 
+			BU63 BU62 BT62 BV61 BU61 BN60 BN59 BR63 BR62 BP61 BN61 BT59 BR59 BP63 BP62 BR60 BP60 BM63 BM61 BL61 
+			BM59 BL59 BK63 BK62 BL60 BK60 BM62 BL62 BT61 BT60}
+		:CName A9
+BinConnector FB1.uD
+		:Pins {J9_A[12] J9_A[9] J9_A[8] J9_A[11] J9_A[10] J9_A[5] J9_A[4] J9_A[7] J9_A[6] J9_A[1] 
+			J9_A[0] J9_A[3] J9_A[2] J9_B[9] J9_B[8] J9_B[11] J9_B[10] J9_B[5] J9_B[4] J9_B[7] 
+			J9_B[6] J9_B[1] J9_B[0] J9_B[3] J9_B[2] J9_C[9] J9_C[8] J9_C[11] J9_C[10] J9_C[5] 
+			J9_C[4] J9_C[7] J9_C[6] J9_C[1] J9_C[0] J9_C[3] J9_C[2] J9_D[12] J9_D[9] J9_D[8] 
+			J9_D[11] J9_D[10] J9_D[5] J9_D[4] J9_D[7] J9_D[6] J9_D[1] J9_D[0] J9_D[3] J9_D[2]}
+		:name BC35
+		:Differential {  {J9_A[0] J9_A[1]}  {J9_A[10] J9_A[11]}  {J9_A[2] J9_A[3]}  {J9_A[4] J9_A[5]} 
+			 {J9_A[6] J9_A[7]}  {J9_A[8] J9_A[9]}  {J9_B[0] J9_B[1]}  {J9_B[10] J9_B[11]} 
+			 {J9_B[2] J9_B[3]}  {J9_B[4] J9_B[5]}  {J9_B[6] J9_B[7]}  {J9_B[8] J9_B[9]} 
+			 {J9_C[0] J9_C[1]}  {J9_C[10] J9_C[11]}  {J9_C[2] J9_C[3]}  {J9_C[4] J9_C[5]} 
+			 {J9_C[6] J9_C[7]}  {J9_C[8] J9_C[9]}  {J9_D[0] J9_D[1]}  {J9_D[10] J9_D[11]} 
+			 {J9_D[2] J9_D[3]}  {J9_D[4] J9_D[5]}  {J9_D[6] J9_D[7]}  {J9_D[8] J9_D[9]} }
+		:ClockInputs { J9_D[0] J9_C[0] J9_B[0] J9_A[0] }
+		:SSClocks { J9_B[0] }		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 195
+		:XLoc {BM63 BM59 BL59 BM61 BL61 BL60 BK60 BK63 BK62 BT61 BT60 BM62 BL62 BR63 BR62 BN60 BN59 BT59 BR59 BP61 
+			BN61 BR60 BP60 BP63 BP62 BW58 BV58 BY59 BY58 BV63 BU63 BV59 BU59 BV61 BU61 BU62 BT62 BW61 CC58 CB58 
+			CA60 CA59 CC59 CB59 CA61 BY60 BW60 BV60 BW63 BW62}
+		:CName D9
+CreateTraceGroup {FB1.uA/BC34 FB1.uD/BC35 } {FB1_A9_D[12:0] FB1_A9_C[11:0] FB1_A9_B[11:0] FB1_A9_A[12:0]} 
+			: Name T_FB1.uA_FB1.uD_4		: Property HSTDMSE_SUPPORT 1		: Property TDM_TYPE HSTDMSE		: Property DEF_BITRATE 1800
+
+BinConnector FB1.uA
+		:Pins {GT230_TX[3] GT230_TX[2]}
+		:name BC36		:slr 2		:edge RIGHT		:IobLocX 431 :IobLocY 660
+		:XLoc {AR7 AT9}
+		:CName MGT_FIXED
+BinConnector FB1.uD
+		:Pins {GT230_RX[3] GT230_RX[2]}
+		:name BC37		:slr 2		:edge RIGHT		:IobLocX 431 :IobLocY 660
+		:XLoc {AN2 AP4}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uA/BC36 FB1.uD/BC37 } {FB1.AGT230_TX[3:2]} 
+			: Name T_FB1.uA_FB1.uD_5		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uA
+		:Pins {GT235_TX[3] GT235_TX[2]}
+		:name BC38		:slr 3		:edge RIGHT		:IobLocX 431 :IobLocY 960
+		:XLoc {AC7 AD9}
+		:CName MGT_FIXED
+BinConnector FB1.uD
+		:Pins {GT235_RX[3] GT235_RX[2]}
+		:name BC39		:slr 3		:edge RIGHT		:IobLocX 431 :IobLocY 960
+		:XLoc {AA2 AB4}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uA/BC38 FB1.uD/BC39 } {FB1.AGT235_TX[3:2]} 
+			: Name T_FB1.uA_FB1.uD_6		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uA
+		:Pins {GT230_RX[3] GT230_RX[2]}
+		:name BC40		:slr 2		:edge RIGHT		:IobLocX 431 :IobLocY 660
+		:XLoc {AN2 AP4}
+		:CName MGT_FIXED
+BinConnector FB1.uD
+		:Pins {GT230_TX[3] GT230_TX[2]}
+		:name BC41		:slr 2		:edge RIGHT		:IobLocX 431 :IobLocY 660
+		:XLoc {AR7 AT9}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uA/BC40 FB1.uD/BC41 } {FB1.DGT230_TX[3:2]} 
+			: Name T_FB1.uA_FB1.uD_7		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uA
+		:Pins {GT235_RX[3] GT235_RX[2]}
+		:name BC42		:slr 3		:edge RIGHT		:IobLocX 431 :IobLocY 960
+		:XLoc {AA2 AB4}
+		:CName MGT_FIXED
+BinConnector FB1.uD
+		:Pins {GT235_TX[3] GT235_TX[2]}
+		:name BC43		:slr 3		:edge RIGHT		:IobLocX 431 :IobLocY 960
+		:XLoc {AC7 AD9}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uA/BC42 FB1.uD/BC43 } {FB1.DGT235_TX[3:2]} 
+			: Name T_FB1.uA_FB1.uD_8		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uA		:type HT3_8X		:name BC44		:slr 3		:edge LEFT		:IobLocX 0 :IobLocY 915
+		:XLoc {P62 H59 M61 R59 T59 T62 T61 R60 T60 R63 R62 P61 P60 L60 L59 N63 P63 M59 N59 M63 
+			M62 N61 N60 L62 L61 K60 K59 F59 G59 G62 G61 J63 J62 G63 H63 K63 K62 J61 J60 E63 
+			C61 C60 F62 F61 D61 D60 E60 F60 D62 E62 H61 H60}
+		:CName A11
+BinConnector TOP_IO_HT3_FB1_A11		:type HT3_8X		:name BC45
+CreateTraceGroup {FB1.uA/BC44 TOP_IO_HT3_FB1_A11/BC45 } {FB1_A11_VRP FB1_A11_VRN FB1_A11_D[12:0] FB1_A11_C[11:0] FB1_A11_B[11:0] FB1_A11_A[12:0]} 
+			: Name T_FB1.uA_TOP_IO_HT3_FB1_A11_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uA		:type HT3_8X		:name BC46		:slr 1		:edge RIGHT		:IobLocX 348 :IobLocY 435
+		:XLoc {BE38 BK38 BK37 BJ36 BJ35 BF36 BF35 BF37 BE37 BG37 BG36 BH38 BG38 BM37 BM36 BH36 BH35 BL35 BK35 BP36 
+			BP35 BN36 BN35 BP38 BP37 BL37 BL36 BJ38 BJ37 BM41 BL41 BP40 BN40 BP41 BN41 BN39 BN38 BM39 BM38 BH40 
+			BE40 BE39 BF40 BF39 BJ41 BJ40 BH39 BG39 BK40 BK39 BL40 BL39}
+		:CName A12
+BinConnector TOP_IO_HT3_FB1_A12		:type HT3_8X		:name BC47
+CreateTraceGroup {FB1.uA/BC46 TOP_IO_HT3_FB1_A12/BC47 } {FB1_A12_VRP FB1_A12_VRN FB1_A12_D[12:0] FB1_A12_C[11:0] FB1_A12_B[11:0] FB1_A12_A[12:0]} 
+			: Name T_FB1.uA_TOP_IO_HT3_FB1_A12_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uA		:type HT3_8X		:name BC48		:slr 0		:edge RIGHT		:IobLocX 348 :IobLocY 255
+		:XLoc {BV24 CB31 CB28 BU28 BU29 BW27 BW28 BV28 BV29 BW25 BW26 BV25 BV26 CA26 CA27 BY27 BY28 BY24 BY25 CA24 
+			CA25 CC25 CC26 CC24 CB24 CB26 CB27 BY29 BY30 CC33 CB33 CC30 CC31 CB32 CA32 CC28 CC29 CB29 CA29 BY32 
+			BV33 BV34 BV30 BV31 BY33 BY34 BW30 BW31 BW32 BW33 CA30 CA31}
+		:CName A5
+BinConnector TOP_IO_HT3_FB1_A5		:type HT3_8X		:name BC49
+CreateTraceGroup {FB1.uA/BC48 TOP_IO_HT3_FB1_A5/BC49 } {FB1_A5_VRP FB1_A5_VRN FB1_A5_D[12:0] FB1_A5_C[11:0] FB1_A5_B[11:0] FB1_A5_A[12:0]} 
+			: Name T_FB1.uA_TOP_IO_HT3_FB1_A5_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uA		:type HT3_8X		:name BC50		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 15
+		:XLoc {BY49 BW42 CC48 BT49 BR49 BW48 BW47 BR48 BR47 BV48 BU48 BV49 BU49 CA45 BY45 BU47 BT47 CB48 CB47 BY48 
+			BY47 CA47 CA46 CC46 CB46 BW46 BW45 BU46 BT46 CA42 BY42 CC44 CC43 CB43 CB42 CC45 CB44 CA44 BY44 BT45 
+			BT44 BR44 BV44 BU44 BU42 BT42 BV46 BV45 BV43 BU43 BY43 BW43}
+		:CName A6
+BinConnector TOP_IO_HT3_FB1_A6		:type HT3_8X		:name BC51
+CreateTraceGroup {FB1.uA/BC50 TOP_IO_HT3_FB1_A6/BC51 } {FB1_A6_VRP FB1_A6_VRN FB1_A6_D[12:0] FB1_A6_C[11:0] FB1_A6_B[11:0] FB1_A6_A[12:0]} 
+			: Name T_FB1.uA_TOP_IO_HT3_FB1_A6_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uB
+		:Pins {J1_B[11] J1_B[10] J1_B[9] J1_B[8] J1_B[7] J1_B[6] J1_B[5] J1_B[4] J1_B[3] J1_B[2] 
+			J1_B[1] J1_B[0] J1_A[11] J1_A[10] J1_A[9] J1_A[8] J1_A[7] J1_A[6] J1_A[5] J1_A[4] 
+			J1_A[3] J1_A[2] J1_A[1] J1_A[0]}
+		:name BC52
+		:Differential {  {J1_A[0] J1_A[1]}  {J1_A[10] J1_A[11]}  {J1_A[2] J1_A[3]}  {J1_A[4] J1_A[5]} 
+			 {J1_A[6] J1_A[7]}  {J1_A[8] J1_A[9]}  {J1_B[0] J1_B[1]}  {J1_B[10] J1_B[11]} 
+			 {J1_B[2] J1_B[3]}  {J1_B[4] J1_B[5]}  {J1_B[6] J1_B[7]}  {J1_B[8] J1_B[9]} }
+		:ClockInputs { J1_A[0] J1_A[2] J1_B[0] J1_B[10] }		:slr 0		:edge RIGHT		:IobLocX 420 :IobLocY 255
+		:XLoc {BE17 BD17 BE18 BE19 BG19 BF19 BG16 BF17 BG17 BG18 BD16 BC16 BE13 BD13 BH13 BG13 BF14 BE14 BH14 BG14 
+			BE15 BD15 BF15 BF16}
+		:CName B1
+BinConnector FB1.uC
+		:Pins {J19_C[9] J19_C[8] J19_C[11] J19_C[10] J19_C[5] J19_C[4] J19_C[7] J19_C[6] J19_C[1] J19_C[0] 
+			J19_C[3] J19_C[2] J19_D[9] J19_D[8] J19_D[11] J19_D[10] J19_D[5] J19_D[4] J19_D[7] J19_D[6] 
+			J19_D[1] J19_D[0] J19_D[3] J19_D[2]}
+		:name BC53
+		:Differential {  {J19_C[0] J19_C[1]}  {J19_C[10] J19_C[11]}  {J19_C[2] J19_C[3]}  {J19_C[4] J19_C[5]} 
+			 {J19_C[6] J19_C[7]}  {J19_C[8] J19_C[9]}  {J19_D[0] J19_D[1]}  {J19_D[10] J19_D[11]} 
+			 {J19_D[2] J19_D[3]}  {J19_D[4] J19_D[5]}  {J19_D[6] J19_D[7]}  {J19_D[8] J19_D[9]} }
+		:ClockInputs { J19_D[0] J19_C[0] }		:slr 3		:edge LEFT		:IobLocX 0 :IobLocY 960
+		:XLoc {J57 J56 C56 D56 G56 H56 H58 J58 F57 F56 G58 G57 D58 D57 C59 C58 A56 B56 A59 B59 
+			E58 E57 B58 B57}
+		:CName C19
+CreateTraceGroup {FB1.uB/BC52 FB1.uC/BC53 } {FB1_B1_B[11:0] FB1_B1_A[11:0]} 
+			: Name T_FB1.uB_FB1.uC_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uB
+		:Pins {J1_D[11] J1_D[10] J1_D[9] J1_D[8] J1_D[7] J1_D[6] J1_D[5] J1_D[4] J1_D[3] J1_D[2] 
+			J1_D[1] J1_D[0] J1_C[11] J1_C[10] J1_C[9] J1_C[8] J1_C[7] J1_C[6] J1_C[5] J1_C[4] 
+			J1_C[3] J1_C[2] J1_C[1] J1_C[0]}
+		:name BC54
+		:Differential {  {J1_C[0] J1_C[1]}  {J1_C[10] J1_C[11]}  {J1_C[2] J1_C[3]}  {J1_C[4] J1_C[5]} 
+			 {J1_C[6] J1_C[7]}  {J1_C[8] J1_C[9]}  {J1_D[0] J1_D[1]}  {J1_D[10] J1_D[11]} 
+			 {J1_D[2] J1_D[3]}  {J1_D[4] J1_D[5]}  {J1_D[6] J1_D[7]}  {J1_D[8] J1_D[9]} }
+		:ClockInputs { J1_C[0] J1_C[10] J1_D[0] J1_D[2] }		:slr 1		:edge RIGHT		:IobLocX 420 :IobLocY 555
+		:XLoc {BC13 BB13 BC14 BC15 BB14 BA14 BB16 BB17 BA15 AY15 BA16 BA17 AW15 AW16 AY13 AY14 AV15 AV16 AU16 AU17 
+			AT15 AT16 AY17 AW17}
+		:CName B1
+BinConnector FB1.uC
+		:Pins {J19_A[9] J19_A[8] J19_A[11] J19_A[10] J19_A[5] J19_A[4] J19_A[7] J19_A[6] J19_A[1] J19_A[0] 
+			J19_A[3] J19_A[2] J19_B[9] J19_B[8] J19_B[11] J19_B[10] J19_B[5] J19_B[4] J19_B[7] J19_B[6] 
+			J19_B[1] J19_B[0] J19_B[3] J19_B[2]}
+		:name BC55
+		:Differential {  {J19_A[0] J19_A[1]}  {J19_A[10] J19_A[11]}  {J19_A[2] J19_A[3]}  {J19_A[4] J19_A[5]} 
+			 {J19_A[6] J19_A[7]}  {J19_A[8] J19_A[9]}  {J19_B[0] J19_B[1]}  {J19_B[10] J19_B[11]} 
+			 {J19_B[2] J19_B[3]}  {J19_B[4] J19_B[5]}  {J19_B[6] J19_B[7]}  {J19_B[8] J19_B[9]} }
+		:ClockInputs { J19_B[0] J19_A[0] }		:slr 3		:edge LEFT		:IobLocX 0 :IobLocY 990
+		:XLoc {C55 D55 A52 B52 C54 C53 A55 A54 E55 F55 B54 B53 G54 H54 D53 D52 H55 J55 F52 G52 
+			E54 F54 G53 H53}
+		:CName C19
+CreateTraceGroup {FB1.uB/BC54 FB1.uC/BC55 } {FB1_B1_D[11:0] FB1_B1_C[11:0]} 
+			: Name T_FB1.uB_FB1.uC_2		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uB
+		:Pins {J2_D[12] J2_D[11] J2_D[10] J2_D[9] J2_D[8] J2_D[7] J2_D[6] J2_D[5] J2_D[4] J2_D[3] 
+			J2_D[2] J2_D[1] J2_D[0] J2_C[11] J2_C[10] J2_C[9] J2_C[8] J2_C[7] J2_C[6] J2_C[5] 
+			J2_C[4] J2_C[3] J2_C[2] J2_C[1] J2_C[0] J2_B[11] J2_B[10] J2_B[9] J2_B[8] J2_B[7] 
+			J2_B[6] J2_B[5] J2_B[4] J2_B[3] J2_B[2] J2_B[1] J2_B[0] J2_A[12] J2_A[11] J2_A[10] 
+			J2_A[9] J2_A[8] J2_A[7] J2_A[6] J2_A[5] J2_A[4] J2_A[3] J2_A[2] J2_A[1] J2_A[0]}
+		:name BC56
+		:Differential {  {J2_A[0] J2_A[1]}  {J2_A[10] J2_A[11]}  {J2_A[2] J2_A[3]}  {J2_A[4] J2_A[5]} 
+			 {J2_A[6] J2_A[7]}  {J2_A[8] J2_A[9]}  {J2_B[0] J2_B[1]}  {J2_B[10] J2_B[11]} 
+			 {J2_B[2] J2_B[3]}  {J2_B[4] J2_B[5]}  {J2_B[6] J2_B[7]}  {J2_B[8] J2_B[9]} 
+			 {J2_C[0] J2_C[1]}  {J2_C[10] J2_C[11]}  {J2_C[2] J2_C[3]}  {J2_C[4] J2_C[5]} 
+			 {J2_C[6] J2_C[7]}  {J2_C[8] J2_C[9]}  {J2_D[0] J2_D[1]}  {J2_D[10] J2_D[11]} 
+			 {J2_D[2] J2_D[3]}  {J2_D[4] J2_D[5]}  {J2_D[6] J2_D[7]}  {J2_D[8] J2_D[9]} }
+		:ClockInputs { J2_A[0] J2_B[0] J2_C[0] J2_D[0] }
+		:SSClocks { J2_B[0] }		:slr 0		:edge RIGHT		:IobLocX 348 :IobLocY 75
+		:XLoc {BR18 BV15 BV16 BV18 BU18 BV13 BV14 BU17 BT17 BU13 BU14 BR14 BR15 BU16 BT16 BR17 BP17 BP18 BN18 BT14 
+			BT15 BR13 BP13 BP15 BP16 BK17 BJ17 BM13 BM14 BM17 BL17 BN13 BN14 BL14 BL15 BN15 BN16 BK18 BK13 BJ13 
+			BK14 BK15 BJ15 BH15 BJ16 BH16 BJ18 BH18 BM16 BL16}
+		:CName B2
+BinConnector FB1.uC
+		:Pins {J20_A[12] J20_A[9] J20_A[8] J20_A[11] J20_A[10] J20_A[5] J20_A[4] J20_A[7] J20_A[6] J20_A[1] 
+			J20_A[0] J20_A[3] J20_A[2] J20_B[9] J20_B[8] J20_B[11] J20_B[10] J20_B[5] J20_B[4] J20_B[7] 
+			J20_B[6] J20_B[1] J20_B[0] J20_B[3] J20_B[2] J20_C[9] J20_C[8] J20_C[11] J20_C[10] J20_C[5] 
+			J20_C[4] J20_C[7] J20_C[6] J20_C[1] J20_C[0] J20_C[3] J20_C[2] J20_D[12] J20_D[9] J20_D[8] 
+			J20_D[11] J20_D[10] J20_D[5] J20_D[4] J20_D[7] J20_D[6] J20_D[1] J20_D[0] J20_D[3] J20_D[2]}
+		:name BC57
+		:Differential {  {J20_A[0] J20_A[1]}  {J20_A[10] J20_A[11]}  {J20_A[2] J20_A[3]}  {J20_A[4] J20_A[5]} 
+			 {J20_A[6] J20_A[7]}  {J20_A[8] J20_A[9]}  {J20_B[0] J20_B[1]}  {J20_B[10] J20_B[11]} 
+			 {J20_B[2] J20_B[3]}  {J20_B[4] J20_B[5]}  {J20_B[6] J20_B[7]}  {J20_B[8] J20_B[9]} 
+			 {J20_C[0] J20_C[1]}  {J20_C[10] J20_C[11]}  {J20_C[2] J20_C[3]}  {J20_C[4] J20_C[5]} 
+			 {J20_C[6] J20_C[7]}  {J20_C[8] J20_C[9]}  {J20_D[0] J20_D[1]}  {J20_D[10] J20_D[11]} 
+			 {J20_D[2] J20_D[3]}  {J20_D[4] J20_D[5]}  {J20_D[6] J20_D[7]}  {J20_D[8] J20_D[9]} }
+		:ClockInputs { J20_D[0] J20_C[0] J20_B[0] J20_A[0] }
+		:SSClocks { J20_B[0] }		:slr 3		:edge LEFT		:IobLocX 0 :IobLocY 1035
+		:XLoc {H46 J48 J47 G47 G46 G51 H51 G48 H48 L50 L49 G49 H49 K48 K47 H50 J50 L47 L46 M47 
+			M46 M49 M48 K50 K49 R48 R47 T47 U47 N46 P46 R50 R49 N49 N48 N50 P50 T50 V50 W50 
+			U49 V49 W48 W47 U48 V48 P48 P47 U46 V46}
+		:CName C20
+CreateTraceGroup {FB1.uB/BC56 FB1.uC/BC57 } {FB1_B2_D[12:0] FB1_B2_C[11:0] FB1_B2_B[11:0] FB1_B2_A[12:0]} 
+			: Name T_FB1.uB_FB1.uC_3		: Property HSTDMSE_SUPPORT 1		: Property TDM_TYPE HSTDMSE		: Property DEF_BITRATE 1800
+
+BinConnector FB1.uB
+		:Pins {GT230_TX[3] GT230_TX[2]}
+		:name BC58		:slr 2		:edge RIGHT		:IobLocX 431 :IobLocY 660
+		:XLoc {AR7 AT9}
+		:CName MGT_FIXED
+BinConnector FB1.uC
+		:Pins {GT230_RX[3] GT230_RX[2]}
+		:name BC59		:slr 2		:edge RIGHT		:IobLocX 431 :IobLocY 660
+		:XLoc {AN2 AP4}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uB/BC58 FB1.uC/BC59 } {FB1.BGT230_TX[3:2]} 
+			: Name T_FB1.uB_FB1.uC_4		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uB
+		:Pins {GT235_TX[3] GT235_TX[2]}
+		:name BC60		:slr 3		:edge RIGHT		:IobLocX 431 :IobLocY 960
+		:XLoc {AC7 AD9}
+		:CName MGT_FIXED
+BinConnector FB1.uC
+		:Pins {GT235_RX[3] GT235_RX[2]}
+		:name BC61		:slr 3		:edge RIGHT		:IobLocX 431 :IobLocY 960
+		:XLoc {AA2 AB4}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uB/BC60 FB1.uC/BC61 } {FB1.BGT235_TX[3:2]} 
+			: Name T_FB1.uB_FB1.uC_5		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uB
+		:Pins {GT230_RX[3] GT230_RX[2]}
+		:name BC62		:slr 2		:edge RIGHT		:IobLocX 431 :IobLocY 660
+		:XLoc {AN2 AP4}
+		:CName MGT_FIXED
+BinConnector FB1.uC
+		:Pins {GT230_TX[3] GT230_TX[2]}
+		:name BC63		:slr 2		:edge RIGHT		:IobLocX 431 :IobLocY 660
+		:XLoc {AR7 AT9}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uB/BC62 FB1.uC/BC63 } {FB1.CGT230_TX[3:2]} 
+			: Name T_FB1.uB_FB1.uC_6		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uB
+		:Pins {GT235_RX[3] GT235_RX[2]}
+		:name BC64		:slr 3		:edge RIGHT		:IobLocX 431 :IobLocY 960
+		:XLoc {AA2 AB4}
+		:CName MGT_FIXED
+BinConnector FB1.uC
+		:Pins {GT235_TX[3] GT235_TX[2]}
+		:name BC65		:slr 3		:edge RIGHT		:IobLocX 431 :IobLocY 960
+		:XLoc {AC7 AD9}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uB/BC64 FB1.uC/BC65 } {FB1.CGT235_TX[3:2]} 
+			: Name T_FB1.uB_FB1.uC_7		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uB
+		:Pins {GT220_TX[3] GT220_TX[2]}
+		:name BC66		:slr 0		:edge RIGHT		:IobLocX 431 :IobLocY 60
+		:XLoc {BW7 CA7}
+		:CName MGT_FIXED
+BinConnector FB1.uD
+		:Pins {GT220_RX[3] GT220_RX[2]}
+		:name BC67		:slr 0		:edge RIGHT		:IobLocX 431 :IobLocY 60
+		:XLoc {BU2 BV4}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uB/BC66 FB1.uD/BC67 } {FB1.BGT220_TX[3:2]} 
+			: Name T_FB1.uB_FB1.uD_1		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uB
+		:Pins {GT225_TX[3] GT225_TX[2]}
+		:name BC68		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 360
+		:XLoc {BG7 BH9}
+		:CName MGT_FIXED
+BinConnector FB1.uD
+		:Pins {GT225_RX[3] GT225_RX[2]}
+		:name BC69		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 360
+		:XLoc {BE2 BF4}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uB/BC68 FB1.uD/BC69 } {FB1.BGT225_TX[3:2]} 
+			: Name T_FB1.uB_FB1.uD_2		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uB
+		:Pins {GT220_RX[3] GT220_RX[2]}
+		:name BC70		:slr 0		:edge RIGHT		:IobLocX 431 :IobLocY 60
+		:XLoc {BU2 BV4}
+		:CName MGT_FIXED
+BinConnector FB1.uD
+		:Pins {GT220_TX[3] GT220_TX[2]}
+		:name BC71		:slr 0		:edge RIGHT		:IobLocX 431 :IobLocY 60
+		:XLoc {BW7 CA7}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uB/BC70 FB1.uD/BC71 } {FB1.DGT220_TX[3:2]} 
+			: Name T_FB1.uB_FB1.uD_3		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uB
+		:Pins {GT225_RX[3] GT225_RX[2]}
+		:name BC72		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 360
+		:XLoc {BE2 BF4}
+		:CName MGT_FIXED
+BinConnector FB1.uD
+		:Pins {GT225_TX[3] GT225_TX[2]}
+		:name BC73		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 360
+		:XLoc {BG7 BH9}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uB/BC72 FB1.uD/BC73 } {FB1.DGT225_TX[3:2]} 
+			: Name T_FB1.uB_FB1.uD_4		: Function MGT_DEBUG Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uB		:type HT3_8X		:name BC74		:slr 0		:edge RIGHT		:IobLocX 348 :IobLocY 255
+		:XLoc {BV24 CB31 CB28 BU28 BU29 BW27 BW28 BV28 BV29 BW25 BW26 BV25 BV26 CA26 CA27 BY27 BY28 BY24 BY25 CA24 
+			CA25 CC25 CC26 CC24 CB24 CB26 CB27 BY29 BY30 CC33 CB33 CC30 CC31 CB32 CA32 CC28 CC29 CB29 CA29 BY32 
+			BV33 BV34 BV30 BV31 BY33 BY34 BW30 BW31 BW32 BW33 CA30 CA31}
+		:CName B5
+BinConnector TOP_IO_HT3_FB1_B5		:type HT3_8X		:name BC75
+CreateTraceGroup {FB1.uB/BC74 TOP_IO_HT3_FB1_B5/BC75 } {FB1_B5_VRP FB1_B5_VRN FB1_B5_D[12:0] FB1_B5_C[11:0] FB1_B5_B[11:0] FB1_B5_A[12:0]} 
+			: Name T_FB1.uB_TOP_IO_HT3_FB1_B5_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uB		:type HT3_8X		:name BC76		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 15
+		:XLoc {BY49 BW42 CC48 BT49 BR49 BW48 BW47 BR48 BR47 BV48 BU48 BV49 BU49 CA45 BY45 BU47 BT47 CB48 CB47 BY48 
+			BY47 CA47 CA46 CC46 CB46 BW46 BW45 BU46 BT46 CA42 BY42 CC44 CC43 CB43 CB42 CC45 CB44 CA44 BY44 BT45 
+			BT44 BR44 BV44 BU44 BU42 BT42 BV46 BV45 BV43 BU43 BY43 BW43}
+		:CName B6
+BinConnector TOP_IO_HT3_FB1_B6		:type HT3_8X		:name BC77
+CreateTraceGroup {FB1.uB/BC76 TOP_IO_HT3_FB1_B6/BC77 } {FB1_B6_VRP FB1_B6_VRN FB1_B6_D[12:0] FB1_B6_C[11:0] FB1_B6_B[11:0] FB1_B6_A[12:0]} 
+			: Name T_FB1.uB_TOP_IO_HT3_FB1_B6_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uB		:type HT3_8X		:name BC78		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 75
+		:XLoc {BK47 BJ42 BM42 BP48 BP47 BN49 BM49 BN48 BM48 BL49 BK49 BM47 BL47 BN44 BM44 BK48 BJ48 BP46 BN46 BR43 
+			BR42 BP45 BN45 BP43 BP42 BN43 BM43 BF42 BF41 BM46 BL46 BJ47 BJ46 BL42 BK42 BK45 BJ45 BK43 BJ43 BH41 
+			BH44 BG44 BE43 BE42 BH43 BG43 BF44 BE44 BG42 BG41 BL44 BK44}
+		:CName B7
+BinConnector TOP_IO_HT3_FB1_B7		:type HT3_8X		:name BC79
+CreateTraceGroup {FB1.uB/BC78 TOP_IO_HT3_FB1_B7/BC79 } {FB1_B7_VRP FB1_B7_VRN FB1_B7_D[12:0] FB1_B7_C[11:0] FB1_B7_B[11:0] FB1_B7_A[12:0]} 
+			: Name T_FB1.uB_TOP_IO_HT3_FB1_B7_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uB		:type HT3_8X		:name BC80		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 135
+		:XLoc {CC51 BU57 CC56 CC50 CC49 CB51 CA51 CB49 CA49 CA52 BY52 CA50 BY50 CA55 CA54 CC53 CB52 CC55 CC54 CB57 
+			CB56 CB54 CB53 CA57 CA56 BY54 BY53 BW51 BV51 BV56 BU56 BT56 BT55 BY57 BW57 BU58 BT57 BW56 BV55 BU53 
+			BV54 BV53 BU54 BT54 BU52 BU51 BW53 BW52 BW50 BV50 BY55 BW55}
+		:CName B8
+BinConnector TOP_IO_HT3_FB1_B8		:type HT3_8X		:name BC81
+CreateTraceGroup {FB1.uB/BC80 TOP_IO_HT3_FB1_B8/BC81 } {FB1_B8_VRP FB1_B8_VRN FB1_B8_D[12:0] FB1_B8_C[11:0] FB1_B8_B[11:0] FB1_B8_A[12:0]} 
+			: Name T_FB1.uB_TOP_IO_HT3_FB1_B8_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uC
+		:Pins {J1_B[11] J1_B[10] J1_B[9] J1_B[8] J1_B[7] J1_B[6] J1_B[5] J1_B[4] J1_B[3] J1_B[2] 
+			J1_B[1] J1_B[0] J1_A[11] J1_A[10] J1_A[9] J1_A[8] J1_A[7] J1_A[6] J1_A[5] J1_A[4] 
+			J1_A[3] J1_A[2] J1_A[1] J1_A[0]}
+		:name BC82
+		:Differential {  {J1_A[0] J1_A[1]}  {J1_A[10] J1_A[11]}  {J1_A[2] J1_A[3]}  {J1_A[4] J1_A[5]} 
+			 {J1_A[6] J1_A[7]}  {J1_A[8] J1_A[9]}  {J1_B[0] J1_B[1]}  {J1_B[10] J1_B[11]} 
+			 {J1_B[2] J1_B[3]}  {J1_B[4] J1_B[5]}  {J1_B[6] J1_B[7]}  {J1_B[8] J1_B[9]} }
+		:ClockInputs { J1_A[0] J1_A[2] J1_B[0] J1_B[10] }		:slr 0		:edge RIGHT		:IobLocX 420 :IobLocY 255
+		:XLoc {BE17 BD17 BE18 BE19 BG19 BF19 BG16 BF17 BG17 BG18 BD16 BC16 BE13 BD13 BH13 BG13 BF14 BE14 BH14 BG14 
+			BE15 BD15 BF15 BF16}
+		:CName C1
+BinConnector FB1.uD
+		:Pins {J19_C[9] J19_C[8] J19_C[11] J19_C[10] J19_C[5] J19_C[4] J19_C[7] J19_C[6] J19_C[1] J19_C[0] 
+			J19_C[3] J19_C[2] J19_D[9] J19_D[8] J19_D[11] J19_D[10] J19_D[5] J19_D[4] J19_D[7] J19_D[6] 
+			J19_D[1] J19_D[0] J19_D[3] J19_D[2]}
+		:name BC83
+		:Differential {  {J19_C[0] J19_C[1]}  {J19_C[10] J19_C[11]}  {J19_C[2] J19_C[3]}  {J19_C[4] J19_C[5]} 
+			 {J19_C[6] J19_C[7]}  {J19_C[8] J19_C[9]}  {J19_D[0] J19_D[1]}  {J19_D[10] J19_D[11]} 
+			 {J19_D[2] J19_D[3]}  {J19_D[4] J19_D[5]}  {J19_D[6] J19_D[7]}  {J19_D[8] J19_D[9]} }
+		:ClockInputs { J19_D[0] J19_C[0] }		:slr 3		:edge LEFT		:IobLocX 0 :IobLocY 960
+		:XLoc {J57 J56 C56 D56 G56 H56 H58 J58 F57 F56 G58 G57 D58 D57 C59 C58 A56 B56 A59 B59 
+			E58 E57 B58 B57}
+		:CName D19
+CreateTraceGroup {FB1.uC/BC82 FB1.uD/BC83 } {FB1_C1_B[11:0] FB1_C1_A[11:0]} 
+			: Name T_FB1.uC_FB1.uD_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uC
+		:Pins {J1_D[11] J1_D[10] J1_D[9] J1_D[8] J1_D[7] J1_D[6] J1_D[5] J1_D[4] J1_D[3] J1_D[2] 
+			J1_D[1] J1_D[0] J1_C[11] J1_C[10] J1_C[9] J1_C[8] J1_C[7] J1_C[6] J1_C[5] J1_C[4] 
+			J1_C[3] J1_C[2] J1_C[1] J1_C[0]}
+		:name BC84
+		:Differential {  {J1_C[0] J1_C[1]}  {J1_C[10] J1_C[11]}  {J1_C[2] J1_C[3]}  {J1_C[4] J1_C[5]} 
+			 {J1_C[6] J1_C[7]}  {J1_C[8] J1_C[9]}  {J1_D[0] J1_D[1]}  {J1_D[10] J1_D[11]} 
+			 {J1_D[2] J1_D[3]}  {J1_D[4] J1_D[5]}  {J1_D[6] J1_D[7]}  {J1_D[8] J1_D[9]} }
+		:ClockInputs { J1_C[0] J1_C[10] J1_D[0] J1_D[2] }		:slr 1		:edge RIGHT		:IobLocX 420 :IobLocY 555
+		:XLoc {BC13 BB13 BC14 BC15 BB14 BA14 BB16 BB17 BA15 AY15 BA16 BA17 AW15 AW16 AY13 AY14 AV15 AV16 AU16 AU17 
+			AT15 AT16 AY17 AW17}
+		:CName C1
+BinConnector FB1.uD
+		:Pins {J19_A[9] J19_A[8] J19_A[11] J19_A[10] J19_A[5] J19_A[4] J19_A[7] J19_A[6] J19_A[1] J19_A[0] 
+			J19_A[3] J19_A[2] J19_B[9] J19_B[8] J19_B[11] J19_B[10] J19_B[5] J19_B[4] J19_B[7] J19_B[6] 
+			J19_B[1] J19_B[0] J19_B[3] J19_B[2]}
+		:name BC85
+		:Differential {  {J19_A[0] J19_A[1]}  {J19_A[10] J19_A[11]}  {J19_A[2] J19_A[3]}  {J19_A[4] J19_A[5]} 
+			 {J19_A[6] J19_A[7]}  {J19_A[8] J19_A[9]}  {J19_B[0] J19_B[1]}  {J19_B[10] J19_B[11]} 
+			 {J19_B[2] J19_B[3]}  {J19_B[4] J19_B[5]}  {J19_B[6] J19_B[7]}  {J19_B[8] J19_B[9]} }
+		:ClockInputs { J19_B[0] J19_A[0] }		:slr 3		:edge LEFT		:IobLocX 0 :IobLocY 990
+		:XLoc {C55 D55 A52 B52 C54 C53 A55 A54 E55 F55 B54 B53 G54 H54 D53 D52 H55 J55 F52 G52 
+			E54 F54 G53 H53}
+		:CName D19
+CreateTraceGroup {FB1.uC/BC84 FB1.uD/BC85 } {FB1_C1_D[11:0] FB1_C1_C[11:0]} 
+			: Name T_FB1.uC_FB1.uD_2		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uC
+		:Pins {I2_P[10] I2_N[10] I2_U[3] I2_U[2] I2_U[1] I2_P[9] I2_N[9]}
+		:name BC86
+		:Differential {  {I2_P[10] I2_N[10]}  {I2_P[9] I2_N[9]} }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 668
+		:XLoc {L39 L40 T37 K37 M38 M37 L37}
+		:CName FIXED
+BinConnector FB1.uD
+		:Pins {I2_P[9] I2_N[9] I2_U[1] I2_U[2] I2_U[3] I2_P[10] I2_N[10]}
+		:name BC87
+		:Differential {  {I2_P[10] I2_N[10]}  {I2_P[9] I2_N[9]} }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 668
+		:XLoc {M37 L37 M38 K37 T37 L39 L40}
+		:CName FIXED
+CreateTraceGroup {FB1.uC/BC86 FB1.uD/BC87 } {FB1.DI2_P[9] FB1.DI2_N[9] FB1.CI2_U[3:1] FB1.CI2_P[9] FB1.CI2_N[9]} 
+			: Name T_FB1.uC_FB1.uD_3		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uC
+		:Pins {J2_D[12] J2_D[11] J2_D[10] J2_D[9] J2_D[8] J2_D[7] J2_D[6] J2_D[5] J2_D[4] J2_D[3] 
+			J2_D[2] J2_D[1] J2_D[0] J2_C[11] J2_C[10] J2_C[9] J2_C[8] J2_C[7] J2_C[6] J2_C[5] 
+			J2_C[4] J2_C[3] J2_C[2] J2_C[1] J2_C[0] J2_B[11] J2_B[10] J2_B[9] J2_B[8] J2_B[7] 
+			J2_B[6] J2_B[5] J2_B[4] J2_B[3] J2_B[2] J2_B[1] J2_B[0] J2_A[12] J2_A[11] J2_A[10] 
+			J2_A[9] J2_A[8] J2_A[7] J2_A[6] J2_A[5] J2_A[4] J2_A[3] J2_A[2] J2_A[1] J2_A[0]}
+		:name BC88
+		:Differential {  {J2_A[0] J2_A[1]}  {J2_A[10] J2_A[11]}  {J2_A[2] J2_A[3]}  {J2_A[4] J2_A[5]} 
+			 {J2_A[6] J2_A[7]}  {J2_A[8] J2_A[9]}  {J2_B[0] J2_B[1]}  {J2_B[10] J2_B[11]} 
+			 {J2_B[2] J2_B[3]}  {J2_B[4] J2_B[5]}  {J2_B[6] J2_B[7]}  {J2_B[8] J2_B[9]} 
+			 {J2_C[0] J2_C[1]}  {J2_C[10] J2_C[11]}  {J2_C[2] J2_C[3]}  {J2_C[4] J2_C[5]} 
+			 {J2_C[6] J2_C[7]}  {J2_C[8] J2_C[9]}  {J2_D[0] J2_D[1]}  {J2_D[10] J2_D[11]} 
+			 {J2_D[2] J2_D[3]}  {J2_D[4] J2_D[5]}  {J2_D[6] J2_D[7]}  {J2_D[8] J2_D[9]} }
+		:ClockInputs { J2_A[0] J2_B[0] J2_C[0] J2_D[0] }
+		:SSClocks { J2_B[0] }		:slr 0		:edge RIGHT		:IobLocX 348 :IobLocY 75
+		:XLoc {BR18 BV15 BV16 BV18 BU18 BV13 BV14 BU17 BT17 BU13 BU14 BR14 BR15 BU16 BT16 BR17 BP17 BP18 BN18 BT14 
+			BT15 BR13 BP13 BP15 BP16 BK17 BJ17 BM13 BM14 BM17 BL17 BN13 BN14 BL14 BL15 BN15 BN16 BK18 BK13 BJ13 
+			BK14 BK15 BJ15 BH15 BJ16 BH16 BJ18 BH18 BM16 BL16}
+		:CName C2
+BinConnector FB1.uD
+		:Pins {J20_A[12] J20_A[9] J20_A[8] J20_A[11] J20_A[10] J20_A[5] J20_A[4] J20_A[7] J20_A[6] J20_A[1] 
+			J20_A[0] J20_A[3] J20_A[2] J20_B[9] J20_B[8] J20_B[11] J20_B[10] J20_B[5] J20_B[4] J20_B[7] 
+			J20_B[6] J20_B[1] J20_B[0] J20_B[3] J20_B[2] J20_C[9] J20_C[8] J20_C[11] J20_C[10] J20_C[5] 
+			J20_C[4] J20_C[7] J20_C[6] J20_C[1] J20_C[0] J20_C[3] J20_C[2] J20_D[12] J20_D[9] J20_D[8] 
+			J20_D[11] J20_D[10] J20_D[5] J20_D[4] J20_D[7] J20_D[6] J20_D[1] J20_D[0] J20_D[3] J20_D[2]}
+		:name BC89
+		:Differential {  {J20_A[0] J20_A[1]}  {J20_A[10] J20_A[11]}  {J20_A[2] J20_A[3]}  {J20_A[4] J20_A[5]} 
+			 {J20_A[6] J20_A[7]}  {J20_A[8] J20_A[9]}  {J20_B[0] J20_B[1]}  {J20_B[10] J20_B[11]} 
+			 {J20_B[2] J20_B[3]}  {J20_B[4] J20_B[5]}  {J20_B[6] J20_B[7]}  {J20_B[8] J20_B[9]} 
+			 {J20_C[0] J20_C[1]}  {J20_C[10] J20_C[11]}  {J20_C[2] J20_C[3]}  {J20_C[4] J20_C[5]} 
+			 {J20_C[6] J20_C[7]}  {J20_C[8] J20_C[9]}  {J20_D[0] J20_D[1]}  {J20_D[10] J20_D[11]} 
+			 {J20_D[2] J20_D[3]}  {J20_D[4] J20_D[5]}  {J20_D[6] J20_D[7]}  {J20_D[8] J20_D[9]} }
+		:ClockInputs { J20_D[0] J20_C[0] J20_B[0] J20_A[0] }
+		:SSClocks { J20_B[0] }		:slr 3		:edge LEFT		:IobLocX 0 :IobLocY 1035
+		:XLoc {H46 J48 J47 G47 G46 G51 H51 G48 H48 L50 L49 G49 H49 K48 K47 H50 J50 L47 L46 M47 
+			M46 M49 M48 K50 K49 R48 R47 T47 U47 N46 P46 R50 R49 N49 N48 N50 P50 T50 V50 W50 
+			U49 V49 W48 W47 U48 V48 P48 P47 U46 V46}
+		:CName D20
+CreateTraceGroup {FB1.uC/BC88 FB1.uD/BC89 } {FB1_C2_D[12:0] FB1_C2_C[11:0] FB1_C2_B[11:0] FB1_C2_A[12:0]} 
+			: Name T_FB1.uC_FB1.uD_4		: Property HSTDMSE_SUPPORT 1		: Property TDM_TYPE HSTDMSE		: Property DEF_BITRATE 1800
+
+BinConnector FB1.uC
+		:Pins {I1_P[22] I1_P[23] I1_P[24] I1_N[22] I1_N[23] I1_N[24] I1_U[3] I1_U[2] I1_U[1] I1_P[21] 
+			I1_P[20] I1_P[19] I1_P[18] I1_P[17] I1_P[16] I1_P[15] I1_P[10] I1_P[9] I1_P[8] I1_P[7] 
+			I1_N[21] I1_N[20] I1_N[19] I1_N[18] I1_N[17] I1_N[16] I1_N[15] I1_N[10] I1_N[9] I1_N[8] 
+			I1_N[7]}
+		:name BC90
+		:Differential {  {I1_P[10] I1_N[10]}  {I1_P[15] I1_N[15]}  {I1_P[16] I1_N[16]}  {I1_P[17] I1_N[17]} 
+			 {I1_P[18] I1_N[18]}  {I1_P[19] I1_N[19]}  {I1_P[20] I1_N[20]}  {I1_P[21] I1_N[21]} 
+			 {I1_P[22] I1_N[22]}  {I1_P[23] I1_N[23]}  {I1_P[24] I1_N[24]}  {I1_P[7] I1_N[7]} 
+			 {I1_P[8] I1_N[8]}  {I1_P[9] I1_N[9]} }
+		:SSClocks { I1_P[16] }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 621
+		:XLoc {J40 J37 K39 H40 J38 K40 F39 E37 D37 H38 G37 H39 H34 J35 F34 H35 B36 C34 B37 A34 
+			G38 F37 G39 G34 J36 E34 H36 A36 B34 A37 A35}
+		:CName FIXED
+BinConnector FB1.uD
+		:Pins {I1_P[9] I1_P[8] I1_P[7] I1_N[9] I1_N[8] I1_N[7] I1_U[1] I1_U[2] I1_U[3] I1_P[10] 
+			I1_P[15] I1_P[16] I1_P[17] I1_P[18] I1_P[19] I1_P[20] I1_P[21] I1_P[22] I1_P[23] I1_P[24] 
+			I1_N[10] I1_N[15] I1_N[16] I1_N[17] I1_N[18] I1_N[19] I1_N[20] I1_N[21] I1_N[22] I1_N[23] 
+			I1_N[24]}
+		:name BC91
+		:Differential {  {I1_P[10] I1_N[10]}  {I1_P[15] I1_N[15]}  {I1_P[16] I1_N[16]}  {I1_P[17] I1_N[17]} 
+			 {I1_P[18] I1_N[18]}  {I1_P[19] I1_N[19]}  {I1_P[20] I1_N[20]}  {I1_P[21] I1_N[21]} 
+			 {I1_P[22] I1_N[22]}  {I1_P[23] I1_N[23]}  {I1_P[24] I1_N[24]}  {I1_P[7] I1_N[7]} 
+			 {I1_P[8] I1_N[8]}  {I1_P[9] I1_N[9]} }
+		:SSClocks { I1_P[16] }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 621
+		:XLoc {C34 B37 A34 B34 A37 A35 D37 E37 F39 B36 H35 F34 J35 H34 H39 G37 H38 J40 J37 K39 
+			A36 H36 E34 J36 G34 G39 F37 G38 H40 J38 K40}
+		:CName FIXED
+CreateTraceGroup {FB1.uC/BC90 FB1.uD/BC91 } {FB1.DI1_P[9:7] FB1.DI1_N[9:7] FB1.CI1_U[3:1] FB1.CI1_P[21:15] FB1.CI1_P[10:7] FB1.CI1_N[21:15] FB1.CI1_N[10:7]} 
+			: Name T_FB1.uC_FB1.uD_5		: Property HSTDMSE_SUPPORT 1		: Property TDM_TYPE HSTDMSE		: Property DEF_BITRATE 1800
+
+BinConnector FB1.uC
+		:Pins {I3_P[16] I3_P[17] I3_P[18] I3_P[19] I3_P[20] I3_P[21] I3_P[22] I3_P[23] I3_P[24] I3_N[16] 
+			I3_N[17] I3_N[18] I3_N[19] I3_N[20] I3_N[21] I3_N[22] I3_N[23] I3_N[24] I3_U[3] I3_U[2] 
+			I3_U[1] I3_P[15] I3_P[10] I3_P[9] I3_P[8] I3_P[7] I3_P[6] I3_P[5] I3_P[4] I3_P[3] 
+			I3_P[2] I3_P[1] I3_N[15] I3_N[10] I3_N[9] I3_N[8] I3_N[7] I3_N[6] I3_N[5] I3_N[4] 
+			I3_N[3] I3_N[2] I3_N[1]}
+		:name BC92
+		:Differential {  {I3_P[10] I3_N[10]}  {I3_P[15] I3_N[15]}  {I3_P[16] I3_N[16]}  {I3_P[17] I3_N[17]} 
+			 {I3_P[18] I3_N[18]}  {I3_P[19] I3_N[19]}  {I3_P[1] I3_N[1]}  {I3_P[20] I3_N[20]} 
+			 {I3_P[21] I3_N[21]}  {I3_P[22] I3_N[22]}  {I3_P[23] I3_N[23]}  {I3_P[24] I3_N[24]} 
+			 {I3_P[2] I3_N[2]}  {I3_P[3] I3_N[3]}  {I3_P[4] I3_N[4]}  {I3_P[5] I3_N[5]} 
+			 {I3_P[6] I3_N[6]}  {I3_P[7] I3_N[7]}  {I3_P[8] I3_N[8]}  {I3_P[9] I3_N[9]} }
+		:SSClocks { I3_P[10] }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 735
+		:XLoc {J30 J33 H33 G29 G27 H29 F29 J28 E28 H30 J32 G33 G28 F27 H28 E29 J27 E27 K28 K29 
+			E33 J31 B33 C31 D33 A32 B29 E30 A30 C30 B27 D28 H31 B32 B31 C33 A31 B28 D30 A29 
+			C29 A27 D27}
+		:CName FIXED
+BinConnector FB1.uD
+		:Pins {I3_P[9] I3_P[8] I3_P[7] I3_P[6] I3_P[5] I3_P[4] I3_P[3] I3_P[2] I3_P[1] I3_N[9] 
+			I3_N[8] I3_N[7] I3_N[6] I3_N[5] I3_N[4] I3_N[3] I3_N[2] I3_N[1] I3_U[1] I3_U[2] 
+			I3_U[3] I3_P[10] I3_P[15] I3_P[16] I3_P[17] I3_P[18] I3_P[19] I3_P[20] I3_P[21] I3_P[22] 
+			I3_P[23] I3_P[24] I3_N[10] I3_N[15] I3_N[16] I3_N[17] I3_N[18] I3_N[19] I3_N[20] I3_N[21] 
+			I3_N[22] I3_N[23] I3_N[24]}
+		:name BC93
+		:Differential {  {I3_P[10] I3_N[10]}  {I3_P[15] I3_N[15]}  {I3_P[16] I3_N[16]}  {I3_P[17] I3_N[17]} 
+			 {I3_P[18] I3_N[18]}  {I3_P[19] I3_N[19]}  {I3_P[1] I3_N[1]}  {I3_P[20] I3_N[20]} 
+			 {I3_P[21] I3_N[21]}  {I3_P[22] I3_N[22]}  {I3_P[23] I3_N[23]}  {I3_P[24] I3_N[24]} 
+			 {I3_P[2] I3_N[2]}  {I3_P[3] I3_N[3]}  {I3_P[4] I3_N[4]}  {I3_P[5] I3_N[5]} 
+			 {I3_P[6] I3_N[6]}  {I3_P[7] I3_N[7]}  {I3_P[8] I3_N[8]}  {I3_P[9] I3_N[9]} }
+		:SSClocks { I3_P[10] }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 735
+		:XLoc {C31 D33 A32 B29 E30 A30 C30 B27 D28 B31 C33 A31 B28 D30 A29 C29 A27 D27 E33 K29 
+			K28 B33 J31 J30 J33 H33 G29 G27 H29 F29 J28 E28 B32 H31 H30 J32 G33 G28 F27 H28 
+			E29 J27 E27}
+		:CName FIXED
+CreateTraceGroup {FB1.uC/BC92 FB1.uD/BC93 } {FB1.DI3_P[9:1] FB1.DI3_N[9:1] FB1.CI3_U[3:1] FB1.CI3_P[15] FB1.CI3_P[10:1] FB1.CI3_N[15] FB1.CI3_N[10:1]} 
+			: Name T_FB1.uC_FB1.uD_6		: Property HSTDMSE_SUPPORT 1		: Property TDM_TYPE HSTDMSE		: Property DEF_BITRATE 1800
+
+BinConnector FB1.uC
+		:Pins {GT226_TX[3] GT226_TX[2] GT226_TX[1] GT226_TX[0]}
+		:name BC94		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 420
+		:XLoc {BC7 BD9 BE7 BF9}
+		:CName MGT_FIXED
+BinConnector FB1.uD
+		:Pins {GT226_RX[3] GT226_RX[2] GT226_RX[1] GT226_RX[0]}
+		:name BC95		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 420
+		:XLoc {BA2 BB4 BC2 BD4}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uC/BC94 FB1.uD/BC95 } {FB1.CGT226_TX[3:0]} 
+			: Name T_FB1.uC_FB1.uD_7		: Function MGT Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uC
+		:Pins {GT226_RX[3] GT226_RX[2] GT226_RX[1] GT226_RX[0]}
+		:name BC96		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 420
+		:XLoc {BA2 BB4 BC2 BD4}
+		:CName MGT_FIXED
+BinConnector FB1.uD
+		:Pins {GT226_TX[3] GT226_TX[2] GT226_TX[1] GT226_TX[0]}
+		:name BC97		:slr 1		:edge RIGHT		:IobLocX 431 :IobLocY 420
+		:XLoc {BC7 BD9 BE7 BF9}
+		:CName MGT_FIXED
+CreateTraceGroup {FB1.uC/BC96 FB1.uD/BC97 } {FB1.DGT226_TX[3:0]} 
+			: Name T_FB1.uC_FB1.uD_8		: Function MGT Hard		: Property TDM_TYPE MGTDM		: Property DEF_BITRATE 9000
+
+BinConnector FB1.uC		:type HT3_8X		:name BC98		:slr 0		:edge RIGHT		:IobLocX 348 :IobLocY 255
+		:XLoc {BV24 CB31 CB28 BU28 BU29 BW27 BW28 BV28 BV29 BW25 BW26 BV25 BV26 CA26 CA27 BY27 BY28 BY24 BY25 CA24 
+			CA25 CC25 CC26 CC24 CB24 CB26 CB27 BY29 BY30 CC33 CB33 CC30 CC31 CB32 CA32 CC28 CC29 CB29 CA29 BY32 
+			BV33 BV34 BV30 BV31 BY33 BY34 BW30 BW31 BW32 BW33 CA30 CA31}
+		:CName C5
+BinConnector TOP_IO_HT3_FB1_C5		:type HT3_8X		:name BC99
+CreateTraceGroup {FB1.uC/BC98 TOP_IO_HT3_FB1_C5/BC99 } {FB1_C5_VRP FB1_C5_VRN FB1_C5_D[12:0] FB1_C5_C[11:0] FB1_C5_B[11:0] FB1_C5_A[12:0]} 
+			: Name T_FB1.uC_TOP_IO_HT3_FB1_C5_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uC		:type HT3_8X		:name BC100		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 15
+		:XLoc {BY49 BW42 CC48 BT49 BR49 BW48 BW47 BR48 BR47 BV48 BU48 BV49 BU49 CA45 BY45 BU47 BT47 CB48 CB47 BY48 
+			BY47 CA47 CA46 CC46 CB46 BW46 BW45 BU46 BT46 CA42 BY42 CC44 CC43 CB43 CB42 CC45 CB44 CA44 BY44 BT45 
+			BT44 BR44 BV44 BU44 BU42 BT42 BV46 BV45 BV43 BU43 BY43 BW43}
+		:CName C6
+BinConnector TOP_IO_HT3_FB1_C6		:type HT3_8X		:name BC101
+CreateTraceGroup {FB1.uC/BC100 TOP_IO_HT3_FB1_C6/BC101 } {FB1_C6_VRP FB1_C6_VRN FB1_C6_D[12:0] FB1_C6_C[11:0] FB1_C6_B[11:0] FB1_C6_A[12:0]} 
+			: Name T_FB1.uC_TOP_IO_HT3_FB1_C6_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uC		:type HT3_8X		:name BC102		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 75
+		:XLoc {BK47 BJ42 BM42 BP48 BP47 BN49 BM49 BN48 BM48 BL49 BK49 BM47 BL47 BN44 BM44 BK48 BJ48 BP46 BN46 BR43 
+			BR42 BP45 BN45 BP43 BP42 BN43 BM43 BF42 BF41 BM46 BL46 BJ47 BJ46 BL42 BK42 BK45 BJ45 BK43 BJ43 BH41 
+			BH44 BG44 BE43 BE42 BH43 BG43 BF44 BE44 BG42 BG41 BL44 BK44}
+		:CName C7
+BinConnector TOP_IO_HT3_FB1_C7		:type HT3_8X		:name BC103
+CreateTraceGroup {FB1.uC/BC102 TOP_IO_HT3_FB1_C7/BC103 } {FB1_C7_VRP FB1_C7_VRN FB1_C7_D[12:0] FB1_C7_C[11:0] FB1_C7_B[11:0] FB1_C7_A[12:0]} 
+			: Name T_FB1.uC_TOP_IO_HT3_FB1_C7_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uC		:type HT3_8X		:name BC104		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 135
+		:XLoc {CC51 BU57 CC56 CC50 CC49 CB51 CA51 CB49 CA49 CA52 BY52 CA50 BY50 CA55 CA54 CC53 CB52 CC55 CC54 CB57 
+			CB56 CB54 CB53 CA57 CA56 BY54 BY53 BW51 BV51 BV56 BU56 BT56 BT55 BY57 BW57 BU58 BT57 BW56 BV55 BU53 
+			BV54 BV53 BU54 BT54 BU52 BU51 BW53 BW52 BW50 BV50 BY55 BW55}
+		:CName C8
+BinConnector TOP_IO_HT3_FB1_C8		:type HT3_8X		:name BC105
+CreateTraceGroup {FB1.uC/BC104 TOP_IO_HT3_FB1_C8/BC105 } {FB1_C8_VRP FB1_C8_VRN FB1_C8_D[12:0] FB1_C8_C[11:0] FB1_C8_B[11:0] FB1_C8_A[12:0]} 
+			: Name T_FB1.uC_TOP_IO_HT3_FB1_C8_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uD		:type HT3_8X		:name BC106		:slr 0		:edge RIGHT		:IobLocX 348 :IobLocY 135
+		:XLoc {BP20 BJ20 BM23 BU21 BT22 BP21 BP22 BT20 BT21 BU22 BU23 BR19 BR20 BM22 BL22 BR22 BR23 BN19 BM19 BP23 
+			BN23 BL19 BL20 BN20 BN21 BM21 BL21 BE22 BE23 BK19 BK20 BH19 BH20 BK23 BK24 BJ23 BH23 BJ21 BH21 BG23 
+			BF21 BF22 BF24 BE24 BF20 BE20 BH24 BG24 BG21 BG22 BK22 BJ22}
+		:CName D3
+BinConnector TOP_IO_HT3_FB1_D3		:type HT3_8X		:name BC107
+CreateTraceGroup {FB1.uD/BC106 TOP_IO_HT3_FB1_D3/BC107 } {FB1_D3_VRP FB1_D3_VRN FB1_D3_D[12:0] FB1_D3_C[11:0] FB1_D3_B[11:0] FB1_D3_A[12:0]} 
+			: Name T_FB1.uD_TOP_IO_HT3_FB1_D3_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uD		:type HT3_8X		:name BC108		:slr 0		:edge RIGHT		:IobLocX 348 :IobLocY 195
+		:XLoc {BP28 BH29 BP27 BU24 BT24 BT29 BR29 BT25 BT26 BU26 BT27 BR24 BR25 BM26 BM27 BR27 BR28 BN24 BM24 BN28 
+			BM28 BP25 BN25 BN29 BM29 BP26 BN26 BG27 BF27 BL29 BK29 BK28 BJ28 BL25 BK25 BJ25 BJ26 BK27 BJ27 BH28 
+			BG29 BF29 BF25 BE25 BG26 BF26 BE27 BE28 BH25 BH26 BL26 BL27}
+		:CName D4
+BinConnector TOP_IO_HT3_FB1_D4		:type HT3_8X		:name BC109
+CreateTraceGroup {FB1.uD/BC108 TOP_IO_HT3_FB1_D4/BC109 } {FB1_D4_VRP FB1_D4_VRN FB1_D4_D[12:0] FB1_D4_C[11:0] FB1_D4_B[11:0] FB1_D4_A[12:0]} 
+			: Name T_FB1.uD_TOP_IO_HT3_FB1_D4_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uD		:type HT3_8X		:name BC110		:slr 0		:edge RIGHT		:IobLocX 348 :IobLocY 255
+		:XLoc {BV24 CB31 CB28 BU28 BU29 BW27 BW28 BV28 BV29 BW25 BW26 BV25 BV26 CA26 CA27 BY27 BY28 BY24 BY25 CA24 
+			CA25 CC25 CC26 CC24 CB24 CB26 CB27 BY29 BY30 CC33 CB33 CC30 CC31 CB32 CA32 CC28 CC29 CB29 CA29 BY32 
+			BV33 BV34 BV30 BV31 BY33 BY34 BW30 BW31 BW32 BW33 CA30 CA31}
+		:CName D5
+BinConnector TOP_IO_HT3_FB1_D5		:type HT3_8X		:name BC111
+CreateTraceGroup {FB1.uD/BC110 TOP_IO_HT3_FB1_D5/BC111 } {FB1_D5_VRP FB1_D5_VRN FB1_D5_D[12:0] FB1_D5_C[11:0] FB1_D5_B[11:0] FB1_D5_A[12:0]} 
+			: Name T_FB1.uD_TOP_IO_HT3_FB1_D5_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.uD		:type HT3_8X		:name BC112		:slr 0		:edge LEFT		:IobLocX 0 :IobLocY 15
+		:XLoc {BY49 BW42 CC48 BT49 BR49 BW48 BW47 BR48 BR47 BV48 BU48 BV49 BU49 CA45 BY45 BU47 BT47 CB48 CB47 BY48 
+			BY47 CA47 CA46 CC46 CB46 BW46 BW45 BU46 BT46 CA42 BY42 CC44 CC43 CB43 CB42 CC45 CB44 CA44 BY44 BT45 
+			BT44 BR44 BV44 BU44 BU42 BT42 BV46 BV45 BV43 BU43 BY43 BW43}
+		:CName D6
+BinConnector TOP_IO_HT3_FB1_D6		:type HT3_8X		:name BC113
+CreateTraceGroup {FB1.uD/BC112 TOP_IO_HT3_FB1_D6/BC113 } {FB1_D6_VRP FB1_D6_VRN FB1_D6_D[12:0] FB1_D6_C[11:0] FB1_D6_B[11:0] FB1_D6_A[12:0]} 
+			: Name T_FB1.uD_TOP_IO_HT3_FB1_D6_1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0
+
+BinConnector FB1.PLL1
+		:Pins {CLK1}
+		:name BC114
+BinConnector FB1.uA
+		:Pins {CLK[1]}
+		:name BC115
+		:ClockInputs { CLK[1] }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 630
+		:XLoc {F35}
+		:CName CLK
+BinConnector FB1.uB
+		:Pins {CLK[1]}
+		:name BC116
+		:ClockInputs { CLK[1] }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 630
+		:XLoc {F35}
+		:CName CLK
+BinConnector FB1.uC
+		:Pins {CLK[1]}
+		:name BC117
+		:ClockInputs { CLK[1] }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 630
+		:XLoc {F35}
+		:CName CLK
+BinConnector FB1.uD
+		:Pins {CLK[1]}
+		:name BC118
+		:ClockInputs { CLK[1] }		:slr 2		:edge RIGHT		:IobLocX 348 :IobLocY 630
+		:XLoc {F35}
+		:CName CLK
+CreateTraceGroup {FB1.PLL1/BC114 FB1.uA/BC115 FB1.uB/BC116 FB1.uC/BC117 FB1.uD/BC118 } {GCLK1} 
+			: Name T_FB1.PLL1_FB1.uA_FB1.uB_FB1.uC_FB1.uD_1		: Function GCLK Hard		: From FB1.PLL1		: Property TDM_TYPE DIRECT		: Property DEF_BITRATE 0

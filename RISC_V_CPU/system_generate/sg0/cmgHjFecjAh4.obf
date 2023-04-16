@@ -1,0 +1,24 @@
+/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/linux_a_64/aptn  \
+-hpcf /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/rt_opt.pcf  \
+-haps_target HAPS-100  \
+-routeOnly  \
+-relpath  \
+-srpBuild  \
+-part XCVU19P-FSVA3824-1-e  \
+-timingRpt 1  \
+-estTiming /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top_timest.est  \
+-board /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/targetsystem.srs  \
+-aptn_ts 1  \
+-hpcf /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/hapsip_assign.pcf  \
+-pcf /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top.pcf  \
+-pcf /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top_cu.pcf  \
+-pcf /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top_na.pcf  \
+-pcf /home/u108/u108061217/RISC-V-pipeline-CPU/partition.pcf  \
+-fdc /home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc  \
+-log /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/route.log  \
+-unassignedPortDRC 0  \
+-osyn /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top_rt.srp  \
+-out /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top_rt  \
+-srs /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top.srp  \
+-jobname system_router 
+

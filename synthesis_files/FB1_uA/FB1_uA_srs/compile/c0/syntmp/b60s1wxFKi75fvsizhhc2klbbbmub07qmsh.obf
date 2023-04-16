@@ -1,0 +1,8 @@
+/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/bin/syn_nfilter  -link  -top  TraceBuildLib.FB1_uA  -multisrs  /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_srs/compile/c0/synwork/FB1_uA_comp.srs  -osyn  /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_srs/compile/c0/synwork/FB1_uA_mult.srs  -log  /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_srs/compile/c0/synlog/FB1_uA_multi_srs_gen.srr 
+relcom:/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/bin/syn_nfilter -link -top TraceBuildLib.FB1_uA -multisrs ../synwork/FB1_uA_comp.srs -osyn ../synwork/FB1_uA_mult.srs -log ../synlog/FB1_uA_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:../synwork/FB1_uA_comp.srs|io:i|time:1681051338|size:91518|exec:0|csum:
+file:../synwork/FB1_uA_mult.srs|io:o|time:1681051340|size:64636|exec:0|csum:
+file:../synlog/FB1_uA_multi_srs_gen.srr|io:o|time:1681051340|size:1227|exec:0|csum:
+file:/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/linux_a_64/syn_nfilter|io:i|time:1649478690|size:12701296|exec:1|csum:
+file:/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/bin/syn_nfilter|io:i|time:1649478584|size:368|exec:1|csum:

@@ -1,0 +1,207 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1_AR76722 (lin64) Build 3428450 Thu Jan 13 11:43:02 MST 2022
+| Date         : Sun Apr  9 23:45:57 2023
+| Host         : ws35 running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : report_drc -file post_route_drc.txt
+| Design       : FB1_uA
+| Device       : xcvu19p-fsva3824-1-e
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 19
++-------------+----------+----------------------+------------+
+| Rule        | Severity | Description          | Violations |
++-------------+----------+----------------------+------------+
+| IOBUSSLRC-1 | Warning  | IO Bus SLR Crossings | 16         |
+| PLCK-58     | Warning  | Clock Placer Checks  | 1          |
+| REQP-1877   | Warning  | BUFGCE_has_no_loads  | 1          |
+| RTSTAT-10   | Warning  | No routable loads    | 1          |
++-------------+----------+----------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+IOBUSSLRC-1#1 Warning
+IO Bus SLR Crossings  
+Bus port ADDOUTID_63_0 spans more than one Super Logic Region (SLR).   Bits placed in SLR 2:  23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 8, 7, 6, 5, 4, 3, 1, 0.  
+  Bits placed in SLR 0:  63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 30, 29, 28, 27, 26, 25, 24.  
+  Bits placed in SLR 1:  45, 32, 31, 9, 2.  
+
+Related violations: <none>
+
+IOBUSSLRC-1#2 Warning
+IO Bus SLR Crossings  
+Bus port Addr spans more than one Super Logic Region (SLR).   Bits placed in SLR 3:  60, 58, 57, 53, 46, 39, 37, 31, 26, 25, 23, 22, 19, 18, 17, 15, 14, 9, 7, 4.  
+  Bits placed in SLR 0:  63, 61, 56, 55, 54, 52, 51, 50, 49, 45, 44, 43, 42, 40, 38, 36, 35, 34, 33, 32, 30, 28, 24, 20, 16, 12, 11, 10, 8, 6, 5, 3, 2.  
+  Bits placed in SLR 1:  62, 59, 48, 47, 41, 29, 27, 21, 13.  
+
+Related violations: <none>
+
+IOBUSSLRC-1#3 Warning
+IO Bus SLR Crossings  
+Bus port DBG_REFCLKN_0 spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  0.  
+  Bits placed in SLR 0:  1.  
+  Bits placed in SLR 2:  3.  
+  Bits placed in SLR 3:  2.  
+
+Related violations: <none>
+
+IOBUSSLRC-1#4 Warning
+IO Bus SLR Crossings  
+Bus port DBG_REFCLKP_0 spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  0.  
+  Bits placed in SLR 0:  1.  
+  Bits placed in SLR 2:  3.  
+  Bits placed in SLR 3:  2.  
+
+Related violations: <none>
+
+IOBUSSLRC-1#5 Warning
+IO Bus SLR Crossings  
+Bus port DBG_RXN spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  1, 0.  
+  Bits placed in SLR 0:  3, 2.  
+  Bits placed in SLR 2:  7, 6.  
+  Bits placed in SLR 3:  5, 4.  
+
+Related violations: <none>
+
+IOBUSSLRC-1#6 Warning
+IO Bus SLR Crossings  
+Bus port DBG_RXP spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  1, 0.  
+  Bits placed in SLR 0:  3, 2.  
+  Bits placed in SLR 2:  7, 6.  
+  Bits placed in SLR 3:  5, 4.  
+
+Related violations: <none>
+
+IOBUSSLRC-1#7 Warning
+IO Bus SLR Crossings  
+Bus port DBG_TXN spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  1, 0.  
+  Bits placed in SLR 0:  3, 2.  
+  Bits placed in SLR 2:  7, 6.  
+  Bits placed in SLR 3:  5, 4.  
+
+Related violations: <none>
+
+IOBUSSLRC-1#8 Warning
+IO Bus SLR Crossings  
+Bus port DBG_TXP spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  1, 0.  
+  Bits placed in SLR 0:  3, 2.  
+  Bits placed in SLR 2:  7, 6.  
+  Bits placed in SLR 3:  5, 4.  
+
+Related violations: <none>
+
+IOBUSSLRC-1#9 Warning
+IO Bus SLR Crossings  
+Bus port DMOUTWB_aptn_ft spans more than one Super Logic Region (SLR).   Bits placed in SLR 2:  32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0.  
+  Bits placed in SLR 0:  63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33.  
+
+Related violations: <none>
+
+IOBUSSLRC-1#10 Warning
+IO Bus SLR Crossings  
+Bus port IMMID spans more than one Super Logic Region (SLR).   Bits placed in SLR 3:  53.  
+  Bits placed in SLR 1:  63, 59, 54.  
+  Bits placed in SLR 0:  62, 61, 60, 58, 57, 56, 55.  
+
+Related violations: <none>
+
+IOBUSSLRC-1#11 Warning
+IO Bus SLR Crossings  
+Bus port IMMID_11_to_20 spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  16, 14, 13.  
+  Bits placed in SLR 0:  20, 19, 17, 15, 12, 11.  
+  Bits placed in SLR 3:  18.  
+
+Related violations: <none>
+
+IOBUSSLRC-1#12 Warning
+IO Bus SLR Crossings  
+Bus port IMMID_24_to_26 spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  24.  
+  Bits placed in SLR 3:  26, 25.  
+
+Related violations: <none>
+
+IOBUSSLRC-1#13 Warning
+IO Bus SLR Crossings  
+Bus port IMMID_28_to_51 spans more than one Super Logic Region (SLR).   Bits placed in SLR 0:  49, 48, 47, 46, 42, 36, 33, 31.  
+  Bits placed in SLR 1:  51, 45, 44, 41, 40, 37, 34, 30, 28.  
+  Bits placed in SLR 3:  50, 43, 39, 38, 35, 32, 29.  
+
+Related violations: <none>
+
+IOBUSSLRC-1#14 Warning
+IO Bus SLR Crossings  
+Bus port PC spans more than one Super Logic Region (SLR).   Bits placed in SLR 3:  54, 49, 45, 43, 38, 27, 23, 22, 21, 8, 2.  
+  Bits placed in SLR 1:  63, 62, 61, 59, 57, 56, 55, 51, 50, 46, 34, 33, 31, 24, 18, 12, 5, 4, 3.  
+  Bits placed in SLR 0:  60, 58, 53, 52, 48, 47, 44, 42, 41, 40, 39, 37, 36, 35, 32, 30, 29, 28, 26, 25, 20, 19, 17, 16, 15, 14, 13, 11, 10, 9, 7, 6, 1, 0.  
+
+Related violations: <none>
+
+IOBUSSLRC-1#15 Warning
+IO Bus SLR Crossings  
+Bus port WRITEDATAWB_aptn_ft spans more than one Super Logic Region (SLR).   Bits placed in SLR 2:  2, 1, 0.  
+  Bits placed in SLR 0:  63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22.  
+  Bits placed in SLR 1:  21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3.  
+
+Related violations: <none>
+
+IOBUSSLRC-1#16 Warning
+IO Bus SLR Crossings  
+Bus port in_instruc spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  27, 16, 15, 13, 11, 5, 1.  
+  Bits placed in SLR 0:  31, 28, 26, 25, 24, 21, 19, 18, 17, 10, 8, 6, 4, 3, 2, 0.  
+  Bits placed in SLR 3:  30, 29, 23, 22, 20, 14, 12, 9, 7.  
+
+Related violations: <none>
+
+PLCK-58#1 Warning
+Clock Placer Checks  
+Sub-optimal placement for a global clock-capable IO pin and BUFG pair.
+Resolution: A dedicated routing path between the two can be used if: (a) The global clock-capable IO (GCIO) is placed on a GCIO capable site (b) The BUFG is placed in the same bank of the device as the GCIO pin. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	AFPGA_LOCK_CLK_I_ibuf/IBUFCTRL_INST (in AFPGA_LOCK_CLK_I_ibuf macro) (IBUFCTRL.O) is locked to BR40 (in SLR 1)
+	sysip_inst/bsa19_system_ip_u/anaconda_systemip_afpga_if_u/G_lock_clk_bufg.I_bufg_lock_clk (BUFGCE.I) is provisionally placed by clockplacer on BUFGCE_X1Y147 (in SLR 1)
+
+Related violations: <none>
+
+REQP-1877#1 Warning
+BUFGCE_has_no_loads  
+Global Clock buffer BUFGCE cell sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/clkout1_buf has no loads and may be unnecessarily using clock routing/distribution resources. This buffer should be removed from the design.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+141 net(s) have no routable loads. The problem bus(es) and/or net(s) are sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[0],
+sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[10],
+sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[11],
+sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[12],
+sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[13],
+sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[14],
+sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[15],
+sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[16],
+sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[3],
+sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[4],
+sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[5],
+sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[6],
+sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[7],
+sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[8],
+sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[9]
+ (the first 15 of 125 listed).
+Related violations: <none>
+
+

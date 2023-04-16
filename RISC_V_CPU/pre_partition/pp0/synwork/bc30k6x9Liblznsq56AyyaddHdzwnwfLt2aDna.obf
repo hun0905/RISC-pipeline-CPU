@@ -1,0 +1,1 @@
+gen_constraint.fdc,inferred_clocks.fdc,Clocks inferred by the timing engine. This file can be used to augment user-supplied fdc files.

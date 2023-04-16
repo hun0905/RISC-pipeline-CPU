@@ -1,0 +1,23 @@
+=Summary for incremetal compiler=
+Module Name     Compile Status
+------------------------------
+ALU             recompiled    
+ALUControl      recompiled    
+Adder           recompiled    
+Control         recompiled    
+DM              recompiled    
+EX_MEM          recompiled    
+Forwarding      recompiled    
+Hazard          recompiled    
+ID_EX           recompiled    
+IF_ID           recompiled    
+IM              recompiled    
+ImmGen          recompiled    
+MEM_WB          recompiled    
+MUX             recompiled    
+MUX3_1          recompiled    
+PC              recompiled    
+Registers       recompiled    
+comparator      recompiled    
+top             recompiled    
+==============================

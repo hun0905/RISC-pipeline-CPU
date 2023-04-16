@@ -1,0 +1,17 @@
+**** Begin Compile Point : FB1_uC ****
+**** End Compile Point : FB1_uC ****
+**** Begin Compile Point : FB1_uD ****
+**** End Compile Point : FB1_uD ****
+**** Begin Compile Point : FB1_uA ****
+**** End Compile Point : FB1_uA ****
+**** Begin Compile Point : FB1_uB ****
+**** End Compile Point : FB1_uB ****
+**** Begin Compile Point : FB1_uB ****
+@W: BN132 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":29:0:29:0|Removing instance FB1.uB.idex1.imm_out[12] because it is equivalent to instance FB1.uB.idex1.imm_out[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+**** End Compile Point : FB1_uB ****
+**** Begin Compile Point : FB1_uD ****
+**** End Compile Point : FB1_uD ****
+**** Begin Compile Point : FB1_uC ****
+**** End Compile Point : FB1_uC ****
+**** Begin Compile Point : FB1_uA ****
+**** End Compile Point : FB1_uA ****

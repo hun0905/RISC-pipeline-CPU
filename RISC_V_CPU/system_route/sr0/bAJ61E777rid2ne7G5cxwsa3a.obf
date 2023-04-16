@@ -1,0 +1,281 @@
+#OPTIONS:"|-I|/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib|-I|/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board|-I|/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0|-encrypt|-board|-ram|-v2001|-autosm|-fid2|-sharing|on|-ui"
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/linux_a_64/c_ver":1649478690
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v":1649478405
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v":1648803890
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_him_async_fifo_2048x258_xcvu440_stub.v":1649015950
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80_xcvu440_mgb1_stub.v":1649015950
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80d_xcvu440_mgb1_stub.v":1649015951
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":1649015949
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v":1649478178
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/clocks/gsv_trigger_hypermods.v":1649478178
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/scemi_objects.v":1649478405
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/scemi_pipes.svh":1649478405
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/targetsystem.vb":1681051100
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v":1649477729
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v":1649477729
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v":1649477729
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/cables_ht3.v":1649477729
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/mgb_cards.v":1649477729
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/customboards.v":1649477729
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/ECDB.v":1649477729
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v":1649478282
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_modules.v":1649478282
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/modules_hc2.v":1649478282
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/modules_mgb2.v":1649478282
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/FPGA100_4F.v":1649478282
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/xcvu19p-fsva3824.v":1649478282
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/cutomdb_top_io_ht3.v":1681051100
+#numinternalfiles:10
+#defaultlanguage:verilog
+0			"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/targetsystem.vb" verilog
+1		*	"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/board_utils.v" verilog
+2		*	"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards.v" verilog
+3		*	"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/daughterboards_ht3.v" verilog
+4		*	"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/cables_ht3.v" verilog
+5		*	"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/mgb_cards.v" verilog
+6		*	"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/customboards.v" verilog
+7		*	"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/haps/ECDB.v" verilog
+8		*	"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_4F.v" verilog
+9		*	"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/HAPS100_modules.v" verilog
+10		*	"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/modules_hc2.v" verilog
+11		*	"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/modules_mgb2.v" verilog
+12		*	"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/FPGA100_4F.v" verilog
+13		*	"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board/anaconda/xcvu19p-fsva3824.v" verilog
+14		*	"/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/cutomdb_top_io_ht3.v" verilog
+#Dependency Lists(Uses List)
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+1 0 2 3 4 5 6 7 8 9 10 11 12 13 14
+2 0 1 3 4 5 6 7 8 9 10 11 12 13 14
+3 0 1 2 4 5 6 7 8 9 10 11 12 13 14
+4 0 1 2 3 5 6 7 8 9 10 11 12 13 14
+5 0 1 2 3 4 6 7 8 9 10 11 12 13 14
+6 0 1 2 3 4 5 7 8 9 10 11 12 13 14
+7 0 1 2 3 4 5 6 8 9 10 11 12 13 14
+8 0 1 2 3 4 5 6 7 9 10 11 12 13 14
+9 0 1 2 3 4 5 6 7 8 10 11 12 13 14
+10 0 1 2 3 4 5 6 7 8 9 11 12 13 14
+11 0 1 2 3 4 5 6 7 8 9 10 12 13 14
+12 0 1 2 3 4 5 6 7 8 9 10 11 13 14
+13 0 1 2 3 4 5 6 7 8 9 10 11 12 14
+14 0 1 2 3 4 5 6 7 8 9 10 11 12 13
+#Dependency Lists(Users Of)
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+1 0 2 3 4 5 6 7 8 9 10 11 12 13 14
+2 0 1 3 4 5 6 7 8 9 10 11 12 13 14
+3 0 1 2 4 5 6 7 8 9 10 11 12 13 14
+4 0 1 2 3 5 6 7 8 9 10 11 12 13 14
+5 0 1 2 3 4 6 7 8 9 10 11 12 13 14
+6 0 1 2 3 4 5 7 8 9 10 11 12 13 14
+7 0 1 2 3 4 5 6 8 9 10 11 12 13 14
+8 0 1 2 3 4 5 6 7 9 10 11 12 13 14
+9 0 1 2 3 4 5 6 7 8 10 11 12 13 14
+10 0 1 2 3 4 5 6 7 8 9 11 12 13 14
+11 0 1 2 3 4 5 6 7 8 9 10 12 13 14
+12 0 1 2 3 4 5 6 7 8 9 10 11 13 14
+13 0 1 2 3 4 5 6 7 8 9 10 11 12 14
+14 0 1 2 3 4 5 6 7 8 9 10 11 12 13
+#Design Unit to File Association
+module work syn_trace_attr 1
+module work syn_trace_attr_conn 1
+module work CON_2X1 2
+module work CON_2X1A 2
+module work CON_2X1B 2
+module work CON_1X2 2
+module work RISER1e 2
+module work RISER2e 2
+module work CON_2X2 2
+module work CON_FLEX 2
+module work LS33_1x1 2
+module work CLOCK_MODULE 2
+module work UMRBUS_IF 2
+module work CDE_CABLE 2
+module work CON_CABLE 2
+module work CON_CABLEX 2
+module work CON_CABLE40e 2
+module work CON_CABLE20e 2
+module work HX_MMCX_CABLE 2
+module work HX_MMCX_SMB 2
+module work HX_MMCX_UFL 2
+module work LAB_1X1 2
+module work Test_IO 2
+module work TEST_1X2 2
+module work buffer 2
+module work MICT 2
+module work MICT_1X1 2
+module work ddr2_chip 2
+module work DDR2_1x2 2
+module work zbt72 2
+module work SRAM_1x1 2
+module work RX_Sil7170 2
+module work TX_Sil7160 2
+module work DVI_OSC 2
+module work DVI_1x1A 2
+module work msdram_32 2
+module work MSDRAM_1x1 2
+module work sdram_32 2
+module work SDRAM_1x1 2
+module work GB_PHY 2
+module work GEPHY_1x1 2
+module work DDR_64_bits 2
+module work DDR_1x1_64 2
+module work PCIe 2
+module work PCIe_1x1 2
+module work CM 2
+module work HAPS_CMI 2
+module work PCIX_localbus 2
+module work PCIX_PCIbus 2
+module work PCIX 2
+module work ENC 2
+module work DEC 2
+module work SYNC 2
+module work AUD 2
+module work DAC 2
+module work AVID_1x1 2
+module work LCD_module 2
+module work LCD_1x1 2
+module work FLASH_module_byte 2
+module work FLASH_module_word 2
+module work FLASH_1x1_BYTEMODE 2
+module work FLASH_1x1_WORDMODE 2
+module work FPGA_2X3 2
+module work FPGAPRO_2x3 2
+module work oscillator 2
+module work PISMO2 2
+module work VTE_PI 2
+module work FLASH_1x1_HTII_BYTEMODE 2
+module work FLASH_HTII_module_byte 2
+module work FLASH_1x1_HTII_WORDMODE 2
+module work FLASH_HTII_module_word 2
+module work zbt72_htii 2
+module work SRAM_HTII_1x1 2
+module work ddr2_sodimm_chip 2
+module work DDR2_1x2_SODIMM 2
+module work ddr3_chip 2
+module work DDR3_1x2 2
+module work ddr3hp_chip 2
+module work DDR3_HS_1x2_HTII 2
+module work usb3_htii_bbox 2
+module work USB3_HTII 2
+module work buffer_diff 2
+module work oscillator_diff 2
+module work reset_box 2
+module work pll_diff 2
+module work pll_se 2
+module work pll_diff_haps6x 2
+module work CON_HT3 3
+module work CON_CABLE_400_HT3 3
+module work CON_CABLE_300_HT3 3
+module work CON_CABLE_200_HT3 3
+module work CON_CABLE_150_HT3 3
+module work CON_CABLE_100_HT3 3
+module work CON_CABLE_50_HT3 3
+module work CON_CABLE_25_HT3 3
+module work EXT_CABLE40_HT3 3
+module work EXT_CABLE100_HT3 3
+module work BREAKOUT_HT3 3
+module work HTII_ADAPTER_HT3 3
+module work GPIO 3
+module work HTII_ADAPTER2_HT3 3
+module work HTII_LS_ADAPTER_HT3 3
+module work FMC_ADAPTER_HT3 3
+module work RG_LED 3
+module work FMC_CONNECTOR 3
+module work FMCL_CABLE_HT3 3
+module work FMC_PG 3
+module work LAI_HT3_SE 3
+module work LAI_HT3_SE_POD 3
+module work LAI_HT3_DIFF 3
+module work LAI_HT3_DIFF_POD 3
+module work RISER_9_HT3 3
+module work GPIO_HT3 3
+module work UART 3
+module work SER_LCD 3
+module work SE_CLK 3
+module work RSIG 3
+module work SRAM_HT3 3
+module work SRAM_HT3_RAM 3
+module work RGY_LED 3
+module work DDR3_SODIMM2R_HT3 3
+module work DDR3_SODIMM_HT3_DIMM 3
+module work DDR3_OSC2 3
+module work DDR3_SODIMM_HT3 3
+module work DDR3_OSC 3
+module work DTD_MEM 3
+module work DDR4_HT3 3
+module work DDR4_HT3_DIMM 3
+module work DDR4_OSC 3
+module work DDR4_U16GB_HT3 3
+module work LPDDR3_HT3 3
+module work LPDDR3_HT3_DRAM 3
+module work LPDDR4_HT3 3
+module work LPDDR4_HT3_DRAM 3
+module work LPDDR5_HT3 3
+module work LPDDR5_HT3_DRAM 3
+module work DDR4_BC_HT3 3
+module work LAB_HT3 3
+module work JUNO_ADAPTER_HT3 3
+module work JUNO_ADAPTER_HT3_BBOX 3
+module work pll7x 3
+module work SI5338 3
+module work BTN 3
+module work URST 3
+module work CLKSTOP 3
+module work CON_3X_HT3 4
+module work CON_CABLE_700_HT3 4
+module work CON_CABLE_500_HT3 4
+module work CON_2SPLIT200_HT3 4
+module work QHT3_ADAPTER_HT3 4
+module work CON_CABLE_100_QHT3 4
+module work CON_CABLE_200_QHT3 4
+module work CON_CABLE_400_QHT3 4
+module work RISER1_MGB 5
+module work RISER8_MGB 5
+module work PCIE4_MGB 5
+module work PCIE4_BBOX 5
+module work PCIE4_MMCX_BBOX 5
+module work SATA4_MGB 5
+module work SATA4_BBOX 5
+module work ETH4_MGB 5
+module work ETH4_BBOX 5
+module work PCIE8_PDL_MGB 5
+module work PCIE8_BBOX 5
+module work QSFPPLUS_MGB 5
+module work QSFP_BBOX 5
+module work REFCLK_BBOX 5
+module work GPIO_BBOX 5
+module work QSFPPLUS_MGB_LINK 5
+module work SATA4_MGB_LINK 5
+module work SATA4_CLK_BBOX 5
+module work QSFPPLUS_CABLE 5
+module work SATA_CABLE 5
+module work MGB_FLEX_CABLE 5
+module work ML_REFCLK_BBOX 5
+module work CON_2X1A_68 6
+module work mylab 6
+module work myLAB_1X1 6
+module work ECDB 7
+module work CLK_CABLE_HC2 10
+module work HC2_ADAPTER_HC1 10
+module work COAX_BUFFER_1_8 10
+module work COAX_ADAPTER_HC2 10
+module work CLK_HUB_HC2 10
+module work CLK_QHUB_HC2 10
+module work CON_CABLE_20_MGB2 11
+module work CON_CABLE_25_MGB2 11
+module work CON_CABLE_60_MGB2 11
+module work CON_CABLE_100_MGB2 11
+module work CON_CABLE_200_MGB2 11
+module work CON_CABLE_300_MGB2 11
+module work CON_CABLE_500_MGB2 11
+module work CON_CABLE_700_MGB2 11
+module work MGB_ADAPTER_MGB2 11
+module work MGB_ADAPTER_IP_BBOX 11
+module work MGB_ADP_MGB2_RM 11
+module work CON_CABLE_25_MGB2B 11
+module work HAPS100_4F_clk 9
+module work SI5340 9
+module work XCVU19PFSVA3824 13
+module work FPGA100_4F 12
+module work HAPS100_4F 8
+module work TOP_IO_HT3 14
+module work haps100 0

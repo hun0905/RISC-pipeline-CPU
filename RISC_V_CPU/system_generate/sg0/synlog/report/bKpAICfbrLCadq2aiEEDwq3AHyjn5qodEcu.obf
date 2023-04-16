@@ -1,0 +1,26 @@
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+**** Begin Compile Point : FB1_uA ****
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF286 |Writing single-chip design and constraint files...
+@N: BW136 |Creating template for system level timing setup file slp_system_timing.fdc
+**** End Compile Point : FB1_uA ****
+**** Begin Compile Point : FB1_uB ****
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF286 |Writing single-chip design and constraint files...
+@N: BW135 |Skipping creation of system level timing setup constraint file slp_system_timing.fdc since the file already exists
+**** End Compile Point : FB1_uB ****
+**** Begin Compile Point : FB1_uC ****
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF286 |Writing single-chip design and constraint files...
+@N: BW135 |Skipping creation of system level timing setup constraint file slp_system_timing.fdc since the file already exists
+**** End Compile Point : FB1_uC ****
+**** Begin Compile Point : FB1_uD ****
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF286 |Writing single-chip design and constraint files...
+@N: BW135 |Skipping creation of system level timing setup constraint file slp_system_timing.fdc since the file already exists
+**** End Compile Point : FB1_uD ****

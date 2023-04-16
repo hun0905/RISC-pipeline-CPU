@@ -1,0 +1,6 @@
+DEFAULT : /home/u108/u108061217/RISC-V-pipeline-CPU/.
+PA_INIT_REG : /usr/cadtool/csr5306/synopsys/vcs/Q-2020.03-SP2-10-T-20220405/linux64/packages/pa_init_reg
+SNPS_MSV : /usr/cadtool/csr5306/synopsys/vcs/Q-2020.03-SP2-10-T-20220405/linux64/packages/snps_msv_nettype_pkg
+UC_SVLOG_LIB : /usr/cadtool/csr5306/synopsys/vcs/Q-2020.03-SP2-10-T-20220405/linux64/packages/uc_svlog
+UC_VLOG_LIB : /usr/cadtool/csr5306/synopsys/vcs/Q-2020.03-SP2-10-T-20220405/linux64/packages/uc_vlog
+VCS_SYSC_LIB : /home/u108/u108061217/RISC-V-pipeline-CPU/simv.daidir/sysclib

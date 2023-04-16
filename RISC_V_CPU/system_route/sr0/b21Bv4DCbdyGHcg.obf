@@ -1,0 +1,1344 @@
+# feedthrough nets and split nets
+net_route {ALUOUTMEM[39]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_B[9]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI3_N[1]} 
+net_route {REGWRITEWB}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_D[0] FB1.AI2_U[3]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C1_D[11]} \
+	-from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_A[0]} 
+net_route {ALUOUTMEM[7]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1_C1_D[7] FB1_A10_C[7] FB1.AI3_P[8]} 
+net_route {DMOUTWB[28]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_D[0] FB1.AI1_N[15]} 
+net_route {WRITEDATAWB[54]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_B[7] FB1_A2_B[1]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_C[9]} 
+net_route {ALUOUTMEM[44]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_B[4]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_B[6]} 
+net_route {WRITEDATAWB[49]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_C[0] FB1_A2_B[6]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_D[4]} 
+net_route {WRITEDATAWB[33]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_A[3] FB1_A1_A[8]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI1_U[1]} 
+net_route {ALUOUTMEM[18]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_D[6]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_C[11]} 
+net_route {ALUOUTMEM[27]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_C[9]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_C[6]} 
+net_route {WRITEDATAWB[34]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_A[2] FB1_A1_A[7]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI1_P[21]} 
+net_route {ALUOUTMEM[43]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_B[5]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI1_N[21]} 
+net_route {WRITEDATAWB[62]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_A[12] FB1_A2_A[6]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_B[7]} 
+net_route {DMOUTWB[19]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_A[9] FB1.AI1_P[15]} 
+net_route {ALUOUTMEM[24]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_D[0]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_C[8]} 
+net_route {ALUOUTMEM[11]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B2_D[12]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI3_P[2]} 
+net_route {WRITEDATAWB[32]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_A[4] FB1_A1_A[9]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI1_U[2]} 
+net_route {WRITEDATAWB[47]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_C[2] FB1_A2_B[8]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_D[6]} 
+net_route {ALUOUTMEM[63]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B2_A[1]|3} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_A_1} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_A_1} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_A[12]} 
+net_route {WRITEDATAWB[25]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_A[11] FB1_A1_B[4]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI1_P[9]} 
+net_route {WRITEDATAWB[28]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_A[8] FB1_A1_B[1]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI1_N[9]} 
+net_route {WRITEDATAWB[37]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_D[0] FB1_A3_A[0]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI1_P[15]} 
+net_route {WRITEDATAWB[39]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_C[10] FB1_A2_C[8]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI1_P[9]} 
+net_route {WRITEDATAWB[40]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_C[9] FB1_A2_C[7]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI1_P[8]} 
+net_route {WRITEDATAWB[41]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_C[8] FB1_A2_C[6]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_D[12]} 
+net_route {DMOUTWB[26]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_A[2] FB1.AI1_N[17]} 
+net_route {WRITEDATAWB[42]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_C[7] FB1_A2_C[5]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_D[11]} 
+net_route {WRITEDATAWB[44]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_C[5] FB1_A2_B[11]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_D[9]} 
+net_route {ALUOUTMEM[14]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_D[10]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI3_P[1]} 
+net_route {WRITEDATAWB[57]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_B[4] FB1_A2_A[11]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_C[4]} 
+net_route {WRITEDATAWB[46]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_C[3] FB1_A2_B[9]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_D[7]} 
+net_route {WRITEDATAWB[48]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_C[1] FB1_A2_B[7]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_D[5]} 
+net_route {WRITEDATAWB[50]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_B[11] FB1_A2_B[5]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_D[1]} 
+net_route {WRITEDATAWB[51]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_B[10] FB1_A2_B[4]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_D[0]} 
+net_route {WRITEDATAWB[52]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_B[9] FB1_A2_B[3]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_C[11]} 
+net_route {WRITEDATAWB[53]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_B[8] FB1_A2_B[2]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_C[10]} 
+net_route {WRITEDATAWB[55]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_B[6] FB1_A2_B[0]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_C[8]} 
+net_route {WRITEDATAWB[58]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_B[3] FB1_A2_A[10]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_B[11]} 
+net_route {WRITEDATAWB[59]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_B[2] FB1_A2_A[9]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_B[10]} 
+net_route {WRITEDATAWB[60]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_B[1] FB1_A2_A[8]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_B[9]} 
+net_route {WRITEDATAWB[61]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_B[0] FB1_A2_A[7]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_B[8]} 
+net_route {WRITEDATAWB[63]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_A[11] FB1_A2_A[5]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_B[6]} 
+net_route {ALUOUTMEM[30]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_C[6]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_C[4]} 
+net_route {DMOUTWB[16]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_A[12] FB1.AI1_P[20]} 
+net_route {ALUOUTMEM[26]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_C[10]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI3_N[6]} 
+net_route {ALUOUTMEM[12]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B2_A[12]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_D[3]} 
+net_route {DMOUTWB[0]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_C[3] FB1.AI3_P[4]} 
+net_route {ALUOUTMEM[15]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_D[9]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_D[1]} 
+net_route {DMOUTWB[3]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_C[0] FB1.AI3_P[1]} 
+net_route {ALUOUTMEM[0]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1.DI2_N[9] FB1_A10_D[2] FB1.BI3_N[2]} 
+net_route {ALUOUTMEM[6]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1_C1_D[8] FB1_A10_C[8] FB1.AI3_P[9]} 
+net_route {ALUOUTMEM[19]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_D[5]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI3_N[9]} 
+net_route {ALUOUTMEM[51]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_A[9]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI1_N[15]} 
+net_route {ALUOUTMEM[52]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_A[8]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_B[1]} 
+net_route {ALUOUTMEM[54]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_A[6]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI1_N[10]} 
+net_route {ALUOUTMEM[55]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_A[5]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_A[11]} 
+net_route {DMOUTWB[13]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_B[2] FB1.AI3_N[1]} 
+net_route {ALUOUTMEM[36]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_C[0]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_C[0]} 
+net_route {DMOUTWB[8]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_B[7] FB1.AI3_N[6]} 
+net_route {DMOUTWB[4]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_B[11] FB1.AI3_N[10]} 
+net_route {ALUOUTMEM[34]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_C[2]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI3_N[3]} 
+net_route {WRITEDATAWB[3]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_C[8] FB1_A1_D[6]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI3_P[4]} 
+net_route {ADDOUTID[42]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A3_D[11]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_D[6]} 
+net_route {WRITEDATAWB[23]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_B[0] FB1_A1_B[6]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI3_P[4]} 
+net_route {ADDOUTID[62]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A2_D[8]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_C[9]} 
+net_route {WRITEDATAWB[1]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_C[10] FB1.AI2_P[9]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI3_P[6]} 
+net_route {ADDOUTID[40]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A4_C[8]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_D[7]} 
+net_route {WRITEDATAWB[0]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_C[11] FB1.AI2_U[1]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI3_P[9]} 
+net_route {ADDOUTID[39]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A4_C[9]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_D[4]} 
+net_route {WRITEDATAWB[5]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_C[6] FB1_A1_D[4]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI3_P[2]} 
+net_route {ADDOUTID[44]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A3_D[9]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_D[4]} 
+net_route {ADDOUTID[41]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A3_D[12]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_D[2]} 
+net_route {WRITEDATAWB[2]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_C[9] FB1.AI2_N[9]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI3_P[5]} 
+net_route {WRWB[2]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_A[3] FB1_A1_A[2]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_B[3]} 
+net_route {ADDOUTID[36]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A4_D[0]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_D[4]} 
+net_route {DMOUTWB[63]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_A[2] FB1_A3_C[8]} 
+net_route {WRMEM[4]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1_C1_A[0] FB1_A7_A[6] FB1_A2_A[0]} 
+net_route {ADDOUTID[33]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A4_D[5]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_D[3]} 
+net_route {DMOUTWB[62]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_A[3] FB1_A3_C[9]} 
+net_route {WRMEM[3]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1_C1_A[1] FB1_A7_A[7] FB1_A2_A[1]} 
+net_route {ADDOUTID[32]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A1_D[8]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_D[6]} 
+net_route {ADDOUTID[35]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A4_D[1]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_D[5]} 
+net_route {WRWB[1]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_A[4] FB1_A1_A[3]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_B[4]} 
+net_route {WRWB[4]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_A[1] FB1_A1_A[0]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_B[1]} 
+net_route {ADDOUTID[38]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A4_C[10]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_D[5]} 
+net_route {DMOUTWB[58]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_A[7] FB1_A4_A[3]} 
+net_route {ADDOUTID[28]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A4_D[8]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_D[5]} 
+net_route {DMOUTWB[53]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_A[12] FB1_A4_A[8]} 
+net_route {MEMREADMEM}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1_C1_A[7] FB1_A8_D[1] FB1_A3_A[1]} 
+net_route {ADDOUTID[23]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.AI1_U[2]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_D[8]} 
+net_route {DMOUTWB[52]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_B[0] FB1_A4_A[9]} 
+net_route {MEMREADEX}\
+	-from {FB1.uB} -to {FB1.uC} -through {FB1.uA FB1.uD} -using_trace {FB1_A1_B[8] FB1_A10_A[1] FB1.DI2_P[9]} 
+net_route {ADDOUTID[22]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.AI1_U[3]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_D[8]} 
+net_route {ALUOUTMEM[48]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_B[0]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_B[3]} 
+net_route {DMOUTWB[7]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_B[8] FB1.AI3_N[7]} 
+net_route {WRITEDATAWB[38]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_C[11] FB1_A2_C[9]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI1_P[10]} 
+net_route {ALUOUTMEM[1]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1.CI2_U[3] FB1_A10_D[1] FB1.BI3_N[1]} 
+net_route {DMOUTWB[49]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_B[3] FB1_A4_A[12]} 
+net_route {ADDOUTID[19]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI1_N[9]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_D[9]} 
+net_route {DMOUTWB[51]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_B[1] FB1_A4_A[10]} 
+net_route {ADDOUTID[21]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI1_N[7]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_D[8]} 
+net_route {DMOUTWB[48]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_B[4] FB1_A4_B[0]} 
+net_route {ADDOUTID[18]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI1_P[7]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_D[10]} 
+net_route {DMOUTWB[45]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_B[7] FB1_A4_B[3]} 
+net_route {ADDOUTID[15]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI3_N[3]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_D[11]} 
+net_route {DMOUTWB[47]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_B[5] FB1_A4_B[1]} 
+net_route {ADDOUTID[17]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI1_P[8]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_D[9]} 
+net_route {WRWB[0]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_A[5] FB1_A1_A[4]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_B[5]} 
+net_route {ADDOUTID[34]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A4_D[4]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_D[2]} 
+net_route {WRITEDATAWB[4]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_C[7] FB1_A1_D[5]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI3_P[3]} 
+net_route {ADDOUTID[43]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A3_D[10]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_D[5]} 
+net_route {DMOUTWB[50]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_B[2] FB1_A4_A[11]} 
+net_route {ADDOUTID[20]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI1_N[8]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_D[9]} 
+net_route {WRITEDATAWB[6]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_C[5] FB1_A1_D[3]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI3_P[1]} 
+net_route {ADDOUTID[45]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A1_D[7]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_D[3]} 
+net_route {DMOUTWB[44]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_B[8] FB1_A4_B[4]} 
+net_route {ADDOUTID[14]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI3_N[4]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_D[10]} 
+net_route {DMOUTWB[2]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_C[1] FB1.AI3_P[2]} 
+net_route {DMOUTWB[9]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_B[6] FB1.AI3_N[5]} 
+net_route {DMOUTWB[11]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_B[4] FB1.AI3_N[3]} 
+net_route {DMOUTWB[43]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_B[9] FB1_A4_B[5]} 
+net_route {ADDOUTID[13]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI3_N[5]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_D[11]} 
+net_route {ADDOUTID[46]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A1_B[11]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_D[3]} 
+net_route {WRITEDATAWB[7]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_C[4] FB1_A1_D[2]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI3_N[9]} 
+net_route {WRITEDATAWB[10]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_C[1] FB1_A1_C[11]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI3_N[4]} 
+net_route {ADDOUTID[49]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A3_D[6]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_D[1]} 
+net_route {WRITEDATAWB[13]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_B[10] FB1_A1_C[8]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI3_N[1]} 
+net_route {ADDOUTID[52]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A3_D[1]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_D[0]} 
+net_route {DMOUTWB[38]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_C[2] FB1_A4_B[10]} 
+net_route {ADDOUTID[8]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI3_P[2]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_VRN} 
+net_route {WRITEDATAWB[11]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_C[0] FB1_A1_C[10]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI3_N[3]} 
+net_route {ADDOUTID[50]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A3_D[5]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_D[1]} 
+net_route {ALUOUTMEM[23]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_D[1]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI3_N[7]} 
+net_route {DMOUTWB[41]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_B[11] FB1_A4_B[7]} 
+net_route {ADDOUTID[11]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI3_N[9]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_D[10]} 
+net_route {WRITEDATAWB[20]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_B[3] FB1_A1_C[1]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI3_P[7]} 
+net_route {ADDOUTID[59]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A1_B[10]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_C[10]} 
+net_route {DMOUTWB[61]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_A[4] FB1_A4_A[0]} 
+net_route {WRMEM[2]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1_C1_A[2] FB1_A7_A[8] FB1_A2_A[2]} 
+net_route {ADDOUTID[31]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A1_D[9]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_D[4]} 
+net_route {WREX[1]}\
+	-from {FB1.uB} -to {FB1.uC} -through {FB1.uA FB1.uD} -using_trace {FB1_A2_D[0] FB1_A9_A[0] FB1_C1_D[9]} 
+net_route {ADDOUTID[25]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A4_D[11]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_D[6]} 
+net_route {DMOUTWB[55]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_A[10] FB1_A4_A[6]} 
+net_route {DMOUTWB[39]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_C[1] FB1_A4_B[9]} 
+net_route {ADDOUTID[9]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A1_D[10]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_D[10]} 
+net_route {DMOUTWB[35]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_C[5] FB1_A4_C[5]} 
+net_route {ADDOUTID[5]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI3_P[5]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_VRN} 
+net_route {DMOUTWB[29]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_C[11] FB1.AI1_N[10]} 
+net_route {WRITEDATAWB[8]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_C[3] FB1_A1_D[1]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI3_N[6]} 
+net_route {ADDOUTID[47]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A3_D[8]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_D[1]} 
+net_route {DMOUTWB[56]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_A[9] FB1_A4_A[5]} 
+net_route {ADDOUTID[26]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A4_D[10]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_D[8]} 
+net_route {WREX[2]}\
+	-from {FB1.uB} -to {FB1.uC} -through {FB1.uA FB1.uD} -using_trace {FB1_A2_C[11] FB1_A8_A[0] FB1_C1_B[11]} 
+net_route {DMOUTWB[59]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_A[6] FB1_A4_A[2]} 
+net_route {WRMEM[0]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1_C1_A[4] FB1_A7_A[10] FB1_A2_A[4]} 
+net_route {ADDOUTID[29]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A4_D[7]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_D[6]} 
+net_route {DMOUTWB[24]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_A[4] FB1.AI1_N[21]} 
+net_route {WRWB[3]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_A[2] FB1_A1_A[1]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_B[2]} 
+net_route {ADDOUTID[37]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A4_C[11]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_D[3]} 
+net_route {DMOUTWB[42]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_B[10] FB1_A4_B[6]} 
+net_route {ADDOUTID[12]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI3_N[6]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_D[12]} 
+net_route {WRITEDATAWB[31]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_A[5] FB1_A1_A[10]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI1_U[3]} 
+net_route {DMOUTWB[18]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_A[10] FB1.AI1_P[16]} 
+net_route {DMOUTWB[60]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_A[5] FB1_A4_A[1]} 
+net_route {WRMEM[1]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1_C1_A[3] FB1_A7_A[9] FB1_A2_A[3]} 
+net_route {ADDOUTID[30]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A4_D[6]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_D[7]} 
+net_route {WREX[0]}\
+	-from {FB1.uB} -to {FB1.uC} -through {FB1.uA FB1.uD} -using_trace {FB1_A2_D[1] FB1_A9_A[1] FB1_C1_D[10]} 
+net_route {ADDOUTID[24]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A4_D[12]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_D[7]} 
+net_route {DMOUTWB[54]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_A[11] FB1_A4_A[7]} 
+net_route {ALUOUTMEM[3]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1.CI2_U[1] FB1_A10_C[11] FB1.AI3_U[2]} 
+net_route {DMOUTWB[25]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_A[3] FB1.AI1_N[20]} 
+net_route {DMOUTWB[37]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_C[3] FB1_A4_B[11]} 
+net_route {ADDOUTID[7]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI3_P[3]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_D[12]} 
+net_route {ADDOUTID[1]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI2_N[9]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_VRP} 
+net_route {DMOUTWB[31]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_C[9] FB1.AI1_N[8]} 
+net_route {WRITEDATAWB[16]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_B[7] FB1_A1_C[5]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI3_U[1]} 
+net_route {ADDOUTID[55]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A3_C[10]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_C[11]} 
+net_route {DMOUTWB[32]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_C[8] FB1.AI1_N[7]} 
+net_route {ADDOUTID[2]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A1_D[11]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_D[11]} 
+net_route {WRITEDATAWB[14]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_B[9] FB1_A1_C[7]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI3_U[3]} 
+net_route {ADDOUTID[53]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A3_D[0]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_D[0]} 
+net_route {WRITEDATAWB[35]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_A[1] FB1_A1_A[6]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI1_P[20]} 
+net_route {DMOUTWB[46]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_B[6] FB1_A4_B[2]} 
+net_route {ADDOUTID[16]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI1_P[9]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_D[9]} 
+net_route {ADDOUTID[10]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI3_P[1]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_D[11]} 
+net_route {DMOUTWB[40]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_C[0] FB1_A4_B[8]} 
+net_route {DMOUTWB[33]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_C[7] FB1_A4_C[7]} 
+net_route {ADDOUTID[3]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI3_P[9]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_VRN} 
+net_route {DMOUTWB[27]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_D[1] FB1.AI1_N[16]} 
+net_route {ALUOUTMEM[56]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_A[4]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_A[10]} 
+net_route {DMOUTWB[34]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_C[6] FB1_A4_C[6]} 
+net_route {ADDOUTID[4]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI3_P[6]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_VRP} 
+net_route {WREX[3]}\
+	-from {FB1.uB} -to {FB1.uC} -through {FB1.uA FB1.uD} -using_trace {FB1_A2_C[10] FB1_A7_A[0] FB1_C1_B[10]} 
+net_route {DMOUTWB[57]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_A[8] FB1_A4_A[4]} 
+net_route {ADDOUTID[27]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A4_D[9]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_D[7]} 
+net_route {DMOUTWB[36]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_C[4] FB1_A4_C[4]} 
+net_route {ADDOUTID[6]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI3_P[4]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_D[12]} 
+net_route {ADDOUTID[0]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1.BI2_P[9]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_VRP} 
+net_route {DMOUTWB[30]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A9_C[10] FB1.AI1_N[9]} 
+net_route {WRITEDATAWB[56]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_B[5] FB1_A2_A[12]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_C[5]} 
+net_route {WRITEDATAWB[12]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_B[11] FB1_A1_C[9]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI3_N[2]} 
+net_route {ADDOUTID[51]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A3_D[4]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_D[0]} 
+net_route {ADDOUTID[48]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A3_D[7]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_D[2]} 
+net_route {WRITEDATAWB[9]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_C[2] FB1_A1_D[0]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI3_N[5]} 
+net_route {ALUOUTMEM[40]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_B[8]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_B[8]} 
+net_route {WRITEDATAWB[15]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_B[8] FB1_A1_C[6]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI3_U[2]} 
+net_route {ADDOUTID[54]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A3_C[11]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_C[11]} 
+net_route {stall}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A2_D[4]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_A[0]} 
+net_route {WRITEDATAWB[18]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_B[5] FB1_A1_C[3]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI3_P[9]} 
+net_route {ADDOUTID[57]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A2_D[11]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_C[10]} 
+net_route {WRITEDATAWB[17]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_B[6] FB1_A1_C[4]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI3_P[10]} 
+net_route {ADDOUTID[56]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A2_D[12]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_C[11]} 
+net_route {ALUOUTMEM[50]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_A[10]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_B[2]} 
+net_route {WRITEDATAWB[21]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_B[2] FB1_A1_C[0]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI3_P[6]} 
+net_route {ADDOUTID[60]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A1_B[9]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_C[9]} 
+net_route {WRITEDATAWB[22]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_B[1] FB1_A1_B[7]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI3_P[5]} 
+net_route {ADDOUTID[61]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A2_D[9]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_C[10]} 
+net_route {ADDOUTID[58]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A2_D[10]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_D[2]} 
+net_route {WRITEDATAWB[19]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_B[4] FB1_A1_C[2]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI3_P[8]} 
+net_route {WRITEDATAWB[24]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_A[12] FB1_A1_B[5]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI3_P[3]} 
+net_route {ADDOUTID[63]}\
+	-from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A2_D[7]} \
+	-from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_D[1]} 
+net_route {ALUOUTMEM[9]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1_C1_D[5] FB1_A10_C[5] FB1.AI3_P[6]} 
+net_route {DMOUTWB[15]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_B[0] FB1.AI1_P[21]} 
+net_route {ALUOUTMEM[21]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_D[3]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_C[9]} 
+net_route {DMOUTWB[23]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_A[5] FB1.AI1_P[7]} 
+net_route {ALUOUTMEM[45]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_B[3]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_B[5]} 
+net_route {WRITEDATAWB[29]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_A[7] FB1_A1_B[0]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI1_N[8]} 
+net_route {ALUOUTMEM[38]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_B[10]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_B[9]} 
+net_route {ALUOUTMEM[41]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_B[7]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI1_P[7]} 
+net_route {WRITEDATAWB[43]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_C[6] FB1_A2_C[4]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_D[10]} 
+net_route {WRITEDATAWB[30]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_A[6] FB1_A1_A[11]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI1_N[7]} 
+net_route {WRITEDATAWB[36]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_D[1] FB1_A1_A[5]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.CI1_P[16]} 
+net_route {WRITEDATAWB[27]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_A[9] FB1_A1_B[2]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI1_P[7]} 
+net_route {WRITEDATAWB[45]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A7_C[4] FB1_A2_B[10]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1_C2_D[8]} 
+net_route {ALUOUTMEM[8]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1_C1_D[6] FB1_A10_C[6] FB1.AI3_P[7]} 
+net_route {WRITEDATAWB[26]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A8_A[10] FB1_A1_B[3]} \
+	-from {FB1.uD} -to {FB1.uC} -using_trace {FB1.DI1_P[8]} 
+net_route {ALUOUTMEM[46]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_B[2]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI1_N[20]} 
+net_route {ALUOUTMEM[2]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1.CI2_U[2] FB1_A10_D[0] FB1.AI3_U[3]} 
+net_route {ALUOUTMEM[5]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1.CI2_N[9] FB1_A10_C[9] FB1.AI3_P[10]} 
+net_route {ALUOUTMEM[10]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1_C1_D[4] FB1_A10_C[4] FB1.AI3_P[5]} 
+net_route {ALUOUTMEM[17]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_D[7]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI3_N[10]} 
+net_route {ALUOUTMEM[25]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_C[11]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_C[7]} 
+net_route {ALUOUTMEM[28]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_C[8]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_C[5]} 
+net_route {ALUOUTMEM[31]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_C[5]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI3_N[4]} 
+net_route {ALUOUTMEM[33]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_C[3]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_C[2]} 
+net_route {ALUOUTMEM[35]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_C[1]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_C[1]} 
+net_route {ALUOUTMEM[49]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_A[11]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI1_N[16]} 
+net_route {ALUOUTMEM[16]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_D[8]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_D[0]} 
+net_route {ALUOUTMEM[57]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_A[3]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI1_N[9]} 
+net_route {ALUOUTMEM[59]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_A[1]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_A[9]} 
+net_route {ALUOUTMEM[60]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B2_A[1]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_A_1} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_A_1} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_A[8]} 
+net_route {ALUOUTMEM[61]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B2_A[1]|1} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_A_1} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_A_1} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI1_N[7]} 
+net_route {DMOUTWB[1]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_C[2] FB1.AI3_P[3]} 
+net_route {ALUOUTMEM[42]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_B[6]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_B[7]} 
+net_route {DMOUTWB[5]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_B[10] FB1.AI3_N[9]} 
+net_route {DMOUTWB[6]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_B[9] FB1.AI3_N[8]} 
+net_route {DMOUTWB[10]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_B[5] FB1.AI3_N[4]} 
+net_route {DMOUTWB[12]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_B[3] FB1.AI3_N[2]} 
+net_route {DMOUTWB[14]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_B[1] FB1.AI1_U[1]} 
+net_route {rst_n}\
+	-from {FB1.uA} -to {FB1.uC} -through {FB1.uB} -using_trace {FB1.AI2_U[2] FB1_B1_A[0]} \
+	-from {FB1.uA} -to {FB1.uD} -using_trace {FB1_A10_A[0]} 
+net_route {DMOUTWB[17]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_A[11] FB1.AI1_P[17]} 
+net_route {ALUOUTMEM[37]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_B[11]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI3_N[2]} 
+net_route {DMOUTWB[20]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_A[8] FB1.AI1_P[10]} 
+net_route {ALUOUTMEM[53]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_A[7]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_B[0]} 
+net_route {ALUOUTMEM[4]}\
+	-from {FB1.uC} -to {FB1.uB} -through {FB1.uD FB1.uA} -using_trace {FB1.CI2_P[9] FB1_A10_C[10] FB1.AI3_U[1]} 
+net_route {DMOUTWB[21]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_A[7] FB1.AI1_P[9]} 
+net_route {ALUOUTMEM[32]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_C[4]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_C[3]} 
+net_route {ALUOUTMEM[13]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_D[11]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_D[2]} 
+net_route {ALUOUTMEM[20]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_D[4]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_C[10]} 
+net_route {ALUOUTMEM[47]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_B[1]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_B[4]} 
+net_route {ALUOUTMEM[58]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_A[2]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI1_N[8]} 
+net_route {ALUOUTMEM[62]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B2_A[1]|2} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_A_1} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_A_1} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_B[0]} 
+net_route {DMOUTWB[22]}\
+	-from {FB1.uD} -to {FB1.uB} -through {FB1.uA} -using_trace {FB1_A10_A[6] FB1.AI1_P[8]} 
+net_route {ALUOUTMEM[22]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_D[2]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI3_N[8]} 
+net_route {ALUOUTMEM[29]}\
+	-from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B1_C[7]} \
+	-from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI3_N[5]} 
+# direct nets 
+net_route {clk} -from {FB1.PLL1} -to {FB1.uA FB1.uB FB1.uC FB1.uD} -using_trace {GCLK1}
+net_route {IMMID[53]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_A[11]}
+net_route {IMMID[54]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_B[8]}
+net_route {IMMID[55]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_B[6]}
+net_route {IMMID[56]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_B[7]}
+net_route {IMMID[57]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_B[6]}
+net_route {IMMID[58]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_B[5]}
+net_route {IMMID[59]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_B[7]}
+net_route {IMMID[60]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_B[5]}
+net_route {IMMID[61]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_B[4]}
+net_route {IMMID[62]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_B[3]}
+net_route {IMMID[63]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_B[6]}
+net_route {N_1} -from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A2_D[6]}
+net_route {PCSRCID} -from {FB1.uB} -to {FB1.uA} -using_trace {FB1_A2_D[5]}
+net_route {PC[0]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_B[4]}
+net_route {PC[1]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_B[2]}
+net_route {PC[2]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_A[10]}
+net_route {PC[3]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_B[5]}
+net_route {PC[4]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_B[4]}
+net_route {PC[5]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_B[3]}
+net_route {PC[6]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_B[3]}
+net_route {PC[7]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_B[1]}
+net_route {PC[8]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_A[9]}
+net_route {PC[9]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_B[0]}
+net_route {PC[10]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_B[2]}
+net_route {PC[11]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_B[1]}
+net_route {PC[12]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_B[2]}
+net_route {PC[13]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_A[12]}
+net_route {PC[14]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_A[11]}
+net_route {PC[15]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_B[0]}
+net_route {PC[16]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_A[12]}
+net_route {PC[17]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_A[11]}
+net_route {PC[18]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_B[1]}
+net_route {PC[19]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_A[10]}
+net_route {PC[20]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_A[9]}
+net_route {PC[21]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_A[8]}
+net_route {PC[22]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_A[7]}
+net_route {PC[23]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_A[6]}
+net_route {PC[24]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_B[0]}
+net_route {PC[25]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_A[10]}
+net_route {PC[26]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_A[9]}
+net_route {PC[27]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_A[5]}
+net_route {PC[28]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_A[8]}
+net_route {PC[29]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_A[8]}
+net_route {PC[30]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_A[7]}
+net_route {PC[31]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_A[12]}
+net_route {PC[32]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_A[7]}
+net_route {PC[33]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_A[11]}
+net_route {PC[34]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_A[10]}
+net_route {PC[35]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_A[6]}
+net_route {PC[36]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_A[6]}
+net_route {PC[37]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_A[5]}
+net_route {PC[38]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_A[4]}
+net_route {PC[39]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_A[5]}
+net_route {PC[40]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_A[4]}
+net_route {PC[41]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_A[3]}
+net_route {PC[42]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_A[2]}
+net_route {PC[43]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_A[3]}
+net_route {PC[44]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_A[4]}
+net_route {PC[45]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_A[2]}
+net_route {PC[46]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_A[9]}
+net_route {PC[47]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_A[1]}
+net_route {PC[48]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_A[3]}
+net_route {PC[49]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_A[1]}
+net_route {PC[50]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_A[8]}
+net_route {PC[51]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_A[7]}
+net_route {PC[52]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_A[2]}
+net_route {PC[53]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_A[0]}
+net_route {PC[54]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_A[0]}
+net_route {PC[55]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_A[6]}
+net_route {PC[56]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_A[5]}
+net_route {PC[57]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_A[4]}
+net_route {PC[58]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_A[1]}
+net_route {PC[59]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_A[3]}
+net_route {PC[60]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_A[0]}
+net_route {PC[61]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_A[2]}
+net_route {PC[62]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_A[1]}
+net_route {PC[63]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_A[0]}
+net_route {in_enable} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_D[5]}
+net_route {in_instruc[0]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_C[8]}
+net_route {in_instruc[1]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_D[4]}
+net_route {in_instruc[2]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_C[7]}
+net_route {in_instruc[3]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_C[6]}
+net_route {in_instruc[4]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_C[5]}
+net_route {in_instruc[5]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_D[3]}
+net_route {in_instruc[6]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_C[4]}
+net_route {in_instruc[7]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_C[6]}
+net_route {in_instruc[8]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_C[11]}
+net_route {in_instruc[9]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_C[5]}
+net_route {in_instruc[10]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_C[10]}
+net_route {in_instruc[11]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_D[2]}
+net_route {in_instruc[12]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_C[4]}
+net_route {in_instruc[13]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_D[1]}
+net_route {in_instruc[14]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_C[3]}
+net_route {in_instruc[15]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_D[0]}
+net_route {in_instruc[16]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_C[11]}
+net_route {in_instruc[17]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_C[3]}
+net_route {in_instruc[18]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_C[9]}
+net_route {in_instruc[19]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_C[8]}
+net_route {in_instruc[20]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_C[2]}
+net_route {in_instruc[21]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_C[2]}
+net_route {in_instruc[22]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_C[1]}
+net_route {in_instruc[23]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_C[0]}
+net_route {in_instruc[24]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_C[7]}
+net_route {in_instruc[25]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_C[1]}
+net_route {in_instruc[26]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_C[0]}
+net_route {in_instruc[27]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_C[10]}
+net_route {in_instruc[28]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_C[6]}
+net_route {in_instruc[29]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_B[11]}
+net_route {in_instruc[30]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_B[10]}
+net_route {in_instruc[31]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_C[5]}
+net_route {Addr[2]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_VRP}
+net_route {Addr[3]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_VRP}
+net_route {Addr[4]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_VRP}
+net_route {Addr[5]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_VRN}
+net_route {Addr[6]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_D[12]}
+net_route {Addr[7]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_VRN}
+net_route {Addr[8]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_D[11]}
+net_route {Addr[9]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_D[12]}
+net_route {Addr[10]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_VRN}
+net_route {Addr[11]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_D[10]}
+net_route {Addr[12]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_D[12]}
+net_route {Addr[13]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_VRP}
+net_route {Addr[14]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_D[11]}
+net_route {Addr[15]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_D[10]}
+net_route {Addr[16]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_D[11]}
+net_route {Addr[17]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_D[9]}
+net_route {Addr[18]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_D[8]}
+net_route {Addr[19]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_D[7]}
+net_route {Addr[20]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_D[10]}
+net_route {Addr[21]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_VRN}
+net_route {Addr[22]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_D[6]}
+net_route {Addr[23]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_D[5]}
+net_route {Addr[24]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_D[9]}
+net_route {Addr[25]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_D[4]}
+net_route {Addr[26]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_D[3]}
+net_route {Addr[27]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_D[12]}
+net_route {Addr[28]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_D[8]}
+net_route {Addr[29]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_D[11]}
+net_route {Addr[30]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_D[7]}
+net_route {Addr[31]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_D[2]}
+net_route {Addr[32]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_D[6]}
+net_route {Addr[33]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_D[5]}
+net_route {Addr[34]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_D[9]}
+net_route {Addr[35]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_D[8]}
+net_route {Addr[36]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_D[4]}
+net_route {Addr[37]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_D[1]}
+net_route {Addr[38]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_D[7]}
+net_route {Addr[39]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_D[0]}
+net_route {Addr[40]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_D[6]}
+net_route {Addr[41]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_D[10]}
+net_route {Addr[42]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_D[5]}
+net_route {Addr[43]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_D[4]}
+net_route {Addr[44]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_D[3]}
+net_route {Addr[45]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_D[3]}
+net_route {Addr[46]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_C[11]}
+net_route {Addr[47]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_D[9]}
+net_route {Addr[48]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_D[8]}
+net_route {Addr[49]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_D[2]}
+net_route {Addr[50]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_D[1]}
+net_route {Addr[51]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_D[2]}
+net_route {Addr[52]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_D[0]}
+net_route {Addr[53]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_C[10]}
+net_route {Addr[54]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_C[11]}
+net_route {Addr[55]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_D[1]}
+net_route {Addr[56]} -from {TOP_IO_HT3_FB1_A6} -to {FB1.uA} -using_trace {FB1_A6_D[0]}
+net_route {Addr[57]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_C[9]}
+net_route {Addr[58]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_C[8]}
+net_route {Addr[59]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_D[7]}
+net_route {Addr[60]} -from {TOP_IO_HT3_FB1_A11} -to {FB1.uA} -using_trace {FB1_A11_C[7]}
+net_route {Addr[61]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_C[10]}
+net_route {Addr[62]} -from {TOP_IO_HT3_FB1_A12} -to {FB1.uA} -using_trace {FB1_A12_D[6]}
+net_route {Addr[63]} -from {TOP_IO_HT3_FB1_A5} -to {FB1.uA} -using_trace {FB1_A5_C[9]}
+net_route {INSTRUCID[0]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_C[7]}
+net_route {INSTRUCID[1]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_C[6]}
+net_route {INSTRUCID[2]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_C[5]}
+net_route {INSTRUCID[3]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_C[4]}
+net_route {INSTRUCID[4]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_B[11]}
+net_route {INSTRUCID[5]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_B[10]}
+net_route {INSTRUCID[6]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_B[9]}
+net_route {INSTRUCID[7]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_B[8]}
+net_route {INSTRUCID[8]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_B[7]}
+net_route {INSTRUCID[9]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_B[6]}
+net_route {INSTRUCID[10]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_B[5]}
+net_route {INSTRUCID[11]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_B[4]}
+net_route {INSTRUCID[15]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_B[3]}
+net_route {INSTRUCID[16]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_B[2]}
+net_route {INSTRUCID[17]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_B[1]}
+net_route {INSTRUCID[18]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_B[0]}
+net_route {INSTRUCID[19]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_A[12]}
+net_route {INSTRUCID[20]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_A[11]}
+net_route {INSTRUCID[21]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_A[10]}
+net_route {INSTRUCID[22]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_A[9]}
+net_route {INSTRUCID[23]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_A[8]}
+net_route {INSTRUCID[24]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_A[7]}
+net_route {INSTRUCID[25]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_A[6]}
+net_route {INSTRUCID[26]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_A[5]}
+net_route {INSTRUCID[28]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_A[4]}
+net_route {INSTRUCID[29]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_A[3]}
+net_route {INSTRUCID[31]} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_A[2]}
+net_route {IMMID[11]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_B[11]}
+net_route {IMMID[12]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_C[4]}
+net_route {IMMID[13]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_C[9]}
+net_route {IMMID[14]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_C[8]}
+net_route {IMMID[15]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_C[3]}
+net_route {IMMID[16]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_C[7]}
+net_route {IMMID[17]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_C[2]}
+net_route {IMMID[18]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_B[9]}
+net_route {IMMID[19]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_B[10]}
+net_route {IMMID[20]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_B[9]}
+net_route {IMMID[22]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_B[8]}
+net_route {IMMID[24]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_C[6]}
+net_route {IMMID[25]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_B[7]}
+net_route {IMMID[26]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_B[6]}
+net_route {IMMID[28]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_C[5]}
+net_route {IMMID[29]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_B[5]}
+net_route {IMMID[30]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_C[4]}
+net_route {IMMID[31]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_C[1]}
+net_route {IMMID[32]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_B[4]}
+net_route {IMMID[33]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_C[0]}
+net_route {IMMID[34]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_C[3]}
+net_route {IMMID[35]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_B[3]}
+net_route {IMMID[36]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_B[8]}
+net_route {IMMID[37]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_C[2]}
+net_route {IMMID[38]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_B[2]}
+net_route {IMMID[39]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_B[1]}
+net_route {IMMID[40]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_C[1]}
+net_route {IMMID[41]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_C[0]}
+net_route {IMMID[42]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A5} -using_trace {FB1_A5_B[7]}
+net_route {IMMID[43]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_B[0]}
+net_route {IMMID[44]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_B[11]}
+net_route {IMMID[45]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_B[10]}
+net_route {IMMID[46]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_B[11]}
+net_route {IMMID[47]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_B[10]}
+net_route {IMMID[48]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_B[9]}
+net_route {IMMID[49]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A6} -using_trace {FB1_A6_B[8]}
+net_route {IMMID[50]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A11} -using_trace {FB1_A11_A[12]}
+net_route {IMMID[51]} -from {FB1.uA} -to {TOP_IO_HT3_FB1_A12} -using_trace {FB1_A12_B[9]}
+net_route {RD1ID[0]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_C[8]}
+net_route {RD1ID[1]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_C[10]}
+net_route {RD1ID[2]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_C[9]}
+net_route {RD1ID[3]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_C[6]}
+net_route {RD1ID[4]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_C[8]}
+net_route {RD1ID[5]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_C[1]}
+net_route {RD1ID[6]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_C[7]}
+net_route {RD1ID[7]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_C[5]}
+net_route {RD1ID[8]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_C[7]}
+net_route {RD1ID[9]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_C[4]}
+net_route {RD1ID[10]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_C[6]}
+net_route {RD1ID[11]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_C[6]}
+net_route {RD1ID[12]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_C[5]}
+net_route {RD1ID[13]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_C[3]}
+net_route {RD1ID[14]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_C[2]}
+net_route {RD1ID[15]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_C[1]}
+net_route {RD1ID[16]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_C[0]}
+net_route {RD1ID[17]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_B[11]}
+net_route {RD1ID[18]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_C[0]}
+net_route {RD1ID[19]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_B[10]}
+net_route {RD1ID[20]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_B[11]}
+net_route {RD1ID[21]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_B[10]}
+net_route {RD1ID[22]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_C[5]}
+net_route {RD1ID[23]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_C[4]}
+net_route {RD1ID[24]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_C[3]}
+net_route {RD1ID[25]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_C[4]}
+net_route {RD1ID[26]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_B[9]}
+net_route {RD1ID[27]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_C[3]}
+net_route {RD1ID[28]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_B[8]}
+net_route {RD1ID[29]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_C[2]}
+net_route {RD1ID[30]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_C[2]}
+net_route {RD1ID[31]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_B[9]}
+net_route {RD1ID[32]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_C[1]}
+net_route {RD1ID[33]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_C[0]}
+net_route {RD1ID[34]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_B[11]}
+net_route {RD1ID[35]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_C[1]}
+net_route {RD1ID[36]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_B[7]}
+net_route {RD1ID[37]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_B[10]}
+net_route {RD1ID[38]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_B[9]}
+net_route {RD1ID[39]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_B[8]}
+net_route {RD1ID[40]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_B[7]}
+net_route {RD1ID[41]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_B[8]}
+net_route {RD1ID[42]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_B[6]}
+net_route {RD1ID[43]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_C[0]}
+net_route {RD1ID[44]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_B[6]}
+net_route {RD1ID[45]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_B[7]}
+net_route {RD1ID[46]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_B[11]}
+net_route {RD1ID[47]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_B[6]}
+net_route {RD1ID[48]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_B[5]}
+net_route {RD1ID[49]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_B[5]}
+net_route {RD1ID[50]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_B[10]}
+net_route {RD1ID[51]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_B[5]}
+net_route {RD1ID[52]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_B[9]}
+net_route {RD1ID[53]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_B[4]}
+net_route {RD1ID[54]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_B[4]}
+net_route {RD1ID[55]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_B[4]}
+net_route {RD1ID[56]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_B[3]}
+net_route {RD1ID[57]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_B[3]}
+net_route {RD1ID[58]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_B[8]}
+net_route {RD1ID[59]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_B[3]}
+net_route {RD1ID[60]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_B[7]}
+net_route {RD1ID[61]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_B[2]}
+net_route {RD1ID[62]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_B[1]}
+net_route {RD1ID[63]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_B[6]}
+net_route {RD2ID[0]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_B[2]}
+net_route {RD2ID[1]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_B[1]}
+net_route {RD2ID[2]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_B[0]}
+net_route {RD2ID[3]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_B[2]}
+net_route {RD2ID[4]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_B[0]}
+net_route {RD2ID[5]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_B[5]}
+net_route {RD2ID[6]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_B[4]}
+net_route {RD2ID[7]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_B[1]}
+net_route {RD2ID[8]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_A[12]}
+net_route {RD2ID[9]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_B[3]}
+net_route {RD2ID[10]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_B[0]}
+net_route {RD2ID[11]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_B[2]}
+net_route {RD2ID[12]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_A[12]}
+net_route {RD2ID[13]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_A[12]}
+net_route {RD2ID[14]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_A[11]}
+net_route {RD2ID[15]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_B[1]}
+net_route {RD2ID[16]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_B[0]}
+net_route {RD2ID[17]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_A[11]}
+net_route {RD2ID[18]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_A[11]}
+net_route {RD2ID[19]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_A[10]}
+net_route {RD2ID[20]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_A[10]}
+net_route {RD2ID[21]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_A[9]}
+net_route {RD2ID[22]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_A[8]}
+net_route {RD2ID[23]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_A[10]}
+net_route {RD2ID[24]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_A[9]}
+net_route {RD2ID[25]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_A[7]}
+net_route {RD2ID[26]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_A[12]}
+net_route {RD2ID[27]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_A[8]}
+net_route {RD2ID[28]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_A[6]}
+net_route {RD2ID[29]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_A[9]}
+net_route {RD2ID[30]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_A[5]}
+net_route {RD2ID[31]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_A[7]}
+net_route {RD2ID[32]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_A[4]}
+net_route {RD2ID[33]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_A[8]}
+net_route {RD2ID[34]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_A[7]}
+net_route {RD2ID[35]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_A[3]}
+net_route {RD2ID[36]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_A[11]}
+net_route {RD2ID[37]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_A[10]}
+net_route {RD2ID[38]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_A[2]}
+net_route {RD2ID[39]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_A[6]}
+net_route {RD2ID[40]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_A[9]}
+net_route {RD2ID[41]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_A[8]}
+net_route {RD2ID[42]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_A[7]}
+net_route {RD2ID[43]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_A[6]}
+net_route {RD2ID[44]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_A[5]}
+net_route {RD2ID[45]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_A[4]}
+net_route {RD2ID[46]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_A[3]}
+net_route {RD2ID[47]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_A[6]}
+net_route {RD2ID[48]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_A[2]}
+net_route {RD2ID[49]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_A[5]}
+net_route {RD2ID[50]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_A[5]}
+net_route {RD2ID[51]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_A[1]}
+net_route {RD2ID[52]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_A[0]}
+net_route {RD2ID[53]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_A[4]}
+net_route {RD2ID[54]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_A[3]}
+net_route {RD2ID[55]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_A[2]}
+net_route {RD2ID[56]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_A[4]}
+net_route {RD2ID[57]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_A[1]}
+net_route {RD2ID[58]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_A[3]}
+net_route {RD2ID[59]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_A[1]}
+net_route {RD2ID[60]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_A[0]}
+net_route {RD2ID[61]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_A[2]}
+net_route {RD2ID[62]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_A[1]}
+net_route {RD2ID[63]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_A[0]}
+net_route {IMMID[0]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_C[8]}
+net_route {IMMID[1]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_C[11]}
+net_route {IMMID[2]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_C[8]}
+net_route {IMMID[3]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_C[7]}
+net_route {IMMID[4]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_C[6]}
+net_route {IMMID[5]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_C[5]}
+net_route {IMMID[6]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B5} -using_trace {FB1_B5_C[7]}
+net_route {IMMID[7]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B6} -using_trace {FB1_B6_C[9]}
+net_route {IMMID[8]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_C[4]}
+net_route {IMMID[9]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_C[3]}
+net_route {IMMID[10]} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B8} -using_trace {FB1_B8_C[2]}
+net_route {equal} -from {FB1.uB} -to {TOP_IO_HT3_FB1_B7} -using_trace {FB1_B7_D[0]}
+net_route {Addr[0]} -from {TOP_IO_HT3_FB1_C6} -to {FB1.uC} -using_trace {FB1_C6_B[6]}
+net_route {Addr[1]} -from {TOP_IO_HT3_FB1_C8} -to {FB1.uC} -using_trace {FB1_C8_B[0]}
+net_route {ALUOUTEX[0]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C5} -using_trace {FB1_C5_A[10]}
+net_route {ALUOUTEX[1]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_B[7]}
+net_route {ALUOUTEX[2]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_B[6]}
+net_route {ALUOUTEX[3]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_B[5]}
+net_route {ALUOUTEX[4]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C5} -using_trace {FB1_C5_A[9]}
+net_route {ALUOUTEX[5]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C5} -using_trace {FB1_C5_A[8]}
+net_route {ALUOUTEX[6]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_B[4]}
+net_route {ALUOUTEX[7]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C8} -using_trace {FB1_C8_A[12]}
+net_route {ALUOUTEX[8]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_B[3]}
+net_route {ALUOUTEX[9]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_B[5]}
+net_route {ALUOUTEX[10]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_B[2]}
+net_route {ALUOUTEX[11]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_B[1]}
+net_route {ALUOUTEX[12]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C8} -using_trace {FB1_C8_A[11]}
+net_route {ALUOUTEX[13]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_B[0]}
+net_route {ALUOUTEX[14]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_A[12]}
+net_route {ALUOUTEX[15]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C5} -using_trace {FB1_C5_A[7]}
+net_route {ALUOUTEX[16]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C8} -using_trace {FB1_C8_A[10]}
+net_route {ALUOUTEX[17]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_A[11]}
+net_route {ALUOUTEX[18]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_A[10]}
+net_route {ALUOUTEX[19]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_B[4]}
+net_route {ALUOUTEX[20]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_B[3]}
+net_route {ALUOUTEX[21]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_B[2]}
+net_route {ALUOUTEX[22]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_B[1]}
+net_route {ALUOUTEX[23]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_B[0]}
+net_route {ALUOUTEX[24]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_A[12]}
+net_route {ALUOUTEX[25]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C8} -using_trace {FB1_C8_A[9]}
+net_route {ALUOUTEX[26]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C5} -using_trace {FB1_C5_A[6]}
+net_route {ALUOUTEX[27]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C8} -using_trace {FB1_C8_A[8]}
+net_route {ALUOUTEX[28]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_A[9]}
+net_route {ALUOUTEX[29]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C8} -using_trace {FB1_C8_A[7]}
+net_route {ALUOUTEX[30]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C8} -using_trace {FB1_C8_A[6]}
+net_route {ALUOUTEX[31]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C5} -using_trace {FB1_C5_A[5]}
+net_route {ALUOUTEX[32]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_A[8]}
+net_route {ALUOUTEX[33]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C5} -using_trace {FB1_C5_A[4]}
+net_route {ALUOUTEX[34]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C8} -using_trace {FB1_C8_A[5]}
+net_route {ALUOUTEX[35]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C5} -using_trace {FB1_C5_A[3]}
+net_route {ALUOUTEX[36]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C8} -using_trace {FB1_C8_A[4]}
+net_route {ALUOUTEX[37]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_A[11]}
+net_route {ALUOUTEX[38]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C5} -using_trace {FB1_C5_A[2]}
+net_route {ALUOUTEX[39]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_A[7]}
+net_route {ALUOUTEX[40]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_A[6]}
+net_route {ALUOUTEX[41]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C5} -using_trace {FB1_C5_A[1]}
+net_route {ALUOUTEX[42]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_A[5]}
+net_route {ALUOUTEX[43]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_A[10]}
+net_route {ALUOUTEX[44]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_A[9]}
+net_route {ALUOUTEX[45]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C8} -using_trace {FB1_C8_A[3]}
+net_route {ALUOUTEX[46]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_A[8]}
+net_route {ALUOUTEX[47]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_A[4]}
+net_route {ALUOUTEX[48]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_A[3]}
+net_route {ALUOUTEX[49]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_A[7]}
+net_route {ALUOUTEX[50]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_A[2]}
+net_route {ALUOUTEX[51]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_A[6]}
+net_route {ALUOUTEX[52]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C8} -using_trace {FB1_C8_A[2]}
+net_route {ALUOUTEX[53]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C5} -using_trace {FB1_C5_A[0]}
+net_route {ALUOUTEX[54]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_A[5]}
+net_route {ALUOUTEX[55]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C8} -using_trace {FB1_C8_A[1]}
+net_route {ALUOUTEX[56]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_A[4]}
+net_route {ALUOUTEX[57]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_A[3]}
+net_route {ALUOUTEX[58]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C8} -using_trace {FB1_C8_A[0]}
+net_route {ALUOUTEX[59]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_A[1]}
+net_route {ALUOUTEX[60]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_A[2]}
+net_route {ALUOUTEX[61]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C6} -using_trace {FB1_C6_A[0]}
+net_route {ALUOUTEX[62]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_A[1]}
+net_route {ALUOUTEX[63]} -from {FB1.uC} -to {TOP_IO_HT3_FB1_C7} -using_trace {FB1_C7_A[0]}
+net_route {REGWRITEMEM} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_A[5]}
+net_route {MEMWRITEMEM} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C1_A[6]}
+net_route {RD2MEM[3]} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_A[11]}
+net_route {RD2MEM[5]} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_A[10]}
+net_route {RD2MEM[12]} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_A[9]}
+net_route {RD2MEM[15]} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_A[8]}
+net_route {RD2MEM[25]} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_A[7]}
+net_route {RD2MEM[27]} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_A[6]}
+net_route {RD2MEM[35]} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_A[5]}
+net_route {RD2MEM[40]} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_A[4]}
+net_route {RD2MEM[47]} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_A[3]}
+net_route {RD2MEM[49]} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_A[2]}
+net_route {RD2MEM[60]} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_A[1]}
+net_route {RD2MEM[63]} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_A[0]}
+net_route {IMMID[52]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D4} -using_trace {FB1_D4_A[0]}
+net_route {DMout[0]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D5} -using_trace {FB1_D5_B[0]}
+net_route {DMout[1]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_B[11]}
+net_route {DMout[2]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_B[10]}
+net_route {DMout[3]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_B[9]}
+net_route {DMout[4]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D4} -using_trace {FB1_D4_A[12]}
+net_route {DMout[5]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_B[8]}
+net_route {DMout[6]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D4} -using_trace {FB1_D4_A[11]}
+net_route {DMout[7]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_B[7]}
+net_route {DMout[8]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D5} -using_trace {FB1_D5_A[12]}
+net_route {DMout[9]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D5} -using_trace {FB1_D5_A[11]}
+net_route {DMout[10]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_B[6]}
+net_route {DMout[11]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_B[4]}
+net_route {DMout[12]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_B[5]}
+net_route {DMout[13]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_B[3]}
+net_route {DMout[14]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_B[2]}
+net_route {DMout[15]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_B[4]}
+net_route {DMout[16]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_B[3]}
+net_route {DMout[17]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D5} -using_trace {FB1_D5_A[10]}
+net_route {DMout[18]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_B[2]}
+net_route {DMout[19]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_B[1]}
+net_route {DMout[20]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D5} -using_trace {FB1_D5_A[9]}
+net_route {DMout[21]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D5} -using_trace {FB1_D5_A[8]}
+net_route {DMout[22]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D5} -using_trace {FB1_D5_A[7]}
+net_route {DMout[23]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D4} -using_trace {FB1_D4_A[10]}
+net_route {DMout[24]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_B[1]}
+net_route {DMout[25]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_B[0]}
+net_route {DMout[26]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_B[0]}
+net_route {DMout[27]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_A[12]}
+net_route {DMout[28]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D4} -using_trace {FB1_D4_A[9]}
+net_route {DMout[29]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D5} -using_trace {FB1_D5_A[6]}
+net_route {DMout[30]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_A[12]}
+net_route {DMout[31]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D4} -using_trace {FB1_D4_A[8]}
+net_route {DMout[32]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_A[11]}
+net_route {DMout[33]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D4} -using_trace {FB1_D4_A[7]}
+net_route {DMout[34]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_A[10]}
+net_route {DMout[35]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_A[11]}
+net_route {DMout[36]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_A[10]}
+net_route {DMout[37]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D4} -using_trace {FB1_D4_A[6]}
+net_route {DMout[38]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_A[9]}
+net_route {DMout[39]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_A[9]}
+net_route {DMout[40]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_A[8]}
+net_route {DMout[41]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_A[8]}
+net_route {DMout[42]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D4} -using_trace {FB1_D4_A[5]}
+net_route {DMout[43]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_A[7]}
+net_route {DMout[44]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_A[7]}
+net_route {DMout[45]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D5} -using_trace {FB1_D5_A[5]}
+net_route {DMout[46]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_A[6]}
+net_route {DMout[47]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_A[6]}
+net_route {DMout[48]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D5} -using_trace {FB1_D5_A[4]}
+net_route {DMout[49]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D4} -using_trace {FB1_D4_A[4]}
+net_route {DMout[50]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_A[5]}
+net_route {DMout[51]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_A[5]}
+net_route {DMout[52]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D4} -using_trace {FB1_D4_A[3]}
+net_route {DMout[53]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_A[4]}
+net_route {DMout[54]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D5} -using_trace {FB1_D5_A[3]}
+net_route {DMout[55]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_A[3]}
+net_route {DMout[56]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_A[2]}
+net_route {DMout[57]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_A[4]}
+net_route {DMout[58]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_A[3]}
+net_route {DMout[59]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D4} -using_trace {FB1_D4_A[2]}
+net_route {DMout[60]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D5} -using_trace {FB1_D5_A[2]}
+net_route {DMout[61]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_A[2]}
+net_route {DMout[62]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D6} -using_trace {FB1_D6_A[1]}
+net_route {DMout[63]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_A[1]}
+net_route {MEMTOREGWB} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D5} -using_trace {FB1_D5_A[0]}
+net_route {IMMID[21]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D5} -using_trace {FB1_D5_A[1]}
+net_route {IMMID[23]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D4} -using_trace {FB1_D4_A[1]}
+net_route {IMMID[27]} -from {FB1.uD} -to {TOP_IO_HT3_FB1_D3} -using_trace {FB1_D3_A[0]}
+# multiplexed nets 
+net_route {{PCID[0]} {PCID[1]} {PCID[2]} {PCID[3]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1.BI3_N[7]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_BI3_N_7} -tdm_net_name {TDMNetHSTDM_4_FB1_BI3_N_7} 
+net_route {{PCID[4]} {PCID[5]} {PCID[6]} {PCID[7]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1.BI3_P[7]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_BI3_P_7} -tdm_net_name {TDMNetHSTDM_4_FB1_BI3_P_7} 
+net_route {{PCID[8]} {PCID[9]} {PCID[10]} {PCID[11]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1.AI1_N[18]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_AI1_N_18} -tdm_net_name {TDMNetHSTDM_4_FB1_AI1_N_18} 
+net_route {{PCID[12]} {PCID[13]} {PCID[14]} {PCID[15]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1.AI1_P[18]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_AI1_P_18} -tdm_net_name {TDMNetHSTDM_4_FB1_AI1_P_18} 
+net_route {{PCID[16]} {PCID[17]} {PCID[18]} {PCID[19]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A4_C[1]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_A4_C_1} -tdm_net_name {TDMNetHSTDM_4_FB1_A4_C_1} 
+net_route {{PCID[20]} {PCID[21]} {PCID[22]} {PCID[23]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A4_C[0]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_A4_C_0} -tdm_net_name {TDMNetHSTDM_4_FB1_A4_C_0} 
+net_route {{PCID[24]} {PCID[25]} {PCID[26]} {PCID[27]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A4_D[3]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_A4_D_3} -tdm_net_name {TDMNetHSTDM_4_FB1_A4_D_3} 
+net_route {{PCID[28]} {PCID[29]} {PCID[30]} {PCID[31]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A4_D[2]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_A4_D_2} -tdm_net_name {TDMNetHSTDM_4_FB1_A4_D_2} 
+net_route {{PCID[32]} {PCID[33]} {PCID[34]} {PCID[35]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_C[1]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_A3_C_1} -tdm_net_name {TDMNetHSTDM_4_FB1_A3_C_1} 
+net_route {{PCID[36]} {PCID[37]} {PCID[38]} {PCID[39]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_C[0]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_A3_C_0} -tdm_net_name {TDMNetHSTDM_4_FB1_A3_C_0} 
+net_route {{PCID[40]} {PCID[41]} {PCID[42]} {PCID[43]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_D[3]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_A3_D_3} -tdm_net_name {TDMNetHSTDM_4_FB1_A3_D_3} 
+net_route {{PCID[44]} {PCID[45]} {PCID[46]} {PCID[47]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A3_D[2]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_A3_D_2} -tdm_net_name {TDMNetHSTDM_4_FB1_A3_D_2} 
+net_route {{PCID[48]} {PCID[49]} {PCID[50]} {PCID[51]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A2_C[1]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_A2_C_1} -tdm_net_name {TDMNetHSTDM_4_FB1_A2_C_1} 
+net_route {{PCID[52]} {PCID[53]} {PCID[54]} {PCID[55]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A2_C[0]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_A2_C_0} -tdm_net_name {TDMNetHSTDM_4_FB1_A2_C_0} 
+net_route {{PCID[56]} {PCID[57]} {PCID[58]} {PCID[59]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A2_D[3]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_A2_D_3} -tdm_net_name {TDMNetHSTDM_4_FB1_A2_D_3} 
+net_route {{PCID[60]} {PCID[61]} {PCID[62]} {PCID[63]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1_A2_D[2]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_A2_D_2} -tdm_net_name {TDMNetHSTDM_4_FB1_A2_D_2} 
+net_route {{INSTRUCID[12]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1.BI3_N[8]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_BI3_N_8} -tdm_net_name {TDMNetHSTDM_4_FB1_BI3_N_8} 
+net_route {{INSTRUCID[13]} {INSTRUCID[14]} {INSTRUCID[27]} {INSTRUCID[30]}} -from {FB1.uA} -to {FB1.uB} -using_trace {FB1.BI3_P[8]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_BI3_P_8} -tdm_net_name {TDMNetHSTDM_4_FB1_BI3_P_8} 
+net_route {{REGRS2_EX[3]} {REGRS2_EX[4]} {REGWRITEEX} {WREX[4]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_D[2]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_D_2} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_D_2} 
+net_route {{forwardA[0]} {forwardA[1]} {forwardB[0]} {forwardB[1]}} -from {FB1.uC} -to {FB1.uB} -using_trace {FB1_B2_A[0]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_A_0} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_A_0} 
+net_route {{RD1EX[0]} {RD1EX[1]} {RD1EX[2]} {RD1EX[3]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_A[10]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_A_10} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_A_10} 
+net_route {{RD1EX[4]} {RD1EX[5]} {RD1EX[6]} {RD1EX[7]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_A[9]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_A_9} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_A_9} 
+net_route {{RD1EX[8]} {RD1EX[9]} {RD1EX[10]} {RD1EX[11]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_A[8]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_A_8} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_A_8} 
+net_route {{RD1EX[12]} {RD1EX[13]} {RD1EX[14]} {RD1EX[15]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_D[9]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_D_9} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_D_9} 
+net_route {{RD1EX[16]} {RD1EX[17]} {RD1EX[18]} {RD1EX[19]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_D[8]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_D_8} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_D_8} 
+net_route {{RD1EX[20]} {RD1EX[21]} {RD1EX[22]} {RD1EX[23]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_D[11]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_D_11} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_D_11} 
+net_route {{RD1EX[24]} {RD1EX[25]} {RD1EX[26]} {RD1EX[27]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_D[10]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_D_10} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_D_10} 
+net_route {{RD1EX[28]} {RD1EX[29]} {RD1EX[30]} {RD1EX[31]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_D[5]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_D_5} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_D_5} 
+net_route {{RD1EX[32]} {RD1EX[33]} {RD1EX[34]} {RD1EX[35]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_D[4]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_D_4} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_D_4} 
+net_route {{RD1EX[36]} {RD1EX[37]} {RD1EX[38]} {RD1EX[39]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_D[7]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_D_7} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_D_7} 
+net_route {{RD1EX[40]} {RD1EX[41]} {RD1EX[42]} {RD1EX[43]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_D[6]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_D_6} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_D_6} 
+net_route {{RD1EX[44]} {RD1EX[45]} {RD1EX[46]} {RD1EX[47]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_D[1]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_D_1} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_D_1} 
+net_route {{RD1EX[48]} {RD1EX[49]} {RD1EX[50]} {RD1EX[51]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_D[0]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_D_0} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_D_0} 
+net_route {{RD1EX[52]} {RD1EX[53]} {RD1EX[54]} {RD1EX[55]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_C[9]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_C_9} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_C_9} 
+net_route {{RD1EX[56]} {RD1EX[57]} {RD1EX[58]} {RD1EX[59]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_C[8]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_C_8} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_C_8} 
+net_route {{RD1EX[60]} {RD1EX[61]} {RD1EX[62]} {RD1EX[63]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_B[3]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_B_3} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_B_3} 
+net_route {{RD2EX[0]} {RD2EX[1]} {RD2EX[2]} {RD2EX[3]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_B[2]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_B_2} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_B_2} 
+net_route {{RD2EX[4]} {RD2EX[5]} {RD2EX[6]} {RD2EX[7]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_A[3]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_A_3} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_A_3} 
+net_route {{RD2EX[8]} {RD2EX[9]} {RD2EX[10]} {RD2EX[11]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_A[2]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_A_2} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_A_2} 
+net_route {{RD2EX[12]} {RD2EX[13]} {RD2EX[14]} {RD2EX[15]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_B[7]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_B_7} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_B_7} 
+net_route {{RD2EX[16]} {RD2EX[17]} {RD2EX[18]} {RD2EX[19]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_B[6]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_B_6} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_B_6} 
+net_route {{RD2EX[20]} {RD2EX[21]} {RD2EX[22]} {RD2EX[23]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_B[5]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_B_5} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_B_5} 
+net_route {{RD2EX[24]} {RD2EX[25]} {RD2EX[26]} {RD2EX[27]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_B[4]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_B_4} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_B_4} 
+net_route {{RD2EX[28]} {RD2EX[29]} {RD2EX[30]} {RD2EX[31]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_B[11]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_B_11} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_B_11} 
+net_route {{RD2EX[32]} {RD2EX[33]} {RD2EX[34]} {RD2EX[35]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_B[10]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_B_10} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_B_10} 
+net_route {{RD2EX[36]} {RD2EX[37]} {RD2EX[38]} {RD2EX[39]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_C[11]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_C_11} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_C_11} 
+net_route {{RD2EX[40]} {RD2EX[41]} {RD2EX[42]} {RD2EX[43]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_C[10]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_C_10} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_C_10} 
+net_route {{RD2EX[44]} {RD2EX[45]} {RD2EX[46]} {RD2EX[47]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_C[5]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_C_5} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_C_5} 
+net_route {{RD2EX[48]} {RD2EX[49]} {RD2EX[50]} {RD2EX[51]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_C[4]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_C_4} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_C_4} 
+net_route {{RD2EX[52]} {RD2EX[53]} {RD2EX[54]} {RD2EX[55]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_C[7]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_C_7} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_C_7} 
+net_route {{RD2EX[56]} {RD2EX[57]} {RD2EX[58]} {RD2EX[59]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_C[6]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_C_6} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_C_6} 
+net_route {{RD2EX[60]} {RD2EX[61]} {RD2EX[62]} {RD2EX[63]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_C[1]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_C_1} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_C_1} 
+net_route {{FUNC7EX[5]} {FUNC7EX[6]} {IMMEX[0]} {IMMEX[1]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_A[6]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_A_6} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_A_6} 
+net_route {{IMMEX[2]} {IMMEX[3]} {IMMEX[4]} {IMMEX[5]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_A[5]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_A_5} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_A_5} 
+net_route {{IMMEX[6]} {IMMEX[7]} {IMMEX[8]} {IMMEX[9]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_A[4]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_A_4} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_A_4} 
+net_route {{IMMEX[10]} {IMMEX[11]} {IMMEX[12]} {MEMWRITEEX}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_A[11]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_A_11} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_A_11} 
+net_route {{ALUOP1EX} {ALUOP2EX} {ALUOP3EX} {ALUSRCEX}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_B[9]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_B_9} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_B_9} 
+net_route {{FUNC3EX[0]} {FUNC3EX[1]} {FUNC3EX[2]} {FUNC7EX[0]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_B[8]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_B_8} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_B_8} 
+net_route {{FUNC7EX[1]} {FUNC7EX[2]} {FUNC7EX[3]} {FUNC7EX[4]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_A[7]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_A_7} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_A_7} 
+net_route {{REGRS1_EX[0]} {REGRS1_EX[1]} {REGRS1_EX[2]} {REGRS1_EX[3]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_C[0]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_C_0} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_C_0} 
+net_route {{REGRS1_EX[4]} {REGRS2_EX[0]} {REGRS2_EX[1]} {REGRS2_EX[2]}} -from {FB1.uB} -to {FB1.uC} -using_trace {FB1_B2_D[3]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_B2_D_3} -tdm_net_name {TDMNetHSTDM_4_FB1_B2_D_3} 
+net_route {{RD2MEM[0]} {RD2MEM[1]} {RD2MEM[2]} {RD2MEM[4]}} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1.DI3_N[8]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_DI3_N_8} -tdm_net_name {TDMNetHSTDM_4_FB1_DI3_N_8} 
+net_route {{RD2MEM[6]} {RD2MEM[7]} {RD2MEM[8]} {RD2MEM[9]}} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1.DI3_P[8]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_DI3_P_8} -tdm_net_name {TDMNetHSTDM_4_FB1_DI3_P_8} 
+net_route {{RD2MEM[10]} {RD2MEM[11]} {RD2MEM[13]} {RD2MEM[14]}} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1.DI3_N[7]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_DI3_N_7} -tdm_net_name {TDMNetHSTDM_4_FB1_DI3_N_7} 
+net_route {{RD2MEM[16]} {RD2MEM[17]} {RD2MEM[18]} {RD2MEM[19]}} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1.DI3_P[7]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_DI3_P_7} -tdm_net_name {TDMNetHSTDM_4_FB1_DI3_P_7} 
+net_route {{RD2MEM[20]} {RD2MEM[21]} {RD2MEM[22]} {RD2MEM[23]}} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI1_N[17]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_CI1_N_17} -tdm_net_name {TDMNetHSTDM_4_FB1_CI1_N_17} 
+net_route {{RD2MEM[24]} {RD2MEM[26]} {RD2MEM[28]} {RD2MEM[29]}} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI1_P[17]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_CI1_P_17} -tdm_net_name {TDMNetHSTDM_4_FB1_CI1_P_17} 
+net_route {{RD2MEM[30]} {RD2MEM[31]} {RD2MEM[32]} {RD2MEM[33]}} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI1_N[18]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_CI1_N_18} -tdm_net_name {TDMNetHSTDM_4_FB1_CI1_N_18} 
+net_route {{RD2MEM[34]} {RD2MEM[36]} {RD2MEM[37]} {RD2MEM[38]}} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1.CI1_P[18]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_CI1_P_18} -tdm_net_name {TDMNetHSTDM_4_FB1_CI1_P_18} 
+net_route {{RD2MEM[39]} {RD2MEM[41]} {RD2MEM[42]} {RD2MEM[43]}} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_C[6]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_C2_C_6} -tdm_net_name {TDMNetHSTDM_4_FB1_C2_C_6} 
+net_route {{RD2MEM[44]} {RD2MEM[45]} {RD2MEM[46]} {RD2MEM[48]}} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_C[1]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_C2_C_1} -tdm_net_name {TDMNetHSTDM_4_FB1_C2_C_1} 
+net_route {{RD2MEM[50]} {RD2MEM[51]} {RD2MEM[52]} {RD2MEM[53]}} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_C[0]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_C2_C_0} -tdm_net_name {TDMNetHSTDM_4_FB1_C2_C_0} 
+net_route {{RD2MEM[54]} {RD2MEM[55]} {RD2MEM[56]} {RD2MEM[57]}} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_D[3]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_C2_D_3} -tdm_net_name {TDMNetHSTDM_4_FB1_C2_D_3} 
+net_route {{RD2MEM[58]} {RD2MEM[59]} {RD2MEM[61]} {RD2MEM[62]}} -from {FB1.uC} -to {FB1.uD} -using_trace {FB1_C2_D[2]|0} -tdm_module {HSTDM_4} -tdm_inst_name {HSTDM_4_FB1_C2_D_2} -tdm_net_name {TDMNetHSTDM_4_FB1_C2_D_2} 

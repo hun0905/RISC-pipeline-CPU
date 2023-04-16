@@ -1,0 +1,87 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|pp0
+Synopsys ProtoCompiler Partitioner/Router, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+@N: AP152 |(Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s)
+Timing graph for view MUX
+   Nodes 193 (Constrained: 0), Edges 192, Dissolve Edges 385
+   Build Time 0.00759005
+Timing graph for view MEM_WB
+   Nodes 273 (Constrained: 0), Edges 271, Dissolve Edges 562
+   Build Time 0.00527321
+Timing graph for view DM
+   Nodes 197 (Constrained: 0), Edges 642, Dissolve Edges 1046
+   Build Time 0.00769803
+Timing graph for view EX_MEM
+   Nodes 277 (Constrained: 0), Edges 273, Dissolve Edges 570
+   Build Time 0.00429146
+Timing graph for view Forwarding
+   Nodes 26 (Constrained: 0), Edges 56, Dissolve Edges 164
+   Build Time 0.00174569
+Timing graph for view ALUControl
+   Nodes 17 (Constrained: 0), Edges 39, Dissolve Edges 213
+   Build Time 0.00232485
+Timing graph for view MUX_0
+   Nodes 193 (Constrained: 0), Edges 141, Dissolve Edges 334
+   Build Time 0.0028178
+Timing graph for view MUX3_1
+   Nodes 258 (Constrained: 0), Edges 320, Dissolve Edges 663
+   Build Time 0.00610181
+Timing graph for view ID_EX
+   Nodes 581 (Constrained: 0), Edges 346, Dissolve Edges 754
+   Build Time 0.00783744
+Timing graph for view comparator
+   Nodes 129 (Constrained: 0), Edges 128, Dissolve Edges 257
+   Build Time 0.00254278
+Timing graph for view ImmGen
+   Nodes 96 (Constrained: 0), Edges 112, Dissolve Edges 290
+   Build Time 0.00256678
+Timing graph for view Adder
+   Nodes 192 (Constrained: 0), Edges 2770, Dissolve Edges 2962
+   Build Time 0.0119872
+Timing graph for view Registers
+   Nodes 212 (Constrained: 0), Edges 1607, Dissolve Edges 1882
+   Build Time 0.00958383
+Timing graph for view IF_ID
+   Nodes 197 (Constrained: 0), Edges 195, Dissolve Edges 790
+   Build Time 0.00668913
+Timing graph for view Adder_0
+   Nodes 192 (Constrained: 0), Edges 2080, Dissolve Edges 2949
+   Build Time 0.00701277
+Timing graph for view IM
+   Nodes 197 (Constrained: 0), Edges 320, Dissolve Edges 561
+   Build Time 0.00460829
+Timing graph for view PC
+   Nodes 132 (Constrained: 0), Edges 130, Dissolve Edges 266
+   Build Time 0.00215406
+Timing graph for view ALU
+   Nodes 199 (Constrained: 0), Edges 4352, Dissolve Edges 8888
+   Build Time 0.0358818
+Timing graph for view Control
+   Nodes 17 (Constrained: 0), Edges 64, Dissolve Edges 214
+   Build Time 0.00177142
+Timing graph for view Hazard
+   Nodes 31 (Constrained: 0), Edges 29, Dissolve Edges 121
+   Build Time 0.0010521
+Timing graph for view top
+   Nodes 554 (Constrained: 0), Edges 551, Dissolve Edges 551
+   Build Time 0.0115784
+@N: MF848 |Writing compressed timing models.
+@N: AP152 |(Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s)
+Complete

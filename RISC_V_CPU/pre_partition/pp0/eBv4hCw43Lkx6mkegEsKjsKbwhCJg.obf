@@ -1,0 +1,15 @@
+
+module TOP_IO_HT3 
+ (  inout [13:0] J1_A /* synthesis .haps_connector_name=TOP_IO */ ,
+  inout [13:0] J1_B /* synthesis .haps_connector_name=TOP_IO */ ,
+  inout [13:0] J1_C /* synthesis .haps_connector_name=TOP_IO */ ,
+  inout [13:0] J1_D /* synthesis .haps_connector_name=TOP_IO */ ,
+  inout J1_VRN /* synthesis .haps_connector_name=TOP_IO */ ,
+  inout J1_VRP /* synthesis .haps_connector_name=TOP_IO */ 
+);
+
+ /* synthesis syn_black_box */
+ /* synthesis syn_partition = "connector=TOP_IO_HT3" */
+ /* synthesis syn_noprune = 1 */
+
+endmodule

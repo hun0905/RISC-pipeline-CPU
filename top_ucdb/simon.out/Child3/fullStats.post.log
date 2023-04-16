@@ -1,0 +1,24 @@
+
+Processing Adder
+before constantPropagate: 0u 0s 681e 389672kB
+after constantPropagate: 0u 0s 681e 389672kB
+before removeUnusedSignals circuit: 0u 0s 681e 389672kB
+after removeUnusedSignals circuit: 0u 0s 681e 389672kB
+before optimize latch enable: 0u 0s 681e 389672kB
+after optimize latch enable: 0u 0s 681e 389672kB
+before populateInitialValueMapForVerilog: 0u 0s 681e 389672kB
+after populateInitialValueMapForVerilog: 0u 0s 681e 389672kB
+before removeReadAfterMissingWrite: 0u 0s 681e 389672kB
+after removeReadAfterMissingWrite: 0u 0s 681e 389672kB
+before undoDimensionalSplitOfMemories: 0u 0s 681e 389672kB
+after undoDimensionalSplitOfMemories: 0u 0s 681e 389672kB
+before extractMemories: 0u 0s 681e 389672kB
+after extractMemories: 0u 0s 681e 389672kB
+before extractHolds: 0u 0s 681e 389672kB
+after extractHolds: 0u 0s 681e 389672kB
+before simplifyAdders: 0u 0s 681e 389672kB
+after simplifyAdders: 0u 0s 681e 389672kB
+before reportUnresolvedType: 0u 0s 681e 389672kB
+after reportUnresolvedType: 0u 0s 681e 389672kB
+before dumpingPerModuleScm : 0u 0s 681e 389672kB
+after dumpingPerModuleScm : 0u 0s 681e 389672kB

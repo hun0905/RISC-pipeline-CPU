@@ -1,0 +1,153 @@
+// available hyper connections - for debug and ip models
+// timestamp: 1681051578
+
+
+`ifndef SYN_HYPER_CONNECT
+`define SYN_HYPER_CONNECT 1
+module syn_hyper_connect(out) /* synthesis syn_black_box=1 syn_noprune=1 */;
+parameter w = 1;
+parameter tag = "xxx";
+parameter dflt = 0;
+parameter mustconnect = 1'b1;
+output [w-1:0] out;
+endmodule
+`endif
+
+module FB1_uB_hyper_debug(dummy);
+input dummy; /* avoid compiler error for no ports */
+
+wire umr3_clk_0;
+syn_hyper_connect umr3_clk_connect_0(umr3_clk_0);
+defparam umr3_clk_connect_0.tag = "sysip_inst.umr3_clk";
+
+
+wire umr3_reset_0;
+syn_hyper_connect umr3_reset_connect_0(umr3_reset_0);
+defparam umr3_reset_connect_0.tag = "sysip_inst.umr3_reset";
+
+
+wire [2:0] haps_fpga_location_id_0;
+syn_hyper_connect haps_fpga_location_id_connect_0(haps_fpga_location_id_0);
+defparam haps_fpga_location_id_connect_0.w = 3;
+defparam haps_fpga_location_id_connect_0.tag = "haps_fpga_location_id";
+
+
+wire [31:0] ufpga_hstdm_ctrl_o_0;
+syn_hyper_connect ufpga_hstdm_ctrl_o_connect_0(ufpga_hstdm_ctrl_o_0);
+defparam ufpga_hstdm_ctrl_o_connect_0.w = 32;
+defparam ufpga_hstdm_ctrl_o_connect_0.tag = "ufpga_hstdm_ctrl_o";
+
+
+wire [31:0] ufpga_scratch_o_0;
+syn_hyper_connect ufpga_scratch_o_connect_0(ufpga_scratch_o_0);
+defparam ufpga_scratch_o_connect_0.w = 32;
+defparam ufpga_scratch_o_connect_0.tag = "ufpga_scratch_o";
+
+
+wire [31:0] ufpga_type_id_o_0;
+syn_hyper_connect ufpga_type_id_o_connect_0(ufpga_type_id_o_0);
+defparam ufpga_type_id_o_connect_0.w = 32;
+defparam ufpga_type_id_o_connect_0.tag = "ufpga_type_id_o";
+
+
+wire [31:0] ufpga_loc_id_o_0;
+syn_hyper_connect ufpga_loc_id_o_connect_0(ufpga_loc_id_o_0);
+defparam ufpga_loc_id_o_connect_0.w = 32;
+defparam ufpga_loc_id_o_connect_0.tag = "ufpga_loc_id_o";
+
+
+wire [31:0] ufpga_id_o_0;
+syn_hyper_connect ufpga_id_o_connect_0(ufpga_id_o_0);
+defparam ufpga_id_o_connect_0.w = 32;
+defparam ufpga_id_o_connect_0.tag = "ufpga_id_o";
+
+
+wire [31:0] ufpga_usr_id_o_0;
+syn_hyper_connect ufpga_usr_id_o_connect_0(ufpga_usr_id_o_0);
+defparam ufpga_usr_id_o_connect_0.w = 32;
+defparam ufpga_usr_id_o_connect_0.tag = "ufpga_usr_id_o";
+
+
+wire [31:0] ufpga_handle_o_0;
+syn_hyper_connect ufpga_handle_o_connect_0(ufpga_handle_o_0);
+defparam ufpga_handle_o_connect_0.w = 32;
+defparam ufpga_handle_o_connect_0.tag = "ufpga_handle_o";
+
+
+wire [31:0] ufpga_timestamp_o_0;
+syn_hyper_connect ufpga_timestamp_o_connect_0(ufpga_timestamp_o_0);
+defparam ufpga_timestamp_o_connect_0.w = 32;
+defparam ufpga_timestamp_o_connect_0.tag = "ufpga_timestamp_o";
+
+
+wire sys_clk_0;
+syn_hyper_connect sys_clk_connect_0(sys_clk_0);
+defparam sys_clk_connect_0.tag = "sys_clk";
+
+
+wire sys_reset_n_0;
+syn_hyper_connect sys_reset_n_connect_0(sys_reset_n_0);
+defparam sys_reset_n_connect_0.tag = "sys_reset_n";
+
+
+wire gclk0_0;
+syn_hyper_connect gclk0_connect_0(gclk0_0);
+defparam gclk0_connect_0.tag = "gclk0";
+
+
+wire haps_umr3_clk_0;
+syn_hyper_connect haps_umr3_clk_connect_0(haps_umr3_clk_0);
+defparam haps_umr3_clk_connect_0.tag = "haps_umr3_clk";
+
+
+wire haps_umr3_reset_0;
+syn_hyper_connect haps_umr3_reset_connect_0(haps_umr3_reset_0);
+defparam haps_umr3_reset_connect_0.tag = "haps_umr3_reset";
+
+
+wire umr_clk_0;
+syn_hyper_connect umr_clk_connect_0(umr_clk_0);
+defparam umr_clk_connect_0.tag = "umr_clk";
+
+
+wire umr_reset_0;
+syn_hyper_connect umr_reset_connect_0(umr_reset_0);
+defparam umr_reset_connect_0.tag = "umr_reset";
+
+
+wire haps_clk_200_0;
+syn_hyper_connect haps_clk_200_connect_0(haps_clk_200_0);
+defparam haps_clk_200_connect_0.tag = "haps_clk_200";
+
+
+wire haps_clk_10_0;
+syn_hyper_connect haps_clk_10_connect_0(haps_clk_10_0);
+defparam haps_clk_10_connect_0.tag = "haps_clk_10";
+
+
+wire [3:0] haps_umr3_clk_div_0;
+syn_hyper_connect haps_umr3_clk_div_connect_0(haps_umr3_clk_div_0);
+defparam haps_umr3_clk_div_connect_0.w = 4;
+defparam haps_umr3_clk_div_connect_0.tag = "haps_umr3_clk_div";
+
+
+wire haps_clk_160_0;
+syn_hyper_connect haps_clk_160_connect_0(haps_clk_160_0);
+defparam haps_clk_160_connect_0.tag = "haps_clk_160";
+
+
+wire haps_clk_10_2_sync_0;
+syn_hyper_connect haps_clk_10_2_sync_connect_0(haps_clk_10_2_sync_0);
+defparam haps_clk_10_2_sync_connect_0.tag = "haps_clk_10_2_sync";
+
+
+wire haps_clk_50_2_sync_0;
+syn_hyper_connect haps_clk_50_2_sync_connect_0(haps_clk_50_2_sync_0);
+defparam haps_clk_50_2_sync_connect_0.tag = "haps_clk_50_2_sync";
+
+
+wire hstdm_refclk_100_0;
+syn_hyper_connect hstdm_refclk_100_connect_0(hstdm_refclk_100_0);
+defparam hstdm_refclk_100_connect_0.tag = "hstdm_refclk_100";
+
+endmodule

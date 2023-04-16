@@ -1,0 +1,87 @@
+
+. Module name, LUTS, REGISTERS, SYNC RAMS, DSP48
+. FB1_uC, 4115, 5547, 2, 0
+.	. FB1_uC_dut, 430, 140, 0, 0
+.	.	. ALU, 276, 0, 0, 0
+.	.	. ALUControl, 8, 0, 0, 0
+.	.	. EX_MEM, 0, 136, 0, 0
+.	.	. Forwarding, 13, 0, 0, 0
+.	.	. MUX3_1, 68, 0, 0, 0
+.	.	. MUX3_1_0, 65, 0, 0, 0
+.	. bsa19_system_ip_wrapper_256s_0_25s_1_1_1_1_1611514078, 0, 0, 0, 0
+.	. haps_system_memory_32s_28s_32s_haps_system_memoryDini_144s_111s_110s_1s_Z2_FB1_uC, 190, 128, 1, 0
+.	. hstdm_controller_0s_1048576s_1s_4s_12s_48s_32s_2s_FB1_uC, 383, 284, 0, 0
+.	. hstdm_memory_Z1_FB1_uC, 186, 206, 1, 0
+.	. hstdm_rx_Z3_0_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_10_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_11_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_12_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_13_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_14_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_15_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_16_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_17_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_18_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_19_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_1_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_20_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_21_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_22_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_23_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_24_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_25_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_26_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_27_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_28_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_29_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_2_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_30_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_31_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_32_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_33_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_34_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_35_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_36_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_37_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_38_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_39_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_3_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_40_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_4_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_5_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_6_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_7_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_8_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_9_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_Z3_FB1_uC, 39, 68, 0, 0
+.	. hstdm_rx_clkgen_4s_1200s_1s_150s_1s_300s_40s_ULTRASCALE_PLUS_0_Z1_FB1_uC, 0, 0, 0, 0
+.	. hstdm_rx_trainer_Z1_FB1_uC, 786, 533, 0, 0
+.	. hstdm_simulation_FB1_uC, 3, 5, 0, 0
+.	. hstdm_training_monitor_Z1_FB1_uC, 295, 261, 0, 0
+.	. hstdm_tx_Z2_0_FB1_uC, 12, 68, 0, 0
+.	. hstdm_tx_Z2_10_FB1_uC, 12, 68, 0, 0
+.	. hstdm_tx_Z2_11_FB1_uC, 12, 68, 0, 0
+.	. hstdm_tx_Z2_12_FB1_uC, 12, 68, 0, 0
+.	. hstdm_tx_Z2_13_FB1_uC, 12, 68, 0, 0
+.	. hstdm_tx_Z2_1_FB1_uC, 12, 68, 0, 0
+.	. hstdm_tx_Z2_2_FB1_uC, 12, 68, 0, 0
+.	. hstdm_tx_Z2_3_FB1_uC, 12, 68, 0, 0
+.	. hstdm_tx_Z2_4_FB1_uC, 12, 68, 0, 0
+.	. hstdm_tx_Z2_5_FB1_uC, 12, 68, 0, 0
+.	. hstdm_tx_Z2_6_FB1_uC, 12, 68, 0, 0
+.	. hstdm_tx_Z2_7_FB1_uC, 12, 68, 0, 0
+.	. hstdm_tx_Z2_8_FB1_uC, 12, 68, 0, 0
+.	. hstdm_tx_Z2_9_FB1_uC, 12, 68, 0, 0
+.	. hstdm_tx_Z2_FB1_uC, 12, 68, 0, 0
+.	. hstdm_tx_clkgen_0s_4s_1200s_150s_DATA_0s_FALSE_40s_ULTRASCALE_PLUS_Z1_FB1_uC, 0, 8, 0, 0
+.	. hstdm_tx_clkgen_0s_4s_1200s_150s_DATA_AND_CLOCK_1s_TRUE_40s_ULTRASCALE_PLUS_Z1_0_FB1_uC, 0, 8, 0, 0
+.	. hstdm_tx_clkgen_0s_4s_1200s_150s_DATA_AND_CLOCK_1s_TRUE_40s_ULTRASCALE_PLUS_Z1_1_FB1_uC, 0, 8, 0, 0
+.	. hstdm_tx_clkgen_0s_4s_1200s_150s_DATA_AND_CLOCK_1s_TRUE_40s_ULTRASCALE_PLUS_Z1_FB1_uC, 0, 8, 0, 0
+.	. hstdm_ultrascale_bitslice_control_8s_40s_DIV2_14s_14s_0s_0s_0s_0s_ULTRASCALE_PLUS_Z1_FB1_uC, 0, 0, 0, 0
+.	. hstdm_ultrascale_bitslice_control_8s_40s_DIV2_18446744073709551615s_0s_16s_16s_20s_18446744073709551530s_ULTRASCALE_PLUS_Z1_FB1_uC, 0, 0, 0, 0
+.	. hstdm_ultrascale_bitslice_control_8s_40s_DIV2_48s_48s_0s_0s_0s_0s_ULTRASCALE_PLUS_Z1_FB1_uC, 0, 0, 0, 0
+.	. hstdm_ultrascale_bitslice_control_8s_40s_DIV2_96s_96s_0s_0s_0s_0s_ULTRASCALE_PLUS_Z1_FB1_uC, 0, 0, 0, 0
+.	. hstdm_ultrascale_plle3_Z1_0_FB1_uC, 6, 13, 0, 0
+.	. hstdm_ultrascale_plle3_Z1_1_FB1_uC, 6, 13, 0, 0
+.	. hstdm_ultrascale_plle3_Z1_2_FB1_uC, 6, 13, 0, 0
+.	. hstdm_ultrascale_plle3_Z1_FB1_uC, 6, 13, 0, 0

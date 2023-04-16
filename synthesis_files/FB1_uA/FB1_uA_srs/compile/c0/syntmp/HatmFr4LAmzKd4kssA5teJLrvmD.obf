@@ -1,0 +1,8 @@
+/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/bin/c_hdl  -osyn  /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_srs/compile/c0/synwork/FB1_uA_comp.srs  -top  TraceBuildLib.FB1_uA  -hdllog  /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA_srs/compile/c0/synlog/FB1_uA_compiler.srr  -encrypt  -mp  4  -distcompmode 0 -verification_mode 0  -srs  /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uA/FB1_uA.srs  -jobname  "compiler" 
+relcom:/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/bin/c_hdl -osyn ../synwork/FB1_uA_comp.srs -top TraceBuildLib.FB1_uA -hdllog ../synlog/FB1_uA_compiler.srr -encrypt -mp 4 -distcompmode 0 -verification_mode 0 -srs ../../../../FB1_uA.srs -jobname "compiler"
+rc:0 success:1 runtime:3
+file:../synwork/FB1_uA_comp.srs|io:o|time:1681051338|size:91518|exec:0|csum:
+file:../synlog/FB1_uA_compiler.srr|io:o|time:1681051338|size:2639|exec:0|csum:
+file:../../../../FB1_uA.srs|io:i|time:1681051305|size:89012|exec:0|csum:
+file:/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/linux_a_64/c_hdl|io:i|time:1649478688|size:9087656|exec:1|csum:
+file:/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/bin/c_hdl|io:i|time:1649478584|size:367|exec:1|csum:

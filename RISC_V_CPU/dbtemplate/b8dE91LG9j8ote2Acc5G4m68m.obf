@@ -1,0 +1,3 @@
+-referencedir ../../
+-tss board.tss
+-fdc design.fdc

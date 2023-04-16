@@ -1,0 +1,771 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 8388608 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|sr0
+Synopsys ProtoCompiler Partitioner/Router, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+
+THE FORMAT OF THIS LOG MAY CHANGE WITHOUT NOTICE
+
+@N: AP405 |Writing System Route Report to system_route.rpt
+
+@N: AP378 |Using Router Flow
+
+@S1 AP379 |Routing Environment Preparation
+@N: AP161 |Loading Connection Models
+@N: AP285 |Adding Connection Model 'ACPM' -- Simple asynchronous TDM using mux/demux logic with a counter, similar to legacy CPM
+@N: AP285 |Adding Connection Model 'HSTDM' -- Asynchronous High Speed TDM using IOSERDES with source synchronous clocks and training
+@N: AP285 |Adding Connection Model 'HSTDM_ERD' -- High Speed TDM with runtime error detection (ERD)
+@N: AP285 |Adding Connection Model 'MGTDM' -- MGT TDM 
+@N: AP285 |Adding Connection Model 'MGTDM_Y' -- MGT TDM 
+@N: AP163 |Loading Target System Specification
+Building target system...
+@N| Assigning syn_chip_id 0 to FPGA FB1.uA.
+@N| Assigning syn_chip_id 1 to FPGA FB1.uB.
+@N| Assigning syn_chip_id 2 to FPGA FB1.uC.
+@N| Assigning syn_chip_id 3 to FPGA FB1.uD.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+@N: AP250 |TargetSystem Summary
+Name: 'DETAIL' Bins: 28
+
+FPGA_Bin Pins LUT     LUTM    DFF     BRAM URAM DSP  ZDPIMOD IO    
+------------------------------------------------------------------
+FB1.uA    712 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uB    610 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uC    510 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uD    612 4085760 2042880 8171520 2160 320  3840 992     2072  
+==================================================================
+
+Port_Bin           Pins Capacity 
+--------------------------------
+TOP_IO_HT3_FB1_A5  52   52       
+TOP_IO_HT3_FB1_B5  52   52       
+TOP_IO_HT3_FB1_C5  52   52       
+TOP_IO_HT3_FB1_D5  52   52       
+TOP_IO_HT3_FB1_A6  52   52       
+TOP_IO_HT3_FB1_B6  52   52       
+TOP_IO_HT3_FB1_C6  52   52       
+TOP_IO_HT3_FB1_D6  52   52       
+TOP_IO_HT3_FB1_A11 52   52       
+TOP_IO_HT3_FB1_A12 52   52       
+TOP_IO_HT3_FB1_B7  52   52       
+TOP_IO_HT3_FB1_B8  52   52       
+TOP_IO_HT3_FB1_C7  52   52       
+TOP_IO_HT3_FB1_C8  52   52       
+TOP_IO_HT3_FB1_D3  52   52       
+TOP_IO_HT3_FB1_D4  52   52       
+================================
+
+External_Bin Pins        
+------------------------
+FB1.PLL1     1    LOCKED 
+FB1.PLL2     0    LOCKED 
+FB1.PLL3     0    LOCKED 
+FB1.PLL4     0    LOCKED 
+FB1.PLL5     0    LOCKED 
+FB1.PLL6     0    LOCKED 
+FB1.PLL7     0    LOCKED 
+FB1.PLL8     0    LOCKED 
+========================
+
+Connectivity                Point-to-Point Mult-Terminal 
+--------------------------------------------------------
+FB1.uA<->FB1.uB (FIXED)     81             0             
+FB1.uA<->FB1.uB             198            0             
+FB1.uB<->FB1.uC             98             0             
+FB1.uA<->FB1.uD             200            0             
+FB1.uC<->FB1.uD (FIXED)     81             0             
+FB1.uC<->FB1.uD             98             0             
+FB1.uA<->TOP_IO_HT3_FB1_A5  52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B5  52             0             
+FB1.uC<->TOP_IO_HT3_FB1_C5  52             0             
+FB1.uD<->TOP_IO_HT3_FB1_D5  52             0             
+FB1.uA<->TOP_IO_HT3_FB1_A6  52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B6  52             0             
+FB1.uC<->TOP_IO_HT3_FB1_C6  52             0             
+FB1.uD<->TOP_IO_HT3_FB1_D6  52             0             
+FB1.uA<->TOP_IO_HT3_FB1_A11 52             0             
+FB1.uA<->TOP_IO_HT3_FB1_A12 52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B7  52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B8  52             0             
+FB1.uC<->TOP_IO_HT3_FB1_C7  52             0             
+FB1.uC<->TOP_IO_HT3_FB1_C8  52             0             
+FB1.uD<->TOP_IO_HT3_FB1_D3  52             0             
+FB1.uD<->TOP_IO_HT3_FB1_D4  52             0             
+========================================================
+
+Function_Name Trace_Count 
+-------------------------
+GCLK          1           
+MGT           16          
+MGT_DEBUG     32          
+=========================
+
+@S2 AP157 |Design & Constraint Load and Preparation
+
+@S2.1 AP123 |Loading Design
+@N: AP147 |Reading netlist: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top.srp
+@N: AP152 |(Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 661MB peak: 661MB)
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+
+Start loading timing files (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 662MB peak: 662MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 670MB peak: 670MB)
+
+@N: AP119 |Uniquifying Design
+@N: AP120 |Building Partitioner Data Structures
+
+@S2.2 AP149 |Reading PCF Constraints
+@N: AP219 |Reading file: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top.pcf
+@N: AP500 |Using TDM type 'HSTDMSE'
+@N: AP219 |Reading file: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top_cu.pcf
+@N: AP219 |Reading file: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top_na.pcf
+@N: AP219 |Reading file: /home/u108/u108061217/RISC-V-pipeline-CPU/partition.pcf
+@N: AP500 |Using TDM type 'HSTDMSE'
+@N: AP221 |Duplicate assign_global_net command for net 'clk' specified in /home/u108/u108061217/RISC-V-pipeline-CPU/partition.pcf:15. Omitting.
+@W: AP935 |reset_synchronize -toplevel_net is deprecated, please use -net.
+	from source: /home/u108/u108061217/RISC-V-pipeline-CPU/partition.pcf at line: 20
+
+@N: AP238 |Target System Summary After Constraints: 
+Name: 'DETAIL' Bins: 28
+
+FPGA_Bin Pins LUT     LUTM    DFF     BRAM URAM DSP  ZDPIMOD IO    
+------------------------------------------------------------------
+FB1.uA    712 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uB    610 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uC    510 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uD    612 4085760 2042880 8171520 2160 320  3840 992     2072  
+==================================================================
+
+Port_Bin           Pins Capacity 
+--------------------------------
+TOP_IO_HT3_FB1_A5  52   52       
+TOP_IO_HT3_FB1_B5  52   52       
+TOP_IO_HT3_FB1_C5  52   52       
+TOP_IO_HT3_FB1_D5  52   52       
+TOP_IO_HT3_FB1_A6  52   52       
+TOP_IO_HT3_FB1_B6  52   52       
+TOP_IO_HT3_FB1_C6  52   52       
+TOP_IO_HT3_FB1_D6  52   52       
+TOP_IO_HT3_FB1_A11 52   52       
+TOP_IO_HT3_FB1_A12 52   52       
+TOP_IO_HT3_FB1_B7  52   52       
+TOP_IO_HT3_FB1_B8  52   52       
+TOP_IO_HT3_FB1_C7  52   52       
+TOP_IO_HT3_FB1_C8  52   52       
+TOP_IO_HT3_FB1_D3  52   52       
+TOP_IO_HT3_FB1_D4  52   52       
+================================
+
+External_Bin Pins        
+------------------------
+FB1.PLL1     1    LOCKED 
+FB1.PLL2     0    LOCKED 
+FB1.PLL3     0    LOCKED 
+FB1.PLL4     0    LOCKED 
+FB1.PLL5     0    LOCKED 
+FB1.PLL6     0    LOCKED 
+FB1.PLL7     0    LOCKED 
+FB1.PLL8     0    LOCKED 
+========================
+
+Connectivity                Point-to-Point Mult-Terminal 
+--------------------------------------------------------
+FB1.uA<->FB1.uB (FIXED)     81             0             
+FB1.uA<->FB1.uB             198            0             
+FB1.uB<->FB1.uC             98             0             
+FB1.uA<->FB1.uD             200            0             
+FB1.uC<->FB1.uD (FIXED)     81             0             
+FB1.uC<->FB1.uD             98             0             
+FB1.uA<->TOP_IO_HT3_FB1_A5  52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B5  52             0             
+FB1.uC<->TOP_IO_HT3_FB1_C5  52             0             
+FB1.uD<->TOP_IO_HT3_FB1_D5  52             0             
+FB1.uA<->TOP_IO_HT3_FB1_A6  52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B6  52             0             
+FB1.uC<->TOP_IO_HT3_FB1_C6  52             0             
+FB1.uD<->TOP_IO_HT3_FB1_D6  52             0             
+FB1.uA<->TOP_IO_HT3_FB1_A11 52             0             
+FB1.uA<->TOP_IO_HT3_FB1_A12 52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B7  52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B8  52             0             
+FB1.uC<->TOP_IO_HT3_FB1_C7  52             0             
+FB1.uC<->TOP_IO_HT3_FB1_C8  52             0             
+FB1.uD<->TOP_IO_HT3_FB1_D3  52             0             
+FB1.uD<->TOP_IO_HT3_FB1_D4  52             0             
+========================================================
+
+Function_Name Trace_Count 
+-------------------------
+GCLK          1           
+MGT           16          
+MGT_DEBUG     32          
+=========================
+
+GCLK   Source    Assigned  Connected                    
+Trace  Bin       Net       FPGAs                        
+------------------------------------------------------
+GCLK1  FB1.PLL1  clk       FB1.uA FB1.uB FB1.uC FB1.uD  
+======================================================
+
+@S2.3 AP130 |Building Primary Partitioning Graph
+
+@S2.4 AP420 |Constraint Summary
+
+To see a list of all unconstrained ports and/or cells, use option '-report_unconstrained ports|cells|all'
+
+Port Constraints:
+=================
+Ports  Bin_Assignment     
+-------------------------
+ 52/52 TOP_IO_HT3_FB1_B6  
+ 52/52 TOP_IO_HT3_FB1_B5  
+ 20/52 TOP_IO_HT3_FB1_C6  
+ 49/52 TOP_IO_HT3_FB1_B8  
+ 11/52 TOP_IO_HT3_FB1_C5  
+ 21/52 TOP_IO_HT3_FB1_C7  
+ 14/52 TOP_IO_HT3_FB1_C8  
+ 52/52 TOP_IO_HT3_FB1_A6  
+ 52/52 TOP_IO_HT3_FB1_A5  
+ 52/52 TOP_IO_HT3_FB1_A11 
+ 52/52 TOP_IO_HT3_FB1_A12 
+ 14/52 TOP_IO_HT3_FB1_D5  
+ 25/52 TOP_IO_HT3_FB1_D6  
+ 18/52 TOP_IO_HT3_FB1_D3  
+ 13/52 TOP_IO_HT3_FB1_D4  
+  1    FB1.PLL1*          
+ 52/52 TOP_IO_HT3_FB1_B7  
+  0    UNASSIGNED         
+=========================
+Total ports assigned: 550
+*Locked or external bin(s)
+
+Cell Constraints (includes constraints implied by port assignments):
+====================================================================
+Bin_Assignment Cells 
+--------------------
+FB1.uA             1 
+FB1.uB             1 
+FB1.uC             1 
+FB1.uD             1 
+UNASSIGNED         0 
+====================
+Total cells assigned: 4
+
+@N: AP152 |(Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 874MB peak: 874MB)
+@N: AP158 |Simplifying target system for routing
+@N: AP152 |(Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 876MB peak: 876MB)
+Reading estimate timing file: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top_timest.est
+
+@S3 AP680 |System-Route Optimization Options
+
+Parameter                  Value             
+-----------------------------------------
+Priority                   multi_hop_path    
+Feedthrough Routing        direct            
+TDM Type                   HSTDM             
+TDM Qualification          all               
+HSTDM Bitrate              1400 Mbps         
+HSTDM Bitrate per Cable    on                
+HSTDM Reset                NONE              
+Max Ratio                  4                 
+=========================================
+
+
+@S4 AP241 |Global Routing
+@N: AP634 |Using HSTDM type: Single-Ended 
+
+@S4.1 AP603 |Non-Timing-Driven Global Route
+@N: AP152 |(Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:13s; Memory used current: 876MB peak: 876MB)
+@N: AP152 |(Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 895MB peak: 895MB)
+
+@S4.2 AP267 |Pre-Optimization Global Route Report
+
+@S4.2.1 AP271 |Global Route Net Path Summary
+
+TDM Qualification type: all
+
+Nets  TDM                           Traces                                                           
+All   Qualified      Non-Qualified  All     TDM_usable  Connected_Bins                               
+---------------------------------------------------------------------------------------------------
+ 247            247              0      98          48  FB1.uB FB1.uC                                
+ 206            205              1     179         116  FB1.uC FB1.uD                                
+ 164             98             66     279         212  FB1.uA FB1.uB                                
+ 134            133              1      ^0           0  FB1.uB FB1.uD                                
+  52              0             52      52           0  FB1.uA TOP_IO_HT3_FB1_A11                    
+  52              0             52      52           0  FB1.uA TOP_IO_HT3_FB1_A12                    
+  52              0             52      52           0  FB1.uA TOP_IO_HT3_FB1_A5                     
+  52              0             52      52           0  FB1.uA TOP_IO_HT3_FB1_A6                     
+  52              0             52      52           0  FB1.uB TOP_IO_HT3_FB1_B5                     
+  52              0             52      52           0  FB1.uB TOP_IO_HT3_FB1_B6                     
+  52              0             52      52           0  FB1.uB TOP_IO_HT3_FB1_B7                     
+  49              0             49      52           0  FB1.uB TOP_IO_HT3_FB1_B8                     
+  25              0             25      52           0  FB1.uD TOP_IO_HT3_FB1_D6                     
+  21              0             21      52           0  FB1.uC TOP_IO_HT3_FB1_C7                     
+  20              0             20      52           0  FB1.uC TOP_IO_HT3_FB1_C6                     
+  18              0             18      52           0  FB1.uD TOP_IO_HT3_FB1_D3                     
+  14              0             14      52           0  FB1.uC TOP_IO_HT3_FB1_C8                     
+  14              0             14      52           0  FB1.uD TOP_IO_HT3_FB1_D5                     
+  13              0             13      52           0  FB1.uD TOP_IO_HT3_FB1_D4                     
+  11              0             11      52           0  FB1.uC TOP_IO_HT3_FB1_C5                     
+   1              0              1       1           0  FB1.uA FB1.uB FB1.uC FB1.uD FB1.PLL1 (GCLK)  
+   1              0              1      ^0           0  FB1.uA FB1.uC                                
+   1              0              1     200         192  FB1.uA FB1.uD                                
+===================================================================================================
+^Nets require routing through other FPGA's (feed-through)
+
+@S4.2.2 AP366 |Global Route Ratio Report
+
+Connection      Trace_Usage Net_Usage              Ratios Bitrate Cablelength 
+                                  TDM DIRECT CLOCK        in Mbps in cm       
+-----------------------------------------------------------------------------
+FB1.uA<->FB1.uD     157/200         0    157     0                50          
+FB1.uB<->FB1.uC       98/98       176     50     0 4      1200    50          
+FB1.uA<->FB1.uB     270/279        82    238     0 4      1200    50          
+FB1.uC<->FB1.uD      87/179       188     23     0 4      1200    50          
+=============================================================================
+
+@S4.2.3 AP267 |Global Route Summary
+@N: AP367 |Routed 1095 Nets
+@N: AP268 |Maximum TDM Ratio: 4
+@N: AP684 |Cut Clocks: 0
+@N: AP368 |Feedthroughs: 157
+   FB1.uA -> FB1.uC 1
+   FB1.uB -> FB1.uC 5
+   FB1.uC -> FB1.uB 17
+   FB1.uD -> FB1.uB 134
+@N: AP270 |Unrouted: 0
+
+@S4.2.4 AP267 |Global Route Direct Nets
+
+To see a list of all nets that must be routed without TDM, use option '-report_direct_nets 1'
+
+@N: AP371 |For global routing details, refer to system_route.rpt
+@N: AP152 |(Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 895MB peak: 895MB)
+
+@S4.3 AP248 |Feedthrough Insertion and Net Splitting
+@N: AP415 |See system_route.rpt for details.
+Set 'n_syn_useioff' property for NInstance 'FB1.uA.aptn_reset_sync_rst_n_9'
+Set 'n_syn_useioff' property for NInstance 'FB1.uA.aptn_reset_sync_rst_n_10'
+Set 'n_syn_useioff' property for NInstance 'FB1.uB.aptn_reset_sync_rst_n_5'
+Set 'n_syn_useioff' property for NInstance 'FB1.uB.aptn_reset_sync_rst_n_6'
+Set 'n_syn_useioff' property for NInstance 'FB1.uC.aptn_reset_sync_rst_n_2'
+Set 'n_syn_useioff' property for NInstance 'FB1.uD.aptn_reset_sync_rst_n_5'
+
+@S4.4 AP289 |Find Clocks and TDM Restrictions
+@N: AP240 |Using TDM qualification mode: all
+@N: AP152 |(Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 903MB peak: 903MB)
+@N: AP152 |(Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 903MB peak: 903MB)
+
+@S4.5 AP604 |Generating Timing Graph
+@N: Z409 |Inter-die delay in reporting excluded.
+
+@S4.6 AP605 |Route Optimization
+
+@S4.6.1 AP611 |Multi-hop Optimization with Estimated Timing
+No TG updates for net: clk sink Bin: FB1.uA
+No TG updates for net: clk sink Bin: FB1.uB
+No TG updates for net: clk sink Bin: FB1.uC
+No TG updates for net: clk sink Bin: FB1.uD
+No TG updates for net: IMMID[42] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[36] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[20] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[19] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[60] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[55] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[21] sink Bin: TOP_IO_HT3_FB1_D5
+No TG updates for net: IMMID[31] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[46] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[49] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[47] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[61] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[58] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[33] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[57] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[56] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[17] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[62] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[48] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[15] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: Addr[0] sink Bin: FB1.uC
+No TG updates for net: IMMID[18] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[26] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[22] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[25] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[29] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[50] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[32] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[35] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[43] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[39] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[38] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[53] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[37] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[40] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[45] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[24] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[28] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[51] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[30] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[41] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[14] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[34] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[59] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[63] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[44] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[54] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[13] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[16] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: Addr[1] sink Bin: FB1.uC
+No TG updates for net: IMMID[27] sink Bin: TOP_IO_HT3_FB1_D3
+No TG updates for net: IMMID[23] sink Bin: TOP_IO_HT3_FB1_D4
+No TG updates for net: IMMID[52] sink Bin: TOP_IO_HT3_FB1_D4
+@N: AP152 |(Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 968MB peak: 968MB)
+
+@S4.7 AP612 |Cable Assignment Optimization
+DUT pins connected to SLR
+FPGA Name  SLR[0]  SLR[1]  SLR[2]  SLR[3]  Total  
+------------------------------------------------
+   FB1.uB     407      24      93     228    752  
+   FB1.uC     152      24     102     226    504  
+   FB1.uD     227       0     102     110    439  
+   FB1.uA     465      76      93      52    686  
+================================================
+
+@N: AP152 |(Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 968MB peak: 968MB)
+
+@S5 AP606 |Final Global Route Results
+@N: AP152 |(Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 968MB peak: 968MB)
+
+@S5.1 AP267 |Post-Optimization and Cable Assignment Global Route Report
+
+@S5.1.1 AP366 |Global Route Ratio Report
+
+Connection      Trace_Usage Net_Usage              Ratios Bitrate Cablelength 
+                                  TDM DIRECT CLOCK        in Mbps in cm       
+-----------------------------------------------------------------------------
+FB1.uA<->FB1.uD     157/200         0    157     0                50          
+FB1.uB<->FB1.uC       98/98       176     50     0 4      1200    50          
+FB1.uA<->FB1.uB     279/279        69    251     0 4      1200    50          
+FB1.uC<->FB1.uD     179/179        52    159     0 4      1200    50          
+=============================================================================
+
+@S5.1.2 AP265 |Global Route Trace Usage
+
+Trace  Function  Trace_Usage  Clock_Usage  Net_Usage  Module   Trace_Name/Connection                                          Bitrate  Cablelength  
+--------------------------------------------------------------------------------------------------------------------------------------------------
+   1)  GCLK              1/1                       1           Trace Group: T_FB1.PLL1_FB1.uA_FB1.uB_FB1.uC_FB1.uD_1                                
+                           1            1          0  DIRECT   FB1.PLL1.CLK1-> {FB1.uA.CLK FB1.uB.CLK FB1.uC.CLK FB1.uD.CLK}                        
+                                                                                                                                                    
+   2)                  52/52                      52           Trace Group: TOP_IO_HT3_FB1_A5                                                       
+                          25            0         25  DIRECT   FB1.uA.J5-> {TOP_IO_HT3_FB1_A5.A}                                                    
+                          27            0         27  DIRECT   TOP_IO_HT3_FB1_A5.A-> {FB1.uA.J5}                                                    
+                                                                                                                                                    
+   3)                  52/52                      52           Trace Group: TOP_IO_HT3_FB1_A6                                                       
+                          30            0         30  DIRECT   FB1.uA.J6-> {TOP_IO_HT3_FB1_A6.A}                                                    
+                          22            0         22  DIRECT   TOP_IO_HT3_FB1_A6.A-> {FB1.uA.J6}                                                    
+                                                                                                                                                    
+   4)                  52/52                      52           Trace Group: TOP_IO_HT3_FB1_A11                                                      
+                          23            0         23  DIRECT   FB1.uA.J11-> {TOP_IO_HT3_FB1_A11.A}                                                  
+                          29            0         29  DIRECT   TOP_IO_HT3_FB1_A11.A-> {FB1.uA.J11}                                                  
+                                                                                                                                                    
+   5)                  52/52                      52           Trace Group: TOP_IO_HT3_FB1_A12                                                      
+                          35            0         35  DIRECT   FB1.uA.J12-> {TOP_IO_HT3_FB1_A12.A}                                                  
+                          17            0         17  DIRECT   TOP_IO_HT3_FB1_A12.A-> {FB1.uA.J12}                                                  
+                                                                                                                                                    
+   6)                  52/52                      52           Trace Group: TOP_IO_HT3_FB1_B5                                                       
+                          52            0         52  DIRECT   FB1.uB.J5-> {TOP_IO_HT3_FB1_B5.A}                                                    
+                                                                                                                                                    
+   7)                  52/52                      52           Trace Group: TOP_IO_HT3_FB1_B6                                                       
+                          52            0         52  DIRECT   FB1.uB.J6-> {TOP_IO_HT3_FB1_B6.A}                                                    
+                                                                                                                                                    
+   8)                  52/52                      52           Trace Group: TOP_IO_HT3_FB1_B7                                                       
+                          52            0         52  DIRECT   FB1.uB.J7-> {TOP_IO_HT3_FB1_B7.A}                                                    
+                                                                                                                                                    
+   9)                  49/52                      49           Trace Group: TOP_IO_HT3_FB1_B8                                                       
+                          49            0         49  DIRECT   FB1.uB.J8-> {TOP_IO_HT3_FB1_B8.A}                                                    
+                                                                                                                                                    
+  10)                  14/52                      14           Trace Group: TOP_IO_HT3_FB1_D5                                                       
+                          14            0         14  DIRECT   FB1.uD.J5-> {TOP_IO_HT3_FB1_D5.A}                                                    
+                                                                                                                                                    
+  11)                  25/52                      25           Trace Group: TOP_IO_HT3_FB1_D6                                                       
+                          25            0         25  DIRECT   FB1.uD.J6-> {TOP_IO_HT3_FB1_D6.A}                                                    
+                                                                                                                                                    
+  12)                  18/52                      18           Trace Group: TOP_IO_HT3_FB1_D3                                                       
+                          18            0         18  DIRECT   FB1.uD.J3-> {TOP_IO_HT3_FB1_D3.A}                                                    
+                                                                                                                                                    
+  13)                  13/52                      13           Trace Group: TOP_IO_HT3_FB1_D4                                                       
+                          13            0         13  DIRECT   FB1.uD.J4-> {TOP_IO_HT3_FB1_D4.A}                                                    
+                                                                                                                                                    
+  14)                  11/52                      11           Trace Group: TOP_IO_HT3_FB1_C5                                                       
+                          11            0         11  DIRECT   FB1.uC.J5-> {TOP_IO_HT3_FB1_C5.A}                                                    
+                                                                                                                                                    
+  15)                  20/52                      20           Trace Group: TOP_IO_HT3_FB1_C6                                                       
+                          19            0         19  DIRECT   FB1.uC.J6-> {TOP_IO_HT3_FB1_C6.A}                                                    
+                           1            0          1  DIRECT   TOP_IO_HT3_FB1_C6.A-> {FB1.uC.J6}                                                    
+                                                                                                                                                    
+  16)                  21/52                      21           Trace Group: TOP_IO_HT3_FB1_C7                                                       
+                          21            0         21  DIRECT   FB1.uC.J7-> {TOP_IO_HT3_FB1_C7.A}                                                    
+                                                                                                                                                    
+  17)                  14/52                      14           Trace Group: TOP_IO_HT3_FB1_C8                                                       
+                          13            0         13  DIRECT   FB1.uC.J8-> {TOP_IO_HT3_FB1_C8.A}                                                    
+                           1            0          1  DIRECT   TOP_IO_HT3_FB1_C8.A-> {FB1.uC.J8}                                                    
+                                                                                                                                                    
+  18)                    7/7                       7           Trace Group: T_FB1.uA_FB1.uB_2                                                       
+                           5            0          5  DIRECT   FB1.uA.FIXED-> {FB1.uB.FIXED}                                                        
+                           2            0          2  DIRECT   FB1.uB.FIXED-> {FB1.uA.FIXED}                                                        
+                                                                                                                                                    
+  19)                  24/24                      24           Trace Group: FB1_A1_B19                                                 50           
+                          20            0         20  DIRECT   FB1.uA.J1-> {FB1.uB.J19}                                                             
+                           4            0          4  DIRECT   FB1.uB.J19-> {FB1.uA.J1}                                                             
+                                                                                                                                                    
+  20)                  24/24                      24           Trace Group: FB1_A1_B19_1                                               50           
+                          19            0         19  DIRECT   FB1.uA.J1-> {FB1.uB.J19}                                                             
+                           5            0          5  DIRECT   FB1.uB.J19-> {FB1.uA.J1}                                                             
+                                                                                                                                                    
+  21)                  31/31                      35           Trace Group: T_FB1.uA_FB1.uB_1                                 1200                  
+                          19            0         19  DIRECT   FB1.uA.FIXED-> {FB1.uB.FIXED}                                                        
+                           4                       8  HSTDM_4                                                                                       
+                           8            0          8  DIRECT   FB1.uB.FIXED-> {FB1.uA.FIXED}                                                        
+                                                                                                                                                    
+  22)                  43/43                      50           Trace Group: T_FB1.uA_FB1.uB_3                                 1200                  
+                          25            0         25  DIRECT   FB1.uA.FIXED-> {FB1.uB.FIXED}                                                        
+                           6                      13  HSTDM_4                                                                                       
+                          12            0         12  DIRECT   FB1.uB.FIXED-> {FB1.uA.FIXED}                                                        
+                                                                                                                                                    
+  23)                  50/50                      60           Trace Group: FB1_A2_B20                                        1200     50           
+                          31            0         31  DIRECT   FB1.uA.J2-> {FB1.uB.J20}                                                             
+                           6                      16  HSTDM_4                                                                                       
+                          13            0         13  DIRECT   FB1.uB.J20-> {FB1.uA.J2}                                                             
+                                                                                                                                                    
+  24)                  50/50                      60           Trace Group: FB1_A3_B21                                        1200     50           
+                          31            0         31  DIRECT   FB1.uA.J3-> {FB1.uB.J21}                                                             
+                           6                      16  HSTDM_4                                                                                       
+                          13            0         13  DIRECT   FB1.uB.J21-> {FB1.uA.J3}                                                             
+                                                                                                                                                    
+  25)                  50/50                      60           Trace Group: FB1_A4_B22                                        1200     50           
+                          29            0         29  DIRECT   FB1.uA.J4-> {FB1.uB.J22}                                                             
+                           6                      16  HSTDM_4                                                                                       
+                          15            0         15  DIRECT   FB1.uB.J22-> {FB1.uA.J4}                                                             
+                                                                                                                                                    
+  26)                  39/50                      39           Trace Group: FB1_A7_D7                                                  50           
+                           1            0          1  DIRECT   FB1.uA.J7-> {FB1.uD.J7}                                                              
+                          38            0         38  DIRECT   FB1.uD.J7-> {FB1.uA.J7}                                                              
+                                                                                                                                                    
+  27)                  39/50                      39           Trace Group: FB1_A8_D8                                                  50           
+                           1            0          1  DIRECT   FB1.uA.J8-> {FB1.uD.J8}                                                              
+                          38            0         38  DIRECT   FB1.uD.J8-> {FB1.uA.J8}                                                              
+                                                                                                                                                    
+  28)                  39/50                      39           Trace Group: FB1_A9_D9                                                  50           
+                           2            0          2  DIRECT   FB1.uA.J9-> {FB1.uD.J9}                                                              
+                          37            0         37  DIRECT   FB1.uD.J9-> {FB1.uA.J9}                                                              
+                                                                                                                                                    
+  29)                  40/50                      40           Trace Group: FB1_A10_D10                                                50           
+                           2            0          2  DIRECT   FB1.uA.J10-> {FB1.uD.J10}                                                            
+                          38            0         38  DIRECT   FB1.uD.J10-> {FB1.uA.J10}                                                            
+                                                                                                                                                    
+  30)                  24/24                      24           Trace Group: FB1_B1_C19                                                 50           
+                           1            0          1  DIRECT   FB1.uB.J1-> {FB1.uC.J19}                                                             
+                          23            0         23  DIRECT   FB1.uC.J19-> {FB1.uB.J1}                                                             
+                                                                                                                                                    
+  31)                  24/24                      24           Trace Group: FB1_B1_C19_1                                               50           
+                          24            0         24  DIRECT   FB1.uC.J19-> {FB1.uB.J1}                                                             
+                                                                                                                                                    
+  32)                  50/50                     178           Trace Group: FB1_B2_C20                                        1200     50           
+                           0            0          0  DIRECT   FB1.uB.J2-> {FB1.uC.J20}                                                             
+                          44                     168  HSTDM_4                                                                                       
+                           2            0          2  DIRECT   FB1.uC.J20-> {FB1.uB.J2}                                                             
+                           4                       8  HSTDM_4                                                                                       
+                                                                                                                                                    
+  33)                    7/7                       7           Trace Group: T_FB1.uC_FB1.uD_2                                                       
+                           6            0          6  DIRECT   FB1.uC.FIXED-> {FB1.uD.FIXED}                                                        
+                           1            0          1  DIRECT   FB1.uD.FIXED-> {FB1.uC.FIXED}                                                        
+                                                                                                                                                    
+  34)                  24/24                      24           Trace Group: FB1_C1_D19                                                 50           
+                          22            0         22  DIRECT   FB1.uC.J1-> {FB1.uD.J19}                                                             
+                           2            0          2  DIRECT   FB1.uD.J19-> {FB1.uC.J1}                                                             
+                                                                                                                                                    
+  35)                  24/24                      24           Trace Group: FB1_C1_D19_1                                               50           
+                          21            0         21  DIRECT   FB1.uC.J1-> {FB1.uD.J19}                                                             
+                           3            0          3  DIRECT   FB1.uD.J19-> {FB1.uC.J1}                                                             
+                                                                                                                                                    
+  36)                  31/31                      41           Trace Group: T_FB1.uC_FB1.uD_1                                 1200                  
+                           9            0          9  DIRECT   FB1.uC.FIXED-> {FB1.uD.FIXED}                                                        
+                           6                      16  HSTDM_4                                                                                       
+                          16            0         16  DIRECT   FB1.uD.FIXED-> {FB1.uC.FIXED}                                                        
+                                                                                                                                                    
+  37)                  43/43                      53           Trace Group: T_FB1.uC_FB1.uD_3                                 1200                  
+                          12            0         12  DIRECT   FB1.uC.FIXED-> {FB1.uD.FIXED}                                                        
+                           6                      16  HSTDM_4                                                                                       
+                          25            0         25  DIRECT   FB1.uD.FIXED-> {FB1.uC.FIXED}                                                        
+                                                                                                                                                    
+  38)                  50/50                      62           Trace Group: FB1_C2_D20                                        1200     50           
+                          14            0         14  DIRECT   FB1.uC.J2-> {FB1.uD.J20}                                                             
+                           7                      20  HSTDM_4                                                                                       
+                          28            0         28  DIRECT   FB1.uD.J20-> {FB1.uC.J2}                                                             
+                                                                                                                                                    
+==================================================================================================================================================
+
+@S5.1.3 AP426 |Multi-Hop Report
+
+Hops Number          Number        
+     Inter-FPGA Nets Toplevel Nets 
+----------------------------------
+1    347             417           
+2    213             130           
+3    301             2             
+4    53              0             
+==================================
+
+@S5.1.4 AP655 |Post-Optimization Routing Summary
+Connection       Trace Usage  No. of Net     TDM Module            Available Slack Range  Mean Slack  Untimed  
+                              failed timing                        (Post TDM)                         nets     
+-------------------------------------------------------------------------------------------------------------
+FB1.uA<->FB1.uB  279/279                                                                                       
+                              0/251          NONE (7 - 9 ns)       424 to 491 ns          463 ns      0        
+                              0/69           HSTDM_4 (26 - 28 ns)  458 to 471 ns          458 ns      0        
+FB1.uB<->FB1.uC  98/98                                                                                         
+                              0/50           NONE (9 ns)           475 to 489 ns          475 ns      0        
+                              0/176          HSTDM_4 (28 ns)       424 to 470 ns          457 ns      0        
+FB1.uC<->FB1.uD  179/179                                                                                       
+                              0/159          NONE (7 - 9 ns)       443 to 489 ns          477 ns      0        
+                              0/52           HSTDM_4 (26 - 28 ns)  470 to 472 ns          470 ns      0        
+FB1.uA<->FB1.uD  157/200                                                                                       
+                              0/157          NONE (9 ns)           457 to 489 ns          465 ns      0        
+=============================================================================================================
+
+@S5.1.5 AP267 |Global Route Summary
+@N: AP367 |Routed 1095 Nets
+@N: AP268 |Maximum TDM Ratio: 4
+@N: AP684 |Cut Clocks: 0
+@N: AP371 |For global routing details, refer to system_route.rpt
+@N: AP152 |(Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 968MB peak: 968MB)
+Multi-hop Combinational Path Analysis
+@N: AP405 |Writing Multi-hop Path Report to timing_route.rpt
+No TG updates for net: IMMID[21] sink Bin: TOP_IO_HT3_FB1_D5
+No TG updates for net: IMMID[52] sink Bin: TOP_IO_HT3_FB1_D4
+No TG updates for net: Addr[0] sink Bin: FB1.uC
+No TG updates for net: Addr[1] sink Bin: FB1.uC
+No TG updates for net: IMMID[23] sink Bin: TOP_IO_HT3_FB1_D4
+No TG updates for net: IMMID[27] sink Bin: TOP_IO_HT3_FB1_D3
+No TG updates for net: IMMID[50] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[48] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[47] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[44] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[40] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[38] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[37] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[36] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[35] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[31] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[29] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[26] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[25] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[24] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[33] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[22] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[20] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[18] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[17] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[39] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[19] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[46] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[34] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[42] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[45] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[32] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[43] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[28] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[51] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[14] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[30] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[41] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[49] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[59] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[63] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[61] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[58] sink Bin: TOP_IO_HT3_FB1_A6
+
+@S6 AP249 |Detail Routing
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+@N: AP409 |Reserving clock capable differential traces for HSTDM: FB1_C2_C[2] and FB1_C2_C[3]
+@N: AP409 |Reserving clock capable differential traces for HSTDM: FB1.CI3_P[15] and FB1.CI3_N[15]
+@N: AP409 |Reserving clock capable differential traces for HSTDM: FB1.CI1_P[19] and FB1.CI1_N[19]
+@N: AP409 |Reserving clock capable differential traces for HSTDM: FB1_B2_C[2] and FB1_B2_C[3]
+@N: AP409 |Reserving clock capable differential traces for HSTDM: FB1_B2_B[0] and FB1_B2_B[1]
+@N: AP409 |Reserving clock capable differential traces for HSTDM: FB1.AI1_P[19] and FB1.AI1_N[19]
+@N: AP409 |Reserving clock capable differential traces for HSTDM: FB1.AI3_P[15] and FB1.AI3_N[15]
+@N: AP409 |Reserving clock capable differential traces for HSTDM: FB1_A2_C[2] and FB1_A2_C[3]
+@N: AP409 |Reserving clock capable differential traces for HSTDM: FB1_A3_C[2] and FB1_A3_C[3]
+@N: AP409 |Reserving clock capable differential traces for HSTDM: FB1_A4_C[2] and FB1_A4_C[3]
+@N: AP152 |(Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:15s; Memory used current: 968MB peak: 968MB)
+@N: MF764 |Finished adding TDM modules to the design netlist. 
+@N: AP924 |DUT hierarchy added to FPGA`s
+@N: AP405 |Writing Report of all nets qualified for TDM to tdm_qualified.rpt
+@N: AP405 |Writing Report of all nets disqualified for TDM to tdm_nonqualified.rpt
+@N: AP405 |Writing System-route Trace Assignment Results to router_constraints.pcf
+
+@S7 AP581 |Key parameters from this run
+
+@N: BN341 |OPTIONS: The options used for this run
+   Feedthrough Routing - Connection model used for feed-through
+   HSTDM Bitrate - 
+   HSTDM Bitrate per Cable - 
+   HSTDM Reset - 
+   Max Ratio - 
+   Priority - Optimization priority
+   TDM Qualification - 
+   TDM Type - Connection model used for TDM
+
+KEY_PARAMETER,CONSTRAINTS,ports_assigned,550,ports_unassigned,0,cells_assigned,4,cells_unassigned,0
+KEY_PARAMETER,OPTIONS,Priority,multi_hop_path,Feedthrough Routing,direct,TDM Type,HSTDM,TDM Qualification,all,HSTDM Bitrate,1400 Mbps,HSTDM Bitrate per Cable,on,HSTDM Reset,NONE,Max Ratio,4
+KEY_PARAMETER,ROUTER,routed_nets,1095,max_ratio,4,cut_clocks,0,feedthroughs,157,unrouted_nets,0,trace_usage,77.1533,num_1_hops,764,num_2_hops,343,num_3_hops,303,num_4_hops,53,max_hops,4,timing_violations,0,timing_tns,0,timing_tps,425834,mean_slack,465,min_slack,424,max_slack,491
+KEY_PARAMETER,RUNTIME,tassign,0.900708,traceopt,0.132138,detail,0.0329361,fpt,0.0164067,fpc,9,ipt,0.0103068,ipc,72,total,17.7431,cpu,16.8379
+
+THE FORMAT OF THIS LOG MAY CHANGE WITHOUT NOTICE
+
+@N: AP225 |Autopartitioner exiting with status 0
+Process took 0h:00m:17s realtime, 0h:00m:16s cputime
+# Sun Apr  9 22:41:19 2023
+
+###########################################################]

@@ -1,0 +1,13 @@
+<!DOCTYPE datastate_doc>
+<STATE datadir="root" lastwritepid="18926" task="root" lastwritehost="ws35" locked="0" name="root" job_name="root">
+ <options>
+  <technology>HAPS-100</technology>
+ </options>
+ <environment/>
+ <tcl_command_args/>
+ <tcl_command></tcl_command>
+ <exports/>
+ <apply_states/>
+ <run_state/>
+ <partition/>
+</STATE>

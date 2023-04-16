@@ -1,0 +1,808 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> <span style="font-family: courier, monospace; font-weight: bold; font-size:24px">
+<a name="TOP">System Route Log</a></span></head><body style="font-family: courier,monospace; line-height: 1.0; margin-top: 0em; margin-bottom: 0em; font-size:14px; white-space:pre;">
+<span style="color:red; font-family: courier, monospace; font-size:16px">1 Warnings: <a href="#W0"> First Warning</a></span>
+<table><tr><td>1</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px"><a href="#S1" name="SFrom1">Routing Environment Preparation</a></td></tr>
+<tr><td>2</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px"><a href="#S2" name="SFrom2">Design & Constraint Load and Preparation</a></td></tr>
+<tr><td>2.1</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S2.1" name="SFrom2.1">Loading Design</a></td></tr>
+<tr><td>2.2</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S2.2" name="SFrom2.2">Reading PCF Constraints</a></td></tr>
+<tr><td>2.3</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S2.3" name="SFrom2.3">Building Primary Partitioning Graph</a></td></tr>
+<tr><td>2.4</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S2.4" name="SFrom2.4">Constraint Summary</a></td></tr>
+<tr><td>3</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px"><a href="#S3" name="SFrom3">System-Route Optimization Options</a></td></tr>
+<tr><td>4</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px"><a href="#S4" name="SFrom4">Global Routing</a></td></tr>
+<tr><td>4.1</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S4.1" name="SFrom4.1">Non-Timing-Driven Global Route</a></td></tr>
+<tr><td>4.2</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S4.2" name="SFrom4.2">Pre-Optimization Global Route Report</a></td></tr>
+<tr><td>4.2.1</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">      <a href="#S4.2.1" name="SFrom4.2.1">Global Route Net Path Summary</a></td></tr>
+<tr><td>4.2.2</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">      <a href="#S4.2.2" name="SFrom4.2.2">Global Route Ratio Report</a></td></tr>
+<tr><td>4.2.3</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">      <a href="#S4.2.3" name="SFrom4.2.3">Global Route Summary</a></td></tr>
+<tr><td>4.2.4</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">      <a href="#S4.2.4" name="SFrom4.2.4">Global Route Direct Nets</a></td></tr>
+<tr><td>4.3</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S4.3" name="SFrom4.3">Feedthrough Insertion and Net Splitting</a></td></tr>
+<tr><td>4.4</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S4.4" name="SFrom4.4">Find Clocks and TDM Restrictions</a></td></tr>
+<tr><td>4.5</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S4.5" name="SFrom4.5">Generating Timing Graph</a></td></tr>
+<tr><td>4.6</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S4.6" name="SFrom4.6">Route Optimization</a></td></tr>
+<tr><td>4.6.1</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">      <a href="#S4.6.1" name="SFrom4.6.1">Multi-hop Optimization with Estimated Timing</a></td></tr>
+<tr><td>4.7</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S4.7" name="SFrom4.7">Cable Assignment Optimization</a></td></tr>
+<tr><td>5</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px"><a href="#S5" name="SFrom5">Final Global Route Results</a></td></tr>
+<tr><td>5.1</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">   <a href="#S5.1" name="SFrom5.1">Post-Optimization and Cable Assignment Global Route Report</a></td></tr>
+<tr><td>5.1.1</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">      <a href="#S5.1.1" name="SFrom5.1.1">Global Route Ratio Report</a></td></tr>
+<tr><td>5.1.2</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">      <a href="#S5.1.2" name="SFrom5.1.2">Global Route Trace Usage</a></td></tr>
+<tr><td>5.1.3</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">      <a href="#S5.1.3" name="SFrom5.1.3">Multi-Hop Report</a></td></tr>
+<tr><td>5.1.4</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">      <a href="#S5.1.4" name="SFrom5.1.4">Post-Optimization Routing Summary</a></td></tr>
+<tr><td>5.1.5</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px">      <a href="#S5.1.5" name="SFrom5.1.5">Global Route Summary</a></td></tr>
+<tr><td>6</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px"><a href="#S6" name="SFrom6">Detail Routing</a></td></tr>
+<tr><td>7</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px"><a href="#S7" name="SFrom7">Key parameters from this run</a></td></tr>
+</table><span>Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 8388608 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|sr0
+Synopsys ProtoCompiler Partitioner/Router, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+
+THE FORMAT OF THIS LOG MAY CHANGE WITHOUT NOTICE
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N0"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP405">AP405</a> Writing System Route Report to system_route.rpt</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N1"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP378">AP378</a> Using Router Flow</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP379">AP379</a><a name="S1">Section 1</a> Routing Environment Preparation <a href="#SFrom1">Back</a>
+</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N2"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP161">AP161</a> Loading Connection Models</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N3"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP285">AP285</a> Adding Connection Model 'ACPM' -- Simple asynchronous TDM using mux/demux logic with a counter, similar to legacy CPM</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N4"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP285">AP285</a> Adding Connection Model 'HSTDM' -- Asynchronous High Speed TDM using IOSERDES with source synchronous clocks and training</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N5"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP285">AP285</a> Adding Connection Model 'HSTDM_ERD' -- High Speed TDM with runtime error detection (ERD)</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N6"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP285">AP285</a> Adding Connection Model 'MGTDM' -- MGT TDM </span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N7"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP285">AP285</a> Adding Connection Model 'MGTDM_Y' -- MGT TDM </span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N8"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP163">AP163</a> Loading Target System Specification</span>
+<span>Building target system...
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N9"></a> Assigning syn_chip_id 0 to FPGA FB1.uA.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N10"></a> Assigning syn_chip_id 1 to FPGA FB1.uB.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N11"></a> Assigning syn_chip_id 2 to FPGA FB1.uC.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N12"></a> Assigning syn_chip_id 3 to FPGA FB1.uD.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N13"></a> Using syn_chip_id 0 on FPGA FB1.uA.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N14"></a> Using syn_chip_id 1 on FPGA FB1.uB.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N15"></a> Using syn_chip_id 2 on FPGA FB1.uC.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N16"></a> Using syn_chip_id 3 on FPGA FB1.uD.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N17"></a> Using syn_chip_id 0 on FPGA FB1.uA.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N18"></a> Using syn_chip_id 1 on FPGA FB1.uB.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N19"></a> Using syn_chip_id 2 on FPGA FB1.uC.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N20"></a> Using syn_chip_id 3 on FPGA FB1.uD.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N21"></a> Using syn_chip_id 0 on FPGA FB1.uA.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N22"></a> Using syn_chip_id 1 on FPGA FB1.uB.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N23"></a> Using syn_chip_id 2 on FPGA FB1.uC.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N24"></a> Using syn_chip_id 3 on FPGA FB1.uD.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N25"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP250">AP250</a> TargetSystem Summary</span>
+<span>Name: 'DETAIL' Bins: 28
+
+FPGA_Bin Pins LUT     LUTM    DFF     BRAM URAM DSP  ZDPIMOD IO    
+------------------------------------------------------------------
+FB1.uA    712 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uB    610 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uC    510 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uD    612 4085760 2042880 8171520 2160 320  3840 992     2072  
+==================================================================
+
+Port_Bin           Pins Capacity 
+--------------------------------
+TOP_IO_HT3_FB1_A5  52   52       
+TOP_IO_HT3_FB1_B5  52   52       
+TOP_IO_HT3_FB1_C5  52   52       
+TOP_IO_HT3_FB1_D5  52   52       
+TOP_IO_HT3_FB1_A6  52   52       
+TOP_IO_HT3_FB1_B6  52   52       
+TOP_IO_HT3_FB1_C6  52   52       
+TOP_IO_HT3_FB1_D6  52   52       
+TOP_IO_HT3_FB1_A11 52   52       
+TOP_IO_HT3_FB1_A12 52   52       
+TOP_IO_HT3_FB1_B7  52   52       
+TOP_IO_HT3_FB1_B8  52   52       
+TOP_IO_HT3_FB1_C7  52   52       
+TOP_IO_HT3_FB1_C8  52   52       
+TOP_IO_HT3_FB1_D3  52   52       
+TOP_IO_HT3_FB1_D4  52   52       
+================================
+
+External_Bin Pins        
+------------------------
+FB1.PLL1     1    LOCKED 
+FB1.PLL2     0    LOCKED 
+FB1.PLL3     0    LOCKED 
+FB1.PLL4     0    LOCKED 
+FB1.PLL5     0    LOCKED 
+FB1.PLL6     0    LOCKED 
+FB1.PLL7     0    LOCKED 
+FB1.PLL8     0    LOCKED 
+========================
+
+Connectivity                Point-to-Point Mult-Terminal 
+--------------------------------------------------------
+FB1.uA&lt;->FB1.uB (FIXED)     81             0             
+FB1.uA&lt;->FB1.uB             198            0             
+FB1.uB&lt;->FB1.uC             98             0             
+FB1.uA&lt;->FB1.uD             200            0             
+FB1.uC&lt;->FB1.uD (FIXED)     81             0             
+FB1.uC&lt;->FB1.uD             98             0             
+FB1.uA&lt;->TOP_IO_HT3_FB1_A5  52             0             
+FB1.uB&lt;->TOP_IO_HT3_FB1_B5  52             0             
+FB1.uC&lt;->TOP_IO_HT3_FB1_C5  52             0             
+FB1.uD&lt;->TOP_IO_HT3_FB1_D5  52             0             
+FB1.uA&lt;->TOP_IO_HT3_FB1_A6  52             0             
+FB1.uB&lt;->TOP_IO_HT3_FB1_B6  52             0             
+FB1.uC&lt;->TOP_IO_HT3_FB1_C6  52             0             
+FB1.uD&lt;->TOP_IO_HT3_FB1_D6  52             0             
+FB1.uA&lt;->TOP_IO_HT3_FB1_A11 52             0             
+FB1.uA&lt;->TOP_IO_HT3_FB1_A12 52             0             
+FB1.uB&lt;->TOP_IO_HT3_FB1_B7  52             0             
+FB1.uB&lt;->TOP_IO_HT3_FB1_B8  52             0             
+FB1.uC&lt;->TOP_IO_HT3_FB1_C7  52             0             
+FB1.uC&lt;->TOP_IO_HT3_FB1_C8  52             0             
+FB1.uD&lt;->TOP_IO_HT3_FB1_D3  52             0             
+FB1.uD&lt;->TOP_IO_HT3_FB1_D4  52             0             
+========================================================
+
+Function_Name Trace_Count 
+-------------------------
+GCLK          1           
+MGT           16          
+MGT_DEBUG     32          
+=========================
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP157">AP157</a><a name="S2">Section 2</a> Design & Constraint Load and Preparation <a href="#SFrom2">Back</a>
+</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP123">AP123</a><a name="S2.1">Section 2.1</a> Loading Design <a href="#SFrom2.1">Back</a>
+</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N26"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP147">AP147</a> Reading netlist: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top.srp</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N27"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP152">AP152</a> (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 661MB peak: 661MB)</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N28"></a> Using syn_chip_id 0 on FPGA FB1.uA.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N29"></a> Using syn_chip_id 1 on FPGA FB1.uB.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N30"></a> Using syn_chip_id 2 on FPGA FB1.uC.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N31"></a> Using syn_chip_id 3 on FPGA FB1.uD.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N32"></a> Using syn_chip_id 0 on FPGA FB1.uA.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N33"></a> Using syn_chip_id 1 on FPGA FB1.uB.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N34"></a> Using syn_chip_id 2 on FPGA FB1.uC.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N35"></a> Using syn_chip_id 3 on FPGA FB1.uD.</span>
+<span>Start loading timing files (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 662MB peak: 662MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 670MB peak: 670MB)
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N36"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP119">AP119</a> Uniquifying Design</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N37"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP120">AP120</a> Building Partitioner Data Structures</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP149">AP149</a><a name="S2.2">Section 2.2</a> Reading PCF Constraints <a href="#SFrom2.2">Back</a>
+</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N38"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP219">AP219</a> Reading file: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top.pcf</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N39"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP500">AP500</a> Using TDM type 'HSTDMSE'</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N40"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP219">AP219</a> Reading file: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top_cu.pcf</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N41"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP219">AP219</a> Reading file: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top_na.pcf</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N42"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP219">AP219</a> Reading file: /home/u108/u108061217/RISC-V-pipeline-CPU/partition.pcf</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N43"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP500">AP500</a> Using TDM type 'HSTDMSE'</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N44"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP221">AP221</a> Duplicate assign_global_net command for net 'clk' specified in /home/u108/u108061217/RISC-V-pipeline-CPU/partition.pcf:15. Omitting.</span>
+<span style="color:red;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="W0"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP935">AP935</a>Warning:  reset_synchronize -toplevel_net is deprecated, please use -net.</span>
+<span>	from source: /home/u108/u108061217/RISC-V-pipeline-CPU/partition.pcf at line: 20
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N45"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP238">AP238</a> Target System Summary After Constraints: </span>
+<span>Name: 'DETAIL' Bins: 28
+
+FPGA_Bin Pins LUT     LUTM    DFF     BRAM URAM DSP  ZDPIMOD IO    
+------------------------------------------------------------------
+FB1.uA    712 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uB    610 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uC    510 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uD    612 4085760 2042880 8171520 2160 320  3840 992     2072  
+==================================================================
+
+Port_Bin           Pins Capacity 
+--------------------------------
+TOP_IO_HT3_FB1_A5  52   52       
+TOP_IO_HT3_FB1_B5  52   52       
+TOP_IO_HT3_FB1_C5  52   52       
+TOP_IO_HT3_FB1_D5  52   52       
+TOP_IO_HT3_FB1_A6  52   52       
+TOP_IO_HT3_FB1_B6  52   52       
+TOP_IO_HT3_FB1_C6  52   52       
+TOP_IO_HT3_FB1_D6  52   52       
+TOP_IO_HT3_FB1_A11 52   52       
+TOP_IO_HT3_FB1_A12 52   52       
+TOP_IO_HT3_FB1_B7  52   52       
+TOP_IO_HT3_FB1_B8  52   52       
+TOP_IO_HT3_FB1_C7  52   52       
+TOP_IO_HT3_FB1_C8  52   52       
+TOP_IO_HT3_FB1_D3  52   52       
+TOP_IO_HT3_FB1_D4  52   52       
+================================
+
+External_Bin Pins        
+------------------------
+FB1.PLL1     1    LOCKED 
+FB1.PLL2     0    LOCKED 
+FB1.PLL3     0    LOCKED 
+FB1.PLL4     0    LOCKED 
+FB1.PLL5     0    LOCKED 
+FB1.PLL6     0    LOCKED 
+FB1.PLL7     0    LOCKED 
+FB1.PLL8     0    LOCKED 
+========================
+
+Connectivity                Point-to-Point Mult-Terminal 
+--------------------------------------------------------
+FB1.uA&lt;->FB1.uB (FIXED)     81             0             
+FB1.uA&lt;->FB1.uB             198            0             
+FB1.uB&lt;->FB1.uC             98             0             
+FB1.uA&lt;->FB1.uD             200            0             
+FB1.uC&lt;->FB1.uD (FIXED)     81             0             
+FB1.uC&lt;->FB1.uD             98             0             
+FB1.uA&lt;->TOP_IO_HT3_FB1_A5  52             0             
+FB1.uB&lt;->TOP_IO_HT3_FB1_B5  52             0             
+FB1.uC&lt;->TOP_IO_HT3_FB1_C5  52             0             
+FB1.uD&lt;->TOP_IO_HT3_FB1_D5  52             0             
+FB1.uA&lt;->TOP_IO_HT3_FB1_A6  52             0             
+FB1.uB&lt;->TOP_IO_HT3_FB1_B6  52             0             
+FB1.uC&lt;->TOP_IO_HT3_FB1_C6  52             0             
+FB1.uD&lt;->TOP_IO_HT3_FB1_D6  52             0             
+FB1.uA&lt;->TOP_IO_HT3_FB1_A11 52             0             
+FB1.uA&lt;->TOP_IO_HT3_FB1_A12 52             0             
+FB1.uB&lt;->TOP_IO_HT3_FB1_B7  52             0             
+FB1.uB&lt;->TOP_IO_HT3_FB1_B8  52             0             
+FB1.uC&lt;->TOP_IO_HT3_FB1_C7  52             0             
+FB1.uC&lt;->TOP_IO_HT3_FB1_C8  52             0             
+FB1.uD&lt;->TOP_IO_HT3_FB1_D3  52             0             
+FB1.uD&lt;->TOP_IO_HT3_FB1_D4  52             0             
+========================================================
+
+Function_Name Trace_Count 
+-------------------------
+GCLK          1           
+MGT           16          
+MGT_DEBUG     32          
+=========================
+
+GCLK   Source    Assigned  Connected                    
+Trace  Bin       Net       FPGAs                        
+------------------------------------------------------
+GCLK1  FB1.PLL1  clk       FB1.uA FB1.uB FB1.uC FB1.uD  
+======================================================
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP130">AP130</a><a name="S2.3">Section 2.3</a> Building Primary Partitioning Graph <a href="#SFrom2.3">Back</a>
+</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP420">AP420</a><a name="S2.4">Section 2.4</a> Constraint Summary <a href="#SFrom2.4">Back</a>
+</span>
+<span>To see a list of all unconstrained ports and/or cells, use option '-report_unconstrained ports|cells|all'
+
+Port Constraints:
+=================
+Ports  Bin_Assignment     
+-------------------------
+ 52/52 TOP_IO_HT3_FB1_B6  
+ 52/52 TOP_IO_HT3_FB1_B5  
+ 20/52 TOP_IO_HT3_FB1_C6  
+ 49/52 TOP_IO_HT3_FB1_B8  
+ 11/52 TOP_IO_HT3_FB1_C5  
+ 21/52 TOP_IO_HT3_FB1_C7  
+ 14/52 TOP_IO_HT3_FB1_C8  
+ 52/52 TOP_IO_HT3_FB1_A6  
+ 52/52 TOP_IO_HT3_FB1_A5  
+ 52/52 TOP_IO_HT3_FB1_A11 
+ 52/52 TOP_IO_HT3_FB1_A12 
+ 14/52 TOP_IO_HT3_FB1_D5  
+ 25/52 TOP_IO_HT3_FB1_D6  
+ 18/52 TOP_IO_HT3_FB1_D3  
+ 13/52 TOP_IO_HT3_FB1_D4  
+  1    FB1.PLL1*          
+ 52/52 TOP_IO_HT3_FB1_B7  
+  0    UNASSIGNED         
+=========================
+Total ports assigned: 550
+*Locked or external bin(s)
+
+Cell Constraints (includes constraints implied by port assignments):
+====================================================================
+Bin_Assignment Cells 
+--------------------
+FB1.uA             1 
+FB1.uB             1 
+FB1.uC             1 
+FB1.uD             1 
+UNASSIGNED         0 
+====================
+Total cells assigned: 4
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N46"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP152">AP152</a> (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 874MB peak: 874MB)</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N47"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP158">AP158</a> Simplifying target system for routing</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N48"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP152">AP152</a> (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 876MB peak: 876MB)</span>
+<span>Reading estimate timing file: /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/system_route/sr0/top_timest.est
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP680">AP680</a><a name="S3">Section 3</a> System-Route Optimization Options <a href="#SFrom3">Back</a>
+</span>
+<span>Parameter                  Value             
+-----------------------------------------
+Priority                   multi_hop_path    
+Feedthrough Routing        direct            
+TDM Type                   HSTDM             
+TDM Qualification          all               
+HSTDM Bitrate              1400 Mbps         
+HSTDM Bitrate per Cable    on                
+HSTDM Reset                NONE              
+Max Ratio                  4                 
+=========================================
+
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP241">AP241</a><a name="S4">Section 4</a> Global Routing <a href="#SFrom4">Back</a>
+</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N49"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP634">AP634</a> Using HSTDM type: Single-Ended </span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP603">AP603</a><a name="S4.1">Section 4.1</a> Non-Timing-Driven Global Route <a href="#SFrom4.1">Back</a>
+</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N50"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP152">AP152</a> (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:13s; Memory used current: 876MB peak: 876MB)</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N51"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP152">AP152</a> (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 895MB peak: 895MB)</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP267">AP267</a><a name="S4.2">Section 4.2</a> Pre-Optimization Global Route Report <a href="#SFrom4.2">Back</a>
+</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP271">AP271</a><a name="S4.2.1">Section 4.2.1</a> Global Route Net Path Summary <a href="#SFrom4.2.1">Back</a>
+</span>
+<span>TDM Qualification type: all
+
+Nets  TDM                           Traces                                                           
+All   Qualified      Non-Qualified  All     TDM_usable  Connected_Bins                               
+---------------------------------------------------------------------------------------------------
+ 247            247              0      98          48  FB1.uB FB1.uC                                
+ 206            205              1     179         116  FB1.uC FB1.uD                                
+ 164             98             66     279         212  FB1.uA FB1.uB                                
+ 134            133              1      ^0           0  FB1.uB FB1.uD                                
+  52              0             52      52           0  FB1.uA TOP_IO_HT3_FB1_A11                    
+  52              0             52      52           0  FB1.uA TOP_IO_HT3_FB1_A12                    
+  52              0             52      52           0  FB1.uA TOP_IO_HT3_FB1_A5                     
+  52              0             52      52           0  FB1.uA TOP_IO_HT3_FB1_A6                     
+  52              0             52      52           0  FB1.uB TOP_IO_HT3_FB1_B5                     
+  52              0             52      52           0  FB1.uB TOP_IO_HT3_FB1_B6                     
+  52              0             52      52           0  FB1.uB TOP_IO_HT3_FB1_B7                     
+  49              0             49      52           0  FB1.uB TOP_IO_HT3_FB1_B8                     
+  25              0             25      52           0  FB1.uD TOP_IO_HT3_FB1_D6                     
+  21              0             21      52           0  FB1.uC TOP_IO_HT3_FB1_C7                     
+  20              0             20      52           0  FB1.uC TOP_IO_HT3_FB1_C6                     
+  18              0             18      52           0  FB1.uD TOP_IO_HT3_FB1_D3                     
+  14              0             14      52           0  FB1.uC TOP_IO_HT3_FB1_C8                     
+  14              0             14      52           0  FB1.uD TOP_IO_HT3_FB1_D5                     
+  13              0             13      52           0  FB1.uD TOP_IO_HT3_FB1_D4                     
+  11              0             11      52           0  FB1.uC TOP_IO_HT3_FB1_C5                     
+   1              0              1       1           0  FB1.uA FB1.uB FB1.uC FB1.uD FB1.PLL1 (GCLK)  
+   1              0              1      ^0           0  FB1.uA FB1.uC                                
+   1              0              1     200         192  FB1.uA FB1.uD                                
+===================================================================================================
+^Nets require routing through other FPGA's (feed-through)
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP366">AP366</a><a name="S4.2.2">Section 4.2.2</a> Global Route Ratio Report <a href="#SFrom4.2.2">Back</a>
+</span>
+<span>Connection      Trace_Usage Net_Usage              Ratios Bitrate Cablelength 
+                                  TDM DIRECT CLOCK        in Mbps in cm       
+-----------------------------------------------------------------------------
+FB1.uA&lt;->FB1.uD     157/200         0    157     0                50          
+FB1.uB&lt;->FB1.uC       98/98       176     50     0 4      1200    50          
+FB1.uA&lt;->FB1.uB     270/279        82    238     0 4      1200    50          
+FB1.uC&lt;->FB1.uD      87/179       188     23     0 4      1200    50          
+=============================================================================
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP267">AP267</a><a name="S4.2.3">Section 4.2.3</a> Global Route Summary <a href="#SFrom4.2.3">Back</a>
+</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N52"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP367">AP367</a> Routed 1095 Nets</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N53"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP268">AP268</a> Maximum TDM Ratio: 4</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N54"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP684">AP684</a> Cut Clocks: 0</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N55"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP368">AP368</a> Feedthroughs: 157</span>
+<span>   FB1.uA -> FB1.uC 1
+   FB1.uB -> FB1.uC 5
+   FB1.uC -> FB1.uB 17
+   FB1.uD -> FB1.uB 134
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N56"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP270">AP270</a> Unrouted: 0</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP267">AP267</a><a name="S4.2.4">Section 4.2.4</a> Global Route Direct Nets <a href="#SFrom4.2.4">Back</a>
+</span>
+<span>To see a list of all nets that must be routed without TDM, use option '-report_direct_nets 1'
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N57"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP371">AP371</a> For global routing details, refer to system_route.rpt</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N58"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP152">AP152</a> (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 895MB peak: 895MB)</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP248">AP248</a><a name="S4.3">Section 4.3</a> Feedthrough Insertion and Net Splitting <a href="#SFrom4.3">Back</a>
+</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N59"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP415">AP415</a> See system_route.rpt for details.</span>
+<span>Set 'n_syn_useioff' property for NInstance 'FB1.uA.aptn_reset_sync_rst_n_9'
+Set 'n_syn_useioff' property for NInstance 'FB1.uA.aptn_reset_sync_rst_n_10'
+Set 'n_syn_useioff' property for NInstance 'FB1.uB.aptn_reset_sync_rst_n_5'
+Set 'n_syn_useioff' property for NInstance 'FB1.uB.aptn_reset_sync_rst_n_6'
+Set 'n_syn_useioff' property for NInstance 'FB1.uC.aptn_reset_sync_rst_n_2'
+Set 'n_syn_useioff' property for NInstance 'FB1.uD.aptn_reset_sync_rst_n_5'
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP289">AP289</a><a name="S4.4">Section 4.4</a> Find Clocks and TDM Restrictions <a href="#SFrom4.4">Back</a>
+</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N60"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP240">AP240</a> Using TDM qualification mode: all</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N61"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP152">AP152</a> (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 903MB peak: 903MB)</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N62"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP152">AP152</a> (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 903MB peak: 903MB)</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP604">AP604</a><a name="S4.5">Section 4.5</a> Generating Timing Graph <a href="#SFrom4.5">Back</a>
+</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N63"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=Z409">Z409</a> Inter-die delay in reporting excluded.</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP605">AP605</a><a name="S4.6">Section 4.6</a> Route Optimization <a href="#SFrom4.6">Back</a>
+</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP611">AP611</a><a name="S4.6.1">Section 4.6.1</a> Multi-hop Optimization with Estimated Timing <a href="#SFrom4.6.1">Back</a>
+</span>
+<span>No TG updates for net: clk sink Bin: FB1.uA
+No TG updates for net: clk sink Bin: FB1.uB
+No TG updates for net: clk sink Bin: FB1.uC
+No TG updates for net: clk sink Bin: FB1.uD
+No TG updates for net: IMMID[42] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[36] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[20] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[19] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[60] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[55] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[21] sink Bin: TOP_IO_HT3_FB1_D5
+No TG updates for net: IMMID[31] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[46] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[49] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[47] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[61] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[58] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[33] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[57] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[56] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[17] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[62] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[48] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[15] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: Addr[0] sink Bin: FB1.uC
+No TG updates for net: IMMID[18] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[26] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[22] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[25] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[29] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[50] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[32] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[35] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[43] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[39] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[38] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[53] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[37] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[40] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[45] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[24] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[28] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[51] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[30] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[41] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[14] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[34] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[59] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[63] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[44] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[54] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[13] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[16] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: Addr[1] sink Bin: FB1.uC
+No TG updates for net: IMMID[27] sink Bin: TOP_IO_HT3_FB1_D3
+No TG updates for net: IMMID[23] sink Bin: TOP_IO_HT3_FB1_D4
+No TG updates for net: IMMID[52] sink Bin: TOP_IO_HT3_FB1_D4
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N64"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP152">AP152</a> (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 968MB peak: 968MB)</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP612">AP612</a><a name="S4.7">Section 4.7</a> Cable Assignment Optimization <a href="#SFrom4.7">Back</a>
+</span>
+<span>DUT pins connected to SLR
+FPGA Name  SLR[0]  SLR[1]  SLR[2]  SLR[3]  Total  
+------------------------------------------------
+   FB1.uB     407      24      93     228    752  
+   FB1.uC     152      24     102     226    504  
+   FB1.uD     227       0     102     110    439  
+   FB1.uA     465      76      93      52    686  
+================================================
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N65"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP152">AP152</a> (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 968MB peak: 968MB)</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP606">AP606</a><a name="S5">Section 5</a> Final Global Route Results <a href="#SFrom5">Back</a>
+</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N66"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP152">AP152</a> (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 968MB peak: 968MB)</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP267">AP267</a><a name="S5.1">Section 5.1</a> Post-Optimization and Cable Assignment Global Route Report <a href="#SFrom5.1">Back</a>
+</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP366">AP366</a><a name="S5.1.1">Section 5.1.1</a> Global Route Ratio Report <a href="#SFrom5.1.1">Back</a>
+</span>
+<span>Connection      Trace_Usage Net_Usage              Ratios Bitrate Cablelength 
+                                  TDM DIRECT CLOCK        in Mbps in cm       
+-----------------------------------------------------------------------------
+FB1.uA&lt;->FB1.uD     157/200         0    157     0                50          
+FB1.uB&lt;->FB1.uC       98/98       176     50     0 4      1200    50          
+FB1.uA&lt;->FB1.uB     279/279        69    251     0 4      1200    50          
+FB1.uC&lt;->FB1.uD     179/179        52    159     0 4      1200    50          
+=============================================================================
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP265">AP265</a><a name="S5.1.2">Section 5.1.2</a> Global Route Trace Usage <a href="#SFrom5.1.2">Back</a>
+</span>
+<span>Trace  Function  Trace_Usage  Clock_Usage  Net_Usage  Module   Trace_Name/Connection                                          Bitrate  Cablelength  
+--------------------------------------------------------------------------------------------------------------------------------------------------
+   1)  GCLK              1/1                       1           Trace Group: T_FB1.PLL1_FB1.uA_FB1.uB_FB1.uC_FB1.uD_1                                
+                           1            1          0  DIRECT   FB1.PLL1.CLK1-> {FB1.uA.CLK FB1.uB.CLK FB1.uC.CLK FB1.uD.CLK}                        
+
+   2)                  52/52                      52           Trace Group: TOP_IO_HT3_FB1_A5                                                       
+                          25            0         25  DIRECT   FB1.uA.J5-> {TOP_IO_HT3_FB1_A5.A}                                                    
+                          27            0         27  DIRECT   TOP_IO_HT3_FB1_A5.A-> {FB1.uA.J5}                                                    
+
+   3)                  52/52                      52           Trace Group: TOP_IO_HT3_FB1_A6                                                       
+                          30            0         30  DIRECT   FB1.uA.J6-> {TOP_IO_HT3_FB1_A6.A}                                                    
+                          22            0         22  DIRECT   TOP_IO_HT3_FB1_A6.A-> {FB1.uA.J6}                                                    
+
+   4)                  52/52                      52           Trace Group: TOP_IO_HT3_FB1_A11                                                      
+                          23            0         23  DIRECT   FB1.uA.J11-> {TOP_IO_HT3_FB1_A11.A}                                                  
+                          29            0         29  DIRECT   TOP_IO_HT3_FB1_A11.A-> {FB1.uA.J11}                                                  
+
+   5)                  52/52                      52           Trace Group: TOP_IO_HT3_FB1_A12                                                      
+                          35            0         35  DIRECT   FB1.uA.J12-> {TOP_IO_HT3_FB1_A12.A}                                                  
+                          17            0         17  DIRECT   TOP_IO_HT3_FB1_A12.A-> {FB1.uA.J12}                                                  
+
+   6)                  52/52                      52           Trace Group: TOP_IO_HT3_FB1_B5                                                       
+                          52            0         52  DIRECT   FB1.uB.J5-> {TOP_IO_HT3_FB1_B5.A}                                                    
+
+   7)                  52/52                      52           Trace Group: TOP_IO_HT3_FB1_B6                                                       
+                          52            0         52  DIRECT   FB1.uB.J6-> {TOP_IO_HT3_FB1_B6.A}                                                    
+
+   8)                  52/52                      52           Trace Group: TOP_IO_HT3_FB1_B7                                                       
+                          52            0         52  DIRECT   FB1.uB.J7-> {TOP_IO_HT3_FB1_B7.A}                                                    
+
+   9)                  49/52                      49           Trace Group: TOP_IO_HT3_FB1_B8                                                       
+                          49            0         49  DIRECT   FB1.uB.J8-> {TOP_IO_HT3_FB1_B8.A}                                                    
+
+  10)                  14/52                      14           Trace Group: TOP_IO_HT3_FB1_D5                                                       
+                          14            0         14  DIRECT   FB1.uD.J5-> {TOP_IO_HT3_FB1_D5.A}                                                    
+
+  11)                  25/52                      25           Trace Group: TOP_IO_HT3_FB1_D6                                                       
+                          25            0         25  DIRECT   FB1.uD.J6-> {TOP_IO_HT3_FB1_D6.A}                                                    
+
+  12)                  18/52                      18           Trace Group: TOP_IO_HT3_FB1_D3                                                       
+                          18            0         18  DIRECT   FB1.uD.J3-> {TOP_IO_HT3_FB1_D3.A}                                                    
+
+  13)                  13/52                      13           Trace Group: TOP_IO_HT3_FB1_D4                                                       
+                          13            0         13  DIRECT   FB1.uD.J4-> {TOP_IO_HT3_FB1_D4.A}                                                    
+
+  14)                  11/52                      11           Trace Group: TOP_IO_HT3_FB1_C5                                                       
+                          11            0         11  DIRECT   FB1.uC.J5-> {TOP_IO_HT3_FB1_C5.A}                                                    
+
+  15)                  20/52                      20           Trace Group: TOP_IO_HT3_FB1_C6                                                       
+                          19            0         19  DIRECT   FB1.uC.J6-> {TOP_IO_HT3_FB1_C6.A}                                                    
+                           1            0          1  DIRECT   TOP_IO_HT3_FB1_C6.A-> {FB1.uC.J6}                                                    
+
+  16)                  21/52                      21           Trace Group: TOP_IO_HT3_FB1_C7                                                       
+                          21            0         21  DIRECT   FB1.uC.J7-> {TOP_IO_HT3_FB1_C7.A}                                                    
+
+  17)                  14/52                      14           Trace Group: TOP_IO_HT3_FB1_C8                                                       
+                          13            0         13  DIRECT   FB1.uC.J8-> {TOP_IO_HT3_FB1_C8.A}                                                    
+                           1            0          1  DIRECT   TOP_IO_HT3_FB1_C8.A-> {FB1.uC.J8}                                                    
+
+  18)                    7/7                       7           Trace Group: T_FB1.uA_FB1.uB_2                                                       
+                           5            0          5  DIRECT   FB1.uA.FIXED-> {FB1.uB.FIXED}                                                        
+                           2            0          2  DIRECT   FB1.uB.FIXED-> {FB1.uA.FIXED}                                                        
+
+  19)                  24/24                      24           Trace Group: FB1_A1_B19                                                 50           
+                          20            0         20  DIRECT   FB1.uA.J1-> {FB1.uB.J19}                                                             
+                           4            0          4  DIRECT   FB1.uB.J19-> {FB1.uA.J1}                                                             
+
+  20)                  24/24                      24           Trace Group: FB1_A1_B19_1                                               50           
+                          19            0         19  DIRECT   FB1.uA.J1-> {FB1.uB.J19}                                                             
+                           5            0          5  DIRECT   FB1.uB.J19-> {FB1.uA.J1}                                                             
+
+  21)                  31/31                      35           Trace Group: T_FB1.uA_FB1.uB_1                                 1200                  
+                          19            0         19  DIRECT   FB1.uA.FIXED-> {FB1.uB.FIXED}                                                        
+                           4                       8  HSTDM_4                                                                                       
+                           8            0          8  DIRECT   FB1.uB.FIXED-> {FB1.uA.FIXED}                                                        
+
+  22)                  43/43                      50           Trace Group: T_FB1.uA_FB1.uB_3                                 1200                  
+                          25            0         25  DIRECT   FB1.uA.FIXED-> {FB1.uB.FIXED}                                                        
+                           6                      13  HSTDM_4                                                                                       
+                          12            0         12  DIRECT   FB1.uB.FIXED-> {FB1.uA.FIXED}                                                        
+
+  23)                  50/50                      60           Trace Group: FB1_A2_B20                                        1200     50           
+                          31            0         31  DIRECT   FB1.uA.J2-> {FB1.uB.J20}                                                             
+                           6                      16  HSTDM_4                                                                                       
+                          13            0         13  DIRECT   FB1.uB.J20-> {FB1.uA.J2}                                                             
+
+  24)                  50/50                      60           Trace Group: FB1_A3_B21                                        1200     50           
+                          31            0         31  DIRECT   FB1.uA.J3-> {FB1.uB.J21}                                                             
+                           6                      16  HSTDM_4                                                                                       
+                          13            0         13  DIRECT   FB1.uB.J21-> {FB1.uA.J3}                                                             
+
+  25)                  50/50                      60           Trace Group: FB1_A4_B22                                        1200     50           
+                          29            0         29  DIRECT   FB1.uA.J4-> {FB1.uB.J22}                                                             
+                           6                      16  HSTDM_4                                                                                       
+                          15            0         15  DIRECT   FB1.uB.J22-> {FB1.uA.J4}                                                             
+
+  26)                  39/50                      39           Trace Group: FB1_A7_D7                                                  50           
+                           1            0          1  DIRECT   FB1.uA.J7-> {FB1.uD.J7}                                                              
+                          38            0         38  DIRECT   FB1.uD.J7-> {FB1.uA.J7}                                                              
+
+  27)                  39/50                      39           Trace Group: FB1_A8_D8                                                  50           
+                           1            0          1  DIRECT   FB1.uA.J8-> {FB1.uD.J8}                                                              
+                          38            0         38  DIRECT   FB1.uD.J8-> {FB1.uA.J8}                                                              
+
+  28)                  39/50                      39           Trace Group: FB1_A9_D9                                                  50           
+                           2            0          2  DIRECT   FB1.uA.J9-> {FB1.uD.J9}                                                              
+                          37            0         37  DIRECT   FB1.uD.J9-> {FB1.uA.J9}                                                              
+
+  29)                  40/50                      40           Trace Group: FB1_A10_D10                                                50           
+                           2            0          2  DIRECT   FB1.uA.J10-> {FB1.uD.J10}                                                            
+                          38            0         38  DIRECT   FB1.uD.J10-> {FB1.uA.J10}                                                            
+
+  30)                  24/24                      24           Trace Group: FB1_B1_C19                                                 50           
+                           1            0          1  DIRECT   FB1.uB.J1-> {FB1.uC.J19}                                                             
+                          23            0         23  DIRECT   FB1.uC.J19-> {FB1.uB.J1}                                                             
+
+  31)                  24/24                      24           Trace Group: FB1_B1_C19_1                                               50           
+                          24            0         24  DIRECT   FB1.uC.J19-> {FB1.uB.J1}                                                             
+
+  32)                  50/50                     178           Trace Group: FB1_B2_C20                                        1200     50           
+                           0            0          0  DIRECT   FB1.uB.J2-> {FB1.uC.J20}                                                             
+                          44                     168  HSTDM_4                                                                                       
+                           2            0          2  DIRECT   FB1.uC.J20-> {FB1.uB.J2}                                                             
+                           4                       8  HSTDM_4                                                                                       
+
+  33)                    7/7                       7           Trace Group: T_FB1.uC_FB1.uD_2                                                       
+                           6            0          6  DIRECT   FB1.uC.FIXED-> {FB1.uD.FIXED}                                                        
+                           1            0          1  DIRECT   FB1.uD.FIXED-> {FB1.uC.FIXED}                                                        
+
+  34)                  24/24                      24           Trace Group: FB1_C1_D19                                                 50           
+                          22            0         22  DIRECT   FB1.uC.J1-> {FB1.uD.J19}                                                             
+                           2            0          2  DIRECT   FB1.uD.J19-> {FB1.uC.J1}                                                             
+
+  35)                  24/24                      24           Trace Group: FB1_C1_D19_1                                               50           
+                          21            0         21  DIRECT   FB1.uC.J1-> {FB1.uD.J19}                                                             
+                           3            0          3  DIRECT   FB1.uD.J19-> {FB1.uC.J1}                                                             
+
+  36)                  31/31                      41           Trace Group: T_FB1.uC_FB1.uD_1                                 1200                  
+                           9            0          9  DIRECT   FB1.uC.FIXED-> {FB1.uD.FIXED}                                                        
+                           6                      16  HSTDM_4                                                                                       
+                          16            0         16  DIRECT   FB1.uD.FIXED-> {FB1.uC.FIXED}                                                        
+
+  37)                  43/43                      53           Trace Group: T_FB1.uC_FB1.uD_3                                 1200                  
+                          12            0         12  DIRECT   FB1.uC.FIXED-> {FB1.uD.FIXED}                                                        
+                           6                      16  HSTDM_4                                                                                       
+                          25            0         25  DIRECT   FB1.uD.FIXED-> {FB1.uC.FIXED}                                                        
+
+  38)                  50/50                      62           Trace Group: FB1_C2_D20                                        1200     50           
+                          14            0         14  DIRECT   FB1.uC.J2-> {FB1.uD.J20}                                                             
+                           7                      20  HSTDM_4                                                                                       
+                          28            0         28  DIRECT   FB1.uD.J20-> {FB1.uC.J2}                                                             
+
+==================================================================================================================================================
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP426">AP426</a><a name="S5.1.3">Section 5.1.3</a> Multi-Hop Report <a href="#SFrom5.1.3">Back</a>
+</span>
+<span>Hops Number          Number        
+     Inter-FPGA Nets Toplevel Nets 
+----------------------------------
+1    347             417           
+2    213             130           
+3    301             2             
+4    53              0             
+==================================
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP655">AP655</a><a name="S5.1.4">Section 5.1.4</a> Post-Optimization Routing Summary <a href="#SFrom5.1.4">Back</a>
+</span>
+<span>Connection       Trace Usage  No. of Net     TDM Module            Available Slack Range  Mean Slack  Untimed  
+                              failed timing                        (Post TDM)                         nets     
+-------------------------------------------------------------------------------------------------------------
+FB1.uA&lt;->FB1.uB  279/279                                                                                       
+                              0/251          NONE (7 - 9 ns)       424 to 491 ns          463 ns      0        
+                              0/69           HSTDM_4 (26 - 28 ns)  458 to 471 ns          458 ns      0        
+FB1.uB&lt;->FB1.uC  98/98                                                                                         
+                              0/50           NONE (9 ns)           475 to 489 ns          475 ns      0        
+                              0/176          HSTDM_4 (28 ns)       424 to 470 ns          457 ns      0        
+FB1.uC&lt;->FB1.uD  179/179                                                                                       
+                              0/159          NONE (7 - 9 ns)       443 to 489 ns          477 ns      0        
+                              0/52           HSTDM_4 (26 - 28 ns)  470 to 472 ns          470 ns      0        
+FB1.uA&lt;->FB1.uD  157/200                                                                                       
+                              0/157          NONE (9 ns)           457 to 489 ns          465 ns      0        
+=============================================================================================================
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP267">AP267</a><a name="S5.1.5">Section 5.1.5</a> Global Route Summary <a href="#SFrom5.1.5">Back</a>
+</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N67"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP367">AP367</a> Routed 1095 Nets</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N68"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP268">AP268</a> Maximum TDM Ratio: 4</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N69"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP684">AP684</a> Cut Clocks: 0</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N70"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP371">AP371</a> For global routing details, refer to system_route.rpt</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N71"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP152">AP152</a> (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 968MB peak: 968MB)</span>
+<span>Multi-hop Combinational Path Analysis
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N72"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP405">AP405</a> Writing Multi-hop Path Report to timing_route.rpt</span>
+<span>No TG updates for net: IMMID[21] sink Bin: TOP_IO_HT3_FB1_D5
+No TG updates for net: IMMID[52] sink Bin: TOP_IO_HT3_FB1_D4
+No TG updates for net: Addr[0] sink Bin: FB1.uC
+No TG updates for net: Addr[1] sink Bin: FB1.uC
+No TG updates for net: IMMID[23] sink Bin: TOP_IO_HT3_FB1_D4
+No TG updates for net: IMMID[27] sink Bin: TOP_IO_HT3_FB1_D3
+No TG updates for net: IMMID[50] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[48] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[47] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[44] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[40] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[38] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[37] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[36] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[35] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[31] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[29] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[26] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[25] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[24] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[33] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[22] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[20] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[18] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[17] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[39] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[19] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[46] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[34] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[42] sink Bin: TOP_IO_HT3_FB1_A5
+No TG updates for net: IMMID[45] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[32] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[43] sink Bin: TOP_IO_HT3_FB1_A11
+No TG updates for net: IMMID[28] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[51] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[14] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[30] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[41] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[49] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[59] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[63] sink Bin: TOP_IO_HT3_FB1_A12
+No TG updates for net: IMMID[61] sink Bin: TOP_IO_HT3_FB1_A6
+No TG updates for net: IMMID[58] sink Bin: TOP_IO_HT3_FB1_A6
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP249">AP249</a><a name="S6">Section 6</a> Detail Routing <a href="#SFrom6">Back</a>
+</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N73"></a> Using syn_chip_id 3 on FPGA FB1.uD.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N74"></a> Using syn_chip_id 2 on FPGA FB1.uC.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N75"></a> Using syn_chip_id 1 on FPGA FB1.uB.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N76"></a> Using syn_chip_id 0 on FPGA FB1.uA.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N77"></a> Using syn_chip_id 0 on FPGA FB1.uA.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N78"></a> Using syn_chip_id 1 on FPGA FB1.uB.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N79"></a> Using syn_chip_id 2 on FPGA FB1.uC.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N80"></a> Using syn_chip_id 3 on FPGA FB1.uD.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N81"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP409">AP409</a> Reserving clock capable differential traces for HSTDM: FB1_C2_C[2] and FB1_C2_C[3]</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N82"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP409">AP409</a> Reserving clock capable differential traces for HSTDM: FB1.CI3_P[15] and FB1.CI3_N[15]</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N83"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP409">AP409</a> Reserving clock capable differential traces for HSTDM: FB1.CI1_P[19] and FB1.CI1_N[19]</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N84"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP409">AP409</a> Reserving clock capable differential traces for HSTDM: FB1_B2_C[2] and FB1_B2_C[3]</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N85"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP409">AP409</a> Reserving clock capable differential traces for HSTDM: FB1_B2_B[0] and FB1_B2_B[1]</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N86"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP409">AP409</a> Reserving clock capable differential traces for HSTDM: FB1.AI1_P[19] and FB1.AI1_N[19]</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N87"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP409">AP409</a> Reserving clock capable differential traces for HSTDM: FB1.AI3_P[15] and FB1.AI3_N[15]</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N88"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP409">AP409</a> Reserving clock capable differential traces for HSTDM: FB1_A2_C[2] and FB1_A2_C[3]</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N89"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP409">AP409</a> Reserving clock capable differential traces for HSTDM: FB1_A3_C[2] and FB1_A3_C[3]</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N90"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP409">AP409</a> Reserving clock capable differential traces for HSTDM: FB1_A4_C[2] and FB1_A4_C[3]</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N91"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP152">AP152</a> (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:15s; Memory used current: 968MB peak: 968MB)</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N92"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MF764">MF764</a> Finished adding TDM modules to the design netlist. </span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N93"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP924">AP924</a> DUT hierarchy added to FPGA`s</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N94"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP405">AP405</a> Writing Report of all nets qualified for TDM to tdm_qualified.rpt</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N95"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP405">AP405</a> Writing Report of all nets disqualified for TDM to tdm_nonqualified.rpt</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N96"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP405">AP405</a> Writing System-route Trace Assignment Results to router_constraints.pcf</span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP581">AP581</a><a name="S7">Section 7</a> Key parameters from this run <a href="#SFrom7">Back</a>
+</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N97"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN341">BN341</a> OPTIONS: The options used for this run</span>
+<span>   Feedthrough Routing - Connection model used for feed-through
+   HSTDM Bitrate - 
+   HSTDM Bitrate per Cable - 
+   HSTDM Reset - 
+   Max Ratio - 
+   Priority - Optimization priority
+   TDM Qualification - 
+   TDM Type - Connection model used for TDM
+
+KEY_PARAMETER,CONSTRAINTS,ports_assigned,550,ports_unassigned,0,cells_assigned,4,cells_unassigned,0
+KEY_PARAMETER,OPTIONS,Priority,multi_hop_path,Feedthrough Routing,direct,TDM Type,HSTDM,TDM Qualification,all,HSTDM Bitrate,1400 Mbps,HSTDM Bitrate per Cable,on,HSTDM Reset,NONE,Max Ratio,4
+KEY_PARAMETER,ROUTER,routed_nets,1095,max_ratio,4,cut_clocks,0,feedthroughs,157,unrouted_nets,0,trace_usage,77.1533,num_1_hops,764,num_2_hops,343,num_3_hops,303,num_4_hops,53,max_hops,4,timing_violations,0,timing_tns,0,timing_tps,425834,mean_slack,465,min_slack,424,max_slack,491
+KEY_PARAMETER,RUNTIME,tassign,0.900708,traceopt,0.132138,detail,0.0329361,fpt,0.0164067,fpc,9,ipt,0.0103068,ipc,72,total,17.7431,cpu,16.8379
+
+THE FORMAT OF THIS LOG MAY CHANGE WITHOUT NOTICE
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N98"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=AP225">AP225</a> Autopartitioner exiting with status 0</span>
+<span>Process took 0h:00m:17s realtime, 0h:00m:16s cputime
+# Sun Apr  9 22:41:19 2023
+
+###########################################################]
+</body>
+</html>

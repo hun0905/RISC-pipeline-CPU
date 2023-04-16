@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> <span style="font-family: courier, monospace; font-weight: bold; font-size:24px">
+<a name="TOP">system memory report</a></span></head><body style="font-family: courier,monospace; line-height: 1.0; margin-top: 0em; margin-bottom: 0em; font-size:14px; white-space:pre;">
+<table></table><span>System Memory report for FB1_uD
+==============================================================
+SLP project checksum             : 0x1ea929ab
+Partition tool version           : R-2020.12-SP1-1 (Apr  8 2022 21:27:16)
+Synthesis tool version           : R-2020.12-SP1-1 (Apr  8 2022 21:27:16)
+FPGA Location                    : FB?_D (Type HAPS100_4F) (board cde order unspecified) 
+System CAPIM address             : 59
+System CAPIM type                : 0x304
+Speed grade                      : -1-e
+Chip ID                          : 3
+
+End System Memory report
+==============================================================
+
+High Speed TDM report for FB1_uD
+==============================================================
+High Speed TDM Info:
+HSTDM memory format version      : 0xabcf
+HSTDM IP version                 : 2020.03.0.11
+HSTDM bit rate                   : 1200 Mbps
+HSTDM UMR or I2C address         : N/A (no accessible data on this chip)
+HSTDM fast clock port            : None
+HSTDM fast-clock frequency       : 100MHz
+Training will be done at         : system configuration
+
+TDM block 8 settings: Bit rate 1200 Mbps, POD12 Pre-emphasis and equalization enabled:
+TDM block 8 channels: Async Single-Ended (iobank #69 SLR2_R):
+	Receiver cpm_rcv_HSTDM_4_FB1_CI1_N_17 : Ratio 4 (Base 4) : Trace FB1.CI1_N[17], Pin (18N) G34 (byte 2 upper nibble bit 5) : RxIndex=0 
+	Receiver cpm_rcv_HSTDM_4_FB1_CI1_P_17 : Ratio 4 (Base 4) : Trace FB1.CI1_P[17], Pin (18P) H34 (byte 2 upper nibble bit 4) : RxIndex=1 
+	Receiver cpm_rcv_HSTDM_4_FB1_CI1_N_18 : Ratio 4 (Base 4) : Trace FB1.CI1_N[18], Pin (17N) J36 (byte 2 upper nibble bit 3) : RxIndex=2 
+	Receiver cpm_rcv_HSTDM_4_FB1_CI1_P_18 : Ratio 4 (Base 4) : Trace FB1.CI1_P[18], Pin (17P) J35 (byte 2 upper nibble bit 2) : RxIndex=3 
+	Clock input hstdm_clkgen_1200_rx_bank69_block8 : Trace FB1.CI1_P[19], Pin pair (16) F34-E34 (byte 2 upper nibble bit 0) 
+
+TDM block 9 settings: Bit rate 1200 Mbps:
+TDM block 9 channels: Async Single-Ended (iobank #71 SLR2_R):
+	Clock input hstdm_clkgen_1200_rx_bank71_block9 : Trace FB1.CI3_P[15], Pin pair (10) B33-B32 (byte 1 upper nibble bit 0) 
+	Receiver cpm_rcv_HSTDM_4_FB1_DI3_N_8 : Ratio 4 (Base 4) : Trace FB1.DI3_N[8], Pin (8N) C33 (byte 1 lower nibble bit 3) : RxIndex=4 
+	Receiver cpm_rcv_HSTDM_4_FB1_DI3_P_8 : Ratio 4 (Base 4) : Trace FB1.DI3_P[8], Pin (8P) D33 (byte 1 lower nibble bit 2) : RxIndex=5 
+	Receiver cpm_rcv_HSTDM_4_FB1_DI3_N_7 : Ratio 4 (Base 4) : Trace FB1.DI3_N[7], Pin (7N) A31 (byte 1 lower nibble bit 1) : RxIndex=6 
+	Receiver cpm_rcv_HSTDM_4_FB1_DI3_P_7 : Ratio 4 (Base 4) : Trace FB1.DI3_P[7], Pin (7P) A32 (byte 1 lower nibble bit 0) : RxIndex=7 
+
+TDM block 10 settings: Bit rate 1200 Mbps, POD12 Pre-emphasis and equalization enabled:
+TDM block 10 channels: Async Single-Ended on HAPS connector J20 (iobank #36 SLR3_L):
+	Receiver cpm_rcv_HSTDM_4_FB1_C2_C_6 : Ratio 4 (Base 4) : Trace FB1_C2_C[6], Pin (16P) L46 (byte 2 upper nibble bit 0) : RxIndex=8 
+	Receiver cpm_rcv_HSTDM_4_FB1_C2_C_1 : Ratio 4 (Base 4) : Trace FB1_C2_C[1], Pin (15N) K50 (byte 2 lower nibble bit 5) : RxIndex=9 
+	Receiver cpm_rcv_HSTDM_4_FB1_C2_C_0 : Ratio 4 (Base 4) : Trace FB1_C2_C[0], Pin (15P) K49 (byte 2 lower nibble bit 4) : RxIndex=10 
+	Receiver cpm_rcv_HSTDM_4_FB1_C2_D_3 : Ratio 4 (Base 4) : Trace FB1_C2_D[3], Pin (14N) L50 (byte 2 lower nibble bit 3) : RxIndex=11 
+	Receiver cpm_rcv_HSTDM_4_FB1_C2_D_2 : Ratio 4 (Base 4) : Trace FB1_C2_D[2], Pin (14P) L49 (byte 2 lower nibble bit 2) : RxIndex=12 
+	Clock input hstdm_clkgen_1200_rx_bank36_block10 : Trace FB1_C2_C[2], Pin pair (13) M48-M49 (byte 2 lower nibble bit 0) 
+
+High Speed TDM Summary:
+	Transmit: 0 bits transmitted over 0 pin(s)
+		with 0 pin(s) used as clocks
+	Receive: 52 bits received over 13 pin(s)
+		with 6 pin(s) used as clocks
+
+End High Speed TDM report
+==============================================================
+</body>
+</html>

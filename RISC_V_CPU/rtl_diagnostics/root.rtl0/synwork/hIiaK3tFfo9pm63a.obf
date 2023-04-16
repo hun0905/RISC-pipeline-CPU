@@ -1,0 +1,114 @@
+#OPTIONS:"|-layerid|0|-orig_srs|/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/rtl_diagnostics/root.rtl0/synwork/top_comp.srs|-top|top|-prodtype|protocompiler_s|-haps_target|HAPS-100|-dspmac|-pqdpadd|-use_vivado|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-verification_mode|0|-nram|-divnmod|-continue_on_error|-loadunimacro|-incremental_debug|0|-debug_visibility|0|-verdi_integration|0|-I|/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/board|-I|/home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/rtl_diagnostics/root.rtl0/|-I|/home/u108/u108061217/RISC-V-pipeline-CPU|-I|/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib|-v2001|-devicelib|/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v|-devicelib|/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v|-sm|-encrypt|-slp|-pro|-distcompmode|-noobf|-auto_infer_blackbox|0|-proto|-ui|-fid2|-ram|-sharing|off|-ll|2000|-latch_effort|normal|-ttfpmode|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/linux_a_64/c_ver":1649478690
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v":1649478171
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v":1649478171
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v":1649478405
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v":1648803890
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_him_async_fifo_2048x258_xcvu440_stub.v":1649015950
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80_xcvu440_mgb1_stub.v":1649015950
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80d_xcvu440_mgb1_stub.v":1649015951
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":1649015949
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v":1649478178
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/clocks/gsv_trigger_hypermods.v":1649478178
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/scemi_objects.v":1649478405
+#CUR:"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/scemi_pipes.svh":1649478405
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/top.v":1681034515
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/ALU.v":1681017505
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/ALUControl.v":1681017505
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/Adder.v":1681017505
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/Control.v":1681017505
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/DM.v":1681017505
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/EX_MEM.v":1681017505
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/Forwarding.v":1681017505
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/Hazard.v":1681017505
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/ID_EX.v":1681017505
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/IF_ID.v":1681017505
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/IM.v":1681017505
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/ImmGen.v":1681017506
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/MEM_WB.v":1681017506
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/MUX.v":1681017506
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/MUX3_1.v":1681017506
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/PC.v":1681017506
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/Registers.v":1681017506
+#CUR:"/home/u108/u108061217/RISC-V-pipeline-CPU/src/comparator.v":1681017506
+#numinternalfiles:12
+#defaultlanguage:verilog
+0			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/top.v" verilog
+1			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/ALU.v" verilog
+2			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/ALUControl.v" verilog
+3			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/Adder.v" verilog
+4			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/Control.v" verilog
+5			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/DM.v" verilog
+6			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/EX_MEM.v" verilog
+7			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/Forwarding.v" verilog
+8			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/Hazard.v" verilog
+9			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/ID_EX.v" verilog
+10			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/IF_ID.v" verilog
+11			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/IM.v" verilog
+12			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/ImmGen.v" verilog
+13			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/MEM_WB.v" verilog
+14			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/MUX.v" verilog
+15			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/MUX3_1.v" verilog
+16			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/PC.v" verilog
+17			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/Registers.v" verilog
+18			"/home/u108/u108061217/RISC-V-pipeline-CPU/src/comparator.v" verilog
+#Dependency Lists(Uses List)
+0 14 13 5 6 7 1 2 15 9 18 12 3 17 4 8 10 11 16
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 -1
+7 -1
+8 -1
+9 -1
+10 -1
+11 -1
+12 -1
+13 -1
+14 -1
+15 -1
+16 -1
+17 -1
+18 -1
+#Dependency Lists(Users Of)
+0 -1
+1 0
+2 0
+3 0
+4 0
+5 0
+6 0
+7 0
+8 0
+9 0
+10 0
+11 0
+12 0
+13 0
+14 0
+15 0
+16 0
+17 0
+18 0
+#Design Unit to File Association
+module work top 0
+module work MUX 14
+module work PC 16
+module work IM 11
+module work Adder 3
+module work IF_ID 10
+module work Hazard 8
+module work Control 4
+module work Registers 17
+module work ImmGen 12
+module work MUX3_1 15
+module work comparator 18
+module work ID_EX 9
+module work ALUControl 2
+module work ALU 1
+module work Forwarding 7
+module work EX_MEM 6
+module work DM 5
+module work MEM_WB 13

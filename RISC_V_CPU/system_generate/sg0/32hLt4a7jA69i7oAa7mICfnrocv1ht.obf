@@ -1,0 +1,7 @@
+# assignments of mapped database for each FPGA to be used for system level timing analysis with or without backannotation
+
+# Enter the path to the .srd file to be used
+define_attribute   {v:FB1_uA} syn_slp_database {enter path to srd file here}
+define_attribute   {v:FB1_uB} syn_slp_database {enter path to srd file here}
+define_attribute   {v:FB1_uC} syn_slp_database {enter path to srd file here}
+define_attribute   {v:FB1_uD} syn_slp_database {enter path to srd file here}

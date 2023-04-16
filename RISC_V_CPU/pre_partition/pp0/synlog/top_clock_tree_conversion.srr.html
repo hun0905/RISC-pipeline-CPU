@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> <span style="font-family: courier, monospace; font-weight: bold; font-size:24px">
+<a name="TOP">Pre-partition Log</a></span></head><body style="font-family: courier,monospace; line-height: 1.0; margin-top: 0em; margin-bottom: 0em; font-size:14px; white-space:pre;">
+<span style="color:red; font-family: courier, monospace; font-size:16px">2 Warnings: <a href="#W0"> First Warning</a></span>
+<table><tr><td>1</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px"><a href="#S1" name="SFrom1">Clock Summary</a></td></tr>
+<tr><td>2</td><td style="font-family: courier, monospace; font-weight: bold; font-size:14px"><a href="#S2" name="SFrom2">Clock Load Summary</a></td></tr>
+</table><span># Sun Apr  9 22:38:37 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws35
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/|pp0
+Synopsys Xilinx Technology Mapper, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 237MB peak: 237MB)
+
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/top_ucdb/cclock_map.tcl
+Reading constraint file: /home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc
+See report top_scck.rpt@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N0"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MF248">MF248</a> Running in 64-bit mode.</span>
+<span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N1"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MF666">MF666</a> Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)</span>
+<span>Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+</span><span style="color:red;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="W0"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=FX1020">FX1020</a>Warning:  A simulation mismatch is possible. Ignoring vendor library default initial value on registers, because the default value is not set. To enable vendor library default initial values, add the command "set_option -support_implicit_init_netlist 1" to the project file. <a href="#W1">Next</a></span>
+<span>Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Begin ct process log
+
+
+Target platform is HAPS-100, running ProtoCompiler.
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 255MB peak: 255MB)
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N2"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BZ108">BZ108</a> SCO : Total number of LUTs added: 0.</span>
+<span style="color:red;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="W1"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=MT682">MT682</a>Warning:  "/home/u108/u108061217/RISC-V-pipeline-CPU/design.fdc":11:0:11:0|set_input_delay command has no effect on unconnected port. Remove input port rst_n from set_input_delay command. </span>
+<span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a name="S1">Section 1</a> Clock Summary <a href="#SFrom1">Back</a>
+</span>
+<span>******************
+
+          Start           Requested     Requested     Clock        Clock                Clock
+Level     Clock           Frequency     Period        Type         Group                Load 
+---------------------------------------------------------------------------------------------
+0 -       clk (p:clk)     2.0 MHz       500.000       declared     default_clkgroup     828  
+=============================================================================================
+
+
+
+</span><span style="color:#800000; font-family: courier, monospace; font-weight: bold; font-size:16px"><a name="S2">Section 2</a> Clock Load Summary <a href="#SFrom2">Back</a>
+</span>
+<span>***********************
+
+          Clock     Source        Clock Pin          Non-clock Pin     Non-clock Pin
+Clock     Load      Pin           Seq Example        Seq Example       Comb Example 
+------------------------------------------------------------------------------------
+clk       828       clk(port)     pc1.PC[63:0].C     -                 -            
+====================================================================================
+
+
+Marking clock path (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+
+Done marking clock path (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+</span><span style="color:#0000A0;font-weight:normal;font-family:courier,monospace;font-size:14px;white-space:pre;"><a name="N3"></a><a href="file:////usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/doc/message_reference.pdf#nameddest=BN225">BN225</a> Writing default property annotation file /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/pre_partition/pp0/top.sap.</span>
+<span>Finished clock netlist generation (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+
+End ct process log
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 786MB peak: 786MB)
+
+Process took 0h:00m:11s realtime, 0h:00m:11s cputime
+# Sun Apr  9 22:38:49 2023
+
+###########################################################]
+</body>
+</html>

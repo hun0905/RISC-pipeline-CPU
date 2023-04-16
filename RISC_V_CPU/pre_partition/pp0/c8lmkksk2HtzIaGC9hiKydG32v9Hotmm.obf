@@ -1,0 +1,1 @@
+ -link  -top  top  -multisrs  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/top_comp.srs  -osyn  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synwork/top_mult.srs  -log  /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/compile/c0/synlog/top_multi_srs_gen.srr 

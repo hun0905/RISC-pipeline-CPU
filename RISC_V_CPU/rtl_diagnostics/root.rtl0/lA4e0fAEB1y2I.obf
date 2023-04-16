@@ -1,0 +1,1 @@
+-link -encrypt -containment -top top -osyn /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/rtl_diagnostics/root.rtl0/synwork//containment.srs /home/u108/u108061217/RISC-V-pipeline-CPU/RISC_V_CPU/rtl_diagnostics/root.rtl0/synwork/layer0.srs  -jobname linker  

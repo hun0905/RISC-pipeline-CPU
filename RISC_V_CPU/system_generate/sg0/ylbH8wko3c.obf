@@ -1,0 +1,8 @@
+i clk
+m 0 0
+u 41 861
+p {p:clk}{t:FB1.uD.clk}{p:FB1.uD.clk}{t:FB1.uD.ilm_ff_0.C}
+e ckid0_0 {t:FB1.uD.ilm_ff_0.C} dff
+c ckid0_1 {p:clk} port Unsupported/too complex instance on clock path
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

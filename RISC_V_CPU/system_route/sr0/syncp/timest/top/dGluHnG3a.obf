@@ -1,0 +1,9 @@
+n PartitionBuildLib top verilog;
+av .compile_point_summary_status "Unchanged";
+av .compile_point_summary_reason "-";
+av .compile_point_update_model 0;
+av .compile_point_fast_synthesis "Yes";
+av .compile_point_cputime_used "-";
+av .compile_point_starttime_stamp "-";
+av .compile_point_endtime_stamp "-";
+av .compile_point_realtime_used "-";

@@ -1,0 +1,1218 @@
+#-----------------------------------------------------------
+# Vivado v2021.1_AR76722 (64-bit)
+# SW Build 3428450 on Thu Jan 13 11:43:02 MST 2022
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Apr  9 23:15:24 2023
+# Process ID: 418
+# Current directory: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs
+# Command line: vivado -mode batch -source /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/run_vivado_haps.tcl -log /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/vivado.log
+# Log file: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/vivado.log
+# Journal file: /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/usr/cadtool/csr5306/synopsys/xilinx_vivado/2021.1-ep9/tools/XILINX_VIVADO/patches/AR76722/vivado/scripts/Vivado_init.tcl'
+source /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/run_vivado_haps.tcl
+# source -notrace ./vivado_pc_flags.tcl
+Script version is $Header: //synplicity/ui_dev/misc/vivado_flags_template.tcl#205 $
+# source -notrace ./vivado_pc_env.tcl
+290 Beta devices matching pattern found, 0 enabled.
+# source -notrace ./vivado_pc_procs.tcl
+StrategyMode is fast_turn_around
+WARNING: [Vivado_Tcl 4-252] No drc_checks matched for command 'get_drc_checks PDRC-194'
+Adding HAPS design rule checks: HAUMR-1 HAUMR-2 HATDM-1 HATDM-2 HATDM-3 HATDM-4 HADRC-1
+# global env
+# global VivadoOptionFiles
+# global VivadoPostLinkOptionFiles
+# hVivado_read_netlist
+WARNING: [filemgmt 56-12] File '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC.edf' cannot be added to the project because it already exists in the project, skipping this file
+# hVivado_source_system_ip_option_files
+## set hapstype [lindex $argv 0]
+## set part [lindex $argv 1]
+## set package [lindex $argv 2]
+## set speedgrade [lindex $argv 3]
+## set designname [lindex $argv 4]
+## puts hapstype:$hapstype
+hapstype:hapsaxd
+## puts part:$part
+part:XCVU19P
+## puts package:$package
+package:FSVA3824
+## puts speedgrade:$speedgrade
+speedgrade:-1-e
+## set systemlist [list "hapsaxd" "hapsleo" "haps8x"]
+## proc add_haps_ip {hapstype part package speedgrade designname systemlist} {
+## 	puts proc_hapstype:$hapstype
+## 	puts proc_part:$part
+##         puts proc_package:$package
+## 	puts proc_speedgrade:$speedgrade
+## 	set TclFiles [list]
+## 	set HapsType $hapstype
+## 	set DesignName $designname
+## 	set SpeedGrade $speedgrade
+## 
+## 	foreach system $systemlist {
+## 		if {[string compare $hapstype $system] == 0} {
+## 			puts "$system system of part:$part speedgrade:$speedgrade detected..."
+## 			puts "sourcing IP files..."
+## 			## source all tcl files
+## 			lappend TclFiles {*}[glob -dir ${designname}_hapsip/${system} *.tcl]
+## 			foreach tclfile $TclFiles {
+## 				source $tclfile
+## 			}
+## 		}
+## 	}
+## }
+## add_haps_ip $hapstype $part $package $speedgrade $designname $systemlist
+proc_hapstype:hapsaxd
+proc_part:XCVU19P
+proc_package:FSVA3824
+proc_speedgrade:-1-e
+hapsaxd system of part:XCVU19P speedgrade:-1-e detected...
+sourcing IP files...
+### set HapsIpPath ${designname}_hapsip
+### if {[file exists ${HapsIpPath}/hapsaxd/system_ip/bsa19_haps_systemip.tcl]} { 
+###     source ${HapsIpPath}/hapsaxd/system_ip/bsa19_haps_systemip.tcl
+### }
+#### set ModuleName bsa19_system_ip
+#### set InputMode "EDIF"
+#### set HapsIpPath ${designname}_hapsip
+#### set xsystemlist [list "XCVU3P" "XCVU19P"]
+#### set edif_exist 0
+#### set lock_var "LOCK_V2"
+#### if {${InputMode} == "EDIF"} {
+####    foreach system $xsystemlist {
+####         
+#### 		#Going forward lock v2 will be ON by default. (Even without env variable "pc_haps100_lock_impl_v_2")
+#### 		#make AX3P to old locking. Otherwise regressions will fail.
+#### 		
+####         if {$system=="XCVU3P"} {
+#### 			set env(pc_haps100_lock_impl_v_2) 0
+#### 		}
+#### 		
+#### 		if {[string compare $part $system] == 0} {
+#### 			if {[file exists ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system.edf] || [file exists ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system\_$lock_var.edf]} { 
+#### 				if {[info exists ::env(pc_haps100_lock_impl_v_2)]} {
+#### 					set lock_v2 $::env(pc_haps100_lock_impl_v_2)
+#### 					if {$lock_v2 == 1} {
+#### 						if {[file exists ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system\_$lock_var.edf]} { 
+#### 							file copy -force ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system\_$lock_var.edf ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}.edf
+#### 						} else {
+#### 							puts "ERROR: pc_haps100_lock_impl_v_2 is set to 1 but not able to find ${ModuleName}_$system\_$lock_var.edf"
+#### 							exit 1
+#### 						}
+#### 					} else {
+#### 						if {[file exists ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system.edf]} { 
+#### 							file copy -force ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system.edf ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}.edf
+#### 						} else {
+#### 							puts "ERROR: pc_haps100_lock_impl_v_2 is set to 0 but not able to find ${ModuleName}_$system.edf"
+#### 							exit 1
+#### 						}
+#### 					}
+#### 				} else {
+#### 					if {[file exists ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system\_$lock_var.edf]} { 
+#### 						file copy -force ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_$system\_$lock_var.edf ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}.edf
+#### 					} else {
+#### 						puts "ERROR: Not able to find ${ModuleName}_$system\_$lock_var.edf"
+#### 						exit 1
+#### 					}
+#### 				}
+####                 read_edif ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}.edf 
+####                 set edif_exist 1
+#### 			} 
+#### 		}
+####    }   
+#### }
+#### if {$edif_exist==0} { 
+####     puts "WARNING: No EDIF found for ${ModuleName} "
+#### } 
+#### foreach system $xsystemlist {
+####   if {[string compare $part $system] == 0} {
+####      if {[file exists ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_edif_$system.xdc]} { 
+####           read_xdc ${HapsIpPath}/hapsaxd/system_ip/${ModuleName}_edif_$system.xdc 
+####           puts "Reading ${ModuleName}_edif_$system.xdc constraint file..."
+####         }
+####     }
+#### }
+Reading bsa19_system_ip_edif_XCVU19P.xdc constraint file...
+#### source ${HapsIpPath}/hapsaxd/system_ip/haps_sysip_infra_clocks/haps_sysip_infra_clocks.tcl
+##### set ModuleName haps_sysip_infra_clocks
+##### set InputMode "EDIF"
+##### set HapsIpPath ${designname}_hapsip
+##### set xsystemlist [list "XCVU3P" "XCVU19P"]
+##### if {${InputMode} == "EDIF"} {
+#####      if {[file exists ${HapsIpPath}/hapsaxd/system_ip/haps_sysip_infra_clocks/${ModuleName}.edf]} { 
+#####         read_edif ${HapsIpPath}/hapsaxd/system_ip/haps_sysip_infra_clocks/${ModuleName}.edf 
+#####      } else {
+#####         #puts "WARNING: ${ModuleName}.edf does not exist"
+#####      } 
+##### }
+##### if {[file exists "${HapsIpPath}/hapsaxd/system_ip/haps_sysip_infra_clocks/${ModuleName}.dcp"]} {
+#####      read_checkpoint ${HapsIpPath}/hapsaxd/system_ip/haps_sysip_infra_clocks/${ModuleName}.dcp
+##### }
+##### foreach system $xsystemlist {
+#####   if {[string compare $part $system] == 0} {
+#####     if {[file exists "${HapsIpPath}/hapsaxd/system_ip/haps_sysip_infra_clocks/${ModuleName}_$system.xdc"]} {
+#####      read_xdc ${HapsIpPath}/hapsaxd/system_ip/haps_sysip_infra_clocks/${ModuleName}_$system.xdc
+#####      puts "Reading ${ModuleName}_$system.xdc constraint file..."
+#####        }
+#####     }
+##### }
+Reading haps_sysip_infra_clocks_XCVU19P.xdc constraint file...
+#### source ${HapsIpPath}/hapsaxd/system_ip/umr3_sib/umr3_sib.tcl
+##### proc read_xci {XCI_FILE} {
+#####     upvar IP_PATH ip_path
+##### 
+#####     set ip_name     [file rootname [file tail $XCI_FILE]]
+#####     set ip_dir      ${ip_path}/${ip_name}
+#####     set ip_xci      ${ip_dir}/${ip_name}.xci
+#####     set ip_dcp      ${ip_dir}/${ip_name}.dcp
+##### 
+#####     # ## copy xci into ip repository if not exist or newer
+#####     if {[file exists $ip_xci] == 0 || [expr {[file mtime $XCI_FILE] > [file mtime $ip_xci]}]} {
+#####         puts "INFO: \[read_xci\] copy IP ${ip_xci} to ${ip_dir}"
+#####         file delete -force ${ip_dir}
+#####         file mkdir $ip_dir
+#####         file copy -force $XCI_FILE $ip_dir
+#####     }
+##### 
+#####     # ## read xci file
+#####     read_ip $ip_xci
+##### 
+#####     # ## check if ip needs to be upgraded
+##### 	
+#####     set locked [get_property IS_LOCKED [get_ips $ip_name]]
+#####     set upgrade [get_property UPGRADE_VERSIONS [get_ips $ip_name]]
+#####     if {$upgrade != "" && $locked} {
+#####         puts "INFO: \[read_xci\] upgrade IP ${ip_name}"
+#####         upgrade_ip [get_ips $ip_name]
+#####     }
+##### 
+#####     # ## check if ip needs to be re-generated
+#####     if {([file exists $ip_dcp] == 0) || [expr {[file mtime $ip_xci ] > [file mtime $ip_dcp]}]} {
+#####         # re-generate the IP
+#####         puts "INFO: \[read_xci\] synthesize IP ${ip_name}"
+#####         generate_target all [get_ips $ip_name]
+#####         synth_ip -quiet [get_ips $ip_name]
+#####     }
+##### }
+##### set ModuleName umr3_sib_FPGA_top
+##### set InputMode "EDIF"
+##### set HapsIpPath ${designname}_hapsip
+##### set PATH "${HapsIpPath}/hapsaxd/system_ip/umr3_sib"
+##### puts $PATH
+FB1_uC_hapsip/hapsaxd/system_ip/umr3_sib
+##### set IP_PATH  "${PATH}/ip"
+##### puts $IP_PATH
+FB1_uC_hapsip/hapsaxd/system_ip/umr3_sib/ip
+##### set xsystemlist [list "XCVU3P" "XCVU19P"]
+##### if {${InputMode} == "EDIF"} {
+#####   if {[file exists ${HapsIpPath}/hapsaxd/system_ip/umr3_sib/${ModuleName}.edf]} { 
+#####      read_edif ${HapsIpPath}/hapsaxd/system_ip/umr3_sib/${ModuleName}.edf
+#####     } else {
+#####       #puts "WARNING: ${ModuleName}.edf does not exist"
+#####     }
+#####   }
+##### foreach system $xsystemlist {
+##### if {[string compare $part $system] == 0} {
+#####   read_xdc "${HapsIpPath}/hapsaxd/system_ip/umr3_sib/umr3_sib_$system.xdc"
+#####   }
+##### }
+#### source ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/debug_static_ip.tcl
+##### set ModuleName debug_static_ip
+##### set InputMode "EDIF"
+##### set HapsIpPath ${designname}_hapsip
+##### set h100_adtd 0
+##### set h100_egsv 0
+##### set adtd_mux_factor 1
+##### set xsystemlist [list "XCVU3P" "XCVU19P"]
+##### if {${InputMode} == "EDIF"} {
+#####    if {[file exists ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}.edf]} { 
+#####       read_edif ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}.edf 
+#####    } else {
+#####          #puts "WARNING: ${ModuleName}.edf does not exist"
+#####    } 
+##### }
+##### if {[file exists ${HapsIpPath}/../h100_debug.tcl]} {
+#####   source ${HapsIpPath}/../h100_debug.tcl
+#####   puts " HAPS-100 Mux factor = ${adtd_mux_factor}"
+#####   }
+##### if {[file exists "${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}.dcp"]} {
+#####      read_checkpoint "${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}.dcp"
+##### }
+##### foreach system $xsystemlist {
+#####   if {[string compare $part $system] == 0} {
+#####   
+#####     if {$system=="XCVU3P"} {
+#####        read_edif ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/edif_l2_logic/vu3p/snps_axd_dtdpipe_uFPGA_x1.edf
+#####        read_edif ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/edif_l2_logic/vu3p/snps_axd_dtdpipe_uFPGA_x2.edf
+#####        read_edif ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/edif_l2_logic/vu3p/snps_axd_dtdpipe_uFPGA_x4.edf
+#####        read_edif ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/edif_l2_logic/vu3p/snps_axd_dtdpipe_uFPGA_x8.edf
+#####        read_edif ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/edif_l2_logic/vu3p/snps_axd_dtdpipe_uFPGA_x16.edf
+#####        
+#####        if {[file exists "${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}_$system.xdc"]} {
+#####         read_xdc ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}_$system.xdc
+#####         puts "Reading ${ModuleName}_$system.xdc constraint file..."
+#####           }
+#####       }    
+#####     
+#####     if {$system=="XCVU19P"} {
+#####        
+#####        # Read files only if ADTD is enabled
+#####        if {$h100_adtd == 1 || $h100_egsv == 1} {
+##### 
+#####          #  DTD Netlist specific to mux factor
+#####          if {[file exists ${HapsIpPath}/../snps_axd_dtdpipe_uFPGA_x${adtd_mux_factor}.dcp]} {
+#####           read_checkpoint ${HapsIpPath}/../snps_axd_dtdpipe_uFPGA_x${adtd_mux_factor}.dcp
+#####           } else {
+#####           puts "WARNING: snps_axd_dtdpipe_uFPGA_x${adtd_mux_factor}.dcp does not exist"
+#####           }
+#####          
+#####          # Constraints specific to mux factor
+#####          if {[file exists ${HapsIpPath}/../snps_axd_dtdpipe_uFPGA_x${adtd_mux_factor}.xdc]} {
+#####           read_xdc ${HapsIpPath}/../snps_axd_dtdpipe_uFPGA_x${adtd_mux_factor}.xdc
+#####           } else {
+#####           puts "WARNING: snps_axd_dtdpipe_uFPGA_x${adtd_mux_factor}.xdc does not exist"
+#####           }
+#####        
+#####          # Multi FPGA SyncTree fifo edn
+#####          if {[file exists ${HapsIpPath}/../snps_adtd_SyncTree_async_fifo.edn]} {
+#####          read_edif ${HapsIpPath}/../snps_adtd_SyncTree_async_fifo.edn
+#####          } else {
+#####           #puts "WARNING: snps_adtd_SyncTree_async_fifo.edn  does not exist"
+#####          }
+#####        
+#####          # -- Common Constraints
+#####          if {[file exists "${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}_$system.xdc"]} {
+#####           read_xdc ${HapsIpPath}/hapsaxd/system_ip/debug_static_ip/${ModuleName}_$system.xdc
+#####           puts "Reading ${ModuleName}_$system.xdc constraint file..."
+#####           }
+#####        }
+#####        
+#####        #              Read eGSV Source files
+#####        if {[file exists ${HapsIpPath}/../egsv_icap_ctrl.edf]} {
+#####        read_edif ${HapsIpPath}/../egsv_icap_ctrl.edf
+#####        } 
+#####        
+#####        if {[file exists ${HapsIpPath}/../egsv_rbdata_ctrl.edf]} {
+#####        read_edif ${HapsIpPath}/../egsv_rbdata_ctrl.edf
+#####        }
+#####        
+#####        if {[file exists ${HapsIpPath}/../snps_h100_egsv_cons.xdc]} {
+#####        read_xdc ${HapsIpPath}/../snps_h100_egsv_cons.xdc
+#####        }
+#####     
+#####     }       
+#####   }
+##### }
+### if {[file exists run_haps_mem_flow.tcl]} {
+### 	if {[file exists ${DesignName}_hapsip/hapsaxd/haps_mem/haps_mem.tcl]} {
+### 		source ${DesignName}_hapsip/hapsaxd/haps_mem/haps_mem.tcl
+### 	}
+### }
+### if {[file exists run_mgtdm_flow.tcl]} {
+### 	source run_mgtdm_flow.tcl
+### 	if {[file exists ${DesignName}_hapsip/hapsaxd/mgtdm_gen2/mgtdm_gen2.tcl]} { 
+### 		source ${DesignName}_hapsip/hapsaxd/mgtdm_gen2/mgtdm_gen2.tcl
+### 	}
+### }
+## if {[file exists run_clockgen_flow.tcl]} {
+##   source run_clockgen_flow.tcl
+## }
+# foreach parOptionFile $VivadoOptionFiles {
+#         if {[file exists $parOptionFile]} {
+#                 source $parOptionFile
+#         }
+# }
+# hVivado_get_cpu-mem_status link_design 
+##  phase:link_design  -  Host: ws35  -  MemFree: 22 GB  -  LoadAverage (5s|5min|15min / NBcpu): 4.00|4.21|5.00 / 16 
+# hVivado_link_design
+Command: link_design -top FB1_uC
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xcvu19p-fsva3824-1-e
+INFO: [Device 21-403] Loading part xcvu19p-fsva3824-1-e
+Parsing EDIF File [./FB1_uC.edf]
+Finished Parsing EDIF File [./FB1_uC.edf]
+Parsing EDIF File [./FB1_uC_hapsip/hapsaxd/system_ip/bsa19_system_ip.edf]
+Finished Parsing EDIF File [./FB1_uC_hapsip/hapsaxd/system_ip/bsa19_system_ip.edf]
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3222.863 ; gain = 0.000 ; free physical = 18092 ; free virtual = 37765
+INFO: [Netlist 29-17] Analyzing 5878 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1_EP03_AR159266
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin0' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin1' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin10' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin10' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin11' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin11' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin2' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin3' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin4' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin5' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin6' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin6' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin7' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin7' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin8' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin8' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin9' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'sysip_inst/bsa19_system_ip_u/ufpga_debug_top_u/u_cmp_top/u_slv_rxtx_tdm_pipe/u_snps_bstxrx_vu19p/bg0_pin9' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-4434] Global Clock Buffer 'hstdm_clkgen_1200_rx_bank36_block6/BASE4.rxclkdiv4_bufg' is LOCed to site 'BUFGCE_DIV_X0Y68'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_edif.xdc]
+create_clock: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3691.434 ; gain = 18.848 ; free physical = 16279 ; free virtual = 35985
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'System_FB1_uC' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_edif.xdc:9]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_edif.xdc:19]
+INFO: [Timing 38-2] Deriving generated clocks [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_edif.xdc:19]
+create_generated_clock: Time (s): cpu = 00:00:31 ; elapsed = 00:00:20 . Memory (MB): peak = 4209.277 ; gain = 517.844 ; free physical = 15124 ; free virtual = 34857
+WARNING: [Constraints 18-4434] Global Clock Buffer 'hstdm_clkgen_1200_rx_bank36_block6/BASE4.rxclkdiv4_bufg' is LOCed to site 'BUFGCE_DIV_X0Y68'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_edif.xdc:2781]
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+Finished Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_edif.xdc]
+Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_hapsip/hapsaxd/system_ip/bsa19_system_ip_edif_XCVU19P.xdc]
+Finished Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_hapsip/hapsaxd/system_ip/bsa19_system_ip_edif_XCVU19P.xdc]
+Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_hapsip/hapsaxd/system_ip/haps_sysip_infra_clocks/haps_sysip_infra_clocks_XCVU19P.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_hapsip/hapsaxd/system_ip/haps_sysip_infra_clocks/haps_sysip_infra_clocks_XCVU19P.xdc:5]
+Finished Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_hapsip/hapsaxd/system_ip/haps_sysip_infra_clocks/haps_sysip_infra_clocks_XCVU19P.xdc]
+Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_hapsip/hapsaxd/system_ip/umr3_sib/umr3_sib_XCVU19P.xdc]
+WARNING: [Timing 38-278] The instance 'sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/I_umr3_sib_dlm_us_quad/I_umr3_sib_aurora_socket_0/I_umr3_sib_aurora_socket_wrapper/I_aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE/inst/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_wrapper_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_multi_gt_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_i/inst/gen_gtwizard_gtye4_top.aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[0].GTYE4_CHANNEL_PRIM_INST' has TXRATE pins that are not constant, so the worst case divide value of 1 will be used for automatic derivation of generated clocks [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_hapsip/hapsaxd/system_ip/umr3_sib/umr3_sib_XCVU19P.xdc:5]
+WARNING: [Timing 38-278] The instance 'sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/I_umr3_sib_dlm_us_quad/I_umr3_sib_aurora_socket_0/I_umr3_sib_aurora_socket_wrapper/I_aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE/inst/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_wrapper_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_multi_gt_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_i/inst/gen_gtwizard_gtye4_top.aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[1].GTYE4_CHANNEL_PRIM_INST' has TXRATE pins that are not constant, so the worst case divide value of 1 will be used for automatic derivation of generated clocks [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_hapsip/hapsaxd/system_ip/umr3_sib/umr3_sib_XCVU19P.xdc:5]
+WARNING: [Timing 38-278] The instance 'sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/I_umr3_sib_dlm_us_quad/I_umr3_sib_aurora_socket_0/I_umr3_sib_aurora_socket_wrapper/I_aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE/inst/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_wrapper_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_multi_gt_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_i/inst/gen_gtwizard_gtye4_top.aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[2].GTYE4_CHANNEL_PRIM_INST' has TXRATE pins that are not constant, so the worst case divide value of 1 will be used for automatic derivation of generated clocks [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_hapsip/hapsaxd/system_ip/umr3_sib/umr3_sib_XCVU19P.xdc:5]
+WARNING: [Timing 38-278] The instance 'sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/I_umr3_sib_dlm_us_quad/I_umr3_sib_aurora_socket_0/I_umr3_sib_aurora_socket_wrapper/I_aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE/inst/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_wrapper_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_multi_gt_i/aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_i/inst/gen_gtwizard_gtye4_top.aurora_xcvu19p_64b66b_GTY_12g_100m_4l_DC_DFE_gt_gtwizard_gtye4_inst/gen_gtwizard_gtye4.gen_channel_container[1].gen_enabled_channel.gtye4_channel_wrapper_inst/channel_inst/gtye4_channel_gen.gen_gtye4_channel_inst[3].GTYE4_CHANNEL_PRIM_INST' has TXRATE pins that are not constant, so the worst case divide value of 1 will be used for automatic derivation of generated clocks [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_hapsip/hapsaxd/system_ip/umr3_sib/umr3_sib_XCVU19P.xdc:5]
+INFO: [Timing 38-2] Deriving generated clocks [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_hapsip/hapsaxd/system_ip/umr3_sib/umr3_sib_XCVU19P.xdc:5]
+Finished Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_hapsip/hapsaxd/system_ip/umr3_sib/umr3_sib_XCVU19P.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell haps_system_memory/memory_core.memory_inst_memory_inst_0_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4264.949 ; gain = 0.000 ; free physical = 15081 ; free virtual = 34847
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5356 instances were transformed.
+  BUFG => BUFGCE: 4 instances
+  CFGLUT5 => SRLC32E: 33 instances
+  FD => FDRE: 2995 instances
+  FDC => FDCE: 494 instances
+  FDE => FDRE: 842 instances
+  FDP => FDPE: 33 instances
+  FDR => FDRE: 345 instances
+  FDS => FDSE: 87 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 127 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  INV => LUT1: 195 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 2 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 4 instances
+  PLLE3_ADV => PLLE4_ADV: 4 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 189 instances
+
+13 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:02:06 ; elapsed = 00:01:57 . Memory (MB): peak = 4264.949 ; gain = 1551.875 ; free physical = 15083 ; free virtual = 34849
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.56 . Memory (MB): peak = 4304.969 ; gain = 0.004 ; free physical = 15023 ; free virtual = 34804
+INFO: [Common 17-1381] The checkpoint '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/post_link.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:37 ; elapsed = 00:00:28 . Memory (MB): peak = 4304.969 ; gain = 40.020 ; free physical = 14823 ; free virtual = 34639
+# foreach postLinkOptionFile $VivadoPostLinkOptionFiles {
+#         if {[file exists $postLinkOptionFile]} {
+#                 source $postLinkOptionFile
+#         }
+# }
+# hVivado_post_link_design_proc
+Checking HSTDM missing constraints!
+Reporting constraint problems between HSTDM and user. 04/09/2023:23:18:22
+Collecting paths between HSTDM and user.
+Collecting paths between HSTDM and user: 22/228 done.
+Collecting paths between HSTDM and user: 44/228 done.
+Collecting paths between HSTDM and user: 66/228 done.
+Collecting paths between HSTDM and user: 88/228 done.
+Collecting paths between HSTDM and user: 110/228 done.
+Collecting paths between HSTDM and user: 132/228 done.
+Collecting paths between HSTDM and user: 154/228 done.
+Collecting paths between HSTDM and user: 176/228 done.
+Collecting paths between HSTDM and user: 198/228 done.
+Collecting paths between HSTDM and user: 220/228 done.
+Checking for constraint problems between HSTDM and user.
+Checking for constraint problems between HSTDM and user: 724/7245 done.
+Checking for constraint problems between HSTDM and user: 1448/7245 done.
+Checking for constraint problems between HSTDM and user: 2172/7245 done.
+Checking for constraint problems between HSTDM and user: 2896/7245 done.
+Checking for constraint problems between HSTDM and user: 3620/7245 done.
+Checking for constraint problems between HSTDM and user: 4344/7245 done.
+Checking for constraint problems between HSTDM and user: 5068/7245 done.
+Checking for constraint problems between HSTDM and user: 5792/7245 done.
+Checking for constraint problems between HSTDM and user: 6516/7245 done.
+Checking for constraint problems between HSTDM and user: 7240/7245 done.
+Found no issues of constraints between HSTDM and user.
+Cleaning up temporary files.
+Reporting constraint problems between HSTDM and user. DONE. 04/09/2023:23:20:50
+Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/run_hstdm_exc_pla_var.xdc]
+Finished Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/run_hstdm_exc_pla_var.xdc]
+Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/run_hstdm_loc.xdc]
+Finished Parsing XDC File [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/run_hstdm_loc.xdc]
+read_xdc: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 5150.492 ; gain = 0.000 ; free physical = 11510 ; free virtual = 31444
+# hVivado_source_clockgen_option_files
+# hVivado_disconnect_ip
+# hVivado_get_cpu-mem_status opt_design 
+##  phase:opt_design  -  Host: ws35  -  MemFree: 11 GB  -  LoadAverage (5s|5min|15min / NBcpu): 7.53|5.96|5.49 / 16 
+# hVivado_opt_design
+WARNING: [Vivado 12-180] No cells matched '*cfglut*'.
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -of_objects [get_cells -hier *cfglut* -filter {REF_NAME =~ *SRLC32E*}]'.
+Command: opt_design -directive RuntimeOptimized
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu19p'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 5190.512 ; gain = 40.020 ; free physical = 11498 ; free virtual = 31435
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 109 inverter(s) to 3222 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: da2db082
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 5190.512 ; gain = 0.000 ; free physical = 11443 ; free virtual = 31368
+INFO: [Opt 31-389] Phase Retarget created 701 cells and removed 23712 cells
+INFO: [Opt 31-1021] In phase Retarget, 693 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 18 inverter(s) to 26 load pin(s).
+Phase 2 Constant propagation | Checksum: 95aad0b7
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 5190.512 ; gain = 0.000 ; free physical = 11421 ; free virtual = 31345
+INFO: [Opt 31-389] Phase Constant propagation created 1487 cells and removed 6636 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 704 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 13c286392
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:35 . Memory (MB): peak = 5190.512 ; gain = 0.000 ; free physical = 11323 ; free virtual = 31249
+INFO: [Opt 31-389] Phase Sweep created 1 cells and removed 9082 cells
+INFO: [Opt 31-1021] In phase Sweep, 9135 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/clk_out2_clk_wiz_0_BUFG_inst to drive 10 load(s) on clock net sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/clk_out2_clk_wiz_0_BUFGCE
+INFO: [Opt 31-194] Inserted BUFG sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/clk_out5_clk_wiz_0_BUFG_inst to drive 4 load(s) on clock net sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/clk_out5_clk_wiz_0_BUFGCE
+INFO: [Opt 31-193] Inserted 2 BUFG(s) on clock nets
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+INFO: [Opt 31-274] Optimized connectivity to 2 cascaded buffer cells
+Phase 4 BUFG optimization | Checksum: adf0da7b
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:37 . Memory (MB): peak = 5190.512 ; gain = 0.000 ; free physical = 11303 ; free virtual = 31228
+INFO: [Opt 31-662] Phase BUFG optimization created 2 cells of which 2 are BUFGs and removed 3 cells.
+INFO: [Opt 31-1021] In phase BUFG optimization, 5 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: adf0da7b
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:38 . Memory (MB): peak = 5190.512 ; gain = 0.000 ; free physical = 11293 ; free virtual = 31218
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 9897152d
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:39 . Memory (MB): peak = 5190.512 ; gain = 0.000 ; free physical = 11285 ; free virtual = 31211
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 631 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             701  |           23712  |                                            693  |
+|  Constant propagation         |            1487  |            6636  |                                            704  |
+|  Sweep                        |               1  |            9082  |                                           9135  |
+|  BUFG optimization            |               2  |               3  |                                              5  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            631  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 5190.512 ; gain = 0.000 ; free physical = 11284 ; free virtual = 31209
+Ending Logic Optimization Task | Checksum: 1b3b69d95
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:43 . Memory (MB): peak = 5190.512 ; gain = 0.000 ; free physical = 11284 ; free virtual = 31209
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5190.512 ; gain = 0.000 ; free physical = 11282 ; free virtual = 31208
+Ending Netlist Obfuscation Task | Checksum: 1b3b69d95
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5190.512 ; gain = 0.000 ; free physical = 11282 ; free virtual = 31208
+INFO: [Common 17-83] Releasing license: Implementation
+26 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:04 ; elapsed = 00:00:50 . Memory (MB): peak = 5190.512 ; gain = 40.020 ; free physical = 11283 ; free virtual = 31209
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'System_FB1_uC' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_edif.xdc:9]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 5190.512 ; gain = 0.000 ; free physical = 11028 ; free virtual = 31043
+INFO: [Common 17-1381] The checkpoint '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/post_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:01:02 ; elapsed = 00:00:37 . Memory (MB): peak = 5190.512 ; gain = 0.000 ; free physical = 10614 ; free virtual = 30588
+# hVivado_post_opt_design_proc
+Flow is Standard
+# hVivado_get_cpu-mem_status place_design 
+##  phase:place_design  -  Host: ws35  -  MemFree: 10 GB  -  LoadAverage (5s|5min|15min / NBcpu): 8.14|6.47|5.71 / 16 
+# hVivado_place_design
+[PC_FPGA] - INFO : Vivado place_design runs in fast_turn_around mode
+Command: place_design -directive RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+run_haps_drc_HAUMR-2
+run_haps_drc_HATDM-4
+run_haps_drc_HADRC-1
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'RuntimeOptimized' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5271.824 ; gain = 0.000 ; free physical = 9880 ; free virtual = 29855
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: c37f54f8
+
+Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.29 . Memory (MB): peak = 5271.824 ; gain = 0.000 ; free physical = 9880 ; free virtual = 29855
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5271.824 ; gain = 0.000 ; free physical = 9880 ; free virtual = 29855
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: c018a914
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:43 . Memory (MB): peak = 5318.121 ; gain = 46.297 ; free physical = 9315 ; free virtual = 29291
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 198a2ac27
+
+Time (s): cpu = 00:02:31 ; elapsed = 00:01:30 . Memory (MB): peak = 6993.633 ; gain = 1721.809 ; free physical = 6321 ; free virtual = 26297
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 198a2ac27
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:31 . Memory (MB): peak = 6993.633 ; gain = 1721.809 ; free physical = 6239 ; free virtual = 26215
+Phase 1 Placer Initialization | Checksum: 198a2ac27
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:31 . Memory (MB): peak = 6993.633 ; gain = 1721.809 ; free physical = 6176 ; free virtual = 26152
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+INFO: [Place 30-1906] Running placement in ultrathreads mode using maximum of 8 CPUs
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: d5b20471
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:02:04 . Memory (MB): peak = 6993.633 ; gain = 1721.809 ; free physical = 1790 ; free virtual = 21766
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 19057fdee
+
+Time (s): cpu = 00:04:17 ; elapsed = 00:03:08 . Memory (MB): peak = 6993.633 ; gain = 1721.809 ; free physical = 4289 ; free virtual = 22320
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 19057fdee
+
+Time (s): cpu = 00:04:30 ; elapsed = 00:03:20 . Memory (MB): peak = 7386.156 ; gain = 2114.332 ; free physical = 3159 ; free virtual = 21190
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 1389f4d09
+
+Time (s): cpu = 00:04:42 ; elapsed = 00:03:23 . Memory (MB): peak = 7386.156 ; gain = 2114.332 ; free physical = 3861 ; free virtual = 21892
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 1389f4d09
+
+Time (s): cpu = 00:04:42 ; elapsed = 00:03:23 . Memory (MB): peak = 7386.156 ; gain = 2114.332 ; free physical = 3861 ; free virtual = 21892
+Phase 2.1.1 Partition Driven Placement | Checksum: 1389f4d09
+
+Time (s): cpu = 00:04:42 ; elapsed = 00:03:24 . Memory (MB): peak = 7386.156 ; gain = 2114.332 ; free physical = 3931 ; free virtual = 21962
+Phase 2.1 Floorplanning | Checksum: 136f99294
+
+Time (s): cpu = 00:04:42 ; elapsed = 00:03:24 . Memory (MB): peak = 7386.156 ; gain = 2114.332 ; free physical = 3904 ; free virtual = 21935
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 136f99294
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:03:24 . Memory (MB): peak = 7386.156 ; gain = 2114.332 ; free physical = 3904 ; free virtual = 21935
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 136f99294
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:03:24 . Memory (MB): peak = 7386.156 ; gain = 2114.332 ; free physical = 3905 ; free virtual = 21936
+
+Phase 2.4 Global Placement Core
+Phase 2.4 Global Placement Core | Checksum: 1cd1befb1
+
+Time (s): cpu = 00:13:49 ; elapsed = 00:08:46 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 11779 ; free virtual = 25373
+Phase 2 Global Placement | Checksum: 1cd1befb1
+
+Time (s): cpu = 00:13:49 ; elapsed = 00:08:46 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 12181 ; free virtual = 25775
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 12eb99449
+
+Time (s): cpu = 00:14:13 ; elapsed = 00:09:04 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 12132 ; free virtual = 25727
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1cf751895
+
+Time (s): cpu = 00:14:40 ; elapsed = 00:09:15 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 11412 ; free virtual = 25006
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1b4ee31b2
+
+Time (s): cpu = 00:14:53 ; elapsed = 00:09:28 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 11493 ; free virtual = 25089
+
+Phase 3.4 Small Shape DP
+
+Phase 3.4.1 splitSLRCrossingNets
+Phase 3.4.1 splitSLRCrossingNets | Checksum: 184b76298
+
+Time (s): cpu = 00:15:09 ; elapsed = 00:09:43 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 12938 ; free virtual = 26543
+Phase 3.4 Small Shape DP | Checksum: 205e9dda8
+
+Time (s): cpu = 00:16:43 ; elapsed = 00:10:35 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 12114 ; free virtual = 25746
+
+Phase 3.5 Re-assign LUT pins
+Phase 3.5 Re-assign LUT pins | Checksum: 1f97cc885
+
+Time (s): cpu = 00:16:50 ; elapsed = 00:10:42 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 11971 ; free virtual = 25607
+Phase 3 Detail Placement | Checksum: 1f97cc885
+
+Time (s): cpu = 00:16:51 ; elapsed = 00:10:44 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 11998 ; free virtual = 25634
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'System_FB1_uC' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_edif.xdc:9]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1bc81328b
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.987 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 19c77a4e5
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:02 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 13003 ; free virtual = 26664
+INFO: [Place 46-35] Processed net sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/I_rsync_umr3_sib_reset/umr3_sib_reset_o, inserted BUFG to drive 11217 loads.
+INFO: [Place 46-45] Replicated bufg driver sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/I_rsync_umr3_sib_reset/reset_sync_o_reg_replica
+INFO: [Place 46-33] Processed net sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/I_rsync_sys_reset/sys_reset_o, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 2 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 1, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1c63dbd6c
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 12979 ; free virtual = 26639
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1618fd9f3
+
+Time (s): cpu = 00:19:29 ; elapsed = 00:11:55 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 12979 ; free virtual = 26640
+
+Phase 4.1.1.2 BUFG Replication
+INFO: [Place 46-68] Processed net sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/I_rsync_umr3_sib_reset/umr3_sib_reset_o, BUFG replication was skipped in SLR 2 as timing constraints are met.
+INFO: [Place 46-63] BUFG replication identified 1 candidate nets: Replicated nets: 0, Replicated BUFGs: 0, Replicated BUFG Driver: 0, Skipped due to Placement / Routing Conflict: 0, Skipped due to Timing: 1, Skipped due to constraints: 0
+Phase 4.1.1.2 BUFG Replication | Checksum: 1618fd9f3
+
+Time (s): cpu = 00:19:31 ; elapsed = 00:11:57 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 12875 ; free virtual = 26536
+
+Phase 4.1.1.3 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.987. For the most accurate timing information please run report_timing.
+Phase 4.1.1.3 Post Placement Timing Optimization | Checksum: 1c6ea105c
+
+Time (s): cpu = 00:19:32 ; elapsed = 00:11:57 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 12875 ; free virtual = 26536
+
+Phase 4.1.1.4 Replication
+INFO: [Place 46-19] Post Replication Timing Summary WNS=0.987. For the most accurate timing information please run report_timing.
+Phase 4.1.1.4 Replication | Checksum: 1c6ea105c
+
+Time (s): cpu = 00:19:33 ; elapsed = 00:11:59 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 12833 ; free virtual = 26494
+
+Time (s): cpu = 00:19:33 ; elapsed = 00:11:59 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 12847 ; free virtual = 26508
+Phase 4.1 Post Commit Optimization | Checksum: 1c6ea105c
+
+Time (s): cpu = 00:19:34 ; elapsed = 00:11:59 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 12859 ; free virtual = 26519
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.12 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 12311 ; free virtual = 25983
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 230d4c9ae
+
+Time (s): cpu = 00:20:50 ; elapsed = 00:13:19 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 12719 ; free virtual = 26391
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                2x2|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 230d4c9ae
+
+Time (s): cpu = 00:20:51 ; elapsed = 00:13:19 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 13568 ; free virtual = 27240
+Phase 4.3 Placer Reporting | Checksum: 230d4c9ae
+
+Time (s): cpu = 00:20:52 ; elapsed = 00:13:20 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 13618 ; free virtual = 27290
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 13617 ; free virtual = 27289
+
+Time (s): cpu = 00:20:52 ; elapsed = 00:13:20 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 13617 ; free virtual = 27289
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1e994eac9
+
+Time (s): cpu = 00:20:52 ; elapsed = 00:13:21 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 13596 ; free virtual = 27268
+Ending Placer Task | Checksum: 15985bfb5
+
+Time (s): cpu = 00:20:52 ; elapsed = 00:13:21 . Memory (MB): peak = 12138.590 ; gain = 6866.766 ; free physical = 13578 ; free virtual = 27251
+INFO: [Common 17-83] Releasing license: Implementation
+19 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:23:01 ; elapsed = 00:14:28 . Memory (MB): peak = 12138.590 ; gain = 6948.078 ; free physical = 14937 ; free virtual = 28609
+# hVivado_post_place_design_proc
+report_timing_summary: Time (s): cpu = 00:01:41 ; elapsed = 00:00:28 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 14299 ; free virtual = 27974
+report_timing_summary: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 14193 ; free virtual = 27869
+report_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 14207 ; free virtual = 27884
+# hVivado_post_place_phys_opt_design
+INFO : Slack 1.007 is better than -0.8, so no need to run phys_opt_design
+INFO : Slack -0.550 is worse than -0.5 and better than -1.5 , so running phys_opt_design to see if it improves hold timing
+Command: phys_opt_design -hold_fix
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.250 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 23.71s |  WALL: 4.43s
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 12960 ; free virtual = 26637
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.007 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 9b00ee80
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:13 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 14135 ; free virtual = 27814
+INFO: [Physopt 32-801] Found 3 high priority path groups.
+
+Phase 2 Hold Fix Optimization
+INFO: [Physopt 32-668] Estimated Timing Summary | WNS=1.007 | TNS=0.000 | WHS=-0.550 | THS=-191.331 |
+INFO: [Physopt 32-45] Identified 389 candidate nets for hold slack optimization.
+INFO: [Physopt 32-234] Optimized 389 nets. Inserted 0 new ZHOLD_DELAYs. Calibrated 0 existing ZHOLD_DELAYs. Inserted 389 buffers.
+
+INFO: [Physopt 32-668] Estimated Timing Summary | WNS=1.007 | TNS=0.000 | WHS=-0.250 | THS=-74.098 |
+Phase 2 Hold Fix Optimization | Checksum: 9b00ee80
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:27 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 13388 ; free virtual = 27066
+Netlist sorting complete. Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.40 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 13377 ; free virtual = 27056
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=1.007 | TNS=0.000 | WHS=-0.250 | THS=-74.098 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization  |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Total         |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Summary of Hold Fix Optimizations
+=================================
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization               |  WHS Gain (ns)  |  THS Gain (ns)  |  Added LUTs  |  Added FFs  |  Optimized Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT1 and ZHOLD Insertion   |          0.300  |        117.233  |         389  |          0  |             389  |           0  |           1  |  00:00:10  |
+|  Total                      |          0.300  |        117.233  |         389  |          0  |             389  |           0  |           1  |  00:00:10  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 13353 ; free virtual = 27032
+Ending Physical Synthesis Task | Checksum: 102b66a6f
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:28 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 13305 ; free virtual = 26983
+INFO: [Common 17-83] Releasing license: Implementation
+12 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:01:40 ; elapsed = 00:00:33 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 13425 ; free virtual = 27104
+# hVivado_post_phys_opt_design_proc
+# hVivado_disable_sysmon
+# hVivado_reconnect_ip
+# hVivado_get_cpu-mem_status route_design 
+##  phase:route_design  -  Host: ws35  -  MemFree: 13 GB  -  LoadAverage (5s|5min|15min / NBcpu): 10.41|8.97|7.54 / 16 
+# hVivado_route_design
+[PC_FPGA] - INFO : Vivado route_design runs in fast_turn_around mode
+Command: route_design -directive RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+run_haps_drc_HAUMR-2
+run_haps_drc_HATDM-3
+WARNING: [DRC PLCK-58] Clock Placer Checks: Sub-optimal placement for a global clock-capable IO pin and BUFG pair.
+Resolution: A dedicated routing path between the two can be used if: (a) The global clock-capable IO (GCIO) is placed on a GCIO capable site (b) The BUFG is placed in the same bank of the device as the GCIO pin. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	AFPGA_LOCK_CLK_I_ibuf/IBUFCTRL_INST (IBUFCTRL.O) is locked to IOB_X1Y360 (in SLR 1)
+	sysip_inst/bsa19_system_ip_u/anaconda_systemip_afpga_if_u/G_lock_clk_bufg.I_bufg_lock_clk (BUFGCE.I) is provisionally placed by clockplacer on BUFGCE_X1Y164 (in SLR 1)
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'RuntimeOptimized'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 46fcf4d5 ConstDB: 0 ShapeSum: 1fd71672 RouteDB: 69eab952
+
+Phase 1 Build RT Design
+Nodegraph reading from file.  Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 11902 ; free virtual = 25581
+Phase 1 Build RT Design | Checksum: f602e27a
+
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:40 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 11652 ; free virtual = 25331
+Post Restoration Checksum: NetGraph: 33efa74a NumContArr: 86a28571 Constraints: 6f73cbfb Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 12a05f8b6
+
+Time (s): cpu = 00:03:06 ; elapsed = 00:01:42 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 11316 ; free virtual = 24996
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 12a05f8b6
+
+Time (s): cpu = 00:03:07 ; elapsed = 00:01:42 . Memory (MB): peak = 12138.590 ; gain = 0.000 ; free physical = 11305 ; free virtual = 24985
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 11d740090
+
+Time (s): cpu = 00:04:47 ; elapsed = 00:02:59 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 12199 ; free virtual = 25879
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 19287d4ec
+
+Time (s): cpu = 00:05:47 ; elapsed = 00:03:20 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 11879 ; free virtual = 25559
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.055  | TNS=0.000  | WHS=-0.319 | THS=-47.806|
+
+Phase 2 Router Initialization | Checksum: 2458c8253
+
+Time (s): cpu = 00:07:12 ; elapsed = 00:03:43 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 12438 ; free virtual = 26119
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000269068 %
+  Global Horizontal Routing Utilization  = 6.69372e-05 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 69214
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 57912
+  Number of Partially Routed Nets     = 11302
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+
+Phase 3.1.1 SLL Assignment
+Number SLLs per Column: 1440
+Estimated SLL Demand Per Column: 
+  SLR [2-3]       59 (  4%)   162 ( 11%)     3 (  0%)     9 (  1%)     2 (  0%)     6 (  0%)     1 (  0%)     1 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     2 (  0%)     2 (  0%)     8 (  1%)     5 (  0%)  Demand:   260 Available: 23040 Utilization(%): 1.13
+  SLR [1-2]       75 (  5%)    73 (  5%)     3 (  0%)     4 (  0%)     2 (  0%)     6 (  0%)     1 (  0%)     1 (  0%)     7 (  0%)     1 (  0%)     1 (  0%)     6 (  0%)     3 (  0%)     3 (  0%)    52 (  4%)    25 (  2%)  Demand:   263 Available: 23040 Utilization(%): 1.14
+  SLR [0-1]       67 (  5%)    55 (  4%)     1 (  0%)     2 (  0%)     2 (  0%)     1 (  0%)     1 (  0%)     1 (  0%)     7 (  0%)     1 (  0%)     1 (  0%)     1 (  0%)     2 (  0%)     3 (  0%)    48 (  3%)    10 (  1%)  Demand:   203 Available: 23040 Utilization(%): 0.88
+Phase 3.1.1 SLL Assignment | Checksum: 10d83c546
+
+Time (s): cpu = 00:07:58 ; elapsed = 00:03:59 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 12364 ; free virtual = 26046
+Phase 3.1 Global Routing | Checksum: 10d83c546
+
+Time (s): cpu = 00:07:58 ; elapsed = 00:04:00 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 12391 ; free virtual = 26073
+Phase 3 Initial Routing | Checksum: 2aef720d8
+
+Time (s): cpu = 00:09:29 ; elapsed = 00:04:33 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 12139 ; free virtual = 25823
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 4443
+ Number of Nodes with overlaps = 314
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.813  | TNS=0.000  | WHS=-0.020 | THS=-0.039 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 2512b5a1b
+
+Time (s): cpu = 00:14:02 ; elapsed = 00:07:30 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 13023 ; free virtual = 26736
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.813  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1cc0d8538
+
+Time (s): cpu = 00:14:42 ; elapsed = 00:07:50 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 12905 ; free virtual = 26622
+Phase 4 Rip-up And Reroute | Checksum: 1cc0d8538
+
+Time (s): cpu = 00:14:42 ; elapsed = 00:07:50 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 12882 ; free virtual = 26599
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1e9782b4e
+
+Time (s): cpu = 00:15:30 ; elapsed = 00:08:06 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 12407 ; free virtual = 26158
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.813  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 5.1 Delay CleanUp | Checksum: 1e9782b4e
+
+Time (s): cpu = 00:15:35 ; elapsed = 00:08:07 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 12387 ; free virtual = 26137
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1e9782b4e
+
+Time (s): cpu = 00:15:35 ; elapsed = 00:08:08 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 12377 ; free virtual = 26127
+Phase 5 Delay and Skew Optimization | Checksum: 1e9782b4e
+
+Time (s): cpu = 00:15:36 ; elapsed = 00:08:08 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 12369 ; free virtual = 26119
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 231a0edaa
+
+Time (s): cpu = 00:16:12 ; elapsed = 00:08:20 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 12041 ; free virtual = 25794
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.813  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 2209a7015
+
+Time (s): cpu = 00:16:17 ; elapsed = 00:08:21 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 12007 ; free virtual = 25760
+Phase 6 Post Hold Fix | Checksum: 2209a7015
+
+Time (s): cpu = 00:16:17 ; elapsed = 00:08:22 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 11999 ; free virtual = 25752
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.376851 %
+  Global Horizontal Routing Utilization  = 0.343427 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1ebd3abc1
+
+Time (s): cpu = 00:16:40 ; elapsed = 00:08:28 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 11651 ; free virtual = 25404
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1ebd3abc1
+
+Time (s): cpu = 00:16:40 ; elapsed = 00:08:28 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 11637 ; free virtual = 25390
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1ebd3abc1
+
+Time (s): cpu = 00:16:53 ; elapsed = 00:08:37 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 11497 ; free virtual = 25250
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 2d355197b
+
+Time (s): cpu = 00:16:54 ; elapsed = 00:08:38 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 11502 ; free virtual = 25255
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.813  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 11 Post Router Timing | Checksum: 2d355197b
+
+Time (s): cpu = 00:17:14 ; elapsed = 00:08:42 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 11403 ; free virtual = 25156
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:17:15 ; elapsed = 00:08:43 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 11936 ; free virtual = 25689
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:18:17 ; elapsed = 00:09:09 . Memory (MB): peak = 12138.609 ; gain = 0.020 ; free physical = 11936 ; free virtual = 25689
+route_design completed
+# hVivado_get_route_status
+[PC_FPGA] - INFO : Checking router status
+report_route_status: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 12138.609 ; gain = 0.000 ; free physical = 11761 ; free virtual = 25515
+   |- 69326 routable nets / 119644 Total nets
+   |- 0 nets in errors
+   |- NA nets in errors
+# hVivado_hstdm_postroute
+# hVivado_post_route_design_proc
+INFO : Hold Slack is 0.010, Design met hold timing requirements
+Generating post router reports
+report_timing_summary: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 12138.609 ; gain = 0.000 ; free physical = 11593 ; free virtual = 25357
+report_timing_summary: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 12138.609 ; gain = 0.000 ; free physical = 11677 ; free virtual = 25443
+report_clock_utilization: Time (s): cpu = 00:02:03 ; elapsed = 00:02:06 . Memory (MB): peak = 12138.609 ; gain = 0.000 ; free physical = 9774 ; free virtual = 23552
+report_io: Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 12138.609 ; gain = 0.000 ; free physical = 9636 ; free virtual = 23415
+Command: report_drc -file post_route_drc.txt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/cadtool/csr5306/synopsys/xilinx_vivado/2021.1-ep9/tools/XILINX_VIVADO/patches/AR76722/vivado/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/cadtool/csr5306/synopsys/xilinx_vivado/2021.1-ep9/tools/XILINX_VIVADO/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+run_haps_drc_HAUMR-1
+run_haps_drc_HAUMR-2
+run_haps_drc_HATDM-1
+run_haps_drc_HATDM-2
+run_haps_drc_HATDM-3
+run_haps_drc_HATDM-4
+run_haps_drc_HADRC-1
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/post_route_drc.txt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:01:06 ; elapsed = 00:00:30 . Memory (MB): peak = 12138.617 ; gain = 0.008 ; free physical = 8544 ; free virtual = 22323
+WARNING: [Timing 38-164] This design has multiple clocks. Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+# hVivado_get_cpu-mem_status bitstream 
+##  phase:bitstream  -  Host: ws35  -  MemFree: 8 GB  -  LoadAverage (5s|5min|15min / NBcpu): 9.83|8.93|8.20 / 16 
+# hVivado_generate_bitstream
+Command: write_bitstream -force FB1_uC.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xcvu19p'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcvu19p'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+run_haps_drc_HAUMR-1
+run_haps_drc_HAUMR-2
+run_haps_drc_HATDM-1
+run_haps_drc_HATDM-2
+run_haps_drc_HATDM-3
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port ALUOUTMEM spans more than one Super Logic Region (SLR).   Bits placed in SLR 3:  11-59.  
+  Bits placed in SLR 2:  0-5.  
+  Bits placed in SLR 1:  6-10.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port ALUOUTMEM_aptn_s spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  36, 35, 33, 32, 30, 28, 27, 25, 24, 21, 20, 18, 16, 15, 13, 12.  
+  Bits placed in SLR 0:  63, 62, 60, 59, 56, 55, 53, 52, 50, 48, 47, 45, 44, 42, 40, 38.  
+  Bits placed in SLR 2:  61, 58, 57, 54, 51, 49, 46, 43, 41, 39, 37, 34, 31, 29, 26, 23, 22, 19, 17, 14, 11.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port DBG_REFCLKN_0 spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  0.  
+  Bits placed in SLR 0:  1.  
+  Bits placed in SLR 2:  3.  
+  Bits placed in SLR 3:  2.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port DBG_REFCLKP_0 spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  0.  
+  Bits placed in SLR 0:  1.  
+  Bits placed in SLR 2:  3.  
+  Bits placed in SLR 3:  2.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port DBG_RXN spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  1, 0.  
+  Bits placed in SLR 0:  3, 2.  
+  Bits placed in SLR 2:  7, 6.  
+  Bits placed in SLR 3:  5, 4.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port DBG_RXP spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  1, 0.  
+  Bits placed in SLR 0:  3, 2.  
+  Bits placed in SLR 2:  7, 6.  
+  Bits placed in SLR 3:  5, 4.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port DBG_TXN spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  1, 0.  
+  Bits placed in SLR 0:  3, 2.  
+  Bits placed in SLR 2:  7, 6.  
+  Bits placed in SLR 3:  5, 4.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port DBG_TXP spans more than one Super Logic Region (SLR).   Bits placed in SLR 1:  1, 0.  
+  Bits placed in SLR 0:  3, 2.  
+  Bits placed in SLR 2:  7, 6.  
+  Bits placed in SLR 3:  5, 4.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port WREX spans more than one Super Logic Region (SLR).   Bits placed in SLR 0:  2, 3.  
+  Bits placed in SLR 1:  0, 1.  
+WARNING: [DRC IOBUSSLRC-1] IO Bus SLR Crossings: Bus port WRITEDATAWB spans more than one Super Logic Region (SLR).   Bits placed in SLR 2:  40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0.  
+  Bits placed in SLR 0:  63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41.  
+WARNING: [DRC REQP-1877] BUFGCE_has_no_loads: Global Clock buffer BUFGCE cell sysip_inst/bsa19_system_ip_u/haps_sysip_infra_clocks_inst/haps_sysip_infra_clocks_mmcm/clkout1_buf has no loads and may be unnecessarily using clock routing/distribution resources. This buffer should be removed from the design.
+WARNING: [DRC RTSTAT-10] No routable loads: 141 net(s) have no routable loads. The problem bus(es) and/or net(s) are sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[0], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[3], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[4], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[5], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[6], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[7], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[8], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[9], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[10], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[11], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[12], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[13], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[14], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[15], sysip_inst/bsa19_system_ip_u/umr3_sib_top_u/I_umr3_sib_fpga/M_umr3_stm_0/DS_OPCODE[16]... and (the first 15 of 125 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 12 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 295267008 bits.
+Bitstream compression saved 285575584 bits.
+Bitstream compression saved 294036768 bits.
+Bitstream compression saved 266934336 bits.
+Writing bitstream ./FB1_uC.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Mon Apr 10 00:05:54 2023. For additional details about this file, please refer to the WebTalk help file at /usr/cadtool/csr5306/synopsys/xilinx_vivado/2021.1-ep9/tools/XILINX_VIVADO/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+7 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:18:24 ; elapsed = 00:14:26 . Memory (MB): peak = 12138.617 ; gain = 0.000 ; free physical = 24858 ; free virtual = 39908
+# hVivado_post_bitstream_proc
+
+ Report file /home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC_io_reg.rpt has been generated
+
+WARNING: [Constraints 18-4434] Global Clock Buffer 'hstdm_clkgen_1200_rx_bank36_block6/BASE4.rxclkdiv4_bufg' is LOCed to site 'BUFGCE_DIV_X0Y68'. Using a LOC constraint to assign the placement of a Global Clock Buffer can result in sub-optimal placement results.
+Resolution: Remove the LOC constraint and use the CLOCK_REGION constraint to assign a Global Clock Buffer to a CLOCK_REGION.
+write_xdc: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 12138.617 ; gain = 0.000 ; free physical = 24791 ; free virtual = 39873
+Writing routed design checkpoint
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 12138.617 ; gain = 0.000 ; free physical = 24531 ; free virtual = 39931
+INFO: [Common 17-1381] The checkpoint '/home/u108/u108061217/RISC-V-pipeline-CPU/synthesis_files/FB1_uC/vivado_srs/FB1_uC.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:42 ; elapsed = 00:00:27 . Memory (MB): peak = 12138.617 ; gain = 0.000 ; free physical = 24625 ; free virtual = 39919
+# hVivado_generate_sllTdm_analysis
+# hVivado_reportMissingDPOs
+# hVivado_copy_parff_files
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 10 00:06:50 2023...

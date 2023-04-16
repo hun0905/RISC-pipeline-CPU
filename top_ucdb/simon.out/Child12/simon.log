@@ -1,0 +1,36 @@
+
+Note-[SM_PME] Processing Module/Entity
+  Processing: ID_EX Parameterized Name: ID_EX
+
+
+Note-[SM_CHLDRUN_DONE] Child process run completed
+  Child process number '12' with process id '21016'
+  is done with synthesis of total '1' modules
+  SIMON Child CPU Time        : 0.04 sec
+  SIMON Child Wall-Clock Time : 0.06 sec
+  SIMON Child Current Memory  : 380 MB
+  SIMON Child Peak Memory     : 380 MB
+  SIMON Distribution          : 0.01,0.01,0.00,0.00 sec
+  End time                    : Sun Apr  9 22:37:46 2023
+  .
+
+
+Note-[SM_POME] Processing Module/Entity
+  Performing post-processing optimizations on Module/Entity: ALUControl
+
+
+Note-[SM_POME] Processing Module/Entity
+  Performing post-processing optimizations on Module/Entity: top
+
+
+Note-[SM_CHLDRUN_DONE] Child process run completed
+  Child process number '12' with process id '21032'
+  is done with post-processing optimizations of total '2' modules
+  SIMON Child CPU Time        : 0.00 sec
+  SIMON Child Wall-Clock Time : 0.04 sec
+  SIMON Child Current Memory  : 380 MB
+  SIMON Child Peak Memory     : 380 MB
+  SIMON Distribution          : 0.00,0.00,0.00,0.00 sec
+  End time                    : Sun Apr  9 22:37:46 2023
+  .
+

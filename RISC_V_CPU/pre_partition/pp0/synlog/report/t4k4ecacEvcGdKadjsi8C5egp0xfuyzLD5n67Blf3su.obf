@@ -1,0 +1,56 @@
+@N: MF915 |Option synthesis_strategy=advanced is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[13] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[14] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[15] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[16] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[17] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[18] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[19] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[20] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[21] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[22] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[23] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[24] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[25] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[26] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[27] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[28] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[29] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[30] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[31] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[32] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[33] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[34] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[35] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[36] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[37] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[38] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[39] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[40] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[41] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[42] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[43] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[44] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[45] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[46] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[47] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[48] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[49] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[50] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[51] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[52] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[53] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[54] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[55] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[56] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[57] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[58] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[59] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[60] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[61] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[62] of work.top(verilog) driven by constant
+@N: BN496 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[63] of work.top(verilog) driven by constant
+@N: BN497 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[12] of work.top(verilog) -- port has same driver as other top-level ports
+@N: BN497 :"/home/u108/u108061217/RISC-V-pipeline-CPU/./src/top.v":36:0:36:0|Adding keepbuf to top-level port port:IMMID[11] of work.top(verilog) -- port has same driver as other top-level ports

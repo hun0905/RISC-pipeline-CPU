@@ -1,0 +1,102 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -full64 -sverilog +incdir+./ +define+synthesis +define+SYNTHESIS -full64 +define+XTOR_SVS_PROTOCOMPILER_FLOW -work work -full64
+
+all :		_VCSgd_nGFE7b_1.db \
+	_VCSgd_wvM5Uc_1.db \
+	_VCSgd_ZxBib_1.db \
+	_VCSgd_61AiSb_1.db \
+	_VCSgd_eH4H8_1.db \
+	_VCSgd_V91tb_1.db \
+	_VCSgd_7As1p_1.db \
+	_VCSgd_M3TcI_1.db \
+	_VCSgd_ENsVwe_1.db \
+	_VCSgd_ObsCxb_1.db \
+	_VCSgd_e038lb_1.db \
+	_VCSgd_6QymG_1.db \
+	_VCSgd_qcjXtb_1.db \
+	_VCSgd_0pER8c_1.db \
+	_VCSgd_2y0ioe_1.db \
+	_VCSgd_Z4eCJb_1.db \
+	_VCSgd_rkdb5b_1.db \
+	_VCSgd_qpCXH_1.db \
+	_VCSgd_ntDAke_1.db \
+
+
+
+_VCSgd_nGFE7b_1.db :	./src/top.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/top.v
+
+
+_VCSgd_wvM5Uc_1.db :	./src/ALU.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/ALU.v
+
+
+_VCSgd_ZxBib_1.db :	./src/ALUControl.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/ALUControl.v
+
+
+_VCSgd_61AiSb_1.db :	./src/Adder.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/Adder.v
+
+
+_VCSgd_eH4H8_1.db :	./src/Control.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/Control.v
+
+
+_VCSgd_V91tb_1.db :	./src/DM.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/DM.v
+
+
+_VCSgd_7As1p_1.db :	./src/EX_MEM.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/EX_MEM.v
+
+
+_VCSgd_M3TcI_1.db :	./src/Forwarding.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/Forwarding.v
+
+
+_VCSgd_ENsVwe_1.db :	./src/Hazard.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/Hazard.v
+
+
+_VCSgd_ObsCxb_1.db :	./src/ID_EX.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/ID_EX.v
+
+
+_VCSgd_e038lb_1.db :	./src/IF_ID.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/IF_ID.v
+
+
+_VCSgd_6QymG_1.db :	./src/IM.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/IM.v
+
+
+_VCSgd_qcjXtb_1.db :	./src/ImmGen.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/ImmGen.v
+
+
+_VCSgd_0pER8c_1.db :	./src/MEM_WB.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/MEM_WB.v
+
+
+_VCSgd_2y0ioe_1.db :	./src/MUX.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/MUX.v
+
+
+_VCSgd_Z4eCJb_1.db :	./src/MUX3_1.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/MUX3_1.v
+
+
+_VCSgd_rkdb5b_1.db :	./src/PC.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/PC.v
+
+
+_VCSgd_qpCXH_1.db :	./src/Registers.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/Registers.v
+
+
+_VCSgd_ntDAke_1.db :	./src/comparator.v 
+		${VLOGAN}  ${VLOGAN_OPT} ./src/comparator.v
+
+

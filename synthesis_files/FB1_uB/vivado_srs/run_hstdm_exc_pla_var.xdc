@@ -1,0 +1,1 @@
+set hstdm_exclude_placement_value 0

@@ -1,0 +1,6 @@
+lappend undriven_sigs r:/$top_lib/top/b_reg[*]
+lappend undriven_sigs r:/$top_lib/top/i_reg[*]
+lappend undriven_sigs r:/$top_lib/top/input_instruc_reg[*]
+lappend undriven_sigs r:/$top_lib/top/b_reg[*]
+lappend undriven_sigs r:/$top_lib/top/i_reg[*]
+lappend undriven_sigs r:/$top_lib/top/input_instruc_reg[*]

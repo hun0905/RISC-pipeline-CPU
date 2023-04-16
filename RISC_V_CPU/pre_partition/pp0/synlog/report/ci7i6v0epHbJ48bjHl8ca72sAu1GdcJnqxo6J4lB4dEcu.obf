@@ -1,0 +1,9 @@
+@N: MF913 |Option synthesis_strategy=fast is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF796 |Maximum number of parallel jobs set to 4
+@N: BN569 |Target FPGA is located at FBx_x (Type HAPS-100_Sx).  
+@N: MF797 |Total number of groups created: 1
+@N: MF796 |Maximum number of parallel jobs set to 4
+@N: MF798 |Total elapsed time: 0h:00m:30s
+@N: MF799 |Maximum elapsed time for a single group: 0h:00m:18s
+@N: MF840 |Maximum CPU time for a single group: 0h:00m:16s
