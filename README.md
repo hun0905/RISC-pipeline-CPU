@@ -112,4 +112,178 @@ addi x15, x15, 15  ;x15=15
 000000001111_01011_000_01011_0010011
 000000001111_01111_000_01111_0010011
 ```
+```assembly
+#result Data Hazard:
+Program Counter :
+Program Counter                   0 : Instruction 00000000000000000000000000000000
+Program Counter                   4 : Instruction 00000000101000011000000110010011
+Program Counter                   8 : Instruction 00000000001100001011101000100011
+Program Counter                  12 : Instruction 00000001010000001011000100000011
+Program Counter                  16 : Instruction 00000000010100010111001000110011
+Program Counter                  16 : Instruction 00000000010100010111001000110011
+Program Counter                  20 : Instruction 00000000011000010110010000110011
+Program Counter                  24 : Instruction 00000000001000100000010010110011
+Program Counter                  28 : Instruction 01000000011100110000000010110011
+Program Counter                  32 : Instruction 01000000011100110000000010110011
+Program Counter                  36 : Instruction 01000000011100110000000010110011
+Program Counter                  40 : Instruction 01000000011100110000000010110011
+
+Register :
+Register Address          0 : Value                    0
+Register Address          1 : Value                    0
+Register Address          2 : Value                   10
+Register Address          3 : Value                   10
+Register Address          4 : Value                    0
+Register Address          5 : Value                    0
+Register Address          6 : Value                    0
+Register Address          7 : Value                    0
+Register Address          8 : Value                   10
+Register Address          9 : Value                   10
+Register Address         10 : Value                    0
+Register Address         11 : Value                    0
+Register Address         12 : Value                    0
+Register Address         13 : Value                    0
+Register Address         14 : Value                    0
+Register Address         15 : Value                    0
+Register Address         16 : Value                    0
+Register Address         17 : Value                    0
+Register Address         18 : Value                    0
+Register Address         19 : Value                    0
+Register Address         20 : Value                    0
+Register Address         21 : Value                    0
+Register Address         22 : Value                    0
+Register Address         23 : Value                    0
+Register Address         24 : Value                    0
+Register Address         25 : Value                    0
+Register Address         26 : Value                    0
+Register Address         27 : Value                    0
+Register Address         28 : Value                    0
+Register Address         29 : Value                    0
+Register Address         30 : Value                    0
+Register Address         31 : Value                    0
+
+Data Memory :
+Memory Address          0 : Value                    0
+Memory Address          1 : Value                    0
+Memory Address          2 : Value                    0
+Memory Address          3 : Value                    0
+Memory Address          4 : Value                    0
+Memory Address          5 : Value                    0
+Memory Address          6 : Value                    0
+Memory Address          7 : Value                    0
+Memory Address          8 : Value                    0
+Memory Address          9 : Value                    0
+Memory Address         10 : Value                    0
+Memory Address         11 : Value                    0
+Memory Address         12 : Value                    0
+Memory Address         13 : Value                    0
+Memory Address         14 : Value                    0
+Memory Address         15 : Value                    0
+Memory Address         16 : Value                    0
+Memory Address         17 : Value                    0
+Memory Address         18 : Value                    0
+Memory Address         19 : Value                    0
+Memory Address         20 : Value                   10
+Memory Address         21 : Value                    0
+Memory Address         22 : Value                    0
+Memory Address         23 : Value                    0
+Memory Address         24 : Value                    0
+Memory Address         25 : Value                    0
+Memory Address         26 : Value                    0
+Memory Address         27 : Value                    0
+Memory Address         28 : Value                    0
+Memory Address         29 : Value                    0
+Memory Address         30 : Value                    0
+Memory Address         31 : Value                    0
+
+# result Control Hazard
+Program Counter :
+Program Counter                   0 : Instruction 00000000000000000000000000000000
+Program Counter                   4 : Instruction 00000000101000100000001000010011
+Program Counter                   8 : Instruction 00000000010000010011101000100011
+Program Counter                  12 : Instruction 00000001010000010011000110000011
+Program Counter                  16 : Instruction 00000001010000010011010010000011
+Program Counter                  20 : Instruction 00000000000100101000100001100011
+Program Counter                  32 : Instruction 00000000000000000000000000000000
+Program Counter                  36 : Instruction 00000001010000010011000010000011
+Program Counter                  40 : Instruction 00000000001101000000001010110011
+Program Counter                  44 : Instruction 00000000000100101000010001100011
+Program Counter                  44 : Instruction 00000000000100101000010001100011
+Program Counter                  48 : Instruction 00000000000000000000000000000000
+Program Counter                  52 : Instruction 00000000101000101000010001100011
+Program Counter                  56 : Instruction 00000000111101011000010110010011
+Program Counter                  60 : Instruction 00000000111101111000011110010011
+Program Counter                  64 : Instruction 00000000000000000000000000000000
+Program Counter                  68 : Instruction 00000000000000000000000000000000
+Program Counter                  72 : Instruction 00000000000000000000000000000000
+Program Counter                  76 : Instruction 00000000000000000000000000000000
+Program Counter                  80 : Instruction 00000000000000000000000000000000
+
+Register :
+Register Address          0 : Value                    0
+Register Address          1 : Value                   10
+Register Address          2 : Value                    0
+Register Address          3 : Value                   10
+Register Address          4 : Value                   10
+Register Address          5 : Value                   10
+Register Address          6 : Value                    0
+Register Address          7 : Value                    0
+Register Address          8 : Value                    0
+Register Address          9 : Value                   10
+Register Address         10 : Value                    0
+Register Address         11 : Value                   15
+Register Address         12 : Value                    0
+Register Address         13 : Value                    0
+Register Address         14 : Value                    0
+Register Address         15 : Value                   15
+Register Address         16 : Value                    0
+Register Address         17 : Value                    0
+Register Address         18 : Value                    0
+Register Address         19 : Value                    0
+Register Address         20 : Value                    0
+Register Address         21 : Value                    0
+Register Address         22 : Value                    0
+Register Address         23 : Value                    0
+Register Address         24 : Value                    0
+Register Address         25 : Value                    0
+Register Address         26 : Value                    0
+Register Address         27 : Value                    0
+Register Address         28 : Value                    0
+Register Address         29 : Value                    0
+Register Address         30 : Value                    0
+Register Address         31 : Value                    0
+
+Data Memory :
+Memory Address          0 : Value                    0
+Memory Address          1 : Value                    0
+Memory Address          2 : Value                    0
+Memory Address          3 : Value                    0
+Memory Address          4 : Value                    0
+Memory Address          5 : Value                    0
+Memory Address          6 : Value                    0
+Memory Address          7 : Value                    0
+Memory Address          8 : Value                    0
+Memory Address          9 : Value                    0
+Memory Address         10 : Value                    0
+Memory Address         11 : Value                    0
+Memory Address         12 : Value                    0
+Memory Address         13 : Value                    0
+Memory Address         14 : Value                    0
+Memory Address         15 : Value                    0
+Memory Address         16 : Value                    0
+Memory Address         17 : Value                    0
+Memory Address         18 : Value                    0
+Memory Address         19 : Value                    0
+Memory Address         20 : Value                   10
+Memory Address         21 : Value                    0
+Memory Address         22 : Value                    0
+Memory Address         23 : Value                    0
+Memory Address         24 : Value                    0
+Memory Address         25 : Value                    0
+Memory Address         26 : Value                    0
+Memory Address         27 : Value                    0
+Memory Address         28 : Value                    0
+Memory Address         29 : Value                    0
+Memory Address         30 : Value                    0
+Memory Address         31 : Value                    0
 ```
