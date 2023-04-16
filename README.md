@@ -45,7 +45,7 @@ Below are the introduction of some important components (not all components are 
 ### WB
 - In WB stage, the behaviors only involoves the mux and registers. According to our control signal. The mux can decide the data we want to write back is from the result of ALU or the DataMemory. If control signal regwrite is high, we need write the data to our registers.
 
-## Verificatoin setting and how to use
+## Verificatoin setting
 - board.tss : this is target system specification file, it includes same hardward configuratoin of HAPS, ex:
   1. Which FPGA we used in this project
   2. Connectoin fo daughter cards
@@ -59,3 +59,57 @@ Below are the introduction of some important components (not all components are 
   4. clk and reset setting
   5. port assignment
  - design.fdc : this file includes seeting of time constraints
+ ## some demo example
+ - In TEST/test_pattern.txt are somae instructions to demo
+ In the example, I demoe how my CPU deal with data hazard and control hazard, I transform the instructions into bits and save in TEST/ControlHazardPattern.txt and TEST/DataHazardPattern.txt. I save the demo result in TEST/ControlHazardPattern.txt and TEST/DataHazardPattern.txt. There are many output, so I just show the values of regsiter and data memory after execution these isntruction.
+```assembly
+#For Data Hazard
+addi x3, x3, 10    ;x3=10
+sd x3, 20(x1)      ;memory[20]=10
+ld x2, 20(x1)      ;x2=10
+and x4, x2, x5     ;x4=0
+or x8, x2, x6      ;x8=10
+add x9, x4, x2     ;x9=10
+sub x1, x6, x7     ;x1=0
+000000001010_00011_000_00011_0010011
+0000000_00011_00001_011_10100_0100011
+000000010100_00001_011_00010_0000011
+0000000_00101_00010_111_00100_0110011
+0000000_00110_00010_110_01000_0110011
+0000000_00010_00100_000_01001_0110011
+0100000_00111_00110_000_00001_0110011
+
+#For Control Hazard
+addi x4, x4, 10    ;x4=10
+sd x4, 20(x2)      ;memory[20]=10
+ld x3, 20(x2)      ;x3=10
+ld x9, 20(x2)      ;x9=10
+beq x9, x3, 8      ;jump 16
+addi x9, x9, 20    ;no
+addi x3, x3, 15    ;no
+addi x8, x8, 15    ;no
+ld x1, 20(x2)      ;x1=10
+add x5, x3, x8     ;x5=10
+beq x5, x1, 4      ;jump 8
+sub x5, x5 x1      ;no
+beq x5 ,x10 4      ;jump
+addi x11, x11, 15  ;x11=15
+addi x15, x15, 15  ;x15=15
+
+000000001010_00100_000_00100_0010011
+0000000_00100_00010_011_10100_0100011
+000000010100_00010_011_00011_0000011
+000000010100_00010_011_01001_0000011
+0000000_00001_00101_000_10000_1100011
+000000010100_01001_000_01001_0010011
+000000001111_00011_000_00011_0010011
+000000010100_00001_011_00010_0000011
+000000010100_00010_011_00001_0000011
+0000000_00011_01000_000_00101_0110011
+0000000_00001_00101_000_01000_1100011
+0100000_00001_00101_000_00101_0110011
+0000000_01010_00101_000_01000_1100011
+000000001111_01011_000_01011_0010011
+000000001111_01111_000_01111_0010011
+```
+```
