@@ -4,7 +4,7 @@ report rtl_diagnostics -srclist vlog_inputs.txt -top_module top
 
 source option.tcl
 
-launch uc -utf run.utf -ucdb top_ucdb -v 2.0
+launch uc -utf design.utf -ucdb top_ucdb -v 2.0
 
 run compile -ucdb top_ucdb -out c0
 #run compile -ucdb top_ucdb -idc debug.idc -out c0
