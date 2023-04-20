@@ -47,13 +47,13 @@ Below are the block diagram of most of important components . Because these CPU 
 ![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/CPU_Diagram.png)
 ## Schematic of each FPGA
 ### FPGA_A
-![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uA.png)
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uA_srs.png)
 ### FPGA_B
-![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uB.png)
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uB_srs.png)
 ### FPGA_C
-![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uC.png)
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uC_srs.png)
 ### FPGA_D
-![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uD.png)
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uD_srs.png)
 ## Timing report
 ### FB1_uA_timing_summary
 ![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uA_timing_summary.png)
