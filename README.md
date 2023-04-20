@@ -1,9 +1,7 @@
 # RISC-pipeline-CPU
-## Overview
+## Introduction
 In this project, i implement a pipeline CPU with RISC-V instruction set architecture and then I perform verification on HAPS100.All of my RTL(.v file) codes are in src folder. This CPU supports Rtype, some of I dype(addi, andi, ori) , ld, sd and beq instruction and. I adopt the classic five stage design (Instruction fetch, Instruction decode, Execute, Memory access, Writeback) in the CPU and there are also hazard and forwarding unit to prevent data hazard and control hazard resulting from pipeline execution. 
-## Description
-Below are the introduction of some important components (not all components are included). Because these CPU support pipeline execution, there are many wires with same function but in different stage. Therefore, I name each wire as "Function"+"Stage", ex: INSTRUCID means instruct in ID stage(There is also instruc in IF stage)
-![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/CPU_Diagram.png)
+Below are some brief introduction of important component in my design.
 ### IF:
 - **PC**(programming counter) : PC can control which instruction to be exectued next time.That is, we need PC to decide the addres of the instrcution to be executed. Generally, we may save a lot of instrcution in IM and output of PC incease 4 each time. However, when we perform instructions such as beq, we need as mux to decide whether PC increases 4 as usual or increases number assigned by instruction.
 -  **IM** (instruction memory) : the instruction to be executed is saved in IM. Before we start to execute instruction, we need to input instructions first. I use a wire(in_enable) to control the mode of IM. When in_enable is 1, we can write instruction into IM and the PC is stopped. As we set in_enable to 0, the instruction will be executed  according to the address received from PC.
@@ -44,8 +42,43 @@ Below are the introduction of some important components (not all components are 
 - DM(data memory) : This component is used to manage the read and write of memory. In some cases we do not want to save data to registers, we need save data to memory and read them as needed. Addr us the address of the data we want to read or write, WriteData is the data we want to write to memory and ReadData is the momory readed from DM. 
 ### WB
 - In WB stage, the behaviors only involoves the mux and registers. According to our control signal. The mux can decide the data we want to write back is from the result of ALU or the DataMemory. If control signal regwrite is high, we need write the data to our registers.
-
-## Verificatoin Setting
+## Blockdiagram
+Below are the block diagram of most of important components . Because these CPU support pipeline execution, there are many wires with same function but in different stage. Therefore, I name each wire as "Function"+"Stage", ex: INSTRUCID means instruct in ID stage(There is also instruc in IF stage)
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/CPU_Diagram.png)
+## Schematic of each FPGA
+### FPGA_A
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uA.png)
+### FPGA_B
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uB.png)
+### FPGA_C
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uC.png)
+### FPGA_D
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uD.png)
+## Timing report
+### FB1_uA_timing_summary
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uA_timing_summary.png)
+### FB1_uA_timing_summary_Min
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uA_timing_summary_Min.png)
+### FB1_uB_timing_summary
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uB_timing_summary.png)
+### FB1_uB_timing_summary_Min
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uB_timing_summary_Min.png)
+### FB1_uC_timing_summary
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uC_timing_summary.png)
+### FB1_uC_timing_summary_Min
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uC_timing_summary_Min.png)
+### FB1_uD_timing_summary
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uD_timing_summary.png)
+### FB1_uD_timing_summary_Min
+![image](https://github.com/hun0905/RISC-pipeline-CPU/blob/main/diagram/FB1_uD_timing_summary_Min.png)
+## Conclusion
+There are multiple components in my pipelone cpu design, so I use assign of my cells to FPGA_A,B,C,D(four FPGA).
+To make the verification result of my design meet the timing constraint, I try to make different ways to assign my 
+cells. I also add interconnection between each FPGA and adjust tdm_control max_ratio. Besides, I try many kinds of 
+clock period. The timing constraints are met now. Basically, I successfully implement a simple version of pipelien 
+RSIC-V architecture CPU with hazard detection , forwarding and it can function well without issue of timing.
+## Others
+### Verificatoin Setting
 - vlog_inputs.txt : RTL source code flielists
 - board.tss : this is target system specification file, it includes same hardward configuratoin of HAPS, ex:
   1. Which FPGA we used in this project
@@ -60,7 +93,7 @@ Below are the introduction of some important components (not all components are 
   4. clk and reset setting
   5. port assignment
  - design.fdc : this file includes seeting of time constraints
- ## Demo Example
+### Demo Example
  - In TEST/test_pattern.txt are somae instructions to demo
  In the example, I demoe how my CPU deal with data hazard and control hazard, I transform the instructions into bits and save in TEST/ControlHazardPattern.txt and TEST/DataHazardPattern.txt. I save the demo result in TEST/ControlHazardPattern.txt and TEST/DataHazardPattern.txt. There are many output, so I just show the values of regsiter and data memory after execution these isntruction.
 ```assembly
@@ -288,7 +321,7 @@ Memory Address         29 : Value                    0
 Memory Address         30 : Value                    0
 Memory Address         31 : Value                    0
 ```
-## How to run verificatoin
+### How to run verificatoin
 - To run with protocompiler100, just use`protocompiler100 -shell run.tcl` or run below commands line by line in protocompiler100.
 ```sh
 exec chmod +x vcs_dut.csh
